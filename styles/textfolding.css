@@ -1,13 +1,16 @@
 /* style the collapsing headers */
-/* code from https://www.w3schools.com/howto/howto_js_collapsible.asp */
+/* code from https://www.w3schools.com/howto/howto_js_collapsible.asp 
+*/
 
 .collapsible {
-  background-color: #eee;
+  background-color: #9ecae8;
   color: #444;
+  font-size: 1em;
   cursor: pointer;
   padding: 18px;
-  width: 30%;
+  width: 60%;
   border: none;
+  border-radius: 12px;
   text-align: left;
   outline: none;
 }
@@ -25,7 +28,7 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #3182bd;
 }
 
 /* Style the collapsible content. Note: hidden by default */
