@@ -1,0 +1,47 @@
+###Goals
+- Learn about operationalizing hypotheses
+
+###Lecture and Discussion
+- Justification
+- Operationalization
+	- Participants (demographic data)
+	- DV’s
+	- IV’s
+	- Possible confounds
+- Data types (Continous, Interval, etc.)
+- Experimental design
+- Analysis methods
+	- Factors and levels
+	- Correlational designs
+
+
+###Lab
+-
+
+###Assignment
+- 
+- 
+- 
+
+
+
+###Goals
+
+
+###Lecture and Discussion
+- Discuss the conceptual level (chapters from Hinklelman & Kempthorne, 2008; Navarro & Foxcroft, 2018)
+- Lecture on operationalization
+	- DV's
+	- IV's
+	- Randomization
+	- Controls
+	- Samples and populations
+
+
+
+###Lab
+- Tinker with OpenSesame
+
+
+###Assignment
+- Read Navarro, Foxcroft &amp; Faulkenberry (2019) Chapter 2
