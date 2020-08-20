@@ -31,7 +31,7 @@ Week 36: Introduction
 
 ## Assignment:
 
-- Read Navarro, Foxcroft & Faulkenberry (2019)
+- Read <a href="https://learnstatswithjasp.com" target="_blank">Navarro, Foxcroft & Faulkenberry (2019)</a>
   - Chapter 1
 - Read chapters from Hinklelman & Kempthorne (2008)
   - Chapter 1 (Ok to skim some)
