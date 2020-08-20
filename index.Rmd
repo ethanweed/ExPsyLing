@@ -1,5 +1,5 @@
 ---
-title: "Language, Cognition and the Brain"
+title: "Experimental Psycholinguistics"
 output: html_document
 
 ---
@@ -15,15 +15,71 @@ knitr::opts_chunk$set(echo = TRUE)
 Week 36: Introduction
 </button>
 <div class="content">
-Lorem ipsum
+
+## Goals:
+
+- Become familiar with the structure of the course
+
+## Lecture and Discussion:
+
+- Introduction to the structure of the course
+- Questions and answers
+
+## Lab:
+
+- Participate in an onine experiment
+
+## Assignment:
+
+- Read Navarro, Foxcroft & Faulkenberry (2019)
+  - Chapter 1
+- Read chapters from Hinklelman & Kempthorne (2008)
+  - Chapter 1 (Ok to skim some)
+  - Chapter 2 (Ok to skim some, especially the math. I have highlighted key points)
 </div>
+<p></p><p></p>
+
+
+
 
 <button type="button" class="collapsible">
 Week 37: Introduction
 </button>
 <div class="content">
-Lorem ipsum
+
+## Goals:
+
+- Learn about operationalizing research questions
+
+## Lecture and Discussion:
+
+- Discuss the conceptual level (chapters from Hinklelman & Kempthorne, 2008; Navarro & Foxcroft, 2018)
+- Lecture on operationalizing research questions
+  - Justification
+  - Operationalization
+    - Participants (demographic data)
+    - DV’s
+    - IV’s
+    - Possible confounds
+    - Data types (Continous, Interval, etc.)
+  - Experimental design
+  - Analysis methods
+    - Factors and levels
+    - Correlational designs
+
+## Lab:
+
+- Tinker with OpenSesame
+
+## Assignment:
+
+- Read Navarro, Foxcroft & Faulkenberry (2019) Chapter 2
+
 </div>
+<p></p><p></p>
+
+
+
 
 
 <button type="button" class="collapsible">
@@ -32,6 +88,10 @@ Week 38: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
+
 
 <button type="button" class="collapsible">
 Week 39: Introduction
@@ -39,6 +99,10 @@ Week 39: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
+
 
 <button type="button" class="collapsible">
 Week 40: Introduction
@@ -46,6 +110,10 @@ Week 40: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
+
 
 <button type="button" class="collapsible">
 Week 41: Introduction
@@ -53,14 +121,21 @@ Week 41: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
 
 
-<button type="button" class="collapsible">
+
+
+<button type="button" class="collapsible" style="background-color: #feb24c">
 Week 42: Introduction
 </button>
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
+
 
 
 <button type="button" class="collapsible">
@@ -69,6 +144,9 @@ Week 43: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
 
 
 <button type="button" class="collapsible">
@@ -77,6 +155,7 @@ Week 44: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
 
 
 <button type="button" class="collapsible">
@@ -85,6 +164,8 @@ Week 45: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
 
 
 <button type="button" class="collapsible">
@@ -93,6 +174,8 @@ Week 46: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
 
 
 <button type="button" class="collapsible">
@@ -101,6 +184,10 @@ Week 47: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
+
 
 
 <button type="button" class="collapsible">
@@ -109,6 +196,9 @@ Week 48: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
+
 
 
 <button type="button" class="collapsible">
@@ -117,6 +207,8 @@ Week 49: Introduction
 <div class="content">
 Lorem ipsum
 </div>
+<p></p><p></p>
+
 
 
 <button type="button" class="collapsible">
@@ -125,7 +217,7 @@ Week 50: Introduction
 <div class="content">
 Lorem ipsum
 </div>
-
+<p></p><p></p>
 
 
 
