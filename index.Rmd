@@ -24,7 +24,7 @@ Week 36:
 
 ## Lecture and Discussion:
 
--  to the structure of the course
+- Introduction to the structure of the course
 - Questions and answers
 
 ## Lab:
