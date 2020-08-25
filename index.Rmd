@@ -11,8 +11,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Welcome to the course!
+
 <button type="button" class="collapsible">
-Week 36: Introduction
+Week 36: 
 </button>
 <div class="content">
 
@@ -22,7 +24,7 @@ Week 36: Introduction
 
 ## Lecture and Discussion:
 
-- Introduction to the structure of the course
+-  to the structure of the course
 - Questions and answers
 
 ## Lab:
@@ -43,7 +45,7 @@ Week 36: Introduction
 
 
 <button type="button" class="collapsible">
-Week 37: Introduction
+Week 37: 
 </button>
 <div class="content">
 
@@ -83,7 +85,7 @@ Week 37: Introduction
 
 
 <button type="button" class="collapsible">
-Week 38: Introduction
+Week 38: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -94,7 +96,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 39: Introduction
+Week 39: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -105,7 +107,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 40: Introduction
+Week 40: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -116,7 +118,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 41: Introduction
+Week 41: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -127,7 +129,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible" style="background-color: #feb24c">
-Week 42: Introduction
+Week 42: Autumn Break <span style="font-size:32px">&#127810;</span>
 </button>
 <div class="content">
 Lorem ipsum
@@ -139,7 +141,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 43: Introduction
+Week 43: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -150,7 +152,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 44: Introduction
+Week 44: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -159,17 +161,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 45: Introduction
-</button>
-<div class="content">
-Lorem ipsum
-</div>
-<p></p><p></p>
-
-
-
-<button type="button" class="collapsible">
-Week 46: Introduction
+Week 45: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -179,7 +171,17 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 47: Introduction
+Week 46: 
+</button>
+<div class="content">
+Lorem ipsum
+</div>
+<p></p><p></p>
+
+
+
+<button type="button" class="collapsible">
+Week 47: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -191,7 +193,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 48: Introduction
+Week 48: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -202,7 +204,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 49: Introduction
+Week 49: 
 </button>
 <div class="content">
 Lorem ipsum
@@ -212,7 +214,7 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 50: Introduction
+Week 50: 
 </button>
 <div class="content">
 Lorem ipsum
