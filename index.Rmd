@@ -14,119 +14,199 @@ knitr::opts_chunk$set(echo = TRUE)
 Welcome to the course!
 
 <button type="button" class="collapsible">
-Week 36: 
+Week 36: Introduction
 </button>
 <div class="content">
 
-## Goals:
+##### Tuesday Lecture:
 
-- Become familiar with the structure of the course
+- Introduction to the course
+- Introduction to a cognitive construct: working memory
 
-## Lecture and Discussion:
+##### Thursday Lab:
 
-- Introduction to the structure of the course
-- Questions and answers
+- Run in-class online memory-span experiment
+- Discuss infrastructure involved in an online experiment
 
-## Lab:
+##### Homework:
 
-- Participate in an onine experiment
-
-## Assignment:
-
-- Read <a href="https://learnstatswithjasp.com" target="_blank">Navarro, Foxcroft & Faulkenberry (2019)</a>
-  - Chapter 1
+- Read chapters from Navarro & Foxcroft (2018)
+	- Chapter 1
+	- Chapter 2
 - Read chapters from Hinklelman & Kempthorne (2008)
-  - Chapter 1 (Ok to skim some)
-  - Chapter 2 (Ok to skim some, especially the math. I have highlighted key points)
+	- Chapter 1 (Ok to skim some)
+	- Chapter 2 (Ok to skim some, especially the math. I have highlighted key points)
+	- Chapter 2 section 2.7 (Essential reading!)
+- Read Gluck et al Chapter 9 (9.1 required, rest optional)
+- Install software  
+		- <a href="https://osdoc.cogsci.nl/3.3/download/" target="_blank"> OpenSesame </a>  
+		- <a href="https://jasp-stats.org/download/" target="_blank"> JASP </a>  
+- Watch and do the <a href="https://osdoc.cogsci.nl/3.3/tutorials/beginner/" target="_blank"> OpenSesame beginner tutorial </a>
 </div>
 <p></p><p></p>
 
 
-
+[//]: # (*******************************************************************************************************************)
 
 <button type="button" class="collapsible">
-Week 37: 
+Week 37: Experimental Design 1 
 </button>
 <div class="content">
 
-## Goals:
+##### Tuesday Lecture:
+- Discuss experimental design at the conceptual level (chapters from Hinklelman & Kempthorne, 2008; Navarro & Foxcroft, 2018)
+- Discussion on operationalization
+	- DV's
+	- IV's
+	- Randomization
+	- Controls
+	- Samples and populations
+- Discuss operationalization of working memory in the memory span task
 
-- Learn about operationalizing research questions
+##### Thursday Lab:
+- Anatomy of an OpenSesame experiment
+  - Discuss tutorial: questions and answers
+  - Dissect structure of the Memory Span experiment
+		
+##### Homework:
+- Read Sternberg (1966)
+- Identify the sentences in which Sternberg justifies and operationalizes his experiment
 
-## Lecture and Discussion:
-
-- Discuss the conceptual level (chapters from Hinklelman & Kempthorne, 2008; Navarro & Foxcroft, 2018)
-- Lecture on operationalizing research questions
-  - Justification
-  - Operationalization
-    - Participants (demographic data)
-    - DV’s
-    - IV’s
-    - Possible confounds
-    - Data types (Continous, Interval, etc.)
-  - Experimental design
-  - Analysis methods
-    - Factors and levels
-    - Correlational designs
-
-## Lab:
-
-- Tinker with OpenSesame
-
-## Assignment:
-
-- Read Navarro, Foxcroft & Faulkenberry (2019) Chapter 2
 
 </div>
 <p></p><p></p>
 
 
-
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 38: 
+Week 38: Experimental Design 2
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+- Recap operationalization from last week
+- Discuss how Sternberg justifies and operationalizes his experiment
+	
+##### Thursday Lab:
+- Tinker with OpenSesame: 
+  - Brainstorm how to construct a task that would measure whether we access working memory in serial or parallel
+	- Discuss how this could be implemented in OpenSesame
+
+		
+##### Homework:
+- **Porfolio Assignment 1** (due next week):
+		- Summarize a published experiment (Loosli et al (2012): 
+			- Justification
+			- Operationalization
+				- Participants (demographic data)
+				- DV’s
+				- IV’s
+			- Data type (Continous, Interval, etc.)
+			- Experimental design
+			- Analysis methods
+			- Conclusions
+			- Possible confounds
+- Read:
+	- (Optional: Navarro et al (2019) chapter 6)
+	- (Optional: Navarro et al (2019) chapter 7)
+	- Required: Navarro et al (2019) chapter 8
+
 </div>
 <p></p><p></p>
 
-
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 39: 
+Week 39 Statistical Analysis 1 
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+- lecture on: 
+	- statistical models (modelling relationships)
+	- variation
+	- distributions
+	- test statistics
+	- prediction
+	- null and alternative hypotheses
+	- p-values
+	- means
+	- standard deviations
+	- degrees of freedom
+	- logic of NHST
+
+##### Thursday Lab:
+- Build a Sternberg experiment in OpenSesame together
+- Everyone runs their Sternberg experiment locally on their computer and uploads their data
+
+##### Homework:
+- Read Navarro et al (2019) chapter 10
+	- bare minimum: read the summary (10.10)
+	- a bit more: read 10.3 and 10.5
+	- optional: all of chapter 10
+
+
+
 </div>
 <p></p><p></p>
 
-
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 40: 
+Week 40: Statistical Analysis 2
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+- What is a t-test?
+- What is an ANOVA?
+- What is a correlation?
+
+##### Thursday Lab:
+
+- We do analyses together in JASP
+  - t-test
+  - ANOVA
+  - correlation
+
+##### Homework:
+
+- **Porfolio Assignment 2** (due next week):
+  - Analyze three provided data sets in JASP:
+    - t-test
+    - ANOVA
+    - corrrelation
+
 </div>
 <p></p><p></p>
 
 
-
+[//]: # (*******************************************************************************************************************)
 
 <button type="button" class="collapsible">
-Week 41: 
+Week 41: Motivate an experiment 1
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
 </div>
 <p></p><p></p>
 
 
-
+[//]: # (*******************************************************************************************************************)
 
 <button type="button" class="collapsible" style="background-color: #feb24c">
 Week 42: Autumn Break <span style="font-size:32px">&#127810;</span>
@@ -137,11 +217,44 @@ Lorem ipsum
 <p></p><p></p>
 
 
-
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 43: 
+Week 43: Motivate an experiment 2
+</button>
+<div class="content">
+
+
+##### Tuesday Lecture:
+- Literature review
+
+
+##### Thursday Lab:
+- Discuss PA2
+
+##### Homework:
+
+
+</div>
+<p></p><p></p>
+
+[//]: # (*******************************************************************************************************************)
+
+
+<button type="button" class="collapsible">
+Week 44: Build and pilot an experiment 1
+</button>
+<div class="content">
+Lorem ipsum
+</div>
+<p></p><p></p>
+
+[//]: # (*******************************************************************************************************************)
+
+
+<button type="button" class="collapsible">
+Week 45: Build and pilot an experiment 2
 </button>
 <div class="content">
 Lorem ipsum
@@ -149,10 +262,11 @@ Lorem ipsum
 <p></p><p></p>
 
 
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 44: 
+Week 46: Run your experiment
 </button>
 <div class="content">
 Lorem ipsum
@@ -160,8 +274,11 @@ Lorem ipsum
 <p></p><p></p>
 
 
+[//]: # (*******************************************************************************************************************)
+
+
 <button type="button" class="collapsible">
-Week 45: 
+Week 47: Analyze your data 
 </button>
 <div class="content">
 Lorem ipsum
@@ -169,9 +286,11 @@ Lorem ipsum
 <p></p><p></p>
 
 
+[//]: # (*******************************************************************************************************************)
+
 
 <button type="button" class="collapsible">
-Week 46: 
+Week 48: Interpret your data 1
 </button>
 <div class="content">
 Lorem ipsum
@@ -179,9 +298,11 @@ Lorem ipsum
 <p></p><p></p>
 
 
+[//]: # (*******************************************************************************************************************)
+
 
 <button type="button" class="collapsible">
-Week 47: 
+Week 49: Interpret your data 2
 </button>
 <div class="content">
 Lorem ipsum
@@ -189,32 +310,11 @@ Lorem ipsum
 <p></p><p></p>
 
 
-
-
-
-<button type="button" class="collapsible">
-Week 48: 
-</button>
-<div class="content">
-Lorem ipsum
-</div>
-<p></p><p></p>
-
-
+[//]: # (*******************************************************************************************************************)
 
 
 <button type="button" class="collapsible">
-Week 49: 
-</button>
-<div class="content">
-Lorem ipsum
-</div>
-<p></p><p></p>
-
-
-
-<button type="button" class="collapsible">
-Week 50: 
+Week 50: Report your experiment
 </button>
 <div class="content">
 Lorem ipsum
