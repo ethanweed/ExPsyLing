@@ -90,24 +90,23 @@ Week 38: Experimental Design 2
 - Discuss how Sternberg justifies and operationalizes his experiment
 	
 ##### Thursday Lab:
-- Tinker with OpenSesame: 
-  - Brainstorm how to construct a task that would measure whether we access working memory in serial or parallel
-	- Discuss how this could be implemented in OpenSesame
+- Brainstorm how to construct a task that would measure whether we access working memory in serial or parallel
+- Discuss how this could be implemented in OpenSesame
 
 		
 ##### Homework:
 - **Porfolio Assignment 1** (due next week):
-		- Summarize a published experiment (Loosli et al (2012): 
-			- Justification
-			- Operationalization
-				- Participants (demographic data)
-				- DV’s
-				- IV’s
-			- Data type (Continous, Interval, etc.)
-			- Experimental design
-			- Analysis methods
-			- Conclusions
-			- Possible confounds
+		- Summarize a published experiment (Loosli et al (2012):    
+			- Justification  
+			- Operationalization  
+				- Participants (demographic data)  
+				- DV’s  
+				- IV’s  
+			- Data type (Continous, Interval, etc.)  
+			- Experimental design  
+			- Analysis methods  
+			- Conclusions  
+			- Possible confounds  
 - Read:
 	- (Optional: Navarro et al (2019) chapter 6)
 	- (Optional: Navarro et al (2019) chapter 7)
@@ -162,10 +161,12 @@ Week 40: Statistical Analysis 2
 <div class="content">
 
 ##### Tuesday Lecture:
+- Review logic of NHST  
 
-- What is a t-test?
-- What is an ANOVA?
-- What is a correlation?
+- Introduction to some inferential tests  
+  - What is a t-test?
+  - What is an ANOVA?
+  - What is a correlation?
 
 ##### Thursday Lab:
 
@@ -194,10 +195,14 @@ Week 41: Motivate an experiment 1
 <div class="content">
 
 ##### Tuesday Lecture:
-
+- Review inferential tests
+- Motivating an experiment
+  - Replication
+  - Replication and extension
 
 ##### Thursday Lab:
-
+- We motivate an experiment together
+  - Working memory and... ?
 
 ##### Homework:
 
@@ -212,7 +217,13 @@ Week 41: Motivate an experiment 1
 Week 42: Autumn Break <span style="font-size:32px">&#127810;</span>
 </button>
 <div class="content">
-Lorem ipsum
+
+
+##### Homework:
+
+- Relax
+
+
 </div>
 <p></p><p></p>
 
@@ -221,17 +232,17 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 43: Motivate an experiment 2
+Week 43: Build and pilot an experiment 1
 </button>
 <div class="content">
 
 
 ##### Tuesday Lecture:
-- Literature review
+- Discuss PA2
 
 
 ##### Thursday Lab:
-- Discuss PA2
+
 
 ##### Homework:
 
@@ -243,10 +254,20 @@ Week 43: Motivate an experiment 2
 
 
 <button type="button" class="collapsible">
-Week 44: Build and pilot an experiment 1
+Week 44: Build and pilot an experiment 2
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -254,10 +275,20 @@ Lorem ipsum
 
 
 <button type="button" class="collapsible">
-Week 45: Build and pilot an experiment 2
+Week 45: Build and pilot an experiment 3
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -269,7 +300,17 @@ Lorem ipsum
 Week 46: Run your experiment
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -281,7 +322,17 @@ Lorem ipsum
 Week 47: Analyze your data 
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -293,7 +344,17 @@ Lorem ipsum
 Week 48: Interpret your data 1
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -305,7 +366,17 @@ Lorem ipsum
 Week 49: Interpret your data 2
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
@@ -317,7 +388,17 @@ Lorem ipsum
 Week 50: Report your experiment
 </button>
 <div class="content">
-Lorem ipsum
+
+##### Tuesday Lecture:
+
+
+##### Thursday Lab:
+
+
+##### Homework:
+
+
+
 </div>
 <p></p><p></p>
 
