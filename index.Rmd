@@ -119,7 +119,7 @@ Week 38: Experimental Design 2
 
 
 <button type="button" class="collapsible">
-Week 39 Statistical Analysis 1 
+Week 39 Analysis 1: Significance testing
 </button>
 <div class="content">
 
@@ -156,32 +156,27 @@ Week 39 Statistical Analysis 1
 
 
 <button type="button" class="collapsible">
-Week 40: Statistical Analysis 2
+Week 40: Analysis 2: Cumulative Science
 </button>
 <div class="content">
 
 ##### Tuesday Lecture:
-- Review logic of NHST  
+- Review logic of NHST
+- Cumulative Science: meta-analysis
 
-- Introduction to some inferential tests  
-  - What is a t-test?
-  - What is an ANOVA?
-  - What is a correlation?
 
 ##### Thursday Lab:
+- t-tests
+- We do t-tests together in JASP
+- 
 
-- We do analyses together in JASP
-  - t-test
-  - ANOVA
-  - correlation
 
 ##### Homework:
+- Analyze a provided dataset (t-test)
+  - Do analysis in JASP
+  - Produce an appropriate figure
+  - Report the results in APA style
 
-- **Porfolio Assignment 2** (due next week):
-  - Analyze three provided data sets in JASP:
-    - t-test
-    - ANOVA
-    - corrrelation
 
 </div>
 <p></p><p></p>
@@ -190,22 +185,23 @@ Week 40: Statistical Analysis 2
 [//]: # (*******************************************************************************************************************)
 
 <button type="button" class="collapsible">
-Week 41: Motivate an experiment 1
+Week 41: Analysis 2: Working Memory and Reading
 </button>
 <div class="content">
 
 ##### Tuesday Lecture:
-- Review inferential tests
-- Motivating an experiment
-  - Replication
-  - Replication and extension
+- Review t-tests
+- 
 
 ##### Thursday Lab:
-- We motivate an experiment together
-  - Working memory and... ?
+- ANOVAs
+- We do ANOVAs together in JASP
 
 ##### Homework:
-
+- Analyze a provided dataset (ANOVA)
+  - Do analysis in JASP
+  - Produce an appropriate figure
+  - Report the results in APA style
 
 </div>
 <p></p><p></p>
@@ -232,35 +228,42 @@ Week 42: Autumn Break <span style="font-size:32px">&#127810;</span>
 
 
 <button type="button" class="collapsible">
-Week 43: Build and pilot an experiment 1
+Week 43: Analysis 3: Refining a research question
 </button>
 <div class="content">
 
+
+##### Tuesday Lecture:
+- review ANOVAs
+- Refining research questions
+
+
+
+##### Thursday Lab:
+- Correlations
+- We do correlations together in JASP
+
+##### Homework:
+- **Porfolio Assignment 2** (due next week):
+  - Analyze three provided data sets in JASP:
+    - t-test
+    - ANOVA
+    - corrrelation
+
+</div>
+<p></p><p></p>
+
+[//]: # (*******************************************************************************************************************)
+
+
+<button type="button" class="collapsible">
+Week 44: Build and pilot an experiment 1
+</button>
+<div class="content">
 
 ##### Tuesday Lecture:
 - Discuss PA2
 
-
-##### Thursday Lab:
-
-
-##### Homework:
-
-
-</div>
-<p></p><p></p>
-
-[//]: # (*******************************************************************************************************************)
-
-
-<button type="button" class="collapsible">
-Week 44: Build and pilot an experiment 2
-</button>
-<div class="content">
-
-##### Tuesday Lecture:
-
-
 ##### Thursday Lab:
 
 
@@ -275,7 +278,7 @@ Week 44: Build and pilot an experiment 2
 
 
 <button type="button" class="collapsible">
-Week 45: Build and pilot an experiment 3
+Week 45: Build and pilot an experiment 2
 </button>
 <div class="content">
 
