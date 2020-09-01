@@ -30,7 +30,7 @@ Week 36: Introduction
 
 ##### Homework:
 
-- Read chapters from Navarro & Foxcroft (2018)
+- Read chapters from <a href="https://learnstatswithjasp.com" target="_blank"> Navarro, Foxcroft & Faulkenberry (2019) </a>
 	- Chapter 1
 	- Chapter 2
 - Read chapters from Hinklelman & Kempthorne (2008)
