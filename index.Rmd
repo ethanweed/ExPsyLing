@@ -25,7 +25,7 @@ Week 36: Introduction
 
 ##### Thursday Lab:
 
-- Run in-class online memory-span experiment
+- Participate in-class online memory-span experiment
 - Discuss infrastructure involved in an online experiment
 
 ##### Homework:
