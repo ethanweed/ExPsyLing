@@ -431,6 +431,9 @@ PA 5
 </div>
 <p></p><p></p>
 
+<a href="https://drive.google.com/drive/folders/1M2FJjgKZ46uZPs0SJlCv_Icjqs7zSf_d?usp=sharing" target="_blank"> Slides </a>
+
+<a href="https://ethanweed.github.io/teaching/Recommendations.html" target="_blank">Recommended Textbooks and Software</a>
 
 
 
