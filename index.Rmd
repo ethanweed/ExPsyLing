@@ -56,8 +56,8 @@ Week 37: Experimental Design 1
 ##### Tuesday Lecture:
 - Discuss experimental design at the conceptual level (chapters from Hinklelman & Kempthorne, 2008; Navarro & Foxcroft, 2018)
 - Discussion on operationalization
-	- DV's
-	- IV's
+  - Predictor and Outcome variables (IV's and DV's)
+	- Scales of measurement (Nominal, Ordinal, Interval, Ratio)
 	- Randomization
 	- Controls
 	- Samples and populations
