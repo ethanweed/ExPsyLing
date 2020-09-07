@@ -95,8 +95,8 @@ Week 38: Experimental Design 2
 
 		
 ##### Homework:
-- **Porfolio Assignment 1** (due next week):
-		- Summarize a published experiment (Loosli et al (2012):    
+- **Porfolio Assignment 1** (due next week):  
+		- 1-2 page summary of a published experiment (Loosli et al (2012):    
 			- Justification  
 			- Operationalization  
 				- Participants (demographic data)  
