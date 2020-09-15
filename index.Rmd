@@ -90,8 +90,7 @@ Week 38: Experimental Design 2
 - Discuss how Sternberg justifies and operationalizes his experiment
 	
 ##### Thursday Lab:
-- Brainstorm how to construct a task that would measure whether we access working memory in serial or parallel
-- Discuss how this could be implemented in OpenSesame
+- Create Sternberg task together in OpenSesame
 
 		
 ##### Homework:
