@@ -138,8 +138,10 @@ PA 1 due
 	- logic of NHST
 
 ##### Thursday Lab:
-- Build a Sternberg experiment in OpenSesame together
-- Everyone runs their Sternberg experiment locally on their computer and uploads their data
+- We do t-tests on our Sternberg data
+  - Prepare the data
+  - Analyze the data
+  - Interpret the results
 
 ##### Homework:
 - Read Navarro et al (2019) chapter 10
@@ -162,21 +164,17 @@ Week 40: Models of Working Memory
 
 ##### Tuesday Lecture:
 - Discuss PA1
-- Review logic of NHST
-
 
 
 ##### Thursday Lab:
-- t-tests
-- We do t-tests together in JASP
-- We do t-tests on our Sternberg data
+- Visualizing data in R
+- Analyze a provided dataset (t-test)
+    - Do analysis in JASP
+    - Produce an appropriate figure
+    - Report the results in APA style
 
 
 ##### Homework:
-- Analyze a provided dataset (t-test)
-  - Do analysis in JASP
-  - Produce an appropriate figure
-  - Report the results in APA style
 - Read Navarro et al (2019) chapter 12 (Sections 12.1 - 12.5)
 - **Porfolio Assignment 2** (due next week):
   - Find a working memory or attention experiment (or portion of an experiment) that you will replicate using OpenSesame
