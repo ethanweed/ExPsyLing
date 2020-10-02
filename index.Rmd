@@ -183,7 +183,11 @@ Week 40: Models of Working Memory
       - What is the response?
       - How will your version differ from the original?
       - Other important details?
-
+- Analyze a provided dataset (ANOVA)
+  - Do analysis in JASP
+  - Produce an appropriate figure
+  - Report the results in APA style
+  
 </div>
 <p></p><p></p>
 
@@ -197,18 +201,15 @@ PA 2 due
 <div class="content">
 
 ##### Tuesday Lecture:
-- Review t-tests
-- Cumulative Science: meta-analysis
+- Cumulative Science
+  - open science
+  - meta-analysis
 
 ##### Thursday Lab:
-- ANOVAs
-- We do ANOVAs together in JASP
+- Correlation and regression
 
 ##### Homework:
-- Analyze a provided dataset (ANOVA)
-  - Do analysis in JASP
-  - Produce an appropriate figure
-  - Report the results in APA style
+
 - Read Navarro et al (2019) chapter 11 (sections 11.1 - 11.3)
 
 </div>
@@ -248,8 +249,7 @@ Week 43: Analysis 3: Refining a research question
 
 
 ##### Thursday Lab:
-- Correlations
-- We do correlations together in JASP
+- We build an experiment together in OpenSesame
 
 ##### Homework:
 - **Porfolio Assignment 3** (due next week):
