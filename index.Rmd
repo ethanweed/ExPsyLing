@@ -432,6 +432,7 @@ PA 5
 
 <a href="https://ethanweed.github.io/teaching/Recommendations.html" target="_blank">Recommended Textbooks and Software</a>
 
+<a href="WorkingMemory/Baddeley_Chapter1.html">Baddeley Experiments </a>
 
 
 
