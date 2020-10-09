@@ -243,13 +243,19 @@ Week 43: Analysis 3: Refining a research question
 
 
 ##### Tuesday Lecture:
-- review ANOVAs
+- Correlation and regression
 - Refining research questions
+  - Confounds
+  - Blocking trials
+  - Counter-balancing
 
 
 
 ##### Thursday Lab:
 - We build an experiment together in OpenSesame
+  - Executive function task (Stroop)
+  - Blocked trials
+  - Counter-balanced trial
 
 ##### Homework:
 - **Porfolio Assignment 3** (due next week):
