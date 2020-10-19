@@ -243,6 +243,7 @@ Week 43: Analysis 3: Refining a research question
 
 
 ##### Tuesday Lecture:
+- Mid-semester course evaluation
 - Correlation and regression
 - Refining research questions
   - Confounds
