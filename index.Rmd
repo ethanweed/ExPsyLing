@@ -352,6 +352,7 @@ Week 47: Analyze your data
 
 ##### Thursday Lab:
 
+- Data Wrangling and Analysis help
 
 ##### Homework:
 - **Porfolio Assignment 4** (due next week):
