@@ -299,7 +299,7 @@ Week 45: Build and pilot an experiment 2
 <div class="content">
 
 ##### Tuesday Lecture:
-- Discuss PA3
+- 
 
 
 ##### Thursday Lab:
@@ -322,9 +322,12 @@ Week 46: Run your experiment
 <div class="content">
 
 ##### Tuesday Lecture:
-- Reading and Working Memory
+
+- Attention and Working Memory
 
 ##### Thursday Lab:
+
+- Data Wrangling with R
 
 
 ##### Homework:
@@ -344,6 +347,7 @@ Week 47: Analyze your data
 <div class="content">
 
 ##### Tuesday Lecture:
+- Reading and Working Memory
 - Research ethics
 
 ##### Thursday Lab:
