@@ -1,0 +1,1098 @@
+---
+API: 2.1
+OpenSesame: 3.3.3
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title "New experiment"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:/Users/aehga/OneDrive/Dokumenter/AU/Experimental psycholinguistics/Portfolio"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background black
+
+define keyboard_response Alder
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "0;1;2;3;4;5;6;7;8;9"
+
+define sketchpad Deltager_alder
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="Hej og velkommen!<br /><br />Du skal deltage i et psykologisk eksperiment.<br /><br />Før vi går i gang vil vi gerne have lidt info om dig." x=0 y=-256 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Marker venligst, hvor gammel du er.<br /><br />18-20 år gammel tryk '1'<br /><br />21-25 år gammel tryk '2'<br /><br />26-30 år gammel tryk '3'<br /><br />31-35 år gammel tryk '4'<br /><br />36-40 år gammel tryk '5'<br /><br />41-45 år gammel tryk '6'<br /><br />46-50 år gammel tryk '7'<br /><br />51-55 år gammel tryk '8'<br /><br />56+   år gammel tryk '9'<br /><br />Hvis du ikke ønsker at besvare spørgsmålet tryk '0'" x=0 y=96 z_index=0
+
+define sketchpad Deltager_sex
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Oplys venligst dit køn.<br /><br />Tryk på '1' hvis du er mand<br /><br />Tryk på '2' hvis du er kvinde<br /><br />Tryk på '3' hvis ingen af de ovenstående beskriver dig<br /><br />Tryk på '0' hvis du ikke ønsker at svare" x=0 y=-32 z_index=0
+
+define sketchpad FB_fork
+	set duration "[fb_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=red font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Forkert!<br />Prøv igen!" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="Gør dig klar til den næste runde" x=0 y=160 z_index=0
+
+define sketchpad FB_fork_1
+	set duration 2000
+	set description "Displays stimuli"
+	draw textline center=1 color=red font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Forkert!!!<br />Dø i helvede!!" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="Gør dig klar til den næste runde" x=0 y=160 z_index=0
+
+define sketchpad FB_rigtig
+	set duration "[fb_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=green font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Rigtigt!<br />Godt gået!" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="Gør dig klar til den næste runde" x=7 y=178 z_index=0
+
+define sketchpad FB_rigtig_1
+	set duration 2000
+	set description "Displays stimuli"
+	draw textline center=1 color=green font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Rigtigt!!<br />Godt gået!" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="Gør dig klar til den næste runde" x=7 y=178 z_index=0
+
+define sketchpad Instruktioner
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=23 html=yes show_if=always text="Du skal deltage i et hukommelses-eksperiment.<br /><br />I hver runde bliver du præsenteret for to sekvenser á 6 ord.<br />Den første sekvens vises i 5 sekunder<br />Herefter kommer der en pause.<br />Til sidst vises den anden sekvens i 5 sekunder.<br />du skal bedømme, om rækkefølgen af ordene var ens i de to sekvenser.<br /><br />Hvis de to sekvenser er ens skal du trykke på højre-pilen<br /><br />Hvis de to sekvenser er forskellige skal du trykke på venstre-pilen<br /><br />Du kan svare lige så snart anden sekvens vises" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Velkommen!<br />" x=13 y=-220 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Tryk på en knap for at fortsætte" x=1 y=272 z_index=0
+
+define inline_javascript Kode
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	//DENNE SEKTION ER ÆNDRET OG DELT OP I 6 STYKKER, se def_ord_x
+	//Opdeler sekvens-variablen i 6 dele
+	//vars.Ord_1r = vars(vars.sekvens.toString().charAt(0))
+	//vars.Ord_2r = vars(vars.sekvens.toString().charAt(1))
+	//vars.Ord_3r = vars(vars.sekvens.toString().charAt(2))
+	//vars.Ord_4r = vars(vars.sekvens.toString().charAt(3))
+	//vars.Ord_5r = vars(vars.sekvens.toString().charAt(4))
+	//vars.Ord_6r = vars(vars.sekvens.toString().charAt(5))
+	
+	
+	//Bestemmer correct_response ud fra condition
+	vars.correct_response = "left"
+	if(vars.condition =="0") {
+	vars.correct_response = "right"}
+	
+	
+	//Varierer pause_tid hver anden gang
+	vars.pause_tid = 1000
+	if(vars.live_row % 2 == 0){
+	vars.pause_tid = 5000}
+	__end__
+
+define sketchpad Langsom
+	set duration "[fb_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=red font_bold=no font_family=mono font_italic=no font_size=50 html=yes show_if=always text="Du var for langsom!" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="Prøv at være lidt hurtigere næste gang <3<br /><br /><br /><br /><br />Gør dig klar til næste runde." x=0 y=160 z_index=0
+
+define sketchpad byt_1_3
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_3], [Ord_2], [Ord_1], [Ord_4], [Ord_5], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad byt_1_3_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_3]], [[Ord_2]], [[Ord_1]], [[Ord_4]], [[Ord_5]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad byt_1_5
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_5], [Ord_2], [Ord_3], [Ord_4], [Ord_1], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad byt_1_5_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_5]], [[Ord_2]], [[Ord_3]], [[Ord_4]], [[Ord_1]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad byt_2_4
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_4], [Ord_3], [Ord_2], [Ord_5], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad byt_2_4_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_4]], [[Ord_3]], [[Ord_2]], [[Ord_5]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad byt_2_6
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_6], [Ord_3], [Ord_4], [Ord_5], [Ord_2]" x=0 y=0 z_index=0
+
+define sketchpad byt_2_6_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_6]], [[Ord_3]], [[Ord_4]], [[Ord_5]], [[Ord_2]]" x=0 y=0 z_index=0
+
+define sketchpad byt_3_5
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_2], [Ord_5], [Ord_4], [Ord_3], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad byt_3_5_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_2]], [[Ord_5]], [[Ord_4]], [[Ord_3]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad byt_4_6
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_2], [Ord_3], [Ord_6], [Ord_5], [Ord_4]" x=0 y=0 z_index=0
+
+define sketchpad byt_4_6_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_2]], [[Ord_3]], [[Ord_6]], [[Ord_5]], [[Ord_4]]" x=0 y=0 z_index=0
+
+define inline_javascript def_ord_1
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_1r = vars.sekvens.toString().charAt(0)
+	
+	//korte ord
+	if(vars.Ord_1r == "a") {
+	vars.Ord_1 = vars.a}
+	
+	if(vars.Ord_1r == "b") {
+	vars.Ord_1 = vars.b}
+	
+	if(vars.Ord_1r == "c") {
+	vars.Ord_1 = vars.c}
+	
+	if(vars.Ord_1r == "d") {
+	vars.Ord_1 = vars.d}
+	
+	if(vars.Ord_1r == "e") {
+	vars.Ord_1 = vars.e}
+	
+	if(vars.Ord_1r == "f") {
+	vars.Ord_1 = vars.f}
+	
+	if(vars.Ord_1r == "g") {
+	vars.Ord_1 = vars.g}
+	
+	if(vars.Ord_1r == "h") {
+	vars.Ord_1 = vars.h}
+	
+	if(vars.Ord_1r == "i") {
+	vars.Ord_1 = vars.i}
+	
+	if(vars.Ord_1r == "j") {
+	vars.Ord_1 = vars.j}
+	
+	
+	//lange ord
+	if(vars.Ord_1r == "A") {
+	vars.Ord_1 = vars.A}
+	
+	if(vars.Ord_1r == "B") {
+	vars.Ord_1 = vars.B}
+	
+	if(vars.Ord_1r == "C") {
+	vars.Ord_1 = vars.C}
+	
+	if(vars.Ord_1r == "D") {
+	vars.Ord_1 = vars.D}
+	
+	if(vars.Ord_1r == "E") {
+	vars.Ord_1 = vars.E}
+	
+	if(vars.Ord_1r == "F") {
+	vars.Ord_1 = vars.F}
+	
+	if(vars.Ord_1r == "G") {
+	vars.Ord_1 = vars.G}
+	
+	if(vars.Ord_1r == "H") {
+	vars.Ord_1 = vars.H}
+	
+	if(vars.Ord_1r == "I") {
+	vars.Ord_1 = vars.I}
+	
+	if(vars.Ord_1r == "J") {
+	vars.Ord_1 = vars.J}
+	__end__
+
+define inline_javascript def_ord_2
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_2r = vars.sekvens.toString().charAt(1)
+	
+	if(vars.Ord_2r == "a") {
+	vars.Ord_2 = vars.a}
+	
+	if(vars.Ord_2r == "b") {
+	vars.Ord_2 = vars.b}
+	
+	if(vars.Ord_2r == "c") {
+	vars.Ord_2 = vars.c}
+	
+	if(vars.Ord_2r == "d") {
+	vars.Ord_2 = vars.d}
+	
+	if(vars.Ord_2r == "e") {
+	vars.Ord_2 = vars.e}
+	
+	if(vars.Ord_2r == "f") {
+	vars.Ord_2 = vars.f}
+	
+	if(vars.Ord_2r == "g") {
+	vars.Ord_2 = vars.g}
+	
+	if(vars.Ord_2r == "h") {
+	vars.Ord_2 = vars.h}
+	
+	if(vars.Ord_2r == "i") {
+	vars.Ord_2 = vars.i}
+	
+	if(vars.Ord_2r == "j") {
+	vars.Ord_2 = vars.j}
+	
+	
+	
+	//lange ord
+	
+	if(vars.Ord_2r == "A") {
+	vars.Ord_2 = vars.A}
+	
+	if(vars.Ord_2r == "B") {
+	vars.Ord_2 = vars.B}
+	
+	if(vars.Ord_2r == "C") {
+	vars.Ord_2 = vars.C}
+	
+	if(vars.Ord_2r == "D") {
+	vars.Ord_2 = vars.D}
+	
+	if(vars.Ord_2r == "E") {
+	vars.Ord_2 = vars.E}
+	
+	if(vars.Ord_2r == "F") {
+	vars.Ord_2 = vars.F}
+	
+	if(vars.Ord_2r == "G") {
+	vars.Ord_2 = vars.G}
+	
+	if(vars.Ord_2r == "H") {
+	vars.Ord_2 = vars.H}
+	
+	if(vars.Ord_2r == "I") {
+	vars.Ord_2 = vars.I}
+	
+	if(vars.Ord_2r == "J") {
+	vars.Ord_2 = vars.J}
+	__end__
+
+define inline_javascript def_ord_3
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_3r = vars.sekvens.toString().charAt(2)
+	
+	//Korte ord
+	if(vars.Ord_3r == "a") {
+	vars.Ord_3 = vars.a}
+	
+	if(vars.Ord_3r == "b") {
+	vars.Ord_3 = vars.b}
+	
+	if(vars.Ord_3r == "c") {
+	vars.Ord_3 = vars.c}
+	
+	if(vars.Ord_3r == "d") {
+	vars.Ord_3 = vars.d}
+	
+	if(vars.Ord_3r == "e") {
+	vars.Ord_3 = vars.e}
+	
+	if(vars.Ord_3r == "f") {
+	vars.Ord_3 = vars.f}
+	
+	if(vars.Ord_3r == "g") {
+	vars.Ord_3 = vars.g}
+	
+	if(vars.Ord_3r == "h") {
+	vars.Ord_3 = vars.h}
+	
+	if(vars.Ord_3r == "i") {
+	vars.Ord_3 = vars.i}
+	
+	if(vars.Ord_3r == "j") {
+	vars.Ord_3 = vars.j}
+	
+	
+	
+	//Lange ord
+	if(vars.Ord_3r == "A") {
+	vars.Ord_3 = vars.A}
+	
+	if(vars.Ord_3r == "B") {
+	vars.Ord_3 = vars.B}
+	
+	if(vars.Ord_3r == "C") {
+	vars.Ord_3 = vars.C}
+	
+	if(vars.Ord_3r == "D") {
+	vars.Ord_3 = vars.D}
+	
+	if(vars.Ord_3r == "E") {
+	vars.Ord_3 = vars.E}
+	
+	if(vars.Ord_3r == "F") {
+	vars.Ord_3 = vars.F}
+	
+	if(vars.Ord_3r == "G") {
+	vars.Ord_3 = vars.G}
+	
+	if(vars.Ord_3r == "H") {
+	vars.Ord_3 = vars.H}
+	
+	if(vars.Ord_3r == "I") {
+	vars.Ord_3 = vars.I}
+	
+	if(vars.Ord_3r == "J") {
+	vars.Ord_3 = vars.J}
+	__end__
+
+define inline_javascript def_ord_4
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_4r = vars.sekvens.toString().charAt(3)
+	
+	//korte ord
+	if(vars.Ord_4r == "a") {
+	vars.Ord_4 = vars.a}
+	
+	if(vars.Ord_4r == "b") {
+	vars.Ord_4 = vars.b}
+	
+	if(vars.Ord_4r == "c") {
+	vars.Ord_4 = vars.c}
+	
+	if(vars.Ord_4r == "d") {
+	vars.Ord_4 = vars.d}
+	
+	if(vars.Ord_4r == "e") {
+	vars.Ord_4 = vars.e}
+	
+	if(vars.Ord_4r == "f") {
+	vars.Ord_4 = vars.f}
+	
+	if(vars.Ord_4r == "g") {
+	vars.Ord_4 = vars.g}
+	
+	if(vars.Ord_4r == "h") {
+	vars.Ord_4 = vars.h}
+	
+	if(vars.Ord_4r == "i") {
+	vars.Ord_4 = vars.i}
+	
+	if(vars.Ord_4r == "j") {
+	vars.Ord_4 = vars.j}
+	
+	
+	
+	//Lange ord
+	if(vars.Ord_4r == "A") {
+	vars.Ord_4 = vars.A}
+	
+	if(vars.Ord_4r == "B") {
+	vars.Ord_4 = vars.B}
+	
+	if(vars.Ord_4r == "C") {
+	vars.Ord_4 = vars.C}
+	
+	if(vars.Ord_4r == "D") {
+	vars.Ord_4 = vars.D}
+	
+	if(vars.Ord_4r == "E") {
+	vars.Ord_4 = vars.E}
+	
+	if(vars.Ord_4r == "F") {
+	vars.Ord_4 = vars.F}
+	
+	if(vars.Ord_4r == "G") {
+	vars.Ord_4 = vars.G}
+	
+	if(vars.Ord_4r == "H") {
+	vars.Ord_4 = vars.H}
+	
+	if(vars.Ord_4r == "I") {
+	vars.Ord_4 = vars.I}
+	
+	if(vars.Ord_4r == "J") {
+	vars.Ord_4 = vars.J}
+	__end__
+
+define inline_javascript def_ord_5
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_5r = vars.sekvens.toString().charAt(4)
+	
+	//Korte ord
+	if(vars.Ord_5r == "a") {
+	vars.Ord_5 = vars.a}
+	
+	if(vars.Ord_5r == "b") {
+	vars.Ord_5 = vars.b}
+	
+	if(vars.Ord_5r == "c") {
+	vars.Ord_5 = vars.c}
+	
+	if(vars.Ord_5r == "d") {
+	vars.Ord_5 = vars.d}
+	
+	if(vars.Ord_5r == "e") {
+	vars.Ord_5 = vars.e}
+	
+	if(vars.Ord_5r == "f") {
+	vars.Ord_5 = vars.f}
+	
+	if(vars.Ord_5r == "g") {
+	vars.Ord_5 = vars.g}
+	
+	if(vars.Ord_5r == "h") {
+	vars.Ord_5 = vars.h}
+	
+	if(vars.Ord_5r == "i") {
+	vars.Ord_5 = vars.i}
+	
+	if(vars.Ord_5r == "j") {
+	vars.Ord_5 = vars.j}
+	
+	
+	
+	//Lange ord
+	if(vars.Ord_5r == "A") {
+	vars.Ord_5 = vars.A}
+	
+	if(vars.Ord_5r == "B") {
+	vars.Ord_5 = vars.B}
+	
+	if(vars.Ord_5r == "C") {
+	vars.Ord_5 = vars.C}
+	
+	if(vars.Ord_5r == "D") {
+	vars.Ord_5 = vars.D}
+	
+	if(vars.Ord_5r == "E") {
+	vars.Ord_5 = vars.E}
+	
+	if(vars.Ord_5r == "F") {
+	vars.Ord_5 = vars.F}
+	
+	if(vars.Ord_5r == "G") {
+	vars.Ord_5 = vars.G}
+	
+	if(vars.Ord_5r == "H") {
+	vars.Ord_5 = vars.H}
+	
+	if(vars.Ord_5r == "I") {
+	vars.Ord_5 = vars.I}
+	
+	if(vars.Ord_5r == "J") {
+	vars.Ord_5 = vars.J}
+	__end__
+
+define inline_javascript def_ord_6
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.Ord_6r = vars.sekvens.toString().charAt(5)
+	
+	//Korte ord
+	if(vars.Ord_6r == "a") {
+	vars.Ord_6 = vars.a}
+	
+	if(vars.Ord_6r == "b") {
+	vars.Ord_6 = vars.b}
+	
+	if(vars.Ord_6r == "c") {
+	vars.Ord_6 = vars.c}
+	
+	if(vars.Ord_6r == "d") {
+	vars.Ord_6 = vars.d}
+	
+	if(vars.Ord_6r == "e") {
+	vars.Ord_6 = vars.e}
+	
+	if(vars.Ord_6r == "f") {
+	vars.Ord_6 = vars.f}
+	
+	if(vars.Ord_6r == "g") {
+	vars.Ord_6 = vars.g}
+	
+	if(vars.Ord_6r == "h") {
+	vars.Ord_6 = vars.h}
+	
+	if(vars.Ord_6r == "i") {
+	vars.Ord_6 = vars.i}
+	
+	if(vars.Ord_6r == "j") {
+	vars.Ord_6 = vars.j}
+	
+	
+	
+	//Lange ord
+	if(vars.Ord_6r == "A") {
+	vars.Ord_6 = vars.A}
+	
+	if(vars.Ord_6r == "B") {
+	vars.Ord_6 = vars.B}
+	
+	if(vars.Ord_6r == "C") {
+	vars.Ord_6 = vars.C}
+	
+	if(vars.Ord_6r == "D") {
+	vars.Ord_6 = vars.D}
+	
+	if(vars.Ord_6r == "E") {
+	vars.Ord_6 = vars.E}
+	
+	if(vars.Ord_6r == "F") {
+	vars.Ord_6 = vars.F}
+	
+	if(vars.Ord_6r == "G") {
+	vars.Ord_6 = vars.G}
+	
+	if(vars.Ord_6r == "H") {
+	vars.Ord_6 = vars.H}
+	
+	if(vars.Ord_6r == "I") {
+	vars.Ord_6 = vars.I}
+	
+	if(vars.Ord_6r == "J") {
+	vars.Ord_6 = vars.J}
+	__end__
+
+define inline_javascript def_ord_og_tid
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	//tider
+	vars.ord_tid = 5000
+	vars.dot_tid = 1000
+	//bestemmer tiden på refresh pausen, der giver brugeren lidt mere tid til at nulstille efter hvert forsøg
+	vars.rf_tid = 500
+	vars.fb_tid = 2000
+	
+	//korte ord
+	vars.a = "stok"
+	vars.b = "rust"
+	vars.c = "frø"
+	vars.d = "brus"
+	vars.e = "søm"
+	vars.f = "telt"
+	vars.g = "ur"
+	vars.h = "ged"
+	vars.i = "sut"
+	vars.j = "mos"
+	
+	//lange ord
+	vars.A = "gennemgang"
+	vars.B = "kongehus"
+	vars.C = "sønderjysk"
+	vars.D = "toilet"
+	vars.E = "diamant"
+	vars.F = "terasse"
+	vars.G = "pianist"
+	vars.H = "juletræ"
+	vars.I = "eksistens"
+	vars.J = "appelsin"
+	
+	
+	//test korte ord
+	//vars.a = "1"
+	//vars.b = "2"
+	//vars.c = "3"
+	//vars.d = "4"
+	//vars.e = "5"
+	//vars.f = "6"
+	//vars.g = "7"
+	//vars.h = "8"
+	//vars.i = "9"
+	//vars.j = "T"
+	__end__
+
+define sketchpad dot
+	set duration "[dot_tid]"
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad dot_1
+	set duration "[dot_tid]"
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define feedback exp_fb
+	set reset_variables yes
+	set duration keypress
+	set description "Provides feedback to the participant"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="Din gennemsnitlige reaktionstid var [avg_rt]ms<br /><br />Du havde [acc]% rigtige" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Tryk på en knap for at afslutte" x=0 y=160 z_index=0
+
+define sketchpad exp_intro
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Den næste del er eksperimentet<br /><br />Tryk på en knap når du er klar til at starte" x=0 y=0 z_index=0
+
+define loop exp_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 40
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sekvens hcbdef
+	setcycle 0 condition 0
+	setcycle 0 tilstand experiment
+	setcycle 0 word_length kort
+	setcycle 1 sekvens cbageh
+	setcycle 1 condition 2
+	setcycle 1 tilstand experiment
+	setcycle 1 word_length kort
+	setcycle 2 sekvens abcdfi
+	setcycle 2 condition 0
+	setcycle 2 tilstand experiment
+	setcycle 2 word_length kort
+	setcycle 3 sekvens icjegf
+	setcycle 3 condition 0
+	setcycle 3 tilstand experiment
+	setcycle 3 word_length kort
+	setcycle 4 sekvens dahfeg
+	setcycle 4 condition 5
+	setcycle 4 tilstand experiment
+	setcycle 4 word_length kort
+	setcycle 5 sekvens abcdef
+	setcycle 5 condition 1
+	setcycle 5 tilstand experiment
+	setcycle 5 word_length kort
+	setcycle 6 sekvens jfghab
+	setcycle 6 condition 0
+	setcycle 6 tilstand experiment
+	setcycle 6 word_length kort
+	setcycle 7 sekvens cdabfe
+	setcycle 7 condition 2
+	setcycle 7 tilstand experiment
+	setcycle 7 word_length kort
+	setcycle 8 sekvens hcbdef
+	setcycle 8 condition 3
+	setcycle 8 tilstand experiment
+	setcycle 8 word_length kort
+	setcycle 9 sekvens cbaghe
+	setcycle 9 condition 6
+	setcycle 9 tilstand experiment
+	setcycle 9 word_length kort
+	setcycle 10 sekvens ABCDEFI
+	setcycle 10 condition 0
+	setcycle 10 tilstand experiment
+	setcycle 10 word_length lang
+	setcycle 11 sekvens ICJEGF
+	setcycle 11 condition 4
+	setcycle 11 tilstand experiment
+	setcycle 11 word_length lang
+	setcycle 12 sekvens DAHFEG
+	setcycle 12 condition 1
+	setcycle 12 tilstand experiment
+	setcycle 12 word_length lang
+	setcycle 13 sekvens CABDEF
+	setcycle 13 condition 5
+	setcycle 13 tilstand experiment
+	setcycle 13 word_length lang
+	setcycle 14 sekvens JFGHAB
+	setcycle 14 condition 3
+	setcycle 14 tilstand experiment
+	setcycle 14 word_length lang
+	setcycle 15 sekvens CDABFE
+	setcycle 15 condition 0
+	setcycle 15 tilstand experiment
+	setcycle 15 word_length lang
+	setcycle 16 sekvens IHACDE
+	setcycle 16 condition 4
+	setcycle 16 tilstand experiment
+	setcycle 16 word_length lang
+	setcycle 17 sekvens ECBFAD
+	setcycle 17 condition 3
+	setcycle 17 tilstand experiment
+	setcycle 17 word_length lang
+	setcycle 18 sekvens IHAEDC
+	setcycle 18 condition 6
+	setcycle 18 tilstand experiment
+	setcycle 18 word_length lang
+	setcycle 19 sekvens CEFIJH
+	setcycle 19 condition 0
+	setcycle 19 tilstand experiment
+	setcycle 19 word_length lang
+	setcycle 20 sekvens acefih
+	setcycle 20 condition 0
+	setcycle 20 tilstand experiment
+	setcycle 20 word_length kort
+	setcycle 21 sekvens ihcabd
+	setcycle 21 condition 1
+	setcycle 21 tilstand experiment
+	setcycle 21 word_length kort
+	setcycle 22 sekvens ecfabi
+	setcycle 22 condition 5
+	setcycle 22 tilstand experiment
+	setcycle 22 word_length kort
+	setcycle 23 sekvens jaedcb
+	setcycle 23 condition 0
+	setcycle 23 tilstand experiment
+	setcycle 23 word_length kort
+	setcycle 24 sekvens bacihj
+	setcycle 24 condition 4
+	setcycle 24 tilstand experiment
+	setcycle 24 word_length kort
+	setcycle 25 sekvens hajibc
+	setcycle 25 condition 6
+	setcycle 25 tilstand experiment
+	setcycle 25 word_length kort
+	setcycle 26 sekvens hijabd
+	setcycle 26 condition 1
+	setcycle 26 tilstand experiment
+	setcycle 26 word_length kort
+	setcycle 27 sekvens acdjih
+	setcycle 27 condition 0
+	setcycle 27 tilstand experiment
+	setcycle 27 word_length kort
+	setcycle 28 sekvens cijbad
+	setcycle 28 condition 3
+	setcycle 28 tilstand experiment
+	setcycle 28 word_length kort
+	setcycle 29 sekvens habidj
+	setcycle 29 condition 0
+	setcycle 29 tilstand experiment
+	setcycle 29 word_length kort
+	setcycle 30 sekvens ACEFIH
+	setcycle 30 condition 2
+	setcycle 30 tilstand experiment
+	setcycle 30 word_length lang
+	setcycle 31 sekvens IHCABD
+	setcycle 31 condition 0
+	setcycle 31 tilstand experiment
+	setcycle 31 word_length lang
+	setcycle 32 sekvens JEDFCB
+	setcycle 32 condition 5
+	setcycle 32 tilstand experiment
+	setcycle 32 word_length lang
+	setcycle 33 sekvens JAEDCB
+	setcycle 33 condition 1
+	setcycle 33 tilstand experiment
+	setcycle 33 word_length lang
+	setcycle 34 sekvens BACIHJ
+	setcycle 34 condition 0
+	setcycle 34 tilstand experiment
+	setcycle 34 word_length lang
+	setcycle 35 sekvens HIJABD
+	setcycle 35 condition 0
+	setcycle 35 tilstand experiment
+	setcycle 35 word_length lang
+	setcycle 36 sekvens ACDJIH
+	setcycle 36 condition 4
+	setcycle 36 tilstand experiment
+	setcycle 36 word_length lang
+	setcycle 37 sekvens CIJBAD
+	setcycle 37 condition 6
+	setcycle 37 tilstand experiment
+	setcycle 37 word_length lang
+	setcycle 38 sekvens HABIDJ
+	setcycle 38 condition 5
+	setcycle 38 tilstand experiment
+	setcycle 38 word_length lang
+	setcycle 39 sekvens ALEBCI
+	setcycle 39 condition 0
+	setcycle 39 tilstand experiment
+	setcycle 39 word_length lang
+	run training_seq
+
+define sequence exp_seq
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run dot_1 always
+	run ord_1 always
+	run pause_1 always
+	run samme_1 "[condition]=0"
+	run byt_1_3_1 "[condition]=1"
+	run byt_1_5_1 "[condition]=2"
+	run byt_3_5_1 "[condition]=3"
+	run byt_2_4_1 "[condition]=4"
+	run byt_2_6_1 "[condition]=5"
+	run byt_4_6_1 "[condition]=6"
+	run new_keyboard_response_1_1 always
+	run new_logger_1 always
+	run FB_rigtig_1 "[correct]=1"
+	run FB_fork_1 "[correct]=0"
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run def_ord_og_tid always
+	run Deltager_alder always
+	run Alder always
+	run Deltager_sex always
+	run sex always
+	run Instruktioner always
+	run train_intro always
+	run training_loop always
+	run train_fb always
+	run exp_intro always
+	run exp_loop always
+	run new_sketchpad always
+	run exp_fb always
+
+define loop kort_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 4
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 Ord_1 a
+	setcycle 0 Ord_2 b
+	setcycle 0 Ord_3 c
+	setcycle 0 Ord_4 d
+	setcycle 0 Ord_5 e
+	setcycle 0 Ord_6 f
+	setcycle 1 Ord_1 b
+	setcycle 1 Ord_2 c
+	setcycle 1 Ord_3 d
+	setcycle 1 Ord_4 e
+	setcycle 1 Ord_5 f
+	setcycle 1 Ord_6 g
+	setcycle 2 Ord_1 c
+	setcycle 2 Ord_2 d
+	setcycle 2 Ord_3 e
+	setcycle 2 Ord_4 f
+	setcycle 2 Ord_5 g
+	setcycle 2 Ord_6 h
+	setcycle 3 Ord_1 d
+	setcycle 3 Ord_2 e
+	setcycle 3 Ord_3 f
+	setcycle 3 Ord_4 g
+	setcycle 3 Ord_5 h
+	setcycle 3 Ord_6 i
+	run new_sequence_1
+
+define feedback new_feedback_1
+	set reset_variables yes
+	set duration keypress
+	set description "Provides feedback to the participant"
+
+define keyboard_response new_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response new_keyboard_response_1_1
+	set timeout 5000
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "left;right"
+
+define logger new_logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define logger new_logger_1
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sequence new_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run new_sketchpad_1_1 always
+	run new_sketchpad_2 always
+
+define sketchpad new_sketchpad
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Eksperimentet er nu slut.<br /><br />Mange tak for din deltagelse!" x=0 y=-32 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Tryk på en knap for at fortsætte" x=0 y=224 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="xoxo Mathilde, Nanna, Hjalte og Anton" x=0 y=96 z_index=0
+
+define sketchpad new_sketchpad_1_1
+	set duration 500
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad new_sketchpad_2
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_2]], [[Ord_3]], [[Ord_4]], [[Ord_5]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad ord
+	set duration "[ord_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_2], [Ord_3], [Ord_4], [Ord_5], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad ord_1
+	set duration "[ord_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_2]], [[Ord_3]], [[Ord_4]], [[Ord_5]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define sketchpad pause
+	set duration "[pause_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="" x=0 y=0 z_index=0
+	draw circle color="#000000" fill=1 penwidth=1 r=160 show_if=always x=0 y=0 z_index=0
+
+define sketchpad pause_1
+	set duration "[pause_tid]"
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="" x=0 y=0 z_index=0
+
+define sketchpad rf_pause
+	set duration "[rf_tid]"
+	set description "Displays stimuli"
+
+define sketchpad samme
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[Ord_1], [Ord_2], [Ord_3], [Ord_4], [Ord_5], [Ord_6]" x=0 y=0 z_index=0
+
+define sketchpad samme_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[[Ord_1]], [[Ord_2]], [[Ord_3]], [[Ord_4]], [[Ord_5]], [[Ord_6]]" x=0 y=0 z_index=0
+
+define keyboard_response sex
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "0;1;2;3"
+
+define keyboard_response svar_input
+	set timeout "[ord_tid]"
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "left;right"
+
+define feedback train_fb
+	set reset_variables yes
+	set duration keypress
+	set description "Provides feedback to the participant"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="Din gennemsnitlige reaktionstid var [avg_rt]ms<br /><br />Du havde [acc]% rigtige" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Tryk på en knap for at afslutte" x=0 y=160 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Du har nu gennemført træningen" x=0 y=-128 z_index=0
+
+define sketchpad train_intro
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Den første del består af 6 øvelsesrunder<br /><br />Her vil der både indgå sekvenser med korte og lange ord" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Tryk på en knap for at fortsætte" x=0 y=160 z_index=0
+
+define loop training_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 6
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sekvens dfbhei
+	setcycle 0 condition 0
+	setcycle 0 tilstand training
+	setcycle 0 word_length kort
+	setcycle 1 sekvens ghaceb
+	setcycle 1 condition 1
+	setcycle 1 tilstand training
+	setcycle 1 word_length kort
+	setcycle 2 sekvens dicafb
+	setcycle 2 condition 0
+	setcycle 2 tilstand training
+	setcycle 2 word_length kort
+	setcycle 3 sekvens EFJIGC
+	setcycle 3 condition 1
+	setcycle 3 tilstand training
+	setcycle 3 word_length lang
+	setcycle 4 sekvens FGHDEA
+	setcycle 4 condition 0
+	setcycle 4 tilstand training
+	setcycle 4 word_length lang
+	setcycle 5 sekvens DFCAEB
+	setcycle 5 condition 1
+	setcycle 5 tilstand training
+	setcycle 5 word_length lang
+	run training_seq
+
+define sequence training_seq
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Kode always
+	run def_ord_1 always
+	run def_ord_2 always
+	run def_ord_3 always
+	run def_ord_4 always
+	run def_ord_5 always
+	run def_ord_6 always
+	run dot always
+	run ord always
+	run pause always
+	run samme "[condition]=0"
+	run byt_1_3 "[condition]=1"
+	run byt_1_5 "[condition]=2"
+	run byt_3_5 "[condition]=3"
+	run byt_2_4 "[condition]=4"
+	run byt_2_6 "[condition]=5"
+	run byt_4_6 "[condition]=6"
+	run svar_input always
+	run new_logger always
+	run Langsom "[response_svar_input]=None"
+	run FB_rigtig "[correct]=1"
+	run FB_fork "[correct]=0"
+	run rf_pause always
+
