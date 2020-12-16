@@ -1,0 +1,558 @@
+---
+API: 2.1
+OpenSesame: 3.3.5
+Platform: posix
+---
+set width 1024
+set uniform_coordinates yes
+set title "New experiment"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "/Users/ethan/Desktop/JATOS_files/ExPsyLing"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background black
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run native_nonnative_2 always
+	run keyboard_response_native always
+	run logger always
+	run instructions always
+	run information_practice always
+	run practice_block always
+	run short_block always
+	run medium_block always
+	run long_block always
+	run the_end always
+
+define sketchpad fixation
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad fixation_1
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad fixation_2
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad fixation_3
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad get_input_letters
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Type the last word of each sentence <br /><br />Divide them by comma and NOT space<br /><br />Press 'return' when done<br /><br />[multichar_response]" x=9 y=-112 z_index=0
+
+define sketchpad get_input_letters_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Type the last word of each sentence <br /><br />Divide them by comma and NOT space<br /><br />Press 'return' when done<br /><br />[multichar_response]" x=9 y=-112 z_index=0
+
+define sketchpad get_input_letters_2
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Type the last word of each sentence <br /><br />Divide them by comma and NOT space<br /><br />Press 'return' when done<br /><br />[multichar_response]" x=9 y=-112 z_index=0
+
+define sketchpad get_input_letters_3
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Type the last word of each sentence <br /><br />Divide them by comma and NOT space<br /><br />Press 'return' when done<br /><br />[multichar_response]" x=9 y=-112 z_index=0
+
+define loop get_input_loop
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	run get_input_sequence
+
+define loop get_input_loop_1
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	run get_input_sequence_1
+
+define loop get_input_loop_2
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	run get_input_sequence_2
+
+define loop get_input_loop_3
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	run get_input_sequence_3
+
+define sequence get_input_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_letters always
+	run keyboard_response always
+	run process_input always
+
+define sequence get_input_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_letters_1 always
+	run keyboard_response_1 always
+	run process_input_1 always
+
+define sequence get_input_sequence_2
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_letters_2 always
+	run keyboard_response_2 always
+	run process_input_2 always
+
+define sequence get_input_sequence_3
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_letters_3 always
+	run keyboard_response_3 always
+	run process_input_3 always
+
+define sketchpad information_practice
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="You will now do a practice round consisting of three sentences. <br /><br />Press any key when you are ready. " x=0 y=0 z_index=0
+
+define inline_javascript init
+	set description "Executes JavaScript code (ECMA 5.1)"
+	set _run ""
+	___prepare__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+
+define inline_javascript init_1
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+	set _prepare ""
+
+define inline_javascript init_2
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+	set _prepare ""
+
+define inline_javascript init_3
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+	set _prepare ""
+
+define sketchpad instructions
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="You will see rounds of sentences on the screen.<br />Each sentence will be visible for a few seconds.<br /><br />Your goal is to read the sentences, and then recall<br />the LAST word of each sentence at the end of the round. <br /><br />The words do not have to be in a particular order. <br /><br /><br />Press any key to continue<br />" x=0 y=0 z_index=0
+
+define keyboard_response keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response keyboard_response_1
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response keyboard_response_2
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response keyboard_response_3
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response keyboard_response_native
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define loop logger_long_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run logger
+
+define loop logger_loop_practice
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run logger
+
+define loop logger_loop_short
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run logger
+
+define loop logger_medium_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run logger
+
+define sequence long_block
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run long_sequence always
+
+define sequence long_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init_3 always
+	run read_4 always
+	run report_3 always
+
+define sequence medium_block
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run medium_sequence always
+
+define sequence medium_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init_2 always
+	run read_3 always
+	run report_2 always
+
+define sketchpad native_nonnative_2
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=0 color=white font_bold=no font_family=mono font_italic=no font_size=25 html=yes show_if=always text="Are you a native English speaker?<br /><br /><br /><br />1) Yes<br />2) No, but I'm a beginner<br />3) No, but I'm intermediate <br />4) No, but I'm fluent" x=-192.0 y=-128.0 z_index=0
+
+define sequence practice_block
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init always
+	run read always
+	run report always
+
+define inline_javascript process_input
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define inline_javascript process_input_1
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define inline_javascript process_input_2
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define inline_javascript process_input_3
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define sequence read
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run sentences_practice always
+
+define sequence read_2
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run sentences_loop_short always
+
+define sequence read_3
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run sentences_loop_medium always
+
+define sequence read_4
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run sentences_loop_long always
+
+define sequence report
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop always
+	run logger_loop_practice always
+
+define sequence report_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop_1 always
+	run logger_loop_short always
+
+define sequence report_2
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop_2 always
+	run logger_medium_loop always
+
+define sequence report_3
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop_3 always
+	run logger_long_loop always
+
+define loop sentences_loop_long
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 3
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "When he had bought what he needed, he went back home"
+	setcycle 1 sentence "All that work in the house has made me hungry"
+	setcycle 2 sentence "This cream reduces the looks of spots, hyperpigmentation and scarring "
+	run sequences_sequence_long
+
+define loop sentences_loop_medium
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 3
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "I met someone at the bar yesterday"
+	setcycle 1 sentence "The visa is not in my new passport"
+	setcycle 2 sentence "You need to reserve a table for dinner"
+	run sequences_sequence_medium
+
+define loop sentences_loop_short
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 3
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "This band is so underrated"
+	setcycle 1 sentence "She had knee surgery"
+	setcycle 2 sentence "It is raining again"
+	run sentences_sequence_short
+
+define loop sentences_practice
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 3
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "Do not let me down"
+	setcycle 1 sentence "A bird sings outside "
+	setcycle 2 sentence "The cat climbed the tree"
+	run sequences_sequence
+
+define sequence sentences_sequence_short
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run stims_short always
+	run fixation_1 always
+
+define sequence sequences_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run stims_practice always
+	run fixation always
+
+define sequence sequences_sequence_long
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run stims_long always
+	run fixation_3 always
+
+define sequence sequences_sequence_medium
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run stims_medium always
+	run fixation_2 always
+
+define sequence short_block
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run short_sequence always
+
+define sequence short_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init_1 always
+	run read_2 always
+	run report_1 always
+
+define sketchpad stims_long
+	set duration 3000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="[sentence]" x=0 y=0 z_index=0
+
+define sketchpad stims_medium
+	set duration 3000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="[sentence]" x=0 y=0 z_index=0
+
+define sketchpad stims_practice
+	set duration 3000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="[sentence]" x=0 y=0 z_index=0
+
+define sketchpad stims_short
+	set duration 3000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=20 html=yes show_if=always text="[sentence]" x=0 y=0 z_index=0
+
+define sketchpad the_end
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=35 html=yes show_if=always text="The experiment is now over.<br /><br />Thank you for your participation!<br /><br />Press any key to end the experiment" x=0 y=0 z_index=0
+

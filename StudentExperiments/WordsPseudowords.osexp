@@ -1,0 +1,628 @@
+---
+API: 2.1
+OpenSesame: 3.3.3
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title "New experiment"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend psycho
+set round_decimals 2
+set mouse_backend psycho
+set keyboard_backend psycho
+set height 800
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 30
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:/Users/ehjor/OneDrive - Aarhus universitet/Academia/Lingvistik/E2020/ExPsy"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend psycho
+set clock_backend psycho
+set canvas_backend psycho
+set background black
+
+define sketchpad Instructions
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="I dette eksperiment vil du<br /> blive vist en liste <br />af syv ord eller vrøvleord<br /><br />Du vil se listen i 7 sekunder,<br /> hvorefter du bedes angive <br />i hvilken rækkefølge ordene optrådte.<br /> <br />Dette skal du gøre <br />ved at trykke på tallene 1, 2, eller 3<br /> i den rigtige rækkefølge på dit tastatur.<br /><br />Du får mulighed for at øve dig <br />før eksperimentet går rigtigt i gang." x=0 y=-64 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Tryk 'Enter' for at begynde øvelsesdelen." x=0 y=287 z_index=0
+
+define sketchpad break
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="Øvelsesdelen er nu færdig.<br /><br />Tryk 'Enter' for at fortsætte  <br /> til eksperimentdelen." x=0 y=-64 z_index=0
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Instructions always
+	run practice_loop always
+	run break always
+	run experiment_loop always
+	run new_sketchpad_1 always
+
+define loop experiment_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 24
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 word_1 VEJR
+	setcycle 0 word_2 VÆRD
+	setcycle 0 word_3 HVER
+	setcycle 0 word_4 VÆRD
+	setcycle 0 word_5 VÆRD
+	setcycle 0 word_6 HVER
+	setcycle 0 word_7 HVER
+	setcycle 0 condition word
+	setcycle 0 answer 2313311
+	setcycle 0 rword_1 HVER
+	setcycle 0 rword_2 VEJR
+	setcycle 0 rword_3 VÆRD
+	setcycle 1 word_1 VÆRD
+	setcycle 1 word_2 VEJR
+	setcycle 1 word_3 HVER
+	setcycle 1 word_4 HVER
+	setcycle 1 word_5 VEJR
+	setcycle 1 word_6 HVER
+	setcycle 1 word_7 HVER
+	setcycle 1 condition word
+	setcycle 1 answer 3211211
+	setcycle 1 rword_1 HVER
+	setcycle 1 rword_2 VEJR
+	setcycle 1 rword_3 VÆRD
+	setcycle 2 word_1 TOVE
+	setcycle 2 word_2 TOGE
+	setcycle 2 word_3 TÅGE
+	setcycle 2 word_4 TOVE
+	setcycle 2 word_5 TOGE
+	setcycle 2 word_6 TOGE
+	setcycle 2 word_7 TOVE
+	setcycle 2 condition word
+	setcycle 2 answer 3123113
+	setcycle 2 rword_1 TOGE
+	setcycle 2 rword_2 TÅGE
+	setcycle 2 rword_3 TOVE
+	setcycle 3 word_1 TOVE
+	setcycle 3 word_2 TÅGE
+	setcycle 3 word_3 TÅGE
+	setcycle 3 word_4 TOVE
+	setcycle 3 word_5 TÅGE
+	setcycle 3 word_6 TOGE
+	setcycle 3 word_7 TOGE
+	setcycle 3 condition word
+	setcycle 3 answer 3223211
+	setcycle 3 rword_1 TOGE
+	setcycle 3 rword_2 TÅGE
+	setcycle 3 rword_3 TOVE
+	setcycle 4 word_1 BÆRE
+	setcycle 4 word_2 BAGER
+	setcycle 4 word_3 BÆGER
+	setcycle 4 word_4 BÆGER
+	setcycle 4 word_5 BÆRE
+	setcycle 4 word_6 BÆGER
+	setcycle 4 word_7 BÆGER
+	setcycle 4 condition word
+	setcycle 4 answer 1322122
+	setcycle 4 rword_1 BÆRE
+	setcycle 4 rword_2 BÆGER
+	setcycle 4 rword_3 BAGER
+	setcycle 5 word_1 BÆRE
+	setcycle 5 word_2 BAGER
+	setcycle 5 word_3 BÆGER
+	setcycle 5 word_4 BAGER
+	setcycle 5 word_5 BÆGER
+	setcycle 5 word_6 BÆRE
+	setcycle 5 word_7 BAGER
+	setcycle 5 condition word
+	setcycle 5 answer 1323213
+	setcycle 5 rword_1 BÆRE
+	setcycle 5 rword_2 BÆGER
+	setcycle 5 rword_3 BAGER
+	setcycle 6 word_1 LÆRE
+	setcycle 6 word_2 LÆRER
+	setcycle 6 word_3 LÆRE
+	setcycle 6 word_4 LÆRE
+	setcycle 6 word_5 LÆRERE
+	setcycle 6 word_6 LÆRER
+	setcycle 6 word_7 LÆRERE
+	setcycle 6 condition word
+	setcycle 6 answer 1211323
+	setcycle 6 rword_1 LÆRE
+	setcycle 6 rword_2 LÆRER
+	setcycle 6 rword_3 LÆRERE
+	setcycle 7 word_1 LÆRE
+	setcycle 7 word_2 LÆRERE
+	setcycle 7 word_3 LÆRE
+	setcycle 7 word_4 LÆRER
+	setcycle 7 word_5 LÆRERE
+	setcycle 7 word_6 LÆRER
+	setcycle 7 word_7 LÆRE
+	setcycle 7 condition word
+	setcycle 7 answer 1312321
+	setcycle 7 rword_1 LÆRE
+	setcycle 7 rword_2 LÆRER
+	setcycle 7 rword_3 LÆRERE
+	setcycle 8 word_1 MUGER
+	setcycle 8 word_2 MUGER
+	setcycle 8 word_3 MURER
+	setcycle 8 word_4 MURER
+	setcycle 8 word_5 MURER
+	setcycle 8 word_6 MURER
+	setcycle 8 word_7 MURRE
+	setcycle 8 condition word
+	setcycle 8 answer 3322221
+	setcycle 8 rword_1 MURRE
+	setcycle 8 rword_2 MURER
+	setcycle 8 rword_3 MUGER
+	setcycle 9 word_1 MURER
+	setcycle 9 word_2 MURER
+	setcycle 9 word_3 MUGER
+	setcycle 9 word_4 MURRE
+	setcycle 9 word_5 MUGER
+	setcycle 9 word_6 MUGER
+	setcycle 9 word_7 MURRE
+	setcycle 9 condition word
+	setcycle 9 answer 2231331
+	setcycle 9 rword_1 MURRE
+	setcycle 9 rword_2 MURER
+	setcycle 9 rword_3 MUGER
+	setcycle 10 word_1 VENDER
+	setcycle 10 word_2 VENDER
+	setcycle 10 word_3 VENNER
+	setcycle 10 word_4 VENDER
+	setcycle 10 word_5 VENNER
+	setcycle 10 word_6 VÆNNER
+	setcycle 10 word_7 VENDER
+	setcycle 10 condition word
+	setcycle 10 answer 2212132
+	setcycle 10 rword_1 VENNER
+	setcycle 10 rword_2 VENDER
+	setcycle 10 rword_3 VÆNNER
+	setcycle 11 word_1 VENNER
+	setcycle 11 word_2 VENNER
+	setcycle 11 word_3 VÆNNER
+	setcycle 11 word_4 VENDER
+	setcycle 11 word_5 VENNER
+	setcycle 11 word_6 VÆNNER
+	setcycle 11 word_7 VENNER
+	setcycle 11 condition word
+	setcycle 11 answer 1132131
+	setcycle 11 rword_1 VENNER
+	setcycle 11 rword_2 VENDER
+	setcycle 11 rword_3 VÆNNER
+	setcycle 12 word_1 VUR
+	setcycle 12 word_2 VURD
+	setcycle 12 word_3 HVUR
+	setcycle 12 word_4 VUR
+	setcycle 12 word_5 VUR
+	setcycle 12 word_6 VURD
+	setcycle 12 word_7 VUR
+	setcycle 12 condition nonword
+	setcycle 12 answer 1231121
+	setcycle 12 rword_1 VUR
+	setcycle 12 rword_2 VURD
+	setcycle 12 rword_3 HVUR
+	setcycle 13 word_1 VURD
+	setcycle 13 word_2 VURD
+	setcycle 13 word_3 VUR
+	setcycle 13 word_4 HVUR
+	setcycle 13 word_5 VUR
+	setcycle 13 word_6 VUR
+	setcycle 13 word_7 HVUR
+	setcycle 13 condition nonword
+	setcycle 13 answer 2213113
+	setcycle 13 rword_1 VUR
+	setcycle 13 rword_2 VURD
+	setcycle 13 rword_3 HVUR
+	setcycle 14 word_1 TEGE
+	setcycle 14 word_2 TØGE
+	setcycle 14 word_3 TEGE
+	setcycle 14 word_4 TEGE
+	setcycle 14 word_5 TEVE
+	setcycle 14 word_6 TEGE
+	setcycle 14 word_7 TØGE
+	setcycle 14 condition nonword
+	setcycle 14 answer 1211312
+	setcycle 14 rword_1 TEGE
+	setcycle 14 rword_2 TØGE
+	setcycle 14 rword_3 TEVE
+	setcycle 15 word_1 TØGE
+	setcycle 15 word_2 TEVE
+	setcycle 15 word_3 TEVE
+	setcycle 15 word_4 TØGE
+	setcycle 15 word_5 TEVE
+	setcycle 15 word_6 TEVE
+	setcycle 15 word_7 TØGE
+	setcycle 15 condition nonword
+	setcycle 15 answer 2332332
+	setcycle 15 rword_1 TEGE
+	setcycle 15 rword_2 TØGE
+	setcycle 15 rword_3 TEVE
+	setcycle 16 word_1 FÅGER
+	setcycle 16 word_2 FÆGER
+	setcycle 16 word_3 FÆRE
+	setcycle 16 word_4 FÆGER
+	setcycle 16 word_5 FÅGER
+	setcycle 16 word_6 FÆGER
+	setcycle 16 word_7 FÆRE
+	setcycle 16 condition nonword
+	setcycle 16 answer 3212321
+	setcycle 16 rword_1 FÆRE
+	setcycle 16 rword_2 FÆGER
+	setcycle 16 rword_3 FÅGER
+	setcycle 17 word_1 FÆRE
+	setcycle 17 word_2 FÅGER
+	setcycle 17 word_3 FÆGER
+	setcycle 17 word_4 FÆRE
+	setcycle 17 word_5 FÅGER
+	setcycle 17 word_6 FÆRE
+	setcycle 17 word_7 FÆGER
+	setcycle 17 condition nonword
+	setcycle 17 answer 1321312
+	setcycle 17 rword_1 FÆRE
+	setcycle 17 rword_2 FÆGER
+	setcycle 17 rword_3 FÅGER
+	setcycle 18 word_1 DÆRE
+	setcycle 18 word_2 DÆRER
+	setcycle 18 word_3 DÆRERE
+	setcycle 18 word_4 DÆRER
+	setcycle 18 word_5 DÆRER
+	setcycle 18 word_6 DÆRER
+	setcycle 18 word_7 DÆRERE
+	setcycle 18 condition nonword
+	setcycle 18 answer 1232223
+	setcycle 18 rword_1 DÆRE
+	setcycle 18 rword_2 DÆRER
+	setcycle 18 rword_3 DÆRERE
+	setcycle 19 word_1 DÆRER
+	setcycle 19 word_2 DÆRER
+	setcycle 19 word_3 DÆRERE
+	setcycle 19 word_4 DÆRER
+	setcycle 19 word_5 DÆRE
+	setcycle 19 word_6 DÆRE
+	setcycle 19 word_7 DÆRER
+	setcycle 19 condition nonword
+	setcycle 19 answer 2232112
+	setcycle 19 rword_1 DÆRE
+	setcycle 19 rword_2 DÆRER
+	setcycle 19 rword_3 DÆRERE
+	setcycle 20 word_1 MIRRE
+	setcycle 20 word_2 MIGER
+	setcycle 20 word_3 MIRRE
+	setcycle 20 word_4 MIGER
+	setcycle 20 word_5 MIGER
+	setcycle 20 word_6 MIGER
+	setcycle 20 word_7 MIRER
+	setcycle 20 condition nonword
+	setcycle 20 answer 1313332
+	setcycle 20 rword_1 MIRRE
+	setcycle 20 rword_2 MIRER
+	setcycle 20 rword_3 MIGER
+	setcycle 21 word_1 MIRER
+	setcycle 21 word_2 MIRER
+	setcycle 21 word_3 MIGER
+	setcycle 21 word_4 MIGER
+	setcycle 21 word_5 MIRRE
+	setcycle 21 word_6 MIGER
+	setcycle 21 word_7 MIRRE
+	setcycle 21 condition nonword
+	setcycle 21 answer 2233131
+	setcycle 21 rword_1 MIRRE
+	setcycle 21 rword_2 MIRER
+	setcycle 21 rword_3 MIGER
+	setcycle 22 word_1 FENNER
+	setcycle 22 word_2 FENDER
+	setcycle 22 word_3 FÆNNER
+	setcycle 22 word_4 FENNER
+	setcycle 22 word_5 FÆNNER
+	setcycle 22 word_6 FÆNNER
+	setcycle 22 word_7 FENDER
+	setcycle 22 condition nonword
+	setcycle 22 answer 1231332
+	setcycle 22 rword_1 FENNER
+	setcycle 22 rword_2 FENDER
+	setcycle 22 rword_3 FÆNNER
+	setcycle 23 word_1 FENDER
+	setcycle 23 word_2 FENDER
+	setcycle 23 word_3 FÆNNER
+	setcycle 23 word_4 FÆNNER
+	setcycle 23 word_5 FÆNNER
+	setcycle 23 word_6 FENNER
+	setcycle 23 word_7 FÆNNER
+	setcycle 23 condition nonword
+	setcycle 23 answer 2233313
+	setcycle 23 rword_1 FENNER
+	setcycle 23 rword_2 FENDER
+	setcycle 23 rword_3 FÆNNER
+	run trial_sequence
+
+define sketchpad fixation
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad fixation_1
+	set duration 1000
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define loop get_input_loop
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 5
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	setcycle 1 empty_column ""
+	setcycle 2 empty_column ""
+	setcycle 3 empty_column ""
+	setcycle 4 empty_column ""
+	run get_input_sequence
+
+define loop get_input_loop_1
+	set source table
+	set repeat 200
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first no
+	set break_if "[response] = return or [response] = enter"
+	setcycle 0 empty_column ""
+	run get_input_sequence_1
+
+define sequence get_input_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_response always
+	run number_input always
+	run process_input always
+	run logger always
+
+define sequence get_input_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_response_1 always
+	run number_input_1 always
+	run process_input_1 always
+
+define sketchpad get_response
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Tryk på tallene for at angive<br />den rigtige rækkefølge.<br /><br />Tryk 'Enter' når du er færdig<br /><br />" x=0 y=-224 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_1]" x=-384 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_2]" x=0 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_3]" x=384 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;1&nbsp;" x=-384 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;2&nbsp;" x=0 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;3&nbsp;" x=384 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;[multichar_response]&nbsp;" x=0 y=0 z_index=0
+
+define sketchpad get_response_1
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Tryk på tallene for at angive<br />den rigtige rækkefølge.<br /><br />Tryk 'Enter' når du er færdig<br /><br />" x=0 y=-224 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_1]" x=-384 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_2]" x=0 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[rword_3]" x=384 y=200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;1&nbsp;" x=-384 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;2&nbsp;" x=0 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;3&nbsp;" x=384 y=250 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="&nbsp;[multichar_response]&nbsp;" x=0 y=0 z_index=0
+
+define inline_javascript init
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+	set _prepare ""
+
+define inline_javascript init_1
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	vars.multichar_response = ''
+	vars.response = ''
+	__end__
+	set _prepare ""
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sketchpad new_sketchpad_1
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=32 html=yes show_if=always text="Eksperimentet er nu slut.<br /><br />Mange tak for din deltagelse." x=0 y=-96 z_index=0
+
+define keyboard_response number_input
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define keyboard_response number_input_1
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define loop practice_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 7
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 word_1 VEJR
+	setcycle 0 word_2 VÆRD
+	setcycle 0 word_3 VÆRD
+	setcycle 0 word_4 HVER
+	setcycle 0 word_5 VEJR
+	setcycle 0 condition word
+	setcycle 0 answer 2331211
+	setcycle 0 rword_1 HVER
+	setcycle 0 rword_2 VEJR
+	setcycle 0 rword_3 VÆRD
+	setcycle 1 word_1 TÅGE
+	setcycle 1 word_2 TÅGE
+	setcycle 1 word_3 TOVE
+	setcycle 1 word_4 TÅGE
+	setcycle 1 word_5 TOGE
+	setcycle 1 condition word
+	setcycle 1 answer 2232121
+	setcycle 1 rword_1 TOGE
+	setcycle 1 rword_2 TÅGE
+	setcycle 1 rword_3 TOVE
+	setcycle 2 word_1 BAGER
+	setcycle 2 word_2 BAGER
+	setcycle 2 word_3 BÆRE
+	setcycle 2 word_4 BÆRE
+	setcycle 2 word_5 BAGER
+	setcycle 2 condition word
+	setcycle 2 answer 3311312
+	setcycle 2 rword_1 BÆRE
+	setcycle 2 rword_2 BÆGER
+	setcycle 2 rword_3 BAGER
+	setcycle 3 word_1 LÆRERE
+	setcycle 3 word_2 LÆRERE
+	setcycle 3 word_3 LÆRE
+	setcycle 3 word_4 LÆRER
+	setcycle 3 word_5 LÆRE
+	setcycle 3 condition word
+	setcycle 3 answer 3312121
+	setcycle 3 rword_1 LÆRE
+	setcycle 3 rword_2 LÆRER
+	setcycle 3 rword_3 LÆRERE
+	setcycle 4 word_1 VURD
+	setcycle 4 word_2 HVUR
+	setcycle 4 word_3 VURD
+	setcycle 4 word_4 HVUR
+	setcycle 4 word_5 VUR
+	setcycle 4 condition nonword
+	setcycle 4 answer 2323312
+	setcycle 4 rword_1 VUR
+	setcycle 4 rword_2 VURD
+	setcycle 4 rword_3 HVUR
+	setcycle 5 word_1 TØGE
+	setcycle 5 word_2 TEVE
+	setcycle 5 word_3 TEVE
+	setcycle 5 word_4 TEGE
+	setcycle 5 word_5 TEVE
+	setcycle 5 condition nonword
+	setcycle 5 answer 2331333
+	setcycle 5 rword_1 TEGE
+	setcycle 5 rword_2 TØGE
+	setcycle 5 rword_3 TEVE
+	setcycle 6 word_1 FÅGER
+	setcycle 6 word_2 FÆGER
+	setcycle 6 word_3 FÅGER
+	setcycle 6 word_4 FÆRE
+	setcycle 6 word_5 FÆGER
+	setcycle 6 condition nonword
+	setcycle 6 answer 3232231
+	setcycle 6 rword_1 FÆRE
+	setcycle 6 rword_2 FÆGER
+	setcycle 6 rword_3 FÅGER
+	run trial_sequence_1
+
+define inline_javascript process_input
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define inline_javascript process_input_1
+	set description "Executes JavaScript code (ECMA 5.1)"
+	___run__
+	console.log(vars.response)
+	if (vars.response != 'backspace') {
+	    vars.multichar_response += vars.response.toString()
+	} else if (vars.response === 'backspace') {
+	    vars.multichar_response = vars.multichar_response.toString().slice(0, vars.multichar_response.toString().length - 1)
+	} else if (vars.response !== 'enter') {
+	    vars.multichar_response += vars.response
+	}
+	__end__
+	set _prepare ""
+
+define sequence report
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop always
+
+define sequence report_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run get_input_loop_1 always
+
+define sketchpad stim
+	set duration 5000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_4]" x=100 y=100 z_index=100
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text=" [word_1]" x=-200 y=-200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_2]" x=-100 y=-100 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_3]" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_5]" x=200 y=200 z_index=0
+
+define sketchpad stim_1
+	set duration 5000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_4]" x=100 y=100 z_index=100
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text=" [word_1]" x=-200 y=-200 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_2]" x=-100 y=-100 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_3]" x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="[word_5]" x=200 y=200 z_index=0
+
+define sequence trial_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init always
+	run fixation always
+	run stim always
+	run report always
+
+define sequence trial_sequence_1
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run init_1 always
+	run fixation_1 always
+	run stim_1 always
+	run report_1 always
+

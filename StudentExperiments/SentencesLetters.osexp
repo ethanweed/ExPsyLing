@@ -1,0 +1,381 @@
+---
+API: 2.1
+OpenSesame: 3.3.5
+Platform: posix
+---
+set width 1024
+set uniform_coordinates yes
+set title "New experiment"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set round_decimals 2
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "/Users/ethan/Desktop/JATOS_files/ExPsyLing"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set canvas_backend psycho
+set background black
+
+define sketchpad All_done_thankyou
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="NO NEW ROUND" x=0 y=-256 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="" x=0 y=128 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="You have completed the experiment. " x=0 y=-192 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Thanks again for participating! " x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Press SPACEBAR to end. " x=0 y=256 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=36 html=yes show_if=always text="We appreciate all your help! " x=0 y=64 z_index=0
+
+define loop Letters_Choice_Round2
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 choice1 "1) RNSTP"
+	setcycle 0 choice2 "2) TSRPN"
+	setcycle 0 choice3 "3) NPRST"
+	setcycle 0 correct_letters 3
+	run Letters_choice_sequence
+
+define loop Letters_Choice_Round3
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 choice1 "1) NLKHFY"
+	setcycle 0 choice2 "2) YFHKLN"
+	setcycle 0 choice3 "3) HYFKNL"
+	setcycle 0 correct_letters 2
+	run Letters_choice_sequence
+
+define loop Letters_choice_Round1
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 choice1 "1) FHKL"
+	setcycle 0 choice2 "2) LFKH"
+	setcycle 0 choice3 "3) FKHL"
+	setcycle 0 correct_letters 1
+	run Letters_choice_sequence
+
+define loop Letters_choice_practice
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 choice1 "1) BAC"
+	setcycle 0 choice2 "2) CBA"
+	setcycle 0 choice3 "3) ABC"
+	setcycle 0 correct_letters 3
+	run Letters_choice_sequence
+
+define sequence Letters_choice_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run letters_options always
+	run letters_keyboard_response always
+	run pause always
+	run logger always
+
+define loop Practice_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 3
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "The dog has crossed the road."
+	setcycle 0 letter A
+	setcycle 0 task reading
+	setcycle 0 int n
+	setcycle 0 correct_response right
+	setcycle 0 round practice
+	setcycle 1 sentence "The road near his house has suddenly crossed the dog."
+	setcycle 1 letter B
+	setcycle 1 task reading
+	setcycle 1 int y
+	setcycle 1 correct_response left
+	setcycle 1 round practice
+	setcycle 2 sentence "The woman, the child, and the man go to the store."
+	setcycle 2 letter C
+	setcycle 2 task reading
+	setcycle 2 int n
+	setcycle 2 correct_response right
+	setcycle 2 round practice
+	run trial_sequence
+
+define loop Round_1
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 4
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "The woman the man go to the store and the child."
+	setcycle 0 letter F
+	setcycle 0 task naming
+	setcycle 0 int y
+	setcycle 0 correct_response left
+	setcycle 0 round 1
+	setcycle 1 sentence "How many students typically attend the linguistics class?"
+	setcycle 1 letter H
+	setcycle 1 task naming
+	setcycle 1 int n
+	setcycle 1 correct_response right
+	setcycle 1 round 1
+	setcycle 2 sentence "How many students are typically pretending the linguistics class?"
+	setcycle 2 letter K
+	setcycle 2 task naming
+	setcycle 2 int y
+	setcycle 2 correct_response left
+	setcycle 2 round 1
+	setcycle 3 sentence "We are all completely fluent in English."
+	setcycle 3 letter L
+	setcycle 3 task naming
+	setcycle 3 int n
+	setcycle 3 correct_response right
+	setcycle 3 round 1
+	run trial_sequence
+
+define loop Round_2
+	set source_file ""
+	set source table
+	set repeat 1
+	set order sequential
+	set description "Repeatedly runs another item"
+	set cycles 5
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "We are all completely food in English."
+	setcycle 0 letter N
+	setcycle 0 task reading
+	setcycle 0 int y
+	setcycle 0 correct_response left
+	setcycle 0 round 2
+	setcycle 1 sentence "She sold superior shells to sailors sailing home."
+	setcycle 1 letter P
+	setcycle 1 task reading
+	setcycle 1 int n
+	setcycle 1 correct_response right
+	setcycle 1 round 2
+	setcycle 2 sentence "She danced superior shells to sailors selling home."
+	setcycle 2 letter R
+	setcycle 2 task reading
+	setcycle 2 int y
+	setcycle 2 correct_response left
+	setcycle 2 round 2
+	setcycle 3 sentence "He was extremely hungry and bought a snack."
+	setcycle 3 letter S
+	setcycle 3 task reading
+	setcycle 3 int n
+	setcycle 3 correct_response right
+	setcycle 3 round 2
+	setcycle 4 sentence "He was hungry and therefore, ran a snack."
+	setcycle 4 letter T
+	setcycle 4 task reading
+	setcycle 4 int y
+	setcycle 4 correct_response left
+	setcycle 4 round 2
+	run trial_sequence
+
+define loop Round_3
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 6
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 sentence "They submitted the assignment on time, but didn't pass."
+	setcycle 0 letter Y
+	setcycle 0 task reading
+	setcycle 0 int 0
+	setcycle 0 correct_response right
+	setcycle 0 round 3
+	setcycle 1 sentence "My groupmate submitted the purchase late and failed the test."
+	setcycle 1 letter F
+	setcycle 1 task reading
+	setcycle 1 int 1
+	setcycle 1 correct_response left
+	setcycle 1 round 3
+	setcycle 2 sentence "The student was aggressively dancing to the music."
+	setcycle 2 letter H
+	setcycle 2 task reading
+	setcycle 2 int 0
+	setcycle 2 correct_response right
+	setcycle 2 round 3
+	setcycle 3 sentence "The can of beans was aggressively dancing to the cat."
+	setcycle 3 letter K
+	setcycle 3 task reading
+	setcycle 3 int 1
+	setcycle 3 correct_response left
+	setcycle 3 round 3
+	setcycle 4 sentence "She wore a sweater to work"
+	setcycle 4 letter L
+	setcycle 4 task reading
+	setcycle 4 int 0
+	setcycle 4 correct_response right
+	setcycle 4 round 3
+	setcycle 5 sentence "She wore a mattress to age."
+	setcycle 5 letter N
+	setcycle 5 task reading
+	setcycle 5 int 1
+	setcycle 5 correct_response left
+	setcycle 5 round 3
+	run trial_sequence
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run practice_sequence always
+	run round1_sequence always
+	run round2_sequence always
+	run round3_sequence always
+	run All_done_thankyou always
+
+define sketchpad fixation
+	set duration 750
+	set description "Displays stimuli"
+	draw fixdot color=white show_if=always style=default x=0 y=0 z_index=0
+
+define keyboard_response keyboard_response_sentences
+	set timeout 4000
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define sketchpad letter_stimulus
+	set duration 1000
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[letter]" x=0 y=0 z_index=0
+
+define keyboard_response letters_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define sketchpad letters_options
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="Choose the correct letter sequence<br />using the numbers on your keyboard." x=0 y=-256 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[choice1]" x=-288 y=-96 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[choice2]" x=-288 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[choice3]" x=-288 y=96 z_index=0
+
+define logger logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sketchpad pause
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Well Done! " x=0 y=-192 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="You have completed the round." x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Press your SPACEBAR to continue to the next round. " x=0 y=224 z_index=0
+
+define sequence practice_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run test_instructions always
+	run Practice_loop always
+	run Letters_choice_practice always
+
+define sequence round1_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Round_1 always
+	run Letters_choice_Round1 always
+
+define sequence round2_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Round_2 always
+	run Letters_Choice_Round2 always
+
+define sequence round3_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Round_3 always
+	run Letters_Choice_Round3 always
+
+define sketchpad sentence_stimulus
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=18 html=yes show_if=always text="[sentence]" x=0 y=0 z_index=0
+
+define sketchpad test_instructions
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=30 html=yes show_if=always text="Welcome!" x=0 y=-320 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="Thank you for participating in this experiment." x=0 y=-256 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="It should not take more than five minutes. " x=0 y=-224 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="There are two parts to this experiment. " x=0 y=-160 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="In the first part, you will be given a sentence to read." x=0 y=-128 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="Press the RIGHT arrow key if the sentence makes sense." x=0 y=-64 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=26 html=yes show_if=always text=or x=0 y=-32 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="Press the LEFT arrow key if the sentence DOES NOT make sense. " x=0 y=0 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="After each sentence, you will be given a random letter." x=0 y=64 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="Remember that letter and the order in which they appeared." x=0 y=96 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="In the second part, you will have to determine the order of the letters. " x=0 y=160 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="You will be shown three options." x=0 y=192 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="Choose the correct sequence using the numbers on your keyboard." x=0 y=224 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=22 html=yes show_if=always text="The first round is practice. After that, there will be three rounds. " x=0 y=288 z_index=0
+	draw textline center=1 color=white font_bold=no font_family=mono font_italic=no font_size=26 html=yes show_if=always text="Press your SPACEBAR to begin. " x=0 y=320 z_index=0
+
+define sequence trial_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run fixation always
+	run sentence_stimulus always
+	run keyboard_response_sentences always
+	run letter_stimulus always
+	run logger always
+
