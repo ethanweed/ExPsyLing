@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "99a26ded00f15ca5",
+    "type": "split",
+    "children": [
+      {
+        "id": "e86949a3e8d9451c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "ExPsyLing-2021-PlanningDoc.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b6eceb2e03927ed2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1ab57a11b1ca28d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0946ad33784ce272",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1ba0361d812715d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "351c9e9d9e822e1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "86659fee5011ca0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29bd716010fc8590",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ExPsyLing-2021-PlanningDoc.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e86949a3e8d9451c",
+  "lastOpenFiles": [
+    "ExPsyLing-2021-PlanningDoc.md",
+    "Harley_Chapter6.md",
+    "lexical decision task.md",
+    "Harley_Chapter5.pdf",
+    "Harley_Chapter6.pdf",
+    "Harley_Chapter5.md"
+  ]
+}
