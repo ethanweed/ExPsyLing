@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e86949a3e8d9451c",
+        "id": "41eaa4ac5cedb1d6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "ExPsyLing-2021-PlanningDoc.md",
+            "file": "Slides/Slides_week_02.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ExPsyLing-2021-PlanningDoc.md",
+                "file": "Slides/Slides_week_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,21 +78,33 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "b8625740f7d8d00d",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "e86949a3e8d9451c",
+  "active": "41eaa4ac5cedb1d6",
   "lastOpenFiles": [
+    "Slides/Slides_week_02.md",
     "ExPsyLing-2021-PlanningDoc.md",
-    "Harley_Chapter6.md",
-    "lexical decision task.md",
-    "Harley_Chapter5.pdf",
-    "Harley_Chapter6.pdf",
-    "Harley_Chapter5.md"
+    "PDFs/Harley_Chapter1.pdf",
+    "PDFs/Harley_Talking the Talk.pdf",
+    "Notes/Literature.md",
+    "Notes/Week 2.md",
+    "Sternberg experiment.md",
+    "Zwann & Rapp_Discourse Comprehension.md",
+    "Harley_Chapter5.md",
+    "Slides_week_02.md"
   ]
 }
