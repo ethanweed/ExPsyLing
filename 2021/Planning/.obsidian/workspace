@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "41eaa4ac5cedb1d6",
+        "id": "6d4935cbb2d37c5a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Slides_week_02.md",
+            "file": "Syllabus.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Slides_week_02.md",
+                "file": "Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,24 +87,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "41eaa4ac5cedb1d6",
+  "active": "6d4935cbb2d37c5a",
   "lastOpenFiles": [
-    "Slides/Slides_week_02.md",
+    "Syllabus.md",
+    "Goals.md",
+    "Notes/Course description.md",
     "ExPsyLing-2021-PlanningDoc.md",
-    "PDFs/Harley_Chapter1.pdf",
-    "PDFs/Harley_Talking the Talk.pdf",
-    "Notes/Literature.md",
-    "Notes/Week 2.md",
     "Sternberg experiment.md",
-    "Zwann & Rapp_Discourse Comprehension.md",
-    "Harley_Chapter5.md",
-    "Slides_week_02.md"
+    "Notes/Harley_Chapter5.md",
+    "Notes/Harley_Chapter6.md",
+    "Notes/Harley_Chapter7.md",
+    "Portfolio assignments.md",
+    "Slides/untitled.md"
   ]
 }
