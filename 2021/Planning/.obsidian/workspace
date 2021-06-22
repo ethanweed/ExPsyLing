@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6d4935cbb2d37c5a",
+        "id": "9fd563c3388ebc1e",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -93,17 +93,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "6d4935cbb2d37c5a",
+  "active": "9fd563c3388ebc1e",
   "lastOpenFiles": [
     "Syllabus.md",
-    "Goals.md",
-    "Notes/Course description.md",
+    "Render to html.md",
     "ExPsyLing-2021-PlanningDoc.md",
-    "Sternberg experiment.md",
-    "Notes/Harley_Chapter5.md",
-    "Notes/Harley_Chapter6.md",
-    "Notes/Harley_Chapter7.md",
     "Portfolio assignments.md",
-    "Slides/untitled.md"
+    "PDFs/Collins & Quillian 1969.pdf",
+    "Notes/Harley_Chapter6.md",
+    "Notes/Harley_Chapter5.md",
+    "Notes/Collins & Quillian 1969.md",
+    "sentence verification task.md",
+    "Notes/Literature.md"
   ]
 }

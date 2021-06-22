@@ -20,9 +20,13 @@ The exam for this course is a portfolio of work completed throughout the semeste
 
 ## Texts
 
-Harley, T. A. (2009). Talking the talk: Language, psychology and science. Psychology Press.
+Collins, A. M., & Quillian, M. R. (1969). Retrieval time from semantic memory. _Journal of verbal learning and verbal behavior_, _8_(2), 240-247.
 
-Navarro, D. and Weed, E. Learning Statistics with Python 
+Harley, T. A. (2009). _Talking the talk: Language, psychology and science.__ Psychology Press.
+
+Navarro, D. and Weed, E. (2021) _Learning Statistics with Python.__ https://ethanweed.github.io/pythonbook/landingpage.html
+
+
 
 
 

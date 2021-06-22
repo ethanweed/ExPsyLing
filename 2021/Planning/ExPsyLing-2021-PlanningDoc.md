@@ -1,5 +1,7 @@
 ## ExPsyLing 2021
 
+[[Render to html]]
+
 Mindmap: [ExPsyLing_2021.mindnode](hook://file/z7z4vhB61?p=VzZMMzlVWUw2Wn5jb21+bWluZG5vZGV+TWluZE5vZGUvRG9jdW1lbnRz&n=ExPsyLing_2021.mindnode)
 
 JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
