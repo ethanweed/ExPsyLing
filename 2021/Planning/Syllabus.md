@@ -7,11 +7,16 @@ If these things sound complicated and abstract, that's because they are! The min
 
 To conduct psycholinguistic experiments, we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! And once we do an experiment and write some numbers down, we have to make sense of those numbers in relation to our theories.
 
-The aim of the course is for you to learn to:
+The goal of the course is for you to learn to:
 1. Understand the relationship between theoretical concepts and data
 2. Operationalize theoretical concepts experimentally through measurable indices
 3. Analyze and interpret findings in a critical way
 4. Communicate experimental findings in a clear way to both expert and lay audiences
+
+## What does this mean in practice?
+There are two basic components to the course: _Lectures_ and _Labs_. In the lectures, we will discuss some of the theoretical topics in psycholinguistics, and discuss the  experimental and statistical tools and background needed to investigate them; in the labs, you will practice the skills you need to do experiments yourself. In practice, this means that for the lectures, you will need to read, think, and be ready to discuss. For the labs, you will primarily learn to use Python to do quantitative analysis of data. I will give you weekly lab assignments. 
+
+Learning some programming and some statistics is an important part of a the MA in Linguistics and in Cognitive Semiotics, but it can seem a bit overwhelming. That is why, in addition to the lectures and labs, there will also be _Instructor Sessions_, where there will be a teaching assistant available to give you practical support for your lab assignments. 
 
 ## Exam
 The exam for this course is a portfolio of work completed throughout the semester, and will be graded on a pass/fail basis.
