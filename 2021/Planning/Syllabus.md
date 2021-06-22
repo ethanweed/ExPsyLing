@@ -5,13 +5,14 @@ In this course, we will learn to use experimental methodology to investigate som
 
 If these things sound complicated and abstract, that's because they are! The mind's chief activity "... consists in the endeavor to ascertain its own nature, the futility of the attempt being due to the fact that it has nothing but itself to know itself with." (Bierce, 1911). We can think all day about how the mind works, but to test our theories, we need to probe the mind experimentally.
 
-To conduct psycholinguistic experiments, we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! And once we do an experiment and write some numbers down, we have to make sense of those numbers in relation to our theories.
+To conduct psycholinguistic experiments, we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! This sounds like it would never work, but in fact it is possible, if we use the right methods and are careful in our interpretations.
 
 The goal of the course is for you to learn to:
-1. Understand the relationship between theoretical concepts and data
-2. Operationalize theoretical concepts experimentally through measurable indices
-3. Analyze and interpret findings in a critical way
-4. Communicate experimental findings in a clear way to both expert and lay audiences
+
+	1. Understand the relationship between theoretical concepts and data
+	1. Operationalize theoretical concepts experimentally through measurable indices
+	1. Analyze and interpret findings in a critical way
+	1. Communicate experimental findings in a clear way to both expert and lay audiences
 
 ## What does this mean in practice?
 There are two basic components to the course: _Lectures_ and _Labs_. In the lectures, we will discuss some of the theoretical topics in psycholinguistics, and discuss the  experimental and statistical tools and background needed to investigate them; in the labs, you will practice the skills you need to do experiments yourself. In practice, this means that for the lectures, you will need to read, think, and be ready to discuss. For the labs, you will primarily learn to use Python to do quantitative analysis of data. I will give you weekly lab assignments. 
