@@ -9,10 +9,10 @@ To conduct psycholinguistic experiments, we need to translate theories to resear
 
 The goal of the course is for you to learn to:
 
-	1. Understand the relationship between theoretical concepts and data
-	1. Operationalize theoretical concepts experimentally through measurable indices
-	1. Analyze and interpret findings in a critical way
-	1. Communicate experimental findings in a clear way to both expert and lay audiences
+1. Understand the relationship between theoretical concepts and data
+2. Operationalize theoretical concepts experimentally through measurable indices
+3. Analyze and interpret findings in a critical way
+4. Communicate experimental findings in a clear way to both expert and lay audiences
 
 ## What does this mean in practice?
 There are two basic components to the course: _Lectures_ and _Labs_. In the lectures, we will discuss some of the theoretical topics in psycholinguistics, and discuss the  experimental and statistical tools and background needed to investigate them; in the labs, you will practice the skills you need to do experiments yourself. In practice, this means that for the lectures, you will need to read, think, and be ready to discuss. For the labs, you will primarily learn to use Python to do quantitative analysis of data. I will give you weekly lab assignments. 
