@@ -17,7 +17,7 @@ The goal of the course is for you to learn to:
 ## What does this mean in practice?
 There are two basic components to the course: _Lectures_ and _Labs_. In the lectures, we will discuss some of the theoretical topics in psycholinguistics, and discuss the  experimental and statistical tools and background needed to investigate them; in the labs, you will practice the skills you need to do experiments yourself. In practice, this means that for the lectures, you will need to read, think, and be ready to discuss. For the labs, you will primarily learn to use Python to do quantitative analysis of data. I will give you weekly lab assignments. 
 
-Learning some programming and some statistics is an important part of a the MA in Linguistics and in Cognitive Semiotics, but it can seem a bit overwhelming. That is why, in addition to the lectures and labs, there will also be _Instructor Sessions_, where there will be a teaching assistant available to give you practical support for your lab assignments. 
+Learning some programming and some statistics is an important part of the MA in Linguistics and in Cognitive Semiotics, but it can seem a bit overwhelming. That is why, in addition to the lectures and labs, there will also be _Instructor Sessions_, where there will be a teaching assistant available to give you practical support for your lab assignments. 
 
 ## Exam
 The exam for this course is a portfolio of work completed throughout the semester, and will be graded on a pass/fail basis.
