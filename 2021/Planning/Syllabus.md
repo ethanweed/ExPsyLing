@@ -41,7 +41,7 @@ Collins, A. M., & Quillian, M. R. (1969). Retrieval time from semantic memory. _
 
 Harley, T. A. (2009). _Talking the talk: Language, psychology and science._ Psychology Press.
 
-[Navarro, D. and Weed, E. (2021) _Learning Statistics with Python._] (https://ethanweed.github.io/pythonbook/landingpage.html)
+[Navarro, D. and Weed, E. (2021) _Learning Statistics with Python._](https://ethanweed.github.io/pythonbook/landingpage.html)
 
 
 
