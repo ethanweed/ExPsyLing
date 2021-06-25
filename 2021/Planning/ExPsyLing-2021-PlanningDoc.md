@@ -32,7 +32,7 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 - parallel courses: lecture and lab
 	- lecture: focus on theoretical part: psycholinguistics, experimental design, hypothesis testing, cognitive constructs
 
-- [ ] Think about what the portfolio assignments should be: how many, what are the goals for the assignments, etc.
+- [x] Think about what the portfolio assignments should be: how many, what are the goals for the assignments, etc.
 
 ### Course Outline
 - Week 1 (INTRO WORKSHOP)
@@ -99,7 +99,7 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 - Week 10
 	- Understanding words in context
 	- Ties in with [[working memory]]
-	- [ ] Find a final experiment that ties in working memory and understanding words in context 
+	- [x] Find a final experiment that ties in working memory and understanding words in context 
 - Week 11
 
 - Week 12
