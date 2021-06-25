@@ -29,7 +29,7 @@ Learning some programming and some statistics is an important part of the MA in 
 ## Exam
 The exam for this course is a portfolio of work completed throughout the semester, and will be graded on a pass/fail basis. Your portfolio will consist of:
 
-1. Three lab reports, completed throughout  the semester
+1. Three lab reports, completed throughout  the semester, using the [lab report template](https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc)
 2. Proof of completion of online GDPR course
 3. Design Your Own Experiment: Introduction and Methods sections for a proposed experiment on a topic of your choice
 
