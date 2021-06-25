@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Syllabus.md",
+            "file": "Slides_week_02.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Syllabus.md",
+                "file": "Slides_week_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,6 +95,7 @@
   },
   "active": "9fd563c3388ebc1e",
   "lastOpenFiles": [
+    "Slides_week_02.md",
     "Syllabus.md",
     "Render to html.md",
     "ExPsyLing-2021-PlanningDoc.md",
@@ -103,7 +104,6 @@
     "Notes/Harley_Chapter6.md",
     "Notes/Harley_Chapter5.md",
     "Notes/Collins & Quillian 1969.md",
-    "sentence verification task.md",
-    "Notes/Literature.md"
+    "sentence verification task.md"
   ]
 }
