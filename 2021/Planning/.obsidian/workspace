@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides_week_02.md",
+            "file": "Syllabus.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides_week_02.md",
+                "file": "Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +87,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,15 +96,15 @@
   },
   "active": "9fd563c3388ebc1e",
   "lastOpenFiles": [
-    "Slides_week_02.md",
     "Syllabus.md",
-    "Render to html.md",
-    "ExPsyLing-2021-PlanningDoc.md",
     "Portfolio assignments.md",
+    "ExPsyLing-2021-PlanningDoc.md",
+    "Collins & Quillian.md",
+    "Slides_week_02.md",
+    "Render to html.md",
     "PDFs/Collins & Quillian 1969.pdf",
     "Notes/Harley_Chapter6.md",
     "Notes/Harley_Chapter5.md",
-    "Notes/Collins & Quillian 1969.md",
-    "sentence verification task.md"
+    "Notes/Collins & Quillian 1969.md"
   ]
 }

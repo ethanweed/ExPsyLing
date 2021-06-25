@@ -48,7 +48,8 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 				- Why should you care?
 			- Reading: [[Harley_Chapter1]]
 		- Lab
-				- Introduction to data
+				- Introduction to Python
+		- [ ] write Basic programming chapter
 		- Instructor
 				- Exercises in exploring data with Python
 
