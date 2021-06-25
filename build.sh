@@ -16,4 +16,5 @@ pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllab
 # Push to github pages
 #ghp-import -n -p -f _build/html
 
+
 ghp-import -p -f _build/html
