@@ -11,13 +11,9 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Sli
 
 
 # Other
-pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.md -o /Users/ethan/Documents/GitHub/ExPsyLing/Syllabus.html
+pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.html
 
 # Push to github
-#ghp-import -n -p -f _build/html
-
-
-#ghp-import -p -f _build/html
 
 git add -A
 git commit -m "auto updated with build.sh"
