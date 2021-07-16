@@ -1,0 +1,81 @@
+{
+  "main": {
+    "id": "3aeb604c874c1eaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb37fa8f652f012a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "2021/Planning/Literature.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "41fcc9946052fe13",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "1f13fb48298bfeae",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "0ea9a903fea9c1c5",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "aa228264fc27bed3",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "a7a9f0a0255ec0ec",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "2021/Planning/Literature.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "cb37fa8f652f012a",
+  "lastOpenFiles": [
+    "2021/Planning/Literature.md",
+    "2021/Planning/Syllabus.md",
+    "2021/Planning/Harley_Chapter1.md",
+    "2021/Planning/Course description.md"
+  ]
+}
