@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9fd563c3388ebc1e",
+        "id": "87e52dca50060664",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Syllabus.md",
+            "file": "Literature.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Syllabus.md",
+                "file": "Literature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +94,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9fd563c3388ebc1e",
+  "active": "87e52dca50060664",
   "lastOpenFiles": [
+    "Literature.md",
+    "Course description.md",
+    "PDFs/Harley_Chapter1.pdf",
+    "ExPsyLing-2021-PlanningDoc.md",
+    "Collins & Quillian 1969.md",
+    "Collins & Quillian.md",
     "Syllabus.md",
     "Portfolio assignments.md",
-    "ExPsyLing-2021-PlanningDoc.md",
-    "Collins & Quillian.md",
     "Slides_week_02.md",
-    "Render to html.md",
-    "PDFs/Collins & Quillian 1969.pdf",
-    "Notes/Harley_Chapter6.md",
-    "Notes/Harley_Chapter5.md",
-    "Notes/Collins & Quillian 1969.md"
+    "Render to html.md"
   ]
 }
