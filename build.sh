@@ -13,7 +13,7 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Sli
 # Other
 pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.html
 
-pandoc --standalone -css /Users/ethan/Documents/GitHub/ExPsyLing/css/table.css /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/CoursePlan.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/CoursePlan.html 
+pandoc --standalone --css /Users/ethan/Documents/GitHub/ExPsyLing/css/table.css /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/CoursePlan.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/CoursePlan.html 
 
 # Push to github
 
