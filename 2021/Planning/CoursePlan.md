@@ -1,3 +1,4 @@
+
 \begin{table}[]
 \begin{tabular}{lllll}
 Class number & Week number & Section & Topic                                                      & Readings                                                          \\
@@ -31,3 +32,4 @@ Autumn Break & 42          & -       &                                          
              &             & Lab     & Feedback and individual advising meetings                  & -                                                                
 \end{tabular}
 \end{table}
+
