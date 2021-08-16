@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Literature.md",
-            "mode": "source"
+            "file": "Course Plan.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Literature.md",
+                "file": "Course Plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "87e52dca50060664",
   "lastOpenFiles": [
-    "Literature.md",
-    "Course description.md",
-    "PDFs/Harley_Chapter1.pdf",
-    "ExPsyLing-2021-PlanningDoc.md",
-    "Collins & Quillian 1969.md",
-    "Collins & Quillian.md",
+    "Course Plan.md",
     "Syllabus.md",
-    "Portfolio assignments.md",
-    "Slides_week_02.md",
-    "Render to html.md"
+    "Render to html.md",
+    "Untitled.md",
+    "_planning.md",
+    "PDFs/Zwann & Rapp_Discourse Comprehension.pdf",
+    "PDFs/Harley_Chapter7.pdf",
+    "PDFs/Harley_Chapter6.pdf",
+    "PDFs/Harley_Chapter5.pdf",
+    "Harley_Chapter5.md"
   ]
 }

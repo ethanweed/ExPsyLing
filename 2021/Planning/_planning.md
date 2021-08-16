@@ -2,7 +2,7 @@
 
 [[Render to html]]
 
-Mindmap: [ExPsyLing_2021.mindnode](hook://file/z7z4vhB61?p=VzZMMzlVWUw2Wn5jb21+bWluZG5vZGV+TWluZE5vZGUvRG9jdW1lbnRz&n=ExPsyLing_2021.mindnode)
+Mindmap: [ExPsyLing_2021.mindnode](hook://file/y8RRbeQck?p=VzZMMzlVWUw2Wn5jb21+bWluZG5vZGV+TWluZE5vZGUvRG9jdW1lbnRz&n=ExPsyLing_2021.mindnode)
 
 JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 
@@ -46,14 +46,16 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 				- What is psycholinguistics?
 				- What are experiments?
 				- Why should you care?
-			- Reading: [[Harley_Chapter1]]
+			- Reading
+				- [[Harley_Chapter1]]
+				- [N&W Part 1 Chapter 1](https://ethanweed.github.io/pythonbook/01.01-intro.html)
 		- Lab
-				- Introduction to Python (Reading: [N&W Part 2 Chapter 1](https://ethanweed.github.io/pythonbook/02.01-getting_started_with_python.html)
+				- Introduction to Python: Reading: [N&W Part 2 Chapter 1](https://ethanweed.github.io/pythonbook/02.01-getting_started_with_python.html)
 		- [ ] write Basic programming chapter
 		- Instructor
 				- Exercises in exploring data with Python
 
-- [[Week 3]] (WORKING MEMORY AND DATA WRANGLING)
+- [[Week 3]] (WORKING MEMORY, EXPERIMENTAL DESIGN AND DATA WRANGLING)
 	Lecture
 		- [[working memory]]
 		- [[Sternberg experiment]]
@@ -67,7 +69,7 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 	- Instructor
 		- exercises in data wrangling with Pandas 
 
-- Week 4 (HYPOTHESIS TESTING) (STERNBERG LAB REPORT DUE)
+- Week 4 (HYPOTHESIS TESTING) 
 	- Hypothesis-testing: [N&W Part 4 Chapter 4](https://ethanweed.github.io/pythonbook/04.04-hypothesis-testing.html#hypothesis-testing)
 	- What can we conclude from the original [[Sternberg experiment]]?
 	- What can we conclude from our own [[Sternberg experiment]] results?

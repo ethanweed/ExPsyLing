@@ -37,14 +37,22 @@ The exam for this course is a portfolio of work completed throughout the semeste
 
 ## Texts
 
+ 
+Baddeley, A. (2003). Working memory and language: An overview. Journal of communication disorders, 36(3), 189-208.
+
 Collins, A. M., & Quillian, M. R. (1969). Retrieval time from semantic memory. _Journal of verbal learning and verbal behavior_, _8_(2), 240-247.
 
 Harley, T. A. (2009). _Talking the talk: Language, psychology and science._ Psychology Press.
 
+McCarty, W. (2003). Humanities computing. Encyclopedia of library and information science, 2, 1224.
+
+Meyer, D. E., & Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of words: evidence of a dependence between retrieval operations. Journal of experimental psychology, 90(2), 227.
+
 [Navarro, D. and Weed, E. (2021) _Learning Statistics with Python._](https://ethanweed.github.io/pythonbook/landingpage.html)
 
+Sternberg, S. (1966). High-speed scanning in human memory. Science, 153(3736), 652-654.
 
-
+Zwaan, R. A., & Rapp, D. N. (2006). Discourse comprehension. In _Handbook of psycholinguistics_ (pp. 725-764). Academic Press.
 
 
 
