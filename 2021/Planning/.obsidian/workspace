@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_planning.md",
+            "file": "Schedule.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_planning.md",
+                "file": "Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "87e52dca50060664",
   "lastOpenFiles": [
+    "Schedule.md",
+    "Syllabus.md",
+    "Untitled.md",
     "_planning.md",
     "CoursePlan.md",
     "Render to html.md",
     "Course Plan.md",
-    "Syllabus.md",
-    "Untitled.md",
     "PDFs/Zwann & Rapp_Discourse Comprehension.pdf",
     "PDFs/Harley_Chapter7.pdf",
-    "PDFs/Harley_Chapter6.pdf",
-    "PDFs/Harley_Chapter5.pdf"
+    "PDFs/Harley_Chapter6.pdf"
   ]
 }
