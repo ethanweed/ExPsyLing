@@ -1,10 +1,13 @@
+# Class Schedule
+
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-ik58{background-color:#ffcb2f;border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
@@ -116,18 +119,18 @@
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 3 Chapter 3: Data Wrangling</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Autumn Break</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">42</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Autumn Break</span></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">42</span></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
+    <td class="tg-ik58"></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
+    <td class="tg-ik58"></td>
+    <td class="tg-ik58"></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
+    <td class="tg-ik58"></td>
+    <td class="tg-ik58"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">-</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">8</span></td>
