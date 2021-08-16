@@ -21,3 +21,8 @@ table td {
     border-bottom: none;
     border-right: none;
 }
+
+
+/* Add border for the last row of the table.           */
+/*      (Might be of use for table footnotes, later).  */
+/* tr:last-child td { border-top: 2px solid black; }   */
