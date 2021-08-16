@@ -7,8 +7,11 @@
         "id": "87e52dca50060664",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "CoursePlan.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CoursePlan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,15 +96,15 @@
   },
   "active": "87e52dca50060664",
   "lastOpenFiles": [
+    "CoursePlan.md",
+    "Render to html.md",
     "Course Plan.md",
     "Syllabus.md",
-    "Render to html.md",
     "Untitled.md",
     "_planning.md",
     "PDFs/Zwann & Rapp_Discourse Comprehension.pdf",
     "PDFs/Harley_Chapter7.pdf",
     "PDFs/Harley_Chapter6.pdf",
-    "PDFs/Harley_Chapter5.pdf",
-    "Harley_Chapter5.md"
+    "PDFs/Harley_Chapter5.pdf"
   ]
 }

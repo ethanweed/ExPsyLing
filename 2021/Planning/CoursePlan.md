@@ -23,7 +23,7 @@
 | 10           | 45          | Lecture | How do we represent meaning cognitively?                   | Harley Chapter 5: Meaning                                        |
 |              |             | Lab     | Comparing more than two groups                             | N&W Part 5 Chapter 5: Factorial ANOVA                            |
 | 11           |             | Lecture | Understanding language in context                          | Harley Chapter 7: Understanding                                  |
-|              | 46          | Lab     | Collins and Quillinan task                                 | Collins, A. M., & Quillian, M. R. (1969)                         |
+|              | 46          | Lab     | Collins and Quillian task                                 | Collins, A. M., & Quillian, M. R. (1969)                         |
 | 12           |             | Lecture |                                                            | Zwaan, R. A., & Rapp, D. N. (2006)                               |
 |              |             | Lab     | Estimation and simulation                                  | N&W Part 4 Chapter 3: Estimating unkown quantities from a sample |
 | 13           | 47          | Lecture | Feedback and individual advising meetings                  | -                                                                |
