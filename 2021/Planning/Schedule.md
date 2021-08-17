@@ -93,7 +93,7 @@
     <td class="tg-7od5"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: memory scanning task; </span>Midsemester course evaluation</td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: memory scanning task</span><br>Midsemester course evaluation</td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Sternberg, S. (1966)</span></td>
   </tr>
   <tr>
