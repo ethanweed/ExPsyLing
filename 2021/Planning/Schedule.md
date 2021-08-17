@@ -93,7 +93,7 @@
     <td class="tg-7od5"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: memory scanning task</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: memory scanning task; </span>Midsemester course evaluation</td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Sternberg, S. (1966)</span></td>
   </tr>
   <tr>
@@ -198,7 +198,7 @@
     <td class="tg-kusv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">12</span></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
-    <td class="tg-0pky">Situation models and discourse</td>
+    <td class="tg-0pky">Situation models and discourse<br>End of semester course evaluation</td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Zwaan, R. A., &amp; Rapp, D. N. (2006)</span></td>
   </tr>
   <tr>
