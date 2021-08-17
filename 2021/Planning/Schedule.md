@@ -93,14 +93,14 @@
     <td class="tg-7od5"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: Sternberg task</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: memory scanning task</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Sternberg, S. (1966)</span></td>
   </tr>
   <tr>
     <td class="tg-7od5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">6</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">40</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Interpreting results 1: descriptive statistics</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Interpreting results: descriptive statistics</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 3 Chapter 1: Descriptive Statistics</span></td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@
     <td class="tg-7od5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">7</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">41</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Hypothesis testing</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Interpreting results: hypothesis testing</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 4 Chapter 4: Hypothesis Testing</span></td>
   </tr>
   <tr>
@@ -157,13 +157,13 @@
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">44</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lexical decision tasks</span></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">TBA</td>
   </tr>
   <tr>
     <td class="tg-i1q2"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Meyer and Schvaneveldt task</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: sentence verification task</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Meyer, D. E., &amp; Schvaneveldt, R. W. (1971)</span></td>
   </tr>
   <tr>
@@ -191,14 +191,14 @@
     <td class="tg-61xu"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">46</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Collins and Quillinan task</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Data collection: lexical decision task</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Collins, A. M., &amp; Quillian, M. R. (1969)</span></td>
   </tr>
   <tr>
     <td class="tg-kusv"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">12</span></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Situation models and discourse</td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Zwaan, R. A., &amp; Rapp, D. N. (2006)</span></td>
   </tr>
   <tr>
@@ -224,7 +224,6 @@
   </tr>
 </tbody>
 </table>
-
 
 ## Texts
 
