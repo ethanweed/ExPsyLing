@@ -4,15 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "87e52dca50060664",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Schedule.md",
-            "mode": "source"
+        "id": "770ab16e72623a86",
+        "type": "split",
+        "children": [
+          {
+            "id": "87e52dca50060664",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Schedule.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "a9d44eec19d25039",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course description.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "a2938fc064206365",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Slides/Slides_week_02.md",
+                "mode": "source"
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -68,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Schedule.md",
+                "file": "Slides/Slides_week_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +123,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "87e52dca50060664",
+  "active": "a2938fc064206365",
   "lastOpenFiles": [
+    "Slides/Slides_week_02.md",
     "Schedule.md",
+    "Course description.md",
+    "PDFs/McCarty 2003.md",
+    "Slides_week_02.md",
+    "Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/HumanitiesComputingModel.png.md",
     "Render to html.md",
     "Syllabus.md",
     "_planning.md",
-    "Untitled.md",
-    "CoursePlan.md",
-    "Course Plan.md",
-    "PDFs/Zwann & Rapp_Discourse Comprehension.pdf",
-    "PDFs/Harley_Chapter7.pdf",
-    "PDFs/Harley_Chapter6.pdf"
+    "Untitled.md"
   ]
 }
