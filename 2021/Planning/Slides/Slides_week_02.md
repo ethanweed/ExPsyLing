@@ -2,6 +2,7 @@
 ## Experimental Psycholinguistics
 
 Teacher: Ethan Weed
+
 Instructor: Niels Aalund Krogsgaard
 
 ---
@@ -17,7 +18,8 @@ Instructor: Niels Aalund Krogsgaard
 
 ## Humanities Computing
 
-![HumanitiesComputingModel](Images/HumanitiesComputingModel.png)
+![HumanitiesComputingModel|600](Images/HumanitiesComputingModel.png)
+
 
 ---
 
