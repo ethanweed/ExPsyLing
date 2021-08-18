@@ -52,7 +52,7 @@
     <td class="tg-0pky"></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Introduction to the lab sessions and their goals</span></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 1 Chapter 1: Why We Learn Statistics?</span></td>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 1 Chapter 1: Why do we learn statistics?</span></td>
   </tr>
   <tr>
     <td class="tg-7od5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">3</span></td>
