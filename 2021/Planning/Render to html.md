@@ -6,7 +6,9 @@ pandoc --standalone name.md -o name.html
 
 ## visible web links for Brightspace
 prepend this:
-https://ethanweed.github.io
+https://ethanweed.github.io/
 
 like this:
 https://ethanweed.github.io/ExPsyLing/2021/Planning/Syllabus.html
+
+https://ethanweed.github.io/ExPsyLing/2021/Planning/Slides/Lab1_Why.html
