@@ -10,11 +10,11 @@
           {
             "id": "87e52dca50060664",
             "type": "leaf",
-            "dimension": 45.76271186440678,
+            "dimension": 68.64406779661017,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lab1_Why do we learn statistics?.md",
+                "file": "Slides/Lab1_Why.md",
                 "mode": "source"
               }
             }
@@ -22,23 +22,11 @@
           {
             "id": "a9d44eec19d25039",
             "type": "leaf",
-            "dimension": 20.903954802259886,
+            "dimension": 31.355932203389827,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Syllabus.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "a2938fc064206365",
-            "type": "leaf",
-            "dimension": 33.33333333333333,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Slides/Slides_week_02.md",
                 "mode": "source"
               }
             }
@@ -100,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lab1_Why do we learn statistics?.md",
+                "file": "Slides/Lab1_Why.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,15 +124,15 @@
   },
   "active": "87e52dca50060664",
   "lastOpenFiles": [
+    "Slides/Lab1_Why.md",
+    "Slides/Lab1_Why do we learn statistics?.md",
+    "Lab1_Why do we learn statistics?.md",
+    "Render to html.md",
     "Untitled.md",
     "Schedule.md",
     "Slides/Slides_week_02.md",
     "Syllabus.md",
     "Course description.md",
-    "PDFs/McCarty 2003.md",
-    "Slides_week_02.md",
-    "Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/HumanitiesComputingModel.png.md",
-    "Render to html.md",
-    "_planning.md"
+    "PDFs/McCarty 2003.md"
   ]
 }
