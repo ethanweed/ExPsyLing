@@ -112,6 +112,14 @@
             "id": "b8625740f7d8d00d",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d2f3c72b035bb0cd",
+            "type": "leaf",
+            "state": {
               "type": "online.larslockefeer.obsidian-plugin-todo",
               "state": {}
             }

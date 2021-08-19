@@ -1,4 +1,10 @@
 
+---
+slideNumber: true
+---
+
+
+
 ## Experimental Psycholinguistics
 
 Teacher: Ethan Weed
