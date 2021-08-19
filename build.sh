@@ -17,6 +17,6 @@ pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Schedu
 
 # Push to github
 
-#git add -A
-#git commit -m "auto updated with build.sh"
-#git push origin master
+git add -A
+git commit -m "auto updated with build.sh"
+git push origin master
