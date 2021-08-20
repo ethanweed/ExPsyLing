@@ -107,13 +107,12 @@ Taken together, the overall goal of the course is for you to learn to...
 
 <img src="Images/HumanitiesComputingModel.png" width="60%">
 
-- McCarty(2003)
 
 ---
 
 > computing belongs within the humanities because it accords  with their central project: to help scholars ask better questions.
 
-- McCarty(2003)
+\- McCarty(2003)
 
 ---
 
