@@ -8,37 +8,25 @@
         "type": "split",
         "children": [
           {
-            "id": "490b01c8e6f2adbd",
+            "id": "b88458ce17fbd057",
             "type": "leaf",
-            "dimension": 31.76710929519918,
+            "dimension": 26.96629213483146,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Schedule.md",
-                "mode": "preview"
-              }
-            }
-          },
-          {
-            "id": "50758110dcab0e1e",
-            "type": "leaf",
-            "dimension": 34.11644535240041,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Slides/Lecture_02.md",
+                "file": "Syllabus.md",
                 "mode": "source"
               }
             }
           },
           {
-            "id": "b88458ce17fbd057",
+            "id": "166c6a773d57bb53",
             "type": "leaf",
-            "dimension": 34.11644535240041,
+            "dimension": 73.03370786516854,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Syllabus.md",
+                "file": "Slides/Lecture_02.md",
                 "mode": "source"
               }
             }
@@ -100,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_02.md",
+                "file": "Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,17 +114,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "50758110dcab0e1e",
+  "active": "b88458ce17fbd057",
   "lastOpenFiles": [
-    "Slides/Lecture_02.md",
     "Syllabus.md",
+    "Slides/Lecture_02.md",
+    "Render to html.md",
     "Schedule.md",
     "Slides/Slides_week_02.md",
     "Course description.md",
     "PDFs/McCarty 2003.md",
     "Slides_week_02.md",
     "Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/HumanitiesComputingModel.png.md",
-    "Render to html.md",
     "_planning.md"
   ]
 }

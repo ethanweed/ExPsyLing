@@ -12,3 +12,11 @@ like this:
 https://ethanweed.github.io/ExPsyLing/2021/Planning/Syllabus.html
 
 https://ethanweed.github.io/ExPsyLing/2021/Planning/Slides/Lab1_Why.html
+
+###
+Reveal incremental lists:
+
+::: incremental
+
+
+:::

@@ -30,12 +30,13 @@ We will investigate the cognitive systems involved in...
 - working memory
 - the categorization of meaning
 - accessing our lexical representations
+- understanding language in context
 
 :::
 
 
 
-- understanding language in context
+
 
 
 
@@ -47,9 +48,14 @@ Learn to:
 
 ---
 
-<p class="fragment">- translate theories to research hypotheses</p>
-<p class="fragment">- translate research hypotheses to statistical hypotheses</p>
-<p class="fragment">- interpret statistical results in relation to theories</p>
+::: incremental
+
+- translate theories to research hypotheses
+- translate research hypotheses to statistical hypotheses
+- interpret statistical results in relation to theories
+
+:::
+
 
 ---
 
