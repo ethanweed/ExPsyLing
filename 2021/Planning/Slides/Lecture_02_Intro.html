@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Lecture_02</title>
+  <title>Lecture_02_Intro</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -131,7 +131,7 @@
 <section class="slide level2">
 
 <blockquote>
-<p>computing belongs within the humanities because it accords with their central project: to help scholars ask better questions.</p>
+<p>“computing belongs within the humanities because it accords with their central project: to help scholars ask better questions.”</p>
 </blockquote>
 <p>- McCarty(2003)</p>
 </section>
@@ -143,13 +143,37 @@
 <section class="slide level2">
 
 <h4 id="concordance-of-the-bible-1">Concordance of the Bible</h4>
-<p>The first concordance, completed in 1230, is said to have been written by 500 Dominican munks.</p>
+<p>The first concordance of the Latin Bible was completed in 1230, and is said to have been written by 500 Dominican munks.</p>
 </section>
 <section class="slide level2">
 
+<p>The first concordance of the Hebrew Bible was written by a single person, Rabbi Mordecai Nathan, and was completed in 1448 after 10 years of work.</p>
 </section>
 <section class="slide level2">
 
+<p>It took me 10 minutes to find every occurrence of “this world” in the King James bible:</p>
+<pre><code>bigrams = []
+for i, val in enumerate(text2):
+    if val == &quot;world&quot;:
+        if text2[i-1] == &quot;this&quot;:
+            bigrams.append(str(&#39; &#39;.join(text2[i-5:i+5])))</code></pre>
+</section>
+<section class="slide level2">
+
+<p>Here are they are:</p>
+<pre><code>[&#39;for the children of this world are in their generation&#39;,
+ &#39;them, the children of this world marry, and are given&#39;,
+ &#39;hateth his life in this world shall keep it unto&#39;,
+ &#39;shall the prince of this world be cast out. &#39;,
+ &#39;should depart out of this world unto the father, having&#39;,
+ &#39;for the prince of this world cometh, and hath nothing&#39;,
+ &#39;because the prince of this world is judged.  16:12&#39;,
+ &#39;of the princes of this world knew: for had they&#39;,
+ &#39;for the wisdom of this world is foolishness with god.&#39;,
+ &#39;for the fashion of this world passeth away.  7:32&#39;,
+ &#39;whom the god of this world hath blinded the minds&#39;,
+ &#39;chosen the poor of this world rich in faith, and&#39;,
+ &#39;saying, the kingdoms of this world are become the kingdoms&#39;]</code></pre>
 </section>
 <section id="thanks" class="slide level2">
 <h2>Thanks!</h2>

@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "16470c98c15f1c5e",
-        "type": "split",
-        "children": [
-          {
-            "id": "b88458ce17fbd057",
-            "type": "leaf",
-            "dimension": 26.96629213483146,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Syllabus.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "166c6a773d57bb53",
-            "type": "leaf",
-            "dimension": 73.03370786516854,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Slides/Lecture_02.md",
-                "mode": "source"
-              }
-            }
+        "id": "b88458ce17fbd057",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Slides/Lecture_02_Intro.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -88,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_02.md",
+                "file": "Slides/Lecture_02_Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,17 +94,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "166c6a773d57bb53",
+  "active": "b88458ce17fbd057",
   "lastOpenFiles": [
+    "Slides/Lecture_02_Intro.md",
     "Slides/Lecture_02.md",
     "Syllabus.md",
+    "Slides/Images/Evans_1983.png",
     "Render to html.md",
     "Schedule.md",
     "Slides/Slides_week_02.md",
     "Course description.md",
     "PDFs/McCarty 2003.md",
-    "Slides_week_02.md",
-    "Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/HumanitiesComputingModel.png.md",
-    "_planning.md"
+    "Slides_week_02.md"
   ]
 }
