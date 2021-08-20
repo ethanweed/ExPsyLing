@@ -7,7 +7,7 @@
 
 # Lecture slides
 
-pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02.md -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 
 #Lab slides
