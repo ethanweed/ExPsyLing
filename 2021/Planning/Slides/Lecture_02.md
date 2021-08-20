@@ -24,16 +24,15 @@ We will investigate the cognitive systems involved in...
 
 ---
 
-<p class="fragment">- working memory</p>
+- working memory <!-- .element: class="fragment" -->
+- the categorization of meaning <!-- .element: class="fragment" -->
+- accessing our lexical representations  <!-- .element: class="fragment" -->
+- understanding language in context <!-- .element: class="fragment" -->
 
-<p class="fragment">- the categorization of meaning</p>
-
-<p class="fragment">- accessing our lexical representations</p>
-
-<p class="fragment">- understanding language in context </p>
 
 
 ---
+
 #### Course goals 2
 
 Learn to: 
