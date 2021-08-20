@@ -24,10 +24,18 @@ We will investigate the cognitive systems involved in...
 
 ---
 
-- working memory <!-- .element: class="fragment" -->
-- the categorization of meaning <!-- .element: class="fragment" -->
-- accessing our lexical representations  <!-- .element: class="fragment" -->
-- understanding language in context <!-- .element: class="fragment" -->
+
+::: incremental
+
+- working memory
+- the categorization of meaning
+- accessing our lexical representations
+
+:::
+
+
+
+- understanding language in context
 
 
 
