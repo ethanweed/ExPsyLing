@@ -10,7 +10,7 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/S
 #Lab slides
 #pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.md -V revealjs-url=https://unpkg.com/reveal.js@^4/
 
-pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.md -V theme=simple -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab1_Why.md -V theme=sky -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 	
 
 
