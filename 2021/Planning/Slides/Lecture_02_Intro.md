@@ -190,7 +190,10 @@ Here are they are:
 
 ---
 
-<section class="hbox"> <div class="container"> <div class="flex-col" data-markdown> * ```
+<section class="hbox"> 
+<div class="container"> 
+<div class="flex-col" data-markdown> 
+	```
 ['for the children of this world are in their generation',
  'them, the children of this world marry, and are given',
  'hateth his life in this world shall keep it unto',
@@ -204,7 +207,12 @@ Here are they are:
  'whom the god of this world hath blinded the minds',
  'chosen the poor of this world rich in faith, and',
  'saying, the kingdoms of this world are become the kingdoms']
- ``` </div> <div class="flex-col" data-markdown> * <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"> </div> </div> </section>
+ ```
+	</div> <div class="flex-col" data-markdown> 
+	<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"> 
+	</div> 
+	</div> 
+</section>
 
 ---
 #### References
