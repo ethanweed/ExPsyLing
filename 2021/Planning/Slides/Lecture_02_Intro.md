@@ -190,11 +190,10 @@ Here are they are:
 
 ---
 
-<section class="hbox"> 
-<div class="container"> 
-<div class="flex-col" data-markdown> 
-	```
-['for the children of this world are in their generation',
+
+<section>
+  <div style="text-align: left; float: left;">
+    <p data-markdown>- ['for the children of this world are in their generation',
  'them, the children of this world marry, and are given',
  'hateth his life in this world shall keep it unto',
  'shall the prince of this world be cast out. ',
@@ -206,15 +205,17 @@ Here are they are:
  'for the fashion of this world passeth away.  7:32',
  'whom the god of this world hath blinded the minds',
  'chosen the poor of this world rich in faith, and',
- 'saying, the kingdoms of this world are become the kingdoms']
- ```
-	</div> <div class="flex-col" data-markdown> 
-	<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"> 
-	</div> 
-	</div> 
+ 'saying, the kingdoms of this world are become the kingdoms']</p>
+  </div>
+
+  <div style="text-align: right; float: right;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%">
+  </div>
 </section>
 
+
 ---
+
 #### References
 
 
