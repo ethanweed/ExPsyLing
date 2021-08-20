@@ -105,18 +105,21 @@ Taken together, the overall goal of the course is for you to learn to...
 
 
 
-<img src="Images/HumanitiesComputingModel.png" width="40%">
+<img src="Images/HumanitiesComputingModel.png" width="60%">
 
 ---
 
 > computing belongs within the humanities because it accords  with their central project: to help scholars ask better questions.
 
 ---
-## Concordance of the Bible
 
-![Concordance](https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png)
+#### Concordance of the Bible
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="60%">
 
 ---
+
+#### Concordance of the Bible
 
 The first concordance, completed in 1230, is said to have been written by 500 Dominican munks.
 
