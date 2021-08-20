@@ -99,8 +99,6 @@ Taken together, the overall goal of the course is for you to learn to...
 ---
 
 
----
-
 #### Humanities Computing
 
 ![HumanitiesComputingModel|600](Images/HumanitiesComputingModel.png)
