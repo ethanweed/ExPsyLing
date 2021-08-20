@@ -209,7 +209,7 @@ Here are they are:
   </div>
 
   <div style="text-align: right; float: right;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%">
+    <p data-markdown>- <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"></p>
   </div>
 </section>
 
