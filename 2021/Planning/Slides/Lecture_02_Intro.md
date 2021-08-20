@@ -188,6 +188,23 @@ Here are they are:
 ::::
 :::
 
+---
+
+<section class="hbox"> <div class="container"> <div class="flex-col" data-markdown> * ```
+['for the children of this world are in their generation',
+ 'them, the children of this world marry, and are given',
+ 'hateth his life in this world shall keep it unto',
+ 'shall the prince of this world be cast out. ',
+ 'should depart out of this world unto the father, having',
+ 'for the prince of this world cometh, and hath nothing',
+ 'because the prince of this world is judged.  16:12',
+ 'of the princes of this world knew: for had they',
+ 'for the wisdom of this world is foolishness with god.',
+ 'for the fashion of this world passeth away.  7:32',
+ 'whom the god of this world hath blinded the minds',
+ 'chosen the poor of this world rich in faith, and',
+ 'saying, the kingdoms of this world are become the kingdoms']
+ ``` </div> <div class="flex-col" data-markdown> * <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"> </div> </div> </section>
 
 ---
 #### References
