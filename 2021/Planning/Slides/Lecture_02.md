@@ -94,7 +94,9 @@ Taken together, the overall goal of the course is for you to learn to...
 
 #### Why so much computer stuff?
 
-![computerproblems|100](https://clipground.com/images/computer-help-clipart-5.jpg)
+
+
+<img src="https://clipground.com/images/computer-help-clipart-5.jpg" width="40%">
 
 ---
 
