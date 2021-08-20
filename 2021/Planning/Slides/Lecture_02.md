@@ -17,9 +17,37 @@ Instructor: Niels Aalund Krogsgaard
 4. Introductions
 
 ---
-## Course goals
 
-The goal of the course is for you to learn to:
+#### Course goals 1
+
+We will investigate the cognitive systems involved in...
+
+---
+
+<p class="fragment">- working memory</p>
+<p class="fragment">- the categorization of meaning</p>
+<p class="fragment">- accessing our lexical representations</p>
+<p class="fragment">- understanding language in context </p>
+
+---
+#### Course goals 2
+
+Learn to: 
+
+---
+
+<p class="fragment">- translate theories to research hypotheses</p>
+<p class="fragment">- translate research hypotheses to statistical hypotheses</p>
+<p class="fragment">- interpret statistical results in relation to theories</p>
+
+---
+
+
+---
+
+#### Course goals 3
+
+Taken together, the overall goal of the course is for you to learn to...
 
 ---
 
@@ -38,10 +66,24 @@ The goal of the course is for you to learn to:
 4. Communicate experimental findings in a clear way to both expert and lay audiences
 
 ---
-## Course structure
+#### Course structure
+
+- Lectures
+- Labs
+- Instructor Sessions
+
+---
+
+#### Why so much computer stuff?
+
+![computerproblems|300](https://clipground.com/images/computer-help-clipart-5.jpg)
+
+---
 
 
-## Humanities Computing
+---
+
+#### Humanities Computing
 
 ![HumanitiesComputingModel|600](Images/HumanitiesComputingModel.png)
 

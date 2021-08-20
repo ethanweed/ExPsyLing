@@ -4,25 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "770ab16e72623a86",
+        "id": "16470c98c15f1c5e",
         "type": "split",
         "children": [
           {
-            "id": "87e52dca50060664",
+            "id": "490b01c8e6f2adbd",
             "type": "leaf",
-            "dimension": 68.64406779661017,
+            "dimension": 31.76710929519918,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Slides/Lab1_Why.md",
+                "file": "Schedule.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "50758110dcab0e1e",
+            "type": "leaf",
+            "dimension": 34.11644535240041,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Slides/Lecture_02.md",
                 "mode": "source"
               }
             }
           },
           {
-            "id": "a9d44eec19d25039",
+            "id": "b88458ce17fbd057",
             "type": "leaf",
-            "dimension": 31.355932203389827,
+            "dimension": 34.11644535240041,
             "state": {
               "type": "markdown",
               "state": {
@@ -88,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lab1_Why.md",
+                "file": "Slides/Lecture_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,14 +115,6 @@
             "id": "b8625740f7d8d00d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "d2f3c72b035bb0cd",
-            "type": "leaf",
-            "state": {
               "type": "online.larslockefeer.obsidian-plugin-todo",
               "state": {}
             }
@@ -122,17 +126,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "87e52dca50060664",
+  "active": "50758110dcab0e1e",
   "lastOpenFiles": [
-    "Slides/Lab1_Why.md",
-    "Render to html.md",
-    "Slides/Lab1_Why do we learn statistics?.md",
-    "Lab1_Why do we learn statistics?.md",
-    "Untitled.md",
+    "Slides/Lecture_02.md",
+    "Syllabus.md",
     "Schedule.md",
     "Slides/Slides_week_02.md",
-    "Syllabus.md",
     "Course description.md",
-    "PDFs/McCarty 2003.md"
+    "PDFs/McCarty 2003.md",
+    "Slides_week_02.md",
+    "Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/HumanitiesComputingModel.png.md",
+    "Render to html.md",
+    "_planning.md"
   ]
 }
