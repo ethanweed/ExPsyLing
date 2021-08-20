@@ -164,7 +164,7 @@ Here are they are:
 
 ---
 
-
+#### Interesting comparisons
 
 ```
 ['for the children of this world are in their generation',
@@ -183,8 +183,6 @@ Here are they are:
  ```
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%">
-
-
 
 
 ---
