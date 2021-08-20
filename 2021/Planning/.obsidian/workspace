@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Syllabus.md",
+                "file": "Slides/Lecture_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,10 +114,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b88458ce17fbd057",
+  "active": "166c6a773d57bb53",
   "lastOpenFiles": [
-    "Syllabus.md",
     "Slides/Lecture_02.md",
+    "Syllabus.md",
     "Render to html.md",
     "Schedule.md",
     "Slides/Slides_week_02.md",

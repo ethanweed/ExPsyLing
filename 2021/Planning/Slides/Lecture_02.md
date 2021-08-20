@@ -83,6 +83,7 @@ Taken together, the overall goal of the course is for you to learn to...
 4. Communicate experimental findings in a clear way to both expert and lay audiences
 
 ---
+
 #### Course structure
 
 - Lectures
