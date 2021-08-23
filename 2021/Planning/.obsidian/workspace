@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lecture_02_Intro.md",
+            "file": "Syllabus.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_02_Intro.md",
+                "file": "Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,9 +96,9 @@
   },
   "active": "b88458ce17fbd057",
   "lastOpenFiles": [
+    "Syllabus.md",
     "Slides/Lecture_02_Intro.md",
     "Slides/Lecture_02.md",
-    "Syllabus.md",
     "Slides/Images/Evans_1983.png",
     "Render to html.md",
     "Schedule.md",
