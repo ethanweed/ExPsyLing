@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Syllabus.md",
+            "file": "Schedule.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Syllabus.md",
+                "file": "Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,12 +96,12 @@
   },
   "active": "b88458ce17fbd057",
   "lastOpenFiles": [
+    "Schedule.md",
     "Syllabus.md",
     "Slides/Lecture_02_Intro.md",
     "Slides/Lecture_02.md",
     "Slides/Images/Evans_1983.png",
     "Render to html.md",
-    "Schedule.md",
     "Slides/Slides_week_02.md",
     "Course description.md",
     "PDFs/McCarty 2003.md",
