@@ -5,6 +5,11 @@
 # in case you need it:
 #-V revealjs-url=https://unpkg.com/reveal.js@^4/
 
+# Notebooks
+
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Concordance.ipynb
+
+
 # Lecture slides
 
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02_Intro.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02_Intro.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
