@@ -109,7 +109,7 @@ Evans et al (1983)
 
 ---
 
-<img src="/Images/SimpsonsParadox" width="40%">
+<img src="/Images/SimpsonsParadox.png" width="40%">
 
 ---
 
