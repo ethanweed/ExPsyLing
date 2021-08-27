@@ -135,6 +135,8 @@ Reason #3: the “things” that we study are people, and people are complicated
 
 <img src="https://imgs.xkcd.com/comics/statistics.png" width="50%">
 
+Source:  https://xkcd.com/2400
+
 ---
 
 ## References
