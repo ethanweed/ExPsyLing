@@ -204,21 +204,15 @@ Here are they are:
 
 ---
 
-#### Algorithmic thinking leads to [ontological](https://en.wikipedia.org/wiki/Ontology) thinking
-
->"the interest lies in the questions raised by such algorithmic thinking, especially by the inevitable mismatch between any algorithm and data of the sort normal to the humanities. This mismatch forces ontological questions that lead back to one or more fundamental problems in the discipline of origin and may at the same time illuminate basic methodological issues relevant beyond it."
-
----
-
 #### Algorithmic thinking: find musical phrases
 
 ![](Images/MusicalPatterns.png)
 
 ---
 
-#### Metalinguistic thinking leads to clear thinking
+#### Algorithmic thinking leads to [ontological](https://en.wikipedia.org/wiki/Ontology) thinking
 
->"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required.g It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship. This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
+>"the interest lies in the questions raised by such algorithmic thinking, especially by the inevitable mismatch between any algorithm and data of the sort normal to the humanities. This mismatch forces ontological questions that lead back to one or more fundamental problems in the discipline of origin and may at the same time illuminate basic methodological issues relevant beyond it."
 
 ---
 
@@ -245,9 +239,10 @@ xml (source: http://www.talkbank.org)
 
 ---
 
-#### Representational thinking leads to new insights
 
->"... arranging, formatting, or otherwise transforming the appearance of data \[leading to] what Arnheim has called 'visual thinking'"
+#### Metalinguistic thinking leads to clear thinking
+
+>"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required.g It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship. This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
 
 ---
 
@@ -256,6 +251,13 @@ xml (source: http://www.talkbank.org)
 ![](Images/AuthorshipAnalysis.png)
 
 ---
+
+#### Representational thinking leads to new insights
+
+>"... arranging, formatting, or otherwise transforming the appearance of data \[leading to] what Arnheim has called 'visual thinking'"
+
+---
+
 
 #### References
 
