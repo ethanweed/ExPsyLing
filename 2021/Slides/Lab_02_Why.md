@@ -115,6 +115,16 @@ Source: Bickel et al (1975)
 
 ---
 
+Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the nooks and crannies of complicated data.
+
+---
+
+## Third reason...
+
+<img src="Images/StroopYears.png" width="50%">
+
+---
+
 
 ## References
 
@@ -123,6 +133,8 @@ Source: Bickel et al (1975)
 Bickel, P. J., Hammel, E. A., & O'Connell, J. W. (1975). Sex bias in graduate admissions: Data from Berkeley. _Science_, _187_(4175), 398-404.
 
 Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.
+
+Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
 		
 </font>
 
