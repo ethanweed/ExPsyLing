@@ -248,7 +248,8 @@ xml (source: http://www.talkbank.org)
 
 #### Representational thinking: visualizing authorial voice
 
-![|700](Images/AuthorshipAnalysis.png)
+
+<img src="Images/AuthorshipAnalysis.png" alt="" width="700">
 
 ---
 
