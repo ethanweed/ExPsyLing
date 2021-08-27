@@ -126,13 +126,14 @@ Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the n
 <img src="Images/StroopYears.png" width="60%">
 
 ---
+
 ## Why? Why? Why???
 
 Reason #3: the “things” that we study are people, and people are complicated.
 
 ---
 
-<img src=" https://xkcd.com/2400/" width="50%">
+<img src="https://xkcd.com/2400/" width="50%">
 
 ---
 
