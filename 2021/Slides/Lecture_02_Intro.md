@@ -218,7 +218,7 @@ Here are they are:
 
 #### Metalinguistic thinking leads to clear thinking
 
->"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required.g It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship.[59] This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
+>"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required.g It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship. This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
 
 ---
 
