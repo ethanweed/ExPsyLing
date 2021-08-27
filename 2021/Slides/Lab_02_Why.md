@@ -78,6 +78,7 @@ Evans et al (1983)
 Evans et al (1983)
 
 ---
+
 ##### Berkeley College 1973 admissions data
 
 |       | Number of applicants | Percent admitted |
@@ -86,6 +87,7 @@ Evans et al (1983)
 |Females|4321                  |35%               |
 
 ---
+
 ##### Berkeley College 1973 admissions data
 
 | Department | Male Applicants | Male Percent Admitted | Female Applicants | Female Percent Admitted |
