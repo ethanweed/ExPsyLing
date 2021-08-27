@@ -69,11 +69,12 @@ Evans et al (1983)
 
 #### How we do know what "feels true"?
 
-![Evans|400](Images/Evans_1983.png)
+<img src="Images/Evans_1983.png" width="40%">
 
 Evans et al (1983)
 
 ---
+
 
 
 
