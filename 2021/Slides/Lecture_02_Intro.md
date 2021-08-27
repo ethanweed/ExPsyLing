@@ -263,7 +263,7 @@ xml (source: http://www.talkbank.org)
 #### References
 
 
-<div style="text-align: left";font-size: 1>
+<font-size="1">
 
 Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
 
@@ -272,6 +272,7 @@ Cambouropoulos, E., Crawford, T., & Iliopoulos, C. S. (2001). Pattern processing
 McCarty, W. (2003). Humanities computing. _Encyclopedia of library and information science_, _2_, 1224.
 
 Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural constraints on code-mixing: Evidence from French-English bilingual children. Bilingualism: Language and Cognition, 3: 245-261.
-</div>
+
+</font>
 	
 
