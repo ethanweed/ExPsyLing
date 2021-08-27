@@ -222,25 +222,47 @@ Here are they are:
 
 ---
 
-#### Metalinguistic thinking: tagging utterances
+#### Metalinguistic thinking: tagging utterances with XML
 
-``` <u who="CHI" uID="u12">
-    <w>I</w>
-    <w>want</w>
-    <w>go</w>
-    <w>play</w>
-    <w>make</w>
-    <w>a</w>
-    <w>house</w>
-    <t type="p"></t>
+html:
+```
+I study at <a href="https://www.au.dk">Aarhus Universitet</a>.
 
-    <a type="extension" flavor="pho">ai want go ple mek a haus</a>
-    <a type="coding">$LAN:E $ADD:MOT</a>
+```
+
+xml (source: http://www.talkbank.org)
+```
+  <u who="MOT" uID="u25">
+    <w>what</w>
+    <w>are</w>
+    <w>these</w>
+    <t type="q"></t>
+
+    <a type="coding">$LAN:E $ADD:CHI</a>
   </u>
-  ```
+
+```
+
+---
+
+#### Representational thinking leads to new insights
+
+>"... arranging, formatting, or otherwise transforming the appearance of data \[leading to] what Arnheim has called 'visual thinking'"
+
+---
+
+#### Representational thinking: visualizing authorial voice
+
+![](Images/AuthorshipAnalysis.png)
 
 ---
 
 #### References
 
+Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
 
+Cambouropoulos, E., Crawford, T., & Iliopoulos, C. S. (2001). Pattern processing in melodic sequences: Challenges, caveats and prospects. _Computers and the Humanities_, _35_(1), 9-21.
+
+McCarty, W. (2003). Humanities computing. _Encyclopedia of library and information science_, _2_, 1224.
+
+[Paradis, J., Nicoladis, E., & Genesee, F. (2000)](https://childes.talkbank.org/access/Biling/0docs/Paradis2000.pdf). Early emergence of structural constraints on code-mixing: Evidence from French-English bilingual children. Bilingualism: Language and Cognition, 3: 245-261.
