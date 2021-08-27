@@ -85,7 +85,7 @@ Taken together, the overall goal of the course is for you to learn to...
 
 ---
 
-#### Course structure
+### Course structure
 
 - Lectures
 - Labs
@@ -93,7 +93,7 @@ Taken together, the overall goal of the course is for you to learn to...
 
 ---
 
-#### Introductions
+## Introductions
 
 ---
 
