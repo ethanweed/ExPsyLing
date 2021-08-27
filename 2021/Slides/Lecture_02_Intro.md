@@ -263,7 +263,7 @@ xml (source: http://www.talkbank.org)
 #### References
 
 
-<font-size="1">
+<font size="1"> 
 
 Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
 
