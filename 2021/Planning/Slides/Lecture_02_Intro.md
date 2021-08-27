@@ -99,7 +99,7 @@ Taken together, the overall goal of the course is for you to learn to...
 
 #### Exam
 
-The exam for this course is a portfolio of work completed throughout the semester, and will be graded on a pass/fail basis. Your portfolio will consist of:
+Pass/fail portfolio
 
 1. Three lab reports, completed throughout  the semester, using the [lab report template](https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc)
 2. Proof of completion of online GDPR course in either <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/27011" target="_blank">Danish</a> or <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/30198" target="_blank">English</a>
