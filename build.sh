@@ -12,14 +12,13 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 
 # Lecture slides
 
-pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02_Intro.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lecture_02_Intro.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_02_Intro.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_02_Intro.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 
 #Lab slides
 
 
-pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab_02_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Slides/Lab_02_Why.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
-	
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 
 
@@ -31,5 +30,5 @@ pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Schedu
 # Push to github
 
 git add -A
-git commit -m "auto updated with build.sh"
+git commit -m "auto-updated with build.sh"
 git push origin master

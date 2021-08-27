@@ -135,6 +135,8 @@ Pass/fail portfolio
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="60%">
 
+"commonplace physical devices for manipulating knowledge" \-McCarty(2003)
+
 ---
 
 #### Concordance of the Bible
@@ -199,6 +201,43 @@ Here are they are:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%">
 
+
+---
+
+#### Algorithmic thinking leads to [ontological](https://en.wikipedia.org/wiki/Ontology) thinking
+
+>the interest lies in the questions raised by such algorithmic thinking, especially by the inevitable mismatch between any algorithm and data of the sort normal to the humanities. This mismatch forces ontological questions that lead back to one or more fundamental problems in the discipline of origin and may at the same time illuminate basic methodological issues relevant beyond it.
+
+---
+
+#### Algorithmic thinking: find musical phrases
+
+![music](Images/MusicalPatterns.png)
+
+---
+
+#### Metalinguistic thinking leads to clear thinking
+
+>deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required.g It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship.[59] This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**
+
+---
+
+#### Metalinguistic thinking: tagging utterances
+
+``` <u who="CHI" uID="u12">
+    <w>I</w>
+    <w>want</w>
+    <w>go</w>
+    <w>play</w>
+    <w>make</w>
+    <w>a</w>
+    <w>house</w>
+    <t type="p"></t>
+
+    <a type="extension" flavor="pho">ai want go ple mek a haus</a>
+    <a type="coding">$LAN:E $ADD:MOT</a>
+  </u>
+  ```
 
 ---
 

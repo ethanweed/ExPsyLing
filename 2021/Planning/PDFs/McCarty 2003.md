@@ -20,6 +20,8 @@
 
 #### [Page 2](highlights://McCarty%202003#page=2)
 
+> commonplace physical devices for manipulating knowledge
+
 > the concordance, whose invention by Dominican monks in the late
 > twelfth or early thirtheenth century gave us one of the most
 > powerful tools we have for analysis of language

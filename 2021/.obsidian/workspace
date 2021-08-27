@@ -1,29 +1,32 @@
 {
   "main": {
-    "id": "99a26ded00f15ca5",
+    "id": "662aeee6f224b2f8",
     "type": "split",
     "children": [
       {
-        "id": "b88458ce17fbd057",
+        "id": "efbe82902ee3ae09",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Slides/Lecture_02_Intro.md",
+            "mode": "source"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b6eceb2e03927ed2",
+    "id": "38147c3d8475e0be",
     "type": "split",
     "children": [
       {
-        "id": "d1ab57a11b1ca28d",
+        "id": "bb53cb806221f278",
         "type": "tabs",
         "children": [
           {
-            "id": "0946ad33784ce272",
+            "id": "fffc0a92b882f261",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +34,7 @@
             }
           },
           {
-            "id": "1ba0361d812715d7",
+            "id": "a5a93b73fb288744",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -52,19 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "351c9e9d9e822e1a",
+    "id": "d4013a1f3c5d2356",
     "type": "split",
     "children": [
       {
-        "id": "86659fee5011ca0e",
+        "id": "1d63a307040daa6f",
         "type": "tabs",
         "children": [
           {
-            "id": "29bd716010fc8590",
+            "id": "cdc9480e2dd7d040",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Slides/Lecture_02_Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -74,33 +78,17 @@
                 "unlinkedCollapsed": true
               }
             }
-          },
-          {
-            "id": "b8625740f7d8d00d",
-            "type": "leaf",
-            "state": {
-              "type": "online.larslockefeer.obsidian-plugin-todo",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "b88458ce17fbd057",
+  "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
     "Slides/Lecture_02_Intro.md",
-    "Slides/Lab_02_Why.md",
-    "Syllabus.md",
-    "Workshop blurb.md",
-    "Untitled.md",
-    "Schedule.md",
-    "Render to html.md",
-    "GDPR course.md",
-    "Slides/Lecture_02.md",
-    "Slides/Images/Evans_1983.png"
+    "Slides/Lab_02_Why.md"
   ]
 }
