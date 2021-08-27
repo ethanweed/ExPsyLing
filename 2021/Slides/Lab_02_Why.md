@@ -12,6 +12,8 @@ Because we can't trust ourselves.
 
 ---
 
+## First reason...
+
 #### valid argument — believable conclusion
 
 
@@ -67,17 +69,23 @@ Evans et al (1983)
 
 <table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"></th><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">conclusion feels true</span></th><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">conclusion feels false</span></th></tr></thead><tbody><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">argument is valid</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">92% say "valid"</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">46% say "valid"</span></td></tr><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">argument is invalid</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">92% say "valid"</span></td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">8% say "valid"</td></tr></tbody></table>
 
+---
 
+## Why? Why? Why???
+
+Reason #1:  It’s just too easy for us to “believe what we want to believe”.
 
 ---
 
-#### How we do know what "feels true"?
+#### Sidebar: How we do know what "feels true"?
 
 <img src="Images/Evans_1983.png" width="40%">
 
 Evans et al (1983)
 
 ---
+
+## Second reason...
 
 ##### Berkeley College 1973 admissions data
 
@@ -100,6 +108,12 @@ Evans et al (1983)
 | F          | 272             | 6%                    | 341               | 7%                      |
 
 ---
+
+<img src="/Images/SimpsonsParadox" width="40%">
+
+---
+
+
 ## References
 
 Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.
