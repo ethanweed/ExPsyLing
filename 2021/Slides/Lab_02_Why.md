@@ -85,7 +85,7 @@ Evans et al (1983)
 
 ---
 
-## Second reason...
+### Second reason...
 
 ##### Berkeley College 1973 admissions data
 
@@ -114,17 +114,26 @@ Evans et al (1983)
 Source: Bickel et al (1975)
 
 ---
+## Why? Why? Why???
 
 Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the nooks and crannies of complicated data.
 
 ---
 
-## Third reason...
+### Third reason...
 
-<img src="Images/StroopYears.png" width="50%">
+<img src="Images/StroopYears.png" width="60%">
+
+---
+## Why? Why? Why???
+
+Reason #3: the “things” that we study are people, and people are complicated.
 
 ---
 
+<img src=" https://xkcd.com/2400/" width="50%">
+
+---
 
 ## References
 
