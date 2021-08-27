@@ -109,11 +109,20 @@ Evans et al (1983)
 
 ---
 
-<img src="Images/SimpsonsParadox.png" width="80%">
+<img src="Images/SimpsonsParadox.png" width="60%">
+
+Source: 
 
 ---
 
 
 ## References
 
-Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.
+<font size="1"> 
+	
+	Bickel, P. J., Hammel, E. A., & O'Connell, J. W. (1975). Sex bias in graduate admissions: Data from Berkeley. _Science_, _187_(4175), 398-404.
+
+	Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.
+		
+</font>
+
