@@ -2,6 +2,16 @@
 
 ## Experimental Psycholinguistics
 
+<style>
+.container{
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+</style>
+
+
 Teacher: Ethan Weed
 
 Instructor: Niels Aalund Krogsgaard
@@ -21,29 +31,18 @@ Instructor: Niels Aalund Krogsgaard
 
 ### Testing, testing, 1, 2, 3
 
-
-<style>
-.container{
-  display: flex;
-}
-.col {
-  flex: 1;
-}
-</style>
-
-
-::: {.container}
-:::: {.col}
 <img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
-::::
-:::: {.col}
+
+---
+
+### Testing, testing, 1, 2, 3
+
 - Observation 1: Hearing a backwards count while trying to count forwards interfered with my ability to count forwards.
 - Observation 2: Hearing other language does not interfere with my ability to count forwards.
 - What could explain this phemonenon?
 - What hypothesis/hypotheses does your explanation generate?
 - How could you test your hypothesis/hypotheses?
-::::
-:::
+
 
 
 ---
