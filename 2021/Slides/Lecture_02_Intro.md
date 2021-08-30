@@ -22,6 +22,16 @@ Instructor: Niels Aalund Krogsgaard
 ### Testing, testing, 1, 2, 3
 
 
+<style>
+.container{
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+</style>
+
+
 ::: {.container}
 :::: {.col}
 Column 1 Content
