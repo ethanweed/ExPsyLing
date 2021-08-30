@@ -38,10 +38,22 @@ Instructor: Niels Aalund Krogsgaard
 ::::
 :::: {.col}
 - Observation 1: Hearing a backwards count interfered with my ability to count forwards.
-- Observation 2: Hearing other language does not interfere with my ability to count forwards.
 ::::
 :::
 
+---
+
+### Testing, testing, 1, 2, 3
+
+
+::: {.container}
+:::: {.col}
+<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
+::::
+:::: {.col}
+- Observation 2: Hearing other language does not interfere with my ability to count forwards.
+::::
+:::
 
 ---
 
