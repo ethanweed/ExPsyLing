@@ -143,7 +143,7 @@ Source:  https://xkcd.com/2400
 
 ### Why? Why? Why???
 
-<img src="Images/Moderna_vaccine_efficacy.png" width="80%">
+<img src="Images/Moderna_vaccine_efficacy.png" width="100%">
 
 Source: https://www.fda.gov/media/144434/download
 
