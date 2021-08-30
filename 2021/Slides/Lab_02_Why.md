@@ -71,7 +71,7 @@ Evans et al (1983)
 
 ---
 
-## Why? Why? Why???
+### Why? Why? Why???
 
 Reason #1:  It’s just too easy for us to “believe what we want to believe”.
 
@@ -115,7 +115,7 @@ Source: Bickel et al (1975)
 
 ---
 
-## Why? Why? Why???
+### Why? Why? Why???
 
 Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the nooks and crannies of complicated data.
 
@@ -127,13 +127,13 @@ Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the n
 
 ---
 
-## Why? Why? Why???
+### Why? Why? Why???
 
 Reason #3: the “things” that we study are people, and people are complicated.
 
 ---
 
-## Why? Why? Why???
+### Why? Why? Why???
 
 <img src="https://imgs.xkcd.com/comics/statistics.png" width="30%">
 
@@ -141,7 +141,7 @@ Source:  https://xkcd.com/2400
 
 ---
 
-## Why? Why? Why???
+### Why? Why? Why???
 
 <img src="Images/Moderna_vaccine_efficacy.png" width="40%">
 
