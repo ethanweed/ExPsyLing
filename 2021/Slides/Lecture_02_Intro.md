@@ -34,7 +34,7 @@ Instructor: Niels Aalund Krogsgaard
 
 ::: {.container}
 :::: {.col}
-Column 1 Content
+<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
 ::::
 :::: {.col}
 Column 2 Content
@@ -44,7 +44,7 @@ Column 2 Content
 
 ---
 
-<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg" width="100%">
+
 
 
 ---
