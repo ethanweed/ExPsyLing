@@ -8,6 +8,10 @@ Why, why, why???
 
 ---
 
+Is there a place for statistics in your life?
+
+---
+
 Because we can't trust ourselves.
 
 ---
@@ -152,6 +156,12 @@ Source: https://www.fda.gov/media/144434/download
 ### Why? Why? Why???
 
 <img src="Images/Moderna_trial_results.png" width=!100%>
+
+---
+
+### Why? Why? Why???
+
+Reason #4: statistical literacy can help us make important life decisions.
 
 ---
 
