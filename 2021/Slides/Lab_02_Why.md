@@ -149,6 +149,12 @@ Source: https://www.fda.gov/media/144434/download
 
 ---
 
+### Why? Why? Why???
+
+<img src="Images/Moderna_trial_results.png" width=!100%>
+
+---
+
 ## References
 
 <font size="1"> 
