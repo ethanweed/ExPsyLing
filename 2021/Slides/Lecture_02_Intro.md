@@ -37,7 +37,11 @@ Instructor: Niels Aalund Krogsgaard
 <img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
 ::::
 :::: {.col}
-Column 2 Content
+- Observation 1: Hearing a backwards count while trying to count forwards interfered with my ability to count forwards.
+- Observation 2: Hearing other language does not interfere with my ability to count forwards.
+- What could explain this phemonenon?
+- What hypothesis/hypotheses does your explanation generate?
+- How could you test your hypothesis/hypotheses?
 ::::
 :::
 
