@@ -21,6 +21,19 @@ Instructor: Niels Aalund Krogsgaard
 
 ### Testing, testing, 1, 2, 3
 
+
+::: {.container}
+:::: {.col}
+Column 1 Content
+::::
+:::: {.col}
+Column 2 Content
+::::
+:::
+
+
+---
+
 <img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg" width="100%">
 
 
