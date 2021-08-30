@@ -133,9 +133,19 @@ Reason #3: the “things” that we study are people, and people are complicated
 
 ---
 
+## Why? Why? Why???
+
 <img src="https://imgs.xkcd.com/comics/statistics.png" width="50%">
 
 Source:  https://xkcd.com/2400
+
+---
+
+## Why? Why? Why???
+
+<img src="Images/Moderna_vaccine_efficacy.png" width="40%">
+
+Source: https://www.fda.gov/media/144434/download
 
 ---
 
