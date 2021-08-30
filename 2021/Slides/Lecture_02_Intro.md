@@ -19,6 +19,15 @@ Instructor: Niels Aalund Krogsgaard
 
 ---
 
+### Testing, testing, 1, 2, 3
+
+<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg" width="100%">
+
+
+---
+
+
+
 #### Course goals 1
 
 We will investigate the cognitive systems involved in...
