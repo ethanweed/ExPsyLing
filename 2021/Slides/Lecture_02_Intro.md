@@ -24,8 +24,9 @@ Instructor: Niels Aalund Krogsgaard
 1. Course goals
 2. Course structure
 3. Exam
-4. Introductions
-5. Why so much computer stuff?
+4. Evaluation of intro week (10 minutes)
+5. Introductions
+6. Why so much computer stuff?
 
 ---
 
