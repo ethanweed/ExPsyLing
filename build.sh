@@ -7,7 +7,7 @@
 
 # Notebooks
 
-jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Concordance.ipynb
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_02.ipynb
 
 
 # Lecture slides

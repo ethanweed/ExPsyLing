@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lecture_02_Intro.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_02_Intro.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Untitled.md",
     "Slides/Lecture_02_Intro.md",
     "Planning/_planning.md",
     "Slides/Lab_02_Why.md",
