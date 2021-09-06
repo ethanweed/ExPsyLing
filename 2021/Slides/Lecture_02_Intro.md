@@ -319,9 +319,9 @@ xml (source: http://www.talkbank.org)
 
 Computers are tools that encourage:
 
-Algorithmic thinking  
-Metalinguistic thinking  
-Representational thinking  
+1. Algorithmic thinking  
+2. Metalinguistic thinking  
+3. Representational thinking  
 
 ---
 
