@@ -300,14 +300,14 @@ xml (source: http://www.talkbank.org)
 #### Representational thinking: visualizing authorial voice
 
 
-<img src="Images/AuthorshipAnalysis2.png" alt="" width="500">
+<img src="Images/AuthorshipAnalysis2.png" alt="" width="600">
 
 ---
 
 #### Representational thinking: visualizing authorial voice
 
 
-<img src="Images/AuthorshipAnalysis.png" alt="" width="500">
+<img src="Images/AuthorshipAnalysis.png" alt="" width="600">
 
 ---
 
