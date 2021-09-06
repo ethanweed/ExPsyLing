@@ -21,12 +21,13 @@ Instructor: Niels Aalund Krogsgaard
 
 ## Today
 
-1. Course goals
-2. Course structure
-3. Exam
-4. Evaluation of intro week (10 minutes)
-5. Introductions
-6. Why so much computer stuff?
+1. Warmup: observations, hypotheses, and tests
+2. Course goals
+3. Course structure
+4. Exam
+5. Evaluation of intro week (10 minutes)
+6. Introductions
+7. Why so much computer stuff?
 
 ---
 

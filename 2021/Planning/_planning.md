@@ -55,6 +55,9 @@ JATOS server: [JATOS](https://broca.cc.au.dk/jatos/login)
 		- Instructor
 				- Exercises in exploring data with Python
 
+
+Survey on introductory Python bootcamp: [https://survey.au.dk/LinkCollector?key=1V8VTA3WJ112](https://survey.au.dk/LinkCollector?key=1V8VTA3WJ112 "https://survey.au.dk/LinkCollector?key=1V8VTA3WJ112")
+
 - [[Week 3]] (WORKING MEMORY, EXPERIMENTAL DESIGN AND DATA WRANGLING)
 	Lecture
 		- [[working memory]]
