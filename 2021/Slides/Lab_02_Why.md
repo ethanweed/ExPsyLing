@@ -80,7 +80,9 @@ Evans et al (1983)
 
 ### Why? Why? Why???
 
-Reason #1:  It’s just too easy for us to “believe what we want to believe”.
+Reason #1: 
+
+It’s just too easy for us to “believe what we want to believe”.
 
 ---
 
@@ -113,7 +115,9 @@ Source: Bickel et al (1975)
 
 ### Why? Why? Why???
 
-Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the nooks and crannies of complicated data.
+Reason #2: 
+
+Science is hard, and the truth is sometimes cunningly hidden in the nooks and crannies of complicated data.
 
 ---
 
@@ -127,7 +131,9 @@ Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the n
 
 ### Why? Why? Why???
 
-Reason #3: the “things” that we study are people, and people are complicated.
+Reason #3: 
+
+The “things” that we study are people, and people are complicated.
 
 ---
 
@@ -159,7 +165,9 @@ Source: https://www.fda.gov/media/144434/download
 
 ### Why? Why? Why???
 
-Reason #4: statistical literacy can help us make important life decisions.
+Reason #4: 
+
+Statistical literacy can help us make important life decisions.
 
 ---
 
