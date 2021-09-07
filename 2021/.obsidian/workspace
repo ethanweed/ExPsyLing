@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Slides/Lecture_02_Intro.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Slides/Lecture_02_Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,10 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
-    "Untitled.md",
     "Slides/Lecture_02_Intro.md",
-    "Planning/_planning.md",
     "Slides/Lab_02_Why.md",
+    "Untitled.md",
+    "Planning/_planning.md",
     "Planning/Syllabus.md",
     "Planning/Schedule.md",
     "Planning/PDFs/McCarty 2003.pdf"
