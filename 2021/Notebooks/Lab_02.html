@@ -13078,9 +13078,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Build-your-own-concordance">Build your own concordance<a class="anchor-link" href="#Build-your-own-concordance">&#182;</a></h1><p>In the lecture, we discussed how it took 500 Dominican munks to write the first concordance of the Latin bible, and how it took Rabbi Mordecai Nathan 10 years to write the first concordance of the Hebrew bible. With Python, it only takes a matter of seconds to find words in a text, along with the surrounding words.</p>
-<p>In this exercise, first run the code and check that everything works. Then, try modifying the code.</p>
+<p>In this exercise, first run the code and check that everything works. Then, try modifying the code. Do at least to the part where it says <strong>Stop now if you want!</strong> Do as much or as little of the other exercises as you can / want to.</p>
 <p>Run each cell in this notebook at a time, in order. If something in one cell doesn't work right, it might be because you have overwritten a variable, so try going back and running all the previous cells again.</p>
-<p>The point of the exercise isn't for you to understand all the commands fully; the idea is to start getting you familiar with how jupyter notebooks work, with the concept of copying and modifying codes, and hopefully give you a little taste of the power of Python.</p>
+<p>The point of the exercise isn't for you to understand all the commands fully; the idea is to start getting you familiar with how jupyter notebooks work, with the concept of copying and modifying code, and hopefully give you a little taste of the power of Python.</p>
 
 </div>
 </div>
@@ -13274,8 +13274,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Challenge-2:-compare-lengths-of-books">Challenge 2: compare lengths of books<a class="anchor-link" href="#Challenge-2:-compare-lengths-of-books">&#182;</a></h2><p>We can use the <code>len</code> to find how many items there are in a list. E.g., to find the number of words in the list called <code>bible</code>, above, we can write: <code>len(bible)</code>.</p>
-<p>Use the starter code below to find our which book in the books included in <code>nltk</code> has the most words.</p>
+<h2 id="Challenge-2:-compare-lengths-of-books">Challenge 2: compare lengths of books<a class="anchor-link" href="#Challenge-2:-compare-lengths-of-books">&#182;</a></h2><p>We can use the command <code>len</code> to find how many items there are in a list. E.g., to find the number of words in the list called <code>bible</code>, above, we can write: <code>len(bible)</code>.</p>
+<p>Use the starter code below to find out which book in the books included in <code>nltk</code> has the most words.</p>
 
 </div>
 </div>
@@ -13306,6 +13306,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># more advanced, for those with some Python experience, or those who want to google around..</span>
 <span class="c1"># solution 2: make a list of titles and a list of wordcounts, zip them together, then sort them based on wordcount</span>
+<span class="c1"># starter code:</span>
 
 <span class="n">books</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">gutenberg</span><span class="o">.</span><span class="n">fileids</span><span class="p">()</span>
 
