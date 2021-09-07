@@ -19,6 +19,8 @@ Because we can't trust ourselves.
 
 ## First reason...
 
+---
+
 #### valid argument — believable conclusion
 
 
@@ -92,6 +94,8 @@ Evans et al (1983)
 
 ### Second reason...
 
+---
+
 ##### Berkeley College 1973 admissions data
 
 |       | Number of applicants | Percent admitted |
@@ -128,6 +132,8 @@ Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the n
 
 ### Third reason...
 
+---
+
 <img src="Images/StroopYears.png" width="60%">
 
 ---
@@ -135,6 +141,10 @@ Reason #2: Science is hard, and the truth is sometimes cunningly hidden in the n
 ### Why? Why? Why???
 
 Reason #3: the “things” that we study are people, and people are complicated.
+
+---
+
+### Fourth reason...
 
 ---
 

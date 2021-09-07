@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lecture_02_Intro.md",
+            "file": "Slides/Lab_02_Why.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_02_Intro.md",
+                "file": "Slides/Lab_02_Why.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Slides/Lab_02_Why.md",
     "Slides/Lecture_02_Intro.md",
     "Planning/Schedule.md",
-    "Slides/Lab_02_Why.md",
     "Untitled.md",
     "Planning/_planning.md",
     "Planning/Syllabus.md",
