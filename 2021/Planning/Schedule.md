@@ -81,7 +81,7 @@
     <td class="tg-5k28"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">4</span></td>
     <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">38</span></td>
     <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lecture</span></td>
-    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">What is working memory and why shoud we care?</span></td>
+    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">What is working memory and why should we care?</span></td>
     <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Baddeley, A. (2003)</span></td>
   </tr>
   <tr>
