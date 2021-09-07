@@ -152,7 +152,7 @@ Taken together, the overall goal of the course is for you to learn to...
 
 Pass/fail portfolio
 
-1. Three lab reports, completed throughout  the semester, using the <a href="https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc" target`"_blank">lab report template</a>
+1. Three lab reports, completed throughout  the semester, using the <a href="https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc" target="_blank">lab report template</a>
 2. Proof of completion of online GDPR course in either <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/27011" target="_blank">Danish</a> or <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/30198" target="_blank">English</a>
 3. Design Your Own Experiment: Introduction and Methods sections for a proposed experiment on a topic of your choice
 
