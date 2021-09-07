@@ -176,10 +176,12 @@ Statistical literacy can help us make important life decisions.
 <font size="1"> 
 	
 Bickel, P. J., Hammel, E. A., & O'Connell, J. W. (1975). Sex bias in graduate admissions: Data from Berkeley. _Science_, _187_(4175), 398-404.
-
-Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.
+	
+Evans, J. S. B., Barston, J. L., & Pollard, P. (1983). On the conflict between logic and belief in syllogistic reasoning. _Memory & cognition_, _11_(3), 295-306.	
 
 Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
+
+Vaccines and Related Biological Products Advisory Committee. Vaccines and Related Biological Products Advisory Committee December 17, 2020, meeting: FDA briefing document. Silver Spring, MD: US Department of Health and Human Services, Food and Drug Administration; 2020. https://www.fda.gov/media/144434/downloadexternal icon
 		
 </font>
 
