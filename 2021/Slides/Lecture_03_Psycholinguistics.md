@@ -85,16 +85,30 @@ B.F. Skinner: Language is part of behavior
 
 ---
 
+"The student who is learning to “spot” the composer of unfamiliar music or to name the artist or school of an unfamiliar picture is subjected to the same contingencies of differential reinforcement. Responses such as Mozart or Dutch are brought under the control of extremely subtle properties of stimuli when they are reinforced with “right” or punished with “wrong” by the community." (Skinner, 1957)
+
+---
+
 
 ::: {.container}
 :::: {.col}
-"A typical example of stimulus control for Skinner would be the response \[...] to a painting with the response Dutch. \[...] Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture"
+<img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="400">
 ::::
 :::: {.col}
 <img src="https://images.squarespace-cdn.com/content/v1/540695aae4b0c094f2e0c23a/1617514809569-URMM4N1IY163H1YCEO7W/Noam+Chomsky">
 ::::
 :::
 
+---
+
+"A typical example of stimulus control for Skinner would be the response to a piece of music with the utterance Mozart or to a painting with the response Dutch. These responses are asserted to be “under the control of extremely subtle properties” of the physical object or event. Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture" (Chomsky, 1959)
+
+---
+To Review:
+
+- Wundt: Language reflects internal processes
+- Skinner: Language is verbal behavior between two or more individuals
+- Chomsky: Language reflects internal processes
 
 ---
 
@@ -109,7 +123,7 @@ B.F. Skinner: Language is part of behavior
 
 Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
 
-Chomsky, N. (2003). Review of verbal behavior by B. F. Skinner. In M. P. Munger, The history of psychology: Fundamental questions (pp. 408–429). Oxford University Press.
+Chomsky, N. (1959) A Review of B. F. Skinner's _Verbal Behavior_. _Language, 35_(1), 26-58.
 
 Levelt, W. J. (2004). Speech, gesture and the origins of language. _European Review_, _12_(4), 543-549.
 
