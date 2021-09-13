@@ -95,11 +95,13 @@ B.F. Skinner: _Verbal Behavior_
 
 ---
 
+Noam Chomsky: Review of _Verbal Behavior_
+
 ![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/Chomsky_Skinner_review.png)
 
 ---
 
-Noam Chomsky: Review of _Verbal Behavior_
+
 
 "A typical example of stimulus control for Skinner would be the response to a piece of music with the utterance Mozart or to a painting with the response Dutch. These responses are asserted to be “under the control of extremely subtle properties” of the physical object or event. Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture" (Chomsky, 1959)
 
