@@ -48,10 +48,21 @@ Wilhelm Wundt: Language is an expression of the mind
 
 ::: {.container}
 :::: {.col}
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FB.F._Skinner.jpg&f=1&nofb=1">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
 ::::
 :::: {.col}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Wundt_illusion.svg/1280px-Wundt_illusion.svg.png" width="400">
+::::
+:::
+
+---
+
+::: {.container}
+:::: {.col}
 <img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="400">
+::::
+:::: {.col}
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FB.F._Skinner.jpg&f=1&nofb=1">
 ::::
 :::
 
