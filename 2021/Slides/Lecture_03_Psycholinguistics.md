@@ -114,7 +114,7 @@ Chomsky: Language is symbolic computation
 <img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="400">
 ::::
 :::: {.col}
-<img src="https://images.squarespace-cdn.com/content/v1/540695aae4b0c094f2e0c23a/1617514809569-URMM4N1IY163H1YCEO7W/Noam+Chomsky" >
+<img src="https://images.squarespace-cdn.com/content/v1/540695aae4b0c094f2e0c23a/1617514809569-URMM4N1IY163H1YCEO7W/Noam+Chomsky" width="400">
 ::::
 :::
 
