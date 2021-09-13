@@ -20,6 +20,19 @@ What is psycholinguistics?
 
 ---
 
+::: {.container}
+:::: {.col}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
+::::
+:::: {.col}
+"For Wundt \[...] the principal aim \[of psycholinguistics is] to explain spoken language and languages as a spontaneous product of consciousness, as an expression of mind." (Levelt, 2004)
+::::
+:::
+
+
+
+---
+
 Wilhelm Wundt: Language is an expression of the mind
 
 ::: {.container}
@@ -28,19 +41,6 @@ Wilhelm Wundt: Language is an expression of the mind
 ::::
 :::: {.col}
 <img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="400">
-::::
-:::
-
-
-
----
-
-::: {.container}
-:::: {.col}
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
-::::
-:::: {.col}
-"For Wundt \[...] the principal aim \[of psycholinguistics is] to explain spoken language and languages as a spontaneous product of consciousness, as an expression of mind." (Levelt, 2004)
 ::::
 :::
 
@@ -59,6 +59,19 @@ The Wundt illusion
 
 ---
 
+
+::: {.container}
+:::: {.col}
+"Language \[...] has come to refer to the practices of a linguistic community rather than the behavior of any one member. \[...] The behaviors of speaker and listener taken together compose what may be called a total verbal episode." (Skinner, 1957)
+::::
+:::: {.col}
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FB.F._Skinner.jpg&f=1&nofb=1">
+::::
+:::
+
+---
+
+
 B.F. Skinner: Language is part of behavior
 
 ::: {.container}
@@ -72,23 +85,14 @@ B.F. Skinner: Language is part of behavior
 
 ---
 
-
-::: {.container}
-:::: {.col}
-"Language \[...] has come to refer to the practices of a linguistic community rather than the behavior of any one member. \[...] The behaviors of speaker and listener taken together compose what may be called a total verbal episode." (Skinner, 1957)
-::::
-:::: {.col}
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FB.F._Skinner.jpg&f=1&nofb=1">
-::::
-:::
-
-
----
-
 "The student who is learning to “spot” the composer of unfamiliar music or to name the artist or school of an unfamiliar picture is subjected to the same contingencies of differential reinforcement. Responses such as Mozart or Dutch are brought under the control of extremely subtle properties of stimuli when they are reinforced with “right” or punished with “wrong” by the community." (Skinner, 1957)
 
 ---
 
+
+"A typical example of stimulus control for Skinner would be the response to a piece of music with the utterance Mozart or to a painting with the response Dutch. These responses are asserted to be “under the control of extremely subtle properties” of the physical object or event. Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture" (Chomsky, 1959)
+
+---
 
 ::: {.container}
 :::: {.col}
@@ -101,9 +105,6 @@ B.F. Skinner: Language is part of behavior
 
 ---
 
-"A typical example of stimulus control for Skinner would be the response to a piece of music with the utterance Mozart or to a painting with the response Dutch. These responses are asserted to be “under the control of extremely subtle properties” of the physical object or event. Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture" (Chomsky, 1959)
-
----
 To Review:
 
 - Wundt: Language reflects internal processes
