@@ -20,6 +20,8 @@ What is psycholinguistics?
 
 ---
 
+Wilhelm Wundt: Language is an expression of the mind
+
 ::: {.container}
 :::: {.col}
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
@@ -33,7 +35,9 @@ What is psycholinguistics?
 
 ---
 
+ 
 
+the principal aim was to explain spoken language and languages as a spontaneous product of consciousness, as an expression of mind.
 
 
 
