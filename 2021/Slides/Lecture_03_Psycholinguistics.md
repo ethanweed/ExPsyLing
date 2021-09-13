@@ -122,7 +122,7 @@ Chomsky: Language is symbolic computation
 
 Connectionism: Language is associations
 
-<img src="https://d3i71xaburhd42.cloudfront.net/ff2c2e3e83d1e8828695484728393c76ee07a101/27-Figure4-1.png" width="400">
+<img src="https://d3i71xaburhd42.cloudfront.net/ff2c2e3e83d1e8828695484728393c76ee07a101/27-Figure4-1.png" width="700">
 
 
 ---
