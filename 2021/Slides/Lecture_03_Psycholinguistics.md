@@ -120,6 +120,20 @@ Chomsky: Language is symbolic computation
 
 ---
 
+Connectionism: Language is associations
+
+<img src="https://d3i71xaburhd42.cloudfront.net/ff2c2e3e83d1e8828695484728393c76ee07a101/27-Figure4-1.png" width="400">
+
+
+---
+
+
+
+
+https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweb.media.mit.edu%2F~minsky%2Fpapers%2FSymbolicVs.Connectionist_files%2Fimage012.png&f=1&nofb=1
+---
+
+
 To Review:
 
 - Wundt: Language reflects internal processes
@@ -147,4 +161,5 @@ Skinner, B. F. (1957). _Verbal behavior_. New York: Appleton-Century-Crofts.
 
 
 
-
+Minsky, M. Logical vs.Analogical
+or Symbolic vs. Connectionist or Neat vs. Scruffy in _Artificial Intelligence at MIT, Expanding Frontiers,_ Patrick H. Winston (Ed.), Vol.1, MIT Press, 1990. https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html
