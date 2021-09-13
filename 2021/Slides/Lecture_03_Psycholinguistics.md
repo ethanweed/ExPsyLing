@@ -127,6 +127,7 @@ Connectionism: Language is associations
 
 ---
 
+Language: symbols or statstical probabilites?
 
 <img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="100">
 
