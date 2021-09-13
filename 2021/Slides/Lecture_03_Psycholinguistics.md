@@ -136,20 +136,20 @@ Language: symbols or statistical probabilites?
 
 
 
-
 ---
 
 
 To Review:
 
 - Wundt: Language reflects internal processes
-- Skinner: Language is verbal behavior between two or more individuals
+- Skinner: Language is behavior between people caused by associations
 - Chomsky: Language reflects internal processes
+- Connectionists: Language reflects internalized associations
+- Social-cognitive theorists: Language is internalized associations created in a linguistic community
 
 ---
 
-
-
+So... what is psycholinguistics?
 
 
 
