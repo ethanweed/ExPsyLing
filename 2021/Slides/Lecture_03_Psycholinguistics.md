@@ -156,10 +156,13 @@ So... what is psycholinguistics?
 
 
 ---
+
+
 Some  (and only some) of the big questions:
 
 - How do children learn language?
-- How do find the words we know when we need them?
+- How do store the meaning of words?
+- How do access words when we need them?
 - How do we learn to read?
 - How do we know what words mean in context?
 
