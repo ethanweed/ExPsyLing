@@ -127,10 +127,18 @@ Connectionism: Language is associations
 
 ---
 
+::: {.container}
+:::: {.col}
+<img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="400">
+::::
+:::: {.col}
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweb.media.mit.edu%2F~minsky%2Fpapers%2FSymbolicVs.Connectionist_files%2Fimage012.png&f=1&nofb=1" width="400">
+::::
+:::
 
 
 
-https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweb.media.mit.edu%2F~minsky%2Fpapers%2FSymbolicVs.Connectionist_files%2Fimage012.png&f=1&nofb=1
+
 ---
 
 
