@@ -97,7 +97,7 @@ B.F. Skinner: _Verbal Behavior_
 
 Noam Chomsky: Review of _Verbal Behavior_
 
-![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/Chomsky_Skinner_review.png)
+<img src="https://ethanweed.github.io/ExPsyLing/2021/Resources/Chomsky_Skinner_review.png" width="400">
 
 ---
 
