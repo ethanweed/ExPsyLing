@@ -75,7 +75,7 @@ B.F. Skinner: Language is part of behavior
 
 ::: {.container}
 :::: {.col}
-"Language \[...] has come to refer to the practices of a linguistic community rather than the behavior of any one member. \[...] The behaviors of speaker and listener taken together compose what may be called a total verbal episode." (Skinner, )
+"Language \[...] has come to refer to the practices of a linguistic community rather than the behavior of any one member. \[...] The behaviors of speaker and listener taken together compose what may be called a total verbal episode." (Skinner, 1957)
 ::::
 :::: {.col}
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FB.F._Skinner.jpg&f=1&nofb=1">
@@ -83,9 +83,20 @@ B.F. Skinner: Language is part of behavior
 :::
 
 
+---
 
 
+::: {.container}
+:::: {.col}
+"A typical example of stimulus control for Skinner would be the response \[...] to a painting with the response Dutch. \[...] Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture"
+::::
+:::: {.col}
+<img src="https://images.squarespace-cdn.com/content/v1/540695aae4b0c094f2e0c23a/1617514809569-URMM4N1IY163H1YCEO7W/Noam+Chomsky">
+::::
+:::
 
+
+---
 
 
 
