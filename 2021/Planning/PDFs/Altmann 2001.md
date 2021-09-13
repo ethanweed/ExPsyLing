@@ -1,6 +1,11 @@
 # The language machine: Psycholinguistics in review
 
 
+#### [Page 2](highlights://Altmann%202001#page=2)
+
+> Psycholinguistics is, as Wilhelm Wundt (1832–1920) noted in Die
+> Sprache (1900), as much about the mind as it is about language.
+
 #### [Page 3](highlights://Altmann%202001#page=3)
 
 > The year 1957 was something of a watershed for

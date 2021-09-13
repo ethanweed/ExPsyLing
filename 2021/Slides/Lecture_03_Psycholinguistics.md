@@ -15,3 +15,25 @@ What is psycholinguistics?
 
 ---
 
+
+![](https://pngimg.com/uploads/apple/apple_PNG12442.png)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+##### References
+
