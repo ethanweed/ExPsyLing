@@ -67,4 +67,9 @@
 > each of 60 000 to 75 000 words can be distinguished uniquely
 > from each of the others on a variety of dimensions.
 
+> An early insight into the processes of lexical access was that
+> lexical representations are not like dictionary entries to be
+> accessed, but are representations to be activated (Morton, 1969,
+> 1970).
+
 
