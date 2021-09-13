@@ -166,7 +166,7 @@ Chomsky, N. (1959) A Review of B. F. Skinner's _Verbal Behavior_. _Language, 35_
 
 Levelt, W. J. (2004). Speech, gesture and the origins of language. _European Review_, _12_(4), 543-549.
 
-Minsky, M. Logical vs.Analogical
+Minsky, M. Logical vs. Analogical
 or Symbolic vs. Connectionist or Neat vs. Scruffy in _Artificial Intelligence at MIT, Expanding Frontiers,_ Patrick H. Winston (Ed.), Vol.1, MIT Press, 1990. https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html
 
 Rummelhart, D. E., McClelland, J. L., & PDP Research Group. (1986). Parallel distributed processing.
