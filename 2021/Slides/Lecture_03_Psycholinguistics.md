@@ -85,10 +85,17 @@ B.F. Skinner: Language is part of behavior
 
 ---
 
+<img src="https://images-na.ssl-images-amazon.com/images/I/41Q8pTGathL._SX374_BO1,204,203,200_.jpg" width="400">
+
+---
+
 "The student who is learning to “spot” the composer of unfamiliar music or to name the artist or school of an unfamiliar picture is subjected to the same contingencies of differential reinforcement. Responses such as Mozart or Dutch are brought under the control of extremely subtle properties of stimuli when they are reinforced with “right” or punished with “wrong” by the community." (Skinner, 1957)
 
 ---
 
+![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/Chomsky_Skinner_review.png)
+
+---
 
 "A typical example of stimulus control for Skinner would be the response to a piece of music with the utterance Mozart or to a painting with the response Dutch. These responses are asserted to be “under the control of extremely subtle properties” of the physical object or event. Suppose instead of saying Dutch we had said Clashes with the wallpaper, I thought you liked abstract work, Never saw it before, Tilted, Hanging too low, Beautiful, Hideous, Remember our camping trip last summer?, or whatever else might come into our minds when looking at a picture" (Chomsky, 1959)
 
