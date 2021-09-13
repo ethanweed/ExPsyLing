@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lab_02_Why.md",
+            "file": "Slides/Lecture_03_Psycholinguistics.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lab_02_Why.md",
+                "file": "Slides/Lecture_03_Psycholinguistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,11 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
-    "Slides/Lab_02_Why.md",
+    "Slides/Lecture_03_Psycholinguistics.md",
     "Slides/Lecture_02_Intro.md",
-    "Planning/Schedule.md",
     "Untitled.md",
+    "Slides/Lab_02_Why.md",
+    "Planning/Schedule.md",
     "Planning/_planning.md",
     "Planning/Syllabus.md",
     "Planning/PDFs/McCarty 2003.pdf"
