@@ -160,11 +160,13 @@ So... what is psycholinguistics?
 
 Some  (and only some) of the big questions:
 
+::: incremental
 - How do children learn language?
 - How do we store the meaning of words?
 - How do we access words when we need them?
 - How do we learn to read?
 - How do we know what words mean in context?
+:::
 
 ---
 
@@ -175,6 +177,10 @@ Some  (and only some) of the big questions:
 	
 Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
 
+Altmann, G. T. (2001). The language machine: Psycholinguistics in review. _British Journal of Psychology_, _92_(1), 129-170.
+
+Bayne, T., Brainard, D., Byrne, R. W., Chittka, L., Clayton, N., Heyes, C., ... & Webb, B. (2019). What is cognition?. _Current Biology_, _29_(13), R608-R615.
+	
 Chomsky, N. (1959) A Review of B. F. Skinner's _Verbal Behavior_. _Language, 35_(1), 26-58.
 
 Levelt, W. J. (2004). Speech, gesture and the origins of language. _European Review_, _12_(4), 543-549.
