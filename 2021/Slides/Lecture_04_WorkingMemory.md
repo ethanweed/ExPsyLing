@@ -35,8 +35,9 @@ Cognitive models of language
 
 Cognitive models of language
 
-**![](https://lh4.googleusercontent.com/ye9e_q81PnWKuSGR1AaZCWm9OT7zHNi1L9rNgVqVUP1fguG7ws94vCRKLuWtOfvPVq7Rjc1YqOqILlvtn25148bkOkbzOjNz4NSpkjViXYzfwG9kM9R_H8_BY4N32b5AG293HJEbwx4=s0)**
+**![](https://lh6.googleusercontent.com/dvATTV0m5xoFhwy_wtYccQPKCAhv0OtM_CLBA2Kx1IFnq8PQQgqysWDIH37c3aYNyNE9nHvhlz5TLPh84pZu6GWttbTcKqERLrmljtZwE7iPBo8oUCRIWxiLPHzvNWWw3F4Bci2Cpto=s0)**
 
 ---
+
 
 
