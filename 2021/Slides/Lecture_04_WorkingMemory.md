@@ -66,8 +66,9 @@ Dual task:
 
 ---
 
-Reasoning task: Does the sentence correctly describe the sequence "BA"?
-- "A follows B" (TRUE)
+Reasoning task: Does the sentence correctly describe the sequence "BA"?  
+
+- "A follows B" (TRUE)  
 - "B is not preceeded by A" (TRUE)
 
 ---
