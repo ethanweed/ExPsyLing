@@ -55,9 +55,24 @@ The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thi
 
 ---
 
-
+Baddeley and Hitch showed that the two can be distinguished experimentally.
 
 ---
+
+Dual task:
+
+1. Remember a series of numbers
+2. Perform a reasoning task. 
+
+---
+
+Reasoning task: Does the sentence correctly describe the sequence "BA"?
+- "A follows B" (TRUE)
+- "B is not preceeded by A" (TRUE)
+
+---
+
+Reasoning time is affected by memory load, but accuracy is not.
 
 **![](https://lh3.googleusercontent.com/x5OKZt_1KL7x18e9Ke8qeiqQrHcI4lYUbFmtsxRhn1hrp9-yPky3_niXY_G2DVmhpJCX4dFiZlhT9nf3NzA8Oyb-F_gknbfAd2kBfsdplOqcDTm-L4KdSA2pB9PURO4iQop0MEUTvVY=s0)**
 
