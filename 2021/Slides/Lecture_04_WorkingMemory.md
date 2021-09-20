@@ -14,11 +14,13 @@
 What is working memory and why should we care?
 
 ---
+
 Behaviorist models of language
 
 **![](https://lh5.googleusercontent.com/03naLpTTRTFR4mfZ-f8-tA7veM-YNmsScsHNGfvi14XBiMp24qj1xpwEjHCtsuggNLaTpLo0jWoqP4eSfmrdbSNv8-SRYu-dgOb5ANVrgxgkbZfnsbN-X9hkGsP0gUTPG5oAgqJawhc=s0)**
 
 ---
+
 Behaviorist models of language
 
 **![](https://lh6.googleusercontent.com/8coI3gthPJ4zcTd18Iqz2vqBAzXUP7sDi1IRZYHzkdPUgUpZO2wL4buxqvq9Z9KSre73SpaOm-ZmA9dCiWH07IjD0c8tvGbRM0SGhbzlA3jwyZI-Op-LV3xivy8UyQ4C4H_FDGLLnPc=s0)**
