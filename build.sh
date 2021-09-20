@@ -17,9 +17,14 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lec
 
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_03_Psycholinguistics.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_03_Psycholinguistics.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+
+
 
 #Lab slides
 
+
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
