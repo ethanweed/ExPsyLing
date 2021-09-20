@@ -45,5 +45,33 @@ The Atkinson–Shiffrin (1968) model of memory
 
 ---
 
+The (George) Sperling task
 
+**![](https://lh6.googleusercontent.com/I3jkA-VJohlVx7fzg3emVTy3aJGEGE3oFKff9QhqTVrLvfC_zy9K8KrsLwurIrFoDvQVpxuApFj72YfwcEVsi80to04ZnElvW5bCsvtJN8H_i6KU5PiQpMF4L-Z3q38ca1Wn-1kkn54=s0)**
+
+---
+
+The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing.
+
+---
+
+
+
+---
+
+**![](https://lh3.googleusercontent.com/x5OKZt_1KL7x18e9Ke8qeiqQrHcI4lYUbFmtsxRhn1hrp9-yPky3_niXY_G2DVmhpJCX4dFiZlhT9nf3NzA8Oyb-F_gknbfAd2kBfsdplOqcDTm-L4KdSA2pB9PURO4iQop0MEUTvVY=s0)**
+
+---
+
+Baddeley and Hitch (1974) model of working memory
+
+**![](https://lh4.googleusercontent.com/MWYpZtDpjHchcV8M9P00C7utSXc2nDy35fF-sJH7YeYEEWIRYvs7gvoEKicv1MzTPU1anqyHD7Epoi5_ibI1YI4mkbnbyNa9sjgxMT3kRNyOCQeQFDQLIgkbBWcwvT3XOyS3dOsi7qE=s0)**
+
+---
+
+
+
+#### References
+
+Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
 
