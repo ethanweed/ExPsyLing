@@ -77,6 +77,8 @@ Reasoning time is affected by memory load, but accuracy is not.
 
 **![](https://lh3.googleusercontent.com/x5OKZt_1KL7x18e9Ke8qeiqQrHcI4lYUbFmtsxRhn1hrp9-yPky3_niXY_G2DVmhpJCX4dFiZlhT9nf3NzA8Oyb-F_gknbfAd2kBfsdplOqcDTm-L4KdSA2pB9PURO4iQop0MEUTvVY=s0)**
 
+- Baddeley & Hitch (1974)
+
 ---
 
 Baddeley and Hitch (1974) model of working memory
@@ -91,3 +93,6 @@ Baddeley and Hitch (1974) model of working memory
 
 Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
 
+Baddeley, A. (2003). Working memory and language: An overview. _Journal of communication disorders, 36_(3), 189-208.
+
+f
