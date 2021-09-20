@@ -15,7 +15,7 @@ What is working memory and why should we care?
 
 ---
 
-![[Pasted image 20210920161741.png]]
+**![](https://lh5.googleusercontent.com/03naLpTTRTFR4mfZ-f8-tA7veM-YNmsScsHNGfvi14XBiMp24qj1xpwEjHCtsuggNLaTpLo0jWoqP4eSfmrdbSNv8-SRYu-dgOb5ANVrgxgkbZfnsbN-X9hkGsP0gUTPG5oAgqJawhc=s0)**
 
 ---
 
