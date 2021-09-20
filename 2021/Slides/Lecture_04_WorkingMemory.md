@@ -77,7 +77,7 @@ Reasoning time is affected by memory load, but accuracy is not.
 
 **![](https://lh3.googleusercontent.com/x5OKZt_1KL7x18e9Ke8qeiqQrHcI4lYUbFmtsxRhn1hrp9-yPky3_niXY_G2DVmhpJCX4dFiZlhT9nf3NzA8Oyb-F_gknbfAd2kBfsdplOqcDTm-L4KdSA2pB9PURO4iQop0MEUTvVY=s0)**
 
-- Baddeley & Hitch (1974)
+Baddeley & Hitch (1974)
 
 ---
 
