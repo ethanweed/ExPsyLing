@@ -141,7 +141,7 @@ The "phonological loop"
 
 ---
 
-
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
 
 ---
 
