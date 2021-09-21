@@ -131,7 +131,7 @@ Baddeley & Hitch (1974)
 
 Baddeley and Hitch (1974) model of working memory
 
-**![](https://lh4.googleusercontent.com/MWYpZtDpjHchcV8M9P00C7utSXc2nDy35fF-sJH7YeYEEWIRYvs7gvoEKicv1MzTPU1anqyHD7Epoi5_ibI1YI4mkbnbyNa9sjgxMT3kRNyOCQeQFDQLIgkbBWcwvT3XOyS3dOsi7qE=s0)**
+
 
 ---
 
