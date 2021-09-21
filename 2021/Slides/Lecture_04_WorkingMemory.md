@@ -187,7 +187,30 @@ Current working memory model
 
 ---
 
+Visual-spatial sketchpad
 
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
+
+---
+
+Episodic buffer
+
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
+
+---
+
+Episodic buffer: prose recall
+
+::: {.container}
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_1.png?raw=true) Control participants (3 age groups)
+::::
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_2.png?raw=true) Amnesic participants
+::::
+:::
+
+---
 
 #### References
 
