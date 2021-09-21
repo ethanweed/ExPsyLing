@@ -57,7 +57,7 @@ Backward span:
 ---
 
 
-The Atkinson–Shiffrin (1968) model of memory
+The Atkinson–Shiffrin model of memory
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
@@ -142,6 +142,8 @@ The phonological loop
 
 
 #### References
+
+Atkinson, R. C., & Shiffrin, R. M. (1971). The control of short-term memory. _Scientific american_, _225_(2), 82-91.
 
 Baddeley, A. (2003). Working memory and language: An overview. _Journal of communication disorders, 36_(3), 189-208.
 
