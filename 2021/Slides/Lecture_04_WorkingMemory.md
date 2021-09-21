@@ -45,6 +45,13 @@ Cognitive models of language
 
 ---
 
+"BABCDJR" ---> "BABCDJR"
+
+"BABCDJR" ---> "RJDCBAB"
+
+---
+
+
 The Atkinson–Shiffrin (1968) model of memory
 
 **![](https://lh6.googleusercontent.com/tAddWFHlaLN3rV4jtsmlW9JTH2j6Awei1TkMyIRaYBbI4oWE8YBlHR3XgVYdC6k5IskzMfm7EXnGG4-aZj8DE4k7utPP5Q5WAEIrMd6TGG2A2eMXP06V2w2QXPVg2UnBvAB3fjxKexQ=s0)**
