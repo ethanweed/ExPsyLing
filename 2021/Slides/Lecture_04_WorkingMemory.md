@@ -115,11 +115,11 @@ The Atkinson–Shiffrin model
 
 ---
 
-The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing, and that STM can be filled up.
+The Atkinson-Shiffrin model assumes that STM is a single bucket, and that it can be filled up.
 
 ---
 
-Baddeley and Hitch showed that STM and WM can operate semi-independently.
+Baddeley and Hitch showed that STM has different parts that can operate semi-independently.
 
 ---
 
