@@ -135,9 +135,9 @@ Baddeley and Hitch (1974) model of working memory
 
 ---
 
-The phonological loop
+The "phonological loop"
 
-
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_phonological_Loop.png?raw=true)
 
 ---
 
