@@ -57,13 +57,13 @@ div {
 
 
 Forward span:  
-"BABCDJR" --->  <div>Cognitive Process<\div> "BABCDJR"
+"BABCDJR" --->  Cognitive Process  --->"BABCDJR"
 
 <br>
 <br>
 
 Backward span:  
-"BABCDJR" ---> "RJDCBAB"
+"BABCDJR" --->  Cognitive Process  ---> "RJDCBAB"
 
 ---
 
