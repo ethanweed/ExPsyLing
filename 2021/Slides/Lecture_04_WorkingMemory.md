@@ -72,7 +72,7 @@ V	F	L	B
 
 ---
 
-
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_PartialReport.png?raw=true)
 
 ---
 
