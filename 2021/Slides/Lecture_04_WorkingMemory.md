@@ -138,12 +138,11 @@ Dual task:
 
 ---
 
-Memory task: 47286159  
+- Memory task: 47286159  
 <br>
-Reasoning task: Does the sentence correctly describe the sequence "BA"?  
-
-- "A follows B" (TRUE)  
-- "B is not preceeded by A" (TRUE)
+- Reasoning task: Does the sentence correctly describe the sequence "BA"?  
+	- "A follows B" (TRUE)  
+	- "B is not preceeded by A" (TRUE)
 
 ---
 
