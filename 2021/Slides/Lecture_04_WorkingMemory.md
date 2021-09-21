@@ -117,9 +117,13 @@ The Atkinson–Shiffrin model
 
 The Atkinson-Shiffrin model assumes that STM is a single bucket, and that it can be filled up.
 
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
+
 ---
 
 Baddeley and Hitch showed that STM has different parts that can operate semi-independently.
+
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
 ---
 
