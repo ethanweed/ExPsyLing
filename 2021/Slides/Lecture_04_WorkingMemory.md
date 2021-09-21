@@ -45,17 +45,6 @@ Cognitive models of language
 
 ---
 
-
-div {
-  background-color: none;
-  width: 300px;
-  border: 15px solid black;
-  padding: 50px;
-  margin: 20px;
-}
-
-
-
 Forward span:  
 "BABCDJR" --->  Cognitive Process  --->"BABCDJR"
 
