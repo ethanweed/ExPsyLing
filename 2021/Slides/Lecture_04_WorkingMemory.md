@@ -90,6 +90,14 @@ Sperling task
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_PartialReport.png?raw=true)
 ::::
 :::
+
+---
+
+The Atkinson–Shiffrin model
+- Sen
+
+**![](https://lh6.googleusercontent.com/tAddWFHlaLN3rV4jtsmlW9JTH2j6Awei1TkMyIRaYBbI4oWE8YBlHR3XgVYdC6k5IskzMfm7EXnGG4-aZj8DE4k7utPP5Q5WAEIrMd6TGG2A2eMXP06V2w2QXPVg2UnBvAB3fjxKexQ=s0)**
+
 ---
 
 The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing, and that STM can be filled up.
@@ -136,8 +144,9 @@ The phonological loop
 
 #### References
 
-Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
-
 Baddeley, A. (2003). Working memory and language: An overview. _Journal of communication disorders, 36_(3), 189-208.
 
-f
+Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
+
+Sperling, G. (1960). The information available in brief visual presentations. _Psychological monographs: General and applied_, _74_(11), 1.
+
