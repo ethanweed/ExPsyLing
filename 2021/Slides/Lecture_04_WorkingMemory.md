@@ -46,13 +46,13 @@ Cognitive models of language
 ---
 
 Forward span:  
-"BABCDJR" --->  <p style="background-color:Tomato;">Lorem ipsum...</p>  --->"BABCDJR"
+"BABCDJR" --->  <p style="text-color:Tomato;">Lorem ipsum...</p>  --->"BABCDJR"
 
 <br>
 <br>
 
 Backward span:  
-"BABCDJR" --->  <p style="background-color:Tomato;">Lorem ipsum...</p>  ---> "RJDCBAB"
+"BABCDJR" --->  <p style="text-color:Tomato;">Lorem ipsum...</p>  ---> "RJDCBAB"
 
 ---
 
