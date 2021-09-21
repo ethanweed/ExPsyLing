@@ -198,7 +198,7 @@ Problems for the model: prose recall
 
 ::: {.container}
 :::: {.col}
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_1.png?raw=true) Control participants (3 age groups)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_1.png?raw=true) Control participants
 ::::
 :::: {.col}
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_2.png?raw=true) Amnesic participants
