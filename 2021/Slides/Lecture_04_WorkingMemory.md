@@ -207,7 +207,7 @@ Problems for the model: prose recall
 
 ---
 
-Epispdic buffer:
+Episodic buffer:
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600">
 
