@@ -189,7 +189,7 @@ Three-component working memory model
 
 Visual-spatial sketchpad
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_updated_model.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
 
 
 ---
