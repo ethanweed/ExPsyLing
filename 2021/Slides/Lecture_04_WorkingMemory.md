@@ -195,7 +195,7 @@ Visual-spatial sketchpad
 
 Episodic buffer
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true)
 
 ---
 
