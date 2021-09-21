@@ -181,9 +181,9 @@ Phonological Loop and Vocabulary Development
 
 ---
 
-Updated working memory model
+Three-component working memory model
 
-![]()
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
 
 ---
 
