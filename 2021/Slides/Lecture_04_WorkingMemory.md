@@ -45,7 +45,7 @@ Cognitive models of language
 
 ---
 
-<style>
+
 div {
   background-color: none;
   width: 300px;
@@ -53,7 +53,7 @@ div {
   padding: 50px;
   margin: 20px;
 }
-</style>
+
 
 
 Forward span:  
