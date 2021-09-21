@@ -173,6 +173,8 @@ Auditory presentation
 ::::
 :::
 
+Baddeley(2017)
+
 ---
 
 Patient PV: impaired phonological STM  
@@ -186,6 +188,8 @@ Visual presentation
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_4.png?raw=true) word–nonword pairs
 ::::
 :::
+
+Baddeley(2017)
 
 ---
 
@@ -240,6 +244,8 @@ Episodic buffer:
 Atkinson, R. C., & Shiffrin, R. M. (1971). The control of short-term memory. _Scientific american_, _225_(2), 82-91.
 
 Baddeley, A. (2003). Working memory and language: An overview. _Journal of communication disorders, 36_(3), 189-208.
+	
+Baddeley, A. (2017). _Exploring working memory: Selected works of Alan Baddeley_. Routledge.
 
 Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
 	
