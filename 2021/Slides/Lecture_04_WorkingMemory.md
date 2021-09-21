@@ -77,6 +77,22 @@ Sperling task
 
 ---
 
+Sperling task
+
+
+::: {.container}
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_Stimuli.png?raw=true)
+::::
+:::: {.col}
+Whole: How many items can participants recall?  
+<br>
+Partial: How many items from a particular row? Multiply correct x number of rows
+::::
+:::
+
+
+---
 
 
 Sperling task
