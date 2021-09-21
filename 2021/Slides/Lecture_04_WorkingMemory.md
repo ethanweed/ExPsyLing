@@ -44,9 +44,19 @@ Cognitive models of language
 **![](https://lh6.googleusercontent.com/dvATTV0m5xoFhwy_wtYccQPKCAhv0OtM_CLBA2Kx1IFnq8PQQgqysWDIH37c3aYNyNE9nHvhlz5TLPh84pZu6GWttbTcKqERLrmljtZwE7iPBo8oUCRIWxiLPHzvNWWw3F4Bci2Cpto=s0)**
 
 ---
+<style>
+div {
+  background-color: none;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+
 
 Forward span:  
-"BABCDJR" ---> "BABCDJR"
+"BABCDJR" --->  <div>Cognitive Process<\div> "BABCDJR"
 
 <br>
 <br>
