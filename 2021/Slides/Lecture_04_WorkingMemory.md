@@ -197,11 +197,15 @@ Phonological Loop and Language Impairment
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Gathercole_STM_language_impairment.png?raw=true" width="600">
 
+Gathercole & Baddeley(1993)
+
 ---
 
 Phonological Loop and Vocabulary Development
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Gathercole_vocabulary.png?raw=true" width="600">
+
+Gathercole & Baddeley(1993)
 
 ---
 
@@ -209,12 +213,15 @@ Three-component working memory model
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
 
+Baddeley(2003)
+
 ---
 
 Visual-spatial sketchpad
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
 
+Baddeley(2003)
 
 ---
 
@@ -229,11 +236,15 @@ Problems for the model: prose recall
 ::::
 :::
 
+Baddeley & Wilson(2002)
+
 ---
 
 Episodic buffer:
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600">
+
+Baddeley & Wilson(2002)
 
 ---
 
