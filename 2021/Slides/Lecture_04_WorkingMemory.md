@@ -61,6 +61,8 @@ The Atkinson–Shiffrin model of memory
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
+Atkinson & Shiffrin (1971)
+
 ---
 
 Sperling task
@@ -113,7 +115,6 @@ The Atkinson–Shiffrin model
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
-Atkinson & Shiffrin (1971)
 
 ---
 
@@ -121,7 +122,6 @@ The Atkinson-Shiffrin model assumes that STM is a single bucket, and that it can
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
-Atkinson & Shiffrin (1971)
 
 ---
 
