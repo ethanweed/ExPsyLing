@@ -222,6 +222,8 @@ Atkinson, R. C., & Shiffrin, R. M. (1971). The control of short-term memory. _Sc
 Baddeley, A. (2003). Working memory and language: An overview. _Journal of communication disorders, 36_(3), 189-208.
 
 Baddeley, A. D., & Hitch, G. (1974). Working memory. In _Psychology of learning and motivation_ (Vol. 8, pp. 47-89). Academic press.
+	
+Baddeley, A., & Wilson, B. A. (2002). Prose recall and amnesia: Implications for the structure of working memory. _Neuropsychologia_, _40_(10), 1737-1743.
 
 Gathercole, S. E., & Baddeley, A. D. (1993). Phonological working memory: A critical building block for reading development and vocabulary acquisition?. _European Journal of Psychology of Education_, _8_(3), 259-272.
 
