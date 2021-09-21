@@ -138,6 +138,8 @@ Dual task:
 
 ---
 
+Memory task: 47286159  
+<br>
 Reasoning task: Does the sentence correctly describe the sequence "BA"?  
 
 - "A follows B" (TRUE)  
