@@ -141,6 +141,35 @@ The "phonological loop"
 
 ---
 
+Patient PV: impaired phonological STM  
+Auditory presentation
+
+::: {.container}
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_1.png?raw=true)
+::::
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_2.png?raw=true)
+::::
+:::
+
+---
+
+Patient PV: impaired phonological STM  
+Visual presentation
+
+::: {.container}
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_3.png?raw=true)
+::::
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_4.png?raw=true)
+::::
+:::
+
+
+---
+
 Current working memory model
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
