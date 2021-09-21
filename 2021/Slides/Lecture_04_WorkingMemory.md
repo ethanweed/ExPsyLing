@@ -79,9 +79,8 @@ Sperling task
 
 
 
-The (George) Sperling task
-
 Sperling task
+
 
 ::: {.container}
 :::: {.col}
