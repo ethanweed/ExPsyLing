@@ -70,7 +70,7 @@ Sperling task
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_Stimuli.png?raw=true)
 ::::
 :::: {.col}
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_PartialReport.png?raw=true)
+
 ::::
 :::
 
@@ -81,8 +81,16 @@ Sperling task
 
 The (George) Sperling task
 
-**![](https://lh6.googleusercontent.com/I3jkA-VJohlVx7fzg3emVTy3aJGEGE3oFKff9QhqTVrLvfC_zy9K8KrsLwurIrFoDvQVpxuApFj72YfwcEVsi80to04ZnElvW5bCsvtJN8H_i6KU5PiQpMF4L-Z3q38ca1Wn-1kkn54=s0)**
+Sperling task
 
+::: {.container}
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_Stimuli.png?raw=true)
+::::
+:::: {.col}
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_PartialReport.png?raw=true)
+::::
+:::
 ---
 
 The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing, and that STM can be filled up.
