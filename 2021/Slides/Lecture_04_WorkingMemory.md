@@ -113,11 +113,15 @@ The Atkinson–Shiffrin model
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
 
+Atkinson & Shiffrin (1971)
+
 ---
 
 The Atkinson-Shiffrin model assumes that STM is a single bucket, and that it can be filled up.
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true)
+
+Atkinson & Shiffrin (1971)
 
 ---
 
