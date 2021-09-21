@@ -131,11 +131,13 @@ Baddeley & Hitch (1974)
 
 Baddeley and Hitch (1974) model of working memory
 
-
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_basic_model.png?raw=true)
 
 ---
 
 The phonological loop
+
+
 
 ---
 
