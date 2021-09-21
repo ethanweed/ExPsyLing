@@ -181,25 +181,20 @@ Phonological Loop and Vocabulary Development
 
 ---
 
-Current working memory model
+Updated working memory model
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_updated_model.png?raw=true)
 
 ---
 
 Visual-spatial sketchpad
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHItch_current_model.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_updated_model.png?raw=true)
+
 
 ---
 
-Episodic buffer
-
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true)
-
----
-
-Episodic buffer: prose recall
+Problems for the model: prose recall
 
 ::: {.container}
 :::: {.col}
@@ -209,6 +204,12 @@ Episodic buffer: prose recall
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_Wilson_Episodic_ProseRecall_2.png?raw=true) Amnesic participants
 ::::
 :::
+
+---
+
+Epispdic buffer:
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600">
 
 ---
 
