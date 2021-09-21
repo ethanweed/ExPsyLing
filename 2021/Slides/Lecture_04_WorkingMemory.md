@@ -45,8 +45,11 @@ Cognitive models of language
 
 ---
 
+Forward span:
 "BABCDJR" ---> "BABCDJR"
 
+
+Bacward span:
 "BABCDJR" ---> "RJDCBAB"
 
 ---
