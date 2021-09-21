@@ -146,10 +146,10 @@ Auditory presentation
 
 ::: {.container}
 :::: {.col}
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_1.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_1.png?raw=true) word–word pairs
 ::::
 :::: {.col}
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_2.png?raw=true)
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_PV_2.png?raw=true) word–nonword pairs
 ::::
 :::
 
@@ -167,6 +167,11 @@ Visual presentation
 ::::
 :::
 
+---
+
+STM and Language Impairment
+
+![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Gathercole_STM_language_impairment.png?raw=true)
 
 ---
 
