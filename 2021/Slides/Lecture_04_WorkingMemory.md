@@ -183,7 +183,7 @@ Phonological Loop and Vocabulary Development
 
 Updated working memory model
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_updated_model.png?raw=true)
+![]()
 
 ---
 
