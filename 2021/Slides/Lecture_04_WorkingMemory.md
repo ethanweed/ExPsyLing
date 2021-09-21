@@ -129,7 +129,7 @@ Baddeley & Hitch (1974)
 
 ---
 
-Baddeley and Hitch (1974) model of working memory
+Baddeley and Hitch model of working memory
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_basic_model.png?raw=true)
 
@@ -138,6 +138,10 @@ Baddeley and Hitch (1974) model of working memory
 The "phonological loop"
 
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_phonological_Loop.png?raw=true)
+
+---
+
+
 
 ---
 
