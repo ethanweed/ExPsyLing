@@ -211,7 +211,7 @@ Gathercole & Baddeley (1993)
 
 Three-component working memory model
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true" width="500">
 
 Baddeley (2003)
 
@@ -219,7 +219,7 @@ Baddeley (2003)
 
 Visual-spatial sketchpad
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true)
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_threeCompontentModel.png?raw=true" width="500">
 
 Baddeley (2003)
 
