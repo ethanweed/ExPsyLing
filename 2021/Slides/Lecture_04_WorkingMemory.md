@@ -137,7 +137,7 @@ Baddeley and Hitch model of working memory
 
 The "phonological loop"
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_phonological_Loop.png?raw=true" width="400">
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/BaddeleyHitch_phonological_Loop.png?raw=true" width="600">
 
 ---
 
