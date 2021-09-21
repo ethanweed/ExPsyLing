@@ -65,14 +65,21 @@ The Atkinson–Shiffrin (1968) model of memory
 
 Sperling task
 
-
+::: {.container}
+:::: {.col}
 X	M	R	J  
 C	N	K	P	
 V	F	L	B	
-
----
-
+::::
+:::: {.col}
 ![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sperling_1960_PartialReport.png?raw=true)
+::::
+:::
+
+
+
+
+
 
 ---
 
