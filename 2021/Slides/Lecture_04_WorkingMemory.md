@@ -27,6 +27,12 @@ Behaviorist models of language
 
 ---
 
+Behaviorist models of language
+
+**![](https://lh4.googleusercontent.com/ye9e_q81PnWKuSGR1AaZCWm9OT7zHNi1L9rNgVqVUP1fguG7ws94vCRKLuWtOfvPVq7Rjc1YqOqILlvtn25148bkOkbzOjNz4NSpkjViXYzfwG9kM9R_H8_BY4N32b5AG293HJEbwx4=s0)**
+
+---
+
 Cognitive models of language
 
 **![](https://lh6.googleusercontent.com/-dLqxg2C7cf7JlnDjBkiOOdMf09DBgXF7lHz6kkpSnLutQ4cyLx_70A6hKDSSXovQWAzOfkl3Z_ZjNEhYGJISDBwNMezvXk2acIcMlae-uLTHp7OUdK4a7Jx--OD1FoNKdVHSKL6PsM=s0)**
@@ -51,11 +57,11 @@ The (George) Sperling task
 
 ---
 
-The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing.
+The Atkinson-Shiffrin model assumes that STM and Working Memory are the same thing, and that STM can be filled up.
 
 ---
 
-Baddeley and Hitch showed that the two can be distinguished experimentally.
+Baddeley and Hitch showed that STM and WM can operate semi-independently.
 
 ---
 
@@ -84,6 +90,10 @@ Baddeley & Hitch (1974)
 Baddeley and Hitch (1974) model of working memory
 
 **![](https://lh4.googleusercontent.com/MWYpZtDpjHchcV8M9P00C7utSXc2nDy35fF-sJH7YeYEEWIRYvs7gvoEKicv1MzTPU1anqyHD7Epoi5_ibI1YI4mkbnbyNa9sjgxMT3kRNyOCQeQFDQLIgkbBWcwvT3XOyS3dOsi7qE=s0)**
+
+---
+
+The phonological loop
 
 ---
 
