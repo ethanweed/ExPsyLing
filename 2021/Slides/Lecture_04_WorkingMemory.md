@@ -171,7 +171,7 @@ Visual presentation
 
 STM and Language Impairment
 
-![](https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Gathercole_STM_language_impairment.png?raw=true)
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Gathercole_STM_language_impairment.png?raw=true" width="600">
 
 ---
 
