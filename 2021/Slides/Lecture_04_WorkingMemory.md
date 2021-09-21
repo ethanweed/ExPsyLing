@@ -73,6 +73,11 @@ V	F	L	B
 ---
 
 
+
+---
+
+
+
 The (George) Sperling task
 
 **![](https://lh6.googleusercontent.com/I3jkA-VJohlVx7fzg3emVTy3aJGEGE3oFKff9QhqTVrLvfC_zy9K8KrsLwurIrFoDvQVpxuApFj72YfwcEVsi80to04ZnElvW5bCsvtJN8H_i6KU5PiQpMF4L-Z3q38ca1Wn-1kkn54=s0)**
