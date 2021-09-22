@@ -9,7 +9,7 @@
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_02.ipynb
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_02_solutions.ipynb
-jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04.ipynb.
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04.ipynb
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04_assignment.ipynb
 
 
