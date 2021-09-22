@@ -13083,7 +13083,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">days</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13117,6 +13117,10 @@ div#notebook {
 <pre>Enter a day name. If you are done, write &#34;done&#34;.Monday
 Enter a day name. If you are done, write &#34;done&#34;.Wednesday
 Enter a day name. If you are done, write &#34;done&#34;.Sunday
+Enter a day name. If you are done, write &#34;done&#34;.done
+What would you like to make on Monday? Tacos
+What would you like to make on Wednesday? Pizza
+What would you like to make on Sunday? Salad
 </pre>
 </div>
 </div>
@@ -13134,7 +13138,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13151,6 +13155,65 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[33]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>days</th>
+      <th>meals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Monday</td>
+      <td>Tacos</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Wednesday</td>
+      <td>Pizza</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Sunday</td>
+      <td>Salad</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13162,7 +13225,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">shopping</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13176,16 +13239,99 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What do you need to buy to make Tacos ? lettuce, tortillas
+What do you need to buy to make Pizza ? cheese, tomato sauce, flour
+What do you need to buy to make Salad ? lettuce, cucumbers, tomatoes
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[35]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>days</th>
+      <th>meals</th>
+      <th>shopping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Monday</td>
+      <td>Tacos</td>
+      <td>lettuce, tortillas</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Wednesday</td>
+      <td>Pizza</td>
+      <td>cheese, tomato sauce, flour</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Sunday</td>
+      <td>Salad</td>
+      <td>lettuce, cucumbers, tomatoes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13199,13 +13345,36 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;meals&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[36]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    Tacos
+1    Pizza
+2    Salad
+Name: meals, dtype: object</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13219,13 +13388,33 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;meals&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[37]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Tacos&#39;, &#39;Pizza&#39;, &#39;Salad&#39;]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13239,13 +13428,36 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[38]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>days                              Sunday
+meals                              Salad
+shopping    lettuce, cucumbers, tomatoes
+Name: 2, dtype: object</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13259,13 +13471,33 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[39]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Sunday&#39;, &#39;Salad&#39;, &#39;lettuce, cucumbers, tomatoes&#39;]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13279,7 +13511,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13294,7 +13526,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># what format is this data scraped from wikipedia?</span>
@@ -13311,7 +13543,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -13328,7 +13560,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># what is in this list?</span>
@@ -13346,7 +13578,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -13414,7 +13646,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rawdata</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
@@ -13430,7 +13662,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -13455,7 +13687,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">rawdata</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rawdata</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">rawdata</span><span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
@@ -13472,7 +13704,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -13568,7 +13800,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same number of columns, now with more rows</span>
@@ -13585,7 +13817,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -13609,7 +13841,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first, get a list of all the column names</span>
@@ -13627,7 +13859,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -13650,7 +13882,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now, change the names however you want</span>
@@ -13669,7 +13901,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -13692,7 +13924,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># finally, reassign your list with the changed names to be the names of the columns in the dataframe</span>
@@ -13710,7 +13942,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
@@ -13813,7 +14045,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Claimed sales&#39;</span><span class="p">:</span> <span class="s1">&#39;Sales&#39;</span><span class="p">})</span>
@@ -13830,7 +14062,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[49]:</div>
 
 
 
@@ -13903,7 +14135,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Goodby &quot;Ref(s)&quot;</span>
@@ -13921,7 +14153,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
@@ -14011,7 +14243,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># See, now there are only 6 columns.</span>
@@ -14028,7 +14260,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
@@ -14052,7 +14284,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get a list of all the column names</span>
@@ -14076,7 +14308,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
@@ -14216,7 +14448,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make a dataframe with data from all columns, but only rows 2 to 4</span>
@@ -14234,7 +14466,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
@@ -14302,7 +14534,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remake original dataframe</span>
@@ -14320,7 +14552,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14423,7 +14655,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2 best-selling artist</span>
@@ -14442,7 +14674,7 @@ Enter a day name. If you are done, write &#34;done&#34;.Sunday
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -14477,7 +14709,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make a new column with numbers from 1 to the total number of rows</span>
@@ -14495,7 +14727,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -14605,7 +14837,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span> <span class="p">[</span><span class="s1">&#39;rank&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span> <span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">col</span> <span class="o">!=</span> <span class="s1">&#39;rank&#39;</span> <span class="p">]</span> <span class="p">]</span>
@@ -14622,7 +14854,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[57]:</div>
 
 
 
@@ -14698,7 +14930,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
@@ -14715,7 +14947,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[58]:</div>
 
 
 
@@ -14739,7 +14971,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">born</span> <span class="o">=</span> <span class="mi">1973</span>
@@ -14756,7 +14988,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[59]:</div>
 
 
 
@@ -14796,7 +15028,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_sorted</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Released&#39;</span><span class="p">])</span>
@@ -14813,7 +15045,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -14922,7 +15154,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_sorted</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Released&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14939,7 +15171,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[61]:</div>
 
 
 
@@ -15048,7 +15280,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_sorted</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Genre&#39;</span><span class="p">,</span> <span class="s1">&#39;Released&#39;</span><span class="p">])</span>
@@ -15065,7 +15297,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[62]:</div>
 
 
 
@@ -15174,7 +15406,7 @@ Name: Artist, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop</span> <span class="o">=</span> <span class="p">[]</span>
@@ -15199,7 +15431,7 @@ Name: Artist, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[63]:</div>
 
 
 
@@ -15383,7 +15615,7 @@ Name: Artist, dtype: object</pre>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span>
 </pre></div>
 
     </div>
