@@ -21,6 +21,8 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lec
 
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_05_ResearchDesign.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_05_ResearchDesign.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+
 
 
 #Lab slides
