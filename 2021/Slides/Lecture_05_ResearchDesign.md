@@ -140,9 +140,38 @@ _Possible combinations_
 
 <img src="https://lh3.googleusercontent.com/2qf96oYbtsgxZBOaaHUcUVsUXzfMd3NenspyKJwz2MPkbuYi5zTLJr6o7TThsSsz86Fk4VFt9LihCCFmSxjYGc499RiNwyM1F-7tPElGQPRukwFNDbjaReXSA676mw3vPPsiUt9IUWU=s0" width="500">
 
+---
 
+#### Reliability vs. Validity
+	
+**_Reliability_** of a measure tells you how *precisely* you are measuring something, whereas the **_validity_** of a measure tells you how *accurate* the measure is.
 
 ---
+	
+Reliability
+	
+- ***Test-retest reliability***. This relates to consistency over time: if we repeat the measurement at a later date, do we get a the same answer?
+	
+---
+
+Reliability
+	
+- ***Inter-rater reliability***. This relates to consistency across people: if someone else repeats the measurement (e.g., someone else rates my intelligence) will they produce the same answer?
+	
+---
+	
+Reliability
+	
+- ***Parallel forms reliability***. This relates to consistency across theoretically-equivalent measurements: if I use a different set of bathroom scales to measure my weight, does it give the same answer?
+	
+---
+	
+Reliability
+	
+- ***Internal consistency reliability***. If a measurement is constructed from lots of different parts  that perform similar functions (e.g., a personality questionnaire result is added up across several questions) do the individual parts tend to give similar answers. 
+	
+---
+	
 
 #### Validity
 
