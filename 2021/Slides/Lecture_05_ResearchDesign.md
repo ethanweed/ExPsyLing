@@ -18,8 +18,7 @@
 
 ---
     
-**A measure**  
-The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
+**A measure**  refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
     
 ---
 	
