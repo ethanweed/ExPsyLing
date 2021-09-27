@@ -13,6 +13,12 @@
 
 ---
 
+#### Experimental Design
+
+<img src="https://lh5.googleusercontent.com/wOGT16KzzKxooBeCbWM7F2ryeH1sIlBdR8hAerqNOJWrJ-0JaZ6zVS-TPXg0L5tnh30PofFwg1y9EgArG8Sod5-2fWcN9bCsTgZorirBEufN4DEH6fyq1IYqzOu1Dl23Pf0XD91bjiA=s0" width="700">
+
+Hinkelmann & Kempthorne (2007)
+
 
 **A theoretical construct** is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
 
