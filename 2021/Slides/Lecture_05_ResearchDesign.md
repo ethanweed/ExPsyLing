@@ -92,7 +92,19 @@ The measure refers to the method or the tool that you use to make your observati
 
 Nominal, Ordinal, and Ratio
 
+
+::: {.container}
+:::: {.col}
 ![](https://lh4.googleusercontent.com/ZdmcnWR6MhAj9Cg_vI3Ip-XB-XdJbTtblvOobiF0lAerSgiBbpG_EhevI-jY28-RSMKLrJE2TG3YLDAGRuM9kJDJKCbDI6472EgptiqDU_7ovNUrv1RzyZWVozU62mbDO7PifSBFUY0=s0)
+::::
+:::: {.col}
+Nominal: names (no calculations)
+Ordinal: order (no calculations)
+Ratio: (0=0; mulitiplication and division ok)
+::::
+:::
+
+
 
 
 ---
@@ -101,7 +113,16 @@ Nominal, Ordinal, and Ratio
 
 Interval
 
+::: {.container}
+:::: {.col}
 <img src="https://lh3.googleusercontent.com/JOTbMGt8Z7rIz3ShSO2bwOzFqWdeOtHl_t3n0wFSELp00CPP3CaJ0R4EZJ1Lu-_YGxY1091TvkAX7VkC7IWSPkllnjnBQZynATtCTP4wMx-Z-Cu0Uga8LiNQ56h92gYUOuC7hGk85JY=s0" width=300 style="transform:rotate(180deg);"> 
+::::
+:::: {.col}
+Interval: differences between numbers meaninful, but + 0 ≠ 0
+::::
+:::
+
+
 
 No “natural” zero value
 
