@@ -4,7 +4,7 @@
 <style>
 .container{
   display: flex;
-  style="text-align: left;"
+  text-align: left;
 }
 .col {
   flex: 1;
