@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Planning/Render to html.md",
+            "file": "Slides/Lecture_05_ResearchDesign.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/Render to html.md",
+                "file": "Slides/Lecture_05_ResearchDesign.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Slides/Lecture_05_ResearchDesign.md",
     "Planning/Render to html.md",
     "Slides/Lecture_04_WorkingMemory.md",
     "Slides/Lecture_03_Psycholinguistics.md",
@@ -96,7 +97,6 @@
     "Slides/Lab_02_Why.md",
     "Slides/Lecture_02_Intro.md",
     "Planning/Schedule.md",
-    "Planning/Syllabus.md",
-    "Planning/PDFs/McCarty 2003.pdf"
+    "Planning/Syllabus.md"
   ]
 }
