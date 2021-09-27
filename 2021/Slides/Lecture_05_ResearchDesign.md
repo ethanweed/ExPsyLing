@@ -69,24 +69,10 @@ The measure refers to the method or the tool that you use to make your observati
 	-   Written responses: how will you code them?
 :::
 
----
-
--   _**A theoretical construct**_. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
-
----
-    
--   _**A measure**_. The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
-    
----
-	
--   _**An operationalisation**_. The term “operationalisation” refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
-
 
 ---
 
--   _**A variable**_. Finally, a new term. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
 
----
 
 ### Scales of measurement
 
