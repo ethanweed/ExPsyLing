@@ -106,6 +106,7 @@ Interval
 ::::
 :::: {.col}
 **Interval**: 
+	
 	- differences between numbers meaningful  
 	-  zero ≠ zero
 ::::
