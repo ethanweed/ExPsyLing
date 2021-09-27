@@ -12,6 +12,8 @@
 
 ---
 
+<section style="text-align: left;">
+
 **A theoretical construct**  
 This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
 
