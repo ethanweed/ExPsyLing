@@ -76,7 +76,6 @@
 
 ### Scales of measurement
 
-Nominal, Ordinal, and Ratio
 
 
 ::: {.container}
@@ -97,7 +96,6 @@ Nominal, Ordinal, and Ratio
 
 ### Scales of measurement
 
-Interval
 
 	
 ::: {.container}
