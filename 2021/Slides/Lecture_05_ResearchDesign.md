@@ -14,11 +14,7 @@
 
 
 
-**A theoretical construct**  
-	
-<section style="text-align: left;">
-
-This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
+**A theoretical construct** is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
 
 ---
     
@@ -27,18 +23,15 @@ The measure refers to the method or the tool that you use to make your observati
     
 ---
 	
-**An operationalisation**  
-The term “operationalisation” refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
+**An operationalisation** refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
 
 
 ---
 
-**A variable**  
- A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
+**A variable** is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
 
 ---
 
----
 
 ### Operationalisation: 
 #### Define your measurement
