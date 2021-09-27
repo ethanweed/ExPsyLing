@@ -105,7 +105,9 @@ Interval
 <img src="https://lh3.googleusercontent.com/JOTbMGt8Z7rIz3ShSO2bwOzFqWdeOtHl_t3n0wFSELp00CPP3CaJ0R4EZJ1Lu-_YGxY1091TvkAX7VkC7IWSPkllnjnBQZynATtCTP4wMx-Z-Cu0Uga8LiNQ56h92gYUOuC7hGk85JY=s0" width=300 style="transform:rotate(180deg);"> 
 ::::
 :::: {.col}
-**Interval**: differences between numbers meaninful, but + 0 ≠ 0
+**Interval**: 
+	- differences between numbers meaningful  
+	-  zero ≠ zero
 ::::
 :::
 
