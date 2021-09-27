@@ -84,9 +84,9 @@ Nominal, Ordinal, and Ratio
 ![](https://lh4.googleusercontent.com/ZdmcnWR6MhAj9Cg_vI3Ip-XB-XdJbTtblvOobiF0lAerSgiBbpG_EhevI-jY28-RSMKLrJE2TG3YLDAGRuM9kJDJKCbDI6472EgptiqDU_7ovNUrv1RzyZWVozU62mbDO7PifSBFUY0=s0)
 ::::
 :::: {.col}
-Nominal: names (no calculations)  
-Ordinal: order (no calculations)  
-Ratio: (0=0; mulitiplication and division ok)  
+- **Nominal**: names (no calculations)  
+- **Ordinal:** order (no calculations)  
+- **Ratio:** (0=0; mulitiplication and division ok)  
 ::::
 :::
 
