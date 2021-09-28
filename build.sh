@@ -34,6 +34,13 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab
 
 
 
+#Assignments
+
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+
+
+
+
 # Other
 pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Planning/Syllabus.html
 
