@@ -37,7 +37,7 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab
 #Assignments
 
 
-pandoc --standalone --template template.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.html 
+pandoc --standalone  /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.html 
 
 
 
