@@ -47,8 +47,13 @@ William Playfair (1759-1823)
 
 #### Garbage in, garbage out
 
-![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png)
+<img srce="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="500" />
 
 
 ---
 
+#### Garbage in, garbage out
+
+<img srce="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="500" />
+
+---
