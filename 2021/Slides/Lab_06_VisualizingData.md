@@ -134,25 +134,31 @@ $$
 
 ---
 
-Hmm...
+Hmm... comparing apples with oranges
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LyingChart.png" width="400"/>
 
 ---
 
-Hmm...
+Hmm... no y-axis labels
 
 <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/14/enhanced/webdr04/enhanced-buzz-5348-1412276314-10.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" width=""/>
 
 ---
 
-Hmm...
+Hmm... very selective y-axis labels
 
 <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr02/enhanced-buzz-19972-1412285325-16.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/>
 
 ---
 
+Hmm... again, no y-axis labels
 
+<img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr08/enhanced-buzz-21270-1412283681-17.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/>
+
+---
+
+<img src="https://www.mediamatters.org/static/images/item/fnc-ff-20120926-spending.jpg" width=""/>
 
 ---
 
