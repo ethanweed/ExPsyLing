@@ -1,5 +1,15 @@
 ## Data Visualization
 
+<style>
+.container{
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+</style>
+
+
 <img src="https://ethanweed.github.io/pythonbook/_images/snow_ghost_map2.png" width = "600"/>
 
 John Snow’s 1854 map of cholera deaths
