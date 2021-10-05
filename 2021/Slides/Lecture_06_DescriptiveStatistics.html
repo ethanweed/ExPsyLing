@@ -121,9 +121,11 @@ plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
 <div class="col">
 <div>
 <ul>
-<li class="fragment">one</li>
-<li class="fragment">two</li>
-<li class="fragment">three</li>
+<li class="fragment">time of the alarm</li>
+<li class="fragment">bedtime the night before</li>
+<li class="fragment">worry about the day ahead</li>
+<li class="fragment">time of year</li>
+<li class="fragment">other factors…???</li>
 </ul>
 </div>
 </div>
@@ -131,28 +133,29 @@ plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
 </section>
 <section class="slide level2">
 
-<p>Central tendency and Variability</p>
+<p>Key elements in the model:</p>
+<ol type="1">
+<li>Central tendency</li>
+<li>Variability</li>
+</ol>
 </section>
 <section class="slide level2">
 
-<p>(Facebook / Fish data)</p>
-<p>(Digit span data)</p>
+<p>Measures of central tendency</p>
+<ul>
+<li>What is a measure of central tendency?</li>
+<li>What are the three main measures central tendency, and when should they be used?</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<p>Measure of central tendency</p>
 </section>
 <section class="slide level2">
 
-<p>Mean / median / mode</p>
+<pre><code>If your data are *nominal scale*, you probably shouldn’t be using either the mean or the median. Both the mean and the median rely on the idea that the numbers assigned to values are meaningful. If the numbering scheme is arbitrary, then it’s probably best to use the **mode** instead.</code></pre>
 </section>
 <section class="slide level2">
 
-<p>Trimmed mean</p>
-</section>
-<section class="slide level2">
-
-<p>If your data are nominal scale, you probably shouldn’t be using either the mean or the median. Both the mean and the median rely on the idea that the numbers assigned to values are meaningful. If the numbering scheme is arbitrary, then it’s probably best to use the Mode instead.</p>
 <p>If your data are ordinal scale, you’re more likely to want to use the median than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.</p>
 <p>For interval and ratio scale data, either one is generally acceptable. Which one you pick depends a bit on what you’re trying to achieve. The mean has the advantage that it uses all the information in the data (which is useful when you don’t have a lot of data), but it’s very sensitive to extreme values, as we’ll see in Trimmed mean.</p>
 </section>

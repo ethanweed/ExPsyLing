@@ -99,9 +99,11 @@ Modelling more complicated processes
 :::: {.col}
 :::incremental
 
-- one
-- two
-- three
+- time of the alarm
+- bedtime the night before
+- worry about the day ahead
+- time of year
+- other factors...???
 
 :::
 ::::
@@ -111,31 +113,27 @@ Modelling more complicated processes
 
 ---
 
-Central tendency and Variability
+Key elements in the model: 
+
+1. Central tendency
+2. Variability
 
 ---
 
-(Facebook / Fish data)
+Measures of central tendency
 
-(Digit span data)
+- What is a measure of central tendency?
+- What are the three main measures central tendency, and when should they be used?
+
+---
 
 
 
 ---
 
-Measure of central tendency
+	If your data are *nominal scale*, you probably shouldn’t be using either the mean or the median. Both the mean and the median rely on the idea that the numbers assigned to values are meaningful. If the numbering scheme is arbitrary, then it’s probably best to use the **mode** instead.
 
 ---
-
-Mean / median / mode
-
----
-
-Trimmed mean
-
----
-
-If your data are nominal scale, you probably shouldn’t be using either the mean or the median. Both the mean and the median rely on the idea that the numbers assigned to values are meaningful. If the numbering scheme is arbitrary, then it’s probably best to use the Mode instead.
 
 If your data are ordinal scale, you’re more likely to want to use the median than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.
 
