@@ -76,6 +76,13 @@ $$
 
 #### Simulated coin-flipping
 
+	x_20 = random.binomial(n=20, p=1/2, size=1000)
+	x_100 = random.binomial(n=100, p=1/2, size=1000)
+
+---
+
+#### Simulated coin-flipping
+
 ![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png)
 
 
