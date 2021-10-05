@@ -305,7 +305,8 @@ r = .816 ("Strong")
 
 #### References:
 
+<font size="1"> 
 Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
-
+</font> 
 	
 
