@@ -83,8 +83,33 @@
 </section>
 <section class="slide level2">
 
-<p>Simulating coin-flipping</p>
+<p>Modelling coin-flipping</p>
+<p><strong>𝑋∼Binomial(𝜃,𝑁)</strong></p>
+</section>
+<section class="slide level2">
+
+<p>Simulated coin-flipping</p>
 <p><img data-src="https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png" /></p>
+</section>
+<section class="slide level2">
+
+<p>Simultated dice-throwing</p>
+<div class="container">
+<div class="col">
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+x = np.random.binomial(n=20, p=1/6, size=1000)
+
+skulls = sns.histplot(x, bins=20,binwidth=1)
+skulls.set(xlim=(0,20))
+plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
+</div>
+<div class="col">
+<p><img data-src="https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png" /></p>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
