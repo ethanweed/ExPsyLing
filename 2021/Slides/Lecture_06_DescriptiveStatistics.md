@@ -59,7 +59,8 @@ Statistical models:
 
 <br>
 
-θ = probability of "success" on any given trial
+θ = probability of "success" on any given trial  
+
 𝑁 = number of trials
 
 ---
