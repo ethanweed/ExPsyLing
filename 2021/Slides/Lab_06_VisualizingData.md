@@ -134,7 +134,7 @@ Charles Joseph Minard (1869)
 #### Maximize data density
 
 $$
-\mbox{data density} = \frac{\mbox{number of datapoints}{\mbox{area of data graphic}}
+\mbox{data density} = \frac{\mbox{number of datapoints} - {\mbox{area of data graphic}}
 $$ 
 
 ---
