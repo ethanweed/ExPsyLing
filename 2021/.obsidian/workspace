@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Assignments/Lab_Report_01.md",
+            "file": "Lecture_06_DescriptiveStatistics.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Lab_Report_01.md",
+                "file": "Lecture_06_DescriptiveStatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Lecture_06_DescriptiveStatistics.md",
+    "Slides/Lecture_02_Intro.md",
     "Untitled.md",
+    "Assignments/Lab_Report_01.md",
     "Slides/Lecture_05_ResearchDesign.md",
     "Planning/Render to html.md",
     "Slides/Lecture_04_WorkingMemory.md",
     "Slides/Lecture_03_Psycholinguistics.md",
     "Planning/_planning.md",
-    "Slides/Lab_02_Why.md",
-    "Slides/Lecture_02_Intro.md",
-    "Planning/Schedule.md",
-    "Planning/Syllabus.md"
+    "Slides/Lab_02_Why.md"
   ]
 }

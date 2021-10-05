@@ -13,15 +13,23 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04_assignment.ipynb
 
 
-# Lecture slides
+####### Lecture slides
 
+# Lecture 2
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_02_Intro.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_02_Intro.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
+# Lecture 3
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_03_Psycholinguistics.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_03_Psycholinguistics.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
+# Lecture 4
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_04_WorkingMemory.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
+# Lecture 5
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_05_ResearchDesign.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_05_ResearchDesign.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+
+# Lecture 6
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_06_DescriptiveStatistics.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_06_DescriptiveStatisticsn.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+
 
 
 
@@ -37,7 +45,6 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab
 #Assignments
 
 
-pandoc --standalone  /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Assignments/Lab_Report_01.html 
 
 
 
