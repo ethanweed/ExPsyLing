@@ -67,7 +67,15 @@ A picture speaks 1888 numbers
 
 ---
 
+#### Graphics tell a _story_
 
+Charles Joseph Minard (1869)
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/>
+
+<font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse </font>
+
+---
 
 
 #### References
