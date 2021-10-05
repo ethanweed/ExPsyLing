@@ -268,8 +268,15 @@ $$
 <img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_128_0.png" width="550"/>
 
 ---
+#### Strength of correlations
+
+![])(https://ethanweed.github.io/pythonbook/03.01-descriptives.html#table-corr-interpretation)
+
+---
 
 #### Misleading correlations: "Anscombe’s quartet"
+
+r = .816
 
 <img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png" width="550"/>
 
