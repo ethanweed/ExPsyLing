@@ -215,10 +215,10 @@ Two kinds of range:
 ::::
 :::: {.col}
 
-- Mean absolute deviation (AAD)
+- Mean absolute deviation (AAD) or (MAD)
 - Variance
 - Standard deviation
-- Median absolute deviation (MAD
+- Median absolute deviation (MAD)
 
 ::::	
 :::
