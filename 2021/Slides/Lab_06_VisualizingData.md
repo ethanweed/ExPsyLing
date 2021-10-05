@@ -158,7 +158,7 @@ Hmm... again, no y-axis labels
 
 ---
 
-<img src="https://www.mediamatters.org/static/images/item/fnc-ff-20120926-spending.jpg" width=""/>
+<img src="https://preview.redd.it/cxdxeclhueo71.jpg?width=960&crop=smart&auto=webp&s=8135a8bce32516e7b9b0e4ed6c7240a91e6d0bdb" width="400"/>
 
 ---
 
