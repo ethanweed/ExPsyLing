@@ -270,7 +270,7 @@ $$
 ---
 #### Strength of correlations
 
-![])(https://ethanweed.github.io/pythonbook/03.01-descriptives.html#table-corr-interpretation)
+![](https://ethanweed.github.io/pythonbook/03.01-descriptives.html#table-corr-interpretation)
 
 ---
 
