@@ -236,5 +236,21 @@ Correlations
 
 ---
 
+Correlations
 
+![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_125_1.png)
+
+---
+
+Correlations
+
+![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_128_0.png)
+
+---
+
+Correlations
+
+![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png)
+
+	
 
