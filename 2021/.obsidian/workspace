@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Lecture_06_DescriptiveStatistics.md",
+            "file": "Slides/Lecture_06_DescriptiveStatistics.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture_06_DescriptiveStatistics.md",
+                "file": "Slides/Lecture_06_DescriptiveStatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
