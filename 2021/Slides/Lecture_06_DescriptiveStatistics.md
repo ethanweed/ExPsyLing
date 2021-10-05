@@ -208,6 +208,7 @@ Measures of variablility
 
 z-scores (standard scores)
 
+
 ::: {.container}
 :::: {.col}
 
@@ -215,21 +216,18 @@ $$
 \mbox{standard score} = \frac{\mbox{raw score} - \mbox{mean}}{\mbox{standard deviation}}
 $$ 
 
+::::
+:::: {.col}
 
 $$
 z_i = \frac{X_i - \bar{X}}{\hat\sigma}
 $$
 
 ::::
-:::: {.col}
+:::
 
 - Converts scores to units of standard deviations
 - Allows comparisons between unlike scores (e.g. scores of different units)
-
-::::
-:::
-
-
 
 
 ---
