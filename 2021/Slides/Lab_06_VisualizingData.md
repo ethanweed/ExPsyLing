@@ -32,7 +32,7 @@ William Playfair (1759-1823)
 
 ---
 
-Graphics _reveal_ data
+#### Graphics _reveal_ data
 
 ::: {.container}
 :::: {.col}
@@ -45,9 +45,9 @@ Graphics _reveal_ data
 
 ---
 
+#### Garbage in, garbage out
 
-
-
+![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png)
 
 
 ---
