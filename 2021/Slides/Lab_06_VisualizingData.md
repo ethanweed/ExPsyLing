@@ -22,7 +22,7 @@ William Playfair (1759-1823)
 
 ---
 
-![[Pasted image 20211005214401.png]]
+![](Pasted image 20211005214401.png)
 
 
 ---
