@@ -197,10 +197,17 @@ Demographia calculated house affordability as:
 
 #### Measures of variablility
 
+::: {.container}
+:::: {.col}
 Two kinds of range:
 
 - Range
 - IQR
+- 
+::::
+:::
+
+
 
 
 ---
