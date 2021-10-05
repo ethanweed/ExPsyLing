@@ -117,6 +117,25 @@ Charles Joseph Minard (1869)
 ::::
 :::
 
+
+---
+#### Tufte's five principles of data graphics
+
+- Above all else show the data
+- Maximize the data to ink ratio
+- Erase non-data ink
+- Erase redundant data-ink
+- Revise and edit
+
+
+---
+
+#### Maximize data density
+
+$$
+\mbox{data density} = \frac{\mbox{number of datapoints} - \mbox{mean}}{\mbox{area of data graphic}}
+$$ 
+
 ---
 
 #### References

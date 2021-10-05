@@ -136,6 +136,10 @@
 <p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="300"/></p>
 </div>
 </div>
+<h4 id="maximize-data-density">Maximize data density</h4>
+<p><span class="math display">\[
+\mbox{data density} = \frac{\mbox{number of datapoints} - \mbox{mean}}{\mbox{area of data graphic}}
+\]</span></p>
 </section>
 <section class="slide level2">
 
@@ -158,11 +162,28 @@
         history: true,
         // Transition style
         transition: 'none', // none/fade/slide/convex/concave/zoom
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
 
         // Optional reveal.js plugins
         dependencies: [
           { src: 'https://unpkg.com/reveal.js@3.9.2//lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'https://unpkg.com/reveal.js@3.9.2//plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://unpkg.com/reveal.js@3.9.2//plugin/math/math.js', async: true },
           { src: 'https://unpkg.com/reveal.js@3.9.2//plugin/notes/notes.js', async: true }
         ]
       });
