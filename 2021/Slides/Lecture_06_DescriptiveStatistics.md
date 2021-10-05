@@ -208,9 +208,9 @@ Measures of variablility
 
 z-scores (standard scores)
 
-$$
-z_i = \frac{X_i - \bar{X}}{\hat\sigma}
-$$
+
+$z_i = \frac{X_i - \bar{X}}{\hat\sigma}$
+
 
 ---
 
