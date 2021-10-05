@@ -202,8 +202,8 @@ Demographia calculated house affordability as:
 Two kinds of range:
 
 - Range
-- IQR
-- 
+- IQR (Inter-quartile range)
+
 ::::
 :::
 
