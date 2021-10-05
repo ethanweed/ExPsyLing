@@ -71,6 +71,7 @@ Statistical models:
 $$
 P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
 $$
+
 ---
 
 #### Simulated coin-flipping
