@@ -173,6 +173,8 @@ Key elements in the model:
 
 - Average price of homes /  average income of population
 
+- Commonwealth Bank: Houses are relatively affordable in Australia these days!
+
 ::::	
 :::
 
