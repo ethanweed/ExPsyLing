@@ -107,13 +107,13 @@ Charles Joseph Minard (1869)
 
 "It may well be the best statistical graphic ever drawn" - Tufte (2001)
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="800"/>
 ::::
 :::: {.col}
 
-"It may well be the worst graphic ever to find its way into pring" - Tufte (2001)
+"It may well be the worst graphic ever to find its way into prin" - Tufte (2001)
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="width="800""/>
 ::::
 :::
 
