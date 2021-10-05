@@ -271,6 +271,8 @@ $$
 r_{XY}  = \frac{\mbox{Cov}(X,Y)}{ \hat{\sigma}_X \ \hat{\sigma}_Y}
 $$
 
+---
+
 #### Negative and positive correlations
 
 ![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_125_1.png)
