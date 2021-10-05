@@ -170,6 +170,7 @@ Key elements in the model:
 :::: {.col}
 
 - House affordability: price to income ratio
+<br>
 - Average price of homes /  average income of population
 
 ::::	
