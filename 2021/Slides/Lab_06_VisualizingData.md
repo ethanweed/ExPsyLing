@@ -119,6 +119,7 @@ Charles Joseph Minard (1869)
 
 
 ---
+
 #### Tufte's five principles of data graphics
 
 - Above all else show the data
