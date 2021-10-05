@@ -165,13 +165,13 @@ Misuse of data: Australian house prices
 
 ::: {.container}
 :::: {.col}
-Commonwealth Bank calculated house affordability as: 
-median house price / mean income
+Commonwealth Bank calculated house affordability as:   
+**median house price / mean income**
 ::::
 :::: {.col}
 
-Demographia calculated house affordability as: 
-median house price / median income
+Demographia calculated house affordability as:  
+**median house price / median income**
 
 ::::	
 :::
