@@ -209,7 +209,7 @@ Measures of variablility
 z-scores (standard scores)
 
 
-$z_i = \frac{X_i - \bar{X}}{\hat\sigma}$
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ceed701c4042bb34618535c9a902ca1a937a351" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:10.594ex; height:5.176ex;" alt="z={x-\mu  \over \sigma }">
 
 
 ---
