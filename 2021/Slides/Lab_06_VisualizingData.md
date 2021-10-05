@@ -22,7 +22,22 @@ William Playfair (1759-1823)
 
 ---
 
-![](Pasted image 20211005214401.png)
+Graphics _reveal_ data
+
+::: {.container}
+:::: {.col}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe1.png)
+::::
+:::: {.col}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png)
+::::
+:::
+
+---
+
+
+
+
 
 
 ---
