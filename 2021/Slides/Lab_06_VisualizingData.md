@@ -47,14 +47,14 @@ William Playfair (1759-1823)
 
 #### Garbage in, garbage out
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="500" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="600" />
 
 
 ---
 
 #### Garbage in, garbage out
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="500" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="600" />
 
 ---
 
@@ -63,7 +63,7 @@ William Playfair (1759-1823)
 
 A picture speaks 1888 numbers
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="500" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="600" />
 
 ---
 
