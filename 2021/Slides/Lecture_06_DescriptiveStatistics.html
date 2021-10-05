@@ -146,9 +146,12 @@ plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
 <li>What is a measure of central tendency?</li>
 <li>What are the three main measures central tendency, and when should they be used?</li>
 </ul>
-</section>
-<section class="slide level2">
-
+<p>How should you measure central tendency in:</p>
+<ul>
+<li>nominal data?</li>
+<li>ordinal data?</li>
+<li>interval or ratio data?</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -156,14 +159,38 @@ plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
 </section>
 <section class="slide level2">
 
-<p>If your data are ordinal scale, you’re more likely to want to use the median than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.</p>
-<p>For interval and ratio scale data, either one is generally acceptable. Which one you pick depends a bit on what you’re trying to achieve. The mean has the advantage that it uses all the information in the data (which is useful when you don’t have a lot of data), but it’s very sensitive to extreme values, as we’ll see in Trimmed mean.</p>
+<pre><code>If your data are *ordinal scale*, you’re more likely to want to use the **median** than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.</code></pre>
+</section>
+<section class="slide level2">
+
+<pre><code>For *interval* and *ratio scale* data, either the **mean** or the **median** is generally acceptable. Which one you pick depends a bit on what you’re trying to achieve. The mean has the advantage that it uses all the information in the data (which is useful when you don’t have a lot of data), but it’s very sensitive to extreme values.</code></pre>
 </section>
 <section class="slide level2">
 
 <p>Misuse of data: Australian house prices</p>
-<p>House affordability: price to income ratio</p>
-<p>Average price of homes / average income of population</p>
+<div class="container">
+<div class="col">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Bentleigh_house.jpg"></p>
+</div>
+<div class="col">
+<ul>
+<li>House affordability: price to income ratio</li>
+<li>Average price of homes / average income of population</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Misuse of data: Australian house prices</p>
+<div class="container">
+<div class="col">
+<p>Commonwealth Bank calculated house affordability as: median house price / mean income</p>
+</div>
+<div class="col">
+<p>Demographia calculated house affordability as: median house price / median income</p>
+</div>
+</div>
 </section>
 <section class="slide level2">
 

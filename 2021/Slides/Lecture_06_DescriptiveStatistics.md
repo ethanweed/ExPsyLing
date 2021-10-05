@@ -125,9 +125,11 @@ Measures of central tendency
 - What is a measure of central tendency?
 - What are the three main measures central tendency, and when should they be used?
 
----
+How should you measure central tendency in:
 
-
+- nominal data?
+- ordinal data?
+- interval or ratio data?
 
 ---
 
@@ -135,17 +137,44 @@ Measures of central tendency
 
 ---
 
-If your data are ordinal scale, you’re more likely to want to use the median than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.
+	If your data are *ordinal scale*, you’re more likely to want to use the **median** than the mean. The median only makes use of the order information in your data (i.e., which numbers are bigger), but doesn’t depend on the precise numbers involved. That’s exactly the situation that applies when your data are ordinal scale. The mean, on the other hand, makes use of the precise numeric values assigned to the observations, so it’s not really appropriate for ordinal data.
 
-For interval and ratio scale data, either one is generally acceptable. Which one you pick depends a bit on what you’re trying to achieve. The mean has the advantage that it uses all the information in the data (which is useful when you don’t have a lot of data), but it’s very sensitive to extreme values, as we’ll see in Trimmed mean.
+---
+
+	For *interval* and *ratio scale* data, either the **mean** or the **median** is generally acceptable. Which one you pick depends a bit on what you’re trying to achieve. The mean has the advantage that it uses all the information in the data (which is useful when you don’t have a lot of data), but it’s very sensitive to extreme values.
 
 ---
 
 Misuse of data: Australian house prices
 
-House affordability: price to income ratio
+::: {.container}
+:::: {.col}
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Bentleigh_house.jpg">
+::::
+:::: {.col}
 
-Average price of homes /  average income of population
+- House affordability: price to income ratio
+- Average price of homes /  average income of population
+
+::::	
+:::
+
+---
+
+Misuse of data: Australian house prices
+
+::: {.container}
+:::: {.col}
+Commonwealth Bank calculated house affordability as: 
+median house price / mean income
+::::
+:::: {.col}
+
+Demographia calculated house affordability as: 
+median house price / median income
+
+::::	
+:::
 
 ---
 
