@@ -158,7 +158,7 @@ Hmm... again, no y-axis labels
 
 ---
 
-<img src="https://preview.redd.it/cxdxeclhueo71.jpg?width=960&crop=smart&auto=webp&s=8135a8bce32516e7b9b0e4ed6c7240a91e6d0bdb" width="400"/>
+<img src="https://preview.redd.it/cxdxeclhueo71.jpg?width=960&crop=smart&auto=webp&s=8135a8bce32516e7b9b0e4ed6c7240a91e6d0bdb" width="550"/>
 
 ---
 
@@ -172,6 +172,7 @@ Hmm... again, no y-axis labels
 
 
 ---
+
 Revision
 
 
