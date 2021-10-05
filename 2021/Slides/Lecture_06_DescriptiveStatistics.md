@@ -76,8 +76,9 @@ $$
 
 #### Simulated coin-flipping
 
-	x_20 = random.binomial(n=20, p=1/2, size=1000)
-	x_100 = random.binomial(n=100, p=1/2, size=1000)
+	import numpy as np
+	x_20 = np.random.binomial(n=20, p=1/2, size=1000)
+	x_100 = np.random.binomial(n=100, p=1/2, size=1000)
 
 ---
 
@@ -93,6 +94,7 @@ $$
 ::: {.container}
 :::: {.col}
 
+	import numpy as np
 	x = np.random.binomial(n=20, p=1/6, size=1000)
 
 ::::
