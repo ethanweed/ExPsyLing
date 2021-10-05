@@ -137,9 +137,8 @@ Key elements in the model:
 
 ---
 
-#### Measures of central tendency
+#### Discussion questions
 
-Discussion questions:
 
 - What is a measure of central tendency?
 - What are the three main measures central tendency, and when should they be used?
