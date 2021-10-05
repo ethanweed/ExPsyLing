@@ -40,7 +40,7 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab
 
 pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_02_Why.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
-pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.md -V theme=solarized -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
+pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 
 
