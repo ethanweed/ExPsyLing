@@ -47,8 +47,13 @@ Statistical models, data, and "reality"
 
 Coin-flipping
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg", width = "400" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg" width = "400" />
 
+---
+
+Simulating coin-flipping
+
+![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png)
 
 ---
 
