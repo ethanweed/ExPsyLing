@@ -47,13 +47,32 @@ William Playfair (1759-1823)
 
 #### Garbage in, garbage out
 
-<img srce="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="500" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="500" />
 
 
 ---
 
 #### Garbage in, garbage out
 
-<img srce="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="500" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="500" />
 
 ---
+
+
+#### Graphics tell a _story_
+
+A picture speaks 1888 numbers
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="500" />
+
+---
+
+
+
+
+#### References
+
+
+Tufte, E. (2001). The visual display of quantitative information.
+
+Vigen, T. (2015). _Spurious correlations_. Hachette UK. (https://tylervigen.com/spurious-correlations)
