@@ -236,25 +236,27 @@ Correlations
 
 ---
 
-Correlations
-
 Negative and positive correlations
 
 ![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_125_1.png)
 
 ---
 
-Correlations
+Strength of correlations
 
 <img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_128_0.png" width="550"/>
 
 ---
 
-Correlations
+Misleading correlations: "Anscombe’s quartet"
 
 <img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png" width="550"/>
 
+---
 
+#### References:
+
+Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
 
 	
 
