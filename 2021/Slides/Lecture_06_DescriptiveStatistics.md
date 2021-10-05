@@ -210,9 +210,9 @@ z-scores (standard scores)
 
 
 
-\begin{equation}
+$$
 z_i = \frac{X_i - \bar{X}}{\hat\sigma}
-\end{equation}
+$$
 
 
 ---
