@@ -238,19 +238,23 @@ Correlations
 
 Correlations
 
+Negative and positive correlations
+
 ![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_125_1.png)
 
 ---
 
 Correlations
 
-![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_128_0.png)
+<img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_128_0.png" width="400"/>
 
 ---
 
 Correlations
 
-![](https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png)
+<img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png" width="400"/>
+
+
 
 	
 
