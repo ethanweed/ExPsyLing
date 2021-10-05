@@ -93,15 +93,7 @@ $$
 ::: {.container}
 :::: {.col}
 
-	import numpy as np
-	import matplotlib.pyplot as plt
-	import seaborn as sns
-
 	x = np.random.binomial(n=20, p=1/6, size=1000)
-
-	skulls = sns.histplot(x, bins=20,binwidth=1)
-	skulls.set(xlim=(0,20))
-	plt.xticks(np.arange(min(x), 20, 1.0))
 
 ::::
 :::: {.col}

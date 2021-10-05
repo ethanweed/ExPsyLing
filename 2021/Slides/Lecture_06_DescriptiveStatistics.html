@@ -116,15 +116,7 @@ x_100 = random.binomial(n=100, p=1/2, size=1000)</code></pre>
 <h4 id="simultated-dice-throwing">Simultated dice-throwing</h4>
 <div class="container">
 <div class="col">
-<pre><code>import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-x = np.random.binomial(n=20, p=1/6, size=1000)
-
-skulls = sns.histplot(x, bins=20,binwidth=1)
-skulls.set(xlim=(0,20))
-plt.xticks(np.arange(min(x), 20, 1.0))</code></pre>
+<pre><code>x = np.random.binomial(n=20, p=1/6, size=1000)</code></pre>
 </div>
 <div class="col">
 <p><img data-src="https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png" /></p>
