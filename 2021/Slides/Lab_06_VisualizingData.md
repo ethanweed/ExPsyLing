@@ -120,6 +120,42 @@ Charles Joseph Minard (1869)
 
 ---
 
+A good graphic gives us the most information in the least amount of time
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LookingAtPlots.png" width="500"/>
+
+---
+
+A good graphic should be honest
+
+$$
+\mbox{lie factor} = \frac{\mbox{size of effect shown in graph}}{\mbox{size of effect in data}}
+$$ 
+
+---
+
+Hmm...
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LyingChart.png" width="400"/>
+
+---
+
+Hmm...
+
+<img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/14/enhanced/webdr04/enhanced-buzz-5348-1412276314-10.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" width=""/>
+
+---
+
+Hmm...
+
+<img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr02/enhanced-buzz-19972-1412285325-16.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/>
+
+---
+
+
+
+---
+
 #### Tufte's five principles of data graphics
 
 - Above all else show the data
@@ -130,12 +166,32 @@ Charles Joseph Minard (1869)
 
 
 ---
+Revision
+
+
+
+
+---
 
 #### Maximize data density
 
 $$
 \mbox{data density} = \frac{\mbox{number of datapoints}}{\mbox{area of data graphic}}
 $$ 
+
+---
+
+Data density = 0.02 numbers per square centimeter
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LowDataDensity.png" width="400"/>
+
+---
+
+Data density = 28 numbers per square centimeter
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="400"/>
+
+
 
 ---
 
