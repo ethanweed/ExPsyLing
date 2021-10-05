@@ -47,7 +47,7 @@ Statistical models, data, and "reality"
 
 Coin-flipping
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg", width = "400">
 
 
 ---
