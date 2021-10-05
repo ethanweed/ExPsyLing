@@ -90,6 +90,26 @@ Simultated dice-throwing
 
 ---
 
+Modelling more complicated processes
+
+::: {.container}
+:::: {.col}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/2010-07-20_Black_windup_alarm_clock_face.jpg/800px-2010-07-20_Black_windup_alarm_clock_face.jpg">
+::::
+:::: {.col}
+:::incremental
+
+- one
+- two
+- three
+
+:::
+::::
+:::
+
+
+
+---
 
 Central tendency and Variability
 
