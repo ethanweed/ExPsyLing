@@ -272,7 +272,7 @@ $$
 
 #### Misleading correlations: "Anscombe’s quartet"
 
-r = .816
+r = .816 ("Strong")
 
 <img src="https://ethanweed.github.io/pythonbook/_images/03.01-descriptives_142_1.png" width="550"/>
 
