@@ -182,14 +182,35 @@ Measures of variablility
 
 - Range
 - IQR
+)
+
+---
+
+::: {.container}
+:::: {.col}
+
+![](https://upload.wikimedia.org/wikipedia/commons/2/20/HeightWeightExample.CorrectConversion.Quadratic.Residuals.png)
+
+::::
+:::: {.col}
+
 - Mean absolute deviation (AAD)
 - Variance
 - Standard deviation
-- Median absolute deviation (MAD)
+- Median absolute deviation (MAD
+
+::::	
+:::
+
+
 
 ---
 
 z-scores (standard scores)
+
+$$
+z_i = \frac{X_i - \bar{X}}{\hat\sigma}
+$$
 
 ---
 
