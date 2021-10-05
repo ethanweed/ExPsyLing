@@ -20,10 +20,10 @@ Statistical models and real models
 
 ::: {.container}
 :::: {.col}
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/H0e_layout2.png/220px-H0e_layout2.png)
+![](https://upload.wikimedia.org/wikipedia/commons/9/91/H0e_layout2.png)
 ::::
 :::: {.col}
-![](https://en.wikipedia.org/wiki/File:TEMB2076.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/TEMB2076.jpg/1280px-TEMB2076.jpg)
 ::::
 :::
 
