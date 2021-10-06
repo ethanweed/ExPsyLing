@@ -162,7 +162,7 @@ $$
 
 Hmm... comparing apples with oranges
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LyingChart.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LyingChart.png" width="500"/>
 
 ---
 
