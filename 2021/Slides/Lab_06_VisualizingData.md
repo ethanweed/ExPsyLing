@@ -206,6 +206,24 @@ Data density = 28 numbers per square centimeter
 
 ---
 
+#### Some examples I'm proud of
+
+---
+
+Test and survey results for adults with and without diagnosed dyslexia
+
+;<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/RSC-figure.png" width=""/>
+
+---
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Acoustic-features-by-Dx.png" width=""/>
+
+---
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/ASDNetworkFigure.png" width=""/>
+
+---
+
 #### References
 
 
