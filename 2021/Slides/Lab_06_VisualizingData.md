@@ -231,7 +231,7 @@ Data density = 28 numbers per square centimeter
 
 Playfair (1785)
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair1.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair1.png" width="600"/>
 
 
 ---
@@ -240,7 +240,7 @@ Playfair (1785)
 
 Playfair (1786)
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair2.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair2.png" width="600"/>
 
 ---
 
