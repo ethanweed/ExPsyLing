@@ -141,7 +141,7 @@ Charles Joseph Minard (1869)
 ---
 
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="450"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="400"/>
 
 ---
 
