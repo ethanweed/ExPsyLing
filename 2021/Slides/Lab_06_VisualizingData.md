@@ -220,7 +220,7 @@ Data density = 0.02 numbers per square centimeter
 
 Data density = 28 numbers per square centimeter
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="800"/>
 
 
 
