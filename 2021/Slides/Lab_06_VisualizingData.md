@@ -273,4 +273,5 @@ Reddit, r/dataisugly https://www.reddit.com/r/dataisugly/ \[accessed 2021-10-05]
 Tufte, E. (2001). The visual display of quantitative information.
 
 Vigen, T. (2015). https://tylervigen.com/spurious-correlations \[accessed 2021-10-05]
+	
 <\font>
