@@ -16,6 +16,8 @@ John Snow’s 1854 map of cholera deaths
 
 ---
 
+#### Data visualization is a modern invention
+
 ::: {.container}
 :::: {.col}
 William Playfair (1759-1823)
@@ -210,7 +212,7 @@ Data density = 28 numbers per square centimeter
 
 ---
 
-;<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/RSC-figure.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/RSC-figure.png" width=""/>
 
 ---
 
