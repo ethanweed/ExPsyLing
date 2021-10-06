@@ -201,12 +201,6 @@ Hmm... two different y-axes
 - Revise and edit
 
 
----
-
-Revision
-
-
-
 
 ---
 
@@ -231,6 +225,19 @@ Data density = 28 numbers per square centimeter
 
 
 ---
+
+
+#### Revision
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair1.png" width=""/>
+
+
+---
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair2.png" width=""/>
+
+---
+
 
 #### Some examples I'm proud of
 
