@@ -229,10 +229,16 @@ Data density = 28 numbers per square centimeter
 
 #### Revision
 
+Playfair (1785)
+
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair1.png" width=""/>
 
 
 ---
+
+#### Revision
+
+Playfair (1786)
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair2.png" width=""/>
 
