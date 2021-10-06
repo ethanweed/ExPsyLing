@@ -65,7 +65,7 @@ r = 0.80 ("Strong")
 
 A picture speaks 1888 numbers
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="800" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="850" />
 
 ---
 
@@ -73,7 +73,7 @@ A picture speaks 1888 numbers
 
 Charles Joseph Minard (1869)
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="850"/>
 
 <font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse </font>
 
