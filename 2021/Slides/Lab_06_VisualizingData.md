@@ -39,7 +39,7 @@ William Playfair
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe1.png" width="600"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png" width="600"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png" width="550"/>
 
 
 
