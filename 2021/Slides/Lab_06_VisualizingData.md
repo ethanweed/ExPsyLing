@@ -257,7 +257,7 @@ Playfair (1786)
 
 ---
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/ASDNetworkFigure.png" width="450"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/ASDNetworkFigure.png" width="600"/>
 
 ---
 
