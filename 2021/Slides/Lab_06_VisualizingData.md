@@ -263,7 +263,7 @@ Playfair (1786)
 
 #### References
 
-<font size="1">
+<font size="2">
 Danmarks Statistik https://www.facebook.com/pg/danmarksstatistik/photos/ \[accessed 2021-10-05]
 
 Notopuoulos, K. https://www.buzzfeednews.com/article/katienotopoulos/graphs-that-lied-to-us \[accessed 2021-10-05]
