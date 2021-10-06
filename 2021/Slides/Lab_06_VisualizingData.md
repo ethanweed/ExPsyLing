@@ -146,13 +146,13 @@ Charles Joseph Minard (1869)
 ---
 
 
-A good graphic gives us the most information in the least amount of time
+#### A good graphic gives us the most information in the least amount of time
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LookingAtPlots.png" width="700"/>
 
 ---
 
-A good graphic should be honest
+#### A good graphic should be honest
 
 $$
 \mbox{lie factor} = \frac{\mbox{size of effect shown in graph}}{\mbox{size of effect in data}}
