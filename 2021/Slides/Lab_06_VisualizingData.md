@@ -137,6 +137,7 @@ Charles Joseph Minard (1869)
 ::::
 :::
 
+	
 ---
 
 A good graphic gives us the most information in the least amount of time
