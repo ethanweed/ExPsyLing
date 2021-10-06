@@ -65,7 +65,7 @@ r = 0.80 ("Strong")
 
 A picture speaks 1888 numbers
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="650" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="800" />
 
 ---
 
