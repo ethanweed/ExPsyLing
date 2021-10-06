@@ -37,10 +37,9 @@ William Playfair
 
 #### Graphics _reveal_ data
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe1.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe1.png" width="450"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png" width="400"/>
-
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png" width="450"/>
 
 
 
