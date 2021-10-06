@@ -56,6 +56,8 @@ William Playfair
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="650" />
 
+r = 0.80
+
 ---
 
 
