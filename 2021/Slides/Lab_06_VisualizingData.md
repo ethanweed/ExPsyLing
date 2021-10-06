@@ -263,7 +263,12 @@ Playfair (1786)
 
 #### References
 
+Danmarks Statistik https://www.facebook.com/pg/danmarksstatistik/photos/ \[accessed 2021-10-05]
+
+Notopuoulos, K. https://www.buzzfeednews.com/article/katienotopoulos/graphs-that-lied-to-us \[accessed 2021-10-05]
+
+Reddit, r/dataisugly https://www.reddit.com/r/dataisugly/ \[accessed 2021-10-05]
 
 Tufte, E. (2001). The visual display of quantitative information.
 
-Vigen, T. (2015). _Spurious correlations_. Hachette UK. (https://tylervigen.com/spurious-correlations)
+Vigen, T. (2015). https://tylervigen.com/spurious-correlations \[accessed 2021-10-05]
