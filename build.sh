@@ -12,6 +12,7 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04.ipynb
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_04_assignment.ipynb
 
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/datasets/Sternberg/scripts/SternbergPlotGallery.ipynb
 
 ####### Lecture slides
 
