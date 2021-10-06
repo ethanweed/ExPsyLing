@@ -20,7 +20,8 @@ John Snow’s 1854 map of cholera deaths
 
 ::: {.container}
 :::: {.col}
-William Playfair (1759-1823)
+William Playfair  
+(1759-1823)
 
 - Engineer
 - Economist
