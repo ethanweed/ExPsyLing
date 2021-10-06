@@ -56,7 +56,7 @@ William Playfair
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="650" />
 
-r = 0.80
+r = 0.80 ("Strong")
 
 ---
 
@@ -65,7 +65,7 @@ r = 0.80
 
 A picture speaks 1888 numbers
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="600" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="650" />
 
 ---
 
