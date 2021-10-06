@@ -148,7 +148,7 @@ Charles Joseph Minard (1869)
 
 A good graphic gives us the most information in the least amount of time
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LookingAtPlots.png" width="500"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LookingAtPlots.png" width="650"/>
 
 ---
 
