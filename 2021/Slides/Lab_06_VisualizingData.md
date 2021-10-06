@@ -54,7 +54,7 @@ William Playfair
 
 #### Garbage in, garbage out
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="600" />
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="650" />
 
 ---
 
