@@ -253,7 +253,7 @@ Playfair (1786)
 
 ---
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Acoustic-features-by-Dx.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Acoustic-features-by-Dx.png" width="600"/>
 
 ---
 
