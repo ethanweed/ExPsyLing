@@ -10,6 +10,17 @@
 </style>
 ---
 
+	_The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise._
+
+	– Ludwig Wittgenstein (_Tractatus Logico-Philosphicus_, 1922)
+
+---
+
+
+
+---
+
+
 **Research hypotheses versus statistical hypotheses**
 
 
@@ -20,6 +31,7 @@
 ---
 
 **Null hypotheses and alternative hypotheses**
+
 
 ---
 
@@ -46,6 +58,10 @@
 
 ---
 
+<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
+
+---
+
 **One-sample t-test**
 
 
@@ -55,9 +71,5 @@ $$
 
 ---
 
-
-$$
-r_{XY}  = \frac{\mbox{Cov}(X,Y)}{ \hat{\sigma}_X \ \hat{\sigma}_Y}
-$$
 
 ---
