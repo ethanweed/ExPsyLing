@@ -10,12 +10,15 @@
 </style>
 ---
 
-	_The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise._
-
-	– Ludwig Wittgenstein (_Tractatus Logico-Philosphicus_, 1922)
+>The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise.
+> 
+> – Ludwig Wittgenstein (Tractatus Logico-Philosphicus, 1922)
 
 ---
 
+> Facts cannot be explained by a hypothesis more extraordinary than these facts themselves; and of various hypotheses the least extraordinary must be adopted
+
+> Charles S. Peirce, quoted in Sebeok & Umiker-Sebeok (1979).
 
 
 ---
@@ -62,6 +65,11 @@
 
 ---
 
+
+<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
+
+---
+
 **One-sample t-test**
 
 
@@ -73,3 +81,16 @@ $$
 
 
 ---
+
+
+
+
+---
+
+#### References
+
+Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
+
+Sebeok, T. A., & Umiker-Sebeok, J. (1979). “You know my method”: a juxtaposition of Charles S. Peirce and Sherlock Holmes.
+
+Wittgenstein, L. (2013). _Tractatus logico-philosophicus_. Routledge.
