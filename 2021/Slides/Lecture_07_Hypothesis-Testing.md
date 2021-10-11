@@ -56,7 +56,7 @@ ESP experimental materials
 
 **Null hypotheses and alternative hypotheses**
 
-- <strike>My research hypothesis: “ESP exists”<\strike>
+- ~~My research hypothesis: “ESP exists”~~
 
 ---
 	
