@@ -1,4 +1,4 @@
-**Hypothesis Testing**
+## Hypothesis Testing
 
 <style>
 .container{
@@ -24,7 +24,7 @@
 ---
 
 
-**Research hypotheses versus statistical hypotheses**
+#### Research hypotheses versus statistical hypotheses
 
 
 - My research hypothesis: “ESP exists”
@@ -33,7 +33,8 @@
 
 ---
 
-**ESP in space**  
+#### ESP in space
+
 Astronaut Edgar Mitchell and his  
 ESP experimental materials
 
@@ -48,19 +49,19 @@ ESP experimental materials
 
 ---
 
-**Null hypotheses and alternative hypotheses**
+#### Null hypotheses and alternative hypotheses
 
 - My research hypothesis: “ESP exists”
 
 ---
 
-**Null hypotheses and alternative hypotheses**
+#### Null hypotheses and alternative hypotheses
 
 - ~~My research hypothesis: “ESP exists”~~
 
 ---
 	
-**Null hypotheses and alternative hypotheses**
+#### Null hypotheses and alternative hypotheses
 
 :::incremental
 - My null hypothesis: "ESP does not exist"
@@ -69,7 +70,8 @@ ESP experimental materials
 	
 ---
 
-**Two types of errors**
+#### Two types of errors
+
 
 ::: {.container}
 :::: {.col}
