@@ -33,7 +33,7 @@
 
 ---
 
-**ESP in space**
+**ESP in space**  
 Astronaut Edgar Mitchell and his ESP experimental materials
 
 ::: {.container}
