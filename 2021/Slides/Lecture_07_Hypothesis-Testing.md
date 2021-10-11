@@ -34,7 +34,8 @@
 ---
 
 **ESP in space**  
-Astronaut Edgar Mitchell and his ESP experimental materials
+Astronaut Edgar Mitchell and his  
+ESP experimental materials
 
 ::: {.container}
 :::: {.col}
@@ -49,7 +50,23 @@ Astronaut Edgar Mitchell and his ESP experimental materials
 
 **Null hypotheses and alternative hypotheses**
 
+- My research hypothesis: “ESP exists”
 
+---
+
+**Null hypotheses and alternative hypotheses**
+
+- <strike>My research hypothesis: “ESP exists”<\strike>
+
+---
+	
+**Null hypotheses and alternative hypotheses**
+
+:::incremental
+- My null hypothesis: "ESP does not exist"
+- My research hypothesis: “ESP exists"
+:::
+	
 ---
 
 **Two types of errors**
