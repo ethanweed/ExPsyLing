@@ -31,7 +31,8 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lec
 # Lecture 6
 pandoc -t revealjs  --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_06_DescriptiveStatistics.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_06_DescriptiveStatistics.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
-
+# Lecture 7
+pandoc -t revealjs  --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_07_Hypothesis-Testing.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_07_Hypothesis-Testing.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/
 
 
 #Lab slides
