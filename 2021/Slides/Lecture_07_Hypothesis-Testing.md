@@ -33,6 +33,9 @@
 
 ---
 
+**ESP in space**
+Astronaut Edgar Mitchell and his ESP experimental materials
+
 ::: {.container}
 :::: {.col}
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Edgar_Mitchell_S70-55388.jpg/797px-Edgar_Mitchell_S70-55388.jpg" width=""/>
