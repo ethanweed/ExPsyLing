@@ -33,6 +33,17 @@
 
 ---
 
+::: {.container}
+:::: {.col}
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Edgar_Mitchell_S70-55388.jpg/797px-Edgar_Mitchell_S70-55388.jpg
+::::
+:::: {.col}
+https://www.cabinetmagazine.org/issues/5/cabinet_005_backstrom_fia_001.jpg
+::::
+:::
+
+---
+
 **Null hypotheses and alternative hypotheses**
 
 
@@ -80,8 +91,8 @@ $$
 ---
 
 
----
 
+---
 
 
 
