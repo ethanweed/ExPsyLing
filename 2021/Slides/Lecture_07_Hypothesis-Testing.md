@@ -50,7 +50,14 @@
 
 
 $$
-{\displaystyle t={\frac {{\bar {x}}-\mu _{0}}{s/{\sqrt {n}}}}}
+t = {\frac {{\bar {x}}-\mu _{0}}{s/{\sqrt {n}}}}
+$$
+
+---
+
+
+$$
+r_{XY}  = \frac{\mbox{Cov}(X,Y)}{ \hat{\sigma}_X \ \hat{\sigma}_Y}
 $$
 
 ---
