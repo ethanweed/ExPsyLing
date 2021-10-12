@@ -292,4 +292,3 @@ Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for 
 Sebeok, T. A., & Umiker-Sebeok, J. (1979). “You know my method”: a juxtaposition of Charles S. Peirce and Sherlock Holmes.
 
 Wittgenstein, L. (2013). _Tractatus logico-philosophicus_. Routledge.
-<\font>
