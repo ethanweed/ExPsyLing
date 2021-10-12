@@ -11,8 +11,8 @@
 ---
 
 >The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise.
-> 
-> – Ludwig Wittgenstein (Tractatus Logico-Philosphicus, 1922)
+
+> Ludwig Wittgenstein (Tractatus Logico-Philosphicus, 1922)
 
 ---
 
@@ -24,12 +24,29 @@
 ---
 
 
-#### Research hypotheses versus statistical hypotheses
+#### A simple ESP experiment
 
+1. Participant sees a card that is black on one side and white on the other. 
+2. The experimenter takes the card away, and places it black side up or white side up completely at random in the room next door. 
+3. A second experimenter comes in and asks the participant which side of the card is now facing upwards. 
+4. Each person sees only one card, and gives only one answer
+
+---
+
+#### Research hypotheses versus statistical hypotheses
 
 - My research hypothesis: “ESP exists”
 
 - My statistical hypothesis: 𝜃≠0.5
+
+
+---
+
+
+
+---
+
+
 
 ---
 
@@ -68,6 +85,19 @@ ESP experimental materials
 - My research hypothesis: “ESP exists"
 :::
 	
+---
+
+- The goal of a hypothesis test is _not_ to show that the alternative hypothesis is (probably) true
+- The goal is to show that the null hypothesis is (probably) false.
+
+---
+
+Or, if we are Bayesians, we might say that the goal is adjust our level of belief in the null hypothesis.
+
+---
+
+
+
 ---
 
 #### Two types of errors
