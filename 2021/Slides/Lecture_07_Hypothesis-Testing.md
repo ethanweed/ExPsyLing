@@ -156,14 +156,18 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 :::: {.col}
 
 	# sample from a binomial distribution
+	
 	data = random.binomial(n=100, p=.5, size=10000)
 
 	esp = sns.histplot(data, bins=20,binwidth=0.5)
+	
 	esp.set(xlim=(20,80))
 	
 ::::
 :::: {.col}
+:::incremental
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
+:::
 ::::
 :::
 
