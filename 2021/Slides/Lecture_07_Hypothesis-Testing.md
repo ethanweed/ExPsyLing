@@ -286,8 +286,10 @@ $p$ = the probability of observing results as extreme as the ones we observed, i
 
 #### References
 
+<font size = 2>
 Navarro, D., & Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook]
 
 Sebeok, T. A., & Umiker-Sebeok, J. (1979). “You know my method”: a juxtaposition of Charles S. Peirce and Sherlock Holmes.
 
 Wittgenstein, L. (2013). _Tractatus logico-philosophicus_. Routledge.
+<\font>
