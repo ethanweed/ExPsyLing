@@ -280,7 +280,7 @@ esp.set(xlim=(20,80))</code></pre>
 <h4 id="what-is-significant">What is significant?</h4>
 <div class="container">
 <div class="col">
-<p>Choosing an <span class="math inline">\(\alpha\)</span> determines what we will consider statistically significant.</p>
+<p>Choosing an <span class="math inline">\(\alpha\)</span> determines what we will consider <em><strong>statistically</strong></em> significant.</p>
 </div>
 <div class="col">
 <p><img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/></p>
@@ -292,7 +292,7 @@ esp.set(xlim=(20,80))</code></pre>
 <h4 id="what-is-a-p-value">What is a p-value?</h4>
 <div class="container">
 <div class="col">
-<p>p = the probability of observing results as extreme as the ones we observed, if <span class="math inline">\(H_0\)</span> is true</p>
+<p><span class="math inline">\(p\)</span> = the probability of observing results as extreme as the ones we observed, if <span class="math inline">\(H_0\)</span> is true</p>
 </div>
 <div class="col">
 <p><img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/></p>
@@ -301,19 +301,24 @@ esp.set(xlim=(20,80))</code></pre>
 </section>
 <section class="slide level2">
 
+<h4 id="is-our-fake-esp-experiment-statistically-significant">Is our fake ESP experiment statistically significant?</h4>
+<pre><code>from scipy.stats import binom_test
+p = binom_test(x = 62, n = 100, p = 0.5, alternative = &#39;two-sided&#39;)
+
+p = 0.020978735677851718</code></pre>
 </section>
 <section class="slide level2">
 
-<p><strong>One-sample t-test</strong></p>
-<p><span class="math display">\[
-t = {\frac {{\bar {x}}-\mu _{0}}{s/{\sqrt {n}}}}
-\]</span></p>
-</section>
-<section class="slide level2">
+<h4 id="what-about-mitchells-experiment-in-space">What about Mitchell’s experiment in space?</h4>
+<pre><code>from scipy.stats import binom_test
+p = binom_test(x = 2, n = 4, p = 0.5, alternative = &#39;two-sided&#39;)
 
-</section>
-<section class="slide level2">
+p = 1
 
+from scipy.stats import binom_test
+p = binom_test(x = 2, n = 4, p = 0.5, alternative = &#39;two-sided&#39;)
+
+p = 0.6875</code></pre>
 </section>
 <section class="slide level2">
 

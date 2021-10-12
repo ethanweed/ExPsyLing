@@ -237,7 +237,7 @@ $$
 
 ::: {.container}
 :::: {.col}
-Choosing an  $\alpha$  determines what we will consider statistically significant.
+Choosing an  $\alpha$  determines what we will consider _**statistically**_ significant.
 ::::
 :::: {.col}
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
@@ -251,7 +251,7 @@ Choosing an  $\alpha$  determines what we will consider statistically significan
 
 ::: {.container}
 :::: {.col}
-p = the probability of observing results as extreme as the ones we observed, if  $H_0$  is true
+$p$ = the probability of observing results as extreme as the ones we observed, if  $H_0$  is true
 ::::
 :::: {.col}
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
@@ -260,28 +260,27 @@ p = the probability of observing results as extreme as the ones we observed, if 
 
 ---
 
+#### Is our fake ESP experiment statistically significant?
 
-
-
----
-
-
-
-
-**One-sample t-test**
-
-
-$$
-t = {\frac {{\bar {x}}-\mu _{0}}{s/{\sqrt {n}}}}
-$$
-
----
-
+	from scipy.stats import binom_test
+	p = binom_test(x = 62, n = 100, p = 0.5, alternative = 'two-sided')
+	
+	p = 0.020978735677851718
 
 
 ---
 
+#### What about Mitchell's experiment in space?
 
+	from scipy.stats import binom_test
+	p = binom_test(x = 2, n = 4, p = 0.5, alternative = 'two-sided')
+	
+	p = 1
+
+	from scipy.stats import binom_test
+	p = binom_test(x = 2, n = 4, p = 0.5, alternative = 'two-sided')
+	
+	p = 0.6875
 
 ---
 
