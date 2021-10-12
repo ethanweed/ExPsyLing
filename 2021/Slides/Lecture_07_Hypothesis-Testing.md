@@ -214,10 +214,10 @@ $$
 ::: {.container}
 :::: {.col}
 
-|             | retain H0        | reject H0        |
+|             | retain $H_0$        | reject $H_0$        |
 |-------------|------------------|------------------|
-| H0 is true  | correct decision | error (type I)   |
-| H0 is false | error (type II)  | correct decision |
+| $H_0$ is true  | correct decision | error (type I)   |
+| $H_0$ is false | error (type II)  | correct decision |
 
 ::::
 :::
@@ -225,21 +225,31 @@ $$
 
 ---
 
-|             | retain H0                                     | reject H0                     |
+|             | retain $H_0$                                     | reject H0                     |
 |-------------|-----------------------------------------------|-------------------------------|
-| H0 is true  | $1-\alpha$ (probability of correct retention) | $\alpha$ (type I error rate)  |
-| H0 is false | $\beta$ (type II error rate)                  | $1-\beta$  (power of the test)|
+| $H_0$ is true  | $1-\alpha$ (probability of correct retention) | $\alpha$ (type I error rate)  |
+| $H_0$ is false | $\beta$ (type II error rate)                  | $1-\beta$  (power of the test)|
 
 ---
 
-
-
----
+#### Choosing an  $alpha$  determines what we will consider statistically significant.
 
 
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
 
 ---
+
+
+
+
+
+
+
+
+---
+
+
+
 
 **One-sample t-test**
 
