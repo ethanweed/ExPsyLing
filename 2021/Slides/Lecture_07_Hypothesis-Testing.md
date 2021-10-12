@@ -8,11 +8,6 @@
   flex: 1;
 }
 </style>
----
-
->The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise.
-
-> Ludwig Wittgenstein (Tractatus Logico-Philosphicus, 1922)
 
 ---
 
@@ -42,7 +37,9 @@
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sternberg_Experiment1.png?raw=true" width=""/>
+#### What are Sternberg's research and statistical hypotheses?
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sternberg_Experiment1.png?raw=true" width="400"/>
 
 ---
 
