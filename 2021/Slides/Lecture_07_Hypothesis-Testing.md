@@ -42,7 +42,7 @@
 
 ---
 
-
+<img src="ExPsyLing/2021/Slides/Images/Sternberg_Experiment1.png" width=""/>
 
 ---
 
