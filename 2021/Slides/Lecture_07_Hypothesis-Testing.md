@@ -119,8 +119,8 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 ::: {.container}
 :::: {.col}
 :::incremental
-- My null hypothesis (𝐻0): "ESP does not exist"
-- My alternative hypothesis (𝐻1): “ESP exists"
+- My null hypothesis ($H_0$): "ESP does not exist"
+- My alternative hypothesis ($H_1$): “ESP exists"
 :::
 ::::
 :::: {.col}
@@ -184,7 +184,7 @@ $$
 
 ---
 
-#### We can estimate results if 𝐻0 is true by sampling from the binomial distribution
+#### We can estimate results if $H_0$ is true by sampling from the binomial distribution
 
 ::: {.container}
 :::: {.col}
