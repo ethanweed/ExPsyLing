@@ -119,8 +119,9 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 ::: {.container}
 :::: {.col}
 :::incremental
-- My null hypothesis ($H_0$): "ESP does not exist"
-- My alternative hypothesis ($H_1$): “ESP exists"
+- My null hypothesis ( $H_0$ ): "ESP does not exist"
+
+- My alternative hypothesis ( $H_1$ ): “ESP exists"
 :::
 ::::
 :::: {.col}
@@ -214,10 +215,10 @@ $$
 ::: {.container}
 :::: {.col}
 
-|             | retain $H_0$        | reject $H_0$        |
+|             | retain H0        | reject H0        |
 |-------------|------------------|------------------|
-| $H_0$ is true  | correct decision | error (type I)   |
-| $H_0$ is false | error (type II)  | correct decision |
+| H0 is true  | correct decision | error (type I)   |
+| H0 is false | error (type II)  | correct decision |
 
 ::::
 :::
@@ -225,14 +226,14 @@ $$
 
 ---
 
-|             | retain $H_0$                                     | reject H0                     |
+|             | retain H0                                     | reject H0                     |
 |-------------|-----------------------------------------------|-------------------------------|
-| $H_0$ is true  | $1-\alpha$ (probability of correct retention) | $\alpha$ (type I error rate)  |
-| $H_0$ is false | $\beta$ (type II error rate)                  | $1-\beta$  (power of the test)|
+| H0 is true  | $1-\alpha$ (probability of correct retention) | $\alpha$ (type I error rate)  |
+| H0 is false | $\beta$ (type II error rate)                  | $1-\beta$  (power of the test)|
 
 ---
 
-#### Choosing an  $alpha$  determines what we will consider statistically significant.
+#### Choosing an  $\alpha$  determines what we will consider statistically significant.
 
 
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
