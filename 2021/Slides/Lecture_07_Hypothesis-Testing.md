@@ -235,15 +235,19 @@ $$
 
 #### What is significant?
 
+::: {.container}
+:::: {.col}
 Choosing an  $\alpha$  determines what we will consider statistically significant.
-
-
+::::
+:::: {.col}
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
+::::
+:::
 
 
 ---
 
-
+#### What is a 
 
 
 
