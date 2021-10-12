@@ -116,17 +116,21 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 	
 #### Null hypotheses and alternative hypotheses
 
+::: {.container}
+:::: {.col}
 :::incremental
 - My null hypothesis (𝐻0): "ESP does not exist"
 - My alternative hypothesis (𝐻1): “ESP exists"
 :::
-	
----
-
-#### Null hypotheses and alternative hypotheses
-
+::::
+:::: {.col}
+:::incremental
 - The goal of a hypothesis test is _not_ to show that the alternative hypothesis is (probably) true
 - The goal is to show that the null hypothesis is (probably) false.
+:::
+::::
+:::
+
 
 ---
 
