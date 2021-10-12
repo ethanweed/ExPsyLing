@@ -59,8 +59,10 @@
 <section class="slide level2">
 
 <h4 id="research-hypotheses-versus-statistical-hypotheses">Research hypotheses versus statistical hypotheses</h4>
-<p>If ESP <em>does not</em> exist, then each participant’s chances of answering correctly are 50/50.</p>
-<p>If ESP <em>does</em> exist, then each participant’s chances of answering correctly are <em>not</em> 50/50</p>
+<ul>
+<li><p>If ESP <em>does not</em> exist, then each participant’s chances of answering correctly are 50/50.</p></li>
+<li><p>If ESP <em>does</em> exist, then each participant’s chances of answering correctly are <em>not</em> 50/50</p></li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -114,11 +116,13 @@ ESP experimental materials</p>
 <section class="slide level2">
 
 <h4 id="null-hypothesis-significance-testing-nhst">Null hypothesis significance testing (NHST)</h4>
+<div>
 <ul>
-<li>I think that maybe ESP exists</li>
-<li>I collect some data</li>
-<li>I test whether my data supports the hypothesis that ESP <em>does not</em> exist</li>
+<li class="fragment">I think that maybe ESP exists</li>
+<li class="fragment">I collect some data</li>
+<li class="fragment">I test whether my data supports the hypothesis that ESP <em>does not</em> exist</li>
 </ul>
+</div>
 </section>
 <section class="slide level2">
 
@@ -139,8 +143,8 @@ ESP experimental materials</p>
 <h4 id="null-hypotheses-and-alternative-hypotheses-2">Null hypotheses and alternative hypotheses</h4>
 <div>
 <ul>
-<li class="fragment">My null hypothesis: “ESP does not exist”</li>
-<li class="fragment">My research hypothesis: “ESP exists”</li>
+<li class="fragment">My null hypothesis (𝐻0): “ESP does not exist”</li>
+<li class="fragment">My alternative hypothesis (𝐻1): “ESP exists”</li>
 </ul>
 </div>
 </section>
@@ -155,11 +159,13 @@ ESP experimental materials</p>
 <section class="slide level2">
 
 <h4 id="what-nhst-cannot-do">What NHST cannot do</h4>
+<div>
 <ul>
-<li>NHST can <em>never</em> prove anything</li>
-<li>NHST can <em>never</em> tell you the probability that the null hypothesis is true</li>
-<li>NHST can <em>never</em> tell you the probability that the alternative hypothesis is true</li>
+<li class="fragment">NHST can <em>never</em> prove anything</li>
+<li class="fragment">NHST can <em>never</em> tell you the probability that the null hypothesis is true</li>
+<li class="fragment">NHST can <em>never</em> tell you the probability that the alternative hypothesis is true</li>
 </ul>
+</div>
 </section>
 <section class="slide level2">
 
@@ -167,6 +173,18 @@ ESP experimental materials</p>
 <ul>
 <li>NHST can <em>only</em> tell you how unlikely the data you have observed would be if the null hypothesis were in fact true</li>
 </ul>
+</section>
+<section class="slide level2">
+
+<div class="container">
+<div class="col">
+<p>`# sample from a binomial distribution data = random.binomial(n=100, p=.5, size=10000)</p>
+<p>esp = sns.histplot(data, bins=20,binwidth=0.5) esp.set(xlim=(20,80))`</p>
+</div>
+<div class="col">
+<p><img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/></p>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
@@ -228,7 +246,6 @@ ESP experimental materials</p>
 </section>
 <section class="slide level2">
 
-<p><img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/></p>
 </section>
 <section class="slide level2">
 

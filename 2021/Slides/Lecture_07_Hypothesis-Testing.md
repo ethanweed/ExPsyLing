@@ -32,9 +32,9 @@
 
 #### Research hypotheses versus statistical hypotheses
 
-If ESP _does not_ exist, then each participant's chances of answering correctly are 50/50.
+- If ESP _does not_ exist, then each participant's chances of answering correctly are 50/50.
 
-If ESP _does_ exist, then each participant's chances of answering correctly are _not_ 50/50
+- If ESP _does_ exist, then each participant's chances of answering correctly are _not_ 50/50
 
 ---
 
@@ -94,9 +94,11 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 
 #### Null hypothesis significance testing (NHST)
 
+:::incremental
 - I think that maybe ESP exists
 - I collect some data
 - I test whether my data supports the hypothesis that ESP _does not_ exist
+:::
 
 ---
 
@@ -115,8 +117,8 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 #### Null hypotheses and alternative hypotheses
 
 :::incremental
-- My null hypothesis: "ESP does not exist"
-- My research hypothesis: “ESP exists"
+- My null hypothesis (𝐻0): "ESP does not exist"
+- My alternative hypothesis (𝐻1): “ESP exists"
 :::
 	
 ---
@@ -130,9 +132,11 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 
 #### What NHST cannot do
 
+:::incremental
 - NHST can _never_ prove anything
 - NHST can _never_ tell you the probability that the null hypothesis is true
 - NHST can _never_ tell you the probability that the alternative hypothesis is true
+:::
 
 ---
 
@@ -141,6 +145,22 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 - NHST can _only_ tell you how unlikely the data you have observed would be if the null hypothesis were in fact true
 
 ---
+
+::: {.container}
+:::: {.col}
+`# sample from a binomial distribution
+data = random.binomial(n=100, p=.5, size=10000)
+
+esp = sns.histplot(data, bins=20,binwidth=0.5)
+esp.set(xlim=(20,80))`
+::::
+:::: {.col}
+<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
+::::
+:::
+
+---
+
 
 #### Two types of errors
 
@@ -166,7 +186,7 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 
 ---
 
-<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
+
 
 ---
 
