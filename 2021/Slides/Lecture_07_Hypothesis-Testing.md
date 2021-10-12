@@ -247,9 +247,18 @@ Choosing an  $\alpha$  determines what we will consider statistically significan
 
 ---
 
-#### What is a 
+#### What is a p-value?
 
+::: {.container}
+:::: {.col}
+p = the probability of observing results as extreme as the ones we observed, if  $H_0$  is true
+::::
+:::: {.col}
+<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_15_1.png" width=""/>
+::::
+:::
 
+---
 
 
 
