@@ -43,9 +43,15 @@
 
 ---
 
+#### Sternberg's research and statistical hypotheses
 
+Something like...
+
+- Research hypothesis: People need to scan through the contents of their working memory to access it: they cannot access it all at once
+- Statistical hypothesis: The slope of the straight line modelling the relation between set size and response time will not be 0: slope ≠ 0
 
 ---
+
 
 #### ESP in space
 
@@ -60,6 +66,14 @@ ESP experimental materials
 <img src="https://www.cabinetmagazine.org/issues/5/cabinet_005_backstrom_fia_001.jpg" width=""/>
 ::::
 :::
+
+---
+
+#### Null hypothesis significance testing (NHST)
+
+- I think that maybe ESP exists
+- I collect some data
+- I test whether my data supports the hypothesis that ESP _does not_ exist
 
 ---
 
@@ -84,16 +98,23 @@ ESP experimental materials
 	
 ---
 
+#### Null hypotheses and alternative hypotheses
+
 - The goal of a hypothesis test is _not_ to show that the alternative hypothesis is (probably) true
 - The goal is to show that the null hypothesis is (probably) false.
 
 ---
 
-Or, if we are Bayesians, we might say that the goal is adjust our level of belief in the null hypothesis.
+#### What NHST cannot do
 
----
+- NHST can _never_ prove anything
+- NHST can _never_ tell you the probability that the null hypothesis is true
+- NHST can _never_ tell you the probability that the alternative hypothesis is true
 
 
+#### What NHST can do
+
+- NHST can _only_ tell you how unlikely the data you have observed would be if the null hypothesis were in fact true
 
 ---
 
