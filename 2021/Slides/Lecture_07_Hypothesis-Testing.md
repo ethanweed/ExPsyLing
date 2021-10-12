@@ -262,11 +262,11 @@ $p$ = the probability of observing results as extreme as the ones we observed, i
 
 #### Is our fake ESP experiment statistically significant?
 
+
 	from scipy.stats import binom_test
 	p = binom_test(x = 62, n = 100, p = 0.5, alternative = 'two-sided')
 	
 	p = 0.020978735677851718
-
 
 ---
 
