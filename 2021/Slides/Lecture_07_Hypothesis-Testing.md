@@ -278,7 +278,7 @@ $p$ = the probability of observing results as extreme as the ones we observed, i
 	p = 1
 
 	from scipy.stats import binom_test
-	p = binom_test(x = 2, n = 4, p = 0.5, alternative = 'two-sided')
+	p = binom_test(x = 2, n = 4, p = 0.5, alternative = 'greater')
 	
 	p = 0.6875
 
