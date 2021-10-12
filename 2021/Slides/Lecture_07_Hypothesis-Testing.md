@@ -146,17 +146,21 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 
 #### What NHST can do
 
+:::incremental
 - NHST can _only_ tell you how unlikely the data you have observed would be if the null hypothesis were in fact true
+:::
 
 ---
 
 ::: {.container}
 :::: {.col}
-`# sample from a binomial distribution
-data = random.binomial(n=100, p=.5, size=10000)
 
-esp = sns.histplot(data, bins=20,binwidth=0.5)
-esp.set(xlim=(20,80))`
+	# sample from a binomial distribution
+	data = random.binomial(n=100, p=.5, size=10000)
+
+	esp = sns.histplot(data, bins=20,binwidth=0.5)
+	esp.set(xlim=(20,80))
+	
 ::::
 :::: {.col}
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
