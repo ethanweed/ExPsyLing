@@ -1,0 +1,21 @@
+---
+title: "SternbergPlotGallery"
+author: "Ethan Weed"
+date: "10/12/2021"
+output: html_document
+---
+
+```{python}
+import pandas as pd
+import seaborn as sns
+from matplotlib import pyplot as plt
+
+sns.set_context("notebook", font_scale=1.5)
+
+file = 'https://raw.githubusercontent.com/ethanweed/ExPsyLing/master/datasets/Sternberg/2021/Sternberg_cleaned.csv'
+
+data = pd.read_csv(file)
+
+data.head()
+```
+
