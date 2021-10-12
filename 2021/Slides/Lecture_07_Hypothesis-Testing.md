@@ -184,7 +184,7 @@ $$
 
 ---
 
-#### We can estimate results if $H_0$ is true by sampling from the binomial distribution
+#### We can estimate results if  $H_0$  is true by sampling from the binomial distribution
 
 ::: {.container}
 :::: {.col}
