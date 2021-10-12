@@ -21,10 +21,20 @@
 
 #### A simple ESP experiment
 
+:::incremental
 1. Participant sees a card that is black on one side and white on the other. 
 2. The experimenter takes the card away, and places it black side up or white side up completely at random in the room next door. 
 3. A second experimenter comes in and asks the participant which side of the card is now facing upwards. 
-4. Each person sees only one card, and gives only one answer
+4. Each participant sees only one card, and gives only one answer
+:::
+
+---
+
+#### Research hypotheses versus statistical hypotheses
+
+If ESP _does not_ exist, then each participant's chances of answering correctly are 50/50.
+
+If ESP _does_ exist, then each participant's chances of answering correctly are _not_ 50/50
 
 ---
 
@@ -32,7 +42,7 @@
 
 - My research hypothesis: “ESP exists”
 
-- My statistical hypothesis: 𝜃≠0.5
+- My statistical hypothesis: 𝜃 ≠ 0.5
 
 
 ---
@@ -47,8 +57,10 @@
 
 Something like...
 
+:::incremental
 - Research hypothesis: People need to scan through the contents of their working memory to access it: they cannot access it all at once
 - Statistical hypothesis: The slope of the straight line modelling the relation between set size and response time will not be 0: slope ≠ 0
+:::
 
 ---
 
@@ -65,6 +77,17 @@ ESP experimental materials
 :::: {.col}
 <img src="https://www.cabinetmagazine.org/issues/5/cabinet_005_backstrom_fia_001.jpg" width=""/>
 ::::
+:::
+
+---
+
+#### ESP in space results
+
+Out of 4 psychics trying to guess which symbols Mitchell was sending to them telepathically from space...
+
+:::incremental
+- 2 did better than chance
+- 2 did not.
 :::
 
 ---
@@ -111,6 +134,7 @@ ESP experimental materials
 - NHST can _never_ tell you the probability that the null hypothesis is true
 - NHST can _never_ tell you the probability that the alternative hypothesis is true
 
+---
 
 #### What NHST can do
 
