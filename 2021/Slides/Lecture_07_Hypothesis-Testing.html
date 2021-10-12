@@ -182,6 +182,21 @@ ESP experimental materials</p>
 </section>
 <section class="slide level2">
 
+<h4 id="the-esp-experiment-can-be-modelled-with-a-binomial-distribution">The ESP experiment can be modelled with a binomial distribution</h4>
+<div class="container">
+<div class="col">
+<p><span class="math display">\[
+P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
+\]</span></p>
+</div>
+<div class="col">
+
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="we-can-estimate-results-if-𝐻0-is-true-by-sampling-from-the-binomial-distribution">We can estimate results if 𝐻0 is true by sampling from the binomial distribution</h4>
 <div class="container">
 <div class="col">
 <pre><code># sample from a binomial distribution
@@ -193,9 +208,7 @@ esp = sns.histplot(data, bins=20,binwidth=0.5)
 esp.set(xlim=(20,80))</code></pre>
 </div>
 <div class="col">
-<div>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/></p>
-</div>
 </div>
 </div>
 </section>

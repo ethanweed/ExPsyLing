@@ -152,6 +152,28 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 
 ---
 
+#### The ESP experiment can be modelled with a binomial distribution
+
+
+::: {.container}
+:::: {.col}
+
+$$
+P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
+$$
+	
+::::
+:::: {.col}
+
+
+
+::::
+:::
+
+---
+
+#### We can estimate results if 𝐻0 is true by sampling from the binomial distribution
+
 ::: {.container}
 :::: {.col}
 
@@ -165,9 +187,9 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 	
 ::::
 :::: {.col}
-:::incremental
+
 <img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
-:::
+
 ::::
 :::
 
