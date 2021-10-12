@@ -155,20 +155,10 @@ Out of 4 psychics trying to guess which symbols Mitchell was sending to them tel
 #### The ESP experiment can be modelled with a binomial distribution
 
 
-::: {.container}
-:::: {.col}
-
 
 $P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}$
 
-	
-::::
-:::: {.col}
 
-
-
-::::
-:::
 
 ---
 
