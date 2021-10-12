@@ -1,5 +1,7 @@
 # Sternberg Plot Gallery
 
+Here are some plot ideas you can use for inspiration, whether for plotting data from the Sternberg task or something else. Click the "Click to show" button to reveal the code for each plot.
+
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
