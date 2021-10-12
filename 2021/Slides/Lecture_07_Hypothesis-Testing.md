@@ -169,12 +169,14 @@ $P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}$
 ::: {.container}
 :::: {.col}
 
-$P(X | \theta, N)$
+$$
+P(X | \theta, N)
+$$
 	
 ::::
 :::: {.col}
 
-<img src="https://ethanweed.github.io/pythonbook/_images/04.04-hypothesis-testing_11_1.png" width=""/>
+
 
 ::::
 :::
