@@ -1,10 +1,13 @@
-#### Memory scanning task (Sternberg, 1966)
+#### Memory scanning task 
+
+**(Sternberg, 1966)**
 
 ---
 
 **Research Question: Do people have immediate (parallel) access to all of short-term memory?**
 
-Sternberg (1966) task:
+**Sternberg (1966) task:**
+
 -Participant is given a list consisting of N digits (N = 1,... , 6)
 	- these digits are called the memory set
 - The participant is allowed to rehearse this list
@@ -31,7 +34,8 @@ IS NOT contained in the memory set
 
 ###### Experiment structure
 
-Stimulus manipulations
+**Stimulus manipulations**  
+
  - memory set size N = 1,...,6
  - probe present or absent
  - position of probe in list
@@ -57,6 +61,7 @@ Stimulus manipulations
 
 #### References
 
+<font size="2">
 Sternberg, S. (1966). High-speed scanning in human memory. _Science_, _153_(3736), 652-654.
 
 - Notes on experiment design from [Tom Faulkenberry](https://www.youtube.com/watch?v=HG8GmhlHOu4)
