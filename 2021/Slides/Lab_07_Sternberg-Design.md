@@ -64,4 +64,7 @@ Sternberg, S. (1966). High-speed scanning in human memory. _Science_, _153_(3736
 - The stimuli are taken from Faulkenberry as well: https://github.com/tomfaulkenberry/courses/blob/master/fall2018/psyc5316/README.org
 
 - The same stimuli can be found in the PsychoPy Sternberg demo: https://www.psychopy.org
-ª
+
+- The experiment files we used can be found here: https://github.com/ethanweed/OpenSesame/tree/master/Sternberg/experiment_files
+
+- Our original raw data can be found here: https://github.com/ethanweed/ExPsyLing/tree/master/datasets/Sternberg/2021
