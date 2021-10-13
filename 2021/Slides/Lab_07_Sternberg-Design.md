@@ -33,7 +33,7 @@ IS NOT contained in the memory set
 - fixation (1000 ms)
 - present memory set (1200 ms)
 - ISI (2000 ms)
-- present probe (until response)
+- present probe (timeout after 2000 ms)
 - feedback (1000 ms)
 
 
