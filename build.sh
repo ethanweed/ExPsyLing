@@ -44,7 +44,7 @@ pandoc -t revealjs -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab
 
 pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_06_VisualizingData.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
 
-
+pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_07_Sternberg-Design.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_07_Sternberg-Design.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
 
 #Assignments
 
