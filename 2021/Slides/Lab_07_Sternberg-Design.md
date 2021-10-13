@@ -8,6 +8,7 @@
 
 **Sternberg (1966) task:**
 
+:::incremental
 - Participant is given a list consisting of N digits (N = 1,... , 6)
 	- these digits are called the memory set
 - The participant is allowed to rehearse this list
@@ -15,6 +16,7 @@
 	- this number is called the probe
 - The participant must indicate whether the probe digit IS or
 IS NOT contained in the memory set
+:::
 
 ---
 
