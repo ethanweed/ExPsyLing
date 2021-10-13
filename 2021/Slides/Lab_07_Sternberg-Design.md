@@ -8,7 +8,7 @@
 
 **Sternberg (1966) task:**
 
--Participant is given a list consisting of N digits (N = 1,... , 6)
+- Participant is given a list consisting of N digits (N = 1,... , 6)
 	- these digits are called the memory set
 - The participant is allowed to rehearse this list
 - A few seconds later, the participant sees a single digit
