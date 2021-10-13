@@ -26,10 +26,7 @@ IS NOT contained in the memory set
 
 #### Experiment structure
 
-**Practice block and experimental block**
-
-**Trial structure**
-
+- practice block and experimental block
 - fixation (1000 ms)
 - present memory set (1200 ms)
 - ISI (2000 ms)
@@ -41,7 +38,7 @@ IS NOT contained in the memory set
 
 ###### Experiment structure
 
-**Stimulus manipulations**  
+Stimulus manipulations
 
  - memory set size N = 1,...,6
  - probe present or absent
