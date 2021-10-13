@@ -53,7 +53,7 @@ Stimulus manipulations
 
 |   N | probe conditions | positions | reps | # trials |
 | --: | ---------------: | --------: | ---: | -------: |
-|   1 |                2 |         T |    3 |        6 |
+|   1 |                2 |         1 |    3 |        6 |
 |   2 |                2 |         2 |    3 |       12 |
 |   3 |                2 |         3 |    3 |       18 |
 |   4 |                2 |         4 |    3 |       24 |
