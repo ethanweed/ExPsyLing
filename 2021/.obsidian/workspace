@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lab_07_Sternberg-Design.md",
+            "file": "Planning/Schedule.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lab_07_Sternberg-Design.md",
+                "file": "Planning/Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Planning/Schedule.md",
     "Lab_07_Sternberg-Design.md",
     "Slides/Lecture_05_ResearchDesign.md",
     "Slides/Lecture_04_WorkingMemory.md",
@@ -96,7 +97,6 @@
     "Slides/Lecture_06_DescriptiveStatistics.md",
     "Slides/Lab_02_Why.md",
     "Slides/Lecture_03_Psycholinguistics.md",
-    "Slides/Lab_06_VisualizingData.md",
-    "Slides/Untitled.md"
+    "Slides/Lab_06_VisualizingData.md"
   ]
 }

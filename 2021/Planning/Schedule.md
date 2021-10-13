@@ -130,8 +130,8 @@
     <td class="tg-5k28"></td>
     <td class="tg-acii"></td>
     <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab</span></td>
-    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Wrangling data with Python</span></td>
-    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">N&amp;W Part 3 Chapter 3: Data Wrangling</span></td>
+    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Lab report 1 Q and A</span></td>
+    <td class="tg-acii"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">n/a</span></td>
   </tr>
   <tr>
     <td class="tg-j7vb"><span style="font-weight:400;font-style:normal;text-decoration:none;color:black">Autumn Break</span></td>
