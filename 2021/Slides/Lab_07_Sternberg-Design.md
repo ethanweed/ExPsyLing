@@ -60,6 +60,8 @@ Stimulus manipulations
 |   5 |                2 |         5 |    3 |       30 |
 |   6 |                2 |         6 |    3 |       36 |
 
+Total trials: 126
+
 ---
 
 #### Experiment implementation
