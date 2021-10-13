@@ -89,7 +89,7 @@ Stimulus manipulations
 
 <font size="2">
 
-Lange K, Kühn S, Filevich E (2015) Correction: “Just Another Tool for Online Studies” (JATOS): An Easy Solution for Setup and Management of Web Servers Supporting Online Studies. PLOS ONE 10(7): e0134073.[https://doi.org/10.1371/journal.pone.0134073](https://doi.org/10.1371/journal.pone.0134073)
+Lange K, Kühn S, Filevich E (2015) Correction: “Just Another Tool for Online Studies” (JATOS): An Easy Solution for Setup and Management of Web Servers Supporting Online Studies. PLOS ONE 10(7): e0134073 (https://doi.org/10.1371/journal.pone.0134073)
 	
 Mathôt, S., Schreij, D., & Theeuwes, J. (2012). OpenSesame: An open-source, graphical experiment builder for the social sciences. _Behavior Research Methods_, _44_(2), 314-324. [doi:10.3758/s13428-011-0168-7](http://dx.doi.org/10.3758/s13428-011-0168-7)
 	
