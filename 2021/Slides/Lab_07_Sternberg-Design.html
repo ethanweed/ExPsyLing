@@ -31,6 +31,9 @@
 <section class="slide level4">
 
 <p><strong>Research Question: Do people have immediate (parallel) access to all of short-term memory?</strong></p>
+</section>
+<section class="slide level4">
+
 <p><strong>Sternberg (1966) task:</strong></p>
 <div>
 <ul>
@@ -130,9 +133,37 @@
 </tbody>
 </table>
 </section>
+<section id="experiment-implementation" class="slide level4">
+<h4>Experiment implementation</h4>
+<ul>
+<li>Experiment was built using
+<ul>
+<li><a href="https://osdoc.cogsci.nl">OpenSesame</a> software (Mathôt et al, 2012).</li>
+<li><a href="https://github.com/tomfaulkenberry/courses/blob/master/fall2018/psyc5316/README.org">Stimuli</a> from Tom Faulkenberry</li>
+</ul></li>
+<li>Experiment files were uploaded to a <a href="https://www.jatos.org">JATOS</a> server running on a Microsoft Azure virtual machine operated by Aarhus University</li>
+<li>Multi-use links were distributed to participants</li>
+<li>Data were collected in a quiet classroom at Aarhus University</li>
+</ul>
+</section>
+<section id="data-cleaning-pipeline" class="slide level4">
+<h4>Data cleaning pipeline</h4>
+<ul>
+<li>Individual responses were downloaded from the server</li>
+<li>Data was converted from the orginal JSON format to csv format with a custom <a href="https://github.com/ethanweed/ExPsyLing/blob/master/datasets/Sternberg/scripts/convert_jatos2csv.py">Python script</a></li>
+<li>Data were <a href="https://github.com/ethanweed/ExPsyLing/blob/master/datasets/Sternberg/scripts/CleanSternbergData.ipynb">cleaned</a> with the following steps:
+<ul>
+<li>practice trial were removed</li>
+<li>only correct answers were retained</li>
+</ul></li>
+</ul>
+</section>
 <section id="references" class="slide level4">
 <h4>References</h4>
-<p><font size="2"> Sternberg, S. (1966). High-speed scanning in human memory. <em>Science</em>, <em>153</em>(3736), 652-654.</p>
+<p><font size="2"></p>
+<pre><code> Lange K, Kühn S, Filevich E (2015) Correction: “Just Another Tool for Online Studies” (JATOS): An Easy Solution for Setup and Management of Web Servers Supporting Online Studies. PLOS ONE 10(7): e0134073.[https://doi.org/10.1371/journal.pone.0134073](https://doi.org/10.1371/journal.pone.0134073)</code></pre>
+<p>Mathôt, S., Schreij, D., &amp; Theeuwes, J. (2012). OpenSesame: An open-source, graphical experiment builder for the social sciences. <em>Behavior Research Methods</em>, <em>44</em>(2), 314-324. <a href="http://dx.doi.org/10.3758/s13428-011-0168-7">doi:10.3758/s13428-011-0168-7</a></p>
+<p>Sternberg, S. (1966). High-speed scanning in human memory. <em>Science</em>, <em>153</em>(3736), 652-654.</p>
 <ul>
 <li><p>Notes on experiment design from <a href="https://www.youtube.com/watch?v=HG8GmhlHOu4">Tom Faulkenberry</a></p></li>
 <li><p>The stimuli are taken from Faulkenberry as well: https://github.com/tomfaulkenberry/courses/blob/master/fall2018/psyc5316/README.org</p></li>
