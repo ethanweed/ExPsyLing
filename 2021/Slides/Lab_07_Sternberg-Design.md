@@ -4,7 +4,9 @@
 
 ---
 
-**Research Question: Do people have immediate (parallel) access to all of short-term memory?**
+Research Question:  
+
+Do people have immediate (parallel) access to all of short-term memory?
 
 ---
 
