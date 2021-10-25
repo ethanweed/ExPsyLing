@@ -377,13 +377,23 @@ Dual-route model
 
 ---
 
-### Dual-route cascading model
+Problems with dual-route model
+- Phonological neighborhood effects
+- Phonological priming effects
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png" width="40"/>
+
+-> Analogy model of reading
+
 
 ---
 
-Problems with dual-route model
+### Dual-route cascading model
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png" width="300"/>
+
+---
+
+
 
 ---
 
