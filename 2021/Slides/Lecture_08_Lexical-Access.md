@@ -110,7 +110,7 @@ DAKE
 "...there is also the question of reading. We read in two ways; the new or unknown word is scanned letter after letter, but a common or familiar word is taken in at a glance, without bothering about the individual letters: its visual shape functions like an ideogram."
 ::::
 :::: {.col}
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ferdinand_de_Saussure_by_Jullien_Restored.png/1280px-Ferdinand_de_Saussure_by_Jullien_Restored.png" width=""/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ferdinand_de_Saussure_by_Jullien_Restored.png/1280px-Ferdinand_de_Saussure_by_Jullien_Restored.png" width="400"/>
 ::::
 :::
 
@@ -174,15 +174,11 @@ src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Exp
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
 
-
-
-
 Glushko (1979)
 
 ---
 
 ###  Phonological priming effects
-
 
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="500"/>
