@@ -1,6 +1,13 @@
 # Lexical Access
 
-
+<style>
+.container{
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+</style>
 
 ---
 
@@ -112,6 +119,24 @@ DAKE
 
 - Phonological neighborhood effects
 - Phonological priming effects
+
+---
+
+### Phonological neighborhood effects
+
+::: {.container}
+:::: {.col}
+GAVE  
+SAVE  
+RAVE 
+CAVE
+::::
+:::: {.col}
+HAVE
+::::
+:::
+
+
 
 ---
 
