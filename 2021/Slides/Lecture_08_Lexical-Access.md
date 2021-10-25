@@ -142,7 +142,16 @@ Neighborhood effects compete with frequency effects
 
 ### Phonological neighborhood effects
 
+::: {.container}
+:::: {.col}
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="500"/>
+::::
+:::: {.col}
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
+::::
+:::
+
+
 
 Glushko (1979)
 
