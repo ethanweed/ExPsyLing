@@ -204,9 +204,11 @@ Kay & Marcel (1981), (pg. 408)
 
 ::: {.container}
 :::: {.col}
+DR Model
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="450"/>
 ::::
 :::: {.col}
+DRC Model
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="450"/>
 ::::
 :::
