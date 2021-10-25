@@ -178,14 +178,18 @@ Glushko (1979)
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="500"/>
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width="500"/>
-
 Kay & Marcel (1981)
 
 
 ---
 
+### Analogy model of reading
 
--> Analogy model of reading
+
+
+"Single-process, lexical analogy \[...\]the pronunciation of both words and non-words involves analogy with all possible known words sharing the appropriate segments" 
+
+Kay & Marcel (1981), (pg. 408)
 
 ---
 
