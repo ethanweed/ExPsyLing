@@ -144,10 +144,10 @@ Neighborhood effects compete with frequency effects
 
 ::: {.container}
 :::: {.col}
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="500"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="700"/>
 ::::
 :::: {.col}
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
 ::::
 :::
 
@@ -179,7 +179,6 @@ Glushko (1979)
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width=""/>
 ::::
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width=""/>
-Column 2 Content
 ::::
 :::
 
