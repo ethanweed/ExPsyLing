@@ -212,12 +212,11 @@ Kay & Marcel (1981), (pg. 408)
 :::
 
 
-
 ---
 
+### Triangle model
 
-
-Triangle model
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width=""/>
 
 ---
 
@@ -225,6 +224,8 @@ Triangle model
 
 ## References
 
+
+<font size = 2>
 Coltheart, M., Curtis, B., Atkins, P., & Haller, M. (1993). Models of reading aloud: Dual-route and parallel-distributed-processing approaches. _Psychological review_, _100_(4), 589.
 
 Glushko, R. J. (1979). The organization and activation of orthographic knowledge in reading aloud. _Journal of experimental psychology: Human perception and performance_, _5_(4), 674.
