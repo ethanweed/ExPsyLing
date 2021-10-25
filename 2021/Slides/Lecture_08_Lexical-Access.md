@@ -3,15 +3,50 @@
 
 ---
 
-By request
+Word -> Meaning
+
+---
+
+### Aspects of lexical access
+
+Recognition
+Identification
+Understanding
+Naming
+
+
+---
+
+### Recognition
+
+The word is familiar:
+
+NIGHT is a word
+
+NITE is not
+
+---
+
+### Identification
+
+The word is distinguished from other words:
+
+NIGHT is 
+	- not MIGHT 
+	- not NIGHTTIME
+	- not NIGH
+
+
+---
+
+### Understanding
+
+NIGHT *means* the time from sunset to sunrise
 
 ---
 
 
-
----
-
-## Sinewave Speech
+## Bottom-up processing
 
 ### Sentence 1
 
@@ -39,9 +74,8 @@ By request
 
 ---
 
-## Sinewave Speech
 
-### Sentence 1
+
 
 
 ---
@@ -303,3 +337,59 @@ By request
 </figure>
 
 ---
+
+
+Spectrograms
+
+
+---
+
+Cohort and TRACE
+
+
+---
+
+
+Connectionist models
+
+- single-layer perceptron
+- hidden layers
+
+---
+
+## Reading
+
+---
+
+Stroop: reading is automatic
+
+- Example
+- Data
+
+---
+
+
+
+---
+
+Dual-route model
+
+
+---
+
+### Dual-route cascading model
+
+![](/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png)
+
+---
+
+Problems with dual-route model
+
+---
+
+Triangle model
+
+---
+
+
+
