@@ -218,9 +218,11 @@ Kay & Marcel (1981), (pg. 408)
 
 ::: {.container}
 :::: {.col}
+Triangle model
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width="450"/>
 ::::
 :::: {.col}
+DRC model
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="450"/>
 ::::
 :::
