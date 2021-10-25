@@ -144,7 +144,7 @@ Neighborhood effects compete with frequency effects
 
 ::: {.container}
 :::: {.col}
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="700"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="300"/>
 ::::
 :::: {.col}
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
@@ -160,9 +160,9 @@ Glushko (1979)
 ### Phonological neighborhood effects
 
 <img
-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="700"/>
+src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="800"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
 
 
 
@@ -176,16 +176,15 @@ Glushko (1979)
 
 ::: {.container}
 :::: {.col}
+
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width=""/>
+
 ::::
+
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width=""/>
+
 ::::
 :::
-
-
-
-
-
 Kay & Marcel (1981)
 
 
