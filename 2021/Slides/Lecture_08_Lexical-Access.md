@@ -216,7 +216,7 @@ Kay & Marcel (1981), (pg. 408)
 
 ### Triangle model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width="450"/>
 
 ---
 
