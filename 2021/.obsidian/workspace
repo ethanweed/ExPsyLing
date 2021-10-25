@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Planning/Schedule.md",
+            "file": "Slides/Lecture_08_Lexical-Access.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/Schedule.md",
+                "file": "Slides/Lecture_08_Lexical-Access.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "efbe82902ee3ae09",
   "lastOpenFiles": [
+    "Slides/Untitled.md",
     "Planning/Schedule.md",
     "Planning/_planning.md",
     "Planning/PDFs/Harley_Chapter6.pdf",
@@ -96,7 +97,6 @@
     "Planning/PDFs/Forbach1974_Article_RepetitionAndPracticeEffectsIn.pdf",
     "Planning/PDFs/Altmann 2001.pdf",
     "Planning/PDFs/MeyerSchvaneveldt1971.pdf",
-    "Planning/sentence verification task.md",
-    "Lab_07_Sternberg-Design.md"
+    "Planning/sentence verification task.md"
   ]
 }
