@@ -1,6 +1,7 @@
 # Lexical Access
 
 
+
 ---
 
 Word -> Meaning
@@ -32,9 +33,11 @@ NITE is not
 The word is distinguished from other words:
 
 NIGHT is 
-	- not MIGHT 
-	- not NIGHTTIME
-	- not NIGH
+
+ - not MIGHT 
+ - not NIGHTTIME
+ - not NIGH
+ - not KNIGHT
 
 
 ---
@@ -75,281 +78,6 @@ NIGHT *means* the time from sunset to sunrise
 ---
 
 
-
-
-
----
-
-## Gating
-
-
-
----
-
-1 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/01.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-2 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/02.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-3 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/03.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-4
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/04.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-5
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/05.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-6 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/06.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-7 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/07.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-8 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/08.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-9
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/09.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-10
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/10.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-11 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/11.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-12 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/12.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-13 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/13.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-14 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/14.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-15 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/15.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-16 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/16.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-17 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/17.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-18 
-
-<figure>
-    <figcaption></figcaption>
-    <audio
-        controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/18.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
----
-
-
-Spectrograms
-
-
----
-
-Cohort and TRACE
-
-
----
-
-
 Connectionist models
 
 - single-layer perceptron
@@ -360,36 +88,61 @@ Connectionist models
 ## Reading
 
 ---
+### Words and Psuedowords
 
-Stroop: reading is automatic
+CAKE
 
-- Example
-- Data
-
----
-
+DAKE
 
 
 ---
 
-Dual-route model
+### Dual-route model
+
+"...there is also the question of reading. We read in two ways; the new or unknown word is scanned letter after letter, but a common or familiar word is taken in at a glance, without bothering about the individual letters: its visual shape functions like an ideogram."
 
 
 ---
 
-Problems with dual-route model
+### Dual-route model
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
+
+--- 
+
+### Problems with dual-route model
+
 - Phonological neighborhood effects
 - Phonological priming effects
 
+---
+### Phonological neighborhood effects
+
+
+|            |         | Pronunciation |            |
+| :--------- | :-----: | :-----------: | ---------: |
+|            |         |    latency    |            |
+| Stimulus   |         |    (msec)     | Error rate |
+| type       | Example |  correct Ms   |        (%) |
+| Regular    |         |               |            |
+| word       |  DEAN   |      589      |        1.9 |
+| Exception  |         |               |            |
+| word       |  DEAF   |      618      |       12.2 |
+| Regular    |         |               |            |
+| pseudoword |  HEAN   |      617      |        6.2 |
+| Exception  |         |               |            |
+| pseudoword |  HEAF   |      646      |       21.7 |
+
+
+---
 
 -> Analogy model of reading
-
 
 ---
 
 ### Dual-route cascading model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="300"/>
 
 ---
 
@@ -402,4 +155,8 @@ Triangle model
 ---
 
 
+
+## References
+
+de Saussure, F., quoted in Coltheart, M. (2005). "Modeling Reading: The Dual-Route Approach", in Snowling & Hulme (eds.), *The Science of Reading, a Handbook*
 
