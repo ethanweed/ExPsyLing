@@ -107,7 +107,7 @@ DAKE
 
 ::: {.container}
 :::: {.col}
-"...there is also the question of reading. We read in two ways; the new or unknown word is scanned letter after letter, but a common or familiar word is taken in at a glance, without bothering about the individual letters: its visual shape functions like an ideogram."
+"...there is also the question of reading. We read in two ways; the new or unknown word is scanned letter after letter, but a common or familiar word is taken in at a glance, without bothering about the individual letters: its visual shape functions like an ideogram." -de Saussure, quoted in Coltheart, M. (2005)
 ::::
 :::: {.col}
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ferdinand_de_Saussure_by_Jullien_Restored.png/1280px-Ferdinand_de_Saussure_by_Jullien_Restored.png" width="400"/>
@@ -121,7 +121,9 @@ DAKE
 
 ### Dual-route model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="600"/>
+
+Harley (2017)
 
 --- 
 
@@ -136,12 +138,14 @@ DAKE
 
 ::: {.container}
 :::: {.col}
+A nice quiet neighborhood:
 GAVE  
 SAVE  
 RAVE  
 CAVE
 ::::
 :::: {.col}
+The wrong side of the tracks:
 HAVE
 ::::
 :::
@@ -154,14 +158,12 @@ Neighborhood effects compete with frequency effects
 
 ::: {.container}
 :::: {.col}
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="500"/>
 ::::
 :::: {.col}
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="500"/>
 ::::
 :::
-
-
 
 Glushko (1979)
 
@@ -172,8 +174,6 @@ Glushko (1979)
 <img
 src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="800"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="300"/>
-
 Glushko (1979)
 
 ---
@@ -181,9 +181,10 @@ Glushko (1979)
 ###  Phonological priming effects
 
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="500"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="450"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width="500"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width="450"/>
+
 Kay & Marcel (1981)
 
 
@@ -218,6 +219,8 @@ Triangle model
 ## References
 
 Glushko, R. J. (1979). The organization and activation of orthographic knowledge in reading aloud. _Journal of experimental psychology: Human perception and performance_, _5_(4), 674.
+
+Harley, T. (2017). _Talking the talk: Language, psychology and science_. Psychology Press.
 
 Kay, J., & Marcel, A. (1981). One process, not two, in reading aloud: Lexical analogies do the work of non-lexical rules. _The Quarterly Journal of Experimental Psychology Section A_, _33_(4), 397-413.
 
