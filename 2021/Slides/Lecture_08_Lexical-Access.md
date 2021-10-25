@@ -3,7 +3,17 @@
 
 ---
 
-Sample 1
+By request
+
+---
+
+
+
+---
+
+## Sinewave Speech
+
+### Sentence 1
 
 <figure>
     <figcaption>Sinewave speech 1:</figcaption>
@@ -28,6 +38,15 @@ Sample 1
 
 
 ---
+
+## Sinewave Speech
+
+### Sentence 1
+
+
+---
+
+## Gating
 
 
 
