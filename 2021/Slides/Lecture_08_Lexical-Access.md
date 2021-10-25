@@ -119,11 +119,15 @@ DAKE
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="500"/>
 
+Glushko (1979)
+
 ---
 
 ### Phonological neighborhood effects
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width=""/>
+
+Glushko (1979)
 
 ---
 
@@ -156,6 +160,8 @@ Triangle model
 
 
 ## References
+
+Glushko, R. J. (1979). The organization and activation of orthographic knowledge in reading aloud. _Journal of experimental psychology: Human perception and performance_, _5_(4), 674.
 
 de Saussure, F., quoted in Coltheart, M. (2005). "Modeling Reading: The Dual-Route Approach", in Snowling & Hulme (eds.), *The Science of Reading, a Handbook*
 
