@@ -128,7 +128,7 @@ DAKE
 :::: {.col}
 GAVE  
 SAVE  
-RAVE 
+RAVE  
 CAVE
 ::::
 :::: {.col}
@@ -136,7 +136,7 @@ HAVE
 ::::
 :::
 
-
+Neighborhood effects compete with frequency effects
 
 ---
 
