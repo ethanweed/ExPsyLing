@@ -202,7 +202,7 @@ Kay & Marcel (1981), (pg. 408)
 
 ### Dual-route cascading model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="600"/>
 
 ---
 
