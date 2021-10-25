@@ -160,7 +160,7 @@ Glushko (1979)
 ### Phonological neighborhood effects
 
 <img
-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="400"/>
+src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="700"/>
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="400"/>
 
