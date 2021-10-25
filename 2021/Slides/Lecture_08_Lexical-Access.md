@@ -173,7 +173,11 @@ Glushko (1979)
 
 ###  Phonological priming effects
 
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width=""/>
 
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width=""/>
+
+Kay & Marcel (1981)
 
 
 ---
@@ -202,6 +206,8 @@ Triangle model
 ## References
 
 Glushko, R. J. (1979). The organization and activation of orthographic knowledge in reading aloud. _Journal of experimental psychology: Human perception and performance_, _5_(4), 674.
+
+Kay, J., & Marcel, A. (1981). One process, not two, in reading aloud: Lexical analogies do the work of non-lexical rules. _The Quarterly Journal of Experimental Psychology Section A_, _33_(4), 397-413.
 
 de Saussure, F., quoted in Coltheart, M. (2005). "Modeling Reading: The Dual-Route Approach", in Snowling & Hulme (eds.), *The Science of Reading, a Handbook*
 
