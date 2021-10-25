@@ -379,7 +379,7 @@ Dual-route model
 
 ### Dual-route cascading model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png" width="500"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Dual Route Cascading model.png" width="40"/>
 
 ---
 
