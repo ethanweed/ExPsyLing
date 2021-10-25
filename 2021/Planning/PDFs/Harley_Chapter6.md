@@ -79,4 +79,44 @@
 > tapeworm or tabulation”. That point is called the unique- ness
 > point.
 
+#### [Page 21](highlights://Harley_Chapter6#page=21)
+
+> The first bold claim
+
+> there is no lexicon in this account. There’s no central
+> repository where each word has its own entry and where you
+> access that entry to get at a word’s meaning and pronunciation.
+> The sounds of words are patterns of activation across the
+> phonological units; the meanings are patterns of activation
+> across the semantic units; and the print forms are just patterns
+> of activation across the ortho- graphic units. We therefore
+> can’t decide if something is a word or non-word by looking it up
+> in our lexicon, because there is no lexicon; all we can go by is
+> what pattern of activation an input string produces across the
+> network.
+
+> The second bold claim
+
+> we don’t have separate lexical and non-lexical reading routes
+> for pronouncing irregular words and pseudowords respectively;
+> instead, the system’s statistical knowledge of all
+> spelling–sound correspondences is brought to bear when presented
+> with an input string of letters, and in connectionist models all
+> knowledge is encoded by the weights of the connections between
+> units.
+
+> What happens when the trained model is then given non-words to
+> pronounce? Plaut et al. presented the fully trained network with
+> over 100 non-words. The net- work gave the “correct” (by which
+> we mean the same pronunciation as a human would have given the
+> non-word) pronunciation at about the same rate as humans.
+
+> The important conclusion here is that a single route can produce
+> human-like pronunciations of regular words, irregular words, and
+> pseudowords.
+
+> How can it do this? Because the connections encode the complete
+> sum of knowledge about spelling–sound correspondences; it’s a
+> super-duper analogy model.
+
 
