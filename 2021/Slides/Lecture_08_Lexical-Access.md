@@ -55,7 +55,8 @@ By request
 <figure>
     <figcaption></figcaption>
     <audio
-        controls src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/01.mp3">
+        controls 
+		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/01.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
