@@ -110,7 +110,7 @@ DAKE
 "...there is also the question of reading. We read in two ways; the new or unknown word is scanned letter after letter, but a common or familiar word is taken in at a glance, without bothering about the individual letters: its visual shape functions like an ideogram."
 ::::
 :::: {.col}
-https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ferdinand_de_Saussure_by_Jullien_Restored.png/1280px-Ferdinand_de_Saussure_by_Jullien_Restored.png
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ferdinand_de_Saussure_by_Jullien_Restored.png/1280px-Ferdinand_de_Saussure_by_Jullien_Restored.png" width=""/>
 ::::
 :::
 
