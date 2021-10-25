@@ -38,7 +38,7 @@ The word is familiar:
 
 The word is distinguished from other words:
 
-NIGHT is 
+NIGHT is...
 
  - not MIGHT 
  - not NIGHTTIME
