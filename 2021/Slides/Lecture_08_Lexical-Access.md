@@ -29,9 +29,8 @@ Naming
 
 The word is familiar:
 
-NIGHT is a word
-
-NITE is not
+- NIGHT is a word
+- NITE is not
 
 ---
 
