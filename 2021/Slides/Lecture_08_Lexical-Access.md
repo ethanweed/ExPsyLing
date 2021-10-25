@@ -175,9 +175,9 @@ Glushko (1979)
 
 
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="500"/>
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width="300"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table2.png" width="500"/>
 
 Kay & Marcel (1981)
 
