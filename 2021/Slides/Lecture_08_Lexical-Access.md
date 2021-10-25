@@ -86,7 +86,7 @@ By request
     <figcaption></figcaption>
     <audio
         controls 
-		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/03mp3">
+		   data-src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Resources/gating_demo/03.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
