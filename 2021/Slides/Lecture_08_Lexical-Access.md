@@ -229,9 +229,21 @@ DRC model
 :::
 
 
+---
+### Working memory and sentence parsing
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing1.png" width=""/>
+
 
 ---
 
+
+### Working memory and sentence parsing
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing2.png" width=""/>
+
+
+---
 
 
 ## References
@@ -249,3 +261,6 @@ Kay, J., & Marcel, A. (1981). One process, not two, in reading aloud: Lexical an
 de Saussure, F., quoted in Coltheart, M. (2005). "Modeling Reading: The Dual-Route Approach", in Snowling & Hulme (eds.), *The Science of Reading, a Handbook*
 
 Seidenberg, M. S., & McClelland, J. L. (1989). A distributed, developmental model of word recognition and naming. _Psychological review_, _96_(4), 523.
+
+Shain, C., Blank, I. A., Fedorenko, E., Gibson, E., & Schuler, W. (2021). Robust effects of working memory demand during naturalistic language comprehension in language-selective cortex. _bioRxiv_.
+
