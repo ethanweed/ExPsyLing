@@ -231,6 +231,13 @@ DRC model
 
 ---
 
+### Neural networks
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Neuron.png" width=""/>
+
+---
+
+
 #### Working memory and sentence parsing
 
 ::: {.container}
@@ -245,10 +252,6 @@ DRC model
 
 
 
----
-
-
-### Working memory and sentence parsing
 
 
 
