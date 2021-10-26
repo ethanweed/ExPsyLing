@@ -233,7 +233,35 @@ DRC model
 
 ### Neural networks
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Neuron.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN1.png" width=""/>
+
+---
+
+
+### Neural networks
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN2.png" width=""/>
+
+---
+
+
+### Neural networks
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN3.png" width=""/>
+
+---
+
+
+### Neural networks
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN4.png" width=""/>
+
+---
+
+
+### Neural networks
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN5.png" width=""/>
 
 ---
 
