@@ -290,6 +290,12 @@ Lexical access for _regular words_ ~  lexical neighborhood effects + $\epsilon$
 Kay & Marcel (1981)
 
 
+### Analogy model of reading
+
+"Single-process, lexical analogy \[...\]the pronunciation of both words and non-words involves analogy with all possible known words sharing the appropriate segments" 
+
+Kay & Marcel (1981, pg. 408)
+
 
 ---
 
@@ -299,13 +305,6 @@ Nonword "Access" ~  lexical neighborhood effects + priming effects + $\epsilon$
 
 ---
 
-### Analogy model of reading
-
-"Single-process, lexical analogy \[...\]the pronunciation of both words and non-words involves analogy with all possible known words sharing the appropriate segments" 
-
-Kay & Marcel (1981, pg. 408)
-
----
 
 ### Dual-route cascading model
 
