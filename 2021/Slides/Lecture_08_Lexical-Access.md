@@ -240,6 +240,7 @@ Triangle model
 ::::
 :::: {.col}
 DRC model
+
 - There is no lexicon
 - There are only patterns of activation
 - There are no lexical vs non-lexical routes
