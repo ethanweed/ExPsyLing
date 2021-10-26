@@ -231,7 +231,7 @@ DRC model
 
 ---
 
-### Working memory and sentence parsing
+#### Working memory and sentence parsing
 
 ::: {.container}
 :::: {.col}
@@ -260,6 +260,7 @@ DRC model
 
 
 <font size = 2>
+	
 Coltheart, M., Curtis, B., Atkins, P., & Haller, M. (1993). Models of reading aloud: Dual-route and parallel-distributed-processing approaches. _Psychological review_, _100_(4), 589.
 
 Glushko, R. J. (1979). The organization and activation of orthographic knowledge in reading aloud. _Journal of experimental psychology: Human perception and performance_, _5_(4), 674.
