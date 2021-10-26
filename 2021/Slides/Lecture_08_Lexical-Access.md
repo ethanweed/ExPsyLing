@@ -230,6 +230,7 @@ DRC model
 
 
 ---
+
 ### Working memory and sentence parsing
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing1.png" width=""/>
