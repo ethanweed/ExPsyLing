@@ -303,7 +303,7 @@ Nonword "Access" ~  lexical neighborhood effects + priming effects + $\epsilon$
 
 "Single-process, lexical analogy \[...\]the pronunciation of both words and non-words involves analogy with all possible known words sharing the appropriate segments" 
 
-Kay & Marcel (1981), (pg. 408)
+Kay & Marcel (1981, pg. 408)
 
 ---
 
