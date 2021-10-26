@@ -456,5 +456,5 @@ Seidenberg, M. S., & McClelland, J. L. (1989). A distributed, developmental mode
 
 Shain, C., Blank, I. A., Fedorenko, E., Gibson, E., & Schuler, W. (2021). Robust effects of working memory demand during naturalistic language comprehension in language-selective cortex. _bioRxiv_.
 
-Sinewave speech examples: http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS
+Sinewave speech examples: [http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS](http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS)
 	
