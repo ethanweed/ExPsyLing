@@ -231,6 +231,26 @@ DRC model
 
 ---
 
+### Triangle model
+
+::: {.container}
+:::: {.col}
+Triangle model
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width="450"/>
+::::
+:::: {.col}
+DRC model
+- There is no lexicon
+- There are only patterns of activation
+- There are no lexical vs non-lexical routes
+- There are only statistical patterns of spelling–sound correspondences
+::::
+:::
+
+
+---
+
+
 ### Neural networks
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/NN1.png" width=""/>
@@ -265,6 +285,9 @@ DRC model
 
 ---
 
+
+
+---
 
 #### Working memory and sentence parsing
 
