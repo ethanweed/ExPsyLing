@@ -303,7 +303,7 @@ Kay & Marcel (1981, pg. 408)
 
 ### Analogy model of reading
 
-Nonword "Access" ~  lexical neighborhood effects + priming effects + $\epsilon$  
+Access ~  lexical neighborhood effects + priming effects + $\epsilon$  
 
 ---
 
