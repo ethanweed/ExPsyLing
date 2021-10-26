@@ -233,7 +233,7 @@ DRC model
 
 ### Working memory and sentence parsing
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing1.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing1.png" width="400"/>
 
 
 ---
@@ -241,7 +241,7 @@ DRC model
 
 ### Working memory and sentence parsing
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing2.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing2.png" width="500"/>
 
 
 ---
