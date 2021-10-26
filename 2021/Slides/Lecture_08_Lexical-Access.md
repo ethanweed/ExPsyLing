@@ -11,16 +11,85 @@
 
 ---
 
-Word -> Meaning
+### The lexicon
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg/1280px-Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg" width=""/>
 
 ---
 
+### The lexicon
+
+- contains entries for all the words we know
+- contains no entries for words we don't know
+
+---
+
+### The lexicon
+
+::: {.container}
+:::: {.col}
+In the lexicon:
+
+
+- win
+- won
+- wan
+- wit
+- will
+
+::::
+:::: {.col}
+Not in the lexicon:
+
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Wug.png" width=""/>
+
+::::
+:::
+
+---
+
+### The lexicon
+
+::: {.container}
+:::: {.col}
+In the lexicon:
+
+
+- zip
+- plow
+- wonk
+- save
+- tax
+
+::::
+:::: {.col}
+Not in the lexicon:
+
+- zib
+- spow
+- vonk
+- bave
+- dax
+
+::::
+:::
+
+---
+
+Proficient speakers of a language can read both words and pseudowords.
+
+How do they do it?
+
+---
+
+
 ### Aspects of lexical access
 
-Recognition
-Identification
-Understanding
-Naming
+- Recognition
+- Identification
+- Understanding
+- Naming
 
 
 ---
@@ -50,12 +119,15 @@ NIGHT is...
 
 ### Understanding
 
-NIGHT *means* the time from sunset to sunrise
+NIGHT = the time from sunset to sunrise
 
 ---
 
+### Bottom-up vs. top-down processing
 
-## Bottom-up processing
+
+
+---
 
 ### Sentence 1
 
@@ -63,7 +135,7 @@ NIGHT *means* the time from sunset to sunrise
     <figcaption>Sinewave speech 1:</figcaption>
     <audio
         controls
-        src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/03_40SWS.wav">
+        data-src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/03_40SWS.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
@@ -74,7 +146,7 @@ NIGHT *means* the time from sunset to sunrise
     <figcaption>Clearspeech speech 1:</figcaption>
     <audio
         controls
-        src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/03_40.wav">
+        data-src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/03_40.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
@@ -83,11 +155,31 @@ NIGHT *means* the time from sunset to sunrise
 
 ---
 
+<figure>
+    <figcaption>Sinewave speech 2:</figcaption>
+    <audio
+        controls
+        data-src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/aslq1814SWS.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
 
-Connectionist models
 
-- single-layer perceptron
-- hidden layers
+---
+
+<figure>
+    <figcaption>Sinewave speech 2:</figcaption>
+    <audio
+        controls
+        data-src="http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/aslq1814SWS.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+The floor was quite slippery
+
 
 ---
 
@@ -120,7 +212,7 @@ DAKE
 
 ### Dual-route model
 
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="600"/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModel_Simple.png" width="500"/>
 
 Harley (2017)
 
@@ -144,16 +236,25 @@ RAVE
 CAVE
 ::::
 :::: {.col}
-The wrong side of the tracks:
+A sketchy neighborhood:  
 HAVE
 ::::
 :::
 
-Neighborhood effects compete with frequency effects
 
 ---
 
-### Phonological neighborhood effects
+
+### Lexical neighborhood effects
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979.png" width="500"/>
+
+Nonword "Access" ~  lexical neighborhood effects + $\epsilon$
+
+---
+
+
+### Lexical neighborhood effects
 
 ::: {.container}
 :::: {.col}
@@ -168,16 +269,18 @@ Glushko (1979)
 
 ---
 
-### Phonological neighborhood effects
+### Lexical neighborhood effects
 
 <img
 src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Glushko_1979_Experiment3.png" width="800"/>
 
 Glushko (1979)
 
+Lexical access for _regular words_ ~  lexical neighborhood effects + $\epsilon$
+
 ---
 
-###  Phonological priming effects
+###  Priming effects
 
 
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Kay_1981_Table1.png" width="450"/>
@@ -187,11 +290,16 @@ Glushko (1979)
 Kay & Marcel (1981)
 
 
+
 ---
 
 ### Analogy model of reading
 
+Nonword "Access" ~  lexical neighborhood effects + priming effects + $\epsilon$  
 
+---
+
+### Analogy model of reading
 
 "Single-process, lexical analogy \[...\]the pronunciation of both words and non-words involves analogy with all possible known words sharing the appropriate segments" 
 
@@ -239,12 +347,14 @@ Triangle model
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width="450"/>
 ::::
 :::: {.col}
-DRC model
+Triangle model
 
+::: incremental
 - There is no lexicon
 - There are only patterns of activation
 - There are no lexical vs non-lexical routes
 - There are only statistical patterns of spelling–sound correspondences
+:::
 ::::
 :::
 
@@ -286,7 +396,23 @@ DRC model
 
 ---
 
+::: {.container}
+:::: {.col}
+Triangle model
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Seidenberg & McClelland_TriangleModel.png" width="450"/>
+::::
+:::: {.col}
+DRC model
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/DualRouteModelCascaded.png" width="450"/>
+::::
+:::
 
+
+---
+
+#### Working memory and language
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png" width="500"/>
 
 ---
 
@@ -298,6 +424,7 @@ DRC model
 ::::
 :::: {.col}
 <img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Shain_WM_parsing2.png" width=""/>
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png" width="400"/>
 ::::
 :::
 
