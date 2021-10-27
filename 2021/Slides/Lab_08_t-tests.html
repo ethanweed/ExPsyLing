@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Lab_08_t-tests</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/solarized.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="t-tests" class="slide level1">
+<h1>t-tests</h1>
+<style>
+.container{
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+</style>
+</section>
+<section class="slide level1">
+
+<p>Hypothesis-testing</p>
+</section>
+<section class="slide level1">
+
+<ol type="1">
+<li>Not all statistically significant results are <em>theoretically</em> interesting results</li>
+<li>Not all theoretically interesting results are statistically significant</li>
+</ol>
+</section>
+<section class="slide level1">
+
+<p>All the tests in this chapter are just this:</p>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="z-test">z-test</h3>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+<p><br></p>
+<p><span class="math display">\[z =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="one-sample-t-test">one-sample t-test</h3>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+<p><br></p>
+<p><span class="math display">\[t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="independent-samples-t-test">independent samples t-test</h3>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+<p><br></p>
+<p><span class="math display">\[t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}({\bar{X}_1 - \bar{X}_2})}\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="paired-t-test">paired t-test</h3>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+<p><br></p>
+<p><span class="math display">\[
+t = \frac{\bar{D}}{\mbox{SE}({\bar{D}})}
+\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="the-case-of-dr.-zeppo">The case of Dr. Zeppo</h3>
+<pre><code>A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let’s suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of Dr Zeppo&#39;s many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering: do the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower?</code></pre>
+</section>
+<section class="slide level1">
+
+<h4 id="the-psychology-students-grades">The psychology students’ grades:</h4>
+<p>50, 60, 60, 64, 66, 66, 67, 69, 70, 74, 76, 76, 77, 79, 79, 79, 81, 82, 82, 89</p>
+</section>
+<section class="slide level1">
+
+<h4 id="the-psychology-students-grades-1">The psychology students’ grades:</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_7_1.png" width="500"/></p>
+</section>
+<section class="slide level1">
+
+<h5 id="what-we-know">What we know:</h5>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:bold">Normal language</span>
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:bold">Statistics-speak</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Mean psychology students’ grade: 72.3
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Sample mean (<span class="math inline">\(\bar{X}\)</span>) = 72.3
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+The mean grade in Zeppo’s class: 67.5
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Population mean (<span class="math inline">\(\mu\)</span>) = 67.5
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Standard deviation in Zeppo’s class: 9.5
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Population standard deviation (<span class="math inline">\(\sigma\)</span>) = 9.5
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Number of psychology students: 20
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+N = 20
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h4 id="the-hypotheses">The hypotheses:</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_10_1.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h4 id="one-sided-vs.-two-sided-tests">One-sided vs. two-sided tests</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_13_1.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h4 id="doing-the-test">Doing the test</h4>
+<div class="container">
+<div class="col">
+What we know:
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:bold">Normal language</span>
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:bold">Statistics-speak</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Mean psychology students’ grade: 72.3
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Sample mean (<span class="math inline">\(\bar{X}\)</span>) = 72.3
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+The mean grade in Zeppo’s class: 67.5
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Population mean (<span class="math inline">\(\mu\)</span>) = 67.5
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Standard deviation in Zeppo’s class: 9.5
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Population standard deviation (<span class="math inline">\(\sigma\)</span>) = 9.5
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Number of psychology students: 20
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+N = 20
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+Critical values:
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+critical <span class="math inline">\(z\)</span> value
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+critical <span class="math inline">\(z\)</span> value
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+desired <span class="math inline">\(\alpha\)</span> level
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+two-sided test
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+one-sided test
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+.1
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+1.644854
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+1.281552
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+.05
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+1.959964
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+1.644854
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+.01
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+2.575829
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+2.326348
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+.001
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+3.290527
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+3.090232
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br></p>
+<p><span class="math inline">\(z = \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}\)</span> = <span class="math inline">\(\frac{72.3 - 67.5}{9.5 / \sqrt{20}}\)</span> = <span class="math inline">\(2.259605535157681\)</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="one-sample-t-test-1">one-sample t-test</h3>
+<pre><code>After some thought, I decided that it might not be safe to assume that the psychology student grades necessarily have the same standard deviation as the other students in Dr Zeppo’s class. After all, if I’m entertaining the hypothesis that they don’t have the same mean, then why should I believe that they absolutely have the same standard deviation? </code></pre>
+</section>
+<section class="slide level1">
+
+<pre><code>In view of this, I should really stop assuming that I know the true value of 𝜎. This violates the assumptions of my 𝑧-test, so in one sense I’m back to square one. However, it’s not like I’m completely bereft of options. After all, I’ve still got my raw data, and those raw data give me an _estimate_ of the population standard deviation:
+
+import statistics
+statistics.stdev(grades)
+...
+9.520614752375915</code></pre>
+<p>We can’t <em>know</em> that <span class="math inline">\(\sigma = 9.5\)</span>, but we can <em>estimate</em> that <span class="math inline">\(\hat\sigma = 9.52\)</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="the-hypotheses-1">The hypotheses:</h3>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_36_1.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h3 id="z-test-vs.-one-sample-t-test">z-test vs. One-sample t-test:</h3>
+<p><span class="math display">\[z =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}\]</span>             <span class="math display">\[t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }\]</span></p>
+</section>
+<section class="slide level1">
+
+<h4 id="one-sample-t-test-2">One-sample t-test</h4>
+<pre><code>from scipy.stats import ttest_1samp
+t, p = ttest_1samp(a = grades, popmean = 67.5)
+t, p
+...
+(2.25471286700693, 0.03614521878144544)</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="the-case-of-dr.-harpo">The case of Dr. Harpo</h3>
+<pre><code>Suppose we have 33 students taking Dr Harpo’s statistics lectures, and Dr Harpo doesn’t grade to a curve. Actually, Dr Harpo’s grading is a bit of a mystery, so we don’t really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are 𝑁1=15 students in Anastasia’s tutorials, and 𝑁2=18 in Bernadette’s tutorials. The research question I’m interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn’t make much of a difference. Dr Harpo emails me the course grades...</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="the-harpo-data-summarized">The Harpo data, summarized:</h3>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:normal">students</span>
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:normal">mean</span>
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:normal;font-style:normal;text-decoration:none">std dev</span>
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:normal">N</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Anastasia’s students
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+74.533333
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+8.998942
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+15
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+Bernadette’s students
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+69.055556
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+5.774918
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+18
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h4 id="a-view-of-the-data">A view of the data:</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_55_0.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h4 id="a-different-view-of-the-data">A different view of the data:</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_58_0.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h4 id="the-hypotheses-2">The hypotheses</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_61_1.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<h4 id="independent-samples-t-test-students">Independent samples t-test (Student’s)</h4>
+<p><span class="math display">\[
+t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}({\bar{X}_1 - \bar{X}_2})}
+\]</span></p>
+<p>In the indendent samples t-test, we <em>pool</em> the variance from the two groups</p>
+</section>
+<section class="slide level1">
+
+<h4 id="independent-samples-t-test-students-1">Independent samples t-test (Student’s)</h4>
+<pre><code>from scipy import stats
+t, p = stats.ttest_ind(Anastasia, Bernadette, equal_var = True)
+t, p
+...
+(array([2.11543239]), array([0.04252949]))</code></pre>
+</section>
+<section class="slide level1">
+
+<h4 id="independent-samples-t-test-welchs">Independent samples t-test (Welch’s)</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_76_1.png" width=""/></p>
+<p>Welch’s does not assume equal variance, and therefore does not pool the variance.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="independent-samples-t-test-welchs-1">Independent samples t-test (Welch’s)</h4>
+<pre><code>from scipy import stats
+t, p = stats.ttest_ind(Anastasia, Bernadette, equal_var = False)
+t, p</code></pre>
+</section>
+<section class="slide level1">
+
+<h2 id="the-case-of-dr.-chico">The case of Dr. Chico</h2>
+<pre><code>In Dr. Chico&#39;s class, students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging; but she argues that by setting hard assessments, students are encouraged to work harder. Her theory is that the first test is a bit of a “wake up call” for students: when they realise how hard her class really is, they’ll work harder for the second test and get a better mark. Is she right?</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="the-chico-file-summarized">The Chico file, summarized:</h3>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+grade_test1
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+grade_test2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+count
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+20.000000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+20.000000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+mean
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+56.980000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+58.385000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+std
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+6.616137
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+6.405612
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+min
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+42.900000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+44.600000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+25%
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+51.750000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+53.100000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+50%
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+57.700000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+59.700000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+75%
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+62.050000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+63.050000
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+max
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+71.700000
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+72.300000
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h4 id="some-views-of-the-data">Some views of the data:</h4>
+<p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_89_0.png" width=""/></p>
+</section>
+<section class="slide level1">
+
+<p>What we want to evaluate is the students’ <em>improvement</em>:</p>
+<pre><code>df[&#39;improvement&#39;] = df[&#39;grade_test2&#39;]-df[&#39;grade_test1&#39;]</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="paired-samples-t-test">Paired-samples t-test</h3>
+<p><span class="math display">\[
+t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
+\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="a-little-secret">A little secret</h3>
+<p>Shh!! Don’t tell!</p>
+</section>
+<section class="slide level1">
+
+<p>One-sample t-tests and paired t-test are actually the same thing.</p>
+<p>One-sample: <span class="math display">\[t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }\]</span></p>
+<p>Paired: <span class="math display">\[ t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}} \]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="take-aways-1">Take-aways 1:</h3>
+<ul>
+<li>A <strong>one sample 𝑡-test</strong> is used to compare a single sample mean against a hypothesised value for the population mean.</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="take-aways-2">Take-aways 2:</h3>
+<ul>
+<li>An <strong>independent samples 𝑡-test</strong> is used to compare the means of two groups, and tests the null hypothesis that they have the same mean. It comes in two forms: the Student test assumes that the groups have the same standard deviation, the Welch test does not.</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="take-aways-3">Take-aways 3:</h3>
+<ul>
+<li>A <strong>paired samples 𝑡-test</strong> is used when you have two scores from each person, and you want to test the null hypothesis that the two scores have the same mean. It is equivalent to taking the difference between the two scores for each person, and then running a one sample 𝑡-test on the difference scores.</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="take-aways-4">Take-aways 4:</h3>
+<ul>
+<li>You probably won’t ever use the <strong><span class="math inline">\(z\)</span>-test</strong> for anything</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="take-aways-5">Take-aways 5:</h2>
+<p>All of these tests are basically the same:</p>
+<p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation} \]</span></p>
+</section>
+<section class="slide level1">
+
+<h4 id="references">References:</h4>
+<p><font size="1"> Navarro, D., &amp; Weed, E. (2021). Learning statistics with python: A tutorial for psychology students and other beginners[Available online: https://ethanweed.github.io/pythonbook] </font></p>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: false,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

@@ -4,23 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "efbe82902ee3ae09",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Planning/PDFs/Harley_Chapter6.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "5cbb230a1ac9ed17",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lecture_08_Lexical-Access.md",
+            "file": "Slides/Lab_08_t-tests.md",
             "mode": "source"
           }
         }
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_08_Lexical-Access.md",
+                "file": "Slides/Lab_08_t-tests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +88,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Slides/Lab_08_t-tests.md",
+    "Slides/Lecture_06_DescriptiveStatistics.md",
+    "Slides/Lecture_07_Hypothesis-Testing.md",
     "Slides/Lecture_08_Lexical-Access.md",
     "Planning/PDFs/Harley_Chapter6.md",
-    "Slides/Lecture_07_Hypothesis-Testing.md",
-    "Planning/PDFs/Harley_Chapter7.pdf",
+    "Lab_08_t-tests.md",
     "Untitled.md",
+    "Planning/PDFs/Harley_Chapter7.pdf",
     "Planning/PDFs/Harley_Chapter6.pdf",
-    "Planning/Harley_Chapter1.md",
-    "Planning/Harley_Chapter6.md",
-    "Slides/Lab_06_VisualizingData.md",
-    "Slides/Untitled.md"
+    "Planning/Harley_Chapter1.md"
   ]
 }

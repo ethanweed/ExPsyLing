@@ -48,6 +48,8 @@ pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/
 
 pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_07_Sternberg-Design.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_07_Sternberg-Design.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
 
+pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_08_t-tests.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_08_t-tests.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
+
 #Assignments
 
 
