@@ -14534,28 +14534,28 @@ a.anchor-link {
 <tbody>
 <tr>
 <td style="text-align:center">1</td>
-<td style="text-align:center">Group1</td>
+<td style="text-align:center">A</td>
 <td style="text-align:center">32</td>
 </tr>
 <tr>
 <td style="text-align:center">2</td>
-<td style="text-align:center">Group2</td>
+<td style="text-align:center">B</td>
 <td style="text-align:center">43.2</td>
 </tr>
 <tr>
 <td style="text-align:center">3</td>
-<td style="text-align:center">Group1</td>
+<td style="text-align:center">A</td>
 <td style="text-align:center">31.2</td>
 </tr>
 <tr>
 <td style="text-align:center">4</td>
-<td style="text-align:center">Group2</td>
+<td style="text-align:center">B</td>
 <td style="text-align:center">22.1</td>
 </tr>
 </tbody>
 </table>
-<p>Group1 = pd.DataFrame(df.loc[df['GroupingVariable'] == 'Group1']['Measure'])</p>
-<p>Group2 = pd.DataFrame(df.loc[df['GroupingVariable'] == 'Group2']['Measure'])</p>
+<p>Group1 = pd.DataFrame(df.loc[df['Group'] == 'A']['Measure'])</p>
+<p>Group2 = pd.DataFrame(df.loc[df['Group'] == 'B']['Measure'])</p>
 <p>Now the t-test can be done with Group1 and Group2.</p>
 
 </div>
