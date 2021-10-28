@@ -555,6 +555,13 @@ t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 </section>
 <section class="slide level1">
 
+<h3 id="paired-samples-t-test-1">Paired-samples t-test</h3>
+<pre><code>from scipy.stats import ttest_rel
+
+ttest_rel(df[&#39;grade_test2&#39;], df[&#39;grade_test1&#39;])</code></pre>
+</section>
+<section class="slide level1">
+
 <h3 id="a-little-secret">A little secret</h3>
 <p>Shh!! Don’t tell!</p>
 </section>

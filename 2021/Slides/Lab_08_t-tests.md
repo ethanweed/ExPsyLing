@@ -316,6 +316,15 @@ $$
 
 ---
 
+### Paired-samples t-test
+
+	from scipy.stats import ttest_rel
+
+	ttest_rel(df['grade_test2'], df['grade_test1'])
+
+
+---
+
 ### A little secret
 
 Shh!! Don't tell!  
