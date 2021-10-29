@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lab_08_t-tests.md",
+            "file": "Planning/Syllabus.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lab_08_t-tests.md",
+                "file": "Planning/Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Planning/Syllabus.md",
+    "Planning/Schedule.md",
     "Slides/Lab_08_t-tests.md",
     "Slides/Lecture_06_DescriptiveStatistics.md",
     "Slides/Lecture_07_Hypothesis-Testing.md",
@@ -95,8 +97,6 @@
     "Planning/PDFs/Harley_Chapter6.md",
     "Lab_08_t-tests.md",
     "Untitled.md",
-    "Planning/PDFs/Harley_Chapter7.pdf",
-    "Planning/PDFs/Harley_Chapter6.pdf",
-    "Planning/Harley_Chapter1.md"
+    "Planning/PDFs/Harley_Chapter7.pdf"
   ]
 }
