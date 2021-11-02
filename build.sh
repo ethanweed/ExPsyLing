@@ -14,6 +14,8 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/datasets/Sternberg/scripts/SternbergPlotGallery.ipynb
 
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_08_t-tests.ipynb
+
 ####### Lecture slides
 
 # Lecture 2
