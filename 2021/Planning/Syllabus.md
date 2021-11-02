@@ -42,7 +42,7 @@ Baddeley, A. (2003). Working memory and language: An overview. Journal of commun
 
 Collins, A. M., & Quillian, M. R. (1969). Retrieval time from semantic memory. _Journal of verbal learning and verbal behavior_, _8_(2), 240-247.
 
-ExPsyLing
+Corbin, L., & Marquer, J. (2013). Is Sternberg’s memory scanning task really a short-term memory task?. Swiss Journal of Psychology.
 
 Harley, T. A. (2009). _Talking the talk: Language, psychology and science._ Psychology Press. <a href="https://www.stakbogladen.dk/soegning.asp?phrase=9781138800458" target="_blank">Available at Stakbogladen</a>
 
