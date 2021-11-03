@@ -57,6 +57,11 @@ pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/
 
 pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_08_t-tests.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_08_t-tests.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
 
+pandoc -t revealjs --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_09_Lexical_decision_tasks.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lab_09_Lexical_decision_tasks.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
+
+
+
+
 #Assignments
 
 
