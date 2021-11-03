@@ -18,8 +18,8 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_02_starter.ipynb
 
-jupyter nbconvert --to html 
-/Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_08_t-tests-solutions.ipynb
+jupyter nbconvert /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_08_t-tests-solutions.ipynb --to html 
+
 
 ####### Lecture slides
 
