@@ -16,6 +16,8 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/datasets/Ste
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_08_t-tests.ipynb
 
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_02_starter.ipynb
+
 ####### Lecture slides
 
 # Lecture 2
