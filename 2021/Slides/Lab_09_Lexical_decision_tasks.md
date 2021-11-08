@@ -129,4 +129,4 @@ Meyer, D. E., & Ellis, G. B. (1970, November). Parallel processes in word recogn
 
 Meyer, D. E., & Schvaneveldt, R. W. (1971). Facilitation in recognizing pairs of words: evidence of a dependence between retrieval operations. _Journal of experimental psychology_, _90_(2), 227.
 
-Wagenmakers, E. J., Steyvers, M., Raaijmakers, J. G., Shiffrin, R. M., Van Rijn, H., & Zeelenberg, R. (2004). A model for evidence accumulation in the lexical decision task. _Cognitive Psychology_, _48_(3), 332-367.
+Wagenmakers, E. J., Steyvers, M., Raaijmakers, J. G., Shiffrin, R. M., Van Rijn, H., & Zeelenberg, R. (2004). A model for evidence accumulation in the lexical decision task. _Cognitive Psychology_, _48_(3), 332-367.	
