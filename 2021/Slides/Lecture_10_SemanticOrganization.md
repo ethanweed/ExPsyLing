@@ -3,7 +3,7 @@
 
 ---------------------------------------- 
 
-Games
+Categorization
 
 ---------------------------------------- 
 
@@ -133,6 +133,11 @@ Family resemblence: semantic demential patients
 
 ---------------------------------------- 
 
+### Hinton & Shallice model
+
+<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Harley_Shallice_model.png" width="600"/>
+
+---------------------------------------- 
 
 
 ### Hinton & Shallice model
