@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Planning/Schedule.md",
+            "file": "Slides/Lecture_10_SemanticOrganization.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/Schedule.md",
+                "file": "Slides/Lecture_10_SemanticOrganization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Slides/Lecture_10_SemanticOrganization.md",
+    "Slides/Lecture_08_Lexical-Access.md",
+    "Slides/Lab_08_t-tests.md",
     "Planning/Schedule.md",
     "Planning/PDFs/Collins & Quillian 1969.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.pdf",
     "Slides/Lab_09_Lexical_decision_tasks.md",
-    "Slides/Lecture_08_Lexical-Access.md",
     "Slides/Images/AtkinsonShiffrin_1971.png",
     "Slides/Lecture_09_Sternberg_revisited.md",
-    "Planning/Syllabus.md",
-    "Slides/Lab_08_t-tests.md",
-    "Slides/Lecture_06_DescriptiveStatistics.md"
+    "Planning/Syllabus.md"
   ]
 }

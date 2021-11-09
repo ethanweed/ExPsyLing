@@ -47,6 +47,9 @@ pandoc -t revealjs  --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021
 # Lecture 9
 pandoc -t revealjs  --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_09_Sternberg_revisited.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_09_Sternberg_revisited.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
 
+# Lecture 10
+pandoc -t revealjs  --mathjax -s -o /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_10_SemanticOrganization.html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Lecture_10_SemanticOrganization.md -V theme=solarized -V transition=none -V revealjs-url=https://unpkg.com/reveal.js/
+
 
 
 #Lab slides
