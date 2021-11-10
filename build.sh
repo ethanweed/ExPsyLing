@@ -20,6 +20,8 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 
 jupyter nbconvert /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_08_t-tests-solutions.ipynb --to html 
 
+jupyter nbconvert /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/ANOVA_notebook1.ipynb --to html 
+
 
 ####### Lecture slides
 
