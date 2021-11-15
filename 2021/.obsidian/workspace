@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Slides/Lecture_10_SemanticOrganization.md",
-            "mode": "source"
+            "file": "Assignments/Lab_Report_02.md",
+            "mode": "preview"
           }
         }
       },
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Slides/Lecture_10_SemanticOrganization.md",
+                "file": "Assignments/Lab_Report_02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Assignments/Lab_Report_02.md",
+    "Planning/Schedule.md",
+    "Assignments/Lab_Report_01.md",
     "Slides/Lecture_10_SemanticOrganization.md",
     "Slides/Lecture_08_Lexical-Access.md",
     "Slides/Lab_08_t-tests.md",
-    "Planning/Schedule.md",
     "Planning/PDFs/Collins & Quillian 1969.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.pdf",
     "Slides/Lab_09_Lexical_decision_tasks.md",
-    "Slides/Images/AtkinsonShiffrin_1971.png",
-    "Slides/Lecture_09_Sternberg_revisited.md",
-    "Planning/Syllabus.md"
+    "Slides/Images/AtkinsonShiffrin_1971.png"
   ]
 }
