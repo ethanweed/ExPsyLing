@@ -24,6 +24,10 @@ jupyter nbconvert /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/ANOVA_n
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_02_starter2.ipynb
 
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_02_Solutions.ipynb
+
+
+
 
 ####### Lecture slides
 

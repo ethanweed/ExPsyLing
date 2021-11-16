@@ -7,21 +7,9 @@
         "id": "5cbb230a1ac9ed17",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "Assignments/Lab_Report_02.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "074ff8e47c07fe2b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Slides/Lecture_08_Lexical-Access.md",
-            "mode": "source"
+            "file": "Planning/PDFs/Collins and Quillian Stimuli.pdf"
           }
         }
       }
@@ -79,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Lab_Report_02.md",
+                "file": "Planning/PDFs/Collins and Quillian Stimuli.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +87,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
-    "Assignments/Lab_Report_02.md",
-    "Planning/Schedule.md",
-    "Assignments/Lab_Report_01.md",
-    "Slides/Lecture_10_SemanticOrganization.md",
-    "Slides/Lecture_08_Lexical-Access.md",
-    "Slides/Lab_08_t-tests.md",
-    "Planning/PDFs/Collins & Quillian 1969.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.pdf",
-    "Slides/Lab_09_Lexical_decision_tasks.md",
-    "Slides/Images/AtkinsonShiffrin_1971.png"
+    "Planning/PDFs/Collins & Quillian 1969.md",
+    "Planning/PDFs/Collins & Quillian 1969.pdf",
+    "Planning/PDFs/Collins and Quillian Stimuli.png",
+    "Planning/Collins & Quillian 1969.md",
+    "Planning/Collins & Quillian.md",
+    "Planning/PDFs/Forbach1974_Article_RepetitionAndPracticeEffectsIn.pdf",
+    "Planning/PDFs/Evans et al_1983.pdf",
+    "Assignments/Lab_Report_02.md",
+    "Planning/Schedule.md"
   ]
 }
