@@ -9,7 +9,7 @@
         "state": {
           "type": "pdf",
           "state": {
-            "file": "Planning/PDFs/Collins and Quillian Stimuli.pdf"
+            "file": "Planning/PDFs/MeyerSchvaneveldt1971.pdf"
           }
         }
       }
@@ -67,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/PDFs/Collins and Quillian Stimuli.pdf",
+                "file": "Planning/PDFs/MeyerSchvaneveldt1971.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,6 +87,7 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Planning/PDFs/MeyerSchvaneveldt1971.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.pdf",
     "Planning/PDFs/Collins & Quillian 1969.md",
     "Planning/PDFs/Collins & Quillian 1969.pdf",
@@ -95,7 +96,6 @@
     "Planning/Collins & Quillian.md",
     "Planning/PDFs/Forbach1974_Article_RepetitionAndPracticeEffectsIn.pdf",
     "Planning/PDFs/Evans et al_1983.pdf",
-    "Assignments/Lab_Report_02.md",
-    "Planning/Schedule.md"
+    "Assignments/Lab_Report_02.md"
   ]
 }
