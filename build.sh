@@ -26,6 +26,8 @@ jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Noteboo
 
 jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_02_Solutions.ipynb
 
+jupyter nbconvert --to html /Users/ethan/Documents/GitHub/ExPsyLing/2021/Notebooks/Lab_Report_03_Solutions.ipynb
+
 
 
 

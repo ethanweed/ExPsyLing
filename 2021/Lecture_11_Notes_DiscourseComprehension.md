@@ -1,6 +1,6 @@
 
 
-
+2020 lecture was given with google slides: ExPsyLing_11
 
 X Simple view of reading
 
@@ -10,18 +10,18 @@ X Linguistic knowledge
 
 Genre
 
-Cohesion
+X Cohesion
 
-Coherence
+X Coherence
 
-Situation models
+X Situation models
 
 
-Turtle example
+X Turtle example
 
-Bransford and Johnson
+X Bransford and Johnson
 
-St. George et al right hemisphere
+X St. George et al right hemisphere
 
 
 Levels of semantic organization

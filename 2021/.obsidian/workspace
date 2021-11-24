@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Planning/Schedule.md",
-            "mode": "preview"
+            "file": "Planning/Collins & Quillian 1969.md",
+            "mode": "source"
           }
         }
       },
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/Schedule.md",
+                "file": "Planning/Collins & Quillian 1969.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "Planning/Collins & Quillian 1969.md",
+    "Lecture_11_Notes_DiscourseComprehension.md",
     "Planning/Schedule.md",
-    "Lecture_11_DiscourseComprehension.md",
     "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
     "Planning/PDFs/MeyerSchvaneveldt1971.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.pdf",
     "Planning/PDFs/Collins & Quillian 1969.md",
     "Planning/PDFs/Collins & Quillian 1969.pdf",
     "Planning/PDFs/Collins and Quillian Stimuli.png",
-    "Planning/Collins & Quillian 1969.md",
     "Planning/Collins & Quillian.md"
   ]
 }

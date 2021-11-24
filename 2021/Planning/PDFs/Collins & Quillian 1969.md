@@ -1,6 +1,12 @@
 # PII: S0022-5371(69)80069-1
 
 
+#### [Page 1](highlights://Collins%20&%20Quillian%201969#page=1)
+
+> superset of canary,
+
+> roperties, that a canary is yellow and that it can sing.
+
 #### [Page 2](highlights://Collins%20&%20Quillian%201969#page=2)
 
 > We have labeled sentences that state property relations P
