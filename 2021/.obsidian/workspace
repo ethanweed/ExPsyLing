@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Planning/Collins & Quillian 1969.md",
+            "file": "For next time.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Planning/Collins & Quillian 1969.md",
+                "file": "For next time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "5cbb230a1ac9ed17",
   "lastOpenFiles": [
+    "For next time.md",
+    "Planning/PDFs/Harley_Chapter6.pdf",
+    "Planning/PDFs/Harley_Chapter5.pdf",
+    "Planning/PDFs/Harley_Chapter5.md",
+    "Planning/PDFs/Harley_Chapter7.pdf",
     "Planning/Collins & Quillian 1969.md",
     "Lecture_11_Notes_DiscourseComprehension.md",
     "Planning/Schedule.md",
     "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
-    "Planning/PDFs/MeyerSchvaneveldt1971.pdf",
-    "Planning/PDFs/Collins and Quillian Stimuli.pdf",
-    "Planning/PDFs/Collins & Quillian 1969.md",
-    "Planning/PDFs/Collins & Quillian 1969.pdf",
-    "Planning/PDFs/Collins and Quillian Stimuli.png",
-    "Planning/Collins & Quillian.md"
+    "Planning/PDFs/MeyerSchvaneveldt1971.pdf"
   ]
 }
