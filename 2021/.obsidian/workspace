@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5cbb230a1ac9ed17",
+        "id": "0479c9eaddc985c2",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "For next time.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "7d070d989ea8de52",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -50,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sko",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +45,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "For next time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +83,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5cbb230a1ac9ed17",
+  "active": "0479c9eaddc985c2",
   "lastOpenFiles": [
+    "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
+    "Assignments/Lab_Report_02.md",
     "For next time.md",
     "Planning/PDFs/Harley_Chapter6.pdf",
     "Planning/PDFs/Harley_Chapter5.pdf",
@@ -106,8 +94,6 @@
     "Planning/PDFs/Harley_Chapter7.pdf",
     "Planning/Collins & Quillian 1969.md",
     "Lecture_11_Notes_DiscourseComprehension.md",
-    "Planning/Schedule.md",
-    "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
-    "Planning/PDFs/MeyerSchvaneveldt1971.pdf"
+    "Planning/Schedule.md"
   ]
 }

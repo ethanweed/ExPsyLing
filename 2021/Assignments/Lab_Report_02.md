@@ -15,6 +15,8 @@ keyboard response: yes/no
 
 ---------------------------------------- 
 
+#### Lab Report 02: Lexical DecisionTask
+
 60 critical items + 20 filler items
 20 related word pairs, 20 unrelated word pairs, 20 nonword pairs
 
