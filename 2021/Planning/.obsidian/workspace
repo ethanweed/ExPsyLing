@@ -1,14 +1,17 @@
 {
   "main": {
-    "id": "99a26ded00f15ca5",
+    "id": "5aba6c77e151e5a3",
     "type": "split",
     "children": [
       {
-        "id": "b88458ce17fbd057",
+        "id": "25fac0337875257d",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Schedule.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,14 +94,14 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b88458ce17fbd057",
+  "active": "25fac0337875257d",
   "lastOpenFiles": [
+    "Schedule.md",
     "Slides/Lecture_02_Intro.md",
     "Slides/Lab_02_Why.md",
     "Syllabus.md",
     "Workshop blurb.md",
     "Untitled.md",
-    "Schedule.md",
     "Render to html.md",
     "GDPR course.md",
     "Slides/Lecture_02.md",

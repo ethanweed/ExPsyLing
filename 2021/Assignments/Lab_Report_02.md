@@ -1,4 +1,4 @@
-#### Lab Report 01: Replication of Sternberg Task
+#### Lab Report 02: Lexical Decision Task
 
 The purpose of this second lab report is for you to practice organizing data in a dataframe, exploring a dataset, and choosing an appropriate statistical test to do.
 
