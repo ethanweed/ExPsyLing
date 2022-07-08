@@ -1,16 +1,29 @@
 {
   "main": {
-    "id": "662aeee6f224b2f8",
+    "id": "f3af979467e2981f",
     "type": "split",
     "children": [
       {
-        "id": "0479c9eaddc985c2",
+        "id": "e7fe3b4d8dee975e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Assignments/Lab_Report_02.md",
-            "mode": "source"
+            "file": "Experiment 1 models.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c7ede116395754de",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "What factors impact decoding?.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -18,15 +31,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "38147c3d8475e0be",
+    "id": "e0c9046cd0df99b4",
     "type": "split",
     "children": [
       {
-        "id": "bb53cb806221f278",
+        "id": "fe25e0f7cc3b274a",
         "type": "tabs",
         "children": [
           {
-            "id": "fffc0a92b882f261",
+            "id": "5071c3a01b24a31c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +47,7 @@
             }
           },
           {
-            "id": "a5a93b73fb288744",
+            "id": "7ec68f5d5bec3118",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +68,20 @@
     "width": 300
   },
   "right": {
-    "id": "d4013a1f3c5d2356",
+    "id": "eb18128ab2a70bab",
     "type": "split",
     "children": [
       {
-        "id": "1d63a307040daa6f",
+        "id": "f213cf84e717012b",
         "type": "tabs",
         "children": [
           {
-            "id": "cdc9480e2dd7d040",
+            "id": "3a91d3638dae75f9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Lab_Report_02.md",
+                "file": "Experiment 1 models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +99,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0479c9eaddc985c2",
+  "active": "e7fe3b4d8dee975e",
   "lastOpenFiles": [
-    "Assignments/Lab_Report_02.md",
-    "Planning/Outline.md",
-    "Planning/Syllabus.md",
-    "Planning/PDFs/Zwann & Rapp_Discourse Comprehension.md",
-    "For next time.md",
-    "Planning/PDFs/Harley_Chapter6.pdf",
-    "Planning/PDFs/Harley_Chapter5.pdf",
-    "Planning/PDFs/Harley_Chapter5.md",
-    "Planning/PDFs/Harley_Chapter7.pdf",
-    "Planning/Collins & Quillian 1969.md"
+    "Experiment 1 models.md",
+    "What factors impact decoding?.md",
+    "Planning.md",
+    "The Simple View of Reading.md",
+    "Untitled.md",
+    "Experiment 1a DAG.md",
+    "memaid-test.md"
   ]
 }
