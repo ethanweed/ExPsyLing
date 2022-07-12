@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e7fe3b4d8dee975e",
+        "id": "c369b58159ba967d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Experiment 1 models.md",
+            "file": "Planning.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "c7ede116395754de",
+        "id": "1819711f0bbd1aa1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "What factors impact decoding?.md",
+            "file": "Planning.md",
             "mode": "source",
             "source": false
           }
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 372
   },
   "right": {
     "id": "eb18128ab2a70bab",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Experiment 1 models.md",
+                "file": "Planning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,13 +99,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e7fe3b4d8dee975e",
+  "active": "c369b58159ba967d",
   "lastOpenFiles": [
-    "Experiment 1 models.md",
-    "What factors impact decoding?.md",
     "Planning.md",
+    "Experiment 1 models.md",
     "The Simple View of Reading.md",
-    "Untitled.md",
+    "Reading Comprehension.md",
+    "What factors impact decoding?.md",
     "Experiment 1a DAG.md",
     "memaid-test.md"
   ]
