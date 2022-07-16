@@ -14,3 +14,8 @@ boxj(???)-->boxa(Word Recognition)
 ```
 
 
+
+```mermaid
+graph LR
+boxa(Word / Pseudoword)-->boxb(Response Time)
+```

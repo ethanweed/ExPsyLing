@@ -4,18 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8f592aa0ad8cb9e3",
+        "id": "f19fc40c8fba458c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Course-schedule.md",
-            "mode": "source"
+            "file": "Rough plan.md",
+            "mode": "source",
+            "source": false
           }
         }
       },
       {
-        "id": "030e0136d2ac001d",
+        "id": "eeefd86b150779ee",
         "type": "leaf",
         "state": {
           "type": "markdown-table-editor-view",
@@ -76,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Rough plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,14 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "030e0136d2ac001d",
+  "active": "f19fc40c8fba458c",
   "lastOpenFiles": [
-    "Course-schedule.md",
-    "2021/Planning/Schedule.md",
-    "2021/Planning/Course description.md",
-    "2021/Planning/Syllabus.md",
-    "2021/Planning/Outline.md",
     "2022/Planning.md",
-    "tabletest.md"
+    "Rough plan.md",
+    "2022/Course-schedule.md",
+    "2022/Videos to make.md",
+    "2022/Causal Inference.md",
+    "2022/Decoding.md",
+    "2022/What factors impact decoding?.md",
+    "2022/Experiment 1 models.md",
+    "2022/The Simple View of Reading.md",
+    "2022/Generative Processes.md"
   ]
 }
