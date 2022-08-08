@@ -20,4 +20,7 @@ We can use this simulation project to talk about e.g.:
 	- How can I use simulations to inform my understanding of the generative system?
 
 
+08-08-2022
+Today I started playing around with simulating lexical decision data based on data reported in Ratcliff et al (2004). I think this could be very valuable. Students can learn to simulate data themselves by finding their own articles and contributing. Then we can build a database of RT data and do a kind of meta analysis by combining the mean RT's and SD's to build our intuitions about the word recogition system and the generative model that produces these data. E.g. what is the role of frequency?
+
 
