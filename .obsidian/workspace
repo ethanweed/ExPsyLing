@@ -9,14 +9,14 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Rough plan.md",
+            "file": "Worry stone.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "eeefd86b150779ee",
+        "id": "656088813f26108b",
         "type": "leaf",
         "state": {
           "type": "markdown-table-editor-view",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rough plan.md",
+                "file": "Worry stone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "f19fc40c8fba458c",
   "lastOpenFiles": [
-    "2022/Planning.md",
-    "Rough plan.md",
-    "2022/Course-schedule.md",
-    "2022/Videos to make.md",
-    "2022/Causal Inference.md",
-    "2022/Decoding.md",
-    "2022/What factors impact decoding?.md",
+    "2022/Reading Comprehension.md",
     "2022/Experiment 1 models.md",
-    "2022/The Simple View of Reading.md",
-    "2022/Generative Processes.md"
+    "2022/Decoding.md",
+    "2021/Planning/lexical decision task.md",
+    "Links.md",
+    "2022/Course-schedule 1.md",
+    "2022/Course-schedule.md",
+    "2022/Planning.md",
+    "2022/What factors impact decoding?.md",
+    "2022/Videos to make.md"
   ]
 }
