@@ -24,7 +24,9 @@ We can use this simulation project to talk about e.g.:
 Today I started playing around with simulating lexical decision data based on data reported in Ratcliff et al (2004). I think this could be very valuable. Students can learn to simulate data themselves by finding their own articles and contributing. Then we can build a database of RT data and do a kind of meta analysis by combining the mean RT's and SD's to build our intuitions about the word recogition system and the generative model that produces these data. E.g. what is the role of frequency?
 
 09-08-2022
-Made a video on simulation. An hour long. I think I may make another on estimating frequency effects based on simulations. Perhaps taking data from table 3 from Ratcliff paper and comparing RT's for correct responses on HF vs LF words over the 6 experiments they ran. Make functions to simplify data input.
+Made a video on simulation. An hour long. I think I may make another on estimating frequency effects based on simulations. Perhaps taking data from table 3 from Ratcliff paper and comparing RT's for correct responses on HF vs LF words over the 5 experiments they ran that have both HF and LF. Make functions to simplify data input.
+
+Made the script from note above. It works great, but makes me realize there is a sudden jump in coding complexity when adding data from 5 different experiments to the same dataframe that may be difficult for the students to follow.
 
 Also: make a video on loops / list comprehensions
 
