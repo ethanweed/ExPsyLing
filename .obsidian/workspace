@@ -9,14 +9,14 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Worry stone.md",
+            "file": "2022/Course-schedule 1.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "656088813f26108b",
+        "id": "179e61f43468910e",
         "type": "leaf",
         "state": {
           "type": "markdown-table-editor-view",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Worry stone.md",
+                "file": "2022/Course-schedule 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,11 +92,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "f19fc40c8fba458c",
   "lastOpenFiles": [
+    "Worry stone.md",
     "2022/Reading Comprehension.md",
     "2022/Experiment 1 models.md",
     "2022/Decoding.md",
@@ -105,7 +105,6 @@
     "2022/Course-schedule 1.md",
     "2022/Course-schedule.md",
     "2022/Planning.md",
-    "2022/What factors impact decoding?.md",
-    "2022/Videos to make.md"
+    "2022/What factors impact decoding?.md"
   ]
 }
