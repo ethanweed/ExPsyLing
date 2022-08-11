@@ -7,7 +7,6 @@ cd /Users/ethan/Documents/GitHub/ExPsyLing/2022/Slides/
 
 for i in *.md ; do echo "$i" && pandoc metadata.yaml -s -t revealjs -s -V revealjs-url=https://unpkg.com/reveal.js/ --include-in-header=styles.css $i -o html/"${i%.*}".html ; done
 
-for i in *.html; do mv $i /html; done;
 
 # Push to github
 
