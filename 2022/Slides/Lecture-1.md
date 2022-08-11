@@ -3,9 +3,8 @@
 
 ---
 
-Thinking
-about
-Thinking
+# Thinking about thinking
+
 
 
 ---
@@ -19,11 +18,11 @@ Thinking
 
 ---
 
-# Topic 1
+# This course
 
 ---
 
-# Topic 2
+# Exam
 
 ---
 

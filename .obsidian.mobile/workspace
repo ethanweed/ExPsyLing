@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2021/Planning/Literature.md",
-            "mode": "source"
+            "file": "2022/Slides/Lecture-1.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -57,7 +58,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "2021/Planning/Literature.md",
+            "file": "2022/Slides/Lecture-1.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -73,9 +74,15 @@
   },
   "active": "cb37fa8f652f012a",
   "lastOpenFiles": [
-    "2021/Planning/Literature.md",
-    "2021/Planning/Syllabus.md",
-    "2021/Planning/Harley_Chapter1.md",
-    "2021/Planning/Course description.md"
+    "2022/Causal Inference.md",
+    "2022/Slides/Lecture-1.md",
+    "Worry stone.md",
+    "Rough plan.md",
+    "2021/Slides/Lab_07_Sternberg-Design.md",
+    "2021/Slides/Lecture_04_WorkingMemory.md",
+    "2021/Slides/Lecture_06_DescriptiveStatistics.md",
+    "2021/Slides/Lecture_05_ResearchDesign.md",
+    "2021/Slides/Lecture_03_Psycholinguistics.md",
+    "2021/Slides/Lecture_09_Sternberg_revisited.md"
   ]
 }
