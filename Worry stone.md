@@ -31,5 +31,6 @@ Made the script from note above. It works great, but makes me realize there is a
 Also: make a video on loops / list comprehensions
 
 
+Something on Zipf's law and frequency effects?
 
 
