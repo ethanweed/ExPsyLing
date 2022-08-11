@@ -1,6 +1,5 @@
 # Experimental Psycholinguistics
 
-2022
 
 ---
 
