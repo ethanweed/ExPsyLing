@@ -30,6 +30,6 @@
 
 <em>IMAGES:</em>
 
-Edward Hopper (1940) "Gas" https://www.wikiart.org/en/edward-hopper/gas
+[Edward Hopper (1940) "Gas"](https://www.wikiart.org/en/edward-hopper/gas)
 
 </div>
