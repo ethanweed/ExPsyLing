@@ -8,7 +8,7 @@
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Moby-Dick_%281851%29_US_edition.djvu/page33-1024px-Moby-Dick_%281851%29_US_edition.djvu.jpg" width="600"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Moby-Dick_%281851%29_US_edition.djvu/page33-1024px-Moby-Dick_%281851%29_US_edition.djvu.jpg" width="350"/>
 
 ---
 
