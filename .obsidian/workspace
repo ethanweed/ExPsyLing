@@ -15,8 +15,12 @@
         "id": "751c83e878d62464",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "2022/Slides/Lecture-1.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2022/Slides/Lecture-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +94,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "e60bd1ecd0528134",
+  "active": "751c83e878d62464",
   "lastOpenFiles": [
+    "2022/Slides/Lecture 1 Introduction to the course.md",
     "Visual Word Recognition.md",
     "Worry stone.md",
     "2022/Course-schedule 1.md",
@@ -99,7 +105,6 @@
     "2022/Decoding.md",
     "2021/Planning/lexical decision task.md",
     "Links.md",
-    "2022/Course-schedule.md",
-    "2022/Planning.md"
+    "2022/Course-schedule.md"
   ]
 }
