@@ -3,6 +3,13 @@
 
 ---
 
+Thinking
+about
+Thinking
+
+
+---
+
 
 <img src="https://uploads6.wikiart.org/images/edward-hopper/gas.jpg!Large.jpg" width="900"/>
 
