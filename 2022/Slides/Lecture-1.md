@@ -3,8 +3,7 @@
 ---
 
 
-
-<img src="https://uploads6.wikiart.org/00155/images/edward-hopper/hopper-15-2011-rocks.jpg!Large.jpg"/>
+<img src=""https://uploads6.wikiart.org/00155/images/edward-hopper/hopper-15-2011-rocks.jpg!Large.jpg"" width="800"/>
 
 ---
 
