@@ -4,7 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "179e61f43468910e",
+        "id": "6dd6df27dc607a9e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Teaching Flow.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "a4975c5f346a56fe",
         "type": "leaf",
         "state": {
           "type": "markdown-table-editor-view",
@@ -12,13 +24,13 @@
         }
       },
       {
-        "id": "751c83e878d62464",
+        "id": "c8dd25822d287459",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022/Slides/Lecture-1.md",
-            "mode": "source",
+            "file": "2021/Planning/lexical decision task.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -77,8 +89,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/Slides/Lecture-1.md",
-                "collapseAll": false,
+                "file": "Teaching Flow.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -94,17 +106,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "751c83e878d62464",
+  "active": "6dd6df27dc607a9e",
   "lastOpenFiles": [
-    "2022/Slides/Lecture 1 Introduction to the course.md",
-    "Visual Word Recognition.md",
-    "Worry stone.md",
-    "2022/Course-schedule 1.md",
-    "2022/Reading Comprehension.md",
-    "2022/Experiment 1 models.md",
-    "2022/Decoding.md",
     "2021/Planning/lexical decision task.md",
-    "Links.md",
-    "2022/Course-schedule.md"
+    "2022/Planning.md",
+    "2022/Reading Comprehension.md",
+    "2022/Generative Processes.md",
+    "2022/Decoding.md",
+    "2022/What factors impact decoding?.md",
+    "2022/The Simple View of Reading.md",
+    "2022/Course-schedule.md",
+    "2022/Course-schedule 1.md",
+    "Teaching Flow.md"
   ]
 }
