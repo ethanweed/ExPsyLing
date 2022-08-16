@@ -12,7 +12,7 @@
         }
       },
       {
-        "id": "758af7d9af16a8a8",
+        "id": "92d39a71e43c87f4",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -87,12 +87,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "e60bd1ecd0528134",
+  "active": "a4975c5f346a56fe",
   "lastOpenFiles": [
-    "2022/Course-schedule-html.md",
     "2022/Teaching Flow.md",
+    "2022/Course-schedule-html.md",
     "2021/Planning/lexical decision task.md",
     "2022/Planning.md",
     "2022/Reading Comprehension.md",
