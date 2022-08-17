@@ -1,13 +1,13 @@
 # Experimental Psycholinguistics
 
 ## Course Goals
-In this course, we will learn to use experimental methodology and quantitative data analysis to investigate some of the cognitive phenomena that support language. More specifically, we will investigate the cognitive systems involved in visual word recognition. 
+In this course, we will learn to use experimental methodology and quantitative data analysis to investigate cognitive phenomena. By "cognitive phenomena", I mean the mechanisms by which our minds respond to, understand, and interact with the world. For the purposes of this course, we will investigate the cognitive systems involved in visual word recognition. Visual word recognition is the process by which we look at printed marks on a page or screen and determine whether or not they form a word, and if they do, which word they are. You are performing word recognition right now, while you read this.
 
 If this sounds complicated and abstract, that's because it is! The mind's chief activity "\[...\] consists in the endeavor to ascertain its own nature, the futility of the attempt being due to the fact that it has nothing but itself to know itself with." (<a
 
 href="http://www.thedevilsdictionary.com" target="_blank">Bierce, 1911</a>). We can think all day about how the mind works, but to test our theories, we need to probe the mind experimentally.
 
-To conduct psycholinguistic experiments, we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how to design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! This sounds like it would never work, but in fact it is possible, if we use the right methods and are careful in our interpretations.
+To conduct psycholinguistic experiments (or any kind of experiment), we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how to design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! This sounds like it would never work, but in fact it is possible, if we use the right methods and are careful in our interpretations.
 
 The goals of the course are for you to learn to:
 
@@ -31,9 +31,9 @@ Learning some programming and some statistics is an important part of the MA in 
 ## Exam
 The exam for this course is a portfolio of work completed throughout the semester, and will be graded on a pass/fail basis. Your portfolio will consist of:
 
-1. Three lab reports, completed throughout  the semester, using the [lab report template](https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc)
-2. Proof of completion of online GDPR course in either <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/27011" target="_blank">Danish</a> or <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/30198" target="_blank">English</a>
-3. Design Your Own Experiment: Introduction and Methods sections for a proposed experiment on a topic of your choice
+1. Three lab reports, completed throughout  the semester, using the [lab report template](https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc). The point of the lab report is to practice concisely communicating and contextualizing scientific findings.
+2. Proof of completion of online GDPR course in either <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/27011" target="_blank">Danish</a> or <a href="https://brightspace.au.dk/d2l/le/discovery/view/course/30198" target="_blank">English</a>. The point of doing the GDPR course is to become familiar with the legal constraints regarding personal data that you need to be aware of when doing research.
+3. Design your own experiment. Introduction and Methods sections for a proposed experiment on a topic of your choice. The point of this exercise is to apply what you have learned in this course to a topic that interests you.
 
 
 
