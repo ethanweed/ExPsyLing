@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "a4975c5f346a56fe",
+        "id": "e4a123b55f943258",
         "type": "leaf",
         "state": {
           "type": "markdown-table-editor-view",
@@ -12,7 +12,7 @@
         }
       },
       {
-        "id": "92d39a71e43c87f4",
+        "id": "774909719ad75c3c",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -90,17 +90,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a4975c5f346a56fe",
+  "active": "e4a123b55f943258",
   "lastOpenFiles": [
+    "Syllabus-2022.md",
+    "2021/Planning/Syllabus.md",
+    "2022/Teaching-Flow.md",
+    "2022/Course-schedule 1.md",
+    "2022/Course-schedule.md",
     "2022/Teaching Flow.md",
     "2022/Course-schedule-html.md",
     "2021/Planning/lexical decision task.md",
     "2022/Planning.md",
-    "2022/Reading Comprehension.md",
-    "2022/Generative Processes.md",
-    "2022/Decoding.md",
-    "2022/What factors impact decoding?.md",
-    "2022/The Simple View of Reading.md",
-    "2022/Course-schedule.md"
+    "2022/Reading Comprehension.md"
   ]
 }
