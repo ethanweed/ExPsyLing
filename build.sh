@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Course Planning
-pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2022/Teaching-Flow.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2022/Teaching-Flow.html
+pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2022/Syllabus-2022.md -o /Users/ethan/Documents/GitHub/ExPsyLing/2022/Syllabus-2022.html 
 
 
 ## Lecture Slides

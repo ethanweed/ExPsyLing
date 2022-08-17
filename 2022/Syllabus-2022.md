@@ -3,7 +3,7 @@
 ## Course Goals
 In this course, we will learn to use experimental methodology and quantitative data analysis to investigate some of the cognitive phenomena that support language. More specifically, we will investigate the cognitive systems involved in visual word recognition. 
 
-If this sounds complicated and abstract, that's because it is! The mind's chief activity "\[...\] consists in the endeavor to ascertain its own nature, the futility of the attempt being due to the fact that it has nothing but itself to know itself with." (Bierce, 1911). We can think all day about how the mind works, but to test our theories, we need to probe the mind experimentally.
+If this sounds complicated and abstract, that's because it is! The mind's chief activity "\[...\] consists in the endeavor to ascertain its own nature, the futility of the attempt being due to the fact that it has nothing but itself to know itself with." ([Bierce, 1911](http://www.thedevilsdictionary.com/m.html#MIND_)). We can think all day about how the mind works, but to test our theories, we need to probe the mind experimentally.
 
 To conduct psycholinguistic experiments, we need to translate theories to research hypotheses, and research hypotheses to statistical hypotheses. Put another way, we need to figure out how to design experiments that will let us measure invisible things in the mind that might or might not even exist. Yikes! This sounds like it would never work, but in fact it is possible, if we use the right methods and are careful in our interpretations.
 

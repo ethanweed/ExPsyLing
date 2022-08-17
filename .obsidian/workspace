@@ -15,8 +15,12 @@
         "id": "774909719ad75c3c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "2022/Syllabus-2022.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2022/Syllabus-2022.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +95,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e4a123b55f943258",
+  "active": "774909719ad75c3c",
   "lastOpenFiles": [
     "Syllabus-2022.md",
     "2021/Planning/Syllabus.md",
