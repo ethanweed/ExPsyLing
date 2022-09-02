@@ -299,9 +299,9 @@ Computers are tools that encourage:
 
 
 
-<font size="2">     
+<div id = "refs">  
 
-<section style="text-align: left;">
+
 
 Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
 
@@ -313,10 +313,6 @@ Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural c
 
 
 
-<div id = "refs">
-
-
-
 
 <em>IMAGES:</em>
 
@@ -325,3 +321,7 @@ Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural c
 [Herman Melville (1851) "Moby Dick, or, The Whale"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Moby-Dick_%281851%29_US_edition.djvu/page33-1024px-Moby-Dick_%281851%29_US_edition.djvu.jpg)
 
 </div>
+
+
+---
+
