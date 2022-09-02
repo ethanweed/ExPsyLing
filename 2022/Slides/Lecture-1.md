@@ -119,7 +119,7 @@ Pass/fail portfolio
 
 ---
 
-#### Why so much computer stuf?
+#### Why so much computer stuff?
 
 
 
@@ -131,6 +131,7 @@ Pass/fail portfolio
 #### Humanities Computing
 
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/HumanitiesComputing.png?raw=true" width="600"/>
 
 
 ---
