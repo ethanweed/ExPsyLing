@@ -312,7 +312,7 @@ McCarty, W. (2003). Humanities computing. _Encyclopedia of library and informati
 
 Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural constraints on code-mixing: Evidence from French-English bilingual children. Bilingualism: Language and Cognition, 3: 245-261.
 
-</style>
+
 </font>
 
 <div id = "refs">
