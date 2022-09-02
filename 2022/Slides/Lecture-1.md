@@ -269,7 +269,7 @@ xml (source: http://www.talkbank.org)
 
 #### Metalinguistic thinking leads to clear thinking
 
->"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required. It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship. This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
+"deep encoding is very laborious, and it is precisely the kind of task in which the full range of scholarly abilities are required. It thus demonstrates that encoding can itself be a form of rather than preparation for scholarship. This new form is shaped by the two imperatives of computational tractability, namely **total explicitness** and **absolute consistency.**"
 
 ---
 
@@ -289,7 +289,7 @@ xml (source: http://www.talkbank.org)
 
 #### Representational thinking leads to new insights
 
->"... arranging, formatting, or otherwise transforming the appearance of data \[leading to] what Arnheim has called 'visual thinking'"
+"... arranging, formatting, or otherwise transforming the appearance of data \[leading to] what Arnheim has called 'visual thinking'"
 
 ---
 
