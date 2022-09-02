@@ -229,7 +229,7 @@ Here are they are:
 
 #### Algorithmic thinking: find musical phrases
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MusicalPatterns.png?raw=true" width="400"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MusicalPatterns.png?raw=true" width="600"/>
 
 ---
 
