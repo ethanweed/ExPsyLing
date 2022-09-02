@@ -275,8 +275,10 @@ xml (source: http://www.talkbank.org)
 <div id = "left">
 
 [Lucy Hutchinson](https://en.wikipedia.org/wiki/Lucy_Hutchinson) (1618–1681)
+
 Translator, poet, and biographer
-"Order and Disorder" Parts 1 and 2?
+
+Author of "Order and Disorder" Parts 1 and 2?
 
 </div>
 
