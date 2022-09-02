@@ -1,6 +1,5 @@
- <style>
- body {background-color: coral;}
- </style>
+
+<section data-background-color="aquamarine">
 
 # Experimental Psycholinguistics
 
