@@ -18,6 +18,38 @@
 
 ---
 
+
+# Warmup
+
+---
+
+### Observation 1
+
+
+<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
+
+Hearing a backwards count interfered with my ability to count forwards.
+
+---
+
+### Observation 2
+
+Hearing other language does not interfere with my ability to count forwards.
+
+<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
+
+---
+
+### Discuss
+
+- What could explain this phemonenon?
+- What hypothesis/hypotheses does your explanation generate?
+- How could you test your hypothesis/hypotheses?
+
+---
+
+
+
 # This course
 
 ----------------------------------------
@@ -35,43 +67,19 @@
 
 ---
 
-### Testing, testing, 1, 2, 3
+#### Course goals
 
+Learn to: 
 
-::: {.container}
-:::: {.col}
-<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
-::::
-:::: {.col}
-**Observation 1:** Hearing a backwards count interfered with my ability to count forwards.
-::::
+---
+
+::: incremental
+
+- translate theories to research hypotheses
+- translate research hypotheses to statistical hypotheses
+- interpret statistical results in relation to theories
+
 :::
-
----
-
-### Testing, testing, 1, 2, 3
-
-
-::: {.container}
-:::: {.col}
-<img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
-::::
-:::: {.col}
-**Observation 2:** Hearing other language does not interfere with my ability to count forwards.
-::::
-:::
-
----
-
-### Testing, testing, 1, 2, 3
-
-- What could explain this phemonenon?
-- What hypothesis/hypotheses does your explanation generate?
-- How could you test your hypothesis/hypotheses?
-
-
----
-
 
 
 ---
