@@ -69,9 +69,7 @@ Hearing other language does not interfere with my ability to count forwards.
 
 #### Course goals
 
-Learn to: 
-
----
+Learn to...
 
 ::: incremental
 
@@ -80,6 +78,9 @@ Learn to:
 - interpret statistical results in relation to theories
 
 :::
+
+---
+
 
 
 ---
