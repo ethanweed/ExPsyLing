@@ -1,5 +1,8 @@
 
-body {background-color: coral;}
+<style>
+	body {background-color: coral;}
+</style>
+
 
 # Experimental Psycholinguistics
 
