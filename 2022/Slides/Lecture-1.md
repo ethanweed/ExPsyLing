@@ -296,6 +296,10 @@ Computers are tools that encourage:
 
 ## References
 
+<style type="text/css">
+p { text-align: left; }
+</style>
+
 
 <font size="2">     
 
