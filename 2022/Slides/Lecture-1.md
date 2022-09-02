@@ -120,7 +120,7 @@ Pass/fail portfolio
 
 ---
 
-#### Why so much computer stuff?
+# Humanities Computing
 
 
 
