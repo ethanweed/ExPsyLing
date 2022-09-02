@@ -67,7 +67,7 @@ Hearing other language does not interfere with my ability to count forwards.
 
 ---
 
-#### Course goals
+#### Course goals 1
 
 Learn to...
 
@@ -81,7 +81,9 @@ Learn to...
 
 ---
 
-### More broadly, learn to...
+#### Course goals 2
+
+Learn to...
 
 ::: incremental
 
