@@ -273,18 +273,21 @@ xml (source: http://www.talkbank.org)
 
 ---
 
+#### Representational thinking: visualizing authorial voice
+
 <div id = "left">
 
 [Lucy Hutchinson](https://en.wikipedia.org/wiki/Lucy_Hutchinson) (1618–1681)
 
 
 </div>
+
 Translator, poet, and biographer
 
 
 <div id = "right">
 
-<img src="https://nottinghamcityofliterature.com/uploads/images/Lucy.jpg" width="500"/>
+<img src="https://nottinghamcityofliterature.com/uploads/images/Lucy.jpg" width="400"/>
 
 </div>
 
