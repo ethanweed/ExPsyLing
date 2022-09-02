@@ -1,5 +1,5 @@
 
-<section data-background-color="aquamarine">
+
 
 # Experimental Psycholinguistics
 
