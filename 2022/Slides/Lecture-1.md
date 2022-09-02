@@ -195,6 +195,8 @@ Here are they are:
 
 #### Interesting comparisons
 
+<div id = "left">
+
 ```
 ['for the children of this world are in their generation',
  'them, the children of this world marry, and are given',
@@ -211,7 +213,19 @@ Here are they are:
  'saying, the kingdoms of this world are become the kingdoms']
  ```
 
+
+</div>
+
+
+
+<div id = "right">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%">
+
+</div>
+
+
+
 
 
 ---
