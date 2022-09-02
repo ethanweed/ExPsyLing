@@ -297,12 +297,7 @@ Computers are tools that encourage:
 ## References
 
 
-<font size="2"> 
-    <style>
-
-        {text-align: center;}
-
-    
+<font size="2">     
 
 Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
 
@@ -313,7 +308,6 @@ McCarty, W. (2003). Humanities computing. _Encyclopedia of library and informati
 Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural constraints on code-mixing: Evidence from French-English bilingual children. Bilingualism: Language and Cognition, 3: 245-261.
 
 
-</font>
 
 <div id = "refs">
 
