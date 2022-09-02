@@ -107,6 +107,8 @@ a:hover {
 }
 
 
-
+:root {
+  --r-background-color: #f7fbfc;
+}
 
 </style>
