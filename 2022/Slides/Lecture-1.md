@@ -81,6 +81,16 @@ Learn to...
 
 ---
 
+### More broadly, learn to...
+
+::: incremental
+
+- Understand the relationship between theoretical concepts and data
+- Operationalize theoretical concepts experimentally through measurable indices
+- Analyze and interpret findings in a critical way
+- Communicate experimental findings in a clear way to both expert and lay audiences
+
+:::
 
 
 ---
