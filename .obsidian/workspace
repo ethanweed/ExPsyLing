@@ -104,8 +104,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 19,
-        "y": 25,
+        "x": 15,
+        "y": 38,
         "width": 1024,
         "height": 800,
         "maximize": false,

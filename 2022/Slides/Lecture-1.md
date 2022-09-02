@@ -276,14 +276,14 @@ xml (source: http://www.talkbank.org)
 #### Representational thinking: visualizing authorial voice
 
 
-<img src="Images/AuthorshipAnalysis2.png" alt="" width="600">
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AuthorshipAnalysis2.png?raw=true" width="600"/>
 
 ---
 
 #### Representational thinking: visualizing authorial voice
 
 
-<img src="Images/AuthorshipAnalysis.png" alt="" width="600">
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AuthorshipAnalysis.png?raw=true" width="600"/>
 
 ---
 
