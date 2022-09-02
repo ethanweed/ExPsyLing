@@ -131,7 +131,7 @@ Pass/fail portfolio
 #### Humanities Computing
 
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/HumanitiesComputing.png?raw=true" width="400"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/HumanitiesComputing.png?raw=true" width="600"/>
 
 
 ---
