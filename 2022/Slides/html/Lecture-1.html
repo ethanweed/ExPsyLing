@@ -236,7 +236,7 @@ forwards.</p>
 </section>
 <section class="slide level2">
 
-<h4 id="course-goals-1">Course goals 1</h4>
+<h4 id="course-goals">Course goals</h4>
 <p>Learn to…</p>
 <div>
 <ul>
@@ -250,7 +250,7 @@ theories</li>
 </section>
 <section class="slide level2">
 
-<h4 id="course-goals-2">Course goals 2</h4>
+<h4 id="course-goals-1">Course goals</h4>
 <p>Learn to…</p>
 <div>
 <ul>
@@ -264,6 +264,206 @@ way</li>
 both expert and lay audiences</li>
 </ul>
 </div>
+</section>
+<section class="slide level2">
+
+<h3 id="course-structure">Course structure</h3>
+<ul>
+<li>Lectures</li>
+<li>Labs</li>
+<li>Instructor Sessions</li>
+</ul>
+</section>
+<section id="introductions" class="slide level2">
+<h2>Introductions</h2>
+</section>
+<section class="slide level2">
+
+<h4 id="exam">Exam</h4>
+<p>Pass/fail portfolio</p>
+<ol type="1">
+<li>Three lab reports, completed throughout the semester, using the
+<a href="https://github.com/ethanweed/ExPsyLing/raw/master/2021/Resources/Experimental%20Report%20Template.doc" target="_blank">lab
+report template</a></li>
+<li>Proof of completion of online GDPR course in either
+<a href="https://brightspace.au.dk/d2l/le/discovery/view/course/27011" target="_blank">Danish</a>
+or
+<a href="https://brightspace.au.dk/d2l/le/discovery/view/course/30198" target="_blank">English</a></li>
+<li>Design Your Own Experiment: Introduction and Methods sections for a
+proposed experiment on a topic of your choice</li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h4 id="why-so-much-computer-stuf">Why so much computer stuf?</h4>
+<p><img src="https://clipground.com/images/computer-help-clipart-5.jpg" width="40%"></p>
+</section>
+<section class="slide level2">
+
+<h4 id="humanities-computing">Humanities Computing</h4>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>“computing belongs within the humanities because it accords with
+their central project: to help scholars ask better questions.”</p>
+</blockquote>
+<p>- McCarty(2003)</p>
+</section>
+<section class="slide level2">
+
+<h4 id="concordance-of-the-bible">Concordance of the Bible</h4>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="60%"></p>
+<p>“commonplace physical devices for manipulating knowledge”
+-McCarty(2003)</p>
+</section>
+<section class="slide level2">
+
+<h4 id="concordance-of-the-bible-1">Concordance of the Bible</h4>
+<p>The first concordance of the Latin Bible was completed in 1230, and
+is said to have been written by 500 Dominican munks.</p>
+</section>
+<section class="slide level2">
+
+<p>The first concordance of the Hebrew Bible was written by a single
+person, Rabbi Mordecai Nathan, and was completed in 1448 after 10 years
+of work.</p>
+</section>
+<section class="slide level2">
+
+<p>It took me 10 minutes to find every occurrence of “this world” in the
+King James bible:</p>
+<pre><code>bigrams = []
+for i, val in enumerate(text2):
+    if val == &quot;world&quot;:
+        if text2[i-1] == &quot;this&quot;:
+            bigrams.append(str(&#39; &#39;.join(text2[i-5:i+5])))</code></pre>
+</section>
+<section class="slide level2">
+
+<p>Here are they are:</p>
+<pre><code>[&#39;for the children of this world are in their generation&#39;,
+ &#39;them, the children of this world marry, and are given&#39;,
+ &#39;hateth his life in this world shall keep it unto&#39;,
+ &#39;shall the prince of this world be cast out. &#39;,
+ &#39;should depart out of this world unto the father, having&#39;,
+ &#39;for the prince of this world cometh, and hath nothing&#39;,
+ &#39;because the prince of this world is judged.  16:12&#39;,
+ &#39;of the princes of this world knew: for had they&#39;,
+ &#39;for the wisdom of this world is foolishness with god.&#39;,
+ &#39;for the fashion of this world passeth away.  7:32&#39;,
+ &#39;whom the god of this world hath blinded the minds&#39;,
+ &#39;chosen the poor of this world rich in faith, and&#39;,
+ &#39;saying, the kingdoms of this world are become the kingdoms&#39;]</code></pre>
+</section>
+<section class="slide level2">
+
+<h4 id="interesting-comparisons">Interesting comparisons</h4>
+<pre><code>[&#39;for the children of this world are in their generation&#39;,
+ &#39;them, the children of this world marry, and are given&#39;,
+ &#39;hateth his life in this world shall keep it unto&#39;,
+ &#39;shall the prince of this world be cast out. &#39;,
+ &#39;should depart out of this world unto the father, having&#39;,
+ &#39;for the prince of this world cometh, and hath nothing&#39;,
+ &#39;because the prince of this world is judged.  16:12&#39;,
+ &#39;of the princes of this world knew: for had they&#39;,
+ &#39;for the wisdom of this world is foolishness with god.&#39;,
+ &#39;for the fashion of this world passeth away.  7:32&#39;,
+ &#39;whom the god of this world hath blinded the minds&#39;,
+ &#39;chosen the poor of this world rich in faith, and&#39;,
+ &#39;saying, the kingdoms of this world are become the kingdoms&#39;]</code></pre>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Excerpt_from_%22A_complete_concordance_to_the_Holy_Scriptures%22_by_Alexander_Cruden.png" width="40%"></p>
+</section>
+<section class="slide level2">
+
+<h4 id="algorithmic-thinking-find-musical-phrases">Algorithmic thinking:
+find musical phrases</h4>
+<p><img data-src="Images/MusicalPatterns.png" /></p>
+</section>
+<section class="slide level2">
+
+<h4 id="algorithmic-thinking-leads-to-ontological-thinking">Algorithmic
+thinking leads to <a
+href="https://en.wikipedia.org/wiki/Ontology">ontological</a>
+thinking</h4>
+<blockquote>
+<p>“the interest lies in the questions raised by such algorithmic
+thinking, especially by the inevitable mismatch between any algorithm
+and data of the sort normal to the humanities. This mismatch forces
+ontological questions that lead back to one or more fundamental problems
+in the discipline of origin and may at the same time illuminate basic
+methodological issues relevant beyond it.”</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h4
+id="metalinguistic-thinking-tagging-utterances-with-xml">Metalinguistic
+thinking: tagging utterances with XML</h4>
+<p>html:</p>
+<pre><code>I study at &lt;a href=&quot;https://www.au.dk&quot;&gt;Aarhus Universitet&lt;/a&gt;.
+</code></pre>
+<p>xml (source: http://www.talkbank.org)</p>
+<pre><code>  &lt;u who=&quot;MOT&quot; uID=&quot;u25&quot;&gt;
+    &lt;w&gt;what&lt;/w&gt;
+    &lt;w&gt;are&lt;/w&gt;
+    &lt;w&gt;these&lt;/w&gt;
+    &lt;t type=&quot;q&quot;&gt;&lt;/t&gt;
+
+    &lt;a type=&quot;coding&quot;&gt;$LAN:E $ADD:CHI&lt;/a&gt;
+  &lt;/u&gt;
+</code></pre>
+</section>
+<section class="slide level2">
+
+<h4 id="metalinguistic-thinking-leads-to-clear-thinking">Metalinguistic
+thinking leads to clear thinking</h4>
+<blockquote>
+<p>“deep encoding is very laborious, and it is precisely the kind of
+task in which the full range of scholarly abilities are required. It
+thus demonstrates that encoding can itself be a form of rather than
+preparation for scholarship. This new form is shaped by the two
+imperatives of computational tractability, namely <strong>total
+explicitness</strong> and <strong>absolute consistency.</strong>”</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h4
+id="representational-thinking-visualizing-authorial-voice">Representational
+thinking: visualizing authorial voice</h4>
+<p><img src="Images/AuthorshipAnalysis2.png" alt="" width="600"></p>
+</section>
+<section class="slide level2">
+
+<h4
+id="representational-thinking-visualizing-authorial-voice-1">Representational
+thinking: visualizing authorial voice</h4>
+<p><img src="Images/AuthorshipAnalysis.png" alt="" width="600"></p>
+</section>
+<section class="slide level2">
+
+<h4
+id="representational-thinking-leads-to-new-insights">Representational
+thinking leads to new insights</h4>
+<blockquote>
+<p>“… arranging, formatting, or otherwise transforming the appearance of
+data [leading to] what Arnheim has called ‘visual thinking’”</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<p>Computers are tools that encourage:</p>
+<ol type="1">
+<li>Algorithmic thinking<br />
+</li>
+<li>Metalinguistic thinking<br />
+</li>
+<li>Representational thinking</li>
+</ol>
+</section>
+<section class="slide level2">
+
 </section>
 <section class="slide level2">
 
