@@ -1,7 +1,5 @@
 
 
-
-
 # Experimental Psycholinguistics
 
 
