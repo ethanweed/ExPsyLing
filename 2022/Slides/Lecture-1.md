@@ -297,6 +297,18 @@ Computers are tools that encourage:
 ## References
 
 
+<font size="2"> 
+
+Burrows, J., & Craig, H. (2001). Lucy Hutchinson and the authorship of two seventeenth-century poems: a computational approach. _The Seventeenth Century_, _16_(2), 259-282.
+
+Cambouropoulos, E., Crawford, T., & Iliopoulos, C. S. (2001). Pattern processing in melodic sequences: Challenges, caveats and prospects. _Computers and the Humanities_, _35_(1), 9-21.
+
+McCarty, W. (2003). Humanities computing. _Encyclopedia of library and information science_, _2_, 1224.
+
+Paradis, J., Nicoladis, E., & Genesee, F. (2000) Early emergence of structural constraints on code-mixing: Evidence from French-English bilingual children. Bilingualism: Language and Cognition, 3: 245-261.
+
+</font>
+
 <div id = "refs">
 
 
@@ -305,5 +317,7 @@ Computers are tools that encourage:
 <em>IMAGES:</em>
 
 [Edward Hopper (1940) "Gas"](https://www.wikiart.org/en/edward-hopper/gas)
+
+[Herman Melville (1851) "Moby Dick, or, The Whale"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Moby-Dick_%281851%29_US_edition.djvu/page33-1024px-Moby-Dick_%281851%29_US_edition.djvu.jpg)
 
 </div>
