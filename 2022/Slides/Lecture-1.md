@@ -125,8 +125,6 @@ Pass/fail portfolio
 ---
 
 
----
-
 
 #### Humanities Computing
 
