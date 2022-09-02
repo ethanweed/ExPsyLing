@@ -122,9 +122,8 @@ Pass/fail portfolio
 
 # Humanities Computing
 
+---
 
-
-<img src="https://clipground.com/images/computer-help-clipart-5.jpg" width="40%">
 
 ---
 
