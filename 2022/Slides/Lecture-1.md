@@ -34,9 +34,10 @@ Hearing a backwards count interfered with my ability to count forwards.
 
 ### Observation 2
 
-Hearing other language does not interfere with my ability to count forwards.
 
 <img src="https://cdn.imgbin.com/1/8/14/imgbin-powerlifting-3ZUAsdgLH9dpFTdUx7dbeGEkH.jpg">
+
+Hearing other language does not interfere with my ability to count forwards.
 
 ---
 
