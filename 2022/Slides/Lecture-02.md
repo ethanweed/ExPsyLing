@@ -63,7 +63,7 @@
 ## What is "cognition"?
 
 <div id = "left">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="400"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="300" style="transform: scaleX(-1);">
 
 </div>
 
@@ -79,6 +79,29 @@
 
 
 </div>
+
+
+---
+
+## What is "psycholinguistics?"
+
+
+
+
+<div id = "right">
+- memory
+- attention
+- learning
+- perception
+- decision-making
+- language
+
+
+</div>
+
+
+
+
 
 
 ---
