@@ -27,6 +27,7 @@
 
 ---
 
+## [Wilhelm Wundt](https://en.wikipedia.org/wiki/Wilhelm_Wundt) (1832 – 1920)
 
 <div id = "left">
 
