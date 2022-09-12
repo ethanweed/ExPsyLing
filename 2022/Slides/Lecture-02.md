@@ -59,7 +59,24 @@
 
 <div id = "refs">
 
+Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
 
+Altmann, G. T. (2001). The language machine: Psycholinguistics in review. _British Journal of Psychology_, _92_(1), 129-170.
+
+Bayne, T., Brainard, D., Byrne, R. W., Chittka, L., Clayton, N., Heyes, C., ... & Webb, B. (2019). What is cognition?. _Current Biology_, _29_(13), R608-R615.
+	
+Chomsky, N. (1959) A Review of B. F. Skinner's _Verbal Behavior_. _Language, 35_(1), 26-58.
+
+Levelt, W. J. (2004). Speech, gesture and the origins of language. _European Review_, _12_(4), 543-549.
+
+Minsky, M. Logical vs. Analogical
+or Symbolic vs. Connectionist or Neat vs. Scruffy in _Artificial Intelligence at MIT, Expanding Frontiers,_ Patrick H. Winston (Ed.), Vol.1, MIT Press, 1990. https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html
+
+Rummelhart, D. E., McClelland, J. L., & PDP Research Group. (1986). Parallel distributed processing.
+	
+Skinner, B. F. (1957). _Verbal behavior_. New York: Appleton-Century-Crofts.
+
+Tomasello, M. (2009). _Constructing a language_. Harvard university press.
 
 
 </div>
