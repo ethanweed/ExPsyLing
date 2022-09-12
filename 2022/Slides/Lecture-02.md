@@ -83,7 +83,18 @@
 
 ---
 
-## What is "psycholinguistics?"
+# Psycholinguistics
+
+---
+
+## What is psycholinguistics?
+
+
+"[...] the study of the psychological processes involved in language" - Harley (2005)
+
+---
+
+## What are psychological processes?
 
 
 <div id = "left">
@@ -108,7 +119,28 @@
 
 ---
 
-[Dual-stream model](https://www.youtube.com/watch?v=uLUOzUYC3u4)of speech perception and production
+## Roots in computer science
+
+<div id = "left">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Turing_Machine_Model_Davey_2012.jpg/2880px-Turing_Machine_Model_Davey_2012.jpg" width="300"/>
+
+</div>
+
+
+
+<div id = "right">
+
+"Turing machine"
+Generative grammar
+
+</div>
+
+
+---
+
+
+Example: [Dual-stream model](https://www.youtube.com/watch?v=uLUOzUYC3u4) of speech
 
 <img src="https://www.researchgate.net/profile/Lisa_Knoll2/publication/270759528/figure/fig1/AS:669513162973206@1536635785559/Illustration-of-the-Dual-Stream-Model-Adopted-from-Hickok-and-Poeppel-2007-A.ppm" width=""/>
 
@@ -116,9 +148,6 @@
 ---
 
 
----
-
-# Topic 2
 
 ---
 
@@ -154,8 +183,11 @@ IMAGES:
 
 Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png
+Cognitive Models: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png
 
-https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg
+Phrenology: https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg
+
+Turing Machine Model: Rocky Acosta: https://en.wikipedia.org/wiki/Turing_machine#/media/File:Turing_Machine_Model_Davey_2012.jpg
+
 
 </div>
