@@ -31,7 +31,7 @@
 
 <div id = "left">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg"  width= 400>
 
 </div>
 
