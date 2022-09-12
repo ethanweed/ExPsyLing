@@ -58,6 +58,27 @@
 
 </div>
 
+---
+
+## What is "cognition"?
+
+<div id = "left">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+- memory
+- attention
+- learning
+- perception
+- decision-making
+- language
+
+
+</div>
 
 
 ---
@@ -76,8 +97,6 @@
 
 <div id = "refs">
 
-Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
-
 Altmann, G. T. (2001). The language machine: Psycholinguistics in review. _British Journal of Psychology_, _92_(1), 129-170.
 
 Bayne, T., Brainard, D., Byrne, R. W., Chittka, L., Clayton, N., Heyes, C., ... & Webb, B. (2019). What is cognition?. _Current Biology_, _29_(13), R608-R615.
@@ -95,5 +114,13 @@ Skinner, B. F. (1957). _Verbal behavior_. New York: Appleton-Century-Crofts.
 
 Tomasello, M. (2009). _Constructing a language_. Harvard university press.
 
+
+IMAGES:
+
+Abstruse Goose. The Sliver of Perception. https://abstrusegoose.com/421  
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png
+
+https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg
 
 </div>
