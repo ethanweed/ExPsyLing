@@ -47,6 +47,11 @@
 
 <div id = "left">
 
+https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg
+
+</div>
+
+<div id = "right">
 - What do we mean by "mind"?  
 - What is _not_ mind?  
 - What is a mental process?  
@@ -54,12 +59,6 @@
 </div>
 
 
-
-<div id = "right">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg" width="300"/>
-
-</div>
 
 ---
 
