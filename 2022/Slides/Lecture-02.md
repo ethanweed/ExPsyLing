@@ -133,6 +133,7 @@
 
 - "Turing machine"  
 - Generative grammar
+- Processor moving from one state to another
 
 </div>
 
