@@ -83,6 +83,25 @@
 
 ---
 
+## The [Jastrow illusion](https://en.wikipedia.org/wiki/Jastrow_illusion)
+
+<div id = "left">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Kaninchen_und_Ente.svg/2560px-Kaninchen_und_Ente.svg.png" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+
+- perception vs. interpretation  
+- categorization
+- Wittgenstein "see _that_" vs. "seeing _as_"
+
+</div>
+
+---
+
 # Psycholinguistics
 
 ---
