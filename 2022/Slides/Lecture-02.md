@@ -143,7 +143,7 @@
 
 <div id = "left">
 
-<img src="http://2.bp.blogspot.com/_g8QkxgLdUMM/THuEgzUl-7I/AAAAAAAAAA0/b_RP6Zk-miY/s1600/shannon.gif" width="400"/>
+<img src="http://2.bp.blogspot.com/_g8QkxgLdUMM/THuEgzUl-7I/AAAAAAAAAA0/b_RP6Zk-miY/s1600/shannon.gif" width="500"/>
 
 </div>
 
@@ -156,6 +156,32 @@
 - "the cat lapped up the saucer of _____"
 
 </div>
+
+---
+
+## Grows with computer theory
+
+
+Language: symbols or statistical probabilites?
+
+<img src="https://pngimg.com/uploads/apple/apple_PNG12442.png" width="100">
+
+
+<div id = "left">
+
+
+</div>
+
+
+
+<div id = "right">
+
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweb.media.mit.edu%2F~minsky%2Fpapers%2FSymbolicVs.Connectionist_files%2Fimage012.png&f=1&nofb=1" width="800">
+
+</div>
+
+
+
 
 ---
 
