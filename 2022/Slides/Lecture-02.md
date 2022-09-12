@@ -54,7 +54,7 @@
 <div id = "right">
 - What do we mean by "mind"?  
 - What is _not_ mind?  
-- What is the ontological state of "mind"?
+- What is the _[ontological status](https://en.wikipedia.org/wiki/Ontology#Ontology_and_language)_ of "mind"?
 
 </div>
 
