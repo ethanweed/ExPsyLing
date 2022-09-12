@@ -118,12 +118,6 @@ Motor-->RT
 
 ---
 
-```python
-
-print("Hello word")
-
-
-```
 
 ---
 
