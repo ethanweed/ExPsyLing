@@ -108,12 +108,9 @@
 
 ---
 
+[Dual-stream model](https://www.youtube.com/watch?v=uLUOzUYC3u4)
 
-~~~mermaid
-graph BT
-Cognition-->RT
-Motor-->RT
-~~~
+<img src="https://www.researchgate.net/profile/Lisa_Knoll2/publication/270759528/figure/fig1/AS:669513162973206@1536635785559/Illustration-of-the-Dual-Stream-Model-Adopted-from-Hickok-and-Poeppel-2007-A.ppm" width=""/>
 
 
 ---
