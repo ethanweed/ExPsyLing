@@ -137,6 +137,25 @@
 
 </div>
 
+---
+
+## Roots in information theory
+
+<div id = "left">
+
+<img src="http://2.bp.blogspot.com/_g8QkxgLdUMM/THuEgzUl-7I/AAAAAAAAAA0/b_RP6Zk-miY/s1600/shannon.gif" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+- probability  
+- redundancy  
+- liklihood of moving one state to another (e.g. in a sentence)  
+- "the cat lapped up the saucer of _____"
+
+</div>
 
 ---
 
