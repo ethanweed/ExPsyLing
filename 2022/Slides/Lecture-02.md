@@ -63,7 +63,7 @@
 ## What is "cognition"?
 
 <div id = "left">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="300" style="transform: scaleX(-1);">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="350" style="transform: scaleX(-1);">
 
 </div>
 
@@ -86,15 +86,21 @@
 ## What is "psycholinguistics?"
 
 
+<div id = "left">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="350" style="transform: scaleX(-1);">
 
+
+</div>
 
 <div id = "right">
-- memory
-- attention
-- learning
-- perception
-- decision-making
-- language
+- 1st language acquisition
+- 2nd (or more) language acquisition
+- production of language
+- perception of language
+- semantic representation
+- sytactic parsing
+- reading
+- etc...
 
 
 </div>
