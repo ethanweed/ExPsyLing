@@ -17,7 +17,7 @@
 
 ---
 
-# Mind vs. behavior
+# Mind
 
 ---
 
