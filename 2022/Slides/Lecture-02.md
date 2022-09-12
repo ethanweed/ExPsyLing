@@ -27,6 +27,23 @@
 
 ---
 
+
+<div id = "left">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wilhelm_Wundt.jpg/440px-Wilhelm_Wundt.jpg">
+
+</div>
+
+
+
+<div id = "right">
+
+"For Wundt \[...] the principal aim \[of psycholinguistics is] to explain spoken language and languages as a spontaneous product of consciousness, as an expression of mind." (Levelt, 2004)
+
+</div>
+
+---
+
 # Topic 2
 
 ---
