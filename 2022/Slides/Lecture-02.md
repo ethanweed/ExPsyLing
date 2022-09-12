@@ -47,7 +47,7 @@
 
 <div id = "left">
 
-https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Phrenology1.jpg" width="400"/>
 
 </div>
 
