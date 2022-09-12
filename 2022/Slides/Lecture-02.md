@@ -162,14 +162,11 @@
 ## Grows with computer theory
 
 
-Language: symbols or statistical probabilites?
-
-
 
 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweb.media.mit.edu%2F~minsky%2Fpapers%2FSymbolicVs.Connectionist_files%2Fimage012.png&f=1&nofb=1" width="800">
 
 
-
+---
 
 
 
