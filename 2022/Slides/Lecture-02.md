@@ -96,7 +96,7 @@
 
 - perception vs. interpretation  
 - categorization
-- Wittgenstein "see _that_" vs. "seeing _as_"
+- Wittgenstein: "see _that_" vs. "seeing _as_"
 
 </div>
 
