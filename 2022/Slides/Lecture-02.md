@@ -168,10 +168,7 @@
 
 ---
 
-
-
----
-
+## But still loves boxes and arrows!
 
 Example: [Dual-stream model](https://www.youtube.com/watch?v=uLUOzUYC3u4) of speech
 
