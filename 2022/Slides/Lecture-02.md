@@ -17,7 +17,7 @@
 
 ---
 
-# Mental processes vs. behavior
+# Mind vs. behavior
 
 ---
 
