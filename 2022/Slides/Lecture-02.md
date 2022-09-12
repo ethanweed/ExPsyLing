@@ -98,7 +98,7 @@
 
 
 <div id = "left">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="350" style="transform: scaleX(-1);">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RobertFuddBewusstsein17Jh.png/800px-RobertFuddBewusstsein17Jh.png" width="300" style="transform: scaleX(-1);">
 
 
 </div>
@@ -131,8 +131,8 @@
 
 <div id = "right">
 
-"Turing machine"
-Generative grammar
+- "Turing machine"  
+- Generative grammar
 
 </div>
 
