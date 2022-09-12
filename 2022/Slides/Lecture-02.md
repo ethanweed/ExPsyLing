@@ -54,7 +54,7 @@
 <div id = "right">
 - What do we mean by "mind"?  
 - What is _not_ mind?  
-- What is a mental process?  
+- What is the ontological state of "mind"?
 
 </div>
 
