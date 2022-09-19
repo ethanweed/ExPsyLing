@@ -79,8 +79,12 @@ Hoover & Gough (1990)
 ## Decoding
 
 
+<div id = "left">
 
-C        A        T
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/brain-reading-moby-dick.png?raw=true" width="500"/>
+
+</div>
+
 
 
 
