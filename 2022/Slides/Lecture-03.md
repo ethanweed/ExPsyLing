@@ -32,7 +32,7 @@
 
 <div id = "right">
 
-<img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="400"/>
+<img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="300"/>
 
 </div>
 
