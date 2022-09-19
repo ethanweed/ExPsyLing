@@ -163,9 +163,27 @@ Hoover & Gough (1990)
 
 <h3 style="font-size: 4rem; color: blue">YELLOW</h3>
 
+---
 
-## Lexical Decision Task
 
+## Lexical Decision Tasks
+
+
+<div id = "left">
+
+<h3 style="font-size: 4rem; color: black">NURSE</h3>
+
+</div>
+
+
+
+<div id = "right">
+
+<h3 style="font-size: 4rem; color: black">MURSE</h3>
+
+</div>
+
+---
 
 
 ## Priming effects
