@@ -169,15 +169,7 @@ Hoover & Gough (1990)
 ## Lexical Decision Tasks
 
 
-<div id = "left">
-
-<h3 style="font-size: 4rem; color: black">NURSE</h3>
-<h3 style="font-size: 4rem; color: black">MURSE</h3>
-
-
-</div>
-
-
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs41155-018-0093-0/MediaObjects/41155_2018_93_Fig1_HTML.png?as=webp" width="500"/>
 
 
 
