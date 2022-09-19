@@ -149,16 +149,19 @@ Hoover & Gough (1990)
 
 ## Naming
 
-```html
-
-<p style="background-color:Tomato;">
-
-```
 
 
-YELLOW  
-BLUE  
-GREEN  
+
+<h3 style="font-size: 4rem; color: green">RED</h3>
+
+<h3 style="font-size: 4rem; color: red">BLUE</h3>
+
+
+<h3 style="font-size: 4rem; color: yellow">GREEN</h3>
+
+
+<h3 style="font-size: 4rem; color: blue">YELLOW</h3>
+
 
 ## Lexical Decision Task
 
