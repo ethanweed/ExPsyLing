@@ -120,7 +120,7 @@ Hoover & Gough (1990)
 ---
 
 
-## Discourse (Reading) Comprehension
+## Discourse Comprehension
 
 
 
@@ -149,6 +149,12 @@ Hoover & Gough (1990)
 
 ## Naming
 
+
+<p style="background-color:Tomato;">RED </p>
+
+YELLOW  
+BLUE  
+GREEN  
 
 ## Lexical Decision Task
 
