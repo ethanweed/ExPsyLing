@@ -87,7 +87,11 @@ Hoover & Gough (1990)
 
 
 
+<div id = "right">
 
+<img src="https://raw.githubusercontent.com/ethanweed/ExPsyLing/209919b49ba9aef74b03ead11ef453c7c415374d/2022/Resources/whale.png" width="400"/>
+
+</div>
 
 ---
 
