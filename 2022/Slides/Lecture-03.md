@@ -178,10 +178,16 @@ Hoover & Gough (1990)
 
 ## Priming effects
 
+- Repetition priming
+- Semantic priming
+- Neighborhood effects
+- Backwards priming
+
+## Working Memory
 
 
-## Models of VWR
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600"/>
 
 
 
@@ -198,7 +204,16 @@ Hoover & Gough (1990)
 
 <div id = "refs">
 
+Baddeley, A. (2000). The episodic buffer: a new component of working memory?. _Trends in cognitive sciences_, _4_(11), 417-423.
+
 Dehaene, S., & Cohen, L. (2011). The unique role of the visual word form area in reading. _Trends in cognitive sciences_, _15_(6), 254-262.
 
+Hoover, W. A., & Gough, P. B. (1990). The simple view of reading. Reading and writing, 2(2), 127-160.
+
+•IMAGES
+
+•Illustration from Moby Dick: https://i.pinimg.com/originals/71/a8/21/71a821afa84348ee18bfc41d63ccf0d5.jpg
+
+•Page from Moby Dick (1892): https://www.loc.gov/resource/gdcmassbookdig.mobydickorwhitew00melv_1/?sp=14&r=-0.938,-0.046,2.875,1.857,0
 
 </div>
