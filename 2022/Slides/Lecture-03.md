@@ -67,6 +67,10 @@ Dehaene & Cohen (2011)
 
 ## Simple View of Reading
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Hoover-Gough-SVR.png?raw=true" width="600"/>
+
+Hoover & Gough (1990)
+
 
 
 ---
