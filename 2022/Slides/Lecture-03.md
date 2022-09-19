@@ -58,7 +58,8 @@
 
 ## Visual Word Form Area
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene-Cohen_2011_VWFA.png?raw=true" width="600"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene-Cohen_2011_VWFA.png?raw=true" width="700"/>
+Dehaene & Cohen (2011)
 
 ---
 
@@ -117,7 +118,7 @@
 
 <div id = "refs">
 
-
+Dehaene, S., & Cohen, L. (2011). The unique role of the visual word form area in reading. _Trends in cognitive sciences_, _15_(6), 254-262.
 
 
 </div>
