@@ -120,13 +120,19 @@ Hoover & Gough (1990)
 ---
 
 
-## Structure-building
+## Discourse (Reading) Comprehension
 
 
+- Structure-building
+- Situation models
+- Relies on world knowledge
+- Relies on memory
 
+<div id = "left">
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/brain-reading-moby-dick.png?raw=true" width="500"/>
 
-
+</div>
 
 ---
 
