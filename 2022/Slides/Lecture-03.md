@@ -79,6 +79,15 @@ Hoover & Gough (1990)
 ## Decoding
 
 
+
+C        A        T
+
+
+
+
+---
+
+
 ## Linguistic comprehension
 
 
