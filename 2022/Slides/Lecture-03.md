@@ -172,16 +172,14 @@ Hoover & Gough (1990)
 <div id = "left">
 
 <h3 style="font-size: 4rem; color: black">NURSE</h3>
-
-</div>
-
-
-
-<div id = "right">
-
 <h3 style="font-size: 4rem; color: black">MURSE</h3>
 
+
 </div>
+
+
+
+
 
 ---
 
