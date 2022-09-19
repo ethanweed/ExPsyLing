@@ -21,7 +21,6 @@
 
 ## A sixth sense
 
----
 
 <div id = "left">
 
