@@ -40,7 +40,18 @@
 ---
 
 
+<div id = "left">
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/brain-reading-moby-dick.png?raw=true" width="300"/>
+
+</div>
+
+
+<div id = "right">
+
+<img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="300"/>
+
+</div>
 
 ---
 
