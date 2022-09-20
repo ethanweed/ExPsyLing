@@ -147,6 +147,23 @@ Hoover & Gough (1990)
 
 # Visual Word Recognition
 
+---
+
+
+<div id = "left">
+
+Monkey
+
+</div>
+
+
+
+<div id = "right">
+
+Xiraffe
+
+</div>
+
 
 ---
 
