@@ -1,4 +1,4 @@
-# Title
+# Reading
 
 ---
 
@@ -8,9 +8,10 @@
 
 ## Quiz
 
-1.
-2.
-3.
+1. What is "cognition"?  
+2. What are some examples of "cognitive processes"?
+3. What problems or challenges did you run into in the last lab assignment?
+
 
 ---
 
