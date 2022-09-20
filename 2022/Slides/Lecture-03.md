@@ -149,21 +149,10 @@ Hoover & Gough (1990)
 
 ---
 
-
-<div id = "left">
-
-<p style = text-align: center>Monkey</p>
-
-</div>
-
-
-
-<div id = "right">
-
-Xiraffe
-
-</div>
-
+MONKEY  
+XIRAFFE  
+SHUNGT
+TZQIPYT
 
 ---
 
