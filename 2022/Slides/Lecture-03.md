@@ -173,7 +173,8 @@ GIANT
 
 ## Measuring visual word recognition
 
-
+1. Naming tasks
+2. Lexical decision tasks
 
 ---
 
