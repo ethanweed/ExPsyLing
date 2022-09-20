@@ -10,7 +10,8 @@
 
 1. What is "cognition"?  
 2. What are some examples of "cognitive processes"?
-3. What problems or challenges did you run into in the last lab assignment?
+3. Why did early psychologists love illusions?
+4. What problems or challenges did you run into in the last lab assignment?
 
 
 ---
@@ -175,6 +176,7 @@ GIANT
 
 1. Naming tasks
 2. Lexical decision tasks
+
 
 ---
 
