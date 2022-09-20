@@ -151,7 +151,7 @@ Hoover & Gough (1990)
 
 MONKEY  
 XIRAFFE  
-SHUNGT
+SHUNGT  
 TZQIPYT
 
 ---
