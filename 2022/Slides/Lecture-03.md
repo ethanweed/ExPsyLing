@@ -149,10 +149,24 @@ Hoover & Gough (1990)
 
 ---
 
+## Text strings
+
 MONKEY  
 XIRAFFE  
 SHUNGT  
 TZQIPYT
+
+---
+
+## Text strings
+
+
+ANTIDISESTABLISHMENTARIANISM  
+SUPERCALIFRAGILISTICEXPIALIDOCIOUS  
+[PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS](https://en.wikipedia.org/wiki/Pneumonoultramicroscopicsilicovolcanoconiosis)
+DOG  
+CAT  
+GIANT  
 
 ---
 
