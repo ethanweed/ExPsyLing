@@ -139,6 +139,7 @@ Hoover & Gough (1990)
 - Situation models
 - Relies on world knowledge
 - Relies on memory
+- Relies on attention
 
 </div>
 
