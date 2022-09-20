@@ -168,6 +168,13 @@ DOG
 CAT  
 GIANT  
 
+
+---
+
+## Measuring visual word recognition
+
+
+
 ---
 
 ## Naming Tasks
