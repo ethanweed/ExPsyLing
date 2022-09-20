@@ -105,7 +105,8 @@ Hoover & Gough (1990)
 - Syntax  
 - Morphology  
 - Semantics  
-	
+- (World knowledge)
+- (Literary knowledge)
 
 </div>
 
