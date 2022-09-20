@@ -152,7 +152,7 @@ Hoover & Gough (1990)
 
 <div id = "left">
 
-Monkey
+<p style = text-align: center>Monkey</p>
 
 </div>
 
