@@ -10,7 +10,7 @@
 
 1. What is "cognition"?  
 2. What are some examples of "cognitive processes"?
-3. Why did early psychologists love illusions?
+3. Why did early psychologists like Wundt love illusions?
 4. What problems or challenges did you run into in the last lab assignment?
 
 
