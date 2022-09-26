@@ -68,7 +68,7 @@
 
 ### Predictions
 
-<div id = "left">
+
 
 ```{.mermaid format=svg  theme=neutral}
 graph LR
@@ -78,7 +78,7 @@ B --> C("Hear" the word)
 ```
 
 
-</div>
+
 
 
 ---
