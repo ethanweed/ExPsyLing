@@ -103,12 +103,12 @@ D --> E("Hear" the word)
 ### Predictions from the model
 
 <div id = "left">
-::: {.incremental}
 
-Because we segment words into graphemes to convert them into phonemes, it should take...  
-longer to read a longer word than it takes to read a shorter word
+```{.mermaid format=svg theme=neutral width=400} 
+graph LR
+A(grapheme-phoneme conversion time)-->B(reading time)
 
-:::
+```
 
 </div>
 
@@ -123,6 +123,16 @@ D --> E("Hear" the word)
 
 ```
 </div>
+
+
+---
+
+Model 1: "Phonological reading" model
+
+Predicts: It will take longer to read longer words
+
+---
+
 
 
 ---
