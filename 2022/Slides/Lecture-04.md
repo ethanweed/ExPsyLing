@@ -172,6 +172,13 @@ A(See word) -->B(Segment graphemes)
 ---
 
 
+<div id = "right">
+Statistical model
+
+Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
+
+</div>
+
 ---
 
 # Variables
