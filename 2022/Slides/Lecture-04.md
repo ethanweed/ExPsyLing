@@ -70,7 +70,7 @@
 
 
 
-```{.mermaid format=svg  theme=neutral}
+```{.mermaid format=svg  theme=neutral width=400}
 graph TB
 A(Recognize graphemes) --> B(Convert graphemes to phonemes)
 B --> C("Hear" the word)
