@@ -130,23 +130,19 @@ D --> E("Hear" the word)
 ---
 
 <div id = "left">
+Causal model
+```{.mermaid format=svg theme=forest width=400} 
+graph LR
+A(grapheme-phoneme conversion time)-->B(reading time)
 
-Prediction:
-
-It will take longer to read longer words
+```
 
 </div>
 
 <div id = "right">
-Model 1: "Phonological reading" model
-```{.mermaid format=svg  theme=neutral width=400 }
-graph TB
-A(See word) -->B(Segment graphemes)
-B-->C(Recognize graphemes) 
-C-->D(Convert graphemes to phonemes)
-D --> E("Hear" the word)
 
-```
+Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
+
 </div>
 
 ---
