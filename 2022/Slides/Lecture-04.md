@@ -370,13 +370,12 @@ Research question
 <div id = "left">
 
 ```{.mermaid format=svg theme=forest width=400} 
-subgraph 2
 graph TB
+subgraph 2
 A(grapheme-phoneme conversion time)-->B(reading time)
 end
 
 subgraph 2
-graph TB
 A(predictor variable)-->B(outcome measure)
 end
 
