@@ -168,6 +168,7 @@ A(See word) -->B("Hear" the word)
 
 </div>
 
+
 ---
 
 ### Predictions from the model
@@ -184,7 +185,7 @@ B(reading time)
 </div>
 
 <div id = "right">
-Statistical model
+Statistical model  
 
 Response time in a lexical decision task will neither increase nor decrease with the number of letters in the stimulus word
 
