@@ -372,12 +372,12 @@ Research question
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
 
-subgraph cognitive model
+subgraph  cognitive model
 A(grapheme-phoneme conversion time)-->B(reading time)
 end
 
 subgraph statistical model
-A(predictor variable)-->B(outcome measure)
+C(predictor variable)-->E(outcome measure)
 end
 
 ```
