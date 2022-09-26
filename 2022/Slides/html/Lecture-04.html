@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>metadata</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: 1;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/white.css" id="theme">
+  
+
+
+  <style>
+
+  .reveal h1 { font-size: 2.5em; }
+
+
+  #left {
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+
+  }
+
+  #right {
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;	
+  }
+
+  #left_border {
+  	padding: 10px;
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+  	border: 1px solid #000000;
+            border-radius: 10px;
+  }
+
+  #right_border {
+  	padding: 10px;
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #left_border_small {
+  	padding: 5px;
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+  	border: 1px solid #000000;
+            border-radius: 10px;
+  }
+
+  #right_border_small {
+  	padding: 5px;
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #center_border {
+  	display: inline-block;
+  	padding: 1em;
+  	justify-content: center;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #refs {
+  	display: inline-block;
+  	justify-content: left;
+  	text-align: left;
+  	z-index:-10;
+  	width:90%;
+  	font-size: small;
+  	line-height: 1.5;	
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="experimental-design" class="title-slide slide level1">
+<h1>Experimental Design</h1>
+
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="review" class="title-slide slide level1">
+<h1>Review</h1>
+
+</section>
+<section id="quiz" class="slide level2">
+<h2>Quiz</h2>
+<ol type="1">
+<li>According to the Simple View of Reading, what are the two basic
+components of reading, and how are the related?</li>
+<li>Which two “natural” senses did I claim reading combines, to form a
+“sixth sense”?</li>
+<li>What do psycholinguists mean by “visual word recognition”, and what
+are some of the factors than can affect it?</li>
+</ol>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="cause-and-effect" class="title-slide slide level1">
+<h1>Cause and effect</h1>
+
+</section>
+<section class="slide level2">
+
+<p>What causes this to happen?</p>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/brain-reading-moby-dick.png?raw=true" width="500"/></p>
+</div>
+<div id="right">
+<p><img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="300"/></p>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="variables" class="title-slide slide level1">
+<h1>Variables</h1>
+
+</section>
+<section class="slide level2">
+
+<h3 id="scales-of-measurement">Scales of measurement</h3>
+<div class="container">
+<div class="col">
+<p><img
+data-src="https://lh4.googleusercontent.com/ZdmcnWR6MhAj9Cg_vI3Ip-XB-XdJbTtblvOobiF0lAerSgiBbpG_EhevI-jY28-RSMKLrJE2TG3YLDAGRuM9kJDJKCbDI6472EgptiqDU_7ovNUrv1RzyZWVozU62mbDO7PifSBFUY0=s0" /></p>
+</div>
+<div class="col">
+<ul>
+<li><strong>Nominal</strong>: names (no calculations)<br />
+</li>
+<li><strong>Ordinal:</strong> order (no calculations)<br />
+</li>
+<li><strong>Ratio:</strong> (0=0; mulitiplication and division ok)<br />
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="scales-of-measurement-1">Scales of measurement</h3>
+<div class="container">
+<div class="col">
+<p><img src="https://lh3.googleusercontent.com/JOTbMGt8Z7rIz3ShSO2bwOzFqWdeOtHl_t3n0wFSELp00CPP3CaJ0R4EZJ1Lu-_YGxY1091TvkAX7VkC7IWSPkllnjnBQZynATtCTP4wMx-Z-Cu0Uga8LiNQ56h92gYUOuC7hGk85JY=s0" width=300 style="transform:rotate(180deg);"></p>
+</div>
+<div class="col">
+<p><strong>Interval</strong>:</p>
+<ul>
+<li>differences between numbers meaningful<br />
+</li>
+<li>zero ≠ zero</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="continuous-versus-discrete-variables">Continuous versus discrete
+variables</h3>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+</th>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+continuous
+</th>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+discrete
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+nominal
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+ordinal
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+interval
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+ratio
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+✓
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Possible combinations</em></p>
+</section>
+<section class="slide level2">
+
+<h4 id="data-types">Data types</h4>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:inherit;border-style:solid;border-width:1px;color:#333333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span style="font-weight:normal">Year</span>
+</th>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Freshness</span>
+</th>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">BoxOffice</span>
+</th>
+<th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">MovieTitle</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2009</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.33</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">146.3</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Paul
+Blart: Mall Cop</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2009</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.68</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">51.8</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Funny
+People</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2010</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.1</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">162</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Grown
+Ups</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2011</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.19</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">103</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Just Go
+with It</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2011</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.14</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">80.4</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Zookeeper</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2011</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.03</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">74.2</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Jack and
+Jill</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2011</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2.3</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Bucky
+Larson: Born to Be a Star</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2012</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.44</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">148.3</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Hotel
+Transylvania</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2012</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.2</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">36.9</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">That’s My
+Boy</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2013</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.07</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">133.7</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Grown Ups
+2</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2014</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.14</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">46.3</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Blended</span>
+</td>
+</tr>
+<tr>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">2015</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">0.06</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">69.3</span>
+</td>
+<td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+<span
+style="font-weight:400;font-style:normal;text-decoration:none">Paul
+Blart: Mall Cop 2</span>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<h4 id="the-role-of-variables-predictors-and-outcomes">The “role” of
+variables: predictors and outcomes</h4>
+<table style="border-collapse:collapse;border-spacing:0" class="tg">
+<thead>
+<tr>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+ROLE OF THE VARIABLE
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+CLASSICAL NAME
+</th>
+<th style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+MODERN NAME
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+to be explained
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+dependent variable (DV)
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+outcome (response)
+</td>
+</tr>
+<tr>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+to do the explaining
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+independent variable (IV)
+</td>
+<td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal">
+predictor
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<h4 id="predictor-vs-outcome-measures">Predictor vs Outcome
+Measures</h4>
+<p><img src="https://lh3.googleusercontent.com/2qf96oYbtsgxZBOaaHUcUVsUXzfMd3NenspyKJwz2MPkbuYi5zTLJr6o7TThsSsz86Fk4VFt9LihCCFmSxjYGc499RiNwyM1F-7tPElGQPRukwFNDbjaReXSA676mw3vPPsiUt9IUWU=s0" width="500"></p>
+</section>
+<section class="slide level2">
+
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="experimental-design-1" class="title-slide slide level1">
+<h1>Experimental Design</h1>
+
+</section>
+<h4 id="experimental-design-2">Experimental Design</h4>
+<p><img src="https://lh5.googleusercontent.com/wOGT16KzzKxooBeCbWM7F2ryeH1sIlBdR8hAerqNOJWrJ-0JaZ6zVS-TPXg0L5tnh30PofFwg1y9EgArG8Sod5-2fWcN9bCsTgZorirBEufN4DEH6fyq1IYqzOu1Dl23Pf0XD91bjiA=s0" width="550"></p>
+<section class="slide level2">
+
+<p><strong>A theoretical construct</strong> is the thing that you’re
+trying to take a measurement of, like “age”, “gender” or an “opinion”. A
+theoretical construct can’t be directly observed, and often they’re
+actually a bit vague.</p>
+</section>
+<section class="slide level2">
+
+<p><strong>A measure</strong> refers to the method or the tool that you
+use to make your observations. A question in a survey, a behavioural
+observation or a brain scan could all count as a measure.</p>
+</section>
+<section class="slide level2">
+
+<p><strong>An operationalisation</strong> refers to the logical
+connection between the measure and the theoretical construct, or to the
+process by which we try to derive a measure from a theoretical
+construct.</p>
+</section>
+<section class="slide level2">
+
+<p><strong>A variable</strong> is what we end up with when we apply our
+measure to something in the world. That is, variables are the actual
+“data” that we end up with in our data sets.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="operationalisation">Operationalisation:</h3>
+<h4 id="define-your-measurement">Define your measurement</h4>
+<div>
+<ul>
+<li class="fragment">Be precise about what you are trying to measure.
+<ul>
+<li class="fragment">What is the relevant unit of “age” for your
+experiment?</li>
+<li class="fragment">What does it mean for a participant to “have
+dyslexia”?</li>
+<li class="fragment">What do we mean when we say a participant “likes”
+something?</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="operationalisation-1">Operationalisation:</h3>
+<h4 id="define-your-measurement-1">Define your measurement</h4>
+<div>
+<ul>
+<li class="fragment">Determine what method you will use to measure what
+you want to measure.
+<ul>
+<li class="fragment">Age: Self-report? Parental report? How will you
+phrase the question?</li>
+<li class="fragment">Liking: Self-report? Response time? Eye-tracking?
+Forced choice?</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="operationalisation-2">Operationalisation:</h3>
+<h4 id="define-your-measurement-2">Define your measurement</h4>
+<div>
+<ul>
+<li class="fragment">Define the set of the allowable values that the
+measurement can take.
+<ul>
+<li class="fragment">Response time: how precise?</li>
+<li class="fragment">Accuracy: how will measure accuracy?</li>
+<li class="fragment">Labels: how many? which?</li>
+<li class="fragment">Written responses: how will you code them?</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="references" class="title-slide slide level1">
+<h1>References</h1>
+
+</section>
+<section id="references-1" class="slide level2">
+<h2>References</h2>
+<div id="refs" role="doc-bibliography">
+
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
