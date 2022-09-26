@@ -176,7 +176,7 @@ A(See word) -->B(Segment graphemes)
 ```{.mermaid format=svg theme=forest width=400} 
 graph LR
 A(grapheme phoneme conversion) B(reading time)
-B
+
 
 ```
 
