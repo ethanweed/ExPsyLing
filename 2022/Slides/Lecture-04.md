@@ -104,7 +104,7 @@ D --> E("Hear" the word)
 
 <div id = "left">
 
-```{.mermaid format=svg theme=neutral width=400} 
+```{.mermaid format=svg theme=forest width=400} 
 graph LR
 A(grapheme-phoneme conversion time)-->B(reading time)
 
@@ -114,7 +114,7 @@ A(grapheme-phoneme conversion time)-->B(reading time)
 
 <div id = "right">
 
-```{.mermaid format=svg  theme=dark width=400 }
+```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
 A(See word) -->B(Segment graphemes)
 B-->C(Recognize graphemes) 
