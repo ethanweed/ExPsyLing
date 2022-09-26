@@ -20,16 +20,23 @@
 
 ### What causes this to happen?
 
+
 <div id = "left">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/brain-reading-moby-dick.png?raw=true" width="500"/>
-
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull.png?raw=true" width="300"/>
 </div>
+
 
 
 <div id = "right">
 
-<img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="300"/>
+::: {.incremental}
+
+- What "causes" this to happen?
+- What is the underlying mechansim?
+- How does this work?
+
+:::
 
 </div>
 
