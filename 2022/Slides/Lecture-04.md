@@ -55,8 +55,8 @@
 
 ::: {.incremental}
 
-1. We look at each letter in turn, then assemble them into a word
-2. We just look at the word, and know what it is
+1. We look at each letter in turn, and then combine the "sounds" to make the word
+2. We just look at the word, and hear the sound
 
 :::
 
