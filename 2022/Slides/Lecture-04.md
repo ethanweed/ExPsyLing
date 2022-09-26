@@ -71,9 +71,10 @@
 <div id = "left">
 
 ```{.mermaid format=svg  theme=neutral}
-graph RL
-Letters-->Grapheme-Phoneme Conversion
-Grapheme-Phoneme Conversion-->We "hear" the word
+graph LR
+A(Recognize graphemes) --> B(Convert graphemes to phonemes)
+B --> C("Hear" the word)
+
 ```
 
 
