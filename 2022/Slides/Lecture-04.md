@@ -173,7 +173,7 @@ A(See word) -->B(Segment graphemes)
 
 
 <div id = "left">
-```{.mermaid format=svg theme=forest width=400 stroke-width=4px} 
+```{.mermaid format=svg theme=forest width=400 stroke-width=0px} 
 graph LR
 A(grapheme phoneme conversion)-->B(reading time)
 
