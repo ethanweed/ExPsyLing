@@ -194,8 +194,10 @@ Response time in a lexical decision task will neither increase nor decrease with
 
 ### So many assumptions!!
 
-
-
+- Potential differences in reading time will be measureable
+- If there is a relationship beween grapheme-phoneme-conversion time and RT it will be linear
+- No other factors are relevant
+- etc.
 
 ---
 
