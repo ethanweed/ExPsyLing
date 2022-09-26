@@ -66,7 +66,7 @@
 
 ---
 
-### Predictions
+### A cognitive model
 
 
 
@@ -82,7 +82,7 @@
 <div id = "right">
 
 
-```{.mermaid format=svg  theme=neutral width=400}
+```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
 A(See word) -->B(Segment graphemes)
 B-->C(Recognize graphemes) 
@@ -95,6 +95,33 @@ D --> E("Hear" the word)
 
 
 
+</div>
+
+
+---
+
+### Predictions from the model
+
+<div id = "left">
+::: {.incremental}
+
+Because we segment words into graphemes to convert them into phonemes, it should take...  
+longer to read a longer word than it takes to read a shorter word
+
+:::
+
+</div>
+
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(See word) -->B(Segment graphemes)
+B-->C(Recognize graphemes) 
+C-->D(Convert graphemes to phonemes)
+D --> E("Hear" the word)
+
+```
 </div>
 
 
