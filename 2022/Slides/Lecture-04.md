@@ -357,6 +357,37 @@ _Possible combinations_
 
 ---
 
+<div id = "left">
+
+Research question
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
+
+</div>
+
+
+
+<div id = "left">
+
+```{.mermaid format=svg theme=forest width=400} 
+subgraph 2
+graph TB
+A(grapheme-phoneme conversion time)-->B(reading time)
+end
+
+subgraph 2
+graph TB
+A(predictor variable)-->B(outcome measure)
+end
+
+```
+
+</div>
+
+
+
+---
+
 
 # References
 
