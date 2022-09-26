@@ -18,7 +18,7 @@
 
 ---
 
-What causes this to happen?
+### What causes this to happen?
 
 <div id = "left">
 
@@ -32,6 +32,10 @@ What causes this to happen?
 <img src="http://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:mobydickorwhitew00melv_1:mobydickorwhitew00melv_1_0014/full/pct:100.0/0/default.jpg" width="300"/>
 
 </div>
+
+---
+
+
 
 ---
 
