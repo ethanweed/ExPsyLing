@@ -171,25 +171,6 @@ A(See word) -->B("Hear" the word)
 
 ---
 
-### Predictions from the model
-
-<div id = "left">
-Causal model
-```{.mermaid format=svg theme=forest width=400} 
-graph LR
-A(grapheme-phoneme conversion time) 
-B(reading time)
-
-```
-
-</div>
-
-<div id = "right">
-Statistical model  
-
-Response time in a lexical decision task will neither increase nor decrease with the number of letters in the stimulus word
-
-</div>
 
 ---
 
