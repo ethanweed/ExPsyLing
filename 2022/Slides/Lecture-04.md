@@ -66,11 +66,17 @@
 
 ---
 
+<div id = "left">
+
 ```mermaid
 graph BT
 Cognition-->RT
 Motor-->RT
 ```
+
+
+</div>
+
 
 ---
 
