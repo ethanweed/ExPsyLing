@@ -164,7 +164,7 @@ Cognitive model
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
-A(See word) -->B("Hear" the word)
+A(See word) -->B(Hear the word)
 
 </div>
 
