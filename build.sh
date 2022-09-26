@@ -8,7 +8,7 @@ pandoc --standalone /Users/ethan/Documents/GitHub/ExPsyLing/2022/Syllabus-2022.m
 
 cd /Users/ethan/Documents/GitHub/ExPsyLing/2022/Slides/
 
-for i in *.md ; do echo "$i" && pandoc metadata.yaml -s -t revealjs -s -V revealjs-url=https://unpkg.com/reveal.js/  --include-in-header=styles.css $i --filter mermaid-filter -o html/"${i%.*}".html; done
+for i in *.md ; do echo "$i" && pandoc metadata.yaml -s -t revealjs -s -V revealjs-url=https://unpkg.com/reveal.js/  --include-in-header=styles.css $i --filter pandoc-mermaid-filter -o html/"${i%.*}".html; done
 
 
 
