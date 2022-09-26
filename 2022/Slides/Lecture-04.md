@@ -69,6 +69,7 @@
 <div id = "left">
 
 ```mermaid
+{.mermaid format=svg}
 graph BT
 Cognition-->RT
 Motor-->RT
