@@ -108,7 +108,7 @@ D --> E("Hear" the word)
 <div id = "left">
 Causal model
 ```{.mermaid format=svg theme=forest width=400} 
-graph LR
+graph TB
 A(grapheme-phoneme conversion time)-->B(reading time)
 
 ```
@@ -132,7 +132,7 @@ D --> E("Hear" the word)
 <div id = "left">
 Causal model
 ```{.mermaid format=svg theme=forest width=400} 
-graph LR
+graph TB
 A(grapheme-phoneme conversion time)-->B(reading time)
 
 ```
