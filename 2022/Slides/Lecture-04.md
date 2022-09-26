@@ -85,9 +85,9 @@
 ```{.mermaid format=svg  theme=neutral width=400}
 graph TB
 A(See word) -->B(Segment graphemes)
-B-->C(Recognize graphemes) --> 
+B-->C(Recognize graphemes) 
 C-->D(Convert graphemes to phonemes)
-D --> C("Hear" the word)
+D --> E("Hear" the word)
 
 ```
 
