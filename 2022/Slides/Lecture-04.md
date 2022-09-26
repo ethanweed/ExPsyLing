@@ -140,6 +140,7 @@ A(grapheme-phoneme conversion time)-->B(reading time)
 </div>
 
 <div id = "right">
+Statistical model
 
 Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
 
