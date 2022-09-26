@@ -72,6 +72,8 @@
 
 <div id = "left">
 
+Research question
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
 
 </div>
@@ -81,6 +83,7 @@
 
 <div id = "right">
 
+Cogntive model
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
