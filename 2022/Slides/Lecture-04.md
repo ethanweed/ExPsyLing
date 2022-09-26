@@ -18,12 +18,12 @@
 
 ---
 
-### What causes this to happen?
+Questions we might ask
 
 
 <div id = "left">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull.png?raw=true" width="300"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull.png?raw=true" width="400"/>
 </div>
 
 
