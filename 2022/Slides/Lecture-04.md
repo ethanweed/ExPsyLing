@@ -66,13 +66,13 @@
 
 ---
 
+### Predictions
 
 <div id = "left">
 
-```{.mermaid format=svg  theme=neutral width=1000}
-graph BT
-Cognition-->RT
-Motor-->RT
+```{.mermaid format=svg  theme=neutral}
+graph RL
+Letters-->Grapheme-Phoneme Conversion-->We "hear" the word
 ```
 
 
