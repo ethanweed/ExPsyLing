@@ -83,7 +83,7 @@ Research question
 
 <div id = "right">
 
-Cogntive model
+Cognitive model
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
@@ -145,6 +145,31 @@ Statistical model
 Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
 
 </div>
+
+---
+
+### A different cognitive model
+
+<div id = "left">
+
+Research question
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
+
+</div>
+
+<div id = "right">
+
+Cognitive model
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(See word) -->B("Hear" the word)
+
+</div>
+
+
+
 
 ---
 
