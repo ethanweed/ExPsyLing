@@ -371,7 +371,8 @@ Research question
 
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
-subgraph 2
+
+subgraph 1
 A(grapheme-phoneme conversion time)-->B(reading time)
 end
 
