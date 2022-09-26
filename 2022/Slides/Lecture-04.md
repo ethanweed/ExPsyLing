@@ -127,16 +127,27 @@ D --> E("Hear" the word)
 ```
 </div>
 
-
 ---
 
+<div id = "left">
+
+Prediction:
+
+It will take longer to read longer words
+
+</div>
+
+<div id = "right">
 Model 1: "Phonological reading" model
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(See word) -->B(Segment graphemes)
+B-->C(Recognize graphemes) 
+C-->D(Convert graphemes to phonemes)
+D --> E("Hear" the word)
 
-Predicts: It will take longer to read longer words
-
----
-
-
+```
+</div>
 
 ---
 
