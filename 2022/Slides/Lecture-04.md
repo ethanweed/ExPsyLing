@@ -71,7 +71,7 @@
 
 
 ```{.mermaid format=svg  theme=neutral}
-graph LR
+graph TB
 A(Recognize graphemes) --> B(Convert graphemes to phonemes)
 B --> C("Hear" the word)
 
