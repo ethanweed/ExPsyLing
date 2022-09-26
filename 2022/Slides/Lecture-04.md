@@ -173,8 +173,8 @@ A(See word) -->B(Segment graphemes)
 
 
 <div id = "left">
-```{.mermaid format=svg theme=forest width=400 stroke-width=0} 
-graph LR
+```{.mermaid format=svg theme=forest width=400} 
+graph TB
 A(grapheme phoneme conversion)
 B(reading time)
 
@@ -186,9 +186,16 @@ B(reading time)
 <div id = "right">
 Statistical model
 
-Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
+Response time in a lexical decision task will neither increase nor decrease with the number of letters in the stimulus word
 
 </div>
+
+---
+
+### So many assumptions!!
+
+
+
 
 ---
 
