@@ -176,7 +176,8 @@ A(See word) -->B("Hear" the word)
 Causal model
 ```{.mermaid format=svg theme=forest width=400} 
 graph LR
-A(grapheme-phoneme conversion time) B(reading time)
+A(grapheme-phoneme conversion time) 
+B(reading time)
 
 ```
 
