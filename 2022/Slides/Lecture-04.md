@@ -172,6 +172,16 @@ A(See word) -->B(Segment graphemes)
 ---
 
 
+<div id = "left">
+```{.mermaid format=svg theme=forest width=400} 
+graph LR
+grapheme phoneme conversion
+reading time
+
+```
+
+</div>
+
 <div id = "right">
 Statistical model
 
