@@ -169,6 +169,7 @@ A(See word) -->B("Hear" the word)
 </div>
 
 ---
+
 ### Predictions from the model
 
 <div id = "left">
