@@ -66,6 +66,8 @@
 
 ---
 
+mermaid.initialize({ logLevel: "error", // [1] securityLevel: "loose", // [2] theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "default" // [3] })
+
 <div id = "left">
 
 ```mermaid
