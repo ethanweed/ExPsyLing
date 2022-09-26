@@ -23,7 +23,7 @@
 
 <div id = "left">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull.png?raw=true" width="500"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
 </div>
 
 
@@ -42,15 +42,24 @@
 
 ---
 
+### Two (somewhat naive?) answers
 <div id = "left">
 
-
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
 
 </div>
 
 
 
 <div id = "right">
+
+::: {.incremental}
+
+1. We look at each letter in turn, then assemble them into a word
+2. We just look at the word, and know what it is
+
+:::
+
 
 
 </div>
