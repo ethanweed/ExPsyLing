@@ -72,7 +72,8 @@
 
 ```{.mermaid format=svg  theme=neutral}
 graph RL
-Letters-->Grapheme-Phoneme Conversion-->We "hear" the word
+Letters-->Grapheme-Phoneme Conversion
+Grapheme-Phoneme Conversion-->We "hear" the word
 ```
 
 
