@@ -69,7 +69,7 @@
 
 <div id = "left">
 
-```{.mermaid format=svg  theme=neutral}
+```{.mermaid format=svg  theme=neutral width=1000}
 graph BT
 Cognition-->RT
 Motor-->RT
