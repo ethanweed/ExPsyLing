@@ -70,6 +70,18 @@
 
 
 
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
+
+</div>
+
+
+
+
+<div id = "right">
+
+
 ```{.mermaid format=svg  theme=neutral width=400}
 graph TB
 A(Recognize graphemes) --> B(Convert graphemes to phonemes)
@@ -79,6 +91,9 @@ B --> C("Hear" the word)
 
 
 
+
+
+</div>
 
 
 ---
