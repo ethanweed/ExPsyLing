@@ -8,7 +8,7 @@
 
 ## Quiz
 
-1. According to the Simple View of Reading, what are the two basic components of reading, and how are the related?
+1. According to the Simple View of Reading, what are the two basic components of reading, and how are they related?
 2. Which two "natural" senses did I claim reading combines, to form a "sixth sense"?
 3. What do psycholinguists mean by "visual word recognition", and what are some of the factors than can affect it?
 
