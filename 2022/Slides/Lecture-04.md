@@ -439,8 +439,7 @@ Research question
 
 <div id = "left">
 
-<p>
-<p>
+
 
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
