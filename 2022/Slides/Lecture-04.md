@@ -195,9 +195,19 @@ Response time in a lexical decision task will neither increase nor decrease with
 
 ---
 
+### Model comparison
 
 <div id = "left">
 
+
+</div>
+<div id = "left">
+Causal model 1
+```{.mermaid format=svg theme=forest width=400} 
+graph LR
+A(grapheme-phoneme conversion time)-->B(reading time)
+
+```
 
 </div>
 
