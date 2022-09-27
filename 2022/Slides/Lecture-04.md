@@ -185,6 +185,32 @@ B(reading time)
 </div>
 
 <div id = "right">
+Cognitive model 2
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(See word) -->B("Hear" word)
+
+
+```
+</div>
+
+
+---
+
+
+<div id = "left">
+Causal model 2
+```{.mermaid format=svg theme=forest width=400} 
+graph TB
+A(grapheme phoneme conversion)
+B(reading time)
+
+
+```
+
+</div>
+
+<div id = "right">
 Statistical model 2
 
 Response time in a lexical decision task will neither increase nor decrease with the number of letters in the stimulus word
