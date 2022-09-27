@@ -294,8 +294,14 @@ Response time in a lexical decision task will neither increase nor decrease with
 
 **Interval**: 
 
+::: {.incremental}
+
 - differences between numbers meaningful  
 -  zero ≠ zero
+
+:::
+
+
 
 </div>
 
