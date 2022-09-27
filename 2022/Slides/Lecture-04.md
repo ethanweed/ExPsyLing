@@ -396,9 +396,15 @@ end
 ## References
 
 
+
+
 <div id = "refs">
 
+- Causal modelling: McElreath, R. (2020). _Statistical rethinking: A Bayesian course with examples in R and Stan 2nd Edition_. Chapman and Hall/CRC.
 
+•Illustration from Moby Dick: https://i.pinimg.com/originals/71/a8/21/71a821afa84348ee18bfc41d63ccf0d5.jpg
+
+•Page from Moby Dick (1892): https://www.loc.gov/resource/gdcmassbookdig.mobydickorwhitew00melv_1/?sp=14&r=-0.938,-0.046,2.875,1.857,0
 
 
 </div>
