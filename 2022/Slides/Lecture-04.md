@@ -161,7 +161,7 @@ Research question
 <div id = "right">
 Cognitive model 2
 ```{.mermaid format=svg  theme=neutral width=400 }
-graph LR
+graph TB
 A(See word) -->B("Hear" word)
 
 
