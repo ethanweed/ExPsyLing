@@ -83,7 +83,7 @@ Research question
 
 <div id = "right">
 
-Cognitive model
+Cognitive model 1
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
@@ -106,7 +106,7 @@ D --> E("Hear" the word)
 ### Predictions from the model
 
 <div id = "left">
-Causal model
+Causal model 1
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
 A(grapheme-phoneme conversion time)-->B(reading time)
@@ -116,7 +116,7 @@ A(grapheme-phoneme conversion time)-->B(reading time)
 </div>
 
 <div id = "right">
-Cognitive model
+Cognitive model 1
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
 A(See word) -->B(Segment graphemes)
@@ -130,7 +130,7 @@ D --> E("Hear" the word)
 ---
 
 <div id = "left">
-Causal model
+Causal model 1
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
 A(grapheme-phoneme conversion time)-->B(reading time)
@@ -140,7 +140,7 @@ A(grapheme-phoneme conversion time)-->B(reading time)
 </div>
 
 <div id = "right">
-Statistical model
+Statistical model 1
 
 Response time in a lexical decision task will increase linearly with the number of letters in the stimulus word
 
@@ -159,7 +159,7 @@ Research question
 </div>
 
 <div id = "right">
-Cognitive model
+Cognitive model 2
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
 A(See word) -->B(Segment graphemes)
@@ -173,6 +173,7 @@ A(See word) -->B(Segment graphemes)
 
 
 <div id = "left">
+Causal model 2
 ```{.mermaid format=svg theme=forest width=400} 
 graph TB
 A(grapheme phoneme conversion)
@@ -184,7 +185,7 @@ B(reading time)
 </div>
 
 <div id = "right">
-Statistical model
+Statistical model 2
 
 Response time in a lexical decision task will neither increase nor decrease with the number of letters in the stimulus word
 
