@@ -428,6 +428,11 @@ Research question
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/reading_skull2.png?raw=true" width="500"/>
 
+- theoretical construct
+- measure
+- operationalisation
+- variable
+
 </div>
 
 
