@@ -323,7 +323,8 @@ Response time in a lexical decision task will neither increase nor decrease with
 
 
 <div id = "right">
-Continuous versus discrete variables
+- Continuous versus discrete variables
+- Levels of measurement
 
 </div>
 
