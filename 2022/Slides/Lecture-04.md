@@ -252,16 +252,28 @@ Response time in a lexical decision task will neither increase nor decrease with
 
 
 
-::: {.container}
-:::: {.col}
-![](https://lh4.googleusercontent.com/ZdmcnWR6MhAj9Cg_vI3Ip-XB-XdJbTtblvOobiF0lAerSgiBbpG_EhevI-jY28-RSMKLrJE2TG3YLDAGRuM9kJDJKCbDI6472EgptiqDU_7ovNUrv1RzyZWVozU62mbDO7PifSBFUY0=s0)
-::::
-:::: {.col}
+
+<div id = "left">
+
+<img src="https://lh4.googleusercontent.com/ZdmcnWR6MhAj9Cg_vI3Ip-XB-XdJbTtblvOobiF0lAerSgiBbpG_EhevI-jY28-RSMKLrJE2TG3YLDAGRuM9kJDJKCbDI6472EgptiqDU_7ovNUrv1RzyZWVozU62mbDO7PifSBFUY0=s0" width=""/>
+
+
+</div>
+
+
+
+<div id = "right">
+
+::: {.incremental}
 - **Nominal**: names (no calculations)  
 - **Ordinal:** order (no calculations)  
 - **Ratio:** (0=0; mulitiplication and division ok)  
-::::
+
 :::
+</div>
+
+
+
 
 
 
@@ -271,18 +283,25 @@ Response time in a lexical decision task will neither increase nor decrease with
 ### Scales of measurement
 
 
-	
-::: {.container}
-:::: {.col}
+<div id = "left">
 <img src="https://lh3.googleusercontent.com/JOTbMGt8Z7rIz3ShSO2bwOzFqWdeOtHl_t3n0wFSELp00CPP3CaJ0R4EZJ1Lu-_YGxY1091TvkAX7VkC7IWSPkllnjnBQZynATtCTP4wMx-Z-Cu0Uga8LiNQ56h92gYUOuC7hGk85JY=s0" width=300 style="transform:rotate(180deg);"> 
-::::
-:::: {.col}
+
+</div>
+
+
+
+<div id = "right">
+
 **Interval**: 
-	
+
 - differences between numbers meaningful  
 -  zero ≠ zero
-::::
-:::
+
+</div>
+
+
+
+
 
 
 
