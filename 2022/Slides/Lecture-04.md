@@ -169,29 +169,6 @@ A(See word) -->B("Hear" word)
 </div>
 
 
----
-
-### Model comparison
-
-<div id = "left">
-Causal model 1
-```{.mermaid format=svg theme=forest width=400} 
-graph LR
-A(grapheme-phoneme conversion time)-->B(reading time)
-
-```
-
-</div>
-
-<div id = "right">
-Cognitive model 2
-```{.mermaid format=svg  theme=neutral width=400 }
-graph TB
-A(See word) -->B("Hear" word)
-
-
-```
-</div>
 
 
 ---
