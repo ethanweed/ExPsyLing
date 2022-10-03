@@ -1,17 +1,13 @@
-## Data Visualization
 
-<style>
-.container{
-  display: flex;
-}
-.col {
-  flex: 1;
-}
-</style>
 
-Based heavily on  
 
-Tufte, E. (2001). The visual display of quantitative information.
+# Data Visualization
+
+
+## Review
+
+
+## Painting with numbers
 
 ---
 
@@ -186,6 +182,12 @@ Hmm... very selective y-axis labels
 Hmm... again, no y-axis labels
 
 <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr08/enhanced-buzz-21270-1412283681-17.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/>
+
+
+---
+
+
+
 
 ---
 
