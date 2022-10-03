@@ -268,7 +268,20 @@ Playfair (1786)
 
 ---
 
-#### References
+## Some basic plot types
+
+---
+
+
+
+
+---
+
+
+
+---
+
+## References
 
 <font size="3">
 Danmarks Statistik https://www.facebook.com/pg/danmarksstatistik/photos/ \[accessed 2021-10-05]
