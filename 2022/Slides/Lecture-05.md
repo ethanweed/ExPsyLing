@@ -49,15 +49,105 @@ William Playfair
 
 ## Graphics _reveal_ data
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Anscombe1.png? 
- raw=true" width=""/>
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Anscombe1.png?raw=true" width=""/>
 
 </div>
 
 
 <div id = "right">
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Anscombe2.png? 
- raw=true" width=""/>
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Anscombe2.png?raw=true" width=""/>
+
+</div>
+
+
+
+
+
+---
+
+
+## Garbage in, garbage out
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SillyPlot.png?raw=true" width=""/>
+
+---
+
+## Garbage in, garbage out
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SpuriousCorrelation1.png?raw=true" width=""/>
+r = 0.80 ("Strong")
+
+---
+
+#### Graphics tell a _story_
+
+A picture speaks 1888 numbers
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/TimesWeather.png?raw=true" width=""/>
+
+---
+
+## Graphics tell a _story_
+
+Charles Joseph Minard (1869)
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/>
+
+<font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse </font>
+
+
+---
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/>
+
+</div>
+
+
+
+<div id = "right">
+
+"It may well be the best statistical graphic ever drawn" - Tufte (2001)
+
+</div>
+
+
+---
+
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/>
+
+</div>
+
+
+<div id = "right">
+
+- Size of the army
+- Location of the army
+- Direction of the army's movement
+- Temperatures during the retreat
+
+</div>
+
+
+---
+
+<div id = "left">
+
+"It may well be the best statistical graphic ever drawn" - Tufte (2001)
+
+</div>
+
+
+<div id = "right">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/>
 
 </div>
 
@@ -68,7 +158,6 @@ William Playfair
 
 
 ---
-
 
 # References
 
