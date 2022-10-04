@@ -311,7 +311,7 @@ Playfair (1786)
 
 <div id = "refs">
 
-
+Tufte, Edward R. The Visual Display of Quantitative Information, Second Edition. Graphics Press: Chesire, Connecticut.
 
 
 </div>
