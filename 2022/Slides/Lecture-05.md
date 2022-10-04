@@ -77,7 +77,7 @@ William Playfair
 
 ## Garbage in, garbage out
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SpuriousCorrelation1.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SpuriousCorrelation1.png?raw=true" width="500"/>
 r = 0.80 ("Strong")
 
 ---
