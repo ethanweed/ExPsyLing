@@ -185,7 +185,7 @@ $$
 
 Hmm... comparing apples with oranges
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/LyingChart.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/LyingChart.png?raw=true" width="300"/>
 
 
 ---
