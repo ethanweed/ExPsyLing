@@ -71,7 +71,7 @@ William Playfair
 
 ## Garbage in, garbage out
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SillyPlot.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/SillyPlot.png?raw=true" width="500"/>
 
 ---
 
