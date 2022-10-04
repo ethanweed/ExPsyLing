@@ -150,14 +150,14 @@ Charles Joseph Minard (1869)
 
 <div id = "right">
 
-::: {.incremental}
+
 
 "It may well be the worst graphic ever to find its way into print" - Tufte (2001)
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/TheWorstGraphicEver.png?raw=true" width="300"/>
 
 
-:::
+
 
 
 
