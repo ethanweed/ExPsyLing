@@ -193,6 +193,7 @@ Hmm... comparing apples with oranges
 Hmm... no y-axis labels
 
 <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/14/enhanced/webdr04/enhanced-buzz-5348-1412276314-10.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" width=""/>
+
 ---
 
 Hmm... very selective y-axis labels
