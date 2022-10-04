@@ -1,16 +1,18 @@
-
-
-
 # Data Visualization
 
+---
 
-## Review
+# Review
 
+What is the difference between:
+	- A cognitive model
+	- A causal model
+	- A statistical model
 
 ---
 
 
-## Painting with numbers
+# Painting with numbers
 
 ---
 
