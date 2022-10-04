@@ -25,6 +25,25 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/white.css" id="theme">
   
@@ -144,263 +163,66 @@
     <div class="slides">
 
 
-<section id="data-visualization" class="slide level1">
+<section>
+<section id="data-visualization" class="title-slide slide level1">
 <h1>Data Visualization</h1>
-</section>
-<section id="review" class="slide level1">
-<h1>Review</h1>
-<p>What is the difference between: - A cognitive model - A causal model
-- A statistical model</p>
-</section>
-<section id="painting-with-numbers" class="slide level1">
-<h1>Painting with numbers</h1>
-</section>
-<section class="slide level1">
 
-<h2 id="section"></h2>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="review" class="title-slide slide level1">
+<h1>Review</h1>
+
+</section>
+<section id="quiz" class="slide level2">
+<h2>Quiz</h2>
+<p>What is the difference between:</p>
+<ol type="1">
+<li>A cognitive model</li>
+<li>A causal model</li>
+<li>A statistical model</li>
+</ol>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="painting-with-numbers" class="title-slide slide level1">
+<h1>Painting with numbers</h1>
+
+</section>
+<section class="slide level2">
+
 <p><img src="https://ethanweed.github.io/pythonbook/_images/snow_ghost_map2.png" width = "600"/></p>
 <p>John Snow’s 1854 map of cholera deaths</p>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
-<h2 id="data-visualization-is-a-modern-invention">Data visualization is
-a modern invention</h2>
-<div class="container">
-<div class="col">
-<p>William Playfair<br />
-(1759-1823)</p>
-<ul>
-<li>Engineer</li>
-<li>Economist</li>
-<li>British secret agent</li>
-<li>Founder of statistical data visualization</li>
-</ul>
-</div>
-<div class="col">
-<p><img
-data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa/1532421067432-6NJ05X3O956WDTJRW2SN/william+playfair.jpg" /></p>
-</div>
-</div>
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
-<h4 id="graphics-reveal-data">Graphics <em>reveal</em> data</h4>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe1.png" width="600"/></p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Anscombe2.png" width="550"/></p>
+</section></section>
+<section>
+<section id="topic-2" class="title-slide slide level1">
+<h1>Topic 2</h1>
+
 </section>
-<section class="slide level1">
+<section class="slide level2">
 
-<h4 id="garbage-in-garbage-out">Garbage in, garbage out</h4>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SillyPlot.png" width="600" /></p>
+</section></section>
+<section>
+<section id="references" class="title-slide slide level1">
+<h1>References</h1>
+
 </section>
-<section class="slide level1">
-
-<h4 id="garbage-in-garbage-out-1">Garbage in, garbage out</h4>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/SpuriousCorrelation1.png" width="650" /></p>
-<p>r = 0.80 (“Strong”)</p>
-</section>
-<section class="slide level1">
-
-<h4 id="graphics-tell-a-story">Graphics tell a <em>story</em></h4>
-<p>A picture speaks 1888 numbers</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="900" /></p>
-</section>
-<section class="slide level1">
-
-<h4 id="graphics-tell-a-story-1">Graphics tell a <em>story</em></h4>
-<p>Charles Joseph Minard (1869)</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="900"/></p>
-<p><font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse
-</font></p>
-</section>
-<section class="slide level1">
-
-<div class="container">
-<div class="col">
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/></p>
-</div>
-<div class="col">
-<p>“It may well be the best statistical graphic ever drawn” - Tufte
-(2001)</p>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<div class="container">
-<div class="col">
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/></p>
-</div>
-<div class="col">
-<ul>
-<li>Size of the army</li>
-<li>Location of the army</li>
-<li>Direction of the army’s movement</li>
-<li>Temperatures during the retreat</li>
-</ul>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<div class="container">
-<div class="col">
-<p>“It may well be the best statistical graphic ever drawn” - Tufte
-(2001)</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/></p>
-</div>
-<div class="col">
+<section id="references-1" class="slide level2">
+<h2>References</h2>
+<div id="refs" role="doc-bibliography">
 
 </div>
-</div>
-</section>
-<section class="slide level1">
-
-<div class="container">
-<div class="col">
-<p>“It may well be the best statistical graphic ever drawn” - Tufte
-(2001)</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/MinardNapaleonsArmy.png" width="600"/></p>
-</div>
-<div class="col">
-<p>“It may well be the worst graphic ever to find its way into print” -
-Tufte (2001)
-<img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="300"/></p>
-</div>
-</div>
-</section>
-<section class="slide level1">
-
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TheWorstGraphicEver.png" width="400"/></p>
-</section>
-<section class="slide level1">
-
-<h4
-id="a-good-graphic-gives-us-the-most-information-in-the-least-amount-of-time">A
-good graphic gives us the most information in the least amount of
-time</h4>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LookingAtPlots.png" width="700"/></p>
-</section>
-<section class="slide level1">
-
-<h4 id="a-good-graphic-should-be-honest">A good graphic should be
-honest</h4>
-<p><span class="math display">$$
-\mbox{lie factor} = \frac{\mbox{size of effect shown in
-graph}}{\mbox{size of effect in data}}
-$$</span></p>
-</section>
-<section class="slide level1">
-
-<p>Hmm… comparing apples with oranges</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LyingChart.png" width="500"/></p>
-</section>
-<section class="slide level1">
-
-<p>Hmm… no y-axis labels</p>
-<p><img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/14/enhanced/webdr04/enhanced-buzz-5348-1412276314-10.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" width=""/></p>
-</section>
-<section class="slide level1">
-
-<p>Hmm… very selective y-axis labels</p>
-<p><img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr02/enhanced-buzz-19972-1412285325-16.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/></p>
-</section>
-<section class="slide level1">
-
-<p>Hmm… again, no y-axis labels</p>
-<p><img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/2/17/enhanced/webdr08/enhanced-buzz-21270-1412283681-17.jpg?downsize=800:*&output-format=auto&output-quality=auto" width=""/></p>
-</section>
-<section class="slide level1">
-
-</section>
-<section class="slide level1">
-
-<p>Hmm… two different y-axes</p>
-<p><img src="https://preview.redd.it/cxdxeclhueo71.jpg?width=960&crop=smart&auto=webp&s=8135a8bce32516e7b9b0e4ed6c7240a91e6d0bdb" width="550"/></p>
-</section>
-<section class="slide level1">
-
-<h4 id="tuftes-five-principles-of-data-graphics">Tufte’s five principles
-of data graphics</h4>
-<ul>
-<li>Above all else show the data</li>
-<li>Maximize the data to ink ratio</li>
-<li>Erase non-data ink</li>
-<li>Erase redundant data-ink</li>
-<li>Revise and edit</li>
-</ul>
-</section>
-<section class="slide level1">
-
-<h4 id="maximize-data-density">Maximize data density</h4>
-<p><span class="math display">$$
-\mbox{data density} = \frac{\mbox{number of datapoints}}{\mbox{area of
-data graphic}}
-$$</span></p>
-</section>
-<section class="slide level1">
-
-<p>Data density = 0.02 numbers per square centimeter</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/LowDataDensity.png" width="400"/></p>
-</section>
-<section class="slide level1">
-
-<p>Data density = 28 numbers per square centimeter</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/TimesWeather.png" width="800"/></p>
-</section>
-<section class="slide level1">
-
-<h4 id="revision">Revision</h4>
-<p>Playfair (1785)</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair1.png" width="600"/></p>
-</section>
-<section class="slide level1">
-
-<h4 id="revision-1">Revision</h4>
-<p>Playfair (1786)</p>
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Playfair2.png" width="600"/></p>
-</section>
-<section class="slide level1">
-
-<h4 id="some-examples-im-proud-of">Some examples I’m proud of</h4>
-</section>
-<section class="slide level1">
-
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/RSC-figure.png" width="600"/></p>
-</section>
-<section class="slide level1">
-
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/Acoustic-features-by-Dx.png" width="600"/></p>
-</section>
-<section class="slide level1">
-
-<p><img src="/Users/ethan/Documents/GitHub/ExPsyLing/2021/Slides/Images/ASDNetworkFigure.png" width="600"/></p>
-</section>
-<section class="slide level1">
-
-<h2 id="some-basic-plot-types">Some basic plot types</h2>
-</section>
-<section class="slide level1">
-
-</section>
-<section class="slide level1">
-
-</section>
-<section class="slide level1">
-
-<h2 id="references">References</h2>
-<p><font size="3"> Danmarks Statistik
-https://www.facebook.com/pg/danmarksstatistik/photos/ [accessed
-2021-10-05]</p>
-<p>Notopuoulos, K.
-https://www.buzzfeednews.com/article/katienotopoulos/graphs-that-lied-to-us
-[accessed 2021-10-05]</p>
-<p>Reddit, r/dataisugly https://www.reddit.com/r/dataisugly/ [accessed
-2021-10-05]</p>
-<p>Tufte, E. (2001). The visual display of quantitative information.</p>
-<p>Vigen, T. (2015). https://tylervigen.com/spurious-correlations
-[accessed 2021-10-05]</p>
-</section>
+</section></section>
     </div>
   </div>
 
