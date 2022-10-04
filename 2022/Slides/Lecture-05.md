@@ -65,7 +65,7 @@ William Playfair
 
 ---
 
-# Topic 2
+
 
 ---
 
