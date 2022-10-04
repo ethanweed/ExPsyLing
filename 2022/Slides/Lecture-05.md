@@ -277,7 +277,7 @@ Playfair (1786)
 
 ---
 
-## An example I'm proud of
+### An example I'm proud of
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/RSC-figure.png?raw=true" width=""/>
 
@@ -285,7 +285,7 @@ Playfair (1786)
 ---
 
 
-## Another example I'm proud of
+### Another example I'm proud of
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/ASD_voice_networks.png?raw=true" width=""/>
 
@@ -293,7 +293,7 @@ Playfair (1786)
 ---
 
 
-## One last example I'm proud of
+### One last example I'm proud of
 
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Networks2.png?raw=true" width=""/>
