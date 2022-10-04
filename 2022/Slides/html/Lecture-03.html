@@ -24,7 +24,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -366,6 +365,7 @@ https://www.loc.gov/resource/gdcmassbookdig.mobydickorwhitew00melv_1/?sp=14&amp;
   <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/math/math.js"></script>
 
   <script>
 
@@ -512,8 +512,26 @@ https://www.loc.gov/resource/gdcmassbookdig.mobydickorwhitew00melv_1/?sp=14&amp;
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
 
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
         // reveal.js plugins
         plugins: [
+          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

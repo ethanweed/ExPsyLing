@@ -24,7 +24,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/white.css" id="theme">
   
@@ -287,10 +286,10 @@ time</h4>
 
 <h4 id="a-good-graphic-should-be-honest">A good graphic should be
 honest</h4>
-<p><span class="math display">$$
+<p><span class="math display">\[
 \mbox{lie factor} = \frac{\mbox{size of effect shown in
 graph}}{\mbox{size of effect in data}}
-$$</span></p>
+\]</span></p>
 </section>
 <section class="slide level1">
 
@@ -335,10 +334,10 @@ of data graphics</h4>
 <section class="slide level1">
 
 <h4 id="maximize-data-density">Maximize data density</h4>
-<p><span class="math display">$$
+<p><span class="math display">\[
 \mbox{data density} = \frac{\mbox{number of datapoints}}{\mbox{area of
 data graphic}}
-$$</span></p>
+\]</span></p>
 </section>
 <section class="slide level1">
 
@@ -412,6 +411,7 @@ https://www.buzzfeednews.com/article/katienotopoulos/graphs-that-lied-to-us
   <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/math/math.js"></script>
 
   <script>
 
@@ -558,8 +558,26 @@ https://www.buzzfeednews.com/article/katienotopoulos/graphs-that-lied-to-us
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
 
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
         // reveal.js plugins
         plugins: [
+          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
