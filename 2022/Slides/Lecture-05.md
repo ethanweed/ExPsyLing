@@ -242,7 +242,7 @@ $$
 
 Data density = 0.02 numbers per square centimeter
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/LowDataDensity.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/LowDataDensity.png?raw=true" width="400"/>
 
 
 ---
@@ -250,7 +250,7 @@ Data density = 0.02 numbers per square centimeter
 
 Data density = 28 numbers per square centimeter
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/TimesWeather.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/TimesWeather.png?raw=true" width="400"/>
 
 ---
 
