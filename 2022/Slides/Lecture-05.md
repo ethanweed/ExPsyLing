@@ -279,7 +279,16 @@ Playfair (1786)
 
 ## Another example I'm proud of
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/ASD_voice_networks.png?raw=true" width=""/>
 
+
+---
+
+
+## One last example I'm proud of
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Networks2.png?raw=true" width=""/>
 
 ---
 
