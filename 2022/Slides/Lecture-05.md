@@ -16,13 +16,14 @@ What is the difference between:
 
 ---
 
+## 
 <img src="https://ethanweed.github.io/pythonbook/_images/snow_ghost_map2.png" width = "600"/>
 
 John Snow’s 1854 map of cholera deaths
 
 ---
 
-#### Data visualization is a modern invention
+## Data visualization is a modern invention
 
 ::: {.container}
 :::: {.col}
