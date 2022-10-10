@@ -162,7 +162,30 @@ np.random.binomial(n=100, p=1/2, size=1000)
 
 
 
+---
 
+
+#### Modelling more complicated processes
+
+
+<div id = "left">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/2010-07-20_Black_windup_alarm_clock_face.jpg/800px-2010-07-20_Black_windup_alarm_clock_face.jpg">
+
+</div>
+
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(time of the alarm) -->B(Hours of sleep)
+C(bedtime) -->B
+D(worry)-->B
+E(other factors ??)-->B
+
+```
+
+</div>
 
 
 ---
