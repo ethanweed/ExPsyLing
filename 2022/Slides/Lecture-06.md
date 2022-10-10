@@ -239,8 +239,9 @@ G(Age)-.->E
 
 Measures of central tendency:
 
-- mean
-- median
+- Mean
+- Median
+- Mode
 
 Measures of variance:
 
