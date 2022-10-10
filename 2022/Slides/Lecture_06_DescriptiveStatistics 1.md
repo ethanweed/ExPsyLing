@@ -135,6 +135,8 @@ Key elements in the model:
 1. Central tendency
 2. Variability
 
+
+
 ---
 
 #### Discussion questions

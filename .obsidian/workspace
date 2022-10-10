@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/Slides/Lecture-06.md",
+                "file": "2022/Slides/Lecture_06_DescriptiveStatistics 1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,13 +98,13 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2c6468789851e073",
+  "active": "2edfe8a3e82e3b66",
   "lastOpenFiles": [
+    "2022/Slides/Lecture-06.md",
     "2022/Slides/Lecture-04.md",
     "2022/Slides/Lecture-05.md",
     "2022/Slides/Lecture-03.md",
     "2022/Slides/Lecture-02.md",
-    "2022/Slides/Lecture-06.md",
     "2022/Slides/Lecture_06_DescriptiveStatistics 1.md",
     "2022/Slides/Lecture-05a.md",
     "2021/Slides/Lecture_06_DescriptiveStatistics.md",
