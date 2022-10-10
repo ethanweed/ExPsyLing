@@ -195,7 +195,31 @@ F(other factors ??)-->B
 
 #### Data as a distribution
 
+<div id = "left">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep.png?raw=true" width=""/>
+
+
+</div>
+
+
+
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(time of the alarm) -->B(hours of sleep)
+C(bedtime) -->B
+A-.->C
+D(worry)-->B
+D-.->C
+E(desire to be healthy)-->C
+F(other factors ??)-->B
+
+```
+
+</div>
+
 
 
 
