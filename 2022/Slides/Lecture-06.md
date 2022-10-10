@@ -242,6 +242,7 @@ Measures of variance:
 
 - Mean absolute difference
 - Median absolute difference
+- Interquartile range
 - Variance
 - Standard deviation
 
