@@ -215,7 +215,9 @@ D(worry)-->B
 D-.->C
 E(desire to be healthy)-->C
 F(other factors ??)-->B
+G(Age)-.->A
 G(Age)-.->C
+G(Age)-.->D
 G(Age)-.->E
 
 ```
@@ -346,7 +348,9 @@ D(worry)-->B
 D-.->C
 E(desire to be healthy)-->C
 F(other factors ??)-->B
+G(Age)-.->A
 G(Age)-.->C
+G(Age)-.->D
 G(Age)-.->E
 
 ```
