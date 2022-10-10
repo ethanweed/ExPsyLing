@@ -72,6 +72,51 @@
 - So we try out different models.
 :::
 
+
+---
+
+#### Coin-flipping
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg" width = "400" />
+
+---
+
+
+#### Modelling coin-flipping
+
+𝑋∼Binomial(𝜃,𝑁)
+
+<br>
+
+- θ = probability of "success" on any given trial  
+
+- 𝑁 = number of trials
+
+
+---
+
+$$
+P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
+$$
+
+---
+
+
+#### Simulated coin-flipping
+
+	import numpy as np
+	x_20 = np.random.binomial(n=20, p=1/2, size=1000)
+	x_100 = np.random.binomial(n=100, p=1/2, size=1000)
+
+
+
+---
+
+#### Simulated coin-flipping
+
+![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png)
+
+
 ---
 
 # Topic 2

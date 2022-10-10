@@ -239,6 +239,40 @@ data.</li>
 </section>
 <section class="slide level2">
 
+<h4 id="coin-flipping">Coin-flipping</h4>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coin_toss_at_Super_Bowl_43_1.jpg/800px-Coin_toss_at_Super_Bowl_43_1.jpg" width = "400" /></p>
+</section>
+<section class="slide level2">
+
+<h4 id="modelling-coin-flipping">Modelling coin-flipping</h4>
+<p>𝑋∼Binomial(𝜃,𝑁)</p>
+<p><br></p>
+<ul>
+<li><p>θ = probability of “success” on any given trial</p></li>
+<li><p>𝑁 = number of trials</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><span class="math display">\[
+P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
+\]</span></p>
+</section>
+<section class="slide level2">
+
+<h4 id="simulated-coin-flipping">Simulated coin-flipping</h4>
+<pre><code>import numpy as np
+x_20 = np.random.binomial(n=20, p=1/2, size=1000)
+x_100 = np.random.binomial(n=100, p=1/2, size=1000)</code></pre>
+</section>
+<section class="slide level2">
+
+<h4 id="simulated-coin-flipping-1">Simulated coin-flipping</h4>
+<p><img
+data-src="https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png" /></p>
+</section>
+<section class="slide level2">
+
 </section></section>
 <section>
 <section id="topic-2" class="title-slide slide level1">
