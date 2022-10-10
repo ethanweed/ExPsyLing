@@ -231,7 +231,7 @@ G(Age)-.->E
 
 <div id = "left">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep_distribution_mean_median.png?raw=true" width=""/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep_distribution.png?raw=true" width=""/>
 
 </div>
 
