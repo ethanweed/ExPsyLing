@@ -177,7 +177,7 @@ np.random.binomial(n=100, p=1/2, size=1000)
 <div id = "right">
 
 ```{.mermaid format=svg  theme=neutral width=400 }
-graph TB
+graph LR
 A(time of the alarm) -->B(Hours of sleep)
 C(bedtime) -->B
 A-.->C
