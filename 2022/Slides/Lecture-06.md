@@ -128,22 +128,15 @@ np.random.binomial(n=100, p=1/2, size=1000)
 
 ---
 
+#### Simulated dice-throwing
 
 
-<div id = "left">
+![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png)
+
 
 	import numpy as np
 	x = np.random.binomial(n=20, p=1/6, size=1000)
 
-</div>
-
-
-
-<div id = "right">
-
-![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png)
-
-</div>
 
 
 ---
