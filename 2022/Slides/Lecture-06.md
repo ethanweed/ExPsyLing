@@ -120,9 +120,11 @@ $$
 
 ![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_19_0.png)
 
-<p np.random.binomial(n=20, p=1/2, size=1000) align="left">
+```
+np.random.binomial(n=20, p=1/2, size=1000)
+np.random.binomial(n=100, p=1/2, size=1000)
+```
 
-<p np.random.binomial(n=100, p=1/2, size=1000) align="right">
 
 ---
 
