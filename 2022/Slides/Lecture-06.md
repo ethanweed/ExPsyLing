@@ -333,7 +333,7 @@ sns.lineplot(x = x,
 
 <div id = "left">
 
-Conceptual model
+conceptual model
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
@@ -373,7 +373,7 @@ sns.lineplot(x = x,
 
 ---
 
-# Topic 2
+
 
 ---
 
