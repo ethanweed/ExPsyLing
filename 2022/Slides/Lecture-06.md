@@ -333,6 +333,8 @@ sns.lineplot(x = x,
 
 <div id = "left">
 
+Conceptual model
+
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
 A(time of the alarm) -->B(hours of sleep)
@@ -350,6 +352,8 @@ F(other factors ??)-->B
 
 
 <div id = "right">
+
+statistical model
 
 ```python
 mu = statistics.mean(hours)
