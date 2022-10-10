@@ -320,7 +320,10 @@ x = np.linspace(mu - 3*sigma,
                 100)
 y = stats.norm.pdf(x, mu, sigma)
 
-sns.lineplot(x=x,y=y, color='black', linestyle = 'dotted')
+sns.lineplot(x = x, 
+             y = y, 
+             color='black', 
+             linestyle = 'dotted')
 ```
 
 </div>
