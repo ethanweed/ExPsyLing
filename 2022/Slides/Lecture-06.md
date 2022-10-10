@@ -304,6 +304,30 @@ statistics.std(hours)
 
 ---
 
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep_distribution_normal.png?raw=true" width=""/>
+
+</div>
+
+<div id = "right">
+
+```python
+import numpy as np
+from scipy import stats
+# define a normal distribution with the same mean and sd
+mu = statistics.mean(hours)
+sigma = statistics.stdev(hours)
+x = np.linspace(mu - sigma, mu + sigma, 100)
+y = stats.norm.pdf(x, mu, sigma)
+
+sns.lineplot(x=x,y=y, color='black', linestyle = 'dotted')
+```
+
+</div>
+
+---
+
 # Topic 2
 
 ---
