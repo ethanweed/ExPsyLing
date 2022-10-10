@@ -263,6 +263,7 @@ P(X | \theta, N) = \frac{N!}{X! (N-X)!}  \theta^X (1-\theta)^{N-X}
 
 <h4 id="simulated-coin-flipping">Simulated coin-flipping</h4>
 <pre><code>import numpy as np
+
 x_20 = np.random.binomial(n=20, p=1/2, size=1000)
 x_100 = np.random.binomial(n=100, p=1/2, size=1000)</code></pre>
 </section>
@@ -281,6 +282,23 @@ x = np.random.binomial(n=20, p=1/6, size=1000)</code></pre>
 <div id="right">
 <p><img
 data-src="https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png" /></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="modelling-more-complicated-processes">Modelling more complicated
+processes</h4>
+<div id="left">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/2010-07-20_Black_windup_alarm_clock_face.jpg/800px-2010-07-20_Black_windup_alarm_clock_face.jpg"></p>
+</div>
+<div id="right">
+<ul>
+<li>time of the alarm</li>
+<li>bedtime the night before</li>
+<li>worry about the day ahead</li>
+<li>time of year</li>
+<li>other factors…???</li>
+</ul>
 </div>
 </section>
 <section class="slide level2">

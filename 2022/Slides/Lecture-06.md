@@ -108,6 +108,7 @@ $$
 #### Simulated coin-flipping
 
 	import numpy as np
+	
 	x_20 = np.random.binomial(n=20, p=1/2, size=1000)
 	x_100 = np.random.binomial(n=100, p=1/2, size=1000)
 
@@ -138,6 +139,32 @@ $$
 ![](https://ethanweed.github.io/pythonbook/_images/04.02-probability_14_1.png)
 
 </div>
+
+
+---
+
+#### Modelling more complicated processes
+
+
+<div id = "left">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/2010-07-20_Black_windup_alarm_clock_face.jpg/800px-2010-07-20_Black_windup_alarm_clock_face.jpg">
+
+</div>
+
+<div id = "right">
+
+- time of the alarm
+- bedtime the night before
+- worry about the day ahead
+- time of year
+- other factors...???
+
+</div>
+
+
+
+
 
 
 ---
