@@ -180,7 +180,9 @@ np.random.binomial(n=100, p=1/2, size=1000)
 graph TB
 A(time of the alarm) -->B(Hours of sleep)
 C(bedtime) -->B
+A-.->C
 D(worry)-->B
+D-.->C
 E(other factors ??)-->B
 
 ```
