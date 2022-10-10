@@ -243,12 +243,26 @@ Measures of central tendency:
 
 ---
 
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep_distribution_mean.png?raw=true" width=""/>
+
+</div>
+
+
+
+<div id = "right">
+
 ```python
 import statistics
 statistics.mean(hours)
 ```
 
-7.17
+7.17 hours
+
+</div>
+
+
 
 ---
 
