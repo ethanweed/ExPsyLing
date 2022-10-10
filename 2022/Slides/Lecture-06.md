@@ -238,6 +238,13 @@ Measures of central tendency:
 - mean
 - median
 
+Measures of variance:
+
+- Mean absolute difference
+- Median absolute difference
+- Variance
+- Standard deviation
+
 </div>
 
 
