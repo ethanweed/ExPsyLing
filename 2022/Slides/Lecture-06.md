@@ -333,7 +333,7 @@ sns.lineplot(x = x,
 
 <div id = "left">
 
-conceptual model
+conceptual model (of system)
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph TB
@@ -353,7 +353,7 @@ F(other factors ??)-->B
 
 <div id = "right">
 
-statistical model
+statistical model (of outcome)
 
 ```python
 mu = statistics.mean(hours)
