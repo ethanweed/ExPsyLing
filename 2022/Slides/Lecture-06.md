@@ -221,7 +221,34 @@ F(other factors ??)-->B
 </div>
 
 
+---
 
+#### Describing the distribution
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep_distribution_mean_median.png?raw=true" width=""/>
+
+</div>
+
+<div id = "right">
+
+Measures of central tendency:
+
+- mean
+- median
+
+</div>
+
+
+---
+
+```python
+import statistics
+statistics.mean(hours)
+```
+
+7.17
 
 ---
 
