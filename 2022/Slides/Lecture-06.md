@@ -194,7 +194,7 @@ E(other factors ??)-->B
 
 #### Data as a distribution
 
-
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/sleep.png?raw=true" width=""/>
 
 
 
