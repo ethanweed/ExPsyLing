@@ -328,6 +328,45 @@ sns.lineplot(x = x,
 
 </div>
 
+
+---
+
+<div id = "left">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph TB
+A(time of the alarm) -->B(hours of sleep)
+C(bedtime) -->B
+A-.->C
+D(worry)-->B
+D-.->C
+E(desire to be healthy)-->C
+F(other factors ??)-->B
+
+```
+
+</div>
+
+
+
+<div id = "right">
+
+```python
+mu = statistics.mean(hours)
+sigma = statistics.stdev(hours)
+x = np.linspace(mu - 3*sigma, 
+                mu + 3*sigma, 
+                100)
+y = stats.norm.pdf(x, mu, sigma)
+
+sns.lineplot(x = x, 
+             y = y, 
+             color='black', 
+             linestyle = 'dotted')
+```
+
+</div>
+
 ---
 
 # Topic 2
