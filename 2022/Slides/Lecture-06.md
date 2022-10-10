@@ -183,7 +183,7 @@ C(bedtime) -->B
 A-.->C
 D(worry)-->B
 D-.->C
-E(desire to be healthy)-->B
+E(desire to be healthy)-->C
 F(other factors ??)-->B
 
 ```
