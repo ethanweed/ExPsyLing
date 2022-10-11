@@ -34,7 +34,7 @@
 
 ## Understanding data
 
-<img src="http://cdn.wallpapersafari.com/11/33/EaO4ew.gif" width= 400 \img>
+<img src="http://cdn.wallpapersafari.com/11/33/EaO4ew.gif" />
 
 
 ---
