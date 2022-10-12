@@ -61,7 +61,7 @@
 
 Models..
 
-- **Cannot** tell us everything about the underlying process that generated the data
+- **Cannot** tell us everything about the underlying process that generated the data (reality)
 - **Can** (hopefully) allow us to make _some_ inferences about the underlying processes
 
 ---
