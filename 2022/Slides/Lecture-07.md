@@ -78,6 +78,15 @@ O W R D
 
 ---
 
+## Lupker (2005)
+
+"Visual Word Recognition: Theories and Findings"
+
+The basic phenomena:
+1. The word superiority effect
+2. The word frequency effect
+3. The semantic priming effect
+4. The masked repetition priming effect
 
 
 ---
