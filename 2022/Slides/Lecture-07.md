@@ -94,15 +94,15 @@ The basic phenomena:
 
 ## The word superiority effect
 
-<div id = "right">
+
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph LR
-A(word vs. non-word) -->B(letter reading speed)
+A(word vs. non-word) -->B(RT for letter reading / identification)
 
 ```
 
-</div>
+
 
 
 
@@ -111,15 +111,38 @@ A(word vs. non-word) -->B(letter reading speed)
 
 ## The word frequency effect
 
-<div id = "right">
+
 
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph LR
-A(word frequency) -->B(word identification reading speed)
+A(word frequency) -->B(RT for word reading / identification)
 
 ```
 
-</div>
+
+---
+
+## The semantic priming effect
+
+
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(C A T) -->B(RT for word reading / identification of D O G)
+
+```
+
+---
+
+## The masked repetition priming effect
+
+
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(d o g (maked)) -->B(RT for word reading / identification of D O G)
+
+```
 
 ---
 
