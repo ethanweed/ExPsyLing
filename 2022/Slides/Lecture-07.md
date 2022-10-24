@@ -137,10 +137,9 @@ A(C A T) -->B(RT for word reading / identification of D O G)
 ## The masked repetition priming effect
 
 
-
 ```{.mermaid format=svg  theme=neutral width=400 }
 graph LR
-A(d o g (maked)) -->B(RT for word reading / identification of D O G)
+A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ```
 
