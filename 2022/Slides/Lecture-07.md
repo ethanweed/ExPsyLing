@@ -14,6 +14,9 @@
 
 ## James Cattell
 
+"The time it takes to see and name objects"  
+
+
 <div id = "left">
 
 - kymograph
