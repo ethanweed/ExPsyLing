@@ -94,12 +94,32 @@ The basic phenomena:
 
 ## The word superiority effect
 
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(word vs. non-word) -->B(letter reading speed)
+
+```
+
+</div>
 
 
 
 ---
 
 
+## The word frequency effect
+
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(word frequency) -->B(word identification reading speed)
+
+```
+
+</div>
 
 ---
 
