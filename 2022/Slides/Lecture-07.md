@@ -72,7 +72,7 @@ W O R D
 
 O W R D
 
-— — —D/K
+\- - - D/K
 
 
 
@@ -83,6 +83,7 @@ O W R D
 "Visual Word Recognition: Theories and Findings"
 
 The basic phenomena:
+
 1. The word superiority effect
 2. The word frequency effect
 3. The semantic priming effect
