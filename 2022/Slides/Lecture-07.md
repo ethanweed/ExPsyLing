@@ -42,7 +42,15 @@
 
 Word superiority effect
 
-![[Pasted image 20221024175155.png]]
+
+
+
+
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Cattell%20quote%20word%20superiority.png?raw=true" width=""/>
+
+
 
 
 
