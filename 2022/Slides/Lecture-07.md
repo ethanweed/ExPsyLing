@@ -156,12 +156,32 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
+## Forster's bin model
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Forster_search_model_Harley_2005.png?raw=true" width="300"/>
+
 
 
 ---
 
 ## Activation models
 
+
+
+<img src="https://www.researchgate.net/profile/Camilla-Fitjar/publication/315664932/figure/fig2/AS:476625511948289@1490647785036/Logogen-as-containers.png" width=""/>
+(Morten's Logogen model)
+
+---
+
+## McClelland & Rumelhart's Interactive activation model
+<img src="https://www.researchgate.net/profile/Magdalena-Sliwinska-2/publication/336676181/figure/fig4/AS:815985489616896@1571557509150/5-The-interactive-activation-model-of-visual-word-recognition-McClelland-Rumelhart.jpg" width=""/>
+
+---
+
+## Coltheart's Dual Route Cascaded Model
+
+
+<img src="https://www.researchgate.net/profile/Daniela-Traficante/publication/266950766/figure/fig1/AS:203184501989383@1425454368859/The-dual-route-cascaded-model-From-DRC-a-dual-route-cascaded-model-of-visual-word.png" width="400"/>
 
 
 ---
