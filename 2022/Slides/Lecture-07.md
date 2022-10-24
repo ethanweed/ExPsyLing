@@ -50,8 +50,27 @@ Word superiority effect
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Cattell%20quote%20word%20superiority.png?raw=true" width=""/>
 
+---
 
+## Word superiority paradox
 
+1. Words are composed of letters
+2. So, to read words, we first have to identify the letters
+3. But, we can read the letters faster if they are in a word
+4. Which must mean that we identify the word _before_ we read the letters..?!?
+
+---
+
+<div id = "right">
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A[LAKE] -->B[ ]
+B -->C[T   /   K]
+
+```
+
+</div>
 
 
 ---
