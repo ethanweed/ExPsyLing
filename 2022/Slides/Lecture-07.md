@@ -151,14 +151,29 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ## Search models: a mental card catalog
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg/1280px-Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg" width="300"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg/1280px-Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg" width="500"/>
 
 
 ---
 
 ## Forster's bin model
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Forster_search_model_Harley_2005.png?raw=true" width="300"/>
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Forster_search_model_Harley_2005.png?raw=true" width="500"/>
+
+</div>
+
+
+
+<div id = "right">
+
+- bins of orthographically similar words
+- words are arranged in bins by frequency
+- each word has a pointer to a lexical item
+- lexical items have semantic connections
+
+</div>
 
 
 
@@ -168,20 +183,68 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 
 
+---
+
+## Morten's Logogen model
+
+
+<div id = "left">
+
 <img src="https://www.researchgate.net/profile/Camilla-Fitjar/publication/315664932/figure/fig2/AS:476625511948289@1490647785036/Logogen-as-containers.png" width=""/>
-(Morten's Logogen model)
+
+</div>
+
+
+
+<div id = "right">
+
+- Different words have different activation thresholds
+- Evidence acrues for different words
+- No real interaction
+
+</div>
 
 ---
 
 ## McClelland & Rumelhart's Interactive activation model
+
+<div id = "left">
+
 <img src="https://www.researchgate.net/profile/Magdalena-Sliwinska-2/publication/336676181/figure/fig4/AS:815985489616896@1571557509150/5-The-interactive-activation-model-of-visual-word-recognition-McClelland-Rumelhart.jpg" width=""/>
+
+</div>
+
+
+
+<div id = "right">
+
+- upstream flow of information
+- hierarchies of representations
+- downstream flow of information
+- inhibitory connections between nodes at the same level
+
+</div>
 
 ---
 
 ## Coltheart's Dual Route Cascaded Model
 
 
+<div id = "left">
+
 <img src="https://www.researchgate.net/profile/Daniela-Traficante/publication/266950766/figure/fig1/AS:203184501989383@1425454368859/The-dual-route-cascaded-model-From-DRC-a-dual-route-cascaded-model-of-visual-word.png" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+
+- interactive activation on the "lexical route"
+- one-way, direct connection on the "non-lexical route"
+- can explain a lot of phenomena, but overly complex?
+
+</div>
 
 
 ---
