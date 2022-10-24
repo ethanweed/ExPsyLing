@@ -72,7 +72,7 @@ W O R D
 
 O W R D
 
-\- - - D/K
+\  - - - D/K
 
 
 
@@ -91,6 +91,8 @@ The basic phenomena:
 
 
 ---
+
+## The word superiority effect
 
 
 
