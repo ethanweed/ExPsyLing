@@ -61,7 +61,7 @@ Word superiority effect
 
 ---
 
-<div id = "left", align="center">
+<div id = "left", text-align="center">
 
 
 W O R D
@@ -73,7 +73,7 @@ W O R D
 
 
 
-<div id = "right", align = "right">
+<div id = "right", text-align = "right">
 
 O W R D
 
