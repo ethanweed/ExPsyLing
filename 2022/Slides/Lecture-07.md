@@ -145,6 +145,27 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
+## Cognitive models: search vs. activations
+
+---
+
+## Search models: a mental card catalog
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg/1280px-Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg" width="300"/>
+
+
+---
+
+
+
+---
+
+## Activation models
+
+
+
+---
+
 # Modern models
 
 ---
