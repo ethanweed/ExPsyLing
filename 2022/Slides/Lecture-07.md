@@ -61,25 +61,19 @@ Word superiority effect
 
 ---
 
-<div id = "left">
+## Reicher (1969)
 
-<center>
+"Perceptual Recognition As A Function Of Meaningfulness Of Stimulus Material"
+
+
+
+
 W O R D
 
-\- - - D/K
-<\center>
-
-</div>
-
-
-
-<div id = "right",>
-<center>
 O W R D
 
-\- - - D/K
-<\center>
-</div>
+— — —D/K
+
 
 
 ---
