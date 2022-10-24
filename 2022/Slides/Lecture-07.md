@@ -63,9 +63,11 @@ Word superiority effect
 
 <div id = "left">
 
+<center>
 W O R D
 
 \- - - D/K
+</center>
 
 </div>
 
