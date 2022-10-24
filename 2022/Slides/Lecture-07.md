@@ -61,14 +61,32 @@ Word superiority effect
 
 ---
 
-WAKE
+<div id = "left">
+
+W O R D
+
+\- - - D/K
+
+</div>
+
+
+
+<div id = "right">
+
+O W R D
+
+\- - - D/K
+
+</div>
+
 
 ---
 
 
+
 ---
 
-T / K
+
 
 
 ---
