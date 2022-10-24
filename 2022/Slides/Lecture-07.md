@@ -61,16 +61,18 @@ Word superiority effect
 
 ---
 
-<div id = "right">
+WAKE
 
-```{.mermaid format=svg  theme=neutral width=400 }
-graph LR
-A[LAKE] -->B[ ]
-B -->C[T   /   K]
+---
 
-```
 
-</div>
+---
+
+T / K
+
+
+---
+
 
 
 ---
