@@ -36,6 +36,14 @@
 </div>
 
 
+---
+
+## James Cattell
+
+Word superiority effect
+
+![[Pasted image 20221024175155.png]]
+
 
 
 ---
