@@ -16,6 +16,7 @@
 
 <div id = "left">
 
+- kymograph
 - response time as measure of cognition
 - 1/2 second to read a letter
 - paralell processing
@@ -25,9 +26,9 @@
 
 
 <div id = "right">
-Kymograph
 
-<img src="http://waywiser.rc.fas.harvard.edu/internal/media/dispatcher/141/literal%3Aresize%3Aformat%3Dpreview;jsessionid=56C9CA0702C61614C6FF1C187A74432E" width="400"/>
+
+<img src="http://waywiser.rc.fas.harvard.edu/internal/media/dispatcher/141/literal%3Aresize%3Aformat%3Dpreview;jsessionid=56C9CA0702C61614C6FF1C187A74432E" width="300"/>
 
 </div>
 
