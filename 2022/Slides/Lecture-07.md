@@ -351,6 +351,8 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ## Paralell Distributed Processing models
 
+
+
 <div id = "left">
 
 <img src="https://www.researchgate.net/profile/Mark-Seidenberg/publication/2475753/figure/fig22/AS:668216711974923@1536326687534/The-triangle-model-of-Seidenberg-and-McClelland-1989-The-implemented-model-examined.png" width="400"/>
@@ -361,6 +363,7 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 <div id = "right">
 
+- e.g. Seidenberg and McClelland (1989)
 - there is no "lexicon"
 - it's all just interactions, man
 
