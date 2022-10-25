@@ -189,7 +189,9 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Activation models
+## Activation models: spreading flames
+
+<img src="https://img.freepik.com/premium-vector/fire-forest_1308-22120.jpg?w=1800" width="400"/>
 
 
 
