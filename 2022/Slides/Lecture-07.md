@@ -249,28 +249,69 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ## Neural Networks (crash course)
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN2.png?raw=true" width="400"/>
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN1.png?raw=true" width="400"/>
 
 
----
+</div>
 
-## Neural Networks (crash course)
+
+
+<div id = "right">
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN3.png?raw=true" width="400"/>
 
 
+</div>
+
+
+
+
+
 ---
 
 ## Neural Networks (crash course)
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN3.png?raw=true" width="400"/>
+
+
+</div>
+
+
+
+<div id = "right">
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN4.png?raw=true" width="400"/>
 
 
+</div>
+
+
+
 ---
 
 ## Neural Networks (crash course)
 
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN4.png?raw=true" width="400"/>
+
+
+</div>
+
+
+
+<div id = "right">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN5.png?raw=true" width="400"/>
+
+
+</div>
+
 
 
 
