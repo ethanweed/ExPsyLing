@@ -20,7 +20,7 @@
 
 ---
 
-# Historical models
+# Models of VWR
 
 ## James Cattell
 
@@ -353,9 +353,7 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 </div>
 
 
----
 
-# Modern models
 
 ---
 
