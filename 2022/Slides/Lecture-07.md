@@ -248,7 +248,8 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Neural Networks (crash course)
+## Neural Networks
+(crash course)
 
 <div id = "left">
 
@@ -272,7 +273,8 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Neural Networks (crash course)
+## Neural Networks
+(crash course)
 
 <div id = "left">
 
@@ -294,7 +296,9 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Neural Networks (crash course)
+## Neural Networks
+(crash course)
+
 
 
 <div id = "left">
@@ -324,7 +328,7 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 <div id = "left">
 
-<img src="https://www.researchgate.net/profile/Daniela-Traficante/publication/266950766/figure/fig1/AS:203184501989383@1425454368859/The-dual-route-cascaded-model-From-DRC-a-dual-route-cascaded-model-of-visual-word.png" width="400"/>
+<img src="https://www.researchgate.net/profile/Daniela-Traficante/publication/266950766/figure/fig1/AS:203184501989383@1425454368859/The-dual-route-cascaded-model-From-DRC-a-dual-route-cascaded-model-of-visual-word.png" width="350"/>
 
 </div>
 
