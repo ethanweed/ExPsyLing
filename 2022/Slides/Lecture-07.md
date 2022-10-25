@@ -373,7 +373,6 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ## Modelling the Lexical Decision Task
 
-Wagenmakers et al (2004)
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Wagenmakers_2004.png?raw=true" width="500"/>
 
