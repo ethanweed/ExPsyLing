@@ -227,7 +227,8 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Neural Networks (crash course)
+## Neural Networks 
+(crash course)
 
 <div id = "left">
 
