@@ -8,6 +8,16 @@
 
 ## Quiz
 
+1. What is a measure of central tendency? 
+	1. What are some examples?
+	2. Why do we need them?
+2. What are measures of variance?
+	1. What are some examples?
+	2. Why do we need them?
+3. What is the difference between:
+	1. A point estimate
+	2. A distribution
+
 ---
 
 # Historical models
