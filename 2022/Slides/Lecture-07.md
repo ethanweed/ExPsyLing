@@ -189,9 +189,9 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 ---
 
-## Activation models: spreading flames
+## Activation models
 
-<img src="https://img.freepik.com/premium-vector/fire-forest_1308-22120.jpg?w=1800" width="400"/>
+
 
 
 
@@ -401,6 +401,6 @@ A(d o g ) -->B(RT for word reading / identification of D O G)
 
 Cattell, J. M. (1886). The time it takes to see and name objects. _Mind_, _11_(41), 63-65.
 
-
+[more references on their way!]
 
 </div>
