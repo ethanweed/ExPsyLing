@@ -203,6 +203,10 @@ ax.grid()
 
 ---
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/McElreath-globe-task-image.png?raw=true" width=""/>
+
+---
+
 
 # References
 
@@ -214,6 +218,6 @@ ax.grid()
 <div id = "refs">
 
 
-
+[references still loading...]
 
 </div>
