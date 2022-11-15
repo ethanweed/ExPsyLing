@@ -15,10 +15,14 @@
 
 ---
 
+## Atkinson & Shiffrin (1971)
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/AtkinsonShiffrin_1971.png?raw=true" width="700"/>
-Atkinson & Shiffrin (1971)
+
 
 ---
+
+## Sternberg (1966)
 
 <div id = "left">
 
@@ -36,13 +40,15 @@ Atkinson & Shiffrin (1971)
 </div>
 
 
-Sternberg (1966)
+
 
 ---
 
+## Baddeley (2017)
+
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600"/>
 
-Baddeley (2017)
 
 ---
 
