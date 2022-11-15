@@ -59,7 +59,23 @@
 
 </div>
 
+---
 
+## ExPsyLing Sternberg 2021 & 2022
+
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Sternberg_results_2021.png?raw=true" width=""/>
+
+</div>
+
+
+
+<div id = "right">
+
+
+</div>
 
 
 ---
