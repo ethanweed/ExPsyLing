@@ -45,6 +45,21 @@
 ## ExPsyLing Sternberg Task 2021
 
 
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Sternberg_Experiment1.png?raw=true" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Sternberg_results_2021.png?raw=true" width=""/>
+
+</div>
+
+
 
 
 ---
