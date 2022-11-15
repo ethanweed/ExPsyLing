@@ -61,7 +61,7 @@
 
 ---
 
-## ExPsyLing Sternberg 2021 & 2022
+## Sternberg 2021 & 2022
 
 
 <div id = "left">
@@ -78,6 +78,14 @@
 
 </div>
 
+
+---
+
+Conclusions:
+
+There is evidence supporting the claim that access to working memory is
+- Serial
+- Exhaustive
 
 ---
 
