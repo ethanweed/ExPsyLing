@@ -65,7 +65,7 @@
 
 
 <div id = "left">
-
+2021
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Sternberg_results_2021.png?raw=true" width=""/>
 
 </div>
@@ -73,7 +73,7 @@
 
 
 <div id = "right">
-
+2022
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Sternberg_results_2022.png?raw=true" width=""/>
 
 </div>
