@@ -84,6 +84,7 @@
 Conclusions:
 
 There is evidence supporting the claim that access to working memory is
+
 - Serial
 - Exhaustive
 
