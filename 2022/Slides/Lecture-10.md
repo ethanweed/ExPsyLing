@@ -74,6 +74,7 @@
 
 <div id = "right">
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Sternberg_results_2022.png?raw=true" width=""/>
 
 </div>
 
