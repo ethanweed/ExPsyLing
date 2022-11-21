@@ -30,6 +30,13 @@
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
 
+
+---
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
+
+
 ---
 
 # Reading Comprehension
