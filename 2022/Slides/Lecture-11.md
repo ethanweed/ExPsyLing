@@ -8,33 +8,9 @@
 
 ## Quiz
 
----
-
-# Word Recognition
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_1.png?raw=true" width="400"/>
-
-
-
----
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
-
-
----
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_3.png?raw=true" width="400"/>
-
-
----
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
-
-
----
-
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
+- What is this a model of?
+- What do (some of) the different parts represent?
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600"/>
 
 
 ---
@@ -160,6 +136,38 @@ They sat quiet as mice very close together on the couch and regretted that they 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/beta_estimates.png?raw=true" width="400"/>
 
 
+# Word Recognition
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_1.png?raw=true" width="400"/>
+
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_3.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
+
+---
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
+
+
+
+
 ---
 
 
@@ -171,6 +179,8 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 
 <div id = "refs">
+
+Chen, L., Wassermann, D., Abrams, D. A., Kochalka, J., Gallardo-Diez, G., & Menon, V. (2019). The visual word form area (VWFA) is part of both language and attention circuitry. _Nature Communications_, _10_(1), Article 1. [https://doi.org/10.1038/s41467-019-13634-z](https://doi.org/10.1038/s41467-019-13634-z)
 
 Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
 
