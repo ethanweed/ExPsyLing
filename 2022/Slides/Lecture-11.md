@@ -12,7 +12,23 @@
 
 # Word Recognition
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_1.png?raw=true" width="400"/>
 
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_3.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
 
 ---
 
@@ -150,6 +166,8 @@ They sat quiet as mice very close together on the couch and regretted that they 
 <div id = "refs">
 
 Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
+
+Dehaene, S., Naccache, L., Cohen, L., Bihan, D. L., Mangin, J.-F., Poline, J.-B., & Rivière, D. (2001). Cerebral mechanisms of word masking and unconscious repetition priming. _Nature Neuroscience_, _4_(7), Article 7. [https://doi.org/10.1038/89551](https://doi.org/10.1038/89551)
 
 Duke, N. K., & Cartwright, K. B. (2021). The Science of Reading Progresses: Communicating Advances Beyond the Simple View of Reading. _Reading Research Quarterly_, _56_(S1), S25–S44. [https://doi.org/10.1002/rrq.411](https://doi.org/10.1002/rrq.411)
 
