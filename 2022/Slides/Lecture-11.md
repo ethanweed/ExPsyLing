@@ -51,7 +51,18 @@ During the 20th century, fishing boats became hugely more efficient so that it w
 
 ---
 
-[Elbro image fishing boat]
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_1.png?raw=true" width="400"/>
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_2.png?raw=true" width="400"/>
+
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_3.png?raw=true" width="400"/>
+
 
 ---
 
@@ -60,12 +71,12 @@ The analysis yielded the following main effects: a significant main effect of ti
 
 ---
 
-[Elbro coffin example]
 
 
----
 
-[Elbro coffin image]
+
+
+
 
 ---
 
