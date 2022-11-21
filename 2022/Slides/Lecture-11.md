@@ -123,12 +123,17 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
-[my own lackluster deep cloze results]
+## My own lackluster deep cloze results
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/histograms.png?raw=true" width="400"/>
 
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/histograms.png?raw=true" width="400"/>
+## My own lackluster deep cloze results
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/beta_estimates.png?raw=true" width="400"/>
 
 
 ---
