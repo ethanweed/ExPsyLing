@@ -55,13 +55,23 @@ During the 20th century, fishing boats became hugely more efficient so that it w
 
 ---
 
+
+<div id = "left">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_2.png?raw=true" width="400"/>
 
+</div>
 
 
----
+
+<div id = "right">
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_3.png?raw=true" width="400"/>
+
+</div>
+
+
+
 
 
 ---
