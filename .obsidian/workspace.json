@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "640a312628f15ba6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2022/Slides/Lecture-11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/Slides/Lecture-10.md",
+                "file": "2022/Slides/Lecture-11.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,8 +107,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3886281019020cac",
+  "active": "640a312628f15ba6",
   "lastOpenFiles": [
+    "2022/Slides/Lecture-10.md",
+    "2022/Slides/Lecture-11.md",
     "2022/Slides/Lecture-03.md",
     "2022/Slides/Lecture-04.md",
     "2022/Slides/Lecture-05.md",
@@ -103,8 +118,6 @@
     "2022/Slides/Lecture-06.md",
     "2022/Slides/Lecture-07.md",
     "2022/Slides/Lecture-01.md",
-    "2022/Slides/Lecture-02.md",
-    "2022/Slides/Lecture-10.md",
-    "2022/Slides/Lecture-08.md"
+    "2022/Slides/Lecture-02.md"
   ]
 }

@@ -81,12 +81,8 @@
 
 ---
 
-Conclusions:
-
-There is evidence supporting the claim that access to working memory is
-
-- Serial
-- Exhaustive
+There is evidence supporting the claim that access to working memory is both a) serial and
+b) exhaustive, although the story is probably more complicated than this.
 
 ---
 
