@@ -150,13 +150,12 @@ Hoover & Gough (1990)
 
 ---
 
-[moby dick slides]
 
+## Simple View of Reading
 
----
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Hoover-Gough-SVR.png?raw=true" width="600"/>
 
-
-[simple view of reading slides]
+Hoover & Gough (1990)
 
 
 ---
