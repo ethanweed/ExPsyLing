@@ -100,7 +100,7 @@ The men carried the [table, coffin, drawers, children]. They passed many bouquet
 
 ---
 
-[Lyskov Jensen_Elbro_1]
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_1.png?raw=true" width="400"/>
 
 
 
@@ -110,7 +110,16 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
+[DAC]
 
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="400"/>
 
 ---
 
@@ -119,7 +128,7 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
-
+![[beta_estimates.png]]
 
 ---
 
