@@ -128,7 +128,8 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
-![[beta_estimates.png]]
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/histograms.png?raw=true" width="400"/>
+
 
 ---
 
