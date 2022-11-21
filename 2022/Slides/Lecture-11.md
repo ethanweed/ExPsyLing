@@ -32,6 +32,7 @@
 
 ---
 
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Active_model_reading.png?raw=true" width="400"/>
 
 
 ---
@@ -149,6 +150,10 @@ They sat quiet as mice very close together on the couch and regretted that they 
 <div id = "refs">
 
 Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
+
+Duke, N. K., & Cartwright, K. B. (2021). The Science of Reading Progresses: Communicating Advances Beyond the Simple View of Reading. _Reading Research Quarterly_, _56_(S1), S25–S44. [https://doi.org/10.1002/rrq.411](https://doi.org/10.1002/rrq.411)
+
+Nation, K. (2019). Children’s reading difficulties, language, and reflections on the simple view of reading. _Australian Journal of Learning Difficulties_, _24_(1), 47–73. [https://doi.org/10.1080/19404158.2019.1609272](https://doi.org/10.1080/19404158.2019.1609272)
 
 Perfetti, C., & Stafura, J. (2014). Word Knowledge in a Theory of Reading Comprehension. _Scientific Studies of Reading_, _18_(1), 22–37. [https://doi.org/10.1080/10888438.2013.827687](https://doi.org/10.1080/10888438.2013.827687)
 
