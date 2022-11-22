@@ -141,10 +141,6 @@ Hoover & Gough (1990)
 
 “Moses received the tablets. He needed a glass of water to swallow them.”
 
----
-
-
-During the 20th century, fishing boats became hugely more efficient so that it was possible to catch large quantities of fish in a short time. Towards the end of the century it became necessary to regulate fishing, for example by setting limits (quotas) on the catches of each fisherman or boat.
 
 
 ---
@@ -226,12 +222,12 @@ C(Deep cloze) -->D(Reading comprehension)
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="600"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="700"/>
 
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="600"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="700"/>
 
 ---
 
@@ -262,13 +258,24 @@ C(Deep cloze) -->D(Reading comprehension)
 ---
 
 
+
+<div id = "left">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_1.png?raw=true" width="400"/>
 
 
+</div>
 
----
+
+
+<div id = "right">
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+
+
+</div>
+
+
 
 
 ---
