@@ -146,9 +146,34 @@ Hoover & Gough (1990)
 
 ---
 
+## Active View of Reading
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Active_model_reading.png?raw=true" width="400"/>
 
 Duke & Cartwright (2021)
+
+---
+
+## Reading Systems Framework
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Perfetti_and_Stafura_1.png?raw=true" width="500"/>
+
+Perfetti & Stafura (2014)
+
+---
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Perfetti_and_Stafura_2.png?raw=true" width="500"/>
+
+Perfetti & Stafura (2014)
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Perfetti_and_Stafura_3.png?raw=true" width="500"/>
+
+Perfetti & Stafura (2014)
+
 
 ---
 
