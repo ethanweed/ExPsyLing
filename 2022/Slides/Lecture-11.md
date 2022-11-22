@@ -185,7 +185,23 @@ Perfetti & Stafura (2014)
 
 ---
 
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Perfetti_and_Stafura_1.png?raw=true" width="500"/>
+
+</div>
+
+
+
+<div id = "right">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Perfetti_and_Stafura_3.png?raw=true" width="500"/>
+
+
+</div>
+
+
 
 Perfetti & Stafura (2014)
 
