@@ -219,26 +219,33 @@ C(Deep cloze) -->D(Reading comprehension)
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="400"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="600"/>
 
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="400"/>
-
----
-
-## My own lackluster deep cloze results
-
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/histograms.png?raw=true" width="400"/>
-
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="600"/>
 
 ---
 
 ## My own lackluster deep cloze results
+
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/histograms.png?raw=true" width="500"/>
+
+</div>
+
+
+
+<div id = "right">
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/beta_estimates.png?raw=true" width="400"/>
+
+
+</div>
+
+
 
 
 ---
