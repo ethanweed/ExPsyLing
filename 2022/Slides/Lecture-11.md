@@ -164,17 +164,11 @@ During the 20th century, fishing boats became hugely more efficient so that it w
 
 <div id = "right">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_3.png?raw=true" width="400"/>
+The analysis yielded the following main effects: a significant main effect of time, F(1, 201) = 184.6, p < .001; a nonsignificant effect of condition, F(1, 14) = 3.3, ns; [...] It is important to note that a _highly significant interaction effect_ was found between time and condition, F(1, 14) = 22.7, p < .001, the size of this (training) effect was large (d = .92; Cohen, 1988).
 
 </div>
 
 
-
-
-
----
-
-The analysis yielded the following main effects: a significant main effect of time, F(1, 201) = 184.6, p < .001; a nonsignificant effect of condition, F(1, 14) = 3.3, ns; [...] It is important to note that a _highly significant interaction effect_ was found between time and condition, F(1, 14) = 22.7, p < .001, the size of this (training) effect was large (d = .92; Cohen, 1988).
 
 
 ---
@@ -190,7 +184,7 @@ The men carried the [table, coffin, drawers, children]. They passed many bouquet
 
 ---
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_1.png?raw=true" width="400"/>
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_1.png?raw=true" width="600"/>
 
 
 
