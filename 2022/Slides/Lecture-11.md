@@ -280,7 +280,20 @@ C(Deep cloze) -->D(Reading comprehension)
 
 ---
 
+<div id = "left">
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_3.png?raw=true" width="400"/>
+
+</div>
+
 
 
 ---
