@@ -149,7 +149,20 @@ During the 20th century, fishing boats became hugely more efficient so that it w
 
 ---
 
+<div id = "left">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Elbro_Buch-Iversen_1.png?raw=true" width="400"/>
+
+</div>
+
+
+
+<div id = "right">
+
+During the 20th century, fishing boats became hugely more efficient so that it was possible to catch large quantities of fish in a short time. Towards the end of the century it became necessary to regulate fishing, for example by setting limits (quotas) on the catches of each fisherman or boat.
+
+</div>
+
 
 ---
 
