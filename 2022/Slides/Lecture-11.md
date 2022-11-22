@@ -271,7 +271,20 @@ They sat quiet as mice very close together on the couch and regretted that they 
 ## References
 
 
+
 <div id = "refs">
+
+Chen, L., Wassermann, D., Abrams, D. A., Kochalka, J., Gallardo-Diez, G., & Menon, V. (2019). The visual word form area (VWFA) is part of both language and attention circuitry. _Nature Communications_, _10_(1), Article 1. [https://doi.org/10.1038/s41467-019-13634-z](https://doi.org/10.1038/s41467-019-13634-z)
+
+Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
+
+Dehaene, S., Naccache, L., Cohen, L., Bihan, D. L., Mangin, J.-F., Poline, J.-B., & Rivière, D. (2001). Cerebral mechanisms of word masking and unconscious repetition priming. _Nature Neuroscience_, _4_(7), Article 7. [https://doi.org/10.1038/89551](https://doi.org/10.1038/89551)
+
+Duke, N. K., & Cartwright, K. B. (2021). The Science of Reading Progresses: Communicating Advances Beyond the Simple View of Reading. _Reading Research Quarterly_, _56_(S1), S25–S44. [https://doi.org/10.1002/rrq.411](https://doi.org/10.1002/rrq.411)
+
+Nation, K. (2019). Children’s reading difficulties, language, and reflections on the simple view of reading. _Australian Journal of Learning Difficulties_, _24_(1), 47–73. [https://doi.org/10.1080/19404158.2019.1609272](https://doi.org/10.1080/19404158.2019.1609272)
+
+Perfetti, C., & Stafura, J. (2014). Word Knowledge in a Theory of Reading Comprehension. _Scientific Studies of Reading_, _18_(1), 22–37. [https://doi.org/10.1080/10888438.2013.827687](https://doi.org/10.1080/10888438.2013.827687)
 
 
 
