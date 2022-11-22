@@ -200,7 +200,22 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
-[DAC]
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(Language knowledge) -->D(Reading comprehension)
+B(Word knowledge) -->D(Reading comprehension)
+C(Inference from world knowledge) -->D(Reading comprehension)
+
+```
+
+
+```{.mermaid format=svg  theme=neutral width=400 }
+graph LR
+A(Sentence cloze) -->D(Reading comprehension)
+B(Vocabulary) -->D(Reading comprehension)
+C(Deep cloze) -->D(Reading comprehension)
+
+```
 
 ---
 
