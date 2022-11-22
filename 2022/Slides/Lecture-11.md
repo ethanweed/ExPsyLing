@@ -135,6 +135,7 @@ Hoover & Gough (1990)
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Active_model_reading.png?raw=true" width="400"/>
 
+Duke & Cartwright (2021)
 
 ---
 
@@ -202,6 +203,8 @@ Jensen & Elbro (2022)
 ---
 
 They sat quiet as mice very close together on the couch and regretted that they had started. It did say that you had to be over 15 years. After some time, the youngest dared to reach out for the [remote, guest, handle, mask].
+
+Jensen & Elbro (2022)
 
 ---
 
