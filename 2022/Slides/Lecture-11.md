@@ -8,10 +8,23 @@
 
 ## Quiz
 
+<div id = "left">
 
 - What is this a model of?
 - What do (some of) the different parts represent?
+
+</div>
+
+
+
+<div id = "right">
+
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/Baddeley_current_model_episodic_buffer.png?raw=true" width="600"/>
+
+
+</div>
+
+
 
 
 ---
