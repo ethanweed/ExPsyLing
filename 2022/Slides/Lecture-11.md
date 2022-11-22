@@ -399,6 +399,7 @@ Dehaene et al (2001)
 
 ---
 
+## Word-reading and attention
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
 
