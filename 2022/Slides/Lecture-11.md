@@ -121,7 +121,7 @@ Hoover & Gough (1990)
 
 ---
 
-# Topic 2
+# A Reading Framework
 
 
 ## Simple View of Reading
@@ -140,10 +140,6 @@ Hoover & Gough (1990)
 
 
 “Moses received the tablets. He needed a glass of water to swallow them.”
-
----
-
-
 
 ---
 
@@ -232,10 +228,41 @@ They sat quiet as mice very close together on the couch and regretted that they 
 
 ---
 
-# Topic 3
+# Visual Word Recognition
 
 ---
 
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_1.png?raw=true" width="400"/>
+
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_3.png?raw=true" width="400"/>
+
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
+
+---
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
+
+---
+
+
+<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
+
+
+
+---
 
 # References
 
