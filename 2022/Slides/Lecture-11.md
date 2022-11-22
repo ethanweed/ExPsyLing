@@ -141,7 +141,7 @@ Hoover & Gough (1990)
 
 “Moses received the tablets. He needed a glass of water to swallow them.”
 
-
+Elbro & Buch-Iversen (2013)
 
 ---
 
@@ -159,6 +159,7 @@ During the 20th century, fishing boats became hugely more efficient so that it w
 
 </div>
 
+Elbro & Buch-Iversen (2013)
 
 ---
 
@@ -178,7 +179,7 @@ The analysis yielded the following main effects: a significant main effect of ti
 </div>
 
 
-
+Elbro & Buch-Iversen (2013)
 
 ---
 
@@ -190,12 +191,13 @@ The analysis yielded the following main effects: a significant main effect of ti
 
 The men carried the [table, coffin, drawers, children]. They passed many bouquets of flowers as they slowly made their way down the aisle. They were invited for tea at a close relative’s house afterwards.
 
+Jensen & Elbro (2022)
 
 ---
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_1.png?raw=true" width="600"/>
 
-
+Jensen & Elbro (2022)
 
 ---
 
@@ -224,10 +226,13 @@ C(Deep cloze) -->D(Reading comprehension)
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_2.png?raw=true" width="700"/>
 
+Jensen & Elbro (2022)
 
 ---
 
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Lyskov%C2%A0Jensen_Elbro_3.png?raw=true" width="700"/>
+
+Jensen & Elbro (2022)
 
 ---
 
@@ -277,6 +282,7 @@ C(Deep cloze) -->D(Reading comprehension)
 
 
 
+Dehaene et al (2001)
 
 ---
 
@@ -298,13 +304,6 @@ Dehaene et al (2001)
 
 
 
----
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
-
----
-
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_4.png?raw=true" width="400"/>
 
 ---
 
@@ -312,6 +311,7 @@ Dehaene et al (2001)
 <img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Chen_VFWA.png?raw=true" width="400"/>
 
 
+Chen et al (2019)
 
 ---
 
@@ -327,11 +327,13 @@ Dehaene et al (2001)
 
 Chen, L., Wassermann, D., Abrams, D. A., Kochalka, J., Gallardo-Diez, G., & Menon, V. (2019). The visual word form area (VWFA) is part of both language and attention circuitry. _Nature Communications_, _10_(1), Article 1. [https://doi.org/10.1038/s41467-019-13634-z](https://doi.org/10.1038/s41467-019-13634-z)
 
-Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
-
 Dehaene, S., Naccache, L., Cohen, L., Bihan, D. L., Mangin, J.-F., Poline, J.-B., & Rivière, D. (2001). Cerebral mechanisms of word masking and unconscious repetition priming. _Nature Neuroscience_, _4_(7), Article 7. [https://doi.org/10.1038/89551](https://doi.org/10.1038/89551)
 
 Duke, N. K., & Cartwright, K. B. (2021). The Science of Reading Progresses: Communicating Advances Beyond the Simple View of Reading. _Reading Research Quarterly_, _56_(S1), S25–S44. [https://doi.org/10.1002/rrq.411](https://doi.org/10.1002/rrq.411)
+
+Elbro, C., & Buch-Iversen, I. (2013). Activation of Background Knowledge for Inference Making: Effects on Reading Comprehension. _Scientific Studies of Reading_, _17_(6), 435–452. [https://doi.org/10.1080/10888438.2013.774005](https://doi.org/10.1080/10888438.2013.774005)
+
+Jensen, K. L., & Elbro, C. (2022). Clozing in on reading comprehension: A deep cloze test of global inference making. _Reading and Writing_. [https://doi.org/10.1007/s11145-021-10230-w](https://doi.org/10.1007/s11145-021-10230-w)
 
 Nation, K. (2019). Children’s reading difficulties, language, and reflections on the simple view of reading. _Australian Journal of Learning Difficulties_, _24_(1), 47–73. [https://doi.org/10.1080/19404158.2019.1609272](https://doi.org/10.1080/19404158.2019.1609272)
 
