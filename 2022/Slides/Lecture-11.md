@@ -282,7 +282,9 @@ C(Deep cloze) -->D(Reading comprehension)
 
 <div id = "left">
 
-<img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Dehaene_2001_2.png?raw=true" width="400"/>
+"[...] masking acts by reducing the duration and/or the intensity of the evoked neural activity [...]"
+
+Dehaene et al (2001)
 
 </div>
 
