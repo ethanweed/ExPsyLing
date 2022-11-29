@@ -62,6 +62,8 @@ RT = motor activity + cognition
 
 <div id = "refs">
 
+[Edward Hopper (1940) "Gas"](https://www.wikiart.org/en/edward-hopper/gas)
+
 Rousseau, D., Billingham, J., & Calvo-Amodio, J. (2018). Systemic semantics: A systems approach to building ontologies and concept maps. _Systems_, _6_(3), 32.
 
 
