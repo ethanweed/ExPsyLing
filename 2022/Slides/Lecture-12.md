@@ -49,7 +49,13 @@ Red
 
 ---
 
-# Topic 2
+# Measuring cognition
+
+---
+
+## Response time
+
+RT = motor activity + cognition
 
 ---
 
