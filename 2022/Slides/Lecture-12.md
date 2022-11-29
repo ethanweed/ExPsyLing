@@ -2,13 +2,6 @@
 
 ---
 
-# Review
-
----
-
-## Quiz
-
----
 
 # Concepts
 
