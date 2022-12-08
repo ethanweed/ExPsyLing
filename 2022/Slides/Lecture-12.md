@@ -62,7 +62,7 @@ RT = motor activity + cognition
 
 Mouse-tracking
 
-<img src="https://www.pnas.org/cms/10.1073/pnas.0503903102/asset/0b15a725-7d15-470c-8c9a-d72b80ca78c7/assets/graphic/zpq0260586540001.jpeg" width="500"/>
+<img src="https://www.pnas.org/cms/10.1073/pnas.0503903102/asset/0b15a725-7d15-470c-8c9a-d72b80ca78c7/assets/graphic/zpq0260586540001.jpeg" width="400"/>
 
 
 ---
