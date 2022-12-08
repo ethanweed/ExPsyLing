@@ -50,6 +50,28 @@ Red
 
 RT = motor activity + cognition
 
+
+---
+
+## Other measures of cognition
+
+- Mouse-tracking
+- Eye-tracking
+
+---
+
+Mouse-tracking
+
+<img src="https://www.pnas.org/cms/10.1073/pnas.0503903102/asset/0b15a725-7d15-470c-8c9a-d72b80ca78c7/assets/graphic/zpq0260586540001.jpeg" width="500"/>
+
+
+---
+
+## Knowledge production
+
+<img src="https://ethanweed.github.io/Studium_Generale/StudiumGenerale2022/Slides/Images/knowledge-creation-1.png" width=""/>
+
+
 ---
 
 
