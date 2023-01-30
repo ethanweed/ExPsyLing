@@ -60,9 +60,12 @@ RT = motor activity + cognition
 
 ---
 
-Mouse-tracking
+Mouse-tracking & eye-tracking: dynamic cognition
 
 <img src="https://www.pnas.org/cms/10.1073/pnas.0503903102/asset/0b15a725-7d15-470c-8c9a-d72b80ca78c7/assets/graphic/zpq0260586540001.jpeg" width="400"/>
+
+
+Spivey, Grosjean, & Knoblich (2005)
 
 
 ---
@@ -88,5 +91,6 @@ Mouse-tracking
 
 Rousseau, D., Billingham, J., & Calvo-Amodio, J. (2018). Systemic semantics: A systems approach to building ontologies and concept maps. _Systems_, _6_(3), 32.
 
+Spivey, M. J., Grosjean, M., & Knoblich, G. (2005). Continuous attraction toward phonological competitors. _Proceedings of the National Academy of Sciences_, _102_(29), 10393-10398.
 
 </div>
