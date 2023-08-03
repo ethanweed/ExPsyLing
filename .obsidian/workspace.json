@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "05480aab1795c9bc",
+        "id": "66aeca4f624261f0",
         "type": "tabs",
         "children": [
           {
-            "id": "6cd5b0687105f39b",
+            "id": "ffc7cf976fbcb99e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,6 +51,14 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "760486eb5f384578",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           }
         ]
@@ -99,11 +107,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6cd5b0687105f39b",
+  "active": "ffc7cf976fbcb99e",
   "lastOpenFiles": [
-    "2022/Slides/test.md",
-    "2022/Slides/Lecture-12.md",
+    "Worry stone.md",
     "2022/Slides/Lecture-11.md",
+    "2023",
+    "2022/Slides/Lecture-11a.md",
+    "2022/Slides/Lecture-12.md",
+    "2022/Slides/test.md",
     "2022/Slides/Lecture-08.md",
     "2022/Slides/Lecture-07.md",
     "2022/Slides/Lecture-06.md",
