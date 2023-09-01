@@ -1,5 +1,0 @@
-- Getting started with Jupyter notebooks
-- Getting started with loops
-- Getting started with IF statements
-- Getting started with pandas
-- Getting started with variable types
