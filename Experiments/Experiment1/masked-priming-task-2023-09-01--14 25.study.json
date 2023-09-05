@@ -360,7 +360,7 @@
       "responses": [
         {
           "label": "",
-          "event": "keypress",
+          "event": "",
           "target": "",
           "filter": ""
         }
@@ -524,7 +524,7 @@
       "files": [],
       "responses": [
         {
-          "label": "",
+          "label": "target_response",
           "event": "keypress",
           "target": "",
           "filter": "m,n"
@@ -608,7 +608,7 @@
       "responses": [
         {
           "label": "",
-          "event": "keypress",
+          "event": "",
           "target": "",
           "filter": ""
         }
@@ -691,7 +691,7 @@
       "responses": [
         {
           "label": "",
-          "event": "keypress",
+          "event": "",
           "target": "",
           "filter": ""
         }
@@ -1100,7 +1100,7 @@
           "originY": "center",
           "left": 0,
           "top": 0,
-          "width": 620.69,
+          "width": 643.41,
           "height": 455.62,
           "fill": "black",
           "stroke": null,
@@ -1125,7 +1125,7 @@
           "globalCompositeOperation": "source-over",
           "skewX": 0,
           "skewY": 0,
-          "text": "Before you start the real experiment, \nthere is a quick practice round.\n\nRemember:\n\npress N if the word is something natural\n\npress M if the word is something man-made\n\nPress SPACE to start the practice round...\n",
+          "text": "Before you start the real experiment, \nthere is a quick practice round.\n\nRemember:\n\npress \"n\" if the word is something natural\n\npress \"m\" if the word is something man-made\n\nPress SPACE to start the practice round...\n",
           "fontSize": 32,
           "fontWeight": "normal",
           "fontFamily": "sans-serif",
@@ -1201,7 +1201,7 @@
           "code": ""
         }
       ],
-      "title": "Sequence",
+      "title": "Experiment Sequence",
       "shuffle": true,
       "_tab": "Content"
     },
@@ -1930,7 +1930,7 @@
       "responses": [
         {
           "label": "",
-          "event": "keypress",
+          "event": "",
           "target": "",
           "filter": ""
         }
@@ -2178,7 +2178,7 @@
       "files": [],
       "responses": [
         {
-          "label": "",
+          "label": "target_response",
           "event": "keypress",
           "target": "",
           "filter": "m,n"
@@ -2330,7 +2330,7 @@
           "originY": "center",
           "left": 0,
           "top": 0,
-          "width": 478.38,
+          "width": 501.1,
           "height": 371.72,
           "fill": "black",
           "stroke": null,
@@ -2355,7 +2355,7 @@
           "globalCompositeOperation": "source-over",
           "skewX": 0,
           "skewY": 0,
-          "text": "When you see the word,\n\npress the N key if it is natural.\n\npress the M key if it is man-made.\n\n\nPress any key to continue...\n",
+          "text": "When you see the word,\n\npress the \"n\" key if it is natural.\n\npress the \"m\" key if it is man-made.\n\n\nPress any key to continue...\n",
           "fontSize": 32,
           "fontWeight": "normal",
           "fontFamily": "sans-serif",
@@ -2988,6 +2988,7 @@
         "48",
         "49",
         "50",
+        "56",
         "51"
       ],
       "files": [],
@@ -3407,7 +3408,7 @@
       "files": [],
       "responses": [
         {
-          "label": "",
+          "label": "target_response",
           "event": "keypress",
           "target": "",
           "filter": "m,n"
@@ -3808,6 +3809,41 @@
       "title": "Wecome1",
       "_tab": "Behavior",
       "timeout": "500"
+    },
+    "56": {
+      "id": "56",
+      "type": "lab.canvas.Screen",
+      "content": [],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "DELAY",
+      "_tab": "Behavior",
+      "timeout": "80"
     },
     "root": {
       "id": "root",
