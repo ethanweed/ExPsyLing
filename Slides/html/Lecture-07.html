@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>metadata</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/white.css" id="theme">
+  
+
+
+  <style>
+
+  .reveal h1 { font-size: 2.5em; }
+
+
+  #left {
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+
+  }
+
+  #right {
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;	
+  }
+
+  #left_border {
+  	padding: 10px;
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+  	border: 1px solid #000000;
+            border-radius: 10px;
+  }
+
+  #right_border {
+  	padding: 10px;
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #left_border_small {
+  	padding: 5px;
+  	margin: 10px 0 15px 0;
+  	text-align: left;
+  	float: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5; 
+  	border: 1px solid #000000;
+            border-radius: 10px;
+  }
+
+  #right_border_small {
+  	padding: 5px;
+  	margin: 10px 0 15px 0;
+  	float: right;
+  	text-align: left;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #center_border {
+  	display: inline-block;
+  	padding: 1em;
+  	justify-content: center;
+  	z-index:-10;
+  	width:48%;
+  	font-size: 0.85em;
+  	line-height: 1.5;
+  	border: 1px solid #000000;
+            border-radius: 10px;	
+  }
+
+  #refs {
+  	display: inline-block;
+  	justify-content: left;
+  	text-align: left;
+  	z-index:-10;
+  	width:90%;
+  	font-size: small;
+  	line-height: 1.5;	
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="cognitive-models-of-vwr" class="title-slide slide level1">
+<h1>Cognitive models of VWR</h1>
+
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="review" class="title-slide slide level1">
+<h1>Review</h1>
+
+</section>
+<section id="quiz" class="slide level2">
+<h2>Quiz</h2>
+<ol type="1">
+<li>What is a measure of central tendency?
+<ol type="1">
+<li>What are some examples?</li>
+<li>Why do we need them?</li>
+</ol></li>
+<li>What are measures of variance?
+<ol type="1">
+<li>What are some examples?</li>
+<li>Why do we need them?</li>
+</ol></li>
+<li>What is the difference between:
+<ol type="1">
+<li>A point estimate</li>
+<li>A distribution</li>
+</ol></li>
+</ol>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="cognitive-models-of-reading" class="title-slide slide level1">
+<h1>Cognitive Models of Reading</h1>
+
+</section>
+<section id="reading" class="slide level2">
+<h2>Reading</h2>
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/brain-reading-moby-dick.png?raw=true" width="500"/></p>
+</section>
+<section id="simple-view-of-reading" class="slide level2">
+<h2>Simple View of Reading</h2>
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/Hoover-Gough-SVR.png?raw=true" width="600"/></p>
+<p>Hoover &amp; Gough (1990)</p>
+</section>
+<section id="parallel-streams" class="slide level2">
+<h2>Parallel streams</h2>
+<div id="left">
+<ol type="1">
+<li>Word identification</li>
+<li>Integration (sentence-level)</li>
+<li>Comprehension and interpretation</li>
+</ol>
+<p>Perfetti &amp; Helder (2022)</p>
+</div>
+<div id="right">
+<p><img src="https://www.fujiarts.com/japanese-prints/k505/019k505f.jpg" width=""/></p>
+<p>Image: Tokuriki Tomikichiro (1902-1999)</p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+</section></section>
+<section>
+<section id="models-of-vwr" class="title-slide slide level1">
+<h1>Models of VWR</h1>
+
+</section>
+<section id="james-cattell" class="slide level2">
+<h2>James Cattell</h2>
+<p>“The time it takes to see and name objects”</p>
+<div id="left">
+<ul>
+<li>kymograph</li>
+<li>response time as measure of cognition</li>
+<li>1/2 second to read a letter</li>
+<li>parallel processing</li>
+</ul>
+</div>
+<div id="right">
+<p><img src="http://waywiser.rc.fas.harvard.edu/internal/media/dispatcher/141/literal%3Aresize%3Aformat%3Dpreview;jsessionid=56C9CA0702C61614C6FF1C187A74432E" width="300"/></p>
+</div>
+</section>
+<section id="james-cattell-1" class="slide level2">
+<h2>James Cattell</h2>
+<p>Word superiority effect</p>
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Cattell%20quote%20word%20superiority.png?raw=true" width=""/></p>
+</section>
+<section id="word-superiority-paradox" class="slide level2">
+<h2>Word superiority paradox</h2>
+<ol type="1">
+<li>Words are composed of letters</li>
+<li>So, to read words, we first have to identify the letters</li>
+<li>But, we can read the letters faster if they are in a word</li>
+<li>Which must mean that we identify the word <em>before</em> we read the letters..?!?</li>
+</ol>
+</section>
+<section id="reicher-1969" class="slide level2">
+<h2>Reicher (1969)</h2>
+<p>“Perceptual Recognition As A Function Of Meaningfulness Of Stimulus Material”</p>
+<p>W O R D</p>
+<p>O W R D</p>
+<p>  - - - D/K</p>
+</section>
+<section id="lupker-2005" class="slide level2">
+<h2>Lupker (2005)</h2>
+<p>“Visual Word Recognition: Theories and Findings”</p>
+<p>The basic phenomena:</p>
+<ol type="1">
+<li>The word superiority effect</li>
+<li>The word frequency effect</li>
+<li>The semantic priming effect</li>
+<li>The masked repetition priming effect</li>
+</ol>
+</section>
+<section id="the-word-superiority-effect" class="slide level2">
+<h2>The word superiority effect</h2>
+<p><img data-src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC0xNjk4MTU1NjA4NTQzIiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSI1NSIgc3R5bGU9Im1heC13aWR0aDogNTAxLjc2NnB4OyBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsiIHZpZXdCb3g9IjAgMCA1MDEuNzY1NjI1IDU1Ij48c3R5bGU+I21lcm1haWQtMTY5ODE1NTYwODU0MyB7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzAwMDAwMDt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLmVycm9yLXRleHR7ZmlsbDojNTUyMjIyO3N0cm9rZTojNTUyMjIyO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjJweDt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLm1hcmtlcntmaWxsOiM2NjY7c3Ryb2tlOiM2NjY7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLm1hcmtlci5jcm9zc3tzdHJva2U6IzY2Njt9I21lcm1haWQtMTY5ODE1NTYwODU0MyBzdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5sYWJlbHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Y29sb3I6IzAwMDAwMDt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuY2x1c3Rlci1sYWJlbCB0ZXh0e2ZpbGw6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuY2x1c3Rlci1sYWJlbCBzcGFue2NvbG9yOiMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLmxhYmVsIHRleHQsI21lcm1haWQtMTY5ODE1NTYwODU0MyBzcGFue2ZpbGw6IzAwMDAwMDtjb2xvcjojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5ub2RlIHJlY3QsI21lcm1haWQtMTY5ODE1NTYwODU0MyAubm9kZSBjaXJjbGUsI21lcm1haWQtMTY5ODE1NTYwODU0MyAubm9kZSBlbGxpcHNlLCNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLm5vZGUgcG9seWdvbiwjbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5ub2RlIHBhdGh7ZmlsbDojZWVlO3N0cm9rZTojOTk5O3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLm5vZGUgLmxhYmVse3RleHQtYWxpZ246Y2VudGVyO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5ub2RlLmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuYXJyb3doZWFkUGF0aHtmaWxsOiMzMzMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MDg1NDMgLmVkZ2VQYXRoIC5wYXRoe3N0cm9rZTojNjY2O3N0cm9rZS13aWR0aDoyLjBweDt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuZmxvd2NoYXJ0LWxpbmt7c3Ryb2tlOiM2NjY7ZmlsbDpub25lO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5lZGdlTGFiZWx7YmFja2dyb3VuZC1jb2xvcjp3aGl0ZTt0ZXh0LWFsaWduOmNlbnRlcjt9I21lcm1haWQtMTY5ODE1NTYwODU0MyAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjp3aGl0ZTtmaWxsOndoaXRlO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5jbHVzdGVyIHJlY3R7ZmlsbDpoc2woMCwgMCUsIDk4LjkyMTU2ODYyNzUlKTtzdHJva2U6IzcwNzA3MDtzdHJva2Utd2lkdGg6MXB4O30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5jbHVzdGVyIHRleHR7ZmlsbDojMzMzO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIC5jbHVzdGVyIHNwYW57Y29sb3I6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYwODU0MyBkaXYubWVybWFpZFRvb2x0aXB7cG9zaXRpb246YWJzb2x1dGU7dGV4dC1hbGlnbjpjZW50ZXI7bWF4LXdpZHRoOjIwMHB4O3BhZGRpbmc6MnB4O2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOmhzbCgtMTYwLCAwJSwgOTMuMzMzMzMzMzMzMyUpO2JvcmRlcjoxcHggc29saWQgIzcwNzA3MDtib3JkZXItcmFkaXVzOjJweDtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MTAwO30jbWVybWFpZC0xNjk4MTU1NjA4NTQzIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGc+PGcgY2xhc3M9Im91dHB1dCI+PGcgY2xhc3M9ImNsdXN0ZXJzIj48L2c+PGcgY2xhc3M9ImVkZ2VQYXRocyI+PGcgY2xhc3M9ImVkZ2VQYXRoIExTLUEgTEUtQiIgaWQ9IkwtQS1CIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxwYXRoIGNsYXNzPSJwYXRoIiBkPSJNMTYxLjAzMTI1LDI3LjVMMTY1LjE5NzkxNjY2NjY2NjY2LDI3LjVDMTY5LjM2NDU4MzMzMzMzMzM0LDI3LjUsMTc3LjY5NzkxNjY2NjY2NjY2LDI3LjUsMTg2LjAzMTI1LDI3LjVDMTk0LjM2NDU4MzMzMzMzMzM0LDI3LjUsMjAyLjY5NzkxNjY2NjY2NjY2LDI3LjUsMjA2Ljg2NDU4MzMzMzMzMzM0LDI3LjVMMjExLjAzMTI1LDI3LjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3doZWFkNykiIHN0eWxlPSJmaWxsOm5vbmUiPjwvcGF0aD48ZGVmcz48bWFya2VyIGlkPSJhcnJvd2hlYWQ3IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjkiIHJlZlk9IjUiIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlckhlaWdodD0iNiIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDAgMCBMIDEwIDUgTCAwIDEwIHoiIGNsYXNzPSJhcnJvd2hlYWRQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyI+PC9wYXRoPjwvbWFya2VyPjwvZGVmcz48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWxzIj48ZyBjbGFzcz0iZWRnZUxhYmVsIiB0cmFuc2Zvcm09IiIgc3R5bGU9Im9wYWNpdHk6IDE7Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIiBjbGFzcz0ibGFiZWwiPjxyZWN0IHJ4PSIwIiByeT0iMCIgd2lkdGg9IjAiIGhlaWdodD0iMCI+PC9yZWN0Pjxmb3JlaWduT2JqZWN0IHdpZHRoPSIwIiBoZWlnaHQ9IjAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IHdoaXRlLXNwYWNlOiBub3dyYXA7Ij48c3BhbiBpZD0iTC1MLUEtQiIgY2xhc3M9ImVkZ2VMYWJlbCBMLUxTLUEnIEwtTEUtQiI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIGNsYXNzPSJub2RlIGRlZmF1bHQiIGlkPSJmbG93Y2hhcnQtQS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NC41MTU2MjUsMjcuNSkiIHN0eWxlPSJvcGFjaXR5OiAxOyI+PHJlY3Qgcng9IjUiIHJ5PSI1IiB4PSItNzYuNTE1NjI1IiB5PSItMTkuNSIgd2lkdGg9IjE1My4wMzEyNSIgaGVpZ2h0PSIzOSIgY2xhc3M9ImxhYmVsLWNvbnRhaW5lciI+PC9yZWN0PjxnIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwwKSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY2LjUxNTYyNSwtOS41KSI+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjEzMy4wMzEyNSIgaGVpZ2h0PSIxOSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgd2hpdGUtc3BhY2U6IG5vd3JhcDsiPndvcmQgdnMuIG5vbi13b3JkPC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjxnIGNsYXNzPSJub2RlIGRlZmF1bHQiIGlkPSJmbG93Y2hhcnQtQi0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNTIuMzk4NDM3NSwyNy41KSIgc3R5bGU9Im9wYWNpdHk6IDE7Ij48cmVjdCByeD0iNSIgcnk9IjUiIHg9Ii0xNDEuMzY3MTg3NSIgeT0iLTE5LjUiIHdpZHRoPSIyODIuNzM0Mzc1IiBoZWlnaHQ9IjM5IiBjbGFzcz0ibGFiZWwtY29udGFpbmVyIj48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMxLjM2NzE4NzUsLTkuNSkiPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIyNjIuNzM0Mzc1IiBoZWlnaHQ9IjE5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB3aGl0ZS1zcGFjZTogbm93cmFwOyI+UlQgZm9yIGxldHRlciByZWFkaW5nIC8gaWRlbnRpZmljYXRpb248L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+" alt="" /></p>
+</section>
+<section id="the-word-frequency-effect" class="slide level2">
+<h2>The word frequency effect</h2>
+<p><img data-src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC0xNjk4MTU1NjA5MzU0IiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSI1NSIgc3R5bGU9Im1heC13aWR0aDogNDc1LjUzMXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsiIHZpZXdCb3g9IjAgMCA0NzUuNTMxMjUgNTUiPjxzdHlsZT4jbWVybWFpZC0xNjk4MTU1NjA5MzU0IHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7ZmlsbDojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5lcnJvci1pY29ue2ZpbGw6IzU1MjIyMjt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MnB4O30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5lZGdlLXRoaWNrbmVzcy10aGlja3tzdHJva2Utd2lkdGg6My41cHg7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmVkZ2UtcGF0dGVybi1kYXNoZWR7c3Ryb2tlLWRhc2hhcnJheTozO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAubWFya2Vye2ZpbGw6IzY2NjtzdHJva2U6IzY2Njt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAubWFya2VyLmNyb3Nze3N0cm9rZTojNjY2O30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmxhYmVse2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtjb2xvcjojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMzMzO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5jbHVzdGVyLWxhYmVsIHNwYW57Y29sb3I6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAubGFiZWwgdGV4dCwjbWVybWFpZC0xNjk4MTU1NjA5MzU0IHNwYW57ZmlsbDojMDAwMDAwO2NvbG9yOiMwMDAwMDA7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLm5vZGUgcmVjdCwjbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5ub2RlIGNpcmNsZSwjbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5ub2RlIGVsbGlwc2UsI21lcm1haWQtMTY5ODE1NTYwOTM1NCAubm9kZSBwb2x5Z29uLCNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLm5vZGUgcGF0aHtmaWxsOiNlZWU7c3Ryb2tlOiM5OTk7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAubm9kZSAubGFiZWx7dGV4dC1hbGlnbjpjZW50ZXI7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLm5vZGUuY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5hcnJvd2hlYWRQYXRoe2ZpbGw6IzMzMzMzMzt9I21lcm1haWQtMTY5ODE1NTYwOTM1NCAuZWRnZVBhdGggLnBhdGh7c3Ryb2tlOiM2NjY7c3Ryb2tlLXdpZHRoOjIuMHB4O30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzY2NjtmaWxsOm5vbmU7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOndoaXRlO3RleHQtYWxpZ246Y2VudGVyO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IC5lZGdlTGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOndoaXRlO2ZpbGw6d2hpdGU7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmNsdXN0ZXIgcmVjdHtmaWxsOmhzbCgwLCAwJSwgOTguOTIxNTY4NjI3NSUpO3N0cm9rZTojNzA3MDcwO3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmNsdXN0ZXIgdGV4dHtmaWxsOiMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgLmNsdXN0ZXIgc3Bhbntjb2xvcjojMzMzO30jbWVybWFpZC0xNjk4MTU1NjA5MzU0IGRpdi5tZXJtYWlkVG9vbHRpcHtwb3NpdGlvbjphYnNvbHV0ZTt0ZXh0LWFsaWduOmNlbnRlcjttYXgtd2lkdGg6MjAwcHg7cGFkZGluZzoycHg7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxMnB4O2JhY2tncm91bmQ6aHNsKC0xNjAsIDAlLCA5My4zMzMzMzMzMzMzJSk7Ym9yZGVyOjFweCBzb2xpZCAjNzA3MDcwO2JvcmRlci1yYWRpdXM6MnB4O3BvaW50ZXItZXZlbnRzOm5vbmU7ei1pbmRleDoxMDA7fSNtZXJtYWlkLTE2OTgxNTU2MDkzNTQgOnJvb3R7LS1tZXJtYWlkLWZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9PC9zdHlsZT48Zz48ZyBjbGFzcz0ib3V0cHV0Ij48ZyBjbGFzcz0iY2x1c3RlcnMiPjwvZz48ZyBjbGFzcz0iZWRnZVBhdGhzIj48ZyBjbGFzcz0iZWRnZVBhdGggTFMtQSBMRS1CIiBpZD0iTC1BLUIiIHN0eWxlPSJvcGFjaXR5OiAxOyI+PHBhdGggY2xhc3M9InBhdGgiIGQ9Ik0xNDAuMjUsMjcuNUwxNDQuNDE2NjY2NjY2NjY2NjYsMjcuNUMxNDguNTgzMzMzMzMzMzMzMzQsMjcuNSwxNTYuOTE2NjY2NjY2NjY2NjYsMjcuNSwxNjUuMjUsMjcuNUMxNzMuNTgzMzMzMzMzMzMzMzQsMjcuNSwxODEuOTE2NjY2NjY2NjY2NjYsMjcuNSwxODYuMDgzMzMzMzMzMzMzMzQsMjcuNUwxOTAuMjUsMjcuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvd2hlYWQ3KSIgc3R5bGU9ImZpbGw6bm9uZSI+PC9wYXRoPjxkZWZzPjxtYXJrZXIgaWQ9ImFycm93aGVhZDciIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOSIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI2IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgY2xhc3M9ImFycm93aGVhZFBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BhdGg+PC9tYXJrZXI+PC9kZWZzPjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiIHRyYW5zZm9ybT0iIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiIGNsYXNzPSJsYWJlbCI+PHJlY3Qgcng9IjAiIHJ5PSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIj48L3JlY3Q+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjAiIGhlaWdodD0iMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgd2hpdGUtc3BhY2U6IG5vd3JhcDsiPjxzcGFuIGlkPSJMLUwtQS1CIiBjbGFzcz0iZWRnZUxhYmVsIEwtTFMtQScgTC1MRS1CIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjxnIGNsYXNzPSJub2RlcyI+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImZsb3djaGFydC1BLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc0LjEyNSwyNy41KSIgc3R5bGU9Im9wYWNpdHk6IDE7Ij48cmVjdCByeD0iNSIgcnk9IjUiIHg9Ii02Ni4xMjUiIHk9Ii0xOS41IiB3aWR0aD0iMTMyLjI1IiBoZWlnaHQ9IjM5IiBjbGFzcz0ibGFiZWwtY29udGFpbmVyIj48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTYuMTI1LC05LjUpIj48Zm9yZWlnbk9iamVjdCB3aWR0aD0iMTEyLjI1IiBoZWlnaHQ9IjE5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB3aGl0ZS1zcGFjZTogbm93cmFwOyI+d29yZCBmcmVxdWVuY3k8L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImZsb3djaGFydC1CLTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMyOC44OTA2MjUsMjcuNSkiIHN0eWxlPSJvcGFjaXR5OiAxOyI+PHJlY3Qgcng9IjUiIHJ5PSI1IiB4PSItMTM4LjY0MDYyNSIgeT0iLTE5LjUiIHdpZHRoPSIyNzcuMjgxMjUiIGhlaWdodD0iMzkiIGNsYXNzPSJsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjguNjQwNjI1LC05LjUpIj48Zm9yZWlnbk9iamVjdCB3aWR0aD0iMjU3LjI4MTI1IiBoZWlnaHQ9IjE5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB3aGl0ZS1zcGFjZTogbm93cmFwOyI+UlQgZm9yIHdvcmQgcmVhZGluZyAvIGlkZW50aWZpY2F0aW9uPC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="" /></p>
+</section>
+<section id="the-semantic-priming-effect" class="slide level2">
+<h2>The semantic priming effect</h2>
+<p><img data-src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC0xNjk4MTU1NjEwMTMzIiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSI1NSIgc3R5bGU9Im1heC13aWR0aDogNDY2LjQwNnB4OyBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsiIHZpZXdCb3g9IjAgMCA0NjYuNDA2MjUgNTUiPjxzdHlsZT4jbWVybWFpZC0xNjk4MTU1NjEwMTMzIHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7ZmlsbDojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5lcnJvci1pY29ue2ZpbGw6IzU1MjIyMjt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAuZXJyb3ItdGV4dHtmaWxsOiM1NTIyMjI7c3Ryb2tlOiM1NTIyMjI7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MnB4O30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5lZGdlLXRoaWNrbmVzcy10aGlja3tzdHJva2Utd2lkdGg6My41cHg7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmVkZ2UtcGF0dGVybi1kYXNoZWR7c3Ryb2tlLWRhc2hhcnJheTozO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAubWFya2Vye2ZpbGw6IzY2NjtzdHJva2U6IzY2Njt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAubWFya2VyLmNyb3Nze3N0cm9rZTojNjY2O30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIHN2Z3tmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmxhYmVse2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtjb2xvcjojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMzMzO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5jbHVzdGVyLWxhYmVsIHNwYW57Y29sb3I6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAubGFiZWwgdGV4dCwjbWVybWFpZC0xNjk4MTU1NjEwMTMzIHNwYW57ZmlsbDojMDAwMDAwO2NvbG9yOiMwMDAwMDA7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLm5vZGUgcmVjdCwjbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5ub2RlIGNpcmNsZSwjbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5ub2RlIGVsbGlwc2UsI21lcm1haWQtMTY5ODE1NTYxMDEzMyAubm9kZSBwb2x5Z29uLCNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLm5vZGUgcGF0aHtmaWxsOiNlZWU7c3Ryb2tlOiM5OTk7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAubm9kZSAubGFiZWx7dGV4dC1hbGlnbjpjZW50ZXI7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLm5vZGUuY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5hcnJvd2hlYWRQYXRoe2ZpbGw6IzMzMzMzMzt9I21lcm1haWQtMTY5ODE1NTYxMDEzMyAuZWRnZVBhdGggLnBhdGh7c3Ryb2tlOiM2NjY7c3Ryb2tlLXdpZHRoOjIuMHB4O30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzY2NjtmaWxsOm5vbmU7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOndoaXRlO3RleHQtYWxpZ246Y2VudGVyO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIC5lZGdlTGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOndoaXRlO2ZpbGw6d2hpdGU7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmNsdXN0ZXIgcmVjdHtmaWxsOmhzbCgwLCAwJSwgOTguOTIxNTY4NjI3NSUpO3N0cm9rZTojNzA3MDcwO3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmNsdXN0ZXIgdGV4dHtmaWxsOiMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgLmNsdXN0ZXIgc3Bhbntjb2xvcjojMzMzO30jbWVybWFpZC0xNjk4MTU1NjEwMTMzIGRpdi5tZXJtYWlkVG9vbHRpcHtwb3NpdGlvbjphYnNvbHV0ZTt0ZXh0LWFsaWduOmNlbnRlcjttYXgtd2lkdGg6MjAwcHg7cGFkZGluZzoycHg7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxMnB4O2JhY2tncm91bmQ6aHNsKC0xNjAsIDAlLCA5My4zMzMzMzMzMzMzJSk7Ym9yZGVyOjFweCBzb2xpZCAjNzA3MDcwO2JvcmRlci1yYWRpdXM6MnB4O3BvaW50ZXItZXZlbnRzOm5vbmU7ei1pbmRleDoxMDA7fSNtZXJtYWlkLTE2OTgxNTU2MTAxMzMgOnJvb3R7LS1tZXJtYWlkLWZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9PC9zdHlsZT48Zz48ZyBjbGFzcz0ib3V0cHV0Ij48ZyBjbGFzcz0iY2x1c3RlcnMiPjwvZz48ZyBjbGFzcz0iZWRnZVBhdGhzIj48ZyBjbGFzcz0iZWRnZVBhdGggTFMtQSBMRS1CIiBpZD0iTC1BLUIiIHN0eWxlPSJvcGFjaXR5OiAxOyI+PHBhdGggY2xhc3M9InBhdGgiIGQ9Ik02NS45Mzc1LDI3LjVMNzAuMTA0MTY2NjY2NjY2NjcsMjcuNUM3NC4yNzA4MzMzMzMzMzMzMywyNy41LDgyLjYwNDE2NjY2NjY2NjY3LDI3LjUsOTAuOTM3NSwyNy41Qzk5LjI3MDgzMzMzMzMzMzMzLDI3LjUsMTA3LjYwNDE2NjY2NjY2NjY3LDI3LjUsMTExLjc3MDgzMzMzMzMzMzMzLDI3LjVMMTE1LjkzNzUsMjcuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvd2hlYWQ3KSIgc3R5bGU9ImZpbGw6bm9uZSI+PC9wYXRoPjxkZWZzPjxtYXJrZXIgaWQ9ImFycm93aGVhZDciIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iOSIgcmVmWT0iNSIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI2IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgY2xhc3M9ImFycm93aGVhZFBhdGgiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7Ij48L3BhdGg+PC9tYXJrZXI+PC9kZWZzPjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiIHRyYW5zZm9ybT0iIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiIGNsYXNzPSJsYWJlbCI+PHJlY3Qgcng9IjAiIHJ5PSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIj48L3JlY3Q+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjAiIGhlaWdodD0iMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgd2hpdGUtc3BhY2U6IG5vd3JhcDsiPjxzcGFuIGlkPSJMLUwtQS1CIiBjbGFzcz0iZWRnZUxhYmVsIEwtTFMtQScgTC1MRS1CIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjxnIGNsYXNzPSJub2RlcyI+PGcgY2xhc3M9Im5vZGUgZGVmYXVsdCIgaWQ9ImZsb3djaGFydC1BLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2Ljk2ODc1LDI3LjUpIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxyZWN0IHJ4PSI1IiByeT0iNSIgeD0iLTI4Ljk2ODc1IiB5PSItMTkuNSIgd2lkdGg9IjU3LjkzNzUiIGhlaWdodD0iMzkiIGNsYXNzPSJsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOC45Njg3NSwtOS41KSI+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjM3LjkzNzUiIGhlaWdodD0iMTkiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IHdoaXRlLXNwYWNlOiBub3dyYXA7Ij5DIEEgVDwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZSBkZWZhdWx0IiBpZD0iZmxvd2NoYXJ0LUItMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjg3LjE3MTg3NSwyNy41KSIgc3R5bGU9Im9wYWNpdHk6IDE7Ij48cmVjdCByeD0iNSIgcnk9IjUiIHg9Ii0xNzEuMjM0Mzc1IiB5PSItMTkuNSIgd2lkdGg9IjM0Mi40Njg3NSIgaGVpZ2h0PSIzOSIgY2xhc3M9ImxhYmVsLWNvbnRhaW5lciI+PC9yZWN0PjxnIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwwKSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2MS4yMzQzNzUsLTkuNSkiPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIzMjIuNDY4NzUiIGhlaWdodD0iMTkiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IHdoaXRlLXNwYWNlOiBub3dyYXA7Ij5SVCBmb3Igd29yZCByZWFkaW5nIC8gaWRlbnRpZmljYXRpb24gb2YgRCBPIEc8L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+" alt="" /></p>
+</section>
+<section id="the-masked-repetition-priming-effect" class="slide level2">
+<h2>The masked repetition priming effect</h2>
+<p><img data-src="data:image/svg+xml;base64,PHN2ZyBpZD0ibWVybWFpZC0xNjk4MTU1NjEwOTQyIiB3aWR0aD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSI1NSIgc3R5bGU9Im1heC13aWR0aDogNDYzLjY0MXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsiIHZpZXdCb3g9IjAgMCA0NjMuNjQwNjI1IDU1Ij48c3R5bGU+I21lcm1haWQtMTY5ODE1NTYxMDk0MiB7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZpbGw6IzAwMDAwMDt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuZXJyb3ItaWNvbntmaWxsOiM1NTIyMjI7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLmVycm9yLXRleHR7ZmlsbDojNTUyMjIyO3N0cm9rZTojNTUyMjIyO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjJweDt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLm1hcmtlcntmaWxsOiM2NjY7c3Ryb2tlOiM2NjY7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLm1hcmtlci5jcm9zc3tzdHJva2U6IzY2Njt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiBzdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5sYWJlbHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Y29sb3I6IzAwMDAwMDt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuY2x1c3Rlci1sYWJlbCB0ZXh0e2ZpbGw6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuY2x1c3Rlci1sYWJlbCBzcGFue2NvbG9yOiMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLmxhYmVsIHRleHQsI21lcm1haWQtMTY5ODE1NTYxMDk0MiBzcGFue2ZpbGw6IzAwMDAwMDtjb2xvcjojMDAwMDAwO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5ub2RlIHJlY3QsI21lcm1haWQtMTY5ODE1NTYxMDk0MiAubm9kZSBjaXJjbGUsI21lcm1haWQtMTY5ODE1NTYxMDk0MiAubm9kZSBlbGxpcHNlLCNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLm5vZGUgcG9seWdvbiwjbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5ub2RlIHBhdGh7ZmlsbDojZWVlO3N0cm9rZTojOTk5O3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLm5vZGUgLmxhYmVse3RleHQtYWxpZ246Y2VudGVyO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5ub2RlLmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuYXJyb3doZWFkUGF0aHtmaWxsOiMzMzMzMzM7fSNtZXJtYWlkLTE2OTgxNTU2MTA5NDIgLmVkZ2VQYXRoIC5wYXRoe3N0cm9rZTojNjY2O3N0cm9rZS13aWR0aDoyLjBweDt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuZmxvd2NoYXJ0LWxpbmt7c3Ryb2tlOiM2NjY7ZmlsbDpub25lO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5lZGdlTGFiZWx7YmFja2dyb3VuZC1jb2xvcjp3aGl0ZTt0ZXh0LWFsaWduOmNlbnRlcjt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjp3aGl0ZTtmaWxsOndoaXRlO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5jbHVzdGVyIHJlY3R7ZmlsbDpoc2woMCwgMCUsIDk4LjkyMTU2ODYyNzUlKTtzdHJva2U6IzcwNzA3MDtzdHJva2Utd2lkdGg6MXB4O30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5jbHVzdGVyIHRleHR7ZmlsbDojMzMzO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIC5jbHVzdGVyIHNwYW57Y29sb3I6IzMzMzt9I21lcm1haWQtMTY5ODE1NTYxMDk0MiBkaXYubWVybWFpZFRvb2x0aXB7cG9zaXRpb246YWJzb2x1dGU7dGV4dC1hbGlnbjpjZW50ZXI7bWF4LXdpZHRoOjIwMHB4O3BhZGRpbmc6MnB4O2ZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOmhzbCgtMTYwLCAwJSwgOTMuMzMzMzMzMzMzMyUpO2JvcmRlcjoxcHggc29saWQgIzcwNzA3MDtib3JkZXItcmFkaXVzOjJweDtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MTAwO30jbWVybWFpZC0xNjk4MTU1NjEwOTQyIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fTwvc3R5bGU+PGc+PGcgY2xhc3M9Im91dHB1dCI+PGcgY2xhc3M9ImNsdXN0ZXJzIj48L2c+PGcgY2xhc3M9ImVkZ2VQYXRocyI+PGcgY2xhc3M9ImVkZ2VQYXRoIExTLUEgTEUtQiIgaWQ9IkwtQS1CIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxwYXRoIGNsYXNzPSJwYXRoIiBkPSJNNjMuMTcxODc1LDI3LjVMNjcuMzM4NTQxNjY2NjY2NjcsMjcuNUM3MS41MDUyMDgzMzMzMzMzMywyNy41LDc5LjgzODU0MTY2NjY2NjY3LDI3LjUsODguMTcxODc1LDI3LjVDOTYuNTA1MjA4MzMzMzMzMzMsMjcuNSwxMDQuODM4NTQxNjY2NjY2NjcsMjcuNSwxMDkuMDA1MjA4MzMzMzMzMzMsMjcuNUwxMTMuMTcxODc1LDI3LjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3doZWFkNykiIHN0eWxlPSJmaWxsOm5vbmUiPjwvcGF0aD48ZGVmcz48bWFya2VyIGlkPSJhcnJvd2hlYWQ3IiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjkiIHJlZlk9IjUiIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlckhlaWdodD0iNiIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNIDAgMCBMIDEwIDUgTCAwIDEwIHoiIGNsYXNzPSJhcnJvd2hlYWRQYXRoIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyI+PC9wYXRoPjwvbWFya2VyPjwvZGVmcz48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWxzIj48ZyBjbGFzcz0iZWRnZUxhYmVsIiB0cmFuc2Zvcm09IiIgc3R5bGU9Im9wYWNpdHk6IDE7Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIiBjbGFzcz0ibGFiZWwiPjxyZWN0IHJ4PSIwIiByeT0iMCIgd2lkdGg9IjAiIGhlaWdodD0iMCI+PC9yZWN0Pjxmb3JlaWduT2JqZWN0IHdpZHRoPSIwIiBoZWlnaHQ9IjAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IHdoaXRlLXNwYWNlOiBub3dyYXA7Ij48c3BhbiBpZD0iTC1MLUEtQiIgY2xhc3M9ImVkZ2VMYWJlbCBMLUxTLUEnIEwtTEUtQiI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIGNsYXNzPSJub2RlIGRlZmF1bHQiIGlkPSJmbG93Y2hhcnQtQS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNS41ODU5Mzc1LDI3LjUpIiBzdHlsZT0ib3BhY2l0eTogMTsiPjxyZWN0IHJ4PSI1IiByeT0iNSIgeD0iLTI3LjU4NTkzNzUiIHk9Ii0xOS41IiB3aWR0aD0iNTUuMTcxODc1IiBoZWlnaHQ9IjM5IiBjbGFzcz0ibGFiZWwtY29udGFpbmVyIj48L3JlY3Q+PGcgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDApIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTg1OTM3NSwtOS41KSI+PGZvcmVpZ25PYmplY3Qgd2lkdGg9IjM1LjE3MTg3NSIgaGVpZ2h0PSIxOSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgd2hpdGUtc3BhY2U6IG5vd3JhcDsiPmQgbyBnPC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjxnIGNsYXNzPSJub2RlIGRlZmF1bHQiIGlkPSJmbG93Y2hhcnQtQi0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODQuNDA2MjUsMjcuNSkiIHN0eWxlPSJvcGFjaXR5OiAxOyI+PHJlY3Qgcng9IjUiIHJ5PSI1IiB4PSItMTcxLjIzNDM3NSIgeT0iLTE5LjUiIHdpZHRoPSIzNDIuNDY4NzUiIGhlaWdodD0iMzkiIGNsYXNzPSJsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuMjM0Mzc1LC05LjUpIj48Zm9yZWlnbk9iamVjdCB3aWR0aD0iMzIyLjQ2ODc1IiBoZWlnaHQ9IjE5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB3aGl0ZS1zcGFjZTogbm93cmFwOyI+UlQgZm9yIHdvcmQgcmVhZGluZyAvIGlkZW50aWZpY2F0aW9uIG9mIEQgTyBHPC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="" /></p>
+</section>
+<section id="cognitive-models-search-vs.-activations" class="slide level2">
+<h2>Cognitive models: search vs. activations</h2>
+</section>
+<section id="search-models-a-mental-card-catalog" class="slide level2">
+<h2>Search models: a mental card catalog</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg/1280px-Card_catalog_from_page_167_of_%22Manual_of_library_classification_and_shelf_arrangement%22_%281898%29.jpg" width="500"/></p>
+</section>
+<section id="forsters-bin-model" class="slide level2">
+<h2>Forster’s bin model</h2>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Forster_search_model_Harley_2005.png?raw=true" width="500"/></p>
+</div>
+<div id="right">
+<ul>
+<li>bins of orthographically similar words</li>
+<li>words are arranged in bins by frequency</li>
+<li>each word has a pointer to a lexical item</li>
+<li>lexical items have semantic connections</li>
+</ul>
+</div>
+</section>
+<section id="activation-models" class="slide level2">
+<h2>Activation models</h2>
+</section>
+<section id="mortens-logogen-model" class="slide level2">
+<h2>Morten’s Logogen model</h2>
+<div id="left">
+<p><img src="https://www.researchgate.net/profile/Camilla-Fitjar/publication/315664932/figure/fig2/AS:476625511948289@1490647785036/Logogen-as-containers.png" width=""/></p>
+</div>
+<div id="right">
+<ul>
+<li>Different words have different activation thresholds</li>
+<li>Evidence acrues for different words</li>
+<li>No real interaction</li>
+</ul>
+</div>
+</section>
+<section id="mcclelland-rumelharts-interactive-activation-model" class="slide level2">
+<h2>McClelland &amp; Rumelhart’s Interactive activation model</h2>
+<div id="left">
+<p><img src="https://www.researchgate.net/profile/Magdalena-Sliwinska-2/publication/336676181/figure/fig4/AS:815985489616896@1571557509150/5-The-interactive-activation-model-of-visual-word-recognition-McClelland-Rumelhart.jpg" width=""/></p>
+</div>
+<div id="right">
+<ul>
+<li>upstream flow of information</li>
+<li>hierarchies of representations</li>
+<li>downstream flow of information</li>
+<li>inhibitory connections between nodes at the same level</li>
+</ul>
+</div>
+</section>
+<section id="neural-networks" class="slide level2">
+<h2>Neural Networks</h2>
+<p>(crash course)</p>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN1.png?raw=true" width="400"/></p>
+</div>
+<div id="right">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN2.png?raw=true" width="400"/></p>
+</div>
+</section>
+<section id="neural-networks-1" class="slide level2">
+<h2>Neural Networks</h2>
+<p>(crash course)</p>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN1.png?raw=true" width="400"/></p>
+</div>
+<div id="right">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN3.png?raw=true" width="400"/></p>
+</div>
+</section>
+<section id="neural-networks-2" class="slide level2">
+<h2>Neural Networks</h2>
+<p>(crash course)</p>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN3.png?raw=true" width="400"/></p>
+</div>
+<div id="right">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN4.png?raw=true" width="400"/></p>
+</div>
+</section>
+<section id="neural-networks-3" class="slide level2">
+<h2>Neural Networks</h2>
+<p>(crash course)</p>
+<div id="left">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN4.png?raw=true" width="400"/></p>
+</div>
+<div id="right">
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2021/Slides/Images/NN5.png?raw=true" width="400"/></p>
+</div>
+</section>
+<section id="colthearts-dual-route-cascaded-model" class="slide level2">
+<h2>Coltheart’s Dual Route Cascaded Model</h2>
+<div id="left">
+<p><img src="https://www.researchgate.net/profile/Daniela-Traficante/publication/266950766/figure/fig1/AS:203184501989383@1425454368859/The-dual-route-cascaded-model-From-DRC-a-dual-route-cascaded-model-of-visual-word.png" width="350"/></p>
+</div>
+<div id="right">
+<ul>
+<li>interactive activation on the “lexical route”</li>
+<li>one-way, direct connection on the “non-lexical route”</li>
+<li>can explain a lot of phenomena, but overly complex?</li>
+</ul>
+</div>
+</section>
+<section id="paralell-distributed-processing-models" class="slide level2">
+<h2>Paralell Distributed Processing models</h2>
+<div id="left">
+<p><img src="https://www.researchgate.net/profile/Mark-Seidenberg/publication/2475753/figure/fig22/AS:668216711974923@1536326687534/The-triangle-model-of-Seidenberg-and-McClelland-1989-The-implemented-model-examined.png" width="400"/></p>
+</div>
+<div id="right">
+<ul>
+<li>e.g. Seidenberg and McClelland (1989)</li>
+<li>there is no “lexicon”</li>
+<li>it’s all just interactions, man</li>
+</ul>
+</div>
+</section>
+<section id="modelling-the-lexical-decision-task" class="slide level2">
+<h2>Modelling the Lexical Decision Task</h2>
+<p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/2022/Resources/Wagenmakers_2004.png?raw=true" width="500"/></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="references" class="title-slide slide level1">
+<h1>References</h1>
+
+</section>
+<section id="references-1" class="slide level2">
+<h2>References</h2>
+<div id="refs" role="doc-bibliography">
+<p>Cattell, J. M. (1886). The time it takes to see and name objects. <em>Mind</em>, <em>11</em>(41), 63-65.</p>
+<p>[more references on their way!]</p>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Determines whether slide content should be vertically centered
+        center: true,
+      
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
