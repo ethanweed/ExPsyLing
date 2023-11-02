@@ -147,12 +147,10 @@
   <h1 class="title">t-tests</h1>
 </section>
 
-<section>
-<section id="hypothesis-testing" class="title-slide slide level1">
+<section id="hypothesis-testing" class="slide level1">
 <h1>Hypothesis-testing</h1>
-
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <ol type="1">
 <li>Not all statistically significant results are <em>theoretically</em>
@@ -161,13 +159,13 @@ interesting results</li>
 significant</li>
 </ol>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>All the tests in this chapter are just this:</p>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
 \]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="z-test">z-test</h3>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
@@ -176,7 +174,7 @@ significant</li>
 <p><span class="math display">\[z =  \frac{\bar{X} - \mu_0}{\sigma /
 \sqrt{N}}\]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="one-sample-t-test">one-sample t-test</h3>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
@@ -185,7 +183,7 @@ significant</li>
 <p><span class="math display">\[t = \frac{\bar{X} -
 \mu}{\hat{\sigma}/\sqrt{N} }\]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="independent-samples-t-test">independent samples t-test</h3>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
@@ -194,7 +192,7 @@ significant</li>
 <p><span class="math display">\[t = \frac{\bar{X}_1 -
 \bar{X}_2}{\mbox{SE}({\bar{X}_1 - \bar{X}_2})}\]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="paired-t-test">paired t-test</h3>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
@@ -204,33 +202,28 @@ significant</li>
 t = \frac{\bar{D}}{\mbox{SE}({\bar{D}})}
 \]</span></p>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="examples" class="title-slide slide level1">
+<section id="examples" class="slide level1">
 <h1>Examples</h1>
-
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="the-case-of-dr.-zeppo">The case of Dr. Zeppo</h3>
 <pre><code>A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let’s suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of Dr Zeppo&#39;s many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering: do the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower?</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="the-psychology-students-grades">The psychology students’
 grades:</h4>
 <p>50, 60, 60, 64, 66, 66, 67, 69, 70, 74, 76, 76, 77, 79, 79, 79, 81,
 82, 82, 89</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="the-psychology-students-grades-1">The psychology students’
 grades:</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_7_1.png" width="500"/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h5 id="what-we-know">What we know:</h5>
 <table style="border-collapse:collapse;border-spacing:0" class="tg">
@@ -281,18 +274,18 @@ N = 20
 </tbody>
 </table>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="the-hypotheses">The hypotheses:</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_10_1.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="one-sided-vs.-two-sided-tests">One-sided vs. two-sided
 tests</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_13_1.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="doing-the-test">Doing the test</h4>
 <div id="left">
@@ -424,12 +417,12 @@ z =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}   =  \frac{72.3 -
 67.5}{9.5 / \sqrt{20}}  = 2.259
 \]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="one-sample-t-test-1">one-sample t-test</h3>
 <pre><code>After some thought, I decided that it might not be safe to assume that the psychology student grades necessarily have the same standard deviation as the other students in Dr Zeppo’s class. After all, if I’m entertaining the hypothesis that they don’t have the same mean, then why should I believe that they absolutely have the same standard deviation? </code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <pre><code>In view of this, I should really stop assuming that I know the true value of 𝜎. This violates the assumptions of my 𝑧-test, so in one sense I’m back to square one. However, it’s not like I’m completely bereft of options. After all, I’ve still got my raw data, and those raw data give me an _estimate_ of the population standard deviation:
 
@@ -441,19 +434,19 @@ statistics.stdev(grades)
 9.5\)</span>, but we can <em>estimate</em> that <span
 class="math inline">\(\hat\sigma = 9.52\)</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="the-hypotheses-1">The hypotheses:</h3>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_36_1.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="z-test-vs.-one-sample-t-test">z-test vs. One-sample t-test:</h3>
 <p><span class="math display">\[z =  \frac{\bar{X} - \mu_0}{\sigma /
 \sqrt{N}}\]</span>             <span class="math display">\[t =
 \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }\]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="one-sample-t-test-2">One-sample t-test</h4>
 <pre><code>from scipy.stats import ttest_1samp
@@ -462,12 +455,12 @@ t, p
 ...
 (2.25471286700693, 0.03614521878144544)</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="the-case-of-dr.-harpo">The case of Dr. Harpo</h3>
 <pre><code>Suppose we have 33 students taking Dr Harpo’s statistics lectures, and Dr Harpo doesn’t grade to a curve. Actually, Dr Harpo’s grading is a bit of a mystery, so we don’t really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are 𝑁1=15 students in Anastasia’s tutorials, and 𝑁2=18 in Bernadette’s tutorials. The research question I’m interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn’t make much of a difference. Dr Harpo emails me the course grades...</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="the-harpo-data-summarized">The Harpo data, summarized:</h3>
 <table style="border-collapse:collapse;border-spacing:0" class="tg">
@@ -521,22 +514,22 @@ Bernadette’s students
 </tbody>
 </table>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="a-view-of-the-data">A view of the data:</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_55_0.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="a-different-view-of-the-data">A different view of the data:</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/9423d1c337f14dbe4a411ce1a074fcded94e8cf3231aa2c88788190e5f386806.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="the-hypotheses-2">The hypotheses</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_61_1.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="independent-samples-t-test-students">Independent samples t-test
 (Student’s)</h4>
@@ -546,7 +539,7 @@ t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}({\bar{X}_1 - \bar{X}_2})}
 <p>In the Student’s indendent samples t-test, we <em>pool</em> the
 variance from the two groups</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="independent-samples-t-test-students-1">Independent samples
 t-test (Student’s)</h4>
@@ -556,7 +549,7 @@ t, p
 ...
 (array([2.11543239]), array([0.04252949]))</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="independent-samples-t-test-welchs">Independent samples t-test
 (Welch’s)</h4>
@@ -564,7 +557,7 @@ t, p
 <p>Welch’s indendent samples t-test does not assume equal variance, and
 therefore does not pool the variance.</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="independent-samples-t-test-welchs-1">Independent samples t-test
 (Welch’s)</h4>
@@ -572,11 +565,12 @@ therefore does not pool the variance.</p>
 t, p = stats.ttest_ind(Anastasia, Bernadette, equal_var = False)
 t, p</code></pre>
 </section>
-<section id="the-case-of-dr.-chico" class="slide level2">
-<h2>The case of Dr. Chico</h2>
+<section class="slide level1">
+
+<h2 id="the-case-of-dr.-chico">The case of Dr. Chico</h2>
 <pre><code>In Dr. Chico&#39;s class, students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging; but she argues that by setting hard assessments, students are encouraged to work harder. Her theory is that the first test is a bit of a “wake up call” for students: when they realise how hard her class really is, they’ll work harder for the second test and get a better mark. Is she right?</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="the-chico-file-summarized">The Chico file, summarized:</h3>
 <table style="border-collapse:collapse;border-spacing:0" class="tg">
@@ -684,36 +678,36 @@ max
 </tbody>
 </table>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h4 id="some-views-of-the-data">Some views of the data:</h4>
 <p><img src="https://ethanweed.github.io/pythonbook/_images/05.02-ttest_89_0.png" width=""/></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>What we want to evaluate is the students’ <em>improvement</em>:</p>
 <pre><code>df[&#39;improvement&#39;] = df[&#39;grade_test2&#39;]-df[&#39;grade_test1&#39;]</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="paired-samples-t-test">Paired-samples t-test</h3>
 <p><span class="math display">\[
 t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 \]</span></p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="paired-samples-t-test-1">Paired-samples t-test</h3>
 <pre><code>from scipy.stats import ttest_rel
 
 ttest_rel(df[&#39;grade_test2&#39;], df[&#39;grade_test1&#39;])</code></pre>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <h3 id="a-little-secret">A little secret</h3>
 <p>Shh!! Don’t tell!</p>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
 <p>One-sample t-tests and paired t-test are actually the same thing.</p>
 <p>One-sample: <span class="math display">\[t = \frac{\bar{X} -
@@ -721,25 +715,20 @@ ttest_rel(df[&#39;grade_test2&#39;], df[&#39;grade_test1&#39;])</code></pre>
 <p>Paired: <span class="math display">\[ t = \frac{\bar{D}}{\hat\sigma_D
 / \sqrt{N}} \]</span></p>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="take-aways" class="title-slide slide level1">
+<section id="take-aways" class="slide level1">
 <h1>Take-aways</h1>
-
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="take-aways-1">Take-aways 1:</h3>
+<h3 id="take-away-1">Take-away 1:</h3>
 <ul>
 <li>A <strong>one sample 𝑡-test</strong> is used to compare a single
 sample mean against a hypothesised value for the population mean.</li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="take-aways-2">Take-aways 2:</h3>
+<h3 id="take-away-2">Take-away 2:</h3>
 <ul>
 <li>An <strong>independent samples 𝑡-test</strong> is used to compare
 the means of two groups, and tests the null hypothesis that they have
@@ -747,9 +736,9 @@ the same mean. It comes in two forms: the Student test assumes that the
 groups have the same standard deviation, the Welch test does not.</li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="take-aways-3">Take-aways 3:</h3>
+<h3 id="take-away-3">Take-away 3:</h3>
 <ul>
 <li>A <strong>paired samples 𝑡-test</strong> is used when you have two
 scores from each person, and you want to test the null hypothesis that
@@ -758,28 +747,28 @@ difference between the two scores for each person, and then running a
 one sample 𝑡-test on the difference scores.</li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level1">
 
-<h3 id="take-aways-4">Take-aways 4:</h3>
+<h3 id="take-away-4">Take-away 4:</h3>
 <ul>
 <li>You probably won’t ever use the <strong><span
 class="math inline">\(z\)</span>-test</strong> for anything</li>
 </ul>
 </section>
-<section id="take-aways-5" class="slide level2">
-<h2>Take-aways 5:</h2>
+<section class="slide level1">
+
+<h2 id="take-away-5">Take-away 5:</h2>
 <p>All of these tests are basically the same:</p>
 <p><span class="math display">\[ t = \frac{mean 1 - mean 2}{ variation}
 \]</span></p>
 </section>
-<section class="slide level2">
-
-<h4 id="references">References:</h4>
+<section id="references" class="slide level1">
+<h1>References:</h1>
 <p><font size="1"> Navarro, D., &amp; Weed, E. (2021). Learning
 statistics with python: A tutorial for psychology students and other
 beginners[Available online: https://ethanweed.github.io/pythonbook]
 </font></p>
-</section></section>
+</section>
     </div>
   </div>
 
