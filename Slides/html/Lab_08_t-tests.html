@@ -548,11 +548,8 @@ variance from the two groups</p>
 
 <h4 id="independent-samples-t-test-students-1">Independent samples
 t-test (Student’s)</h4>
-<pre><code>from scipy import stats
-t, p = stats.ttest_ind(Anastasia, Bernadette, equal_var = True)
-t, p
-...
-(array([2.11543239]), array([0.04252949]))</code></pre>
+<pre><code>import pingouin as pg
+pg.ttest(Harpo_wide[&#39;Anastasia&#39;], Harpo_wide[&#39;Bernadette&#39;], correction = False)</code></pre>
 </section>
 <section class="slide level2">
 
@@ -566,9 +563,8 @@ therefore does not pool the variance.</p>
 
 <h4 id="independent-samples-t-test-welchs-1">Independent samples t-test
 (Welch’s)</h4>
-<pre><code>from scipy import stats
-t, p = stats.ttest_ind(Anastasia, Bernadette, equal_var = False)
-t, p</code></pre>
+<pre><code>import pingouin as pg
+pg.ttest(Harpo_wide[&#39;Anastasia&#39;], Harpo_wide[&#39;Bernadette&#39;], correction = True)</code></pre>
 </section>
 <section id="the-case-of-dr.-chico" class="slide level2">
 <h2>The case of Dr. Chico</h2>
@@ -702,9 +698,9 @@ t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 <section class="slide level2">
 
 <h3 id="paired-samples-t-test-1">Paired-samples t-test</h3>
-<pre><code>from scipy.stats import ttest_rel
+<pre><code>import pingouin as pg
 
-ttest_rel(df[&#39;grade_test2&#39;], df[&#39;grade_test1&#39;])</code></pre>
+pg.ttest(df[&#39;grade_test2&#39;], df[&#39;grade_test1&#39;], paired = True)</code></pre>
 </section>
 <section class="slide level2">
 
