@@ -456,11 +456,9 @@ class="math inline">\(\hat\sigma = 9.52\)</span></p>
 <section class="slide level2">
 
 <h4 id="one-sample-t-test-2">One-sample t-test</h4>
-<pre><code>from scipy.stats import ttest_1samp
-t, p = ttest_1samp(a = grades, popmean = 67.5)
-t, p
-...
-(2.25471286700693, 0.03614521878144544)</code></pre>
+<pre><code>import pingouin as pg
+popmean = 67.5
+pg.ttest(grades, popmean).round(2)</code></pre>
 </section>
 <section class="slide level2">
 
