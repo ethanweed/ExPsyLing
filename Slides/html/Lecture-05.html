@@ -10,20 +10,12 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
   <style>
-    .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
-    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: 1;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -193,8 +185,7 @@
 <p><img src="https://ethanweed.github.io/pythonbook/_images/snow_ghost_map2.png" width = "600"/></p>
 <p>John Snow’s 1854 map of cholera deaths</p>
 </section>
-<section id="data-visualization-is-a-modern-invention"
-class="slide level2">
+<section id="data-visualization-is-a-modern-invention" class="slide level2">
 <h2>Data visualization is a modern invention</h2>
 <div id="left">
 <p>William Playfair<br />
@@ -207,8 +198,7 @@ class="slide level2">
 </ul>
 </div>
 <div id="right">
-<p><img
-data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa/1532421067432-6NJ05X3O956WDTJRW2SN/william+playfair.jpg" /></p>
+<p><img data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa/1532421067432-6NJ05X3O956WDTJRW2SN/william+playfair.jpg" /></p>
 </div>
 </section>
 <section id="graphics-reveal-data" class="slide level2">
@@ -239,8 +229,7 @@ data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa
 <h2>Graphics tell a <em>story</em></h2>
 <p>Charles Joseph Minard (1869)</p>
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/></p>
-<p><font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse
-</font></p>
+<p><font size="1"> Translation by Dawn Finley, redrawing by Elaine Morse </font></p>
 </section>
 <section class="slide level2">
 
@@ -248,8 +237,7 @@ data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/></p>
 </div>
 <div id="right">
-<p>“It may well be the best statistical graphic ever drawn” - Tufte
-(2001)</p>
+<p>“It may well be the best statistical graphic ever drawn” - Tufte (2001)</p>
 </div>
 </section>
 <section class="slide level2">
@@ -269,13 +257,11 @@ data-src="https://images.squarespace-cdn.com/content/v1/5b210bafcc8fed1aaffd57aa
 <section class="slide level2">
 
 <div id="left">
-<p>“It may well be the best statistical graphic ever drawn” - Tufte
-(2001)</p>
+<p>“It may well be the best statistical graphic ever drawn” - Tufte (2001)</p>
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/MinardNapaleonsArmy.png?raw=true" width=""/></p>
 </div>
 <div id="right">
-<p>“It may well be the worst graphic ever to find its way into print” -
-Tufte (2001)</p>
+<p>“It may well be the worst graphic ever to find its way into print” - Tufte (2001)</p>
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/TheWorstGraphicEver.png?raw=true" width="300"/></p>
 </div>
 </section>
@@ -283,18 +269,14 @@ Tufte (2001)</p>
 
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/TheWorstGraphicEver.png?raw=true" width="400"/></p>
 </section>
-<section
-id="a-good-graphic-provides-the-most-information-in-the-least-amount-of-time"
-class="slide level2">
-<h2>A good graphic provides the most information in the least amount of
-time</h2>
+<section id="a-good-graphic-provides-the-most-information-in-the-least-amount-of-time" class="slide level2">
+<h2>A good graphic provides the most information in the least amount of time</h2>
 <p><img src="https://github.com/ethanweed/ExPsyLing/blob/master/Slides/Images/LookingAtPlots.png?raw=true" width=""/></p>
 </section>
 <section id="a-good-graphic-should-be-honest" class="slide level2">
 <h2>A good graphic should be honest</h2>
 <p><span class="math display">\[
-\mbox{lie factor} = \frac{\mbox{size of effect shown in
-graph}}{\mbox{size of effect in data}}
+\mbox{lie factor} = \frac{\mbox{size of effect shown in graph}}{\mbox{size of effect in data}}
 \]</span></p>
 </section>
 <section class="slide level2">
@@ -324,8 +306,7 @@ graph}}{\mbox{size of effect in data}}
 </section>
 <section class="slide level2">
 
-<h4 id="tuftes-five-principles-of-data-graphics">Tufte’s five principles
-of data graphics</h4>
+<h4 id="tuftes-five-principles-of-data-graphics">Tufte’s five principles of data graphics</h4>
 <ul>
 <li>Above all else show the data</li>
 <li>Maximize the data to ink ratio</li>
@@ -338,8 +319,7 @@ of data graphics</h4>
 
 <h4 id="maximize-data-density">Maximize data density</h4>
 <p><span class="math display">\[
-\mbox{data density} = \frac{\mbox{number of datapoints}}{\mbox{area of
-data graphic}}
+\mbox{data density} = \frac{\mbox{number of datapoints}}{\mbox{area of data graphic}}
 \]</span></p>
 </section>
 <section class="slide level2">
@@ -388,8 +368,7 @@ data graphic}}
 <section id="references-1" class="slide level2">
 <h2>References</h2>
 <div id="refs" role="doc-bibliography">
-<p>Tufte, Edward R. The Visual Display of Quantitative Information,
-Second Edition. Graphics Press: Chesire, Connecticut.</p>
+<p>Tufte, Edward R. The Visual Display of Quantitative Information, Second Edition. Graphics Press: Chesire, Connecticut.</p>
 </div>
 </section></section>
     </div>
@@ -397,7 +376,7 @@ Second Edition. Graphics Press: Chesire, Connecticut.</p>
 
   <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
 
-  <!-- reveal.js plugins -->
+  // reveal.js plugins
   <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
@@ -408,146 +387,22 @@ Second Edition. Graphics Press: Chesire, Connecticut.</p>
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-        // Display controls in the bottom right corner
-        controls: true,
-
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: true,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'bottom-right',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
+        // Determines whether slide content should be vertically centered
+        center: true,
+      
         // Display a presentation progress bar
         progress: true,
-
         // Display the page number of the current slide
         slideNumber: true,
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
         hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
         // Push each slide change to the browser history
-        history: false,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
+        history: true,
         // Vertical centering of slides
         center: true,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: true,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
           config: 'TeX-AMS_HTML-full',
