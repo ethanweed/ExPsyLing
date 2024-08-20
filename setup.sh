@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 python -m venv MyEnvironment
 source /work/MyEnvironment/bin/activate
