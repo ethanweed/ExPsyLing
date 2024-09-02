@@ -1,9 +1,0 @@
-i = 0
-
-with jsonlines.open(raw) as reader:
-    for line in reader:
-        if i == 0:
-            df = pd.DataFrame(line)
-            i += 1
-        else:
-            df = pd.concat([df, pd.DataFrame(line)])
