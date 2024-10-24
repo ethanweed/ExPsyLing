@@ -1,5 +1,5 @@
 ---
-title: Experiment Design
+title: Induction
 ---
 
 # Review
