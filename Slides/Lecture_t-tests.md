@@ -30,7 +30,7 @@ $$ t = \frac{mean 1 - mean 2}{ variation} $$
 
 <br>
 
-$$z =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}$$
+$$z =  \frac{\bar{X} - \mu}{\sigma / \sqrt{N}}$$
 
 
 
