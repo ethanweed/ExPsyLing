@@ -211,11 +211,16 @@ ax.grid()
 
 ---
 
+# NHST
+
+---
+
 Null Hypothesis Significance Testing (NHST)
 
 ---
 
 Null hypothesis (H0)
+
 Alternative hypothesis (H1)
 
 ---
