@@ -181,8 +181,11 @@ Papyrus Oxyrhynchus 29 (ca. 100 AD?)
 
 ---
 
-# McElreath globe exercise
-# re-envisioned as the SantaBall exercise
+## McElreath globe exercise
+
+---
+
+## re-envisioned as the SantaBall exercise
 
 ```python
 
