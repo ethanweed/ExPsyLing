@@ -171,7 +171,7 @@ Critical values:
 
 
 $$
-z =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}   =  \frac{72.3 - 67.5}{9.5 / \sqrt{20}}  = 2.259
+z =  \frac{\bar{X} - \mu_}{\sigma / \sqrt{N}}   =  \frac{72.3 - 67.5}{9.5 / \sqrt{20}}  = 2.259
 $$
 
 ---
