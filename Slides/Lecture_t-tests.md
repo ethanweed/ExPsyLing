@@ -3,7 +3,7 @@ title: t-tests
 ---
 
 
-# Hypothesis-testing
+# Comparing two means
 
 
 ---
