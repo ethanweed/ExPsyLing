@@ -3,6 +3,12 @@
 # the code in this cell comes from michedini and their post at:
 # https://forum.cogsci.nl/discussion/8257/problem-with-jatos-result-conversion
 
+#%pip install jsonlines
+
+import jsonlines
+import pandas as pd
+
+
 raw = 'path/to/jatos/data.txt'
 
 
