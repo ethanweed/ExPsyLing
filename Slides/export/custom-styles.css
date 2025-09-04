@@ -1,0 +1,93 @@
+
+/* Target lists that come after an h2 with id="references" */
+.reveal h2#references + ul,
+.reveal #references + ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 0.6em;
+}
+
+.reveal h2#references + ul li,
+.reveal #references + ul li {
+    margin-bottom: 1em;
+    padding-left: 2em;
+    text-indent: -2em;
+    line-height: 1.2;
+}
+
+
+
+/* Two-column layout styles */
+.reveal .two-columns {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.reveal .two-columns .column {
+    flex: 1;
+}
+
+/* Optional: Different column widths */
+.reveal .two-columns .column-left {
+    flex: 1;
+}
+
+.reveal .two-columns .column-right {
+    flex: 1;
+}
+
+/* Unequal columns - 60/40 split */
+.reveal .two-columns-60-40 {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.reveal .two-columns-60-40 .column-left {
+    flex: 0 0 60%;
+}
+
+.reveal .two-columns-60-40 .column-right {
+    flex: 0 0 35%;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 768px) {
+    .reveal .two-columns,
+    .reveal .two-columns-60-40 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Hyperlink styling for better visibility */
+.reveal a {
+    color: #736767;
+}
+
+.reveal a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.reveal a:visited {
+    color: #8a2be2;
+}
+
+
+.reveal figure {
+    margin: 1em 0;
+}
+
+.reveal figcaption {
+    text-align: left;
+    font-size: 0.7em;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5em;
+}
+
