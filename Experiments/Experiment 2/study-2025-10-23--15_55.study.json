@@ -1,0 +1,4759 @@
+{
+  "components": {
+    "1": {
+      "id": "1",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 766.54,
+          "height": 245.89,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "Welcome!\nIn this experiment, you will see sets of words, like this:\n\nwindow-piano\n\ntap here to continue...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "310",
+          "styles": {}
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0.76,
+          "top": 102.5,
+          "width": 473.38,
+          "height": 152.94,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "284",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions1",
+      "_tab": "Behavior"
+    },
+    "2": {
+      "id": "2",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 718.49,
+          "height": 329.78,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "Sometimes they will be real words, sometimes not.\n\nSomtimes there will be one real word\nand one nonsense word, like this:\n\nwindow-blargo\n\ntap here to continue...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "319",
+          "styles": {}
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -1.49,
+          "top": 151.5,
+          "width": 393.12,
+          "height": 101.96,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "285",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions2",
+      "_tab": "Behavior"
+    },
+    "3": {
+      "id": "3",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 551.41,
+          "height": 162,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "You will see a happy or sad smiley,\nto tell if you got the answer right or not.\n\ntap here to continue...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "355",
+          "styles": {}
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -1.51,
+          "top": 56.25,
+          "width": 361.96,
+          "height": 89.71,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "287",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions6",
+      "_tab": "Behavior"
+    },
+    "4": {
+      "id": "4",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 553.19,
+          "height": 329.78,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "The experiment takes about 5 minutes.\n\nTry not to make any mistakes,\nbut don't worry if you do make a few.\n\nWe all make mistakes!\n\ntap here to continue...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "346",
+          "styles": {}
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 1.38,
+          "top": 145.38,
+          "width": 399.95,
+          "height": 92.03,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "286",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions5",
+      "_tab": "Behavior"
+    },
+    "5": {
+      "id": "5",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 780.89,
+          "height": 413.67,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "If one or both of the words is not a real word in English,\nlike this:\n\nwindow-blargo\n\nor these:\n\njupsal-clotrop\n\ntap the red circle",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "337",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 275,
+          "top": 175,
+          "width": 148.79,
+          "height": 148.79,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 74.395,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "228"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 275,
+          "top": 175,
+          "width": 222.81,
+          "height": 222.81,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "237",
+          "label": "red"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -250,
+          "top": 188.5,
+          "width": 160.09,
+          "height": 160.09,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 80.045,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "265"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "red",
+          "event": "click",
+          "target": "@red",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions4",
+      "_tab": "Behavior"
+    },
+    "6": {
+      "id": "6",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 675.87,
+          "height": 245.89,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "If both words are real words in English, like this:\n\nwindow-piano\n\ntap the green circle\n",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "328",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -239,
+          "top": 175,
+          "width": 176.79,
+          "height": 176.79,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 88.395,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "254"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 250,
+          "top": 175,
+          "width": 176.79,
+          "height": 176.79,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 88.395,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "255"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -238,
+          "top": 187,
+          "width": 220.59,
+          "height": 220.59,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "256",
+          "label": "green"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "green",
+          "event": "click",
+          "target": "@green",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions3",
+      "_tab": "Content"
+    },
+    "13": {
+      "id": "13",
+      "type": "lab.flow.Loop",
+      "children": [
+        "53"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "counterbalance",
+            "type": "string"
+          },
+          {
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "draw-shuffle",
+        "n": "1"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Counterbalance Loop"
+    },
+    "22": {
+      "id": "22",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 286.35,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ parameters.stim }",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "48",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "-218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.68303571428572,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "117"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.685,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "118"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -214.18,
+          "top": 175,
+          "width": 192.6,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "119",
+          "label": "no"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 216.18,
+          "top": 175,
+          "width": 194.59,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "120",
+          "label": "yes"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "yes",
+          "event": "click",
+          "target": "@yes",
+          "filter": ""
+        },
+        {
+          "label": "no",
+          "filter": "",
+          "event": "click",
+          "target": "@no"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Stimulus_tap",
+      "_tab": "Behavior",
+      "correctResponse": "${ parameters.correct_response }"
+    },
+    "23": {
+      "id": "23",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 286.35,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ parameters.stim }",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "48",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "-218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.68303571428572,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "117"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.685,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "118"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -214.18,
+          "top": 175,
+          "width": 192.6,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "119",
+          "label": "no"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 216.18,
+          "top": 175,
+          "width": 194.59,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "120",
+          "label": "yes"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "yes",
+          "event": "click",
+          "target": "@yes",
+          "filter": ""
+        },
+        {
+          "label": "no",
+          "filter": "",
+          "event": "click",
+          "target": "@no"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Stimulus_tap",
+      "_tab": "Behavior",
+      "correctResponse": "${ parameters.correct_response }"
+    },
+    "24": {
+      "id": "24",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 286.35,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ parameters.stim }",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "48",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "-218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.68303571428572,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "117"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.685,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "118"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -214.18,
+          "top": 175,
+          "width": 192.6,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "119",
+          "label": "no"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 216.18,
+          "top": 175,
+          "width": 194.59,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "120",
+          "label": "yes"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "yes",
+          "event": "click",
+          "target": "@yes",
+          "filter": ""
+        },
+        {
+          "label": "no",
+          "filter": "",
+          "event": "click",
+          "target": "@no"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Stimulus_tap",
+      "_tab": "Behavior",
+      "correctResponse": "${ parameters.correct_response }"
+    },
+    "31": {
+      "id": "31",
+      "type": "lab.flow.Loop",
+      "children": [
+        "32"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "stim",
+            "type": "string"
+          },
+          {
+            "name": "condition",
+            "type": "string"
+          },
+          {
+            "name": "block",
+            "type": "string"
+          },
+          {
+            "name": "correct_response",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "buy-sell",
+            "Related",
+            "practice",
+            "yes"
+          ],
+          [
+            "table-chair",
+            "Related",
+            "practice",
+            "yes"
+          ],
+          [
+            "shark-dull",
+            "Unrelated",
+            "practice",
+            "yes"
+          ],
+          [
+            "sand-pepper",
+            "Unrelated",
+            "practice",
+            "yes"
+          ],
+          [
+            "ip-bown",
+            "Nonword",
+            "practice",
+            "no"
+          ],
+          [
+            "hort-sain",
+            "Nonword",
+            "practice",
+            "no"
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "draw-shuffle"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Practice Loop",
+      "_tab": "Content",
+      "_collapsed": false
+    },
+    "32": {
+      "id": "32",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "33",
+        "34",
+        "35"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Trial"
+    },
+    "33": {
+      "id": "33",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 18.69,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "23",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Fixation",
+      "_tab": "Behavior",
+      "timeout": "500"
+    },
+    "34": {
+      "id": "34",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 286.35,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ parameters.stim }",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "48",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "-218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.68303571428572,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "117"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": "218",
+          "top": "168",
+          "width": 117.37,
+          "height": 117.37,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 58.685,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "118"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -214.18,
+          "top": 175,
+          "width": 192.6,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "119",
+          "label": "no"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 216.18,
+          "top": 175,
+          "width": 194.59,
+          "height": 186.27,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "120",
+          "label": "yes"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "yes",
+          "event": "click",
+          "target": "@yes",
+          "filter": ""
+        },
+        {
+          "label": "no",
+          "filter": "",
+          "event": "click",
+          "target": "@no"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Stimulus_tap",
+      "_tab": "Content",
+      "correctResponse": "${ parameters.correct_response }"
+    },
+    "35": {
+      "id": "35",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 585.65,
+          "height": 56.5,
+          "fill": "#000000",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ state.correct ? '😃' : '☹️'}",
+          "fontSize": "50",
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "91",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "ISI",
+      "_tab": "Content",
+      "timeout": "500",
+      "tardy": true
+    },
+    "36": {
+      "id": "36",
+      "type": "lab.flow.Loop",
+      "children": [
+        "37"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "stim",
+            "type": "string"
+          },
+          {
+            "name": "condition",
+            "type": "string"
+          },
+          {
+            "name": "block",
+            "type": "string"
+          },
+          {
+            "name": "correct_response",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "church-steeple",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "law-justice",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "sheep-lamb",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "eat-food",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "insect-bug",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "frown-smile",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "fruit-apple",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "square-box",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "village-town",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "hand-foot",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "ice-snow",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "baby-child",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "moon-star",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "oil-gas",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "thought-mind",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "play-work",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "shallow-deep",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "egg-yolk",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "pain-hurt",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "sharp-dull",
+            "Related",
+            "C",
+            "yes"
+          ],
+          [
+            "weasel-bird",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "churn-steeple",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "paw-justice",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "steep-lamb",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "ear-food",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "invest-bug",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "brown-smile",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "stout-apple",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "squash-box",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "pillage-town",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "land-foot",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "ace-snow",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "busy-child",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "mood-star",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "foil-gas",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "fought-mind",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "slay-work",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "hallow-deep",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "peg-yolk",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "gain-hurt",
+            "Unrelated",
+            "C",
+            "yes"
+          ],
+          [
+            "hird-seft",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "eable-wird",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "chorch-steeble",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "liw-justoce",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "sheex-famb",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "eas-jood",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "onsect-fug",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "browt-smice",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "fruid-asple",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "squame-bor",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "villane-towp",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "yand-foox",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "oce-snaw",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "boby-shild",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "hoon-stad",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "oim-tas",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "thoughf-mand",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "galy-hork",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "shandow-meep",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "ege-bolk",
+            "Nonword",
+            "C",
+            "no"
+          ],
+          [
+            "man-wotar",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "rough-smoat",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "bread-bottin",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "bitter-sweax",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "green-gliss",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "large-smipo",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "bed-slorg",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "afraid-scobet",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "cabbage-lottir",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "door-wingew",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "moship-father",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "neibon-thread",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "brothog-sister",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "capsute-pill",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "boeh-ale",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "bosh-water",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "nirey-south",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "honip-bee",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "sconix-marble",
+            "Filler",
+            "C",
+            "no"
+          ],
+          [
+            "porry-cent",
+            "Filler",
+            "C",
+            "no"
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "draw-shuffle"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Block C Loop",
+      "_tab": "Behavior",
+      "_collapsed": false,
+      "skipCondition": "${parameters.counterbalance != 3}",
+      "skip": false,
+      "tardy": false
+    },
+    "37": {
+      "id": "37",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "38",
+        "24",
+        "40"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Trial"
+    },
+    "38": {
+      "id": "38",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 18.69,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "23",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Fixation",
+      "_tab": "Content",
+      "timeout": "500"
+    },
+    "40": {
+      "id": "40",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 585.65,
+          "height": 56.5,
+          "fill": "#000000",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ state.correct ? '😃' : '☹️'}",
+          "fontSize": "50",
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "91",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "ISI",
+      "_tab": "Content",
+      "timeout": "500",
+      "tardy": true
+    },
+    "41": {
+      "id": "41",
+      "type": "lab.flow.Loop",
+      "children": [
+        "42"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "stim",
+            "type": "string"
+          },
+          {
+            "name": "condition",
+            "type": "string"
+          },
+          {
+            "name": "block",
+            "type": "string"
+          },
+          {
+            "name": "correct_response",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "wine-grapes",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "dance-waltz",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "fat-thin",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "peace-war",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "pen-ink",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "good-bad",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "hop-skip",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "rip-tear",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "hill-mountain",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "scissors-cut",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "health-sickness",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "add-subtract",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "blue-sky",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "dark-night",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "high-low",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "trout-fish",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "black-white",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "boy-girl",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "dog-cat",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "hard-soft",
+            "Related",
+            "B",
+            "yes"
+          ],
+          [
+            "lean-stem",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "fine-grapes",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "ranch-waltz",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "bat-thin",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "peach-war",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "men-ink",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "gold-bad",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "mop-skip",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "rid-tear",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "will-mountain",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "scorpion-cut",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "wealth-sickness",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "age-subtract",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "glue-sky",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "park-night",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "sigh-low",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "treat-fish",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "slack-white",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "toy-girl",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "dig-cat",
+            "Unrelated",
+            "B",
+            "yes"
+          ],
+          [
+            "hoy-wappy",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "geaf-ster",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "wone-brapes",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "jance-maltz",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "fot-thip",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "ren-onk",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "goid-nad",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "fop-skup",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "rin-mear",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "hilp-bountain",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "scyssors-cet",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "dealth-fickness",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "ald-rubtract",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "darl-nighp",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "figh-lew",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "frout-hish",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "block-whote",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "bey-wirl",
+            "Nonword",
+            "B",
+            "no"
+          ],
+          [
+            "man-wotar",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "rough-smoat",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "bread-bottin",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "bitter-sweax",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "green-gliss",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "large-smipo",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "bed-slorg",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "afraid-scobet",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "cabbage-lottir",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "door-wingew",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "moship-father",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "neibon-thread",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "brothog-sister",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "capsute-pill",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "boeh-ale",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "bosh-water",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "nirey-south",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "honip-bee",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "sconix-marble",
+            "Filler",
+            "B",
+            "no"
+          ],
+          [
+            "porry-cent",
+            "Filler",
+            "B",
+            "no"
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "draw-shuffle"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Block B Loop",
+      "_tab": "Behavior",
+      "_collapsed": false,
+      "skipCondition": "${parameters.counterbalance != 2}",
+      "skip": false,
+      "tardy": false
+    },
+    "42": {
+      "id": "42",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "43",
+        "23",
+        "45"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Trial"
+    },
+    "43": {
+      "id": "43",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 18.69,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "23",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Fixation",
+      "_tab": "Behavior",
+      "timeout": "500"
+    },
+    "45": {
+      "id": "45",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 585.65,
+          "height": 56.5,
+          "fill": "#000000",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ state.correct ? '😃' : '☹️'}",
+          "fontSize": "50",
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "91",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "ISI",
+      "_tab": "Content",
+      "timeout": "500",
+      "tardy": true
+    },
+    "46": {
+      "id": "46",
+      "type": "lab.flow.Loop",
+      "children": [
+        "47"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "stim",
+            "type": "string"
+          },
+          {
+            "name": "condition",
+            "type": "string"
+          },
+          {
+            "name": "block",
+            "type": "string"
+          },
+          {
+            "name": "correct_response",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "hot-cold",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "young-old",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "lion-tiger",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "wash-rinse",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "lost-found",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "dusk-dawn",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "lock-key",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "circle-round",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "plant-flower",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "army-soldier",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "tall-short",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "spider-web",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "hammer-nail",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "life-death",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "true-false",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "earth-ground",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "joy-happy",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "leaf-stem",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "pot-cold",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "yours-old",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "limp-tiger",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "cash-rinse",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "cost-found",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "dish-dawn",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "luck-key",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "carves-round",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "slant-flower",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "till-short",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "sing-queen",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "glider-web",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "farmer-nail",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "purse-doctor",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "wife-death",
+            "Unrelated",
+            "A",
+            "yes"
+          ],
+          [
+            "tune-false",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "early-ground",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "boy-happy",
+            "Related",
+            "A",
+            "yes"
+          ],
+          [
+            "rable-chait",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "slom-wast",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "yot-colp",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "boung-oid",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "fion-siger",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "jash-ronse",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "lont-gound",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "dosk-dawl",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "nock-kry",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "bircle-rount",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "plang-fluwer",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "arsy-goldier",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "talp-chort",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "fing-sueen",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "spiler-heb",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "gammer-yail",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "furse-loctor",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "barth-groond",
+            "Nonword",
+            "A",
+            "no"
+          ],
+          [
+            "man-wotar",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "rough-smoat",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "bread-bottin",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "bitter-sweax",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "green-gliss",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "large-smipo",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "bed-slorg",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "afraid-scobet",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "cabbage-lottir",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "door-wingew",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "moship-father",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "neibon-thread",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "brothog-sister",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "capsute-pill",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "boeh-ale",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "bosh-water",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "nirey-south",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "honip-bee",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "sconix-marble",
+            "Filler",
+            "A",
+            "no"
+          ],
+          [
+            "porry-cent",
+            "Filler",
+            "A",
+            "no"
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "draw-shuffle"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Block A Loop",
+      "_tab": "Content",
+      "_collapsed": false,
+      "skip": false,
+      "skipCondition": "${parameters.counterbalance != 1}",
+      "tardy": false
+    },
+    "47": {
+      "id": "47",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "48",
+        "22",
+        "50"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Trial"
+    },
+    "48": {
+      "id": "48",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 18.69,
+          "height": 36.16,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "23",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Fixation",
+      "_tab": "Behavior",
+      "timeout": "500"
+    },
+    "50": {
+      "id": "50",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 585.65,
+          "height": 56.5,
+          "fill": "#000000",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "${ state.correct ? '😃' : '☹️'}",
+          "fontSize": "50",
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "91",
+          "styles": {}
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "ISI",
+      "_tab": "Content",
+      "timeout": "500",
+      "tardy": true
+    },
+    "51": {
+      "id": "51",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 494.54,
+          "height": 329.78,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "Ok, practice is over! \n\nTime for the real experiment.\nRemember:\ntwo real words: press \"y\"\none or two nonwords: press \"n\"\n\nTap here to begin the experiment...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "264",
+          "styles": {}
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 9.75,
+          "top": 142.25,
+          "width": 559.31,
+          "height": 83.82,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "378",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "End of practice",
+      "_tab": "Behavior"
+    },
+    "52": {
+      "id": "52",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": 0,
+          "width": 556.82,
+          "height": 329.78,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "text": "First, let's try a practice round.\n\nRemember:\n\ntwo real words\none or two nonsense words\n\ntap here when you are ready to begin...",
+          "fontSize": 32,
+          "fontWeight": "normal",
+          "fontFamily": "sans-serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "356",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -150,
+          "top": 15,
+          "width": 55,
+          "height": 55,
+          "fill": "#12864e",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "282"
+        },
+        {
+          "type": "circle",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -225,
+          "top": 65,
+          "width": 55,
+          "height": 55,
+          "fill": "#d6341a",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "283"
+        },
+        {
+          "type": "aoi",
+          "version": "4.3.1",
+          "originX": "center",
+          "originY": "center",
+          "left": -5.25,
+          "top": 146.25,
+          "width": 598.53,
+          "height": 72.06,
+          "fill": "rgba(0, 0, 0, 0.2)",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeDashOffset": 0,
+          "strokeLineJoin": "round",
+          "strokeUniform": false,
+          "strokeMiterLimit": 4,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "skewX": 0,
+          "skewY": 0,
+          "rx": 0,
+          "ry": 0,
+          "id": "288",
+          "label": "continue"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "click",
+          "target": "@continue",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Instructions7",
+      "_tab": "Behavior"
+    },
+    "53": {
+      "id": "53",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "31",
+        "51",
+        "46",
+        "41",
+        "36"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Trial Sequence",
+      "_tab": "Behavior"
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "1",
+        "2",
+        "6",
+        "5",
+        "4",
+        "3",
+        "52",
+        "13"
+      ],
+      "parameters": [],
+      "plugins": [
+        {
+          "type": "lab.plugins.Metadata"
+        }
+      ],
+      "metadata": {
+        "title": "",
+        "description": "",
+        "repository": "",
+        "contributors": ""
+      }
+    }
+  },
+  "version": [
+    20,
+    2,
+    4
+  ],
+  "files": {
+    "files": {
+      "index.html": {
+        "content": "data:text/html,%3C!doctype%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EExperiment%3C%2Ftitle%3E%0A%20%20%3C!--%20viewport%20setup%20--%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%3E%0A%20%20%3C!--%20lab.js%20library%20and%20experiment%20code%20--%3E%0A%20%20%24%7B%20header%20%7D%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%20%20%3C!--%20If%20you'd%20rather%20have%20a%20container%20with%20a%20fixed%20width%0A%20%20%20%20%20%20%20and%20variable%20height%2C%20try%20removing%20the%20fullscreen%20class%20below%20--%3E%0A%20%20%3Cdiv%20class%3D%22container%20fullscreen%22%20data-labjs-section%3D%22main%22%3E%0A%20%20%20%20%3Cmain%20class%3D%22content-vertical-center%20content-horizontal-center%22%3E%0A%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3ELoading%20Experiment%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EThe%20experiment%20is%20loading%20and%20should%20start%20in%20a%20few%20seconds%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fmain%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A",
+        "source": "library"
+      },
+      "style.css": {
+        "content": "data:text/css,%2F*%20Please%20define%20your%20custom%20styles%20here%20*%2F",
+        "source": "library"
+      }
+    },
+    "bundledFiles": {
+      "lib/lab.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.fallback.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.css": {
+        "type": "text/css"
+      },
+      "lib/loading.svg": {
+        "type": "image/svg+xml"
+      }
+    }
+  }
+}
