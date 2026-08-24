@@ -1,0 +1,19 @@
+
+# configuration commands (first time only)
+
+git config --global user.name "Your Name"
+
+git config --global user.email you@example.com
+
+git config --global credential.helper store
+
+
+# staging, committing, pushing, and pulling
+
+git add -A
+
+git commit -m "This is my very descriptive commit message"  
+
+git push
+
+git pull
