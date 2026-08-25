@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Workshop Outline</title>
+  <style>
+:root {
+  --bg: #faf7f2;
+  --text: #3a3530;
+  --leaf: #6b6259;
+  --hover: #efe8dd;
+  --radius: 10px;
+  --border: #e5ddd0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  max-width: 900px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+details {
+  margin-left: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+summary {
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "\25B6";
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 0.75em;
+  transition: transform 250ms ease-out;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+summary:hover {
+  background-color: var(--hover);
+}
+
+details > .content {
+  overflow: hidden;
+  border-left: 2px solid var(--border);
+  margin-left: 0.5rem;
+  padding-left: 0.6rem;
+}
+
+.leaf {
+  margin-left: 1.6rem;
+  padding: 6px 8px;
+  margin-top: 0.3rem;
+  max-width: 65ch;
+  color: var(--leaf);
+}
+
+h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+a[href] {
+  position: relative;
+  color: inherit;
+  text-decoration-color: var(--border);
+}
+
+a[href]:not([data-tip])::after {
+  content: attr(href);
+}
+
+a[href]::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 0.5em;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  font-size: 0.65em;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50%) translateX(-4px);
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  z-index: 10;
+}
+
+a[href]:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+</style>
+</head>
+<body>
+
+<h1>Python Workshop Outline</h1>
+
+<div class="leaf">Introduction to programming in Python</div>
+<div class="leaf"></div>
+<details>
+  <summary><strong>Day 1: Getting Started</strong></summary>
+  <div class="content">
+    <details>
+      <summary>Who (are your teachers?)</summary>
+      <div class="content">
+        <details>
+          <summary>Ethan Weed (<a href="mailto:ethan@cc.au.dk" data-tip="ethan@cc.au.dk">ethan@cc.au.dk</a>)</summary>
+          <div class="content">
+            <details>
+              <summary>Education</summary>
+              <div class="content">
+                <div class="leaf">BA in Liberal Arts (Hampshire College)</div>
+                <div class="leaf">BA in Spanish (Aarhus University)</div>
+                <div class="leaf">MA in Cognitive Semiotics (Aarhus University)</div>
+                <div class="leaf">PhD in Linguistics (Aarhus University)</div>
+              </div>
+            </details>
+            <details>
+              <summary><a href="https://ethanweed.github.io/publications">Research</a></summary>
+              <div class="content">
+                <details>
+                  <summary>Language and neurodivergence</summary>
+                  <div class="content">
+                    <details>
+                      <summary>Autism</summary>
+                      <div class="content">
+                        <div class="leaf">First language learning in children with autism</div>
+                        <div class="leaf">Prosody and communication success in teens and adults with autism</div>
+                      </div>
+                    </details>
+                    <details>
+                      <summary>Dyslexia</summary>
+                      <div class="content">
+                        <div class="leaf">Dyslexia diagnosis (aka “What is dyslexia”)</div>
+                        <div class="leaf">Reading comprehension in dyslexia</div>
+                        <div class="leaf">Reading comprehension in non-dyslexics</div>
+                        <div class="leaf"></div>
+                      </div>
+                    </details>
+                  </div>
+                </details>
+              </div>
+            </details>
+          </div>
+        </details>
+        <details>
+          <summary>Dorottya Sipos</summary>
+          <div class="content">
+            <div class="leaf">BA student from Cognitive Science</div>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>What?</summary>
+      <div class="content">
+        <details>
+          <summary>Programming</summary>
+          <div class="content">
+            <details>
+              <summary>Primarily scientific computing</summary>
+              <div class="content">
+                <div class="leaf">Working with structured data</div>
+                <div class="leaf">Producing figures</div>
+                <div class="leaf">Conducting statistical analyses</div>
+              </div>
+            </details>
+          </div>
+        </details>
+        <details>
+          <summary>Coding infrastructure</summary>
+          <div class="content">
+            <div class="leaf"><a href="https://cloud.sdu.dk/app/login">UCloud</a></div>
+            <div class="leaf"><span>Git (and </span><a href="https://github.com">Github</a><span>)</span></div>
+            <details>
+              <summary>Local (your computer)</summary>
+              <div class="content">
+                <div class="leaf">Browser</div>
+                <div class="leaf"><span>Local Python installation, </span><a href="https://code.visualstudio.com">VSCode</a><span>, </span><a href="https://www.jetbrains.com/pycharm/">PyCharm</a><span> and other IDEs, etc.</span></div>
+                <div class="leaf">Text editor (e.g. Notepad on Window, or TextEdit on MacOS)</div>
+              </div>
+            </details>
+          </div>
+        </details>
+        <div class="leaf">Python</div>
+        <div class="leaf"><a href="https://jupyter.org">Jupyter notebooks</a><span> (Jupyter Lab)</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>Why?</summary>
+      <div class="content">
+        <div class="leaf">Do we need to learn programming?</div>
+        <div class="leaf">This particular coding infrastructure (Jupyter on UCloud linked with GitHub)?</div>
+        <div class="leaf"><span>Are we using </span><a href="https://xkcd.com/353/">Python</a><span> and not a different programming language like </span><a href="https://www.r-project.org">R</a><span>?</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>How?</summary>
+      <div class="content">
+        <details>
+          <summary>Let’s get our UCloud setup working (We will do this together in class!!!)</summary>
+          <div class="content">
+            <div class="leaf">Log in to UCloud</div>
+            <div class="leaf"><span>If you haven’t already, join E26_LICS_ExperimentalPsycholinguistics workspace with </span><a href="https://cloud.sdu.dk/app/projects/invite/be9b137d-3d37-48ac-acd8-90550159f927">this link</a></div>
+            <div class="leaf">Make a folder for the course on your drive</div>
+            <details>
+              <summary>Start a new job</summary>
+              <div class="content">
+                <div class="leaf">Launch Jupyter app</div>
+                <div class="leaf">Add a Job name. This is a good idea, because later you can just choose “run again” and you won’t have to do all the steps below</div>
+                <div class="leaf">Add hours (enough to cover the rest of the class, or however much time you think you will need)</div>
+                <div class="leaf">Select Machine type (set slider to 1)</div>
+                <div class="leaf">Add the folder you made for this class (and / or any other folders you might need)</div>
+                <div class="leaf">(Later we may want to add a script to Initialization, but not yet)</div>
+                <div class="leaf">Click Submit and wait…</div>
+                <div class="leaf">When the screen pops up to say that the job is now running, click Open interface</div>
+              </div>
+            </details>
+          </div>
+        </details>
+        <details>
+          <summary>Let’s get GitHub connected (We will do this together!)</summary>
+          <div class="content">
+            <div class="leaf"><span>Log in to your </span><a href="https://github.com">GitHub</a><span> account</span></div>
+            <details>
+              <summary>Create a public repository for this course</summary>
+              <div class="content">
+                <div class="leaf">Click the link to create a readme file</div>
+                <div class="leaf">Add some text</div>
+                <div class="leaf">Commit</div>
+                <details>
+                  <summary>Create a personal access code (classic)</summary>
+                  <div class="content">
+                    <div class="leaf">Profile icon</div>
+                    <div class="leaf">Settings</div>
+                    <div class="leaf">Developer settings</div>
+                    <div class="leaf">Personal access tokens</div>
+                    <div class="leaf">Tokens (classic)</div>
+                    <div class="leaf">Generate new token (classic)</div>
+                    <div class="leaf">Click the top choice (repo)</div>
+                    <div class="leaf">Generate token</div>
+                    <div class="leaf">Generate new token (classic)</div>
+                    <div class="leaf">Give it a name in Note</div>
+                    <div class="leaf">Set an expiration date (set it to March 1 2027)</div>
+                    <div class="leaf">Under Select scopes, select the top one (repo)</div>
+                    <div class="leaf">Generate token (save it, you will need it later!)</div>
+                  </div>
+                </details>
+              </div>
+            </details>
+            <details>
+              <summary>Now, back in UCloud…</summary>
+              <div class="content">
+                <div class="leaf">Make sure you are in the folder you made for this course</div>
+                <details>
+                  <summary>Now we will clone our repository from GitHub</summary>
+                  <div class="content">
+                    <details>
+                      <summary>Git menu: Clone a repo</summary>
+                      <div class="content">
+                        <div class="leaf">Paste in the URL for your repo</div>
+                        <div class="leaf">Include submodules</div>
+                        <div class="leaf">Download the repository</div>
+                      </div>
+                    </details>
+                  </div>
+                </details>
+                <details>
+                  <summary>Now we will set our folder up to sync back to GitHub</summary>
+                  <div class="content">
+                    <div class="leaf">Make sure you are in the repository folder</div>
+                    <div class="leaf">Make a change in a file from your repo</div>
+                    <div class="leaf">Git menu: open repository in terminal</div>
+                  </div>
+                </details>
+                <details>
+                  <summary>Next, we will need these terminal commands</summary>
+                  <div class="content">
+                    <div class="leaf"><code>git config --global user.name “Your Name”</code></div>
+                    <div class="leaf"><code>git config --global user.email you@example.com</code></div>
+                    <div class="leaf"><code>git config --global credential.helper store</code></div>
+                    <div class="leaf"><code>git add -A</code></div>
+                    <div class="leaf"><code>git commit -m "This is my very descriptive commit message"</code></div>
+                    <div class="leaf"><code>git push</code></div>
+                    <div class="leaf"><code>git pull</code></div>
+                  </div>
+                </details>
+              </div>
+            </details>
+          </div>
+        </details>
+        <div class="leaf">Let’s make our first Jupyter notebook</div>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><strong>Day 2: Programming Basics Part 1</strong></summary>
+  <div class="content">
+    <div class="leaf">Review</div>
+    <details>
+      <summary>Variables</summary>
+      <div class="content">
+        <details>
+          <summary>Basic variable types</summary>
+          <div class="content">
+            <div class="leaf">Integers</div>
+            <div class="leaf">Floats</div>
+            <details>
+              <summary>Strings</summary>
+              <div class="content">
+                <div class="leaf">Variables are objects, and objects have properties</div>
+                <div class="leaf"><span>How to see properties: </span><code>dir()</code></div>
+                <div class="leaf">Operating on strings using their methods</div>
+              </div>
+            </details>
+          </div>
+        </details>
+        <div class="leaf">Infrastructure</div>
+        <div class="leaf">Basic variable types</div>
+      </div>
+    </details>
+    <div class="leaf">Variables</div>
+  </div>
+</details>
+<details>
+  <summary><strong>Day 3: Programming Basics Part 2</strong></summary>
+  <div class="content">
+    <details>
+      <summary>Review</summary>
+      <div class="content">
+        <details>
+          <summary>Variable types</summary>
+          <div class="content">
+            <div class="leaf">Basic variables</div>
+            <div class="leaf">Collection variables</div>
+          </div>
+        </details>
+      </div>
+    </details>
+    <div class="leaf">For loops</div>
+    <div class="leaf">Conditionals</div>
+  </div>
+</details>
+
+<script>
+class Accordion {
+  constructor(el) {
+    this.el = el;
+    this.summary = el.querySelector(':scope > summary');
+    this.content = el.querySelector(':scope > .content');
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    if (this.summary && this.content) {
+      this.summary.addEventListener('click', (e) => this.onClick(e));
+    }
+  }
+  onClick(e) {
+    e.preventDefault();
+    this.el.style.overflow = 'hidden';
+    if (this.isClosing || !this.el.open) {
+      this.open();
+    } else if (this.isExpanding || this.el.open) {
+      this.shrink();
+    }
+  }
+  shrink() {
+    this.isClosing = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight}px`;
+    if (this.animation) this.animation.cancel();
+    this.animation = this.el.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 250, easing: 'ease-out' }
+    );
+    this.animation.onfinish = () => this.onAnimationFinish(false);
+    this.animation.oncancel = () => { this.isClosing = false; };
+  }
+  open() {
+    this.el.style.height = `${this.el.offsetHeight}px`;
+    this.el.open = true;
+    window.requestAnimationFrame(() => this.expand());
+  }
+  expand() {
+    this.isExpanding = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+    if (this.animation) this.animation.cancel();
+    this.animation = this.el.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 250, easing: 'ease-out' }
+    );
+    this.animation.onfinish = () => this.onAnimationFinish(true);
+    this.animation.oncancel = () => { this.isExpanding = false; };
+  }
+  onAnimationFinish(open) {
+    this.el.open = open;
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.el.style.height = this.el.style.overflow = '';
+  }
+}
+document.querySelectorAll('details').forEach((el) => new Accordion(el));
+</script>
+</body>
+</html>

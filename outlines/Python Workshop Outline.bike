@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <ul id="UuNmLFwK">
+      <li id="3C" data-type="heading">
+        <p>Introduction to programming in Python</p>
+      </li>
+      <li id="fM">
+        <p/>
+      </li>
+      <li id="Fb">
+        <p>Day 1: Getting Started</p>
+        <ul>
+          <li id="1k">
+            <p>Who (are your teachers?)</p>
+            <ul>
+              <li id="TF">
+                <p>Ethan Weed (ethan@cc.au.dk)</p>
+                <ul>
+                  <li id="E0O">
+                    <p>Education</p>
+                    <ul>
+                      <li id="Op">
+                        <p>BA in Liberal Arts (Hampshire College)</p>
+                      </li>
+                      <li id="aF2">
+                        <p>BA in Spanish (Aarhus University)</p>
+                      </li>
+                      <li id="yN7">
+                        <p>MA in Cognitive Semiotics (Aarhus University)</p>
+                      </li>
+                      <li id="kPX">
+                        <p>PhD in Linguistics (Aarhus University)</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="e7v">
+                    <p><a href="https://ethanweed.github.io/publications">Research</a></p>
+                    <ul>
+                      <li id="SUu">
+                        <p>Language and neurodivergence</p>
+                        <ul>
+                          <li id="35D">
+                            <p>Autism</p>
+                            <ul>
+                              <li id="2kB">
+                                <p>First language learning in children with autism</p>
+                              </li>
+                              <li id="nu1">
+                                <p>Prosody and communication success in teens and adults with autism</p>
+                              </li>
+                            </ul>
+                          </li>
+                          <li id="BTM">
+                            <p>Dyslexia</p>
+                            <ul>
+                              <li id="OGT">
+                                <p>Dyslexia diagnosis (aka “What is dyslexia”)</p>
+                              </li>
+                              <li id="G6s">
+                                <p>Reading comprehension in dyslexia</p>
+                              </li>
+                              <li id="8fI">
+                                <p>Reading comprehension in non-dyslexics</p>
+                              </li>
+                              <li id="Aa0">
+                                <p/>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="pzh">
+                <p>Dorottya Sipos</p>
+                <ul>
+                  <li id="aMk">
+                    <p>BA student from Cognitive Science </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li id="Rn">
+            <p>What?</p>
+            <ul>
+              <li id="Bte">
+                <p>Programming</p>
+                <ul>
+                  <li id="2ac">
+                    <p>Primarily scientific computing</p>
+                    <ul>
+                      <li id="CVL">
+                        <p>Working with structured data</p>
+                      </li>
+                      <li id="NUW">
+                        <p>Producing figures</p>
+                      </li>
+                      <li id="4em">
+                        <p>Conducting statistical analyses</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="QHG">
+                <p>Coding infrastructure</p>
+                <ul>
+                  <li id="SVR">
+                    <p><a href="https://cloud.sdu.dk/app/login">UCloud</a></p>
+                  </li>
+                  <li id="y_o">
+                    <p><span>Git (and </span><a href="https://github.com">Github</a><span>)</span></p>
+                  </li>
+                  <li id="aHT">
+                    <p>Local (your computer)</p>
+                    <ul>
+                      <li id="UOj">
+                        <p>Browser</p>
+                      </li>
+                      <li id="N3m">
+                        <p><span>Local Python installation, </span><a href="https://code.visualstudio.com">VSCode</a><span>, </span><a href="https://www.jetbrains.com/pycharm/">PyCharm</a><span> and other IDEs, etc.</span></p>
+                      </li>
+                      <li id="vfY">
+                        <p>Text editor (e.g. Notepad on Window, or TextEdit on MacOS)</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="2qb">
+                <p>Python</p>
+              </li>
+              <li id="Lw_">
+                <p><a href="https://jupyter.org">Jupyter notebooks</a><span> (Jupyter Lab)</span></p>
+              </li>
+            </ul>
+          </li>
+          <li id="t8">
+            <p>Why?</p>
+            <ul>
+              <li id="Do2">
+                <p>Do we need to learn programming?</p>
+              </li>
+              <li id="8I3">
+                <p>This particular coding infrastructure (Jupyter on UCloud linked with GitHub)?</p>
+              </li>
+              <li id="KQK">
+                <p><span>Are we using </span><a href="https://xkcd.com/353/">Python</a><span> and not a different programming language like </span><a href="https://www.r-project.org">R</a><span>?</span></p>
+              </li>
+            </ul>
+          </li>
+          <li id="8m">
+            <p>How?</p>
+            <ul>
+              <li id="lOR">
+                <p>Let’s get our UCloud setup working (We will do this together in class!!!)</p>
+                <ul>
+                  <li id="P5j">
+                    <p>Log in to UCloud</p>
+                  </li>
+                  <li id="tLJ">
+                    <p><span>If you haven’t already, join E26_LICS_ExperimentalPsycholinguistics workspace with </span><a href="https://cloud.sdu.dk/app/projects/invite/be9b137d-3d37-48ac-acd8-90550159f927">this link</a></p>
+                  </li>
+                  <li id="_fe">
+                    <p>Make a folder for the course on your drive</p>
+                  </li>
+                  <li id="IAl">
+                    <p>Start a new job</p>
+                    <ul>
+                      <li id="cND">
+                        <p>Launch Jupyter app</p>
+                      </li>
+                      <li id="y8f">
+                        <p>Add a Job name. This is a good idea, because later you can just choose “run again” and you won’t have to do all the steps below</p>
+                      </li>
+                      <li id="aUc">
+                        <p>Add hours (enough to cover the rest of the class, or however much time you think you will need)</p>
+                      </li>
+                      <li id="R0x">
+                        <p>Select Machine type (set slider to 1)</p>
+                      </li>
+                      <li id="8J-">
+                        <p>Add the folder you made for this class (and / or any other folders you might need)</p>
+                      </li>
+                      <li id="J2z">
+                        <p>(Later we may want to add a script to Initialization, but not yet)</p>
+                      </li>
+                      <li id="ghA">
+                        <p>Click Submit and wait…</p>
+                      </li>
+                      <li id="MWy">
+                        <p>When the screen pops up to say that the job is now running, click Open interface</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="CzM">
+                <p>Let’s get GitHub connected (We will do this together!)</p>
+                <ul>
+                  <li id="Uc-">
+                    <p><span>Log in to your </span><a href="https://github.com">GitHub</a><span> account</span></p>
+                  </li>
+                  <li id="NLJ">
+                    <p>Create a public repository for this course</p>
+                    <ul>
+                      <li id="A4L">
+                        <p>Click the link to create a readme file</p>
+                      </li>
+                      <li id="9YF">
+                        <p>Add some text</p>
+                      </li>
+                      <li id="U0j">
+                        <p>Commit</p>
+                      </li>
+                      <li id="fzD">
+                        <p>Create a personal access code (classic)</p>
+                        <ul>
+                          <li id="cmd">
+                            <p>Profile icon</p>
+                          </li>
+                          <li id="kn0">
+                            <p>Settings</p>
+                          </li>
+                          <li id="jsL">
+                            <p>Developer settings</p>
+                          </li>
+                          <li id="SUa">
+                            <p>Personal access tokens</p>
+                          </li>
+                          <li id="FOG">
+                            <p>Tokens (classic)</p>
+                          </li>
+                          <li id="Wuu">
+                            <p>Generate new token (classic)</p>
+                          </li>
+                          <li id="H-F">
+                            <p>Click the top choice (repo)</p>
+                          </li>
+                          <li id="7cz">
+                            <p>Generate token</p>
+                          </li>
+                          <li id="Z1f">
+                            <p>Generate new token (classic)</p>
+                          </li>
+                          <li id="Cpv">
+                            <p>Give it a name in Note</p>
+                          </li>
+                          <li id="yJ7">
+                            <p>Set an expiration date (set it to March 1 2027)</p>
+                          </li>
+                          <li id="R9d">
+                            <p>Under Select scopes, select the top one (repo)</p>
+                          </li>
+                          <li id="1YE">
+                            <p>Generate token (save it, you will need it later!)</p>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="VLc">
+                    <p>Now, back in UCloud…</p>
+                    <ul>
+                      <li id="wD6">
+                        <p>Make sure you are in the folder you made for this course</p>
+                      </li>
+                      <li id="qYA">
+                        <p>Now we will clone our repository from GitHub</p>
+                        <ul>
+                          <li id="uNj">
+                            <p>Git menu: Clone a repo</p>
+                            <ul>
+                              <li id="Ofx">
+                                <p>Paste in the URL for your repo</p>
+                              </li>
+                              <li id="MEl">
+                                <p>Include submodules</p>
+                              </li>
+                              <li id="JXU">
+                                <p>Download the repository</p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="hqc">
+                        <p>Now we will set our folder up to sync back to GitHub</p>
+                        <ul>
+                          <li id="LzG">
+                            <p>Make sure you are in the repository folder</p>
+                          </li>
+                          <li id="sN9">
+                            <p>Make a change in a file from your repo</p>
+                          </li>
+                          <li id="aP8">
+                            <p>Git menu: open repository in terminal</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="gK1">
+                        <p>Next, we will need these terminal commands</p>
+                        <ul>
+                          <li id="u-D">
+                            <p><code>git config --global user.name “Your Name”</code></p>
+                          </li>
+                          <li id="HLP">
+                            <p><code>git config --global user.email you@example.com</code></p>
+                          </li>
+                          <li id="EwC">
+                            <p><code>git config --global credential.helper store</code></p>
+                          </li>
+                          <li id="onB">
+                            <p><code>git add -A</code></p>
+                          </li>
+                          <li id="xst">
+                            <p><code>git commit -m "This is my very descriptive commit message"</code></p>
+                          </li>
+                          <li id="NvK">
+                            <p><code>git push</code></p>
+                          </li>
+                          <li id="TX_">
+                            <p><code>git pull</code></p>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="7_h">
+                <p>Let’s make our first Jupyter notebook</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="Bi">
+        <p>Day 2: Programming Basics Part 1</p>
+        <ul>
+          <li id="Os">
+            <p>Review</p>
+          </li>
+          <li id="MRi">
+            <p>Variables</p>
+            <ul>
+              <li id="qn">
+                <p>Basic variable types</p>
+                <ul>
+                  <li id="P2">
+                    <p>Integers</p>
+                  </li>
+                  <li id="Xz">
+                    <p>Floats</p>
+                  </li>
+                  <li id="oX">
+                    <p>Strings</p>
+                    <ul>
+                      <li id="51">
+                        <p>Variables are objects, and objects have properties</p>
+                      </li>
+                      <li id="X83">
+                        <p><span>How to see properties: </span><code>dir()</code></p>
+                      </li>
+                      <li id="g4I">
+                        <p>Operating on strings using their methods</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="u3">
+                <p>Infrastructure</p>
+              </li>
+              <li id="8C">
+                <p>Basic variable types</p>
+              </li>
+            </ul>
+          </li>
+          <li id="Pw">
+            <p>Variables</p>
+          </li>
+        </ul>
+      </li>
+      <li id="g0">
+        <p>Day 3: Programming Basics Part 2</p>
+        <ul>
+          <li id="FCW">
+            <p>Review</p>
+            <ul>
+              <li id="3p3">
+                <p>Variable types</p>
+                <ul>
+                  <li id="IN5">
+                    <p>Basic variables</p>
+                  </li>
+                  <li id="4ph">
+                    <p>Collection variables</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li id="dL2">
+            <p>For loops</p>
+          </li>
+          <li id="KKs">
+            <p>Conditionals</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
