@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History of Psycholinguistics</title>
+  <style>
+:root {
+  --bg: #faf7f2;
+  --text: #3a3530;
+  --leaf: #6b6259;
+  --hover: #efe8dd;
+  --radius: 10px;
+  --border: #e5ddd0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  max-width: 900px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+details {
+  margin-left: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+summary {
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "\25B6";
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 0.75em;
+  transition: transform 250ms ease-out;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+summary:hover {
+  background-color: var(--hover);
+}
+
+details > .content {
+  overflow: hidden;
+  border-left: 2px solid var(--border);
+  margin-left: 0.5rem;
+  padding-left: 0.6rem;
+}
+
+.leaf {
+  margin-left: 1.6rem;
+  padding: 6px 8px;
+  margin-top: 0.3rem;
+  max-width: 65ch;
+  color: var(--leaf);
+}
+
+h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+a[href] {
+  position: relative;
+  color: inherit;
+  text-decoration-color: var(--border);
+}
+
+a[href]:not([data-tip])::after {
+  content: attr(href);
+}
+
+a[href]::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 0.5em;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  font-size: 0.65em;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50%) translateX(-4px);
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  z-index: 10;
+}
+
+a[href]:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+</style>
+</head>
+<body>
+
+<h1>History of Psycholinguistics</h1>
+
+<div class="leaf">Early History of Psycholinguistics</div>
+<div class="leaf"><span>(Notes from Levelt’s </span><em>A History of Psycholinguistics</em><span>)</span></div>
+<div class="leaf"></div>
+<details>
+  <summary><strong>Wilhelm von Humboldt (1767-1835)</strong></summary>
+  <div class="content">
+    <div class="leaf">Philosophy of State</div>
+    <div class="leaf">Philosophy of Education</div>
+    <div class="leaf">Diplomat</div>
+    <details>
+      <summary>Linguist</summary>
+      <div class="content">
+        <div class="leaf">Studied Basque</div>
+        <div class="leaf">When he died, he was working on a book about the Kawi language in Java</div>
+        <details>
+          <summary>View of language</summary>
+          <div class="content">
+            <div class="leaf">Language is an activity - language is something we do</div>
+            <div class="leaf">This is very different than early views that saw language as e.g. something that was written down, or as a spoken product, like an epic poem</div>
+            <div class="leaf">Humboldt also mentions the existence of “inner speech”, but writes very little about it</div>
+            <div class="leaf">Has early ideas about linguistic relativity, but not in the strong Whorfian sense - he talks more about certain language having certain affordances, but says that any idea can be expressed in any language</div>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><strong>Johann Friedrich Herbert (1776-1841)</strong></summary>
+  <div class="content">
+    <div class="leaf">Perhaps the first psychologist?</div>
+    <details>
+      <summary>The concept of an “idea”</summary>
+      <div class="content">
+        <div class="leaf">Psychology is our inner life</div>
+        <div class="leaf">Part of that inner life is conscious, the other part is our unconscious</div>
+        <div class="leaf">Ideas inter our consciousness through our senses or through memories</div>
+        <div class="leaf">Ideas are always in motion, and interact with each other like billiard balls (mental mechanics)</div>
+        <div class="leaf">Consciousness is like a stage where ideas appear, interact, and then disappear offstage</div>
+        <div class="leaf">When ideas become associated with each other, Herbert called this “apperception” (we will return to this with Wundt)</div>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><strong>Heymann Steinthal (1823-1855)</strong></summary>
+  <div class="content">
+    <details>
+      <summary>Inspired by Herbert</summary>
+      <div class="content">
+        <details>
+          <summary>Only one idea can be “onstage” at a time</summary>
+          <div class="content">
+            <div class="leaf">Through interaction, ideas can gain “energy” and it is this energy that pushes them onto the stage of consciousness</div>
+          </div>
+        </details>
+        <details>
+          <summary>Ideas can interact in different ways</summary>
+          <div class="content">
+            <div class="leaf">Fusion: I see my cat, then later I see him again. The first image I have fuses with the later images I have, and they become one: my abstract idea of my cat</div>
+            <div class="leaf">Entanglement: Ideas can become connected to each other, but still separate. My idea of “my cat” can become entangled with my idea of “animal”, and also “pet”</div>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><strong>Max Müller (1823-1900)</strong></summary>
+  <div class="content">
+    <div class="leaf">Studied Sanskrit</div>
+    <div class="leaf">He took the 1100 Sanskrit roots that Panini had written down two thousand years earlier and reduced them to 121 core concepts. “These 121 concepts constitute the stock-in-trade with which I maintain that every thought that has passed through the mind of India, so far as it is known to us in its literature, has been expressed.” (Levelt pg. 32)</div>
+    <div class="leaf">“Language is the true autobiography of mind.” (quoted in Levelt, pg. 32)</div>
+  </div>
+</details>
+<details>
+  <summary><strong>Wilhelm Wundt (1832-1920)</strong></summary>
+  <div class="content">
+    <div class="leaf">Medical doctor - physiology</div>
+    <div class="leaf">“Contributions to the Theory of Sense Perception” (1858–1862)</div>
+    <div class="leaf">“Lectures on Human and Animal Psychology” (1863–1864)</div>
+    <div class="leaf">“Principles of Physiological Psychology” (1874)</div>
+    <div class="leaf">Laboratory of experimental psychology</div>
+    <div class="leaf">Timing - clocks, electronic</div>
+    <details>
+      <summary>Visitors to the lab included</summary>
+      <div class="content">
+        <div class="leaf">Edward Sapir</div>
+        <div class="leaf">Benjamin Lee Whorf</div>
+        <div class="leaf">Edmund Husserel (phenomenology)</div>
+        <div class="leaf">Franz Boas (anthropology)</div>
+      </div>
+    </details>
+    <details>
+      <summary>Wundt’s “apperception”</summary>
+      <div class="content">
+        <div class="leaf">Redefinition of Herbert’s word</div>
+        <div class="leaf"><span>“The state, characterised by a specific sensation, which accompanies the clearer focusing of some mental content we call </span><em>attention</em><span>; the specific process by which some mental content is brought into clear focus [we call] apperception”.</span></div>
+        <div class="leaf">Levelt: Wundt’s “apperception” is very similar to the modern idea of “executive control”</div>
+      </div>
+    </details>
+    <div class="leaf">Volition</div>
+  </div>
+</details>
+<div class="leaf">1951</div>
+
+<script>
+class Accordion {
+  constructor(el) {
+    this.el = el;
+    this.summary = el.querySelector(':scope > summary');
+    this.content = el.querySelector(':scope > .content');
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    if (this.summary && this.content) {
+      this.summary.addEventListener('click', (e) => this.onClick(e));
+    }
+  }
+  onClick(e) {
+    e.preventDefault();
+    this.el.style.overflow = 'hidden';
+    if (this.isClosing || !this.el.open) {
+      this.open();
+    } else if (this.isExpanding || this.el.open) {
+      this.shrink();
+    }
+  }
+  shrink() {
+    this.isClosing = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight}px`;
+    if (this.animation) this.animation.cancel();
+    this.animation = this.el.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 250, easing: 'ease-out' }
+    );
+    this.animation.onfinish = () => this.onAnimationFinish(false);
+    this.animation.oncancel = () => { this.isClosing = false; };
+  }
+  open() {
+    this.el.style.height = `${this.el.offsetHeight}px`;
+    this.el.open = true;
+    window.requestAnimationFrame(() => this.expand());
+  }
+  expand() {
+    this.isExpanding = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+    if (this.animation) this.animation.cancel();
+    this.animation = this.el.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 250, easing: 'ease-out' }
+    );
+    this.animation.onfinish = () => this.onAnimationFinish(true);
+    this.animation.oncancel = () => { this.isExpanding = false; };
+  }
+  onAnimationFinish(open) {
+    this.el.open = open;
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.el.style.height = this.el.style.overflow = '';
+  }
+}
+document.querySelectorAll('details').forEach((el) => new Accordion(el));
+</script>
+</body>
+</html>

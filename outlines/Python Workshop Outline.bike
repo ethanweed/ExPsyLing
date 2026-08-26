@@ -15,7 +15,7 @@
         <p>Day 1: Getting Started</p>
         <ul>
           <li id="1k">
-            <p>Who (are your teachers?)</p>
+            <p>Who are your teachers?</p>
             <ul>
               <li id="TF">
                 <p>Ethan Weed (ethan@cc.au.dk)</p>
@@ -88,7 +88,7 @@
             </ul>
           </li>
           <li id="Rn">
-            <p>What?</p>
+            <p>What will be doing?</p>
             <ul>
               <li id="Bte">
                 <p>Programming</p>
@@ -143,7 +143,7 @@
             </ul>
           </li>
           <li id="t8">
-            <p>Why?</p>
+            <p>Why will be doing all this?</p>
             <ul>
               <li id="Do2">
                 <p>Do we need to learn programming?</p>
@@ -157,7 +157,7 @@
             </ul>
           </li>
           <li id="8m">
-            <p>How?</p>
+            <p>How do we actually do it?</p>
             <ul>
               <li id="lOR">
                 <p>Let’s get our UCloud setup working (We will do this together in class!!!)</p>
