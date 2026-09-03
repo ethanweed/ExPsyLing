@@ -15,4 +15,4 @@ What about a cow? ⽜
 
 Things are going so smoothly in the class so far. I must be an amazing teacher.
 
-
+Namaste 🎃
