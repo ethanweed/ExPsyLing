@@ -21,7 +21,7 @@ progress: true
 :::::: {.two-col}
 
 ::: {}
-![](path.jpeg)
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/broca.png)
 :::
 
 ::: {}
@@ -42,7 +42,7 @@ TEXT
 :::::: {.two-col}
 
 ::: {}
-![](path.jpeg)
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/broca.png)
 :::
 
 ::: {}
@@ -62,7 +62,7 @@ TEXT
 :::::: {.two-col}
 
 ::: {}
-![](path.jpeg)
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/broca.png)
 :::
 
 ::: {}
@@ -78,12 +78,13 @@ TEXT
 ---
 
 ## 18th Century Romanticism
+
 (Notes from [@leveltHistory])
 
 :::::: {.two-col}
 
 ::: {}
-![](path.jpeg)
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/broca.png)
 :::
 
 ::: {}
