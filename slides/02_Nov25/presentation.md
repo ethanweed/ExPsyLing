@@ -104,6 +104,51 @@ TEXT
 
 Notes from [@leveltHistory]
 
+---
+
+## Wilhelm von Humboldt (1767-1835)
+
+:::::: {.two-col}
+
+::: {}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/humboldt.jpg)
+_Portrait Thomas Lawrence_
+:::
+
+::: {}
+
+
+- Philosophy of State
+- Phiosophy of Education
+- Diplomat
+- Linguist
+
+:::
+
+::::::
+
+---
+
+:::::: {.two-col}
+
+::: {}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/humboldt.jpg)
+_Portrait by Thomas Lawrence_
+:::
+
+::: {}
+
+
+View of language
+
+- Language is an activity
+- Previously people saw language as an object
+- Mentions inner speech (but says little about it)
+- Early ideas of linguistic relativity (linguistic affordances)
+
+:::
+
+::::::
 
 
 ---
