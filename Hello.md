@@ -12,3 +12,9 @@ So, here is a duck: 🦆
 What about a cow? ⽜
 
 こんにちわ
+
+Things are going so smoothly in the class so far. I must be an amazing teacher.
+
+Namaste 🎃
+
+THere is a banana on m y desk
