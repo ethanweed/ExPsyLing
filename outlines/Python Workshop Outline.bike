@@ -15,7 +15,7 @@
         <p>Day 1: Getting Started</p>
         <ul>
           <li id="1k">
-            <p>Who are your teachers?</p>
+            <p>Who?</p>
             <ul>
               <li id="TF">
                 <p>Ethan Weed (ethan@cc.au.dk)</p>
@@ -66,6 +66,19 @@
                               <li id="8fI">
                                 <p>Reading comprehension in non-dyslexics</p>
                               </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="68">
+                        <p>Reading</p>
+                        <ul>
+                          <li id="0y">
+                            <p>Reading comprehension</p>
+                          </li>
+                          <li id="ha">
+                            <p>Digital reading</p>
+                            <ul>
                               <li id="Aa0">
                                 <p/>
                               </li>
@@ -85,10 +98,13 @@
                   </li>
                 </ul>
               </li>
+              <li id="1c">
+                <p>You…</p>
+              </li>
             </ul>
           </li>
           <li id="Rn">
-            <p>What will be doing?</p>
+            <p>What?</p>
             <ul>
               <li id="Bte">
                 <p>Programming</p>
@@ -143,7 +159,7 @@
             </ul>
           </li>
           <li id="t8">
-            <p>Why will be doing all this?</p>
+            <p>Why?</p>
             <ul>
               <li id="Do2">
                 <p>Do we need to learn programming?</p>
@@ -157,7 +173,7 @@
             </ul>
           </li>
           <li id="8m">
-            <p>How do we actually do it?</p>
+            <p>How?</p>
             <ul>
               <li id="lOR">
                 <p>Let’s get our UCloud setup working (We will do this together in class!!!)</p>

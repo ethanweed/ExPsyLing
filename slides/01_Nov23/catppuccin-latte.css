@@ -1,0 +1,245 @@
+/* =============================================
+   Catppuccin Latte — Reveal.js Theme
+   ============================================= */
+
+/* --- Palette Variables --- */
+:root {
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo:  #dd7878;
+  --ctp-pink:      #ea76cb;
+  --ctp-mauve:     #8839ef;
+  --ctp-red:       #d20f39;
+  --ctp-maroon:    #e64553;
+  --ctp-peach:     #fe640b;
+  --ctp-yellow:    #df8e1d;
+  --ctp-green:     #40a02b;
+  --ctp-teal:      #179299;
+  --ctp-sky:       #04a5e5;
+  --ctp-sapphire:  #209fb5;
+  --ctp-blue:      #1e66f5;
+  --ctp-lavender:  #7287fd;
+
+  --ctp-text:      #4c4f69;
+  --ctp-subtext1:  #5c5f77;
+  --ctp-subtext0:  #6c6f85;
+  --ctp-overlay2:  #7c7f93;
+  --ctp-overlay1:  #8c8fa1;
+  --ctp-overlay0:  #9ca0b0;
+  --ctp-surface2:  #acb0be;
+  --ctp-surface1:  #bcc0cc;
+  --ctp-surface0:  #ccd0da;
+  --ctp-base:      #eff5f0;
+  --ctp-mantle:    #e6e9ef;
+  --ctp-crust:     #dce0e8;
+}
+
+/* --- Base / Background --- */
+.reveal-viewport {
+  background-color: var(--ctp-base);
+}
+
+.reveal .slides {
+  color: var(--ctp-text);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 2rem;
+}
+
+/* --- Headings --- */
+.reveal h1 {
+  color: var(--ctp-mauve);
+  font-size: 2.5em;
+  font-weight: 700;
+  border-bottom: 3px solid var(--ctp-lavender);
+  padding-bottom: 0.2em;
+}
+
+.reveal h2 {
+  color: var(--ctp-blue);
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.reveal h3 {
+  color: var(--ctp-sapphire);
+  font-size: 1.4em;
+}
+
+.reveal h4, .reveal h5, .reveal h6 {
+  color: var(--ctp-teal);
+}
+
+/* --- Body Text --- */
+.reveal p {
+  color: var(--ctp-text);
+  line-height: 1.6;
+}
+
+/* --- Links --- */
+.reveal a {
+  color: var(--ctp-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.reveal a:hover {
+  color: var(--ctp-lavender);
+}
+
+/* --- Lists --- */
+.reveal ul,
+.reveal ol {
+  color: var(--ctp-text);
+}
+
+.reveal ul li::marker,
+.reveal ol li::marker {
+  color: var(--ctp-mauve);
+}
+
+/* --- Code --- */
+.reveal code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-peach);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.reveal pre {
+  background-color: var(--ctp-mantle);
+  border: 1px solid var(--ctp-surface2);
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 12px rgba(76, 79, 105, 0.15);
+}
+
+.reveal pre code {
+  background: none;
+  color: var(--ctp-text);
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+/* --- Blockquote --- */
+.reveal blockquote {
+  background-color: var(--ctp-surface0);
+  border-left: 4px solid var(--ctp-lavender);
+  border-radius: 0 6px 6px 0;
+  padding: 0.8em 1.2em;
+  color: var(--ctp-subtext1);
+  font-style: italic;
+}
+
+/* --- Tables --- */
+.reveal table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reveal table thead tr {
+  background-color: var(--ctp-mantle);
+  color: var(--ctp-mauve);
+  font-weight: 600;
+}
+
+.reveal table th,
+.reveal table td {
+  padding: 0.5em 1em;
+  border: 1px solid var(--ctp-surface1);
+  text-align: left;
+}
+
+.reveal table tbody tr:nth-child(even) {
+  background-color: var(--ctp-surface0);
+}
+
+/* --- Slide Number --- */
+.reveal .slide-number {
+  background-color: var(--ctp-mantle);
+  color: var(--ctp-overlay2);
+  font-size: 0.7em;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* --- Progress Bar --- */
+.reveal .progress {
+  background-color: var(--ctp-surface1);
+  height: 4px;
+}
+
+.reveal .progress span {
+  background-color: var(--ctp-mauve);
+  transition: width 0.4s ease;
+}
+
+/* --- Controls (arrows) --- */
+.reveal .controls {
+  color: var(--ctp-lavender);
+}
+
+/* --- Highlight / Selection --- */
+.reveal ::selection {
+  background-color: var(--ctp-lavender);
+  color: var(--ctp-base);
+}
+
+/* --- Utility: Accent highlight spans --- */
+.reveal .accent-red      { color: var(--ctp-red); }
+.reveal .accent-peach    { color: var(--ctp-peach); }
+.reveal .accent-yellow   { color: var(--ctp-yellow); }
+.reveal .accent-green    { color: var(--ctp-green); }
+.reveal .accent-teal     { color: var(--ctp-teal); }
+.reveal .accent-blue     { color: var(--ctp-blue); }
+.reveal .accent-mauve    { color: var(--ctp-mauve); }
+.reveal .accent-pink     { color: var(--ctp-pink); }
+.reveal .accent-flamingo { color: var(--ctp-flamingo); }
+
+
+
+/* Custom background override */
+.reveal-viewport {
+  background-color: #eff1f5;
+}
+
+
+/* Two-column flex boxes */
+.two-col {
+  display: flex;
+  align-items: enter;
+  text-align: left;
+  gap: 2em;
+}
+
+.two-col > div {
+  flex: 1;
+}
+
+.reveal .slides section.scrollable {
+  overflow-y: auto !important;
+  height: 100%;
+}
+
+#refs {
+  font-size: 0.55em;
+  text-align: left !important;
+}
+
+#refs div {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 0.5em;
+}
+
+.reveal .slide-number {
+  top: 8px;
+  left: 8px;
+  bottom: auto;
+  right: auto;
+  font-size: 0.7em;
+  background-color: transparent;  /* remove the default dark background */
+  color: var(--ctp-blue);
+}
+
