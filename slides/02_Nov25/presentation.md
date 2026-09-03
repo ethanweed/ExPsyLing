@@ -79,7 +79,7 @@ TEXT
 
 ## 18th Century Romanticism
 
-(Notes from [@leveltHistory])
+Notes from [@leveltHistory]
 
 :::::: {.two-col}
 
@@ -102,7 +102,7 @@ TEXT
 
 # 19th Century Europe
 
-
+Notes from [@leveltHistory]
 
 
 
@@ -110,14 +110,14 @@ TEXT
 
 # Early 20th Century Europe and United States
 
-
+Notes from [@leveltHistory]
 
 
 ---
 
 # Late 20th Century
 
-
+Notes from [@leveltHistory]
 
 
 
