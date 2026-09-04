@@ -257,3 +257,11 @@ object-fit: contain;
   color: var(--ctp-blue);
 }
 
+.reveal blockquote {
+  font-style: italic;
+  padding: 0.5em 1em;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #42affa;
+  box-shadow: none;
+  width: 80%;
+}
