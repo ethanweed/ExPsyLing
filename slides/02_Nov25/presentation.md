@@ -112,7 +112,7 @@ Notes from [@leveltHistory]
 
 ::: {}
 ![](/Users/ethan/Documents/GitHub/ExPsyLing/images/humboldt.jpg)
-_Portrait Thomas Lawrence_
+_Portrait by Thomas Lawrence_
 :::
 
 ::: {}
@@ -149,6 +149,50 @@ View of language
 :::
 
 ::::::
+
+---
+
+## Johann Friedrich Herbert (1776-1841)
+
+:::::: {.two-col}
+
+::: {}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/herbert.jpg)
+:::
+
+::: {}
+
+- The first psychologist?
+- The concept of an "idea"
+- "Mental mechanics" concept of psychology
+    
+
+
+:::
+
+::::::
+
+---
+
+
+:::::: {.two-col}
+
+::: {}
+![](/Users/ethan/Documents/GitHub/ExPsyLing/images/theater_Honoré_Daumier.jpg)
+:::
+
+::: {}
+
+- Mental mechanics
+    - Our inner life has a conscious and unconscious part
+    - Ideas enter our consciousness through senses or memories
+    - Consciousness is like a stage where ideas appear, interact, and then disappear offstage
+    -
+
+:::
+
+::::::
+
 
 
 ---
