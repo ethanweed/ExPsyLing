@@ -151,6 +151,16 @@ _Kawi script stele_
 
 ---
 
+## "_Weltansicht_"
+
+>For Humboldt the world exists for us through language. The diversity of languages is not
+>only a diversity of sounds, but a diversity of content as a function of the diversity of
+>grammatical forms (Vergleichende Sprachstudium, IV 27, p. 20). In the history of man-
+>kind, language and thought are formed simultaneously and reciprocally.
+
+
+---
+
 ## Johann Friedrich Herbart (1776-1841)
 
 :::::: {.two-col}
