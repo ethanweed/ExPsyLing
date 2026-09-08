@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(sips -Z 800 plato.png --out plato.jpg)",
+      "Bash(rm plato.png)",
+      "Bash(sips -Z 800 panini.jpg --out panini.jpg)",
+      "Bash(sips -Z 800 prehistoric.jpg --out prehistoric.jpg)",
+      "Bash(mv plato.jpg plato_tmp.png)",
+      "Bash(sips -s format jpeg plato_tmp.png --out plato.jpg)",
+      "Bash(bash build.sh)"
+    ]
+  }
+}

@@ -255,6 +255,11 @@ object-fit: contain;
   text-align: left !important;
 }
 
+.reveal .slides section.scrollable ul {
+  font-size: 0.55em;
+  text-align: left;
+}
+
 #refs div {
   padding-left: 2em;
   text-indent: -2em;
