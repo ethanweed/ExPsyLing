@@ -12,7 +12,7 @@
         <p/>
       </li>
       <li id="Fb">
-        <p>Day 1: Getting Started</p>
+        <p>Day 1: Getting Started </p>
         <ul>
           <li id="1k">
             <p>Who?</p>
@@ -361,11 +361,22 @@
       <li id="Bi">
         <p>Day 2: Programming Basics Part 1</p>
         <ul>
-          <li id="Os">
-            <p>Review</p>
+          <li id="u3">
+            <p>Infrastructure</p>
+            <ul>
+              <li id="tS">
+                <p>GitHub and UCloud?</p>
+              </li>
+              <li id="tG">
+                <p>Adding, committing, pushing and pulling?</p>
+              </li>
+              <li id="Me">
+                <p>Shell script with GitHub creds?</p>
+              </li>
+            </ul>
           </li>
           <li id="MRi">
-            <p>Variables</p>
+            <p>Review: basic variable types</p>
             <ul>
               <li id="qn">
                 <p>Basic variable types</p>
@@ -392,16 +403,44 @@
                   </li>
                 </ul>
               </li>
-              <li id="u3">
-                <p>Infrastructure</p>
-              </li>
               <li id="8C">
-                <p>Basic variable types</p>
+                <p>Exercises from Thursday?</p>
               </li>
             </ul>
           </li>
           <li id="Pw">
-            <p>Variables</p>
+            <p>Collection variables</p>
+            <ul>
+              <li id="-J">
+                <p>Lists</p>
+              </li>
+              <li id="zn">
+                <p>Tuples</p>
+              </li>
+              <li id="v2">
+                <p>Sets</p>
+              </li>
+              <li id="eK">
+                <p>Dictionaries</p>
+              </li>
+            </ul>
+          </li>
+          <li id="ED">
+            <p>Dataframes</p>
+            <ul>
+              <li id="y7">
+                <p>Modules (packages, libraries)</p>
+              </li>
+              <li id="k_z">
+                <p>Pandas</p>
+              </li>
+              <li id="OQZ">
+                <p>Building a pandas dataframe by hand</p>
+              </li>
+              <li id="qXO">
+                <p>Importing data into a pandas dataframe</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
@@ -429,6 +468,12 @@
           </li>
           <li id="KKs">
             <p>Conditionals</p>
+          </li>
+          <li id="r_xd">
+            <p>Functions</p>
+          </li>
+          <li id="2_Pb">
+            <p>Making our own modules?</p>
           </li>
         </ul>
       </li>
