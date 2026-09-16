@@ -3,10 +3,10 @@ title: "History of Psycholinguistics"
 author: "Ethan Weed"
 date: "date"
 bibliography: refs.bib
-csl: apa.csl
+csl: ../shared/apa.csl
 theme: white
 customTheme: "catppuccin-latte"
-css: catppuccin-latte.css
+css: ../shared/slide-styles.css
 revealjs-url: https://cdn.jsdelivr.net/npm/reveal.js@5
 slideNumber: true
 progress: true
