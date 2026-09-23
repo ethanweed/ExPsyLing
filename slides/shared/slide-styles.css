@@ -145,11 +145,12 @@
 .reveal table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 0.6em;
 }
 
 .reveal table thead tr {
   background-color: var(--ctp-mantle);
-  color: var(--ctp-mauve);
+  color: #CD5909;
   font-weight: 600;
 }
 
