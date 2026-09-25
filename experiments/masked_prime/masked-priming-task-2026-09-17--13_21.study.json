@@ -1655,7 +1655,7 @@
           [
             "finch",
             "SLOTH",
-            "Nat_Nat_Synth",
+            "Inc_Nat_Synth",
             "short",
             "incongruent",
             "n"
