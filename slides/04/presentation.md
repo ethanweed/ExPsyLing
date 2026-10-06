@@ -1,6 +1,6 @@
 ---
 title: "Concreteness Effects"
-subtitle: "... or are they?"
+subtitle: "... or is it just a matter of perception?"
 author: "Ethan Weed"
 date: "date"
 bibliography: refs.bib
@@ -61,7 +61,7 @@ _Chairs_
 
 ---
 
-## Bock (1982)
+## Concreteness is unquestioned
 
 [@bockCognitivePsychologySyntax]
 
@@ -71,9 +71,9 @@ _Chairs_
 
 ---
 
-## Bock (1982)
+## Concreteness is unquestioned
 
-> "One variable with a strong claim to a relationship to ease of lexicalization is concreteness. Concrete objects and events are certainly better coded (in the sense of Rosch et al., 1976) in the standard lexicons of the languages of the world than the apparently more open set of possible abstractions, perhaps because the domains of abstract categories lack the correlational structure that underlies the formation of basic-level concepts (Hampton, 1981)."
+> "One variable with a strong claim to a relationship to ease of lexicalization is concreteness. Concrete objects and events are certainly better coded (in the sense of Rosch et al., 1976) in the standard lexicons of the languages of the world than [...] abstractions, perhaps because the domains of abstract categories lack the correlational structure that underlies the formation of basic-level concepts (Hampton, 1981)."
 >
 > — [@bockCognitivePsychologySyntax]
 
