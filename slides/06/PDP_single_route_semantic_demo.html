@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pattern Associator with Semantics</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1c1c; --muted: #6b6b6b;
+    --border: #e2e0db; --accent: #b5432b; --accent2: #2b6ab5;
+    --node-off: #d8d5ce; --node-on: #b5432b; --grid: #eee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#181614; --panel:#231f1c; --ink:#f0ede8; --muted:#a39c92;
+      --border:#3a352f; --accent:#e0714f; --accent2:#5b9be0; --node-off:#3a352f; --node-on:#e0714f; --grid:#2c2822; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 20px 16px 60px; }
+  h1 { font-size:1.3rem; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:0.9rem; margin:0 0 18px; max-width: 800px; }
+  .layout { display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; }
+  .diagram-card, .panel-card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px; }
+  .diagram-card { flex: 1 1 600px; min-width:0; overflow-x:auto; }
+  .panel-card { flex: 1 1 320px; min-width: 280px; }
+  svg { display:block; width:100%; height:auto; min-width: 600px; }
+  .node { cursor:pointer; }
+  .node.fixed { cursor:default; }
+  .node circle { stroke:#0002; stroke-width:1; }
+  .node text { font-size:10px; fill:var(--ink); pointer-events:none; }
+  .edge { stroke-linecap:round; }
+  .legend { font-size:0.78rem; color:var(--muted); margin-top:6px; }
+  h3 { font-size:0.95rem; margin: 0 0 8px; }
+  .row { margin-bottom: 14px; }
+  .actionbtn { padding:8px 14px; border-radius:8px; border:none; background:var(--accent); color:white; cursor:pointer; font-size:0.85rem; margin-right:6px; margin-bottom:6px; }
+  .actionbtn.secondary { background:var(--accent2); }
+  .actionbtn.ghost { background:transparent; color:var(--ink); border:1px solid var(--border); }
+  .actionbtn:disabled { opacity:0.5; cursor:default; }
+  label.small { font-size:0.8rem; color:var(--muted); display:block; margin-bottom:4px; }
+  input[type=range] { width:100%; }
+  .slider-row { margin-bottom:8px; }
+  .slider-row .slabel { display:flex; justify-content:space-between; font-size:0.78rem; }
+  .stat { font-size:0.82rem; color:var(--muted); }
+  .hint { font-size:0.78rem; color:var(--muted); margin-top:4px; }
+  #mathPopover { position:fixed; background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:12px 14px; box-shadow:0 8px 24px #0003; font-size:0.82rem; max-width:320px; z-index:50; display:none; }
+  #mathPopover .close { float:right; cursor:pointer; color:var(--muted); font-size:0.9rem; }
+  #mathPopover code { display:block; margin-top:4px; white-space:pre-wrap; word-break:break-word; font-size:0.76rem; line-height:1.4; }
+  .lossbox { margin-top:10px; }
+  .lossbox svg { min-width:0; height:100px; }
+  .note { background:var(--grid); border-radius:8px; padding:10px 12px; font-size:0.82rem; margin-top:14px; color:var(--ink); }
+  .formulabox { border:1px dashed var(--border); border-radius:8px; padding:10px 12px; margin-top:10px; font-size:0.8rem; }
+  .formulabox .flabel { color:var(--muted); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.03em; margin-top:8px; }
+  .formulabox .flabel:first-child { margin-top:0; }
+  .formulabox code { display:block; font-size:0.85rem; margin-top:2px; }
+  .grouplabel { font-size:0.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em; margin: 10px 0 2px; }
+  .presetrow { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px; }
+</style>
+</head>
+<body>
+
+<h1>Pattern Associator with a Semantic Input Pool</h1>
+<p class="sub"></p>
+
+<div class="layout">
+  <div class="diagram-card">
+    <svg id="svg" viewBox="0 0 760 600" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="legend">Node fill = activation (0→1). Edge color: <span style="color:var(--accent2)">blue = positive weight</span>, <span style="color:var(--accent)">red = negative weight</span>; thickness = |weight|. Output label color marks <span style="color:var(--accent)">irregular</span> vs <span style="color:var(--accent2)">regular</span> past tense. Click a node for its math.</div>
+  </div>
+
+  <div class="panel-card">
+    <div class="row">
+      <h3>Train the network</h3>
+      <div class="hint">Training uses all 8 verbs, each with both its spelling and a hand-set semantic profile (below), regardless of the test settings.</div>
+      <label class="small">Learning rate: <span id="lrVal">0.5</span></label>
+      <input type="range" id="lr" min="0.05" max="2" step="0.05" value="0.5">
+      <div style="margin-top:8px;">
+        <button class="actionbtn secondary" id="train1">Train 1 epoch</button>
+        <button class="actionbtn secondary" id="train50">Train 50 epochs</button>
+        <button class="actionbtn secondary" id="resetBtn">Reset weights</button>
+      </div>
+      <div class="stat" id="epochStat">Epoch: 0 &nbsp;|&nbsp; Loss: —</div>
+      <div class="lossbox"><svg id="lossSvg" viewBox="0 0 340 100"></svg></div>
+    </div>
+
+    <div class="row">
+      <h3>Test: phonology</h3>
+      <div class="hint">Click letters in the diagram to build a stem's spelling, position by position.</div>
+      <div class="presetrow" id="presetWords"></div>
+    </div>
+
+    <div class="row">
+      <h3>Test: semantics</h3>
+      <div class="hint">Independent of spelling, dial in what the test stem <i>means</i>. Each training verb has fixed values here (see table below); for your test stem you can set anything.</div>
+      <div id="semSliders"></div>
+    </div>
+
+    <div class="note" id="modelNote"></div>
+    <div class="formulabox" id="formulaBox"></div>
+  </div>
+</div>
+
+<div id="mathPopover"></div>
+
+<script>
+// ---------- lexicon ----------
+// Same 8 verbs as the phonology-only single-route demo. Each now also carries a
+// hand-set semantic profile across 4 illustrative dimensions, in the spirit of
+// MacWhinney & Leinbach's (1991) semantic input vectors.
+const semDims = [
+  { key:"ingest", label:"ingest / consume" },
+  { key:"sensory", label:"sensory / perceptual" },
+  { key:"transfer", label:"transfer / give" },
+  { key:"motion", label:"motion / travel" },
+];
+const verbs = [
+  { stem:"DRINK", past:"DRANK",   reg:false, sem:{ ingest:1.0, sensory:0.1, transfer:0.0, motion:0.1 } },
+  { stem:"SINK",  past:"SANK",    reg:false, sem:{ ingest:0.0, sensory:0.1, transfer:0.0, motion:0.6 } },
+  { stem:"STINK", past:"STANK",   reg:false, sem:{ ingest:0.0, sensory:1.0, transfer:0.0, motion:0.0 } },
+  { stem:"BLINK", past:"BLINKED", reg:true,  sem:{ ingest:0.0, sensory:0.7, transfer:0.0, motion:0.1 } },
+  { stem:"WINK",  past:"WINKED",  reg:true,  sem:{ ingest:0.0, sensory:0.6, transfer:0.1, motion:0.1 } },
+  { stem:"LINK",  past:"LINKED",  reg:true,  sem:{ ingest:0.0, sensory:0.0, transfer:0.4, motion:0.0 } },
+  { stem:"FLY",   past:"FLEW",    reg:false, sem:{ ingest:0.0, sensory:0.0, transfer:0.0, motion:1.0 } },
+  { stem:"GIVE",  past:"GAVE",    reg:false, sem:{ ingest:0.0, sensory:0.0, transfer:1.0, motion:0.0 } },
+];
+const MAX_LEN = Math.max(...verbs.map(v => v.stem.length));
+const posLetters = [];
+for (let p = 0; p < MAX_LEN; p++) {
+  const letters = Array.from(new Set(verbs.filter(v => v.stem.length > p).map(v => v.stem[p])));
+  posLetters.push(letters);
+}
+const inputUnits = []; // phonological units: {pos, letter, index}
+posLetters.forEach((letters, pos) => letters.forEach(letter => inputUnits.push({pos, letter, index: inputUnits.length})));
+const N_PHON = inputUnits.length;
+const N_SEM = semDims.length;
+const N_IN = N_PHON + N_SEM;
+const N_OUT = verbs.length;
+
+function featVector(stem, semVals) {
+  const v = new Array(N_IN).fill(0);
+  for (let p = 0; p < stem.length; p++) {
+    const u = inputUnits.find(u => u.pos === p && u.letter === stem[p]);
+    if (u) v[u.index] = 1;
+  }
+  semDims.forEach((d, i) => { v[N_PHON + i] = semVals[d.key] || 0; });
+  return v;
+}
+
+function sigmoid(z) { return 1 / (1 + Math.exp(-z)); }
+function randSmall() { return (Math.random() - 0.5) * 0.8; }
+
+// ---------- model state (single layer -- no hidden units) ----------
+function freshModel() {
+  return { W: Array.from({length:N_OUT}, () => Array.from({length:N_IN}, randSmall)),
+           b: new Array(N_OUT).fill(0).map(randSmall),
+           epoch: 0, lossHistory: [] };
+}
+let model = freshModel();
+
+// ---------- test state ----------
+let activeInputs = new Set(); // phonological letters toggled for testing
+let testSem = Object.fromEntries(semDims.map(d => [d.key, 0]));
+
+function currentInputVector() {
+  const v = inputUnits.map(u => activeInputs.has(u.index) ? 1 : 0);
+  semDims.forEach(d => v.push(testSem[d.key]));
+  return v;
+}
+
+// ---------- forward pass ----------
+function forward(x, m) {
+  const z = m.W.map((row, j) => row.reduce((s, w, i) => s + w * x[i], 0) + m.b[j]);
+  const a = z.map(sigmoid);
+  return { z, a };
+}
+
+// ---------- training (full batch gradient descent / delta rule, MSE) ----------
+function trainEpoch(m, lr) {
+  const gradW = m.W.map(row => row.map(() => 0));
+  const gradB = m.b.map(() => 0);
+  let loss = 0;
+  verbs.forEach((v, vi) => {
+    const x = featVector(v.stem, v.sem);
+    const target = verbs.map((t, j) => j === vi ? 1 : 0);
+    const { a } = forward(x, m);
+    a.forEach((aj, j) => {
+      const err = aj - target[j];
+      loss += err * err;
+      const delta = err * aj * (1 - aj);
+      gradB[j] += delta;
+      x.forEach((xi, i) => gradW[j][i] += delta * xi);
+    });
+  });
+  const n = verbs.length;
+  m.W = m.W.map((row, j) => row.map((w, i) => w - lr * gradW[j][i] / n));
+  m.b = m.b.map((b, j) => b - lr * gradB[j] / n);
+  m.epoch++;
+  m.lossHistory.push(loss / n);
+  if (m.lossHistory.length > 200) m.lossHistory.shift();
+}
+
+// ---------- layout ----------
+const W_VIEW = 760, H_VIEW = 600;
+function layoutPositions() {
+  const groupGap = 10, nodeGap = 20;
+  let y = 24;
+  const inputPos = [];
+  posLetters.forEach((letters) => {
+    letters.forEach(() => { inputPos.push(y); y += nodeGap; });
+    y += groupGap;
+  });
+  const phonTotalHeight = y - groupGap - 24;
+
+  // semantic units get their own vertical run, separated visually from phonology
+  let ySem = 24;
+  const semPos = [];
+  semDims.forEach(() => { semPos.push(ySem); ySem += nodeGap; });
+  const semTotalHeight = ySem - 24;
+
+  const totalHeight = Math.max(phonTotalHeight, semTotalHeight + 40);
+  const centerY = H_VIEW / 2;
+  const phonOffset = centerY - phonTotalHeight / 2 - 24;
+  const inputY = inputPos.map(p => p + phonOffset);
+  const semOffset = centerY + phonTotalHeight / 2 - semTotalHeight - 24 - phonOffset - 24 + phonOffset; // placed below phon block
+  const semY = semPos.map(p => p + (centerY + phonTotalHeight/2 + 30 - 24));
+
+  function spread(n) {
+    const totalH = (n - 1) * 52;
+    const start = centerY - totalH / 2;
+    return Array.from({length:n}, (_, i) => start + i * 52);
+  }
+  const outputY = spread(N_OUT);
+
+  return { inputY, semY, outputY, xIn: 90, xSem: 90, xOut: 600 };
+}
+
+// ---------- rendering ----------
+const svgEl = document.getElementById("svg");
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function weightColor(w) { return w >= 0 ? "var(--accent2)" : "var(--accent)"; }
+function weightWidth(w) { return Math.min(4, 0.4 + Math.abs(w) * 2.2); }
+function actFill(a) {
+  const t = Math.max(0, Math.min(1, a));
+  const off = [216,213,206], on = [181,67,43];
+  const rgb = off.map((c,i) => Math.round(c + (on[i]-c)*t));
+  return `rgb(${rgb.join(",")})`;
+}
+
+function render() {
+  svgEl.innerHTML = "";
+  svgEl.setAttribute("viewBox", `0 0 ${W_VIEW} ${H_VIEW}`);
+  const { inputY, semY, outputY, xIn, xSem, xOut } = layoutPositions();
+  const x = currentInputVector();
+  const acts = forward(x, model);
+
+  const edgesLayer = el("g", {});
+  const nodesLayer = el("g", {});
+  svgEl.appendChild(edgesLayer);
+  svgEl.appendChild(nodesLayer);
+
+  // edges: phonological inputs
+  model.W.forEach((row, j) => {
+    inputUnits.forEach((u, i) => {
+      const w = row[i];
+      edgesLayer.appendChild(el("line", {
+        x1: xIn, y1: inputY[i], x2: xOut, y2: outputY[j],
+        stroke: weightColor(w), "stroke-width": weightWidth(w), opacity: 0.45, class:"edge"
+      }));
+    });
+    semDims.forEach((d, si) => {
+      const w = row[N_PHON + si];
+      edgesLayer.appendChild(el("line", {
+        x1: xSem, y1: semY[si], x2: xOut, y2: outputY[j],
+        stroke: weightColor(w), "stroke-width": weightWidth(w), opacity: 0.55, class:"edge"
+      }));
+    });
+  });
+
+  // phonological input nodes (clickable)
+  inputUnits.forEach((u, i) => {
+    const g = el("g", { class:"node", transform:`translate(${xIn},${inputY[i]})` });
+    g.appendChild(el("circle", { r:9, fill: actFill(x[i]) }));
+    g.appendChild(el("text", { x:0, y:3.5, "font-size":"8.5", "text-anchor":"middle" })).textContent = u.letter;
+    g.addEventListener("click", () => {
+      if (activeInputs.has(i)) activeInputs.delete(i); else activeInputs.add(i);
+      render();
+    });
+    nodesLayer.appendChild(g);
+  });
+  const phonGroupLabel = el("text", { x:xIn, y: inputY[0] - 16, "text-anchor":"middle", "font-size":"9", fill:"var(--muted)" });
+  phonGroupLabel.textContent = "phonology (click)";
+  nodesLayer.appendChild(phonGroupLabel);
+
+  // semantic input nodes (slider-driven, read-only)
+  semDims.forEach((d, si) => {
+    const g = el("g", { class:"node fixed", transform:`translate(${xSem},${semY[si]})` });
+    g.appendChild(el("circle", { r:11, fill: actFill(x[N_PHON+si]) }));
+    g.appendChild(el("text", { x:0, y:3.5, "font-size":"8", "text-anchor":"middle" })).textContent = x[N_PHON+si].toFixed(1);
+    nodesLayer.appendChild(g);
+    const lbl = el("text", { x:xSem + 20, y:semY[si]+4, "text-anchor":"start", "font-size":"9.5", fill:"var(--muted)" });
+    lbl.textContent = d.label;
+    nodesLayer.appendChild(lbl);
+  });
+  const semGroupLabel = el("text", { x:xSem, y: semY[0] - 18, "text-anchor":"middle", "font-size":"9", fill:"var(--muted)" });
+  semGroupLabel.textContent = "semantics (sliders →)";
+  nodesLayer.appendChild(semGroupLabel);
+
+  // output nodes
+  verbs.forEach((v, j) => {
+    const a = acts.a[j];
+    const y = outputY[j];
+    const g = el("g", { class:"node", transform:`translate(${xOut},${y})` });
+    g.appendChild(el("circle", { r:15, fill: actFill(a) }));
+    const labelColor = v.reg ? "var(--accent2)" : "var(--accent)";
+    g.appendChild(el("text", { x:26, y:-2, "font-size":"12", "font-weight":"600", "text-anchor":"start", fill:labelColor })).textContent = v.past;
+    g.appendChild(el("text", { x:26, y:13, "font-size":"10", "text-anchor":"start", fill:"var(--muted)" })).textContent = `(${v.stem.toLowerCase()}) a = ${a.toFixed(3)}`;
+    g.addEventListener("click", (e) => showMath({clientX:e.clientX, clientY:e.clientY}, "output", { j, v, x }));
+    nodesLayer.appendChild(g);
+  });
+
+  document.getElementById("epochStat").textContent = `Epoch: ${model.epoch} | Loss: ${model.lossHistory.length ? model.lossHistory[model.lossHistory.length-1].toFixed(4) : "—"}`;
+  renderLossChart(model.lossHistory);
+  renderModelNote();
+  renderFormulaBox();
+}
+
+function renderFormulaBox() {
+  const box = document.getElementById("formulaBox");
+  box.innerHTML = `
+    <div class="flabel">Output unit j (one per past-tense form)</div>
+    <code>z<sub>j</sub> = &Sigma;<sub>i</sub> w<sub>ji</sub> &middot; x<sub>i</sub> + b<sub>j</sub></code>
+    <code>a<sub>j</sub> = sigmoid(z<sub>j</sub>)</code>
+    <div class="flabel">Sigmoid</div>
+    <code>sigmoid(z) = 1 / (1 + e<sup>-z</sup>)</code>
+    <div class="flabel">Training (delta rule / gradient descent)</div>
+    <code>loss = mean( (a<sub>j</sub> - target<sub>j</sub>)&sup2; )</code>
+    <code>w<sub>ji</sub> &larr; w<sub>ji</sub> - lr &middot; &part;loss/&part;w<sub>ji</sub></code>
+    <div class="hint" style="margin-top:8px;">Phonological and semantic inputs feed the <i>same</i> sum &mdash; the model has no way to treat one kind of input differently from the other.</div>`;
+}
+
+function renderModelNote() {
+  const note = document.getElementById("modelNote");
+  note.innerHTML = "<b>Direct pattern associator &mdash; no hidden layer.</b> Phonological and semantic inputs are concatenated into one vector; every output unit computes one weighted sum over that whole vector and squashes it with a sigmoid. There's still no grammatical-category check and no separate rule: whatever influence semantics has (or doesn't) comes entirely from the weights the delta rule assigns to the semantic units during training.";
+}
+
+function renderLossChart(history) {
+  const svg = document.getElementById("lossSvg");
+  svg.innerHTML = "";
+  svg.setAttribute("viewBox", "0 0 340 100");
+  const plotX0 = 38, plotX1 = 332, plotY0 = 12, plotY1 = 74;
+  if (history.length < 2) {
+    const t = el("text", { x:plotX0, y:44, "font-size":"11", fill:"var(--muted)" });
+    t.textContent = "Train to see loss curve";
+    svg.appendChild(t);
+    return;
+  }
+  const maxL = Math.max(...history, 0.01);
+  svg.appendChild(el("line", { x1:plotX0, y1:plotY0, x2:plotX0, y2:plotY1, stroke:"var(--muted)", "stroke-width":"1" }));
+  svg.appendChild(el("line", { x1:plotX0, y1:plotY1, x2:plotX1, y2:plotY1, stroke:"var(--muted)", "stroke-width":"1" }));
+  [0, maxL].forEach(v => {
+    const py = plotY1 - (v / maxL) * (plotY1 - plotY0);
+    svg.appendChild(el("text", { x:plotX0 - 4, y:py + 3, "font-size":"8", "text-anchor":"end", fill:"var(--muted)" })).textContent = v.toFixed(2);
+  });
+  const lastEpoch = history.length - 1;
+  [0, lastEpoch].forEach((e, idx) => {
+    const px = plotX0 + (idx === 0 ? 0 : plotX1 - plotX0);
+    svg.appendChild(el("text", { x:px, y:plotY1 + 12, "font-size":"8", "text-anchor": idx === 0 ? "start" : "end", fill:"var(--muted)" })).textContent = e;
+  });
+  svg.appendChild(el("text", { x:(plotX0+plotX1)/2, y:96, "font-size":"9", "text-anchor":"middle", fill:"var(--muted)" })).textContent = "epoch";
+  const yLabel = el("text", { x:10, y:(plotY0+plotY1)/2, "font-size":"9", "text-anchor":"middle", fill:"var(--muted)", transform:`rotate(-90 10 ${(plotY0+plotY1)/2})` });
+  yLabel.textContent = "loss";
+  svg.appendChild(yLabel);
+  const pts = history.map((l, i) => {
+    const px = plotX0 + (i / lastEpoch) * (plotX1 - plotX0);
+    const py = plotY1 - (l / maxL) * (plotY1 - plotY0);
+    return `${px},${py}`;
+  }).join(" ");
+  svg.appendChild(el("polyline", { points: pts, fill:"none", stroke:"var(--accent2)", "stroke-width":"2" }));
+}
+
+// ---------- math popover ----------
+function showMath(pos, kind, ctx) {
+  const pop = document.getElementById("mathPopover");
+  let html = `<span class="close" onclick="document.getElementById('mathPopover').style.display='none'">✕</span>`;
+  if (kind === "output") {
+    const { j, v, x } = ctx;
+    const terms = x.map((xi,i) => xi ? `(${model.W[j][i].toFixed(3)})(${xi.toFixed(2)})` : null).filter(Boolean).join(" + ");
+    const z = model.W[j].reduce((s,ww,i) => s + ww*x[i], 0) + model.b[j];
+    html += `<b>Output unit "${v.past}"</b> (${v.reg ? "regular" : "irregular"})<code>z = ${terms || "0"} + ${model.b[j].toFixed(3)}\n  = ${z.toFixed(3)}\na = sigmoid(z) = ${sigmoid(z).toFixed(3)}</code>`;
+  }
+  pop.innerHTML = html;
+  pop.style.display = "block";
+  const px = Math.min(pos.clientX + 12, window.innerWidth - 340);
+  const py = Math.min(pos.clientY + 12, window.innerHeight - 160);
+  pop.style.left = px + "px";
+  pop.style.top = py + "px";
+}
+document.addEventListener("click", (e) => {
+  const pop = document.getElementById("mathPopover");
+  if (!pop.contains(e.target) && !e.target.closest(".node")) pop.style.display = "none";
+});
+
+// ---------- semantic slider panel ----------
+const semSlidersEl = document.getElementById("semSliders");
+semDims.forEach(d => {
+  const row = document.createElement("div");
+  row.className = "slider-row";
+  row.innerHTML = `<div class="slabel"><span>${d.label}</span><span id="val_${d.key}">0.0</span></div>
+                    <input type="range" id="slider_${d.key}" min="0" max="1" step="0.05" value="0">`;
+  semSlidersEl.appendChild(row);
+});
+semDims.forEach(d => {
+  document.getElementById(`slider_${d.key}`).addEventListener("input", (e) => {
+    testSem[d.key] = parseFloat(e.target.value);
+    document.getElementById(`val_${d.key}`).textContent = testSem[d.key].toFixed(2);
+    render();
+  });
+});
+function setTestSem(vals) {
+  semDims.forEach(d => {
+    testSem[d.key] = vals[d.key] || 0;
+    document.getElementById(`slider_${d.key}`).value = testSem[d.key];
+    document.getElementById(`val_${d.key}`).textContent = testSem[d.key].toFixed(2);
+  });
+}
+
+// ---------- word presets (sets both spelling and that verb's trained semantics) ----------
+const presetWordsEl = document.getElementById("presetWords");
+verbs.forEach(v => {
+  const btn = document.createElement("button");
+  btn.className = "actionbtn ghost";
+  btn.textContent = v.stem.toLowerCase();
+  btn.addEventListener("click", () => {
+    activeInputs = new Set();
+    for (let p = 0; p < v.stem.length; p++) {
+      const u = inputUnits.find(u => u.pos === p && u.letter === v.stem[p]);
+      if (u) activeInputs.add(u.index);
+    }
+    setTestSem(v.sem);
+    render();
+  });
+  presetWordsEl.appendChild(btn);
+});
+
+// ---------- controls ----------
+document.getElementById("lr").addEventListener("input", (e) => {
+  document.getElementById("lrVal").textContent = e.target.value;
+});
+document.getElementById("train1").addEventListener("click", () => {
+  const lr = parseFloat(document.getElementById("lr").value);
+  trainEpoch(model, lr);
+  render();
+});
+document.getElementById("train50").addEventListener("click", () => {
+  const lr = parseFloat(document.getElementById("lr").value);
+  for (let i = 0; i < 50; i++) trainEpoch(model, lr);
+  render();
+});
+document.getElementById("resetBtn").addEventListener("click", () => {
+  model = freshModel();
+  render();
+});
+
+render();
+</script>
+</body>
+</html>

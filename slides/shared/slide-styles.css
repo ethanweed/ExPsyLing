@@ -280,3 +280,49 @@ object-fit: contain;
   box-shadow: none;
   width: 80%;
 }
+
+/* --- Stimulus cards (example-materials slides) --- */
+.stim-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  align-items: stretch;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.stim-card {
+  background-color: var(--ctp-mantle);
+  border: 1px solid var(--ctp-surface2);
+  border-radius: 10px;
+  padding: 0.7em 1.1em;
+  box-shadow: 0 2px 10px rgba(76, 79, 105, 0.12);
+  font-size: 0.78em;
+  line-height: 1.5;
+  color: var(--ctp-text);
+}
+
+.stim-card .cond-label {
+  display: block;
+  font-style: normal;
+  font-size: 0.68em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ctp-subtext0);
+  margin-bottom: 0.3em;
+}
+
+.stim-card em {
+  color: var(--ctp-sapphire);
+}
+
+.stim-card strong {
+  color: var(--ctp-peach);
+}
+
+.stim-card.stim-target {
+  border-left: 4px solid var(--ctp-mauve);
+  background-color: var(--ctp-base);
+}

@@ -29,23 +29,27 @@ progress: true
 
 ## Properties of each scale
 
-| Scale | Categories | Ordered | Equal intervals | True zero |
-|---|:---:|:---:|:---:|:---:|
-| Nominal | ✓ | | | |
-| Ordinal | ✓ | ✓ | | |
-| Interval | ✓ | ✓ | ✓ | |
-| Ratio | ✓ | ✓ | ✓ | ✓ |
+| Scale | Categories | Ordered | Equal intervals | True zero | Examples |
+|---|:---:|:---:|:---:|:---:|---|
+| Nominal | ✓ | | | | Eye color, movie title, gender |
+| Ordinal | ✓ | ✓ | | | Race finish place, Likert agreement |
+| Interval | ✓ | ✓ | ✓ | | Year, temperature (°C) |
+| Ratio | ✓ | ✓ | ✓ | ✓ | Box office ($), reaction time |
+
+[@TheoryScalesMeasurement2026]
 
 ---
 
 ## What each scale allows
 
-| Scale | Mode | Median | Mean | Ratios meaningful |
-|---|:---:|:---:|:---:|:---:|
-| Nominal | ✓ | | | |
-| Ordinal | ✓ | ✓ | | |
-| Interval | ✓ | ✓ | ✓ | |
-| Ratio | ✓ | ✓ | ✓ | ✓ |
+| Scale | Permissible statistics |
+|---|---|
+| Nominal | Number of cases, mode, contingency correlation |
+| Ordinal | Median, percentiles |
+| Interval | Mean, standard deviation, rank-order correlation, product-moment correlation |
+| Ratio | Coefficient of variation |
+
+[@TheoryScalesMeasurement2026]
 
 ---
 
@@ -169,4 +173,28 @@ r = -0.029
 :::
 
 ::::::
+
+---
+
+## Glasgow Norms
+
+```python
+base = "https://raw.githubusercontent.com/ethanweed/"
+path = "datasets-for-teaching/main/JASP_data_library/"
+file = "4.%20Regression/Glasgow%20Norms.csv"
+
+df = pd.read_csv(base + path + file)
+```
+
+1. How gendered are words on average?
+2. How certain are you about your answer?
+3. Are male or female words seen as more positive?
+4. Anything that should be qualified in your answers?
+
+---
+
+## References {.scrollable}
+
+::: {#refs}
+:::
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Ethan Weed">
-  <meta name="dcterms.date" content="2026-10-17">
+  <meta name="dcterms.date" content="2026-10-19">
   <title>Descriptive Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -116,6 +116,25 @@ code span.va { color: #19177c; }
 code span.vs { color: #4070a0; } 
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
 </style>
   <style type="text/css">
 @font-face {
@@ -678,7 +697,7 @@ width: 80%;
 <section id="title-slide">
   <h1 class="title">Descriptive Statistics</h1>
   <p class="author">Ethan Weed</p>
-  <p class="date">October 17, 2026</p>
+  <p class="date">October 19, 2026</p>
 </section>
 
 <section>
@@ -698,6 +717,14 @@ width: 80%;
 <section id="properties-of-each-scale" class="slide level2">
 <h2>Properties of each scale</h2>
 <table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 11%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Scale</th>
@@ -705,6 +732,7 @@ width: 80%;
 <th style="text-align: center;">Ordered</th>
 <th style="text-align: center;">Equal intervals</th>
 <th style="text-align: center;">True zero</th>
+<th>Examples</th>
 </tr>
 </thead>
 <tbody>
@@ -714,6 +742,7 @@ width: 80%;
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
+<td>Experimental condition, gender, participant ID</td>
 </tr>
 <tr class="even">
 <td>Ordinal</td>
@@ -721,6 +750,7 @@ width: 80%;
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
+<td>Race finish place, Likert agreement</td>
 </tr>
 <tr class="odd">
 <td>Interval</td>
@@ -728,6 +758,7 @@ width: 80%;
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;"></td>
+<td>Year, temperature (°C)</td>
 </tr>
 <tr class="even">
 <td>Ratio</td>
@@ -735,53 +766,46 @@ width: 80%;
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
+<td>Distance, reaction time</td>
 </tr>
 </tbody>
 </table>
+<p><span class="citation" data-cites="TheoryScalesMeasurement2026">(Stevens, 1946)</span></p>
 </section>
 <section id="what-each-scale-allows" class="slide level2">
 <h2>What each scale allows</h2>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Scale</th>
-<th style="text-align: center;">Mode</th>
-<th style="text-align: center;">Median</th>
-<th style="text-align: center;">Mean</th>
-<th style="text-align: center;">Ratios meaningful</th>
+<th>Permissible statistics</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Nominal</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td>Number of cases, mode, contingency correlation</td>
 </tr>
 <tr class="even">
 <td>Ordinal</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td>Median, percentiles</td>
 </tr>
 <tr class="odd">
 <td>Interval</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;"></td>
+<td>Mean, standard deviation, rank-order correlation, product-moment
+correlation</td>
 </tr>
 <tr class="even">
 <td>Ratio</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td>Coefficient of variation</td>
 </tr>
 </tbody>
 </table>
+<p><span class="citation" data-cites="TheoryScalesMeasurement2026">(Stevens, 1946)</span></p>
 </section>
 <section id="rotten-tomatoes-data" class="slide level2">
 <h2>Rotten Tomatoes data</h2>
@@ -900,6 +924,30 @@ mad: 46.00</code></pre>
 </div>
 <div>
 <pre><code>r = -0.029</code></pre>
+</div>
+</div>
+</section>
+<section id="glasgow-norms" class="slide level2">
+<h2>Glasgow Norms</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="st">&quot;https://raw.githubusercontent.com/ethanweed/&quot;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="st">&quot;datasets-for-teaching/main/JASP_data_library/&quot;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">file</span> <span class="op">=</span> <span class="st">&quot;4.%20Regression/Glasgow%20Norms.csv&quot;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(base <span class="op">+</span> path <span class="op">+</span> <span class="bu">file</span>)</span></code></pre></div>
+<ol type="1">
+<li>How gendered are words on average?</li>
+<li>How certain are you about your answer?</li>
+<li>Are male or female words seen as more positive?</li>
+<li>Anything that should be qualified in your answers?</li>
+</ol>
+</section>
+<section id="references" class="slide level2 scrollable">
+<h2 class="scrollable">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-TheoryScalesMeasurement2026" class="csl-entry" role="doc-biblioentry">
+Stevens, S. S. (1946). On the <span>Theory</span> of <span>Scales</span>
+of <span>Measurement</span>. <em>Science</em>, <em>103</em>(2684),
+677–680.
 </div>
 </div>
 </section></section>

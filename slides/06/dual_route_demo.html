@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dual-Route Past-Tense Model</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1c1c; --muted: #6b6b6b;
+    --border: #e2e0db; --accent: #b5432b; --accent2: #2b6ab5;
+    --grid: #eee; --dim: #cfcbc2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#181614; --panel:#231f1c; --ink:#f0ede8; --muted:#a39c92;
+      --border:#3a352f; --accent:#e0714f; --accent2:#5b9be0; --grid:#2c2822; --dim:#4a443c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 20px 16px 60px; }
+  h1 { font-size:1.3rem; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:0.9rem; margin:0 0 18px; max-width: 780px; }
+  .layout { display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start; }
+  .panel-card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px; }
+  .controls-card { flex: 1 1 320px; min-width: 280px; }
+  .flow-card { flex: 2 1 480px; min-width: 320px; }
+  h3 { font-size:0.95rem; margin: 0 0 8px; }
+  .row { margin-bottom: 16px; }
+  label.small { font-size:0.8rem; color:var(--muted); display:block; margin-bottom:4px; }
+  select { width:100%; padding:8px; border-radius:8px; border:1px solid var(--border); background:var(--panel); color:var(--ink); font-size:0.9rem; }
+  .switch { display:flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .switch button { flex:1; padding:8px 10px; border:none; background:var(--panel); color:var(--ink); cursor:pointer; font-size:0.85rem; }
+  .switch button.active { background:var(--accent); color:white; }
+  .hint { font-size:0.78rem; color:var(--muted); margin-top:4px; }
+  .disabledNote { font-size:0.78rem; color:var(--muted); margin-top:4px; font-style:italic; }
+
+  .flowbox { border:2px solid var(--border); border-radius:10px; padding:10px 14px; margin:0 auto; max-width:420px; background:var(--panel); transition: border-color .25s, opacity .25s, background .25s; opacity:0.35; }
+  .flowbox.active { opacity:1; border-color:var(--accent2); background: color-mix(in srgb, var(--accent2) 8%, var(--panel)); }
+  .flowbox.active.irregular { border-color:var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); }
+  .flowbox .ftitle { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.03em; color:var(--muted); margin-bottom:3px; }
+  .flowbox .fbody { font-size:0.9rem; }
+  .flowbox .fnote { font-size:0.76rem; color:var(--muted); margin-top:3px; }
+  .arrow { text-align:center; font-size:1.1rem; color:var(--dim); margin:2px 0; transition: color .25s; }
+  .arrow.active { color:var(--ink); }
+  .branch { display:flex; gap:16px; margin:4px 0; }
+  .branch-col { flex:1; display:flex; flex-direction:column; align-items:center; }
+  .branch-label { font-size:0.72rem; color:var(--muted); text-align:center; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.02em; }
+  .racewrap { display:flex; align-items:center; gap:4px; margin:2px 0 2px; }
+  .racewrap .pulse { animation: pulse 1.1s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent2) 35%, transparent); } 50% { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent2) 0%, transparent); } }
+  .flowbox.ineligible { opacity:0.3; border-style:dashed; }
+  .flowbox .winnertag { display:inline-block; font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; padding:1px 7px; border-radius:10px; margin-top:4px; }
+  .flowbox.irregular .winnertag { background: color-mix(in srgb, var(--accent) 20%, transparent); color:var(--accent); }
+  .flowbox.active:not(.irregular) .winnertag { background: color-mix(in srgb, var(--accent2) 20%, transparent); color:var(--accent2); }
+  .vdivider { width:1px; background:var(--border); align-self:stretch; margin: 0 2px; }
+
+  .output { text-align:center; margin-top:14px; }
+  .output .word { font-size:1.8rem; font-weight:700; }
+  .output.irregular .word { color:var(--accent); }
+  .output.regular .word { color:var(--accent2); }
+  .output .tag { font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em; }
+
+  .disconnect { border:1px dashed var(--dim); border-radius:10px; padding:10px 14px; margin-top:16px; color:var(--muted); font-size:0.82rem; text-align:center; }
+  .disconnect .x { font-size:1.3rem; display:block; margin-bottom:2px; }
+
+  .callout { background:var(--grid); border-left:4px solid var(--accent2); border-radius:6px; padding:10px 12px; font-size:0.82rem; margin-top:16px; }
+  .callout b { color:var(--accent2); }
+  .note { background:var(--grid); border-radius:8px; padding:10px 12px; font-size:0.82rem; margin-top:14px; color:var(--ink); }
+</style>
+</head>
+<body>
+
+<h1>Dual-Route (Rule-Based) Model of Past-Tense Inflection</h1>
+<p class="sub"></p>
+
+<div class="layout">
+  <div class="panel-card controls-card">
+    <div class="row">
+      <h3>Input</h3>
+      <label class="small">Verb stem</label>
+      <select id="verbSelect"></select>
+      <div class="hint" id="verbHint"></div>
+    </div>
+
+    <div class="row">
+      <h3>Grammatical analysis</h3>
+      <label class="small">Is this verb's root perceived as denominal (derived from a noun)?</label>
+      <div class="switch">
+        <button id="btnDeverbal" class="active">Deverbal (normal verb)</button>
+        <button id="btnDenominal">Denominal (verb from noun)</button>
+      </div>
+      <div class="hint">Pinker &amp; Prince's grammatical hypothesis: denominal verbs are regularized automatically, no matter their phonology or meaning.</div>
+    </div>
+
+  </div>
+
+  <div class="panel-card flow-card">
+    <div class="flowbox active" id="box1">
+      <div class="ftitle">Step 1</div>
+      <div class="fbody">Input stem: <b id="stemLabel">drink</b></div>
+    </div>
+    <div class="arrow active">&darr;</div>
+
+    <div class="flowbox active" id="box2">
+      <div class="ftitle">Step 2 &middot; Grammatical category check</div>
+      <div class="fbody" id="catLabel">Verb root (deverbal)</div>
+      <div class="fnote">Gates whether the memory route is even eligible to race: nouns have no past tense, so a denominal root can't have a stored irregular.</div>
+    </div>
+    <div class="arrow active">&darr;</div>
+    <div class="branch-label" style="margin-bottom:4px;">Step 3 &middot; Both routes fire at once, racing for the output</div>
+
+    <div class="branch">
+      <div class="branch-col">
+        <div class="branch-label">lexical / memory route</div>
+        <div class="flowbox" id="boxLex">
+          <div class="ftitle">Memory retrieval</div>
+          <div class="fbody" id="lexLabel">Check irregular-forms list</div>
+          <div class="fnote" id="lexNote"></div>
+        </div>
+      </div>
+      <div class="vdivider"></div>
+      <div class="branch-col">
+        <div class="branch-label">default rule route</div>
+        <div class="flowbox active" id="boxRule">
+          <div class="ftitle">Rule application</div>
+          <div class="fbody" id="ruleLabel">stem + "&ndash;ed"</div>
+          <div class="fnote">Always computes a candidate; fires as the elsewhere case.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow active">&darr;</div>
+    <div class="flowbox active" id="boxArbitrate">
+      <div class="ftitle">Step 4 &middot; Blocking / arbitration</div>
+      <div class="fbody" id="arbitrateLabel">A successful memory retrieval blocks the rule</div>
+    </div>
+
+    <div class="output" id="outputBox">
+      <div class="tag" id="outputTag">regular</div>
+      <div class="word" id="outputWord">drinked</div>
+    </div>
+
+    <div class="callout" id="calloutBox" style="display:none;"></div>
+    <div class="note">This path is deterministic: for a fixed verb and a fixed grammatical-category judgment, the model always outputs the same single form, with the same certainty, regardless of frequency or dialect. Compare this with the <a href="PDP_past_tense_demo.html" style="color:var(--accent2)">connectionist model</a>, where "frink" produces graded, simultaneous support for <i>both</i> "frank" and "frinked" at once.</div>
+  </div>
+</div>
+
+<script>
+// Lexical/associative memory of irregular past tenses (the "uncontroversial" memory
+// component dual-route theory grants even to the rule-based account).
+const irregularLexicon = {
+  drink: "drank", sink: "sank", stink: "stank",
+  fly: "flew", give: "gave", ring: "rang", sing: "sang",
+};
+// Verbs with no irregular lexicon entry regularize by default.
+const verbs = [
+  { stem:"drink", note:"Has a memorized irregular form." },
+  { stem:"sink", note:"Has a memorized irregular form." },
+  { stem:"stink", note:"Has a memorized irregular form." },
+  { stem:"blink", note:"No irregular entry &rarr; falls through to the default rule." },
+  { stem:"wink", note:"No irregular entry &rarr; falls through to the default rule." },
+  { stem:"link", note:"No irregular entry &rarr; falls through to the default rule." },
+  { stem:"fly", note:"Has a memorized irregular form." },
+  { stem:"give", note:"Has a memorized irregular form." },
+  { stem:"frink", note:"Nonce word: not in the lexicon, deverbal or not." },
+  { stem:"sprink", note:"Nonce word: not in the lexicon, deverbal or not." },
+];
+
+const verbSelect = document.getElementById("verbSelect");
+verbs.forEach(v => {
+  const opt = document.createElement("option");
+  opt.value = v.stem;
+  opt.textContent = v.stem;
+  verbSelect.appendChild(opt);
+});
+verbSelect.value = "drink";
+
+let denominal = false;
+
+function callout(stem, denom) {
+  if ((stem === "frink" || stem === "sprink") && denom) {
+    return "Ramscar's <b>Experiment 3</b> ran exactly this case: the nonce presented as denominal. Real participants still produced the irregular form (e.g. \"frank\") a majority of the time &mdash; directly against what this path predicts.";
+  }
+  if (stem === "fly" && denom) {
+    return "This is the \"fly out\" case from Ramscar's <b>Experiment 5</b>. The rule predicts a regular form regardless of dialect. In fact, British speakers unfamiliar with the regularized baseball convention overwhelmingly said \"flew out,\" not \"flied out\" &mdash; because they had no memorized convention to retrieve, the rule's prediction failed.";
+  }
+  if (stem === "give" && denom) {
+    return "Ramscar's control item \"give along\" (a novel denominal, from the mass noun \"give\") was still inflected as \"gave along\" by British speakers who clearly recognized it as denominal &mdash; again against the rule's prediction.";
+  }
+  return null;
+}
+
+function render() {
+  const stem = verbSelect.value;
+  const vmeta = verbs.find(v => v.stem === stem);
+  document.getElementById("verbHint").textContent = vmeta.note.replace(/&rarr;/g, "→");
+  document.getElementById("stemLabel").textContent = stem;
+  document.getElementById("catLabel").textContent = denominal ? "Verb derived from a noun (denominal)" : "Ordinary verb root (deverbal)";
+
+  const boxLex = document.getElementById("boxLex");
+  const boxRule = document.getElementById("boxRule");
+  const ruleLabel = document.getElementById("ruleLabel");
+  const boxArbitrate = document.getElementById("boxArbitrate");
+  const arbitrateLabel = document.getElementById("arbitrateLabel");
+  const outputBox = document.getElementById("outputBox");
+  const outputTag = document.getElementById("outputTag");
+  const outputWord = document.getElementById("outputWord");
+
+  boxLex.classList.remove("ineligible", "active", "irregular", "pulse");
+  const regularForm = stem + "ed";
+  ruleLabel.innerHTML = `candidate: "${regularForm}"`;
+
+  // The rule route always races, computing its candidate as the elsewhere case.
+  let result = regularForm, isIrregular = false;
+
+  if (denominal) {
+    // Grammatically disqualified from the race: a noun root has no irregular to retrieve.
+    boxLex.classList.add("ineligible");
+    document.getElementById("lexLabel").textContent = "Not eligible to race";
+    document.getElementById("lexNote").textContent = "A denominal root can't have a listed irregular, so this route never enters the race.";
+    arbitrateLabel.textContent = "Memory route disqualified — the rule wins uncontested.";
+  } else {
+    boxLex.classList.add("active", "pulse");
+    const found = irregularLexicon[stem];
+    if (found) {
+      document.getElementById("lexLabel").textContent = `Retrieved: "${found}"`;
+      document.getElementById("lexNote").textContent = "A matching memorized irregular form exists.";
+      boxLex.classList.add("irregular");
+      boxLex.classList.remove("pulse");
+      result = found;
+      isIrregular = true;
+      arbitrateLabel.textContent = `Memory retrieval succeeds and wins the race — "${found}" blocks the rule's "${regularForm}".`;
+    } else {
+      document.getElementById("lexLabel").textContent = "No entry found";
+      document.getElementById("lexNote").textContent = "No memorized irregular form exists to retrieve.";
+      boxLex.classList.remove("pulse");
+      arbitrateLabel.textContent = "Memory retrieval fails — the rule wins by elsewhere.";
+    }
+  }
+
+  outputBox.className = "output " + (isIrregular ? "irregular" : "regular");
+  outputTag.textContent = isIrregular ? "irregular (memorized, won the race)" : "regular (default rule, won the race)";
+  outputWord.textContent = result;
+
+  const note = callout(stem, denominal);
+  const calloutBox = document.getElementById("calloutBox");
+  if (note) { calloutBox.style.display = "block"; calloutBox.innerHTML = note; }
+  else { calloutBox.style.display = "none"; }
+}
+
+verbSelect.addEventListener("change", render);
+document.getElementById("btnDeverbal").addEventListener("click", () => {
+  denominal = false;
+  document.getElementById("btnDeverbal").classList.add("active");
+  document.getElementById("btnDenominal").classList.remove("active");
+  render();
+});
+document.getElementById("btnDenominal").addEventListener("click", () => {
+  denominal = true;
+  document.getElementById("btnDenominal").classList.add("active");
+  document.getElementById("btnDeverbal").classList.remove("active");
+  render();
+});
+render();
+</script>
+</body>
+</html>
