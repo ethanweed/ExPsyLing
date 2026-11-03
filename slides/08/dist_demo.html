@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Other Distributions</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:16px 20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:24px; }
+  .cols > div { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:4px; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:8px 12px; }
+  .row { display:flex; align-items:center; gap:10px; margin:3px 0; font-size:16px; }
+  .row label { width:22px; }
+  .row input { flex:1; min-width:0; accent-color:var(--accent); }
+  .row span { width:40px; text-align:right; font-variant-numeric:tabular-nums; }
+  .ll { margin-top:6px; font-size:16px; display:flex; align-items:center; gap:10px; }
+  .ll b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; color:var(--accent); width:64px; }
+  .meter { flex:1; height:10px; background:#fff; border:1px solid var(--border); border-radius:5px; overflow:hidden; }
+  .aic { margin-top:4px; font-size:15px; }
+  .aic span, .aic b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:14px; }
+  .aic b { color:#4C827B; }
+  .footer { display:flex; align-items:center; justify-content:center; gap:28px; }
+  .footer math { font-size:19px; }
+  .meter div { height:100%; background:var(--teal); width:0; }
+  button { margin-top:10px; margin-right:8px; font:inherit; font-size:15px; padding:5px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  svg { width:100%; height:auto; display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div id="normal"></div>
+  <div id="exg"></div>
+</div>
+<div class="footer"><button id="new">New data</button>
+  <math><mtext>AIC</mtext><mo>=</mo><mo>−</mo><mn>2</mn><mi>log</mi><mi>L</mi><mo>+</mo><mn>2</mn><mi>k</mi></math>
+  <span style="font-size:14px;color:#7c7f93">k = number of parameters · lower is better</span></div>
+<script>
+const N = 100, X0 = 200, X1 = 1400, L = 10, R = 410, B = 210, T = 15;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const yMax = 0.005;
+const sy = d => B - Math.min(d, yMax) / yMax * (B - T);
+const LOG2PI = Math.log(2 * Math.PI);
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+
+// log of the standard normal CDF (Abramowitz & Stegun erfc, asymptotic in the far left tail)
+function logPhi(z) {
+  if (z < -6) return -z * z / 2 - Math.log(-z) - 0.5 * LOG2PI;
+  const x = Math.abs(z) / Math.SQRT2, t = 1 / (1 + 0.3275911 * x);
+  const erfc = t * (0.254829592 + t * (-0.284496736 + t * (1.421413741 + t * (-1.453152027 + t * 1.061405429)))) * Math.exp(-x * x);
+  return Math.log(z >= 0 ? 1 - erfc / 2 : erfc / 2);
+}
+
+const models = {
+  normal: {
+    title: 'Normal',
+    params: [['μ', 200, 1000, 400], ['σ', 20, 400, 60]],
+    logpdf: (x, [m, s]) => -0.5 * ((x - m) / s) ** 2 - Math.log(s) - 0.5 * LOG2PI,
+    // closed-form MLE
+    fit(xs) {
+      const m = xs.reduce((a, b) => a + b, 0) / xs.length;
+      return [m, Math.sqrt(xs.reduce((a, x) => a + (x - m) ** 2, 0) / xs.length)];
+    },
+  },
+  exg: {
+    title: 'Ex-Gaussian',
+    params: [['μ', 200, 1000, 700], ['σ', 5, 200, 150], ['τ', 5, 500, 30]],
+    logpdf: (x, [m, s, t]) => -Math.log(t) + (m - x) / t + s * s / (2 * t * t) + logPhi((x - m) / s - s / t),
+    // no closed form: numerical search, starting from method-of-moments guesses
+    fit(xs) {
+      const n = xs.length, mean = xs.reduce((a, b) => a + b, 0) / n;
+      const sd = Math.sqrt(xs.reduce((a, x) => a + (x - mean) ** 2, 0) / n);
+      const t0 = 0.8 * sd, start = [mean - t0, Math.sqrt(Math.max(sd * sd - t0 * t0, 100)), t0];
+      const nll = p => (p[1] <= 0 || p[2] <= 0) ? Infinity : -xs.reduce((a, x) => a + this.logpdf(x, p), 0);
+      return nelderMead(nll, start);
+    },
+  },
+};
+
+function nelderMead(f, x0, iters = 600) {
+  let simplex = [x0, ...x0.map((_, i) => x0.map((v, j) => j === i ? v * 1.1 + 5 : v))]
+    .map(p => ({ p, v: f(p) }));
+  const add = (a, b, k) => a.map((v, i) => v + k * (b[i] - v));
+  for (let it = 0; it < iters; it++) {
+    simplex.sort((a, b) => a.v - b.v);
+    const worst = simplex[simplex.length - 1];
+    const c = x0.map((_, i) => simplex.slice(0, -1).reduce((a, s) => a + s.p[i], 0) / x0.length);
+    const r = add(c, worst.p, -1), fr = f(r);
+    if (fr < simplex[0].v) {
+      const e = add(c, worst.p, -2), fe = f(e);
+      simplex[simplex.length - 1] = fe < fr ? { p: e, v: fe } : { p: r, v: fr };
+    } else if (fr < simplex[simplex.length - 2].v) {
+      simplex[simplex.length - 1] = { p: r, v: fr };
+    } else {
+      const k = add(c, worst.p, 0.5), fk = f(k);
+      if (fk < worst.v) simplex[simplex.length - 1] = { p: k, v: fk };
+      else simplex = simplex.map((s, i) => i === 0 ? s : (p => ({ p, v: f(p) }))(add(simplex[0].p, s.p, 0.5)));
+    }
+  }
+  return simplex.sort((a, b) => a.v - b.v)[0].p;
+}
+
+let data = [];
+const logLik = (mod, p) => data.reduce((a, x) => a + mod.logpdf(x, p), 0);
+
+function build(key) {
+  const mod = models[key], root = document.getElementById(key);
+  root.innerHTML = `<div class="label">${mod.title}</div><svg viewBox="0 0 420 270"></svg>
+    <div class="panel">${mod.params.map(([n, lo, hi, v], i) =>
+      `<div class="row"><label>${n}</label><input type="range" min="${lo}" max="${hi}" step="1" value="${v}" data-i="${i}"><span></span></div>`).join('')}
+      <div class="ll">Log-lik: <b></b><div class="meter"><div></div></div></div>
+      <div class="aic">AIC = −2(<span class="l"></span>) + 2·${mod.params.length} = <b></b></div></div>
+    <button>▶ Find MLE</button>`;
+  mod.svg = root.querySelector('svg');
+  mod.inputs = [...root.querySelectorAll('input')];
+  mod.spans = [...root.querySelectorAll('.row span')];
+  mod.llv = root.querySelector('.ll b');
+  mod.bar = root.querySelector('.meter div');
+  mod.aicL = root.querySelector('.aic .l');
+  mod.aicV = root.querySelector('.aic b');
+  mod.inputs.forEach(inp => inp.addEventListener('input', () => { cancelAnimationFrame(mod.anim); draw(mod); }));
+  root.querySelector('button').addEventListener('click', () => animateFit(mod));
+}
+
+function draw(mod) {
+  const p = mod.inputs.map(i => +i.value), pdf = x => Math.exp(mod.logpdf(x, p)), ll = logLik(mod, p);
+  mod.spans.forEach((s, i) => s.textContent = Math.round(p[i]));
+  mod.llv.textContent = ll.toFixed(1);
+  mod.aicL.textContent = ll.toFixed(1);
+  mod.aicV.textContent = (-2 * ll + 2 * p.length).toFixed(1);
+  mod.bar.style.width = Math.max(0, 100 * Math.exp((ll - mod.bestLL) / 20)) + '%';
+
+  let d = '';
+  for (let x = X0; x <= X1; x += 4) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x)).toFixed(1);
+  const bins = {};
+  let pts = '', sticks = '';
+  data.forEach(x => {
+    const k = Math.round(x / 15), lvl = bins[k] = (bins[k] || 0) + 1;
+    const cx = sx(x);
+    sticks += `<line x1="${cx}" y1="${B}" x2="${cx}" y2="${sy(pdf(x))}" stroke="#1e66f5" stroke-opacity="0.25" stroke-width="1.2"/>`;
+    pts += `<circle cx="${cx}" cy="${B + 2 + lvl * 4.5}" r="2.2" fill="#1e66f5" fill-opacity="0.8"/>`;
+  });
+  let ticks = '';
+  for (let t = 200; t <= 1400; t += 200) ticks += `<text x="${sx(t)}" y="${B + 55}" text-anchor="middle" font-size="12" fill="#9ca0b0">${t}</text>`;
+  mod.svg.innerHTML = `${sticks}
+    <path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#4C827B" fill-opacity="0.15"/>
+    <path d="${d}" fill="none" stroke="#4C827B" stroke-width="2.5"/>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>
+    ${pts}${ticks}
+    <text x="${R}" y="${B + 55}" text-anchor="end" font-size="12" fill="#9ca0b0" dy="0">ms</text>`;
+}
+
+function animateFit(mod) {
+  cancelAnimationFrame(mod.anim);
+  const from = mod.inputs.map(i => +i.value), t0 = performance.now(), dur = 1500;
+  const step = now => {
+    const t = Math.min(1, (now - t0) / dur), e = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+    mod.inputs.forEach((inp, i) => inp.value = from[i] + (mod.best[i] - from[i]) * e);
+    draw(mod);
+    if (t < 1) mod.anim = requestAnimationFrame(step);
+  };
+  mod.anim = requestAnimationFrame(step);
+}
+
+function newData() {
+  // response-time-like data: Gaussian + exponential tail
+  const m = 380 + Math.random() * 80, s = 35 + Math.random() * 25, t = 120 + Math.random() * 100;
+  data = Array.from({ length: N }, () => m + s * randn() - t * Math.log(1 - Math.random())).sort((a, b) => a - b);
+  Object.values(models).forEach(mod => {
+    cancelAnimationFrame(mod.anim);
+    mod.best = mod.fit(data);
+    mod.bestLL = logLik(mod, mod.best);
+    draw(mod);
+  });
+}
+
+Object.keys(models).forEach(build);
+document.getElementById('new').addEventListener('click', newData);
+newData();
+</script>
+</body>
+</html>

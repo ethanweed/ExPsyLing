@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Law of Large Numbers</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; --mauve:#8839ef; }
+  body { margin:0; padding:20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; }
+  .cols > div { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:6px; }
+  pre { margin:0; background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:14px; font-family:"JetBrains Mono","Fira Code",monospace; font-size:13px; line-height:1.55; white-space:pre-wrap; }
+  .kw { color:var(--mauve); } .num { color:var(--accent); } .str { color:#40a02b; } .fn { color:var(--blue); } .cm { color:#9ca0b0; font-style:italic; }
+  #out { min-height:110px; }
+  button { margin-top:14px; font:inherit; font-size:16px; padding:6px 18px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  canvas { width:100%; height:200px; margin-top:14px; display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div>
+    <div class="label">Python</div>
+<pre><span class="kw">import</span> numpy <span class="kw">as</span> np
+<span class="kw">import</span> statistics
+
+<span class="cm"># sample from a normal distribution with a mean of 100 and a standard deviation of 15</span>
+IQ_10 = np.random.<span class="fn">normal</span>(loc=<span class="num">100</span>,scale=<span class="num">15</span>,size=<span class="num">10</span>)
+IQ_100 = np.random.<span class="fn">normal</span>(loc=<span class="num">100</span>,scale=<span class="num">15</span>,size=<span class="num">100</span>)
+IQ_10000 = np.random.<span class="fn">normal</span>(loc=<span class="num">100</span>,scale=<span class="num">15</span>,size=<span class="num">10000</span>)
+
+<span class="fn">print</span>(<span class="str">"10 samples. Mean: "</span>, statistics.<span class="fn">mean</span>(IQ_10), <span class="str">" Standard deviation: "</span>, statistics.<span class="fn">stdev</span>(IQ_10))
+<span class="fn">print</span>(<span class="str">"100 samples. Mean: "</span>, statistics.<span class="fn">mean</span>(IQ_100), <span class="str">" Standard deviation: "</span>, statistics.<span class="fn">stdev</span>(IQ_100))
+<span class="fn">print</span>(<span class="str">"10000 samples. Mean: "</span>, statistics.<span class="fn">mean</span>(IQ_10000), <span class="str">" Standard deviation: "</span>, statistics.<span class="fn">stdev</span>(IQ_10000))</pre>
+    <button id="run">▶ Run again</button>
+  </div>
+  <div>
+    <div class="label">Output</div>
+    <pre id="out"></pre>
+    <canvas id="plot"></canvas>
+  </div>
+</div>
+<script>
+// Box-Muller normal sampler, same as np.random.normal(loc, scale, size)
+function normal(loc, scale, size) {
+  const out = new Array(size);
+  for (let i = 0; i < size; i++) {
+    const u = 1 - Math.random(), v = Math.random();
+    out[i] = loc + scale * Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+  return out;
+}
+const mean = xs => xs.reduce((a, b) => a + b, 0) / xs.length;
+// statistics.stdev uses n - 1
+function stdev(xs) {
+  const m = mean(xs);
+  return Math.sqrt(xs.reduce((a, x) => a + (x - m) ** 2, 0) / (xs.length - 1));
+}
+const fmt = x => String(Number(x.toPrecision(17)));
+
+function drawPlot(samples) {
+  const c = document.getElementById('plot');
+  const dpr = window.devicePixelRatio || 1;
+  const W = c.clientWidth, H = c.clientHeight;
+  c.width = W * dpr; c.height = H * dpr;
+  const ctx = c.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+  const lo = 85, hi = 115, padL = 70, padR = 10;
+  const x = v => padL + (Math.min(Math.max(v, lo), hi) - lo) / (hi - lo) * (W - padL - padR);
+  // true mean
+  ctx.strokeStyle = '#CD5909'; ctx.setLineDash([5, 4]); ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(x(100), 10); ctx.lineTo(x(100), H - 28); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = '#CD5909'; ctx.font = '13px Georgia, serif'; ctx.textAlign = 'center';
+  ctx.fillText('μ = 100', x(100), H - 10);
+  ctx.fillStyle = '#9ca0b0';
+  ctx.fillText(lo, x(lo), H - 10); ctx.fillText(hi, x(hi), H - 10);
+  samples.forEach(([n, xs], i) => {
+    const y = 35 + i * 55, m = mean(xs);
+    ctx.fillStyle = '#4c4f69'; ctx.textAlign = 'right';
+    ctx.fillText('N = ' + n, padL - 10, y + 4);
+    ctx.strokeStyle = '#ccd0da'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
+    ctx.fillStyle = '#4C827B';
+    ctx.beginPath(); ctx.arc(x(m), y, 7, 0, 2 * Math.PI); ctx.fill();
+  });
+}
+
+function run() {
+  const samples = [[10, normal(100, 15, 10)], [100, normal(100, 15, 100)], [10000, normal(100, 15, 10000)]];
+  document.getElementById('out').textContent = samples
+    .map(([n, xs]) => `${n} samples. Mean:  ${fmt(mean(xs))}  Standard deviation:  ${fmt(stdev(xs))}`)
+    .join('\n');
+  drawPlot(samples);
+}
+document.getElementById('run').addEventListener('click', run);
+window.addEventListener('load', run);
+</script>
+</body>
+</html>

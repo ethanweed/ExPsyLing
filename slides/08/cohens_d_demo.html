@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cohen's d</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --tea:#4a7ab5; --milk:#b03a3a; --d:#7f9a3e; }
+  body { margin:0; padding:14px 18px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; align-items:flex-start; }
+  .cols > div:first-child { flex:1.4; min-width:0; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  svg { width:100%; height:auto; display:block; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:6px 10px; margin-bottom:10px; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:2px; }
+  .row { display:flex; align-items:center; gap:8px; margin:3px 0; font-size:16px; }
+  .row label { width:18px; }
+  .row input { flex:1; min-width:0; }
+  .row span { width:36px; text-align:right; font-variant-numeric:tabular-nums; }
+  #T .label { color:var(--tea); } #T input { accent-color:var(--tea); }
+  #M .label { color:var(--milk); } #M input { accent-color:var(--milk); }
+  .calc { font-size:17px; line-height:1.7; }
+  .calc .num { font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  .big { font-size:30px; color:var(--d); font-weight:600; margin-top:4px; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div><svg id="plot" viewBox="0 0 400 400"></svg></div>
+  <div>
+    <div class="panel" id="T"><div class="label">Tea-first (T)</div>
+      <div class="row"><label>μ</label><input type="range" min="1" max="7" step="0.1" value="3.5"><span></span></div>
+      <div class="row"><label>σ</label><input type="range" min="0.3" max="2.5" step="0.05" value="1.25"><span></span></div>
+    </div>
+    <div class="panel" id="M"><div class="label">Milk-first (M)</div>
+      <div class="row"><label>μ</label><input type="range" min="1" max="7" step="0.1" value="4.5"><span></span></div>
+      <div class="row"><label>σ</label><input type="range" min="0.3" max="2.5" step="0.05" value="1.25"><span></span></div>
+    </div>
+    <div class="calc">
+      Difference: <span class="num" id="diff"></span><br>
+      <math display="block" style="margin:6px 0; font-size:20px">
+        <msub><mi>σ</mi><mtext>pooled</mtext></msub><mo>=</mo>
+        <msqrt><mfrac><mrow><msubsup><mi>σ</mi><mi>T</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>σ</mi><mi>M</mi><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></msqrt>
+      </math>
+      σ<sub>pooled</sub>: <span class="num" id="pooled"></span>
+      <div class="big">d = <span id="d"></span></div>
+    </div>
+  </div>
+</div>
+<script>
+const Y0 = 0, Y1 = 8, T = 20, B = 350, AX = 50;
+const sy = v => B - (v - Y0) / (Y1 - Y0) * (B - T);
+const pdf = (x, m, s) => Math.exp(-0.5 * ((x - m) / s) ** 2) / (s * Math.sqrt(2 * Math.PI));
+const WIDTH = 55;  // horizontal pixels per unit of density
+const groups = [['T', '#4a7ab5', 130], ['M', '#b03a3a', 300]].map(([id, color, cx]) => {
+  const el = document.getElementById(id);
+  return { id, color, cx, inputs: [...el.querySelectorAll('input')], spans: [...el.querySelectorAll('span')] };
+});
+
+function draw() {
+  let out = '';
+  // rating axis
+  out += `<line x1="${AX}" y1="${sy(1) - 0}" x2="${AX}" y2="${sy(7)}" stroke="#4c4f69" stroke-width="2"/>`;
+  for (let r = 1; r <= 7; r++) out += `<line x1="${AX - 6}" y1="${sy(r)}" x2="${AX}" y2="${sy(r)}" stroke="#4c4f69" stroke-width="2"/>
+    <text x="${AX - 12}" y="${sy(r) + 5}" text-anchor="end" font-size="14" fill="#4c4f69">${r}</text>`;
+  out += `<text transform="translate(14 ${sy(4)}) rotate(-90)" text-anchor="middle" font-size="15" fill="#4c4f69">Rating</text>`;
+
+  const p = {};
+  for (const g of groups) {
+    const [m, s] = g.inputs.map(i => +i.value);
+    p[g.id] = { m, s };
+    g.spans[0].textContent = m.toFixed(1); g.spans[1].textContent = s.toFixed(2);
+    // sideways density, mirrored like a violin
+    let right = '', left = '';
+    for (let y = Y0; y <= Y1; y += 0.05) {
+      const w = Math.min(pdf(y, m, s) * WIDTH, 75);
+      right += (right ? 'L' : 'M') + (g.cx + w).toFixed(1) + ',' + sy(y).toFixed(1);
+      left = 'L' + (g.cx - w).toFixed(1) + ',' + sy(y).toFixed(1) + left;
+    }
+    out += `<path d="${right}${left}Z" fill="${g.color}" fill-opacity="0.2" stroke="${g.color}" stroke-width="2"/>
+      <line x1="${g.cx - 60}" y1="${sy(m)}" x2="${g.cx + 60}" y2="${sy(m)}" stroke="${g.color}" stroke-width="3"/>
+      <text x="${g.cx + 64}" y="${sy(m) + 6}" font-size="18" fill="${g.color}">θ<tspan font-size="12" dy="4">${g.id}</tspan></text>
+      <text x="${g.cx}" y="${B + 30}" text-anchor="middle" font-size="15" fill="#4c4f69">${g.id === 'T' ? 'Tea-first (T)' : 'Milk-first (M)'}</text>`;
+  }
+  // bracket for the difference
+  const bx = 385;
+  out += `<path d="M${bx - 10},${sy(p.T.m)}H${bx}V${sy(p.M.m)}H${bx - 10}" fill="none" stroke="#7f9a3e" stroke-width="3"/>`;
+
+  const diff = p.M.m - p.T.m, pooled = Math.sqrt((p.T.s ** 2 + p.M.s ** 2) / 2);
+  document.getElementById('diff').textContent = `${p.M.m.toFixed(1)} − ${p.T.m.toFixed(1)} = ${diff.toFixed(2)}`;
+  document.getElementById('pooled').textContent =
+    `√((${p.T.s.toFixed(2)}² + ${p.M.s.toFixed(2)}²) / 2) = ${pooled.toFixed(2)}`;
+  document.getElementById('d').textContent = `${diff.toFixed(2)} / ${pooled.toFixed(2)} = ${(diff / pooled).toFixed(2)}`;
+  plot.innerHTML = out;
+}
+groups.forEach(g => g.inputs.forEach(i => i.addEventListener('input', draw)));
+draw();
+</script>
+</body>
+</html>

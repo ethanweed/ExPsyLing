@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sampling</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:14px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  svg { width:100%; height:auto; display:block; }
+  .stats { display:flex; gap:12px; margin-top:6px; }
+  .panel { flex:1; background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:17px; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:2px; }
+  .pop .label { color:#9ca0b0; } .samp .label { color:var(--blue); }
+  .num { font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  .pop .num { color:#9ca0b0; } .samp .num { color:var(--blue); }
+  button { margin-top:10px; font:inherit; font-size:15px; padding:5px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+</style>
+</head>
+<body>
+<svg id="plot" viewBox="0 0 440 260"></svg>
+<div class="stats">
+  <div class="panel pop"><div class="label">Population</div>μ = <span class="num">?</span> &nbsp; σ = <span class="num">?</span></div>
+  <div class="panel samp"><div class="label">Sample (N = 10)</div><span style="text-decoration:overline">X</span> = <span class="num" id="xbar">—</span> &nbsp; s = <span class="num" id="s">—</span></div>
+</div>
+<button id="draw">▶ Draw sample</button>
+<script>
+const N = 10, MU = 100, SIGMA = 15, X0 = 40, X1 = 160, L = 15, R = 425, B = 200, T = 20;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const yMax = 1 / (SIGMA * Math.sqrt(2 * Math.PI));
+const sy = d => B - d / yMax * (B - T);
+const pdf = x => Math.exp(-0.5 * ((x - MU) / SIGMA) ** 2) / (SIGMA * Math.sqrt(2 * Math.PI));
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+let sample = [], anim = null;
+
+let curve = '';
+for (let x = X0; x <= X1; x += 0.5) curve += (curve ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x)).toFixed(1);
+const base = `<path d="${curve}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#9ca0b0" fill-opacity="0.12"/>
+  <path d="${curve}" fill="none" stroke="#9ca0b0" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="${sx(MU)}" y="${T + 40}" text-anchor="middle" font-size="22" fill="#9ca0b0">?</text>
+  <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+
+function render(t) {
+  // each dot falls from the curve to the axis, staggered
+  let out = base;
+  sample.forEach((x, i) => {
+    const p = Math.min(1, Math.max(0, t * 1.6 - i * 0.06)), e = 1 - (1 - p) ** 3;
+    const y0 = sy(pdf(x)), y = y0 + (B + 18 - y0) * e;
+    out += `<circle cx="${sx(x)}" cy="${y}" r="6" fill="#1e66f5" fill-opacity="${0.3 + 0.6 * e}"/>`;
+  });
+  if (t >= 1 && sample.length) {
+    const m = sample.reduce((a, b) => a + b, 0) / N;
+    out += `<line x1="${sx(m)}" y1="${B + 32}" x2="${sx(m)}" y2="${B - 30}" stroke="#1e66f5" stroke-width="2.5"/>
+      <text x="${sx(m)}" y="${B - 36}" text-anchor="middle" font-size="16" fill="#1e66f5" style="text-decoration:overline">X</text>`;
+  }
+  for (let v = 40; v <= 160; v += 20) out += `<text x="${sx(v)}" y="${B + 50}" text-anchor="middle" font-size="12" fill="#9ca0b0">${v}</text>`;
+  plot.innerHTML = out;
+}
+
+function drawSample() {
+  cancelAnimationFrame(anim);
+  sample = Array.from({ length: N }, () => MU + SIGMA * randn());
+  const m = sample.reduce((a, b) => a + b, 0) / N;
+  const s = Math.sqrt(sample.reduce((a, x) => a + (x - m) ** 2, 0) / (N - 1));
+  xbar.textContent = document.getElementById('s').textContent = '…';
+  const t0 = performance.now();
+  const step = now => {
+    const t = Math.min(1, (now - t0) / 1200);
+    render(t);
+    if (t < 1) anim = requestAnimationFrame(step);
+    else { xbar.textContent = m.toFixed(1); document.getElementById('s').textContent = s.toFixed(1); }
+  };
+  anim = requestAnimationFrame(step);
+}
+
+document.getElementById('draw').addEventListener('click', drawSample);
+render(0);
+</script>
+</body>
+</html>

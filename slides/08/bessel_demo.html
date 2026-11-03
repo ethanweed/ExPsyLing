@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bessel's Correction</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; }
+  body { margin:0; padding:14px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  svg { width:100%; height:auto; display:block; }
+  .count { font-size:15px; margin-top:4px; color:#7c7f93; }
+  .count b { font-family:"JetBrains Mono","Fira Code",monospace; font-weight:normal; color:var(--text); }
+  button { margin-top:8px; margin-right:8px; font:inherit; font-size:15px; padding:5px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+</style>
+</head>
+<body>
+<svg id="plot" viewBox="0 0 460 300"></svg>
+<div class="count">Experiments at each N: <b id="k">0</b></div>
+<button id="one">+1 experiment</button><button id="run">▶ Run</button><button id="reset">Reset</button>
+<script>
+const MU = 100, SIGMA = 15, NS = Array.from({ length: 99 }, (_, i) => i + 2), MAX = 5000;
+const L = 50, R = 440, T = 15, B = 245, Y0 = 0, Y1 = 17;
+const sx = n => L + 20 + (n - 2) / 98 * (R - L - 40);
+const sy = v => B - (Math.min(Math.max(v, Y0), Y1) - Y0) / (Y1 - Y0) * (B - T);
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+// running sums of each SD estimate, per sample size
+let sumN, sumN1, k, running = false, anim = null;
+
+function reset() {
+  sumN = NS.map(() => 0); sumN1 = NS.map(() => 0); k = 0;
+  stop(); draw();
+}
+function stop() {
+  running = false; cancelAnimationFrame(anim);
+  document.getElementById('run').textContent = '▶ Run';
+}
+
+function addExperiments(count) {
+  for (let j = 0; j < count && k < MAX; j++, k++) {
+    NS.forEach((n, i) => {
+      const xs = Array.from({ length: n }, () => MU + SIGMA * randn());
+      const m = xs.reduce((a, b) => a + b, 0) / n;
+      const ss = xs.reduce((a, x) => a + (x - m) ** 2, 0);
+      sumN[i] += Math.sqrt(ss / n);
+      sumN1[i] += Math.sqrt(ss / (n - 1));
+    });
+  }
+}
+
+function draw() {
+  document.getElementById('k').textContent = k;
+  let out = `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#4c4f69"/>
+    <line x1="${L}" y1="${B}" x2="${L}" y2="${T}" stroke="#4c4f69"/>`;
+  for (let v = 0; v <= 16; v += 2) out += `<line x1="${L - 4}" y1="${sy(v)}" x2="${L}" y2="${sy(v)}" stroke="#4c4f69"/>
+    <text x="${L - 8}" y="${sy(v) + 4}" text-anchor="end" font-size="12" fill="#4c4f69">${v}</text>`;
+  for (const n of [2, 20, 40, 60, 80, 100]) out += `<line x1="${sx(n)}" y1="${B}" x2="${sx(n)}" y2="${B + 4}" stroke="#4c4f69"/>
+    <text x="${sx(n)}" y="${B + 18}" text-anchor="middle" font-size="12" fill="#4c4f69">${n}</text>`;
+  out += `<text x="${(L + R) / 2}" y="${B + 40}" text-anchor="middle" font-size="14" fill="#4c4f69">N</text>
+    <text transform="translate(14 ${(T + B) / 2}) rotate(-90)" text-anchor="middle" font-size="14" fill="#4c4f69">Average sample SD</text>`;
+  // true population SD
+  out += `<line x1="${L}" y1="${sy(SIGMA)}" x2="${R}" y2="${sy(SIGMA)}" stroke="#4c4f69" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="${L + 8}" y="${sy(SIGMA) - 8}" font-size="15" fill="#4c4f69">σ = ${SIGMA}</text>`;
+  if (k > 0) {
+    const line = (sums, from, color) => {
+      const pts = NS.slice(from).map((n, j) => [sx(n), sy(sums[j + from] / k)]);
+      return `<path d="${pts.map((p, j) => (j ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('')}"
+          fill="none" stroke="${color}" stroke-width="2.5" stroke-dasharray="8 4 2 4"/>` +
+        pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="${color}"/>`).join('');
+    };
+    out += line(sumN, 0, '#CD5909') + line(sumN1, 0, '#4C827B');
+    out += `<text x="${sx(100)}" y="${sy(sumN[98] / k) + 22}" text-anchor="end" font-size="15" fill="#CD5909">÷ N</text>
+      <text x="${sx(100)}" y="${sy(sumN1[98] / k) - 26}" text-anchor="end" font-size="15" fill="#4C827B">÷ (N − 1)</text>`;
+  }
+  plot.innerHTML = out;
+}
+
+function step() {
+  addExperiments(25);
+  draw();
+  if (k < MAX && running) anim = requestAnimationFrame(step);
+  else stop();
+}
+document.getElementById('run').addEventListener('click', () => {
+  if (running) return stop();
+  if (k >= MAX) reset();
+  running = true;
+  document.getElementById('run').textContent = '❚❚ Pause';
+  anim = requestAnimationFrame(step);
+});
+document.getElementById('one').addEventListener('click', () => {
+  stop();
+  if (k >= MAX) reset();
+  addExperiments(1);
+  draw();
+});
+document.getElementById('reset').addEventListener('click', reset);
+reset();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maximum Likelihood</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; }
+  .cols > div:first-child { flex:0 0 32%; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:6px; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:14px; }
+  .row { display:flex; align-items:center; gap:10px; margin:8px 0; font-size:17px; }
+  .row label { width:28px; }
+  .row input { flex:1; min-width:0; accent-color:var(--accent); }
+  .row span { width:44px; text-align:right; font-variant-numeric:tabular-nums; }
+  .ll { margin-top:16px; font-size:17px; }
+  .ll b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:16px; color:var(--accent); }
+  .meter { height:12px; background:#fff; border:1px solid var(--border); border-radius:6px; margin-top:8px; overflow:hidden; }
+  .meter div { height:100%; background:var(--teal); width:0; transition:width .1s; }
+  button { margin-top:14px; margin-right:8px; font:inherit; font-size:16px; padding:6px 14px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  svg { width:100%; height:auto; display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div>
+    <div class="label">Parameters</div>
+    <div class="panel">
+      <div class="row"><label>μ</label><input id="mu" type="range" min="60" max="140" step="0.5" value="80"><span id="muv"></span></div>
+      <div class="row"><label>σ</label><input id="sigma" type="range" min="3" max="35" step="0.5" value="25"><span id="sigmav"></span></div>
+      <div class="ll">Log-likelihood: <b id="llv"></b></div>
+      <div class="meter"><div id="bar"></div></div>
+    </div>
+    <button id="fit">▶ Find MLE</button><button id="new">New data</button>
+  </div>
+  <div>
+    <div class="label">Data</div>
+    <svg id="plot" viewBox="0 0 520 340"></svg>
+  </div>
+</div>
+<script>
+const N = 40, X0 = 50, X1 = 150, L = 20, R = 510, B = 290, T = 20;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const yMax = 0.06;
+const sy = d => B - Math.min(d, yMax) / yMax * (B - T);
+const pdf = (x, m, s) => Math.exp(-0.5 * ((x - m) / s) ** 2) / (s * Math.sqrt(2 * Math.PI));
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+
+let data = [], best = null, anim = null;
+
+function newData() {
+  // hidden "true" parameters
+  const m = 85 + Math.random() * 30, s = 8 + Math.random() * 8;
+  data = Array.from({ length: N }, () => m + s * randn()).sort((a, b) => a - b);
+  // MLE for a normal: sample mean, and SD with n (not n - 1) in the denominator
+  const bm = data.reduce((a, b) => a + b, 0) / N;
+  const bs = Math.sqrt(data.reduce((a, x) => a + (x - bm) ** 2, 0) / N);
+  best = { mu: bm, sigma: bs, ll: logLik(bm, bs) };
+  draw();
+}
+const logLik = (m, s) => data.reduce((a, x) => a + Math.log(pdf(x, m, s)), 0);
+
+function draw() {
+  const m = +mu.value, s = +sigma.value, ll = logLik(m, s);
+  muv.textContent = m.toFixed(1); sigmav.textContent = s.toFixed(1);
+  llv.textContent = ll.toFixed(1);
+  // meter: how close we are to the best possible fit
+  bar.style.width = Math.max(0, 100 * Math.exp((ll - best.ll) / 15)) + '%';
+
+  let d = '';
+  for (let x = X0; x <= X1; x += 0.5) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x, m, s)).toFixed(1);
+  // stack identical-ish points so they don't overlap
+  const bins = {};
+  let pts = '', sticks = '';
+  data.forEach(x => {
+    const k = Math.round(x / 1.5), lvl = bins[k] = (bins[k] || 0) + 1;
+    const cx = sx(x), cy = B + 4 + lvl * 7;
+    sticks += `<line x1="${cx}" y1="${B}" x2="${cx}" y2="${sy(pdf(x, m, s))}" stroke="#1e66f5" stroke-opacity="0.35" stroke-width="1.5"/>`;
+    pts += `<circle cx="${cx}" cy="${cy}" r="3.2" fill="#1e66f5" fill-opacity="0.8"/>`;
+  });
+  let ticks = '';
+  for (let t = 60; t <= 140; t += 20) ticks += `<text x="${sx(t)}" y="${B + 48}" text-anchor="middle" font-size="13" fill="#9ca0b0">${t}</text>`;
+  plot.innerHTML = `
+    ${sticks}
+    <path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#4C827B" fill-opacity="0.15"/>
+    <path d="${d}" fill="none" stroke="#4C827B" stroke-width="2.5"/>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>
+    <line x1="${sx(m)}" y1="${B}" x2="${sx(m)}" y2="${sy(pdf(m, m, s))}" stroke="#CD5909" stroke-width="2" stroke-dasharray="5 4"/>
+    ${pts}${ticks}`;
+}
+
+function fit() {
+  cancelAnimationFrame(anim);
+  const m0 = +mu.value, s0 = +sigma.value, t0 = performance.now(), dur = 1500;
+  const step = now => {
+    const t = Math.min(1, (now - t0) / dur), e = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+    mu.value = m0 + (best.mu - m0) * e;
+    sigma.value = s0 + (best.sigma - s0) * e;
+    draw();
+    if (t < 1) anim = requestAnimationFrame(step);
+  };
+  anim = requestAnimationFrame(step);
+}
+
+mu.addEventListener('input', () => { cancelAnimationFrame(anim); draw(); });
+sigma.addEventListener('input', () => { cancelAnimationFrame(anim); draw(); });
+document.getElementById('fit').addEventListener('click', fit);
+document.getElementById('new').addEventListener('click', () => { cancelAnimationFrame(anim); newData(); });
+newData();
+</script>
+</body>
+</html>

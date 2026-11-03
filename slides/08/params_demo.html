@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normal Parameters</title>
+<style>
+  body { margin:0; padding:16px; font-family:"Source Serif 4", Georgia, serif; color:#4c4f69; background:#fff; box-sizing:border-box; }
+  svg { width:100%; height:auto; display:block; }
+  .row { display:flex; align-items:center; gap:12px; margin-top:10px; font-size:18px; }
+  .row label { width:90px; }
+  .row input { flex:1; accent-color:#CD5909; }
+  .row span { width:50px; text-align:right; font-variant-numeric:tabular-nums; }
+</style>
+</head>
+<body>
+<svg id="plot" viewBox="0 0 500 300"></svg>
+<div class="row"><label>μ (mean)</label><input id="mu" type="range" min="70" max="130" step="1" value="100"><span id="muv"></span></div>
+<div class="row"><label>σ (SD)</label><input id="sigma" type="range" min="5" max="25" step="1" value="15"><span id="sigmav"></span></div>
+<script>
+const svg = document.getElementById('plot');
+const X0 = 40, X1 = 160, L = 30, R = 480, B = 250, T = 40;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+// fixed y-scale so changing sigma visibly flattens/sharpens the curve
+const yMax = 1 / (5 * Math.sqrt(2 * Math.PI));
+const sy = d => B - d / yMax * (B - T);
+const pdf = (x, m, s) => Math.exp(-0.5 * ((x - m) / s) ** 2) / (s * Math.sqrt(2 * Math.PI));
+
+function draw() {
+  const m = +mu.value, s = +sigma.value;
+  muv.textContent = m; sigmav.textContent = s;
+  let d = '';
+  for (let x = X0; x <= X1; x += 0.5) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x, m, s)).toFixed(1);
+  const peak = sy(pdf(m, m, s)), yS = sy(pdf(m + s, m, s));
+  let ticks = '';
+  for (let t = 40; t <= 160; t += 20) ticks += `<text x="${sx(t)}" y="${B + 20}" text-anchor="middle" font-size="13" fill="#9ca0b0">${t}</text>`;
+  svg.innerHTML = `
+    <path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#4C827B" fill-opacity="0.15"/>
+    <path d="${d}" fill="none" stroke="#4C827B" stroke-width="2.5"/>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>
+    ${ticks}
+    <line x1="${sx(m)}" y1="${B}" x2="${sx(m)}" y2="${peak}" stroke="#CD5909" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="${sx(m)}" y="${Math.max(peak - 10, 18)}" text-anchor="middle" font-size="18" fill="#CD5909">μ = ${m}</text>
+    <line x1="${sx(m)}" y1="${yS}" x2="${sx(m + s)}" y2="${yS}" stroke="#1e66f5" stroke-width="2"/>
+    <line x1="${sx(m + s)}" y1="${yS - 6}" x2="${sx(m + s)}" y2="${yS + 6}" stroke="#1e66f5" stroke-width="2"/>
+    <text x="${sx(m + s) + 8}" y="${yS + 5}" font-size="18" fill="#1e66f5">σ = ${s}</text>`;
+}
+mu.addEventListener('input', draw);
+sigma.addEventListener('input', draw);
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two Distributions</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:14px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  svg { width:100%; height:auto; display:block; }
+  .panels { display:flex; gap:12px; margin-top:6px; }
+  .panel { flex:1; background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:6px 10px; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:2px; }
+  .row { display:flex; align-items:center; gap:8px; margin:3px 0; font-size:16px; }
+  .row label { width:18px; }
+  .row input { flex:1; min-width:0; }
+  .row span { width:32px; text-align:right; font-variant-numeric:tabular-nums; }
+  #a .label { color:var(--teal); } #a input { accent-color:var(--teal); }
+  #b .label { color:var(--accent); } #b input { accent-color:var(--accent); }
+</style>
+</head>
+<body>
+<svg id="plot" viewBox="0 0 460 250"></svg>
+<div class="panels">
+  <div class="panel" id="a"><div class="label">Group A</div>
+    <div class="row"><label>μ</label><input type="range" min="60" max="140" value="95"><span></span></div>
+    <div class="row"><label>σ</label><input type="range" min="3" max="30" value="12"><span></span></div>
+  </div>
+  <div class="panel" id="b"><div class="label">Group B</div>
+    <div class="row"><label>μ</label><input type="range" min="60" max="140" value="110"><span></span></div>
+    <div class="row"><label>σ</label><input type="range" min="3" max="30" value="12"><span></span></div>
+  </div>
+</div>
+<script>
+const X0 = 40, X1 = 160, L = 15, R = 445, B = 215, T = 30;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const yMax = 1 / (3 * Math.sqrt(2 * Math.PI)) * 0.5;
+const sy = d => B - Math.min(d, yMax) / yMax * (B - T);
+const pdf = (x, m, s) => Math.exp(-0.5 * ((x - m) / s) ** 2) / (s * Math.sqrt(2 * Math.PI));
+const groups = [['a', '#4C827B'], ['b', '#CD5909']].map(([id, color]) => {
+  const el = document.getElementById(id);
+  return { color, inputs: [...el.querySelectorAll('input')], spans: [...el.querySelectorAll('span')] };
+});
+
+function draw() {
+  let out = '';
+  for (const g of groups) {
+    const [m, s] = g.inputs.map(i => +i.value);
+    g.spans[0].textContent = m; g.spans[1].textContent = s;
+    let d = '';
+    for (let x = X0; x <= X1; x += 0.5) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x, m, s)).toFixed(1);
+    out += `<path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="${g.color}" fill-opacity="0.15"/>
+      <path d="${d}" fill="none" stroke="${g.color}" stroke-width="2.5"/>
+      <line x1="${sx(m)}" y1="${B}" x2="${sx(m)}" y2="${sy(pdf(m, m, s))}" stroke="${g.color}" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  }
+  // bracket showing the difference in means
+  const [ma, mb] = groups.map(g => +g.inputs[0].value);
+  out += `<line x1="${sx(ma)}" y1="16" x2="${sx(mb)}" y2="16" stroke="#4c4f69" stroke-width="1.5"/>
+    <line x1="${sx(ma)}" y1="10" x2="${sx(ma)}" y2="22" stroke="#4c4f69" stroke-width="1.5"/>
+    <line x1="${sx(mb)}" y1="10" x2="${sx(mb)}" y2="22" stroke="#4c4f69" stroke-width="1.5"/>`;
+  out += `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+  for (let t = 40; t <= 160; t += 20) out += `<text x="${sx(t)}" y="${B + 20}" text-anchor="middle" font-size="13" fill="#9ca0b0">${t}</text>`;
+  plot.innerHTML = out;
+}
+groups.forEach(g => g.inputs.forEach(i => i.addEventListener('input', draw)));
+draw();
+</script>
+</body>
+</html>

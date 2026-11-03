@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pearson's r</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --pos:#b03a3a; --neg:#4a7ab5; --r:#7f9a3e; }
+  body { margin:0; padding:14px 18px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; align-items:flex-start; }
+  .cols > div:first-child { flex:1.4; min-width:0; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  svg { width:100%; height:auto; display:block; touch-action:none; user-select:none; }
+  svg circle { cursor:grab; }
+  svg.dragging, svg.dragging circle { cursor:grabbing; }
+  .hint { font-size:14px; color:#7c7f93; margin-bottom:8px; }
+  .calc { font-size:17px; line-height:1.7; }
+  .calc .num { font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  .big { font-size:30px; color:var(--r); font-weight:600; margin-top:4px; }
+  .key { font-size:14px; margin-top:6px; }
+  .key b { font-weight:600; }
+  button { font:inherit; font-size:15px; padding:5px 12px; border-radius:6px; border:1px solid var(--r); background:#fff; color:var(--r); cursor:pointer; margin-bottom:10px; }
+  button:hover { background:var(--r); color:#fff; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div><svg id="plot" viewBox="0 0 420 400"></svg></div>
+  <div>
+    <div class="hint">Drag the points to move them</div>
+    <button id="new">New sample</button>
+    <div class="calc">
+      <math display="block" style="margin:4px 0; font-size:19px">
+        <msub><mi>r</mi><mrow><mi>M</mi><mo>,</mo><mi>A</mi></mrow></msub><mo>=</mo>
+        <mfrac><mrow><mtext>cov</mtext><mo>(</mo><mi>M</mi><mo>,</mo><mi>A</mi><mo>)</mo></mrow><mrow><msub><mi>σ</mi><mi>M</mi></msub><msub><mi>σ</mi><mi>A</mi></msub></mrow></mfrac>
+      </math>
+      cov(M, A): <span class="num" id="cov"></span><br>
+      σ<sub>M</sub> σ<sub>A</sub>: <span class="num" id="sds"></span>
+      <div class="big">r = <span id="r"></span></div>
+      <div class="key"><b style="color:var(--pos)">●</b> product of distances &gt; 0 &nbsp; <b style="color:var(--neg)">●</b> &lt; 0</div>
+    </div>
+  </div>
+</div>
+<script>
+const N = 10, A0 = 15, A1 = 65, M0 = 0, M1 = 8, L = 60, R = 400, T = 30, B = 340;
+const sx = a => L + (a - A0) / (A1 - A0) * (R - L);
+const sy = m => B - (m - M0) / (M1 - M0) * (B - T);
+const ax = px => A0 + (px - L) / (R - L) * (A1 - A0);
+const my = py => M0 + (B - py) / (B - T) * (M1 - M0);
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+const mean = xs => xs.reduce((a, b) => a + b, 0) / xs.length;
+let pts = [], dragIdx = -1;
+
+function newSample() {
+  pts = Array.from({ length: N }, () => {
+    const z1 = randn(), z2 = randn();
+    return [clamp(40 + 9 * z1, A0 + 1, A1 - 1), clamp(4 + 1.3 * (0.6 * z1 + 0.8 * z2), 1, 7)];
+  });
+  draw();
+}
+
+function draw() {
+  const ma = mean(pts.map(p => p[0])), mm = mean(pts.map(p => p[1]));
+  // sample statistics (n - 1)
+  const cov = pts.reduce((a, [x, y]) => a + (x - ma) * (y - mm), 0) / (N - 1);
+  const sa = Math.sqrt(pts.reduce((a, [x]) => a + (x - ma) ** 2, 0) / (N - 1));
+  const sm = Math.sqrt(pts.reduce((a, [, y]) => a + (y - mm) ** 2, 0) / (N - 1));
+  const r = cov / (sa * sm);
+
+  let out = `<defs><clipPath id="area"><rect x="${L}" y="${T}" width="${R - L}" height="${B - T}"/></clipPath></defs>`;
+  // axes
+  out += `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#4c4f69" stroke-width="2"/>
+    <line x1="${L}" y1="${B}" x2="${L}" y2="${T}" stroke="#4c4f69" stroke-width="2"/>`;
+  for (let m = 1; m <= 7; m++) out += `<line x1="${L - 6}" y1="${sy(m)}" x2="${L}" y2="${sy(m)}" stroke="#4c4f69" stroke-width="2"/>
+    <text x="${L - 12}" y="${sy(m) + 5}" text-anchor="end" font-size="14" fill="#4c4f69">${m}</text>`;
+  for (let a = 20; a <= 60; a += 10) out += `<line x1="${sx(a)}" y1="${B}" x2="${sx(a)}" y2="${B + 6}" stroke="#4c4f69" stroke-width="2"/>
+    <text x="${sx(a)}" y="${B + 22}" text-anchor="middle" font-size="14" fill="#4c4f69">${a}</text>`;
+  out += `<text x="${(L + R) / 2}" y="${B + 48}" text-anchor="middle" font-size="16" fill="#4c4f69">Age (years)</text>
+    <text transform="translate(18 ${sy(4)}) rotate(-90)" text-anchor="middle" font-size="16" fill="#4c4f69">Rating</text>`;
+  // means
+  out += `<line x1="${sx(ma)}" y1="${T - 10}" x2="${sx(ma)}" y2="${B}" stroke="#4c4f69" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="${L}" y1="${sy(mm)}" x2="${R}" y2="${sy(mm)}" stroke="#4c4f69" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="${sx(ma) + 4}" y="${T - 12}" font-size="18" fill="#b03a3a">θ<tspan font-size="12" dy="4">A</tspan></text>
+    <text x="${R - 4}" y="${sy(mm) - 8}" text-anchor="end" font-size="18" fill="#b03a3a">θ<tspan font-size="12" dy="4">M</tspan></text>`;
+  // distance lines, colored by the sign of the product of distances
+  const color = ([x, y]) => (x - ma) * (y - mm) >= 0 ? '#b03a3a' : '#4a7ab5';
+  for (const p of pts) {
+    const [x, y] = p, c = color(p);
+    out += `<line x1="${sx(x)}" y1="${sy(y)}" x2="${sx(ma)}" y2="${sy(y)}" stroke="${c}" stroke-opacity="0.6" stroke-width="1.5"/>
+      <line x1="${sx(x)}" y1="${sy(y)}" x2="${sx(x)}" y2="${sy(mm)}" stroke="${c}" stroke-opacity="0.6" stroke-width="1.5"/>`;
+  }
+  // least-squares regression line (rating on age)
+  const slope = cov / (sa * sa), icpt = mm - slope * ma;
+  out += `<line x1="${sx(A0)}" y1="${sy(icpt + slope * A0)}" x2="${sx(A1)}" y2="${sy(icpt + slope * A1)}"
+    stroke="#7f9a3e" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round" clip-path="url(#area)"/>`;
+  pts.forEach((p, i) => {
+    out += `<circle cx="${sx(p[0])}" cy="${sy(p[1])}" r="${i === dragIdx ? 9 : 7}" fill="${color(p)}"/>`;
+  });
+  plot.innerHTML = out;
+
+  document.getElementById('cov').textContent = cov.toFixed(2);
+  document.getElementById('sds').textContent = `${sm.toFixed(2)} × ${sa.toFixed(2)} = ${(sm * sa).toFixed(2)}`;
+  document.getElementById('r').textContent = isFinite(r) ? r.toFixed(2) : '—';
+}
+
+// dragging
+function svgPoint(e) {
+  const pt = plot.createSVGPoint();
+  pt.x = e.clientX; pt.y = e.clientY;
+  return pt.matrixTransform(plot.getScreenCTM().inverse());
+}
+plot.addEventListener('pointerdown', e => {
+  const { x, y } = svgPoint(e);
+  let best = -1, bestD = 15;
+  pts.forEach(([a, m], i) => {
+    const d = Math.hypot(sx(a) - x, sy(m) - y);
+    if (d < bestD) { bestD = d; best = i; }
+  });
+  if (best < 0) return;
+  dragIdx = best;
+  plot.classList.add('dragging');
+  plot.setPointerCapture(e.pointerId);
+  draw();
+});
+plot.addEventListener('pointermove', e => {
+  if (dragIdx < 0) return;
+  const { x, y } = svgPoint(e);
+  pts[dragIdx] = [clamp(ax(x), A0 + 1, A1 - 1), clamp(my(y), 1, 7)];
+  draw();
+});
+const endDrag = () => { if (dragIdx >= 0) { dragIdx = -1; plot.classList.remove('dragging'); draw(); } };
+plot.addEventListener('pointerup', endDrag);
+plot.addEventListener('pointercancel', endDrag);
+
+document.getElementById('new').addEventListener('click', newSample);
+newSample();
+</script>
+</body>
+</html>
