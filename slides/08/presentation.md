@@ -91,11 +91,11 @@ The more data we have, the closer our parameter estimates get to the true popula
 :::: {.columns}
 ::: {.column width="40%"}
 ```{=html}
-<math display="block"><mrow><mi>s</mi><mo>=</mo><msqrt><mfrac><mrow><mo>∑</mo><msup><mrow><mo>(</mo><mi>X</mi><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow mathcolor="#CD5909"><mi>N</mi></mrow></mfrac></msqrt></mrow></math>
+<div class="formula" style="font-size:0.6em"><math display="block"><mrow><mi>s</mi><mo>=</mo><msqrt><mfrac><mrow><mo>∑</mo><msup><mrow><mo>(</mo><mi>X</mi><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow mathcolor="#CD5909"><mi>N</mi></mrow></mfrac></msqrt></mrow></math></div>
 ```
 
 ```{=html}
-<math display="block"><mrow><mover><mi>σ</mi><mo>^</mo></mover><mo>=</mo><msqrt><mfrac><mrow><mo>∑</mo><msup><mrow><mo>(</mo><mi>X</mi><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow mathcolor="#4C827B"><mi>N</mi><mo>−</mo><mn>1</mn></mrow></mfrac></msqrt></mrow></math>
+<div class="formula" style="font-size:0.6em"><math display="block"><mrow><mover><mi>σ</mi><mo>^</mo></mover><mo>=</mo><msqrt><mfrac><mrow><mo>∑</mo><msup><mrow><mo>(</mo><mi>X</mi><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow mathcolor="#4C827B"><mi>N</mi><mo>−</mo><mn>1</mn></mrow></mfrac></msqrt></mrow></math></div>
 ```
 
 [Bessel's correction]{.caption}
@@ -159,7 +159,9 @@ How big is the effect of the independent variable on the dependent variable?
 
 :::: {.columns}
 ::: {.column width="45%"}
+::: {.formula style="font-size:0.6em"}
 $$\hat{d} = \frac{\hat{\theta}_M - \hat{\theta}_T}{\hat{\sigma}_{\text{pooled}}} = \frac{4.5 - 3.5}{1.25} = 0.80$$
+:::
 :::
 ::: {.column width="55%"}
 ![](images/es-calc.png){style="max-width:100%"}
@@ -182,11 +184,15 @@ $$\hat{d} = \frac{\hat{\theta}_M - \hat{\theta}_T}{\hat{\sigma}_{\text{pooled}}}
 ::: {.column width="50%"}
 Covariance
 
+::: {.formula style="font-size:0.6em"}
 $$\text{cov}(M, A) = E[(M - \theta_M)(A - \theta_A)]$$
+:::
 
 Correlation coefficient
 
+::: {.formula style="font-size:0.6em"}
 $$r_{M,A} = \frac{\text{cov}(M, A)}{\sigma_M \sigma_A}$$
+:::
 :::
 ::: {.column width="50%"}
 ![](images/corr2.png){style="max-width:100%"}
