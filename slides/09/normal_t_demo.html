@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normal and t Distributions</title>
+<style>
+  body { margin:0; padding:14px 16px; font-family:"Source Serif 4", Georgia, serif; color:#4c4f69; background:#fff; box-sizing:border-box; }
+  .demo { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .side { min-width:0; display:flex; flex-direction:column; }
+  .label { font-size:14px; letter-spacing:0.08em; text-transform:uppercase; color:#4C827B; font-weight:600; }
+  .formula { display:flex; align-items:center; justify-content:center; height:96px; font-size:21px; }
+  svg { width:100%; height:auto; display:block; }
+  .panel { background:#e6e9ef; border:1px solid #acb0be; border-radius:10px; padding:4px 12px 10px; margin-top:6px; flex:1; }
+  .row { display:flex; align-items:center; gap:12px; margin-top:6px; font-size:18px; }
+  .row label { width:120px; }
+  .row input { flex:1; min-width:0; accent-color:#CD5909; }
+  .row span { width:50px; text-align:right; font-family:"JetBrains Mono","Fira Code",monospace; font-size:16px; }
+  .readout { margin-top:8px; font-family:"JetBrains Mono","Fira Code",monospace; font-size:14px; }
+  @media (max-width:640px) { .demo { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="side">
+    <div class="label">Normal distribution</div>
+    <div class="formula">
+      <math display="block">
+        <mrow>
+          <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo>
+          <mfrac><mn>1</mn><mrow><mi mathcolor="#1e66f5">σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac>
+          <mi>exp</mi>
+          <mrow>
+            <mo>(</mo><mo>−</mo>
+            <mfrac><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mi mathcolor="#CD5909">μ</mi><mo>)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><msup><mi mathcolor="#1e66f5">σ</mi><mn>2</mn></msup></mrow></mfrac>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </math>
+    </div>
+    <svg id="normalPlot" viewBox="0 0 500 290" role="img" aria-label="Normal density curve"></svg>
+    <div class="panel">
+      <div class="row"><label for="mu">μ (mean)</label><input id="mu" type="range" min="-3" max="3" step="0.1" value="0"><span id="muv"></span></div>
+      <div class="row"><label for="sigma">σ (SD)</label><input id="sigma" type="range" min="0.75" max="3" step="0.05" value="1"><span id="sigmav"></span></div>
+      <div class="readout" id="normalReadout"></div>
+    </div>
+  </div>
+  <div class="side">
+    <div class="label">t distribution</div>
+    <div class="formula">
+      <math display="block">
+        <mrow>
+          <mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo>
+          <mfrac>
+            <mrow><mi mathvariant="normal">Γ</mi><mo>(</mo><mfrac><mrow><mi mathcolor="#CD5909">ν</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>)</mo></mrow>
+            <mrow><msqrt><mrow><mi mathcolor="#CD5909">ν</mi><mi>π</mi></mrow></msqrt><mspace width="0.15em"/><mi mathvariant="normal">Γ</mi><mo>(</mo><mfrac><mi mathcolor="#CD5909">ν</mi><mn>2</mn></mfrac><mo>)</mo></mrow>
+          </mfrac>
+          <msup>
+            <mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><msup><mi>t</mi><mn>2</mn></msup><mi mathcolor="#CD5909">ν</mi></mfrac><mo>)</mo></mrow>
+            <mrow><mo>−</mo><mfrac><mrow><mi mathcolor="#CD5909">ν</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow>
+          </msup>
+        </mrow>
+      </math>
+    </div>
+    <svg id="tPlot" viewBox="0 0 500 290" role="img" aria-label="t density curve with standard normal reference"></svg>
+    <div class="panel">
+      <div class="row"><label for="nu">ν (df)</label><input id="nu" type="range" min="1" max="30" step="1" value="3"><span id="nuv"></span></div>
+      <div class="readout" id="tReadout"></div>
+    </div>
+  </div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const X0 = -6, X1 = 6, YMAX = 0.55, L = 42, R = 490, B = 255, T = 12;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+// both panels share fixed axes so the curves can be compared directly
+const sy = d => B - d / YMAX * (B - T);
+
+// Lanczos approximation; works on the log scale so large ν can't overflow
+function logGamma(z) {
+  const c = [76.18009172947146, -86.50532032941677, 24.01409824083091, -1.231739572450155, 0.1208650973866179e-2, -0.5395239384953e-5];
+  let x = z, y = z, tmp = z + 5.5, ser = 1.000000000190015;
+  tmp -= (x + 0.5) * Math.log(tmp);
+  for (const k of c) ser += k / ++y;
+  return -tmp + Math.log(2.5066282746310005 * ser / x);
+}
+const normalPdf = (x, m, s) => Math.exp(-0.5 * ((x - m) / s) ** 2) / (s * Math.sqrt(2 * Math.PI));
+const tConst = v => Math.exp(logGamma((v + 1) / 2) - logGamma(v / 2)) / Math.sqrt(v * Math.PI);
+const tPdf = (t, v) => tConst(v) * (1 + t * t / v) ** (-(v + 1) / 2);
+
+function curve(f) {
+  let d = '';
+  for (let x = X0; x <= X1 + 1e-9; x += 0.05) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(f(x)).toFixed(1);
+  return d;
+}
+function axes() {
+  let s = `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/><line x1="${L}" y1="${T}" x2="${L}" y2="${B}" stroke="#acb0be"/>`;
+  for (let t = X0; t <= X1; t += 2) s += `<text x="${sx(t)}" y="${B + 20}" text-anchor="middle" font-size="14" fill="#9ca0b0">${String(t).replace('-', '−')}</text>`;
+  for (let y = 0; y <= 0.5; y += 0.1) s += `<text x="${L - 7}" y="${sy(y) + 4}" text-anchor="end" font-size="13" fill="#9ca0b0">${y.toFixed(1)}</text>`;
+  return s;
+}
+const filled = (d, color) => `<path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="${color}" fill-opacity="0.15"/><path d="${d}" fill="none" stroke="${color}" stroke-width="2.5"/>`;
+
+function drawNormal() {
+  const m = +$('mu').value, s = +$('sigma').value;
+  $('muv').textContent = m.toFixed(1).replace('-', '−');
+  $('sigmav').textContent = s.toFixed(2);
+  const peak = sy(normalPdf(m, m, s)), yS = sy(normalPdf(m + s, m, s));
+  $('normalPlot').innerHTML = `${axes()}${filled(curve(x => normalPdf(x, m, s)), '#4C827B')}
+    <line x1="${sx(m)}" y1="${B}" x2="${sx(m)}" y2="${peak}" stroke="#CD5909" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="${sx(m)}" y="${peak - 8}" text-anchor="middle" font-size="17" fill="#CD5909">μ = ${m.toFixed(1).replace('-', '−')}</text>
+    <line x1="${sx(m)}" y1="${yS}" x2="${sx(m + s)}" y2="${yS}" stroke="#1e66f5" stroke-width="2"/>
+    <line x1="${sx(m + s)}" y1="${yS - 6}" x2="${sx(m + s)}" y2="${yS + 6}" stroke="#1e66f5" stroke-width="2"/>
+    <text x="${sx(m + s) + 8}" y="${yS + 5}" font-size="17" fill="#1e66f5">σ = ${s.toFixed(2)}</text>`;
+  $('normalReadout').textContent = `peak f(μ) = 1 / (${s.toFixed(2)} × √(2π)) = ${normalPdf(m, m, s).toFixed(3)}`;
+}
+
+function drawT() {
+  const v = +$('nu').value;
+  $('nuv').textContent = v;
+  $('tPlot').innerHTML = `${axes()}${filled(curve(x => tPdf(x, v)), '#4C827B')}
+    <path d="${curve(x => normalPdf(x, 0, 1))}" fill="none" stroke="#9ca0b0" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="${R}" y="${T + 16}" text-anchor="end" font-size="17" fill="#4C827B">t, ν = ${v}</text>
+    <text x="${R}" y="${T + 38}" text-anchor="end" font-size="17" fill="#9ca0b0">- - - normal (μ = 0, σ = 1)</text>`;
+  $('tReadout').textContent = `peak f(0) = Γ(${(v + 1) / 2}) / (√(${v}π) × Γ(${v / 2})) = ${tPdf(0, v).toFixed(3)}; normal = ${normalPdf(0, 0, 1).toFixed(3)}`;
+}
+
+$('mu').addEventListener('input', drawNormal);
+$('sigma').addEventListener('input', drawNormal);
+$('nu').addEventListener('input', drawT);
+drawNormal();
+drawT();
+</script>
+</body>
+</html>

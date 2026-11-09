@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sampling Pile</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --blue:#1e66f5; }
+  body { margin:0; padding:12px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  svg { width:100%; height:auto; display:block; }
+  .stats { display:flex; gap:12px; margin-top:6px; }
+  .panel { flex:1; background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:6px 10px; font-size:17px; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:2px; }
+  .pop .label { color:#9ca0b0; } .samp .label { color:var(--blue); }
+  .num { font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  .pop .num { color:#9ca0b0; } .samp .num { color:var(--blue); }
+  .xbar { text-decoration:overline; }
+  .buttons { display:flex; gap:8px; margin-top:8px; }
+  button { font:inherit; font-size:15px; padding:5px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+</style>
+</head>
+<body>
+<svg id="plot" viewBox="0 0 900 345" role="img" aria-label="Population curve with sampled values piling up beneath it"></svg>
+<div class="stats">
+  <div class="panel pop"><div class="label">Population</div>μ = <span class="num">?</span> &nbsp; σ = <span class="num">?</span></div>
+  <div class="panel samp"><div class="label">All samples so far (N = <span id="count">0</span>)</div><span class="xbar">X</span> = <span class="num" id="xbar">—</span> &nbsp; s = <span class="num" id="sd">—</span></div>
+</div>
+<div class="buttons">
+  <button id="add10">▶ Draw 10</button>
+  <button id="add100">▶ Draw 100</button>
+  <button id="reset">Reset</button>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const MU = 100, SIGMA = 15, X0 = 40, X1 = 160, L = 15, R = 885, B = 310, T = 12, PEAK = 45;
+const BIN = 2, RADIUS = 6.5, BIN_COUNT = (X1 - X0) / BIN;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const pdf = x => Math.exp(-0.5 * ((x - MU) / SIGMA) ** 2) / (SIGMA * Math.sqrt(2 * Math.PI));
+const pxPerDensity = (B - PEAK) / pdf(MU);
+const sy = d => B - d * pxPerDensity;
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+const binOf = x => Math.max(0, Math.min(BIN_COUNT - 1, Math.floor((x - X0) / BIN)));
+const binX = b => sx(X0 + (b + 0.5) * BIN);
+
+let values = [], newCount = 0, anim = null;
+
+let curve = '';
+for (let x = X0; x <= X1; x += 0.5) curve += (curve ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(pdf(x)).toFixed(1);
+let axis = `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+for (let v = 40; v <= 160; v += 20) axis += `<text x="${sx(v)}" y="${B + 22}" text-anchor="middle" font-size="14" fill="#9ca0b0">${v}</text>`;
+
+function stats() {
+  const n = values.length, m = values.reduce((a, b) => a + b, 0) / n;
+  return { n, m, s: n > 1 ? Math.sqrt(values.reduce((a, x) => a + (x - m) ** 2, 0) / (n - 1)) : NaN };
+}
+
+// each value stacks on its bin; dots stop growing the pile once it would pass the curve or the plot,
+// so with many draws the top of the pile follows the population curve
+function layout() {
+  const counts = new Array(BIN_COUNT).fill(0);
+  const pos = values.map(x => { const b = binOf(x); return { x: binX(b), i: counts[b]++ }; });
+  const h = Math.min(2 * RADIUS, pxPerDensity / (values.length * BIN || 1), (B - T) / Math.max(1, ...counts));
+  return pos.map(p => ({ x: p.x, y: B - (p.i + 0.5) * h }));
+}
+
+function render(t) {
+  const pos = layout(), first = values.length - newCount;
+  let out = '';
+  pos.slice(0, first).forEach(p => { out += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${RADIUS}" fill="#a9c2f8"/>`; });
+  // the newest draw falls from the top, staggered, and stays darker until the next one
+  pos.slice(first).forEach((p, i) => {
+    const q = Math.min(1, Math.max(0, (t - 0.5 * i / newCount) / 0.5)), e = q * q * (3 - 2 * q);
+    if (q > 0) out += `<circle cx="${p.x.toFixed(1)}" cy="${(T + (p.y - T) * e).toFixed(1)}" r="${RADIUS}" fill="#1e66f5"/>`;
+  });
+  out += `<path d="${curve}" fill="none" stroke="#9ca0b0" stroke-width="2" stroke-dasharray="4 4"/>${axis}`;
+  if (t >= 1 && values.length) {
+    const x = sx(stats().m);
+    out += `<line x1="${x}" y1="${B}" x2="${x}" y2="${T + 18}" stroke="#CD5909" stroke-width="2.5"/>
+      <text x="${x}" y="${T + 12}" text-anchor="middle" font-size="18" fill="#CD5909" style="text-decoration:overline">X</text>`;
+  }
+  $('plot').innerHTML = out;
+}
+
+function showStats() {
+  const { n, m, s } = stats();
+  $('count').textContent = n;
+  $('xbar').textContent = n ? m.toFixed(1) : '—';
+  $('sd').textContent = n > 1 ? s.toFixed(1) : '—';
+}
+
+function addSample(k) {
+  cancelAnimationFrame(anim);
+  showStats();
+  for (let i = 0; i < k; i++) values.push(MU + SIGMA * randn());
+  newCount = k;
+  const t0 = performance.now();
+  const step = now => {
+    const t = Math.min(1, (now - t0) / 1200);
+    render(t);
+    if (t < 1) anim = requestAnimationFrame(step);
+    else showStats();
+  };
+  anim = requestAnimationFrame(step);
+}
+
+$('add10').addEventListener('click', () => addSample(10));
+$('add100').addEventListener('click', () => addSample(100));
+$('reset').addEventListener('click', () => {
+  cancelAnimationFrame(anim);
+  values = []; newCount = 0;
+  showStats();
+  render(1);
+});
+render(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Python</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --muted:#9ca0b0; }
+  html, body { height:100%; }
+  body { margin:0; padding:12px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; display:flex; flex-direction:column; }
+  .bar { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  button { font:inherit; font-size:15px; padding:4px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover:not(:disabled) { background:var(--accent); color:#fff; }
+  button:disabled { opacity:.45; cursor:default; }
+  #status { margin-left:auto; font-size:14px; color:var(--muted); }
+  #status.ready { color:var(--teal); } #status.busy { color:var(--accent); }
+  .hint { font-size:13px; color:var(--muted); }
+  .work { flex:1; min-height:0; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .pane { min-height:0; border:1px solid var(--border); border-radius:8px; overflow:hidden; display:flex; flex-direction:column; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; color:var(--teal); padding:4px 10px; background:var(--mantle); border-bottom:1px solid var(--border); }
+  .CodeMirror { flex:1; height:auto; font-family:"JetBrains Mono","Fira Code",monospace; font-size:18px; line-height:1.4; }
+  #output { flex:1; overflow:auto; padding:8px 10px; font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  #output pre { margin:0 0 8px; white-space:pre-wrap; word-break:break-word; }
+  #output pre.err { color:#d20f39; }
+  #output img { max-width:100%; display:block; margin:4px 0 8px; }
+  #output table { border-collapse:collapse; font-size:13px; margin-bottom:8px; }
+  #output th, #output td { border:1px solid var(--border); padding:2px 6px; text-align:right; }
+  #output .run { border-top:1px dashed var(--border); margin:6px 0; }
+  @media (max-width:640px) { .work { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <button id="run" type="button" disabled>▶ Run</button>
+  <button id="clear" type="button">Clear output</button>
+  <span class="hint">Shift+Enter runs the code. Variables are kept between runs.</span>
+  <span id="status" class="busy">Loading Python…</span>
+</div>
+<div class="work">
+  <div class="pane"><div class="label">Code</div><textarea id="code">import pandas as pd
+import pingouin as pg
+
+df = pd.read_csv('grodner_gibson_2005_e1.csv')
+print(df.head())
+
+# re-arrange data for the t-test
+df_wide = pd.pivot_table(df, index = 'subject', columns = 'condition', values = 'rawRT',  aggfunc='mean')
+print('------------------------')
+print(df_wide.head())
+print('------------------------')
+
+# do the test
+pg.ttest(df_wide['objgap'], df_wide['subjgap'], paired = True)</textarea></div>
+  <div class="pane"><div class="label">Output</div><div id="output"></div></div>
+</div>
+<script type="text/plain" id="data">subject,item,condition,rawRT
+1,1,objgap,320
+1,2,subjgap,424
+1,3,objgap,309
+1,4,subjgap,274
+1,5,objgap,333
+1,6,subjgap,266
+1,7,objgap,327
+1,8,subjgap,279
+1,9,objgap,342
+1,10,subjgap,297
+1,11,objgap,350
+1,12,subjgap,357
+1,13,objgap,342
+1,14,subjgap,275
+1,15,objgap,357
+1,16,subjgap,312
+2,1,subjgap,357
+2,2,objgap,337
+2,3,subjgap,315
+2,4,objgap,338
+2,5,subjgap,346
+2,6,objgap,831
+2,7,subjgap,636
+2,8,objgap,336
+2,9,subjgap,530
+2,10,objgap,465
+2,11,subjgap,275
+2,12,objgap,298
+2,13,subjgap,357
+2,14,objgap,316
+2,15,subjgap,375
+2,16,objgap,434
+3,1,objgap,209
+3,2,subjgap,455
+3,3,objgap,194
+3,4,subjgap,496
+3,5,objgap,306
+3,6,subjgap,262
+3,7,objgap,436
+3,8,subjgap,298
+3,9,objgap,198
+3,10,subjgap,513
+3,11,objgap,214
+3,12,subjgap,321
+3,13,objgap,220
+3,14,subjgap,224
+3,15,objgap,201
+3,16,subjgap,205
+4,1,subjgap,274
+4,2,objgap,327
+4,3,subjgap,278
+4,4,objgap,401
+4,5,subjgap,383
+4,6,objgap,1231
+4,7,subjgap,542
+4,8,objgap,330
+4,9,subjgap,292
+4,10,objgap,939
+4,11,subjgap,476
+4,12,objgap,503
+4,13,subjgap,374
+4,14,objgap,371
+4,15,subjgap,712
+4,16,objgap,829
+5,1,objgap,368
+5,2,subjgap,405
+5,3,objgap,283
+5,4,subjgap,303
+5,5,objgap,346
+5,6,subjgap,371
+5,7,objgap,569
+5,8,subjgap,380
+5,9,objgap,260
+5,10,subjgap,404
+5,11,objgap,786
+5,12,subjgap,428
+5,13,objgap,309
+5,14,subjgap,285
+5,15,objgap,245
+5,16,subjgap,327
+6,1,subjgap,296
+6,2,objgap,334
+6,3,subjgap,352
+6,4,objgap,293
+6,5,subjgap,307
+6,6,objgap,341
+6,7,subjgap,364
+6,8,objgap,267
+6,9,subjgap,293
+6,10,objgap,301
+6,11,subjgap,301
+6,12,objgap,417
+6,13,subjgap,324
+6,14,objgap,315
+6,15,subjgap,327
+6,16,objgap,374
+7,1,objgap,332
+7,2,subjgap,265
+7,3,objgap,291
+7,4,subjgap,254
+7,5,objgap,281
+7,6,subjgap,272
+7,7,objgap,373
+7,8,subjgap,318
+7,9,objgap,272
+7,10,subjgap,231
+7,11,objgap,295
+7,12,subjgap,250
+7,13,objgap,325
+7,14,subjgap,224
+7,15,objgap,336
+7,16,subjgap,313
+8,1,subjgap,374
+8,2,objgap,203
+8,3,subjgap,282
+8,4,objgap,270
+8,5,subjgap,255
+8,6,objgap,301
+8,7,subjgap,270
+8,8,objgap,218
+8,9,subjgap,408
+8,10,objgap,342
+8,11,subjgap,352
+8,12,objgap,245
+8,13,subjgap,391
+8,14,objgap,294
+8,15,subjgap,371
+8,16,objgap,375
+9,1,objgap,292
+9,2,subjgap,1304
+9,3,objgap,296
+9,4,subjgap,390
+9,5,objgap,779
+9,6,subjgap,221
+9,7,objgap,322
+9,8,subjgap,326
+9,9,objgap,972
+9,10,subjgap,300
+9,11,objgap,250
+9,12,subjgap,293
+9,13,objgap,584
+9,14,subjgap,256
+9,15,objgap,379
+9,16,subjgap,297
+10,1,subjgap,229
+10,2,objgap,230
+10,3,subjgap,210
+10,4,objgap,218
+10,5,subjgap,252
+10,6,objgap,231
+10,7,subjgap,283
+10,8,objgap,262
+10,9,subjgap,248
+10,10,objgap,231
+10,11,subjgap,260
+10,12,objgap,245
+10,13,subjgap,267
+10,14,objgap,234
+10,15,subjgap,222
+10,16,objgap,248
+11,1,objgap,275
+11,2,subjgap,275
+11,3,objgap,213
+11,4,subjgap,252
+11,5,objgap,282
+11,6,subjgap,248
+11,7,objgap,214
+11,8,subjgap,307
+11,9,objgap,219
+11,10,subjgap,291
+11,11,objgap,245
+11,12,subjgap,199
+11,13,objgap,233
+11,14,subjgap,264
+11,15,objgap,262
+11,16,subjgap,240
+12,1,subjgap,277
+12,2,objgap,293
+12,3,subjgap,293
+12,4,objgap,431
+12,5,subjgap,334
+12,6,objgap,289
+12,7,subjgap,244
+12,8,objgap,273
+12,9,subjgap,291
+12,10,objgap,319
+12,11,subjgap,414
+12,12,objgap,665
+12,13,subjgap,288
+12,14,objgap,326
+12,15,subjgap,305
+12,16,objgap,672
+13,1,objgap,173
+13,2,subjgap,174
+13,3,objgap,117
+13,4,subjgap,184
+13,5,objgap,187
+13,6,subjgap,196
+13,7,objgap,155
+13,8,subjgap,210
+13,9,objgap,121
+13,10,subjgap,196
+13,11,objgap,174
+13,12,subjgap,163
+13,13,objgap,195
+13,14,subjgap,135
+13,15,objgap,222
+13,16,subjgap,177
+14,1,subjgap,186
+14,2,objgap,217
+14,3,subjgap,198
+14,4,objgap,175
+14,5,subjgap,216
+14,6,objgap,246
+14,7,subjgap,194
+14,8,objgap,3111
+14,9,subjgap,593
+14,10,objgap,202
+14,11,subjgap,190
+14,12,objgap,242
+14,13,subjgap,212
+14,14,objgap,205
+14,15,subjgap,138
+14,16,objgap,720
+15,1,objgap,270
+15,2,subjgap,266
+15,3,objgap,257
+15,4,subjgap,271
+15,5,objgap,249
+15,6,subjgap,269
+15,7,objgap,305
+15,8,subjgap,331
+15,9,objgap,253
+15,10,subjgap,237
+15,11,objgap,192
+15,12,subjgap,302
+15,13,objgap,249
+15,14,subjgap,289
+15,15,objgap,259
+15,16,subjgap,267
+16,1,subjgap,237
+16,2,objgap,371
+16,3,subjgap,263
+16,4,objgap,294
+16,5,subjgap,285
+16,6,objgap,293
+16,7,subjgap,242
+16,8,objgap,248
+16,9,subjgap,301
+16,10,objgap,988
+16,11,subjgap,330
+16,12,objgap,279
+16,13,subjgap,299
+16,14,objgap,382
+16,15,subjgap,315
+16,16,objgap,382
+17,1,objgap,378
+17,2,subjgap,370
+17,3,objgap,348
+17,4,subjgap,341
+17,5,objgap,382
+17,6,subjgap,309
+17,7,objgap,430
+17,8,subjgap,304
+17,9,objgap,435
+17,10,subjgap,330
+17,11,objgap,401
+17,12,subjgap,719
+17,13,objgap,371
+17,14,subjgap,277
+17,15,objgap,416
+17,16,subjgap,300
+18,1,subjgap,179
+18,2,objgap,175
+18,3,subjgap,157
+18,4,objgap,191
+18,5,subjgap,160
+18,6,objgap,179
+18,7,subjgap,198
+18,8,objgap,187
+18,9,subjgap,175
+18,10,objgap,175
+18,11,subjgap,171
+18,12,objgap,199
+18,13,subjgap,209
+18,14,objgap,186
+18,15,subjgap,183
+18,16,objgap,173
+19,1,objgap,317
+19,2,subjgap,336
+19,3,objgap,709
+19,4,subjgap,291
+19,5,objgap,1115
+19,6,subjgap,354
+19,7,objgap,436
+19,8,subjgap,272
+19,9,objgap,306
+19,10,subjgap,265
+19,11,objgap,295
+19,12,subjgap,336
+19,13,objgap,356
+19,14,subjgap,317
+19,15,objgap,311
+19,16,subjgap,254
+20,1,subjgap,357
+20,2,objgap,272
+20,3,subjgap,209
+20,4,objgap,268
+20,5,subjgap,644
+20,6,objgap,431
+20,7,subjgap,222
+20,8,objgap,421
+20,9,subjgap,173
+20,10,objgap,305
+20,11,subjgap,196
+20,12,objgap,951
+20,13,subjgap,525
+20,14,objgap,439
+20,15,subjgap,435
+20,16,objgap,264
+21,1,objgap,339
+21,2,subjgap,290
+21,3,objgap,436
+21,4,subjgap,274
+21,5,objgap,334
+21,6,subjgap,411
+21,7,objgap,413
+21,8,subjgap,394
+21,9,objgap,424
+21,10,subjgap,248
+21,11,objgap,275
+21,12,subjgap,243
+21,13,objgap,293
+21,14,subjgap,252
+21,15,objgap,343
+21,16,subjgap,273
+22,1,subjgap,286
+22,2,objgap,323
+22,3,subjgap,349
+22,4,objgap,304
+22,5,subjgap,323
+22,6,objgap,318
+22,7,subjgap,338
+22,8,objgap,300
+22,9,subjgap,322
+22,10,objgap,322
+22,11,subjgap,311
+22,12,objgap,324
+22,13,subjgap,349
+22,14,objgap,315
+22,15,subjgap,350
+22,16,objgap,298
+23,1,objgap,277
+23,2,subjgap,259
+23,3,objgap,256
+23,4,subjgap,286
+23,5,objgap,267
+23,6,subjgap,285
+23,7,objgap,468
+23,8,subjgap,241
+23,9,objgap,234
+23,10,subjgap,329
+23,11,objgap,247
+23,12,subjgap,281
+23,13,objgap,251
+23,14,subjgap,273
+23,15,objgap,264
+23,16,subjgap,243
+24,1,subjgap,463
+24,2,objgap,518
+24,3,subjgap,1097
+24,4,objgap,463
+24,5,subjgap,453
+24,6,objgap,433
+24,7,subjgap,761
+24,8,objgap,638
+24,9,subjgap,604
+24,10,objgap,440
+24,11,subjgap,571
+24,12,objgap,843
+24,13,subjgap,552
+24,14,objgap,362
+24,15,subjgap,910
+24,16,objgap,522
+25,1,objgap,1288
+25,2,subjgap,848
+25,3,objgap,605
+25,4,subjgap,551
+25,5,objgap,652
+25,6,subjgap,621
+25,7,objgap,597
+25,8,subjgap,679
+25,9,objgap,648
+25,10,subjgap,534
+25,11,objgap,1344
+25,12,subjgap,653
+25,13,objgap,677
+25,14,subjgap,478
+25,15,objgap,498
+25,16,subjgap,372
+26,1,subjgap,402
+26,2,objgap,390
+26,3,subjgap,304
+26,4,objgap,782
+26,5,subjgap,616
+26,6,objgap,561
+26,7,subjgap,540
+26,8,objgap,938
+26,9,subjgap,592
+26,10,objgap,428
+26,11,subjgap,280
+26,12,objgap,1777
+26,13,subjgap,341
+26,14,objgap,521
+26,15,subjgap,446
+26,16,objgap,515
+27,1,objgap,304
+27,2,subjgap,474
+27,3,objgap,472
+27,4,subjgap,277
+27,5,objgap,319
+27,6,subjgap,701
+27,7,objgap,401
+27,8,subjgap,353
+27,9,objgap,401
+27,10,subjgap,385
+27,11,objgap,295
+27,12,subjgap,442
+27,13,objgap,290
+27,14,subjgap,502
+27,15,objgap,285
+27,16,subjgap,701
+28,1,subjgap,312
+28,2,objgap,324
+28,3,subjgap,260
+28,4,objgap,237
+28,5,subjgap,236
+28,6,objgap,540
+28,7,subjgap,315
+28,8,objgap,1374
+28,9,subjgap,293
+28,10,objgap,540
+28,11,subjgap,233
+28,12,objgap,2223
+28,13,subjgap,281
+28,14,objgap,592
+28,15,subjgap,375
+28,16,objgap,1393
+29,1,objgap,282
+29,2,subjgap,371
+29,3,objgap,378
+29,4,subjgap,395
+29,5,objgap,263
+29,6,subjgap,386
+29,7,objgap,204
+29,8,subjgap,297
+29,9,objgap,430
+29,10,subjgap,470
+29,11,objgap,289
+29,12,subjgap,336
+29,13,objgap,260
+29,14,subjgap,484
+29,15,objgap,376
+29,16,subjgap,410
+30,1,subjgap,270
+30,2,objgap,169
+30,3,subjgap,181
+30,4,objgap,1944
+30,5,subjgap,397
+30,6,objgap,323
+30,7,subjgap,330
+30,8,objgap,2674
+30,9,subjgap,699
+30,10,objgap,625
+30,11,subjgap,311
+30,12,objgap,196
+30,13,subjgap,454
+30,14,objgap,409
+30,15,subjgap,178
+30,16,objgap,1126
+31,1,objgap,527
+31,2,subjgap,463
+31,3,objgap,506
+31,4,subjgap,594
+31,5,objgap,777
+31,6,subjgap,575
+31,7,objgap,495
+31,8,subjgap,530
+31,9,objgap,542
+31,10,subjgap,639
+31,11,objgap,523
+31,12,subjgap,456
+31,13,objgap,501
+31,14,subjgap,508
+31,15,objgap,478
+31,16,subjgap,609
+32,1,subjgap,662
+32,2,objgap,646
+32,3,subjgap,622
+32,4,objgap,599
+32,5,subjgap,763
+32,6,objgap,722
+32,7,subjgap,281
+32,8,objgap,621
+32,9,subjgap,539
+32,10,objgap,816
+32,11,subjgap,871
+32,12,objgap,827
+32,13,subjgap,628
+32,14,objgap,438
+32,15,subjgap,378
+32,16,objgap,495
+33,1,objgap,922
+33,2,subjgap,438
+33,3,objgap,682
+33,4,subjgap,587
+33,5,objgap,539
+33,6,subjgap,951
+33,7,objgap,651
+33,8,subjgap,957
+33,9,objgap,5012
+33,10,subjgap,603
+33,11,objgap,524
+33,12,subjgap,521
+33,13,objgap,569
+33,14,subjgap,447
+33,15,objgap,674
+33,16,subjgap,554
+34,1,subjgap,251
+34,2,objgap,249
+34,3,subjgap,278
+34,4,objgap,324
+34,5,subjgap,240
+34,6,objgap,315
+34,7,subjgap,225
+34,8,objgap,193
+34,9,subjgap,506
+34,10,objgap,253
+34,11,subjgap,1163
+34,12,objgap,316
+34,13,subjgap,271
+34,14,objgap,237
+34,15,subjgap,259
+34,16,objgap,304
+35,1,objgap,360
+35,2,subjgap,705
+35,3,objgap,354
+35,4,subjgap,401
+35,5,objgap,847
+35,6,subjgap,311
+35,7,objgap,371
+35,8,subjgap,420
+35,9,objgap,327
+35,10,subjgap,325
+35,11,objgap,723
+35,12,subjgap,347
+35,13,objgap,482
+35,14,subjgap,397
+35,15,objgap,405
+35,16,subjgap,385
+36,1,subjgap,189
+36,2,objgap,497
+36,3,subjgap,676
+36,4,objgap,1119
+36,5,subjgap,204
+36,6,objgap,451
+36,7,subjgap,231
+36,8,objgap,208
+36,9,subjgap,205
+36,10,objgap,1488
+36,11,subjgap,234
+36,12,objgap,246
+36,13,subjgap,600
+36,14,objgap,497
+36,15,subjgap,204
+36,16,objgap,1695
+37,1,objgap,770
+37,2,subjgap,536
+37,3,objgap,686
+37,4,subjgap,578
+37,5,objgap,457
+37,6,subjgap,487
+37,7,objgap,2419
+37,8,subjgap,884
+37,9,objgap,3365
+37,10,subjgap,233
+37,11,objgap,715
+37,12,subjgap,671
+37,13,objgap,1104
+37,14,subjgap,281
+37,15,objgap,1081
+37,16,subjgap,971
+38,1,subjgap,405
+38,2,objgap,461
+38,3,subjgap,319
+38,4,objgap,435
+38,5,subjgap,517
+38,6,objgap,435
+38,7,subjgap,409
+38,8,objgap,548
+38,9,subjgap,528
+38,10,objgap,465
+38,11,subjgap,290
+38,12,objgap,391
+38,13,subjgap,403
+38,14,objgap,524
+38,15,subjgap,323
+38,16,objgap,332
+39,1,objgap,729
+39,2,subjgap,246
+39,3,objgap,254
+39,4,subjgap,254
+39,5,objgap,369
+39,6,subjgap,358
+39,7,objgap,267
+39,8,subjgap,255
+39,9,objgap,213
+39,10,subjgap,1026
+39,11,objgap,269
+39,12,subjgap,280
+39,13,objgap,287
+39,14,subjgap,284
+39,15,objgap,358
+39,16,subjgap,261
+40,1,subjgap,275
+40,2,objgap,336
+40,3,subjgap,339
+40,4,objgap,245
+40,5,subjgap,283
+40,6,objgap,480
+40,7,subjgap,469
+40,8,objgap,274
+40,9,subjgap,360
+40,10,objgap,729
+40,11,subjgap,488
+40,12,objgap,441
+40,13,subjgap,467
+40,14,objgap,273
+40,15,subjgap,470
+40,16,objgap,449
+41,1,objgap,413
+41,2,subjgap,203
+41,3,objgap,327
+41,4,subjgap,315
+41,5,objgap,341
+41,6,subjgap,655
+41,7,objgap,905
+41,8,subjgap,181
+41,9,objgap,320
+41,10,subjgap,319
+41,11,objgap,424
+41,12,subjgap,311
+41,13,objgap,242
+41,14,subjgap,241
+41,15,objgap,323
+41,16,subjgap,206
+42,1,subjgap,204
+42,2,objgap,166
+42,3,subjgap,412
+42,4,objgap,167
+42,5,subjgap,270
+42,6,objgap,159
+42,7,subjgap,237
+42,8,objgap,192
+42,9,subjgap,229
+42,10,objgap,173
+42,11,subjgap,181
+42,12,objgap,173
+42,13,subjgap,263
+42,14,objgap,181
+42,15,subjgap,251
+42,16,objgap,316</script>
+<script>
+const $ = id => document.getElementById(id);
+const editor = CodeMirror.fromTextArea($('code'), {
+  mode: 'python', lineNumbers: true, lineWrapping: true, indentUnit: 4, matchBrackets: true,
+  extraKeys: { 'Shift-Enter': () => run(), Tab: cm => cm.replaceSelection('    ') },
+});
+
+function status(text, cls) { $('status').textContent = text; $('status').className = cls; }
+function append(html) { $('output').insertAdjacentHTML('beforeend', html); $('output').scrollTop = $('output').scrollHeight; }
+const escape = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
+
+// loading starts as soon as the deck opens, so Python is ready by the time the slide is shown
+// (indexURL must be explicit: once pandoc embeds this page, pyodide.js no longer has a URL to find its files from)
+const ready = (async () => {
+  const py = await loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/' });
+  await py.loadPackage(['numpy', 'pandas', 'scipy', 'matplotlib', 'micropip']);
+  // pingouin isn't bundled with Pyodide, so it comes from PyPI; newer versions need a newer pandas than Pyodide has
+  await py.runPythonAsync("import micropip\nawait micropip.install('pingouin==0.5.5')");
+  py.FS.writeFile('grodner_gibson_2005_e1.csv', $('data').textContent.trim() + '\n');
+  // plots are collected after each run instead of opening a window
+  await py.runPythonAsync(`
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+plt.show = lambda *args, **kwargs: None
+import io, base64
+from pyodide.code import eval_code_async
+
+async def _run(src, ns):
+    value = await eval_code_async(src, ns, return_mode='last_expr')
+    shown = ''
+    if value is not None:
+        shown = value._repr_html_() if hasattr(value, '_repr_html_') else '<pre>' + repr(value).replace('&', '&amp;').replace('<', '&lt;') + '</pre>'
+    images = []
+    for num in plt.get_fignums():
+        buf = io.BytesIO()
+        plt.figure(num).savefig(buf, format='png', dpi=110, bbox_inches='tight')
+        images.append(base64.b64encode(buf.getvalue()).decode())
+    plt.close('all')
+    return shown, images
+`);
+  return py;
+})();
+ready.then(() => { status('Python ready', 'ready'); $('run').disabled = false; })
+  .catch(e => { status('Python failed to load', 'busy'); append(`<pre class="err">${escape(String(e.message).trim().split('\n').pop())}</pre>`); });
+
+let ns = null, running = false;
+async function run() {
+  if (running) return;
+  running = true; $('run').disabled = true; status('Running…', 'busy');
+  const py = await ready;
+  ns = ns || py.globals.get('dict')();
+  append('<div class="run"></div>');
+  let text = '';
+  py.setStdout({ batched: s => { text += s + '\n'; } });
+  py.setStderr({ batched: s => { text += s + '\n'; } });
+  try {
+    const result = await py.globals.get('_run')(editor.getValue(), ns);
+    const [shown, images] = result.toJs();
+    result.destroy();
+    if (text) append(`<pre>${escape(text)}</pre>`);
+    if (shown) append(shown);
+    for (const b64 of images) {
+      append(`<img alt="Plot" src="data:image/png;base64,${b64}">`);
+      // keep the newest output in view once the plot has its height
+      $('output').lastElementChild.onload = () => { $('output').scrollTop = $('output').scrollHeight; };
+    }
+    status('Python ready', 'ready');
+  } catch (e) {
+    if (text) append(`<pre>${escape(text)}</pre>`);
+    // show only the user's part of the traceback
+    const msg = String(e.message).split('\n');
+    let start = -1;
+    msg.forEach((l, i) => { if (l.includes('File "<exec>"') && !l.includes('in _run')) start = i; });
+    append(`<pre class="err">${escape((start >= 0 ? msg.slice(start) : msg).join('\n').trim())}</pre>`);
+    status('Error', 'busy');
+    py.runPython("plt.close('all')");  // don't carry a half-made plot into the next run
+  }
+  running = false; $('run').disabled = false;
+  editor.focus();
+}
+$('run').addEventListener('click', run);
+$('clear').addEventListener('click', () => { $('output').innerHTML = ''; editor.focus(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paired t-test</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; }
+  body { margin:0; padding:12px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .demo { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .side { min-width:0; display:flex; flex-direction:column; }
+  svg { width:100%; height:auto; display:block; }
+  .title { font-size:16px; font-weight:600; color:var(--teal); margin-bottom:4px; }
+  .head { display:flex; align-items:flex-start; justify-content:space-between; gap:8px; }
+  .toggle { display:flex; flex:none; }
+  .toggle button { font:inherit; font-size:14px; padding:2px 8px; color:var(--accent); background:#fff; border:1px solid var(--accent); border-right:none; cursor:pointer; }
+  .toggle button:first-child { border-radius:6px 0 0 6px; }
+  .toggle button:last-child { border-radius:0 6px 6px 0; border-right:1px solid var(--accent); }
+  .toggle button[aria-pressed="true"] { color:#fff; background:var(--accent); }
+  .panelhead { display:flex; align-items:center; justify-content:space-between; gap:6px; white-space:nowrap; }
+  .switch { font:inherit; font-size:13px; padding:0 8px; border-radius:6px; background:#fff; cursor:pointer; color:var(--c); border:1px solid var(--c); }
+  .switch[aria-pressed="true"] { color:#fff; background:var(--c); }
+  #sampleCurve { --c:var(--teal); } #nullCurve { --c:var(--accent); }
+  .panels { display:flex; gap:12px; margin-top:6px; flex:1; }
+  .panel { flex:1; min-width:0; background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:6px 10px; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:2px; }
+  .row { display:flex; align-items:center; gap:8px; margin:3px 0; font-size:16px; }
+  .row label { width:22px; }
+  .row input { flex:1; min-width:0; }
+  .row span { width:32px; text-align:right; font-variant-numeric:tabular-nums; }
+  #a .label { color:var(--teal); } #a input { accent-color:var(--teal); }
+  #b .label { color:var(--accent); } #b input { accent-color:var(--accent); }
+  #pairs .label { color:var(--text); } #pairs input { accent-color:var(--text); }
+  #pairs .row span { width:44px; }
+  #pairs .row label { width:12px; }
+  .side:first-child .panels { flex-wrap:wrap; }
+  #pairs { flex:1 0 100%; box-sizing:border-box; }
+  .pairrows { display:flex; gap:16px; }
+  .pairrows .row { flex:1; min-width:0; }
+  .curves { display:flex; gap:6px; flex:none; }
+  .xbar { font-style:italic; border-top:1px solid currentColor; line-height:1.1; }
+  .steps { display:grid; grid-template-columns:auto 1fr; gap:6px 8px; align-items:center; justify-items:start; font-size:18px; }
+  .result { margin-top:7px; font-family:"JetBrains Mono","Fira Code",monospace; font-size:13.5px; line-height:1.4; }
+  .result b { color:var(--accent); }
+  .side:first-child .panels { flex:none; }
+  .benchmark { margin-top:4px; font-size:13.5px; line-height:1.25; }
+  .benchmark b { color:var(--accent); }
+  .effect { flex:none; margin-top:8px; }
+  .effect .label { color:var(--accent); margin-bottom:4px; text-transform:none; letter-spacing:0; font-size:14px; }
+  @media (max-width:640px) { .demo { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="side">
+    <div class="head">
+      <div class="title" id="sampleTitle"></div>
+      <div class="curves"><button id="sampleCurve" class="switch" type="button">D̄ curve</button><button id="nullCurve" class="switch" type="button">Null curve</button></div>
+    </div>
+    <svg id="samplePlot" viewBox="0 0 500 250" role="img" aria-label="Mean difference between conditions, with the null value of zero marked"></svg>
+    <div class="panels">
+      <div class="panel" id="a"><div class="label">Condition A</div>
+        <div class="row"><label for="ma" class="xbar">X</label><input id="ma" type="range" min="60" max="140" value="100"><span id="mav"></span></div>
+        <div class="row"><label for="sa"><i>s</i></label><input id="sa" type="range" min="5" max="30" value="12"><span id="sav"></span></div>
+      </div>
+      <div class="panel" id="b"><div class="label">Condition B</div>
+        <div class="row"><label for="mb" class="xbar">X</label><input id="mb" type="range" min="60" max="140" value="108"><span id="mbv"></span></div>
+        <div class="row"><label for="sb"><i>s</i></label><input id="sb" type="range" min="5" max="30" value="12"><span id="sbv"></span></div>
+      </div>
+      <div class="panel" id="pairs"><div class="label">Pairs</div>
+        <div class="pairrows">
+          <div class="row"><label for="r"><i>r</i></label><input id="r" type="range" min="-0.9" max="0.95" step="0.05" value="0.7"><span id="rv"></span></div>
+          <div class="row"><label for="n"><i>n</i></label><input id="n" type="range" min="3" max="30" value="10"><span id="nv"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel effect"><div class="label">Effect size: Cohen's d<sub>z</sub></div><div class="steps" id="effect"></div>
+      <div class="benchmark"><b id="size"></b> by Cohen's rough benchmarks (0.2 small, 0.5 medium, 0.8 large), only suggested for when domain knowledge is lacking</div>
+    </div>
+  </div>
+  <div class="side">
+    <div class="head">
+      <div class="title" id="testTitle"></div>
+      <div class="toggle"><button id="two" type="button">Two-tailed</button><button id="greater" type="button">One-tailed (&gt;)</button><button id="less" type="button">One-tailed (&lt;)</button></div>
+    </div>
+    <svg id="testPlot" viewBox="0 0 500 250" role="img" aria-label="Null t distribution with the observed t statistic"></svg>
+    <div class="panels"><div class="panel" id="readout"></div></div>
+  </div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const L = 15, R = 485, B = 215, T = 34;
+
+// Lanczos approximation of log Γ
+function logGamma(z) {
+  const c = [76.18009172947146, -86.50532032941677, 24.01409824083091, -1.231739572450155, 0.1208650973866179e-2, -0.5395239384953e-5];
+  let y = z, tmp = z + 5.5, ser = 1.000000000190015;
+  tmp -= (z + 0.5) * Math.log(tmp);
+  for (const k of c) ser += k / ++y;
+  return -tmp + Math.log(2.5066282746310005 * ser / z);
+}
+const tPdf = (t, v) => Math.exp(logGamma((v + 1) / 2) - logGamma(v / 2)) / Math.sqrt(v * Math.PI) * (1 + t * t / v) ** (-(v + 1) / 2);
+
+// regularized incomplete beta function (continued fraction)
+function betaCf(x, a, b) {
+  let c = 1, d = 1 - (a + b) * x / (a + 1);
+  d = 1 / (Math.abs(d) < 1e-30 ? 1e-30 : d);
+  let h = d;
+  for (let m = 1; m <= 300; m++) {
+    for (const aa of [m * (b - m) * x / ((a + 2 * m - 1) * (a + 2 * m)), -(a + m) * (a + b + m) * x / ((a + 2 * m) * (a + 2 * m + 1))]) {
+      d = 1 + aa * d; d = 1 / (Math.abs(d) < 1e-30 ? 1e-30 : d);
+      c = 1 + aa / c; if (Math.abs(c) < 1e-30) c = 1e-30;
+      h *= d * c;
+    }
+  }
+  return h;
+}
+function betaInc(x, a, b) {
+  if (x <= 0) return 0;
+  if (x >= 1) return 1;
+  const front = Math.exp(logGamma(a + b) - logGamma(a) - logGamma(b) + a * Math.log(x) + b * Math.log(1 - x));
+  return x < (a + 1) / (a + b + 2) ? front * betaCf(x, a, b) / a : 1 - front * betaCf(1 - x, b, a) / b;
+}
+const twoTailP = (t, v) => betaInc(v / (v + t * t), v / 2, 0.5);
+function tCrit(v, alpha) {
+  let lo = 0, hi = 100;
+  for (let i = 0; i < 60; i++) { const mid = (lo + hi) / 2; if (twoTailP(mid, v) > alpha) lo = mid; else hi = mid; }
+  return (lo + hi) / 2;
+}
+
+// paired test: a one-sample test of the differences D = B − A against 0
+// tail is 'two', 'greater' (H₁: μ_D > 0) or 'less' (H₁: μ_D < 0)
+function pairedTest(ma, sa, mb, sb, r, n, tail) {
+  const dbar = mb - ma, sd = Math.sqrt(sa * sa + sb * sb - 2 * r * sa * sb);
+  const df = n - 1, se = sd / Math.sqrt(n), t = dbar / se, p2 = twoTailP(t, df);
+  const inDirection = tail === 'greater' ? t >= 0 : t <= 0;
+  const p = tail === 'two' ? p2 : inDirection ? p2 / 2 : 1 - p2 / 2;
+  return { dbar, sd, df, se, t, p, crit: tCrit(df, tail === 'two' ? 0.05 : 0.10), d: dbar / sd };
+}
+let tail = 'two', showNull = false, showSample = false;
+
+const minus = s => String(s).replace('-', '−');
+function drawSample(r) {
+  const X0 = -80, X1 = 80, YMAX = 0.15;
+  const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+  // fixed y-scale; very narrow curves are cut off at the top of the plot
+  const sy = d => B - Math.min(d, YMAX) / YMAX * (B - T);
+  const dens = x => tPdf((x - r.dbar) / r.se, r.df) / r.se;
+  let d = '', nullD = '';
+  for (let x = X0; x <= X1 + 1e-9; x += 0.25) {
+    d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(dens(x)).toFixed(1);
+    // the right-hand null distribution in data units: same shape, centred on 0
+    nullD += (nullD ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(dens(x + r.dbar)).toFixed(1);
+  }
+  let out = showNull ? `<path d="${nullD}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#CD5909" fill-opacity="0.08"/>
+    <path d="${nullD}" fill="none" stroke="#CD5909" stroke-opacity="0.45" stroke-width="1.5"/>` : '';
+  if (showSample) out += `<path d="${d}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#4C827B" fill-opacity="0.15"/>
+    <path d="${d}" fill="none" stroke="#4C827B" stroke-width="2.5"/>`;
+  // without its curve, the mean difference's line runs up to the bracket
+  out += `<line x1="${sx(r.dbar)}" y1="${B}" x2="${sx(r.dbar)}" y2="${showSample ? sy(dens(r.dbar)) : 30}" stroke="#4C827B" stroke-width="${showSample ? 1.5 : 2}" stroke-dasharray="5 4"/>
+    <line x1="${sx(0)}" y1="${B}" x2="${sx(0)}" y2="30" stroke="#CD5909" stroke-width="2" stroke-dasharray="5 4"/>`;
+  // bracket showing the distance from the null value
+  out += `<line x1="${sx(0)}" y1="24" x2="${sx(r.dbar)}" y2="24" stroke="#4c4f69" stroke-width="1.5"/>
+    <line x1="${sx(0)}" y1="18" x2="${sx(0)}" y2="30" stroke="#4c4f69" stroke-width="1.5"/>
+    <line x1="${sx(r.dbar)}" y1="18" x2="${sx(r.dbar)}" y2="30" stroke="#4c4f69" stroke-width="1.5"/>
+    <text x="${sx(r.dbar / 2)}" y="14" text-anchor="middle" font-size="15" fill="#4c4f69"><tspan text-decoration="overline">D</tspan> = B − A = ${minus(r.dbar)}</text>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+  for (let t = -80; t <= 80; t += 20) out += `<text x="${sx(t)}" y="${B + 20}" text-anchor="middle" font-size="13" fill="#9ca0b0">${minus(t)}</text>`;
+  $('samplePlot').innerHTML = out;
+}
+
+function drawTest(r) {
+  const X0 = -6, X1 = 6, YMAX = 0.42;
+  const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+  const sy = d => B - d / YMAX * (B - T);
+  const path = (a, b) => {
+    let d = '';
+    for (let x = a; x <= b + 1e-9; x += 0.05) d += (d ? 'L' : 'M') + sx(x).toFixed(1) + ',' + sy(tPdf(x, r.df)).toFixed(1);
+    return d;
+  };
+  const area = (a, b) => `<path d="${path(a, b)}L${sx(b)},${B}L${sx(a)},${B}Z" fill="#CD5909" fill-opacity="0.45"/>`;
+  const whole = path(X0, X1), abs = Math.abs(r.t);
+  let out = `<path d="${whole}L${sx(X1)},${B}L${sx(X0)},${B}Z" fill="#4C827B" fill-opacity="0.15"/>`;
+  // shaded area is the p-value: as or more extreme than the observed t, in the tested direction(s)
+  const shownT = Math.max(X0, Math.min(X1, r.t));
+  if (tail === 'two') { if (abs < X1) out += area(X0, -abs) + area(abs, X1); }
+  else if (tail === 'greater') { if (shownT < X1) out += area(shownT, X1); }
+  else if (shownT > X0) out += area(X0, shownT);
+  out += `<path d="${whole}" fill="none" stroke="#4C827B" stroke-width="2.5"/>
+    <line x1="${sx(0)}" y1="${B}" x2="${sx(0)}" y2="${sy(tPdf(0, r.df))}" stroke="#4C827B" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 5"/>`;
+  // with very low df the critical values fall off the axis
+  const crits = tail === 'two' ? [-r.crit, r.crit] : tail === 'greater' ? [r.crit] : [-r.crit];
+  if (r.crit < X1) for (const c of crits) out += `<line x1="${sx(c)}" y1="${B}" x2="${sx(c)}" y2="${T + 58}" stroke="#9ca0b0" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="${sx(c)}" y="${T + 52}" text-anchor="middle" font-size="14" fill="#9ca0b0">${minus(c.toFixed(2))}</text>`;
+  const shown = Math.max(X0, Math.min(X1, r.t)), off = abs > X1;
+  const anchor = shown > 3.5 ? 'end' : shown < -3.5 ? 'start' : 'middle';
+  const text = `t = ${minus(r.t.toFixed(2))}${off && r.t > 0 ? ' →' : ''}`;
+  out += `<line x1="${sx(shown)}" y1="${B}" x2="${sx(shown)}" y2="${T}" stroke="#CD5909" stroke-width="2.5"/>
+    <text x="${sx(shown)}" y="${T - 10}" text-anchor="${anchor}" font-size="18" fill="#CD5909">${off && r.t < 0 ? '← ' : ''}${text}</text>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+  for (let t = X0; t <= X1; t += 2) out += `<text x="${sx(t)}" y="${B + 20}" text-anchor="middle" font-size="13" fill="#9ca0b0">${minus(t)}</text>`;
+  $('testPlot').innerHTML = out;
+}
+
+// small MathML builders for the readout
+const num = v => `<mn>${minus(v)}</mn>`;
+const op = o => `<mo>${o}</mo>`;
+const frac = (a, b) => `<mfrac><mrow>${a}</mrow><mrow>${b}</mrow></mfrac>`;
+const root = a => `<msqrt><mrow>${a}</mrow></msqrt>`;
+const accent = v => `<mn mathcolor="#CD5909">${minus(v)}</mn>`;
+const xbar = g => `<msub><mover accent="true"><mi>X</mi><mo>‾</mo></mover><mi mathvariant="normal">${g}</mi></msub>`;
+const DBAR = '<mover accent="true"><mi>D</mi><mo>‾</mo></mover>';
+const SD = '<msub><mi>s</mi><mi>D</mi></msub>';
+const paren = a => `<mrow><mo>(</mo>${a}<mo>)</mo></mrow>`;
+const sq = g => `<msubsup><mi>s</mi><mi mathvariant="normal">${g}</mi><mn>2</mn></msubsup>`;
+const sub = g => `<msub><mi>s</mi><mi mathvariant="normal">${g}</mi></msub>`;
+const pow = v => `<msup><mn>${v}</mn><mn>2</mn></msup>`;
+// too long for two columns: the values go on their own line
+const wideRow = (name, formula, values) => `<math style="grid-column:1/-1">${name}${op('=')}${formula}</math><math style="grid-column:1/-1">${op('=')}${values}</math>`;
+const row = (name, formula, values) => `<math>${name}${op('=')}${formula}</math><math>${op('=')}${values}</math>`;
+
+function sizeLabel(d) {
+  const abs = Math.abs(d);
+  return abs >= 0.8 ? 'Large' : abs >= 0.5 ? 'Medium' : abs >= 0.2 ? 'Small' : 'Tiny';
+}
+
+function draw() {
+  const [ma, sa, mb, sb, r0, n] = ['ma', 'sa', 'mb', 'sb', 'r', 'n'].map(id => +$(id).value);
+  ['ma', 'sa', 'mb', 'sb', 'n'].forEach(id => { $(id + 'v').textContent = $(id).value; });
+  $('rv').textContent = minus(r0.toFixed(2));
+  const r = pairedTest(ma, sa, mb, sb, r0, n, tail);
+  drawSample(r);
+  drawTest(r);
+  $('sampleTitle').innerHTML = showSample ? 'Uncertainty about D̄ (SE = s<sub>D</sub> / √n)' : 'Mean difference and null value';
+  $('nullCurve').setAttribute('aria-pressed', showNull);
+  $('sampleCurve').setAttribute('aria-pressed', showSample);
+  $('testTitle').textContent = `Null: t(${r.df})`;
+  const p = r.p < 0.001 ? 'p < .001' : 'p = ' + r.p.toFixed(3).replace(/^0/, '');
+  const tailText = tail === 'two' ? 'two-tailed' : `one-tailed, H₁: μ<sub>D</sub> ${tail === 'greater' ? '>' : '<'} 0`;
+  const critText = (tail === 'two' ? '±' : tail === 'less' ? '−' : '') + r.crit.toFixed(2);
+  const diffVals = frac(num(mb) + op('−') + num(ma), num(r.sd.toFixed(2)));
+  const sd = num(r.sd.toFixed(2)), se = num(r.se.toFixed(2));
+  const dDef = xbar('B') + op('−') + xbar('A');
+  $('effect').innerHTML = row('<msub><mi>d</mi><mi>z</mi></msub>', frac(dDef, SD), diffVals + op('=') + accent(r.d.toFixed(2)));
+  $('size').textContent = sizeLabel(r.d);
+  $('readout').innerHTML = `<div class="steps">
+    ${wideRow(SD, root(sq('A') + op('+') + sq('B') + op('−') + num(2) + '<mi>r</mi>' + sub('A') + sub('B')),
+      root(pow(sa) + op('+') + pow(sb) + op('−') + num(2) + paren(num(r0.toFixed(2))) + paren(num(sa)) + paren(num(sb))) + op('=') + sd)}
+    ${row('<mi>SE</mi>', frac(SD, root('<mi>n</mi>')), frac(sd, root(num(n))) + op('=') + se)}
+    ${row('<mi>t</mi>', frac(dDef, '<mi>SE</mi>'), frac(num(mb) + op('−') + num(ma), se) + op('=') + accent(r.t.toFixed(2)))}
+    ${row('<mi>df</mi>', '<mi>n</mi>' + op('−') + num(1), num(n) + op('−') + num(1) + op('=') + num(r.df))}
+    </div>
+    <div class="result"><b>${p}</b> (${tailText}); critical t = ${critText}<br>${r.p < 0.05 ? 'significant' : 'not significant'} at α = .05</div>`;
+}
+['ma', 'sa', 'mb', 'sb', 'r', 'n'].forEach(id => $(id).addEventListener('input', draw));
+function setTail(value) {
+  tail = value;
+  ['two', 'greater', 'less'].forEach(id => $(id).setAttribute('aria-pressed', id === tail));
+  draw();
+}
+['two', 'greater', 'less'].forEach(id => $(id).addEventListener('click', () => setTail(id)));
+$('nullCurve').addEventListener('click', () => { showNull = !showNull; draw(); });
+$('sampleCurve').addEventListener('click', () => { showSample = !showSample; draw(); });
+setTail('two');
+</script>
+</body>
+</html>
