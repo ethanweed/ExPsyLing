@@ -14,6 +14,9 @@ header-includes: |
   <style>
   .reveal .errtable table { font-size: 0.6em; }
   .reveal .caption { font-size: 0.7em; }
+  .reveal .modellabel { font-size: 0.6em; color: #4C827B; text-align: center; margin: 0.3em 0; }
+  .reveal hr.modelsep { border: none; border-top: 2px solid #acb0be; margin: 0.6em 0; }
+  .reveal .xbar { font-style: italic; display: inline-block; border-top: 0.07em solid currentColor; padding: 0.12em 0.08em 0; line-height: 1; }
   .reveal details.codebox summary { font-size: 0.5em; color: #CD5909; cursor: pointer; }
   .reveal details.codebox pre { font-size: 0.4em; max-height: 560px; overflow: auto; width: 100%; margin: 0; }
   .reveal details.codebox pre code { max-height: none; overflow: visible; }
@@ -115,6 +118,40 @@ In the NHST framework...
 
 
 # Example: Priming in Lexical Access
+
+jupyter notebook is [here](https://github.com/ethanweed/ExPsyLing/blob/master/slides/10/masked-priming-example.ipynb)
+
+## Levels of theoretical tools
+
+:::: {.columns}
+::: {.column width="50%"}
+![](images/gradient.png){width=80%}
+:::
+::: {.column width="50%"}
+```{=html}
+<div class="modellabel">theory (causal model)</div>
+<svg viewBox="0 0 620 150" style="width:100%; display:block; margin:0 auto;" font-family="'Source Serif 4', Georgia, serif">
+  <defs>
+    <marker id="dagarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4C827B"/>
+    </marker>
+  </defs>
+  <rect x="5" y="20" width="230" height="110" rx="55" fill="#4C827B" fill-opacity="0.15" stroke="#4C827B" stroke-width="3"/>
+  <text x="120" y="70" text-anchor="middle" font-size="26" fill="#05253A">subliminal</text>
+  <text x="120" y="100" text-anchor="middle" font-size="26" fill="#05253A">priming</text>
+  <line x1="238" y1="75" x2="372" y2="75" stroke="#4C827B" stroke-width="4" marker-end="url(#dagarrow)"/>
+  <rect x="380" y="20" width="235" height="110" rx="55" fill="#4C827B" fill-opacity="0.15" stroke="#4C827B" stroke-width="3"/>
+  <text x="497" y="70" text-anchor="middle" font-size="26" fill="#05253A">change in lexical</text>
+  <text x="497" y="100" text-anchor="middle" font-size="26" fill="#05253A">access RT</text>
+</svg>
+<hr class="modelsep">
+<div class="modellabel">statistical model (paired t-test)</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H0: <span class="xbar">D</span> = 0</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H1: <span class="xbar">D</span> ≠ 0</div>
+```
+:::
+::::
+
 
 ## 
 
