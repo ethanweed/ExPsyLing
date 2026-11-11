@@ -55,7 +55,13 @@ header-includes: |
 :::
 ::::
 
-## The Null Hypothesis (H0)
+## The Null Hypothesis (H~0~)
+
+- The experimental manipulation has no effect
+- The independent and dependent variables are causally unrelated
+
+
+## The Null Hypothesis (H~0~)
 
 Usually...
 
@@ -63,23 +69,23 @@ Usually...
 - the alternative hypothesis is the hypothesis that I hope is true
 
 ::: fragment
-This statistics. Abandon all hope.
+This is statistics. Abandon all hope.
 :::
 
 ## Type I and II Errors
 
 :::: {.columns .errtable}
 ::: {.column .fragment width="50%"}
-|  | retain H0 | reject H0 |
+|  | retain H~0~ | reject H~0~ |
 |---|---|---|
-| **H0 is true** | correct decision | error (type I)<br>[false positive]{style="color:#d20f39"} |
-| **H0 is false** | error (type II)<br>[false negative]{style="color:#d20f39"} | correct decision |
+| **H~0~ is true** | correct decision | error (type I)<br>[false positive]{style="color:#d20f39"} |
+| **H~0~ is false** | error (type II)<br>[false negative]{style="color:#d20f39"} | correct decision |
 :::
 ::: {.column .fragment width="50%"}
-|  | retain H0 | reject H0 |
+|  | retain H~0~ | reject H~0~ |
 |---|---|---|
-| **H0 is true** | 1 − α (probability of correct retention) | α (type I error rate) |
-| **H0 is false** | β (type II error rate) | 1 − β (power of the test) |
+| **H~0~ is true** | 1 − α (probability of correct retention) | α (type I error rate) |
+| **H~0~ is false** | β (type II error rate) | 1 − β (power of the test) |
 :::
 ::::
 
@@ -146,8 +152,8 @@ jupyter notebook is [here](https://github.com/ethanweed/ExPsyLing/blob/master/sl
 </svg>
 <hr class="modelsep">
 <div class="modellabel">statistical model (paired t-test)</div>
-<div class="formula" style="font-size:1.2em; text-align:center;">H0: <span class="xbar">D</span> = 0</div>
-<div class="formula" style="font-size:1.2em; text-align:center;">H1: <span class="xbar">D</span> ≠ 0</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H<sub>0</sub>: <span class="xbar">D</span> = 0</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H<sub>1</sub>: <span class="xbar">D</span> ≠ 0</div>
 ```
 :::
 ::::

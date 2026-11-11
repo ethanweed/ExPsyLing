@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Ethan Weed">
-  <meta name="dcterms.date" content="2026-11-10">
+  <meta name="dcterms.date" content="2026-11-11">
   <title>Statistical inference</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -749,7 +749,7 @@ background-color: var(--ctp-base);
 <section id="title-slide">
   <h1 class="title">Statistical inference</h1>
   <p class="author">Ethan Weed</p>
-  <p class="date">November 10, 2026</p>
+  <p class="date">November 11, 2026</p>
 </section>
 
 <section>
@@ -786,7 +786,14 @@ any predicament that threatened to end in disaster of any sort.</p>
 </div>
 </section>
 <section id="the-null-hypothesis-h0" class="slide level2">
-<h2>The Null Hypothesis (H0)</h2>
+<h2>The Null Hypothesis (H<sub>0</sub>)</h2>
+<ul>
+<li>The experimental manipulation has no effect</li>
+<li>The independent and dependent variables are causally unrelated</li>
+</ul>
+</section>
+<section id="the-null-hypothesis-h0-1" class="slide level2">
+<h2>The Null Hypothesis (H<sub>0</sub>)</h2>
 <p>Usually…</p>
 <ul>
 <li>the null hypothesis is the hypothesis that I hope isn’t true</li>
@@ -794,7 +801,7 @@ any predicament that threatened to end in disaster of any sort.</p>
 true</li>
 </ul>
 <div class="fragment">
-<p>This statistics. Abandon all hope.</p>
+<p>This is statistics. Abandon all hope.</p>
 </div>
 </section>
 <section id="type-i-and-ii-errors" class="slide level2">
@@ -810,19 +817,19 @@ true</li>
 <thead>
 <tr class="header">
 <th></th>
-<th>retain H0</th>
-<th>reject H0</th>
+<th>retain H<sub>0</sub></th>
+<th>reject H<sub>0</sub></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>H0 is true</strong></td>
+<td><strong>H<sub>0</sub> is true</strong></td>
 <td>correct decision</td>
 <td>error (type I)<br><span style="color:#d20f39">false
 positive</span></td>
 </tr>
 <tr class="even">
-<td><strong>H0 is false</strong></td>
+<td><strong>H<sub>0</sub> is false</strong></td>
 <td>error (type II)<br><span style="color:#d20f39">false
 negative</span></td>
 <td>correct decision</td>
@@ -839,18 +846,18 @@ negative</span></td>
 <thead>
 <tr class="header">
 <th></th>
-<th>retain H0</th>
-<th>reject H0</th>
+<th>retain H<sub>0</sub></th>
+<th>reject H<sub>0</sub></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>H0 is true</strong></td>
+<td><strong>H<sub>0</sub> is true</strong></td>
 <td>1 − α (probability of correct retention)</td>
 <td>α (type I error rate)</td>
 </tr>
 <tr class="even">
-<td><strong>H0 is false</strong></td>
+<td><strong>H<sub>0</sub> is false</strong></td>
 <td>β (type II error rate)</td>
 <td>1 − β (power of the test)</td>
 </tr>
@@ -924,8 +931,8 @@ xix)</span></li>
 </svg>
 <hr class="modelsep">
 <div class="modellabel">statistical model (paired t-test)</div>
-<div class="formula" style="font-size:1.2em; text-align:center;">H0: <span class="xbar">D</span> = 0</div>
-<div class="formula" style="font-size:1.2em; text-align:center;">H1: <span class="xbar">D</span> ≠ 0</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H<sub>0</sub>: <span class="xbar">D</span> = 0</div>
+<div class="formula" style="font-size:1.2em; text-align:center;">H<sub>1</sub>: <span class="xbar">D</span> ≠ 0</div>
 </div>
 </div>
 </section>
