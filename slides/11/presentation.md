@@ -182,9 +182,7 @@ header-includes: |
 
 ## A good graphic is truthful
 
-::: {.formula style="font-size:1.3em"}
-$$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of effect in data}}$$
-:::
+![](images/eq_lie_factor.svg){.eqimg style="width:80%; height:auto; max-height:none;"}
 
 [@tufte2001]{.caption}
 
@@ -194,9 +192,7 @@ $$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of 
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of effect in data}}$$
-:::
+![](images/eq_lie_factor.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="60%"}
 ```{=html}
@@ -215,9 +211,7 @@ $$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of 
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of effect in data}}$$
-:::
+![](images/eq_lie_factor.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="60%"}
 ```{=html}
@@ -236,9 +230,7 @@ $$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of 
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of effect in data}}$$
-:::
+![](images/eq_lie_factor.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="60%"}
 ```{=html}
@@ -257,9 +249,7 @@ $$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of 
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of effect in data}}$$
-:::
+![](images/eq_lie_factor.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="60%"}
 ![](images/reddit_axes.jpg){style="height:420px; width:auto; max-width:100%; max-height:none;"}
@@ -280,17 +270,13 @@ $$\text{lie factor} = \frac{\text{size of effect shown in graph}}{\text{size of 
 
 ## Maximize data density
 
-::: {.formula style="font-size:1.3em"}
-$$\text{data density} = \frac{\text{number of data points}}{\text{area of data graphic}}$$
-:::
+![](images/eq_data_density.svg){.eqimg style="width:80%; height:auto; max-height:none;"}
 
 ## Low data density
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{data density} = \frac{\text{number of data points}}{\text{area of data graphic}}$$
-:::
+![](images/eq_data_density.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="60%"}
 ![](images/LowDataDensity.png){style="height:420px; width:auto; max-width:100%; max-height:none;"}
@@ -303,9 +289,7 @@ $$\text{data density} = \frac{\text{number of data points}}{\text{area of data g
 
 :::: {.columns .vcenter}
 ::: {.column width="35%"}
-::: {.formula style="font-size:0.7em"}
-$$\text{data density} = \frac{\text{number of data points}}{\text{area of data graphic}}$$
-:::
+![](images/eq_data_density.svg){.eqimg style="width:100%; height:auto; max-height:none;"}
 :::
 ::: {.column width="65%"}
 ![](images/TimesWeather.jpg){style="width:100%; height:auto; max-width:100%; max-height:none;"}
