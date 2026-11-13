@@ -16,6 +16,7 @@ header-includes: |
   .reveal .caption { font-size: 0.7em; }
   .reveal .fixy img { height: 400px; width: auto; max-width: 100%; max-height: none; }
   .reveal .fixy button { font-family: inherit; font-size: 0.5em; color: #CD5909; background: white; border: 1.5px solid #CD5909; border-radius: 6px; padding: 4px 14px; margin-top: 8px; cursor: pointer; }
+  .reveal .wugfit img { height: 470px; }
   .reveal .fixy button:hover { background: #CD5909; color: white; }
   .reveal .tiny { font-size: 0.45em; line-height: 1.3; display: inline-block; vertical-align: top; padding-top: 0.6em; }
   .reveal .vcenter { align-items: center; }
@@ -101,6 +102,16 @@ header-includes: |
 ![](images/DinoSequentialSmaller.gif){width=100%}
 
 [Same summary statistics, very different data [@datasaurus2026]]{.caption}
+
+## Datawug
+
+```{=html}
+<div class="fixy wugfit">
+<img class="orig" src="images/wug_datasaurus.png">
+<img class="fixed" src="images/wug_datasaurus_fit.png" style="display:none">
+<button onclick="const d=this.parentNode, o=d.querySelector('.orig'), f=d.querySelector('.fixed'), show=f.style.display==='none'; f.style.display=show?'block':'none'; o.style.display=show?'none':'block'; this.textContent=show?'Hide regression line':'Add regression line';">Add regression line</button>
+</div>
+```
 
 ## Garbage in, garbage out
 

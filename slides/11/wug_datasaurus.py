@@ -5,37 +5,33 @@ annealing. Each step nudges one random point; the move is kept only if
 mean x, mean y, SD x, SD y and Pearson r are unchanged to 2 decimals, and
 (usually) only if it brings the point closer to the target shape.
 
-Usage:  python wug_datasaurus.py [--iters 400000] [--seed 1] [--frames]
-Writes images/wug_datasaurus.png (start vs. wug), data/wug.csv, and with
+The target shape is the black ink of a line drawing (default images/Wug.png):
+every dark pixel becomes a target point on a 0-100 grid.
+
+Usage:  python wug_datasaurus.py [--image images/Wug.png] [--iters 1000000]
+                                 [--n 260] [--seed 1] [--frames]
+Writes images/wug_datasaurus.png (start vs. wug), the same with the
+regression line (images/wug_datasaurus_fit.png), data/wug.csv, and with
 --frames a series of PNGs in wug_frames/ for an animation.
 """
 import argparse, os
 import numpy as np
 import matplotlib.pyplot as plt
+from PIL import Image
+from scipy.spatial import cKDTree
 
-TEAL, ORANGE, BLUE, GREY = "#4C827B", "#CD5909", "#1e66f5", "#9ca0b0"
+BLUE = "#1e66f5"
 
 
-# --- target shape: a wug (Berko, 1958), as line segments on a 0-100 grid ----
-def arc(cx, cy, rx, ry, a0=0, a1=360, n=200):
-    t = np.radians(np.linspace(a0, a1, n))
-    return np.c_[cx + rx * np.cos(t), cy + ry * np.sin(t)]
-
-def seg(x0, y0, x1, y1, n=40):
-    return np.c_[np.linspace(x0, x1, n), np.linspace(y0, y1, n)]
-
-def wug_outline():
-    parts = [
-        arc(45, 42, 30, 24, 0, 360, 260),          # body
-        arc(70, 66, 15, 14, -40, 200, 160),        # head (open where it meets the body)
-        arc(74, 70, 1.2, 1.2, 0, 360, 12),         # eye (small, or it swallows points)
-        seg(84, 70, 95, 66), seg(95, 66, 84, 61),  # beak
-        seg(38, 18, 36, 6), seg(30, 6, 42, 6),     # left leg + foot
-        seg(54, 18, 56, 6), seg(50, 6, 62, 6),     # right leg + foot
-        seg(66, 80, 62, 92), seg(70, 80, 70, 93), seg(74, 79, 79, 90),  # tuft
-        arc(20, 52, 7, 12, 90, 270, 60),           # tail bump
-    ]
-    return np.vstack(parts)
+# --- target shape: dark pixels of the drawing -------------------------------
+def ink_points(path, dark=200):
+    """Coordinates of the dark (line) pixels, scaled to a 0-100 grid, y up."""
+    im = np.asarray(Image.open(path).convert("RGBA")).astype(int)
+    rgb, alpha = im[..., :3], im[..., 3]
+    ys, xs = np.nonzero((rgb.sum(2) < dark) & (alpha > 0))
+    h, w = alpha.shape
+    scale = 100 / max(h, w)
+    return np.c_[xs * scale, (h - ys) * scale]
 
 
 # --- statistics that must not change ---------------------------------------
@@ -43,11 +39,8 @@ def stats(x, y):
     return np.round([x.mean(), y.mean(), x.std(ddof=1), y.std(ddof=1),
                      np.corrcoef(x, y)[0, 1]], 2)
 
-def dist_to_shape(px, py, shape):
-    return np.sqrt(((shape - (px, py)) ** 2).sum(1)).min()
 
-
-def anneal(x, y, shape, iters, rng, frames_every=0):
+def anneal(x, y, tree, iters, rng, frames_every=0):
     target = stats(x, y)
     temp_max, temp_min = 0.4, 0.01
     frames = []
@@ -55,8 +48,8 @@ def anneal(x, y, shape, iters, rng, frames_every=0):
         temp = temp_max - (temp_max - temp_min) * i / iters   # linear cooling
         k = rng.integers(len(x))
         nx, ny = x[k] + rng.normal(0, 0.6), y[k] + rng.normal(0, 0.6)
-        old_d = dist_to_shape(x[k], y[k], shape)
-        new_d = dist_to_shape(nx, ny, shape)
+        old_d = tree.query((x[k], y[k]))[0]
+        new_d = tree.query((nx, ny))[0]
         if new_d < old_d or rng.random() < temp:              # occasional uphill move
             ox, oy = x[k], y[k]
             x[k], y[k] = nx, ny
@@ -67,9 +60,12 @@ def anneal(x, y, shape, iters, rng, frames_every=0):
     return x, y, frames
 
 
-def panel(ax, x, y, title):
+def panel(ax, x, y, title, fit=False):
     s = stats(x, y)
     ax.scatter(x, y, s=14, color=BLUE, alpha=0.8)
+    if fit:                                       # least-squares line
+        b, a = np.polyfit(x, y, 1)
+        ax.plot([-5, 105], [a - 5 * b, a + 105 * b], color="#CD5909", lw=2.5)
     ax.set(xlim=(-5, 105), ylim=(-5, 105), aspect="equal", xticks=[], yticks=[], title=title)
     ax.set_xlabel(f"mean x = {s[0]:.2f}   mean y = {s[1]:.2f}\nSD x = {s[2]:.2f}   SD y = {s[3]:.2f}   r = {s[4]:.2f}",
                   fontsize=10, family="monospace", color="#4c4f69")
@@ -79,33 +75,39 @@ def panel(ax, x, y, title):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--image", default="images/Wug.png")
     ap.add_argument("--iters", type=int, default=1_000_000)
     ap.add_argument("--seed", type=int, default=1)
-    ap.add_argument("--n", type=int, default=180)
+    ap.add_argument("--n", type=int, default=260)
     ap.add_argument("--frames", action="store_true")
     a = ap.parse_args()
     rng = np.random.default_rng(a.seed)
 
-    shape = wug_outline()
-    # start: a shapeless Gaussian cloud whose means, SDs and r match the wug
-    # exactly (so the wug is reachable without changing the statistics)
-    w = shape[np.linspace(0, len(shape) - 1, a.n).astype(int)]
+    shape = ink_points(a.image)
+    tree = cKDTree(shape)
+
+    # start: a shapeless Gaussian cloud whose means, SDs and r match the
+    # drawing exactly (so the wug is reachable without changing the statistics)
+    w = shape[rng.choice(len(shape), a.n, replace=False)]
     cov = np.cov(w.T)
     z = rng.normal(size=(a.n, 2))
     z -= z.mean(0)
     z = z @ np.linalg.inv(np.linalg.cholesky(np.cov(z.T))).T   # whiten exactly
     xy = z @ np.linalg.cholesky(cov).T + w.mean(0)
     x0, y0 = xy[:, 0], xy[:, 1]
-    x, y, frames = anneal(x0.copy(), y0.copy(), shape, a.iters, rng,
+
+    x, y, frames = anneal(x0.copy(), y0.copy(), tree, a.iters, rng,
                           frames_every=a.iters // 60 if a.frames else 0)
 
     plt.rcParams["font.family"] = "Georgia"
-    fig, axes = plt.subplots(1, 2, figsize=(10, 5.6))
-    panel(axes[0], x0, y0, "Start")
-    panel(axes[1], x, y, "Wug")
-    fig.tight_layout()
     os.makedirs("images", exist_ok=True)
-    fig.savefig("images/wug_datasaurus.png", dpi=150)
+    for fit, out in [(False, "images/wug_datasaurus.png"), (True, "images/wug_datasaurus_fit.png")]:
+        fig, axes = plt.subplots(1, 2, figsize=(10, 5.6))
+        panel(axes[0], x0, y0, "Start", fit)
+        panel(axes[1], x, y, "Wug", fit)
+        fig.tight_layout()
+        fig.savefig(out, dpi=150)
+        plt.close(fig)
 
     os.makedirs("data", exist_ok=True)
     np.savetxt("data/wug.csv", np.c_[x, y], delimiter=",", header="x,y", comments="", fmt="%.4f")
@@ -117,7 +119,7 @@ def main():
             panel(ax, fx, fy, "")
             f.tight_layout(); f.savefig(f"wug_frames/{j:03d}.png", dpi=100); plt.close(f)
 
-    print("start:", stats(x0, y0), " wug:", stats(x, y))
+    print(f"{len(shape)} target pixels | start:", stats(x0, y0), " wug:", stats(x, y))
 
 
 if __name__ == "__main__":
