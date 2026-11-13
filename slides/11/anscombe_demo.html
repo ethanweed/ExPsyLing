@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { overflow: hidden; }
+  body { margin: 0; padding: 8px 14px; font-family: "Source Serif 4", Georgia, serif; background: white; color: #4c4f69; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 14px; }
+  .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #4C827B; margin: 0 0 0 34px; }
+  svg { width: 100%; height: auto; display: block; }
+  .bar { display: flex; align-items: center; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
+  button { font: inherit; font-size: 15px; color: #CD5909; background: white; border: 1.5px solid #CD5909; border-radius: 6px; padding: 4px 14px; cursor: pointer; white-space: nowrap; }
+  button:hover { background: #CD5909; color: white; }
+  .stats { flex-basis: 100%; font-family: "JetBrains Mono", "Fira Code", monospace; font-size: 13px; color: #6c6f85; }
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<div class="bar">
+  <button id="run">▶ Show data</button>
+  <button id="reset">Reset</button>
+  <span class="stats">all four: x̄ = 9, ȳ = 7.5, r = .82, ŷ = 3 + 0.5x</span>
+</div>
+<script>
+// Anscombe (1973)
+const X = [10, 8, 13, 9, 11, 14, 6, 4, 12, 7, 5];
+const sets = [
+  { name: "I",   x: X, y: [8.04, 6.95, 7.58, 8.81, 8.33, 9.96, 7.24, 4.26, 10.84, 4.82, 5.68] },
+  { name: "II",  x: X, y: [9.14, 8.14, 8.74, 8.77, 9.26, 8.10, 6.13, 3.10, 9.13, 7.26, 4.74] },
+  { name: "III", x: X, y: [7.46, 6.77, 12.74, 7.11, 7.81, 8.84, 6.08, 5.39, 8.15, 6.42, 5.73] },
+  { name: "IV",  x: [8, 8, 8, 8, 8, 8, 8, 19, 8, 8, 8],
+                 y: [6.58, 5.76, 7.71, 8.84, 8.47, 7.04, 5.25, 12.50, 5.56, 7.91, 6.89] },
+];
+const W = 300, H = 210, m = { l: 34, r: 10, t: 8, b: 26 };
+const xmin = 2, xmax = 20, ymin = 2, ymax = 14;
+const sx = v => m.l + (v - xmin) / (xmax - xmin) * (W - m.l - m.r);
+const sy = v => H - m.b - (v - ymin) / (ymax - ymin) * (H - m.t - m.b);
+const line = x => 3 + 0.5 * x;   // shared least-squares fit
+const NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
+
+const dots = [];   // {node, x, y, delay}
+const grid = document.getElementById("grid");
+sets.forEach((s, k) => {
+  const cell = document.createElement("div");
+  cell.innerHTML = `<p class="label">Dataset ${s.name}</p>`;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, cell);
+  // axes + ticks
+  el("line", { x1: m.l, y1: H - m.b, x2: W - m.r, y2: H - m.b, stroke: "#9ca0b0" }, svg);
+  el("line", { x1: m.l, y1: m.t, x2: m.l, y2: H - m.b, stroke: "#9ca0b0" }, svg);
+  for (let v = 4; v <= 20; v += 4) {
+    el("line", { x1: sx(v), y1: H - m.b, x2: sx(v), y2: H - m.b + 4, stroke: "#9ca0b0" }, svg);
+    el("text", { x: sx(v), y: H - m.b + 17, "text-anchor": "middle", "font-size": 14, fill: "#6c6f85" }, svg).textContent = v;
+  }
+  for (let v = 4; v <= 14; v += 4) {
+    el("line", { x1: m.l - 4, y1: sy(v), x2: m.l, y2: sy(v), stroke: "#9ca0b0" }, svg);
+    el("text", { x: m.l - 8, y: sy(v) + 4, "text-anchor": "end", "font-size": 14, fill: "#6c6f85" }, svg).textContent = v;
+  }
+  // regression line
+  el("line", { x1: sx(xmin), y1: sy(line(xmin)), x2: sx(xmax), y2: sy(line(xmax)),
+               stroke: "#CD5909", "stroke-width": 2.5 }, svg);
+  // points: start on the line, invisible
+  s.x.forEach((x, i) => {
+    const c = el("circle", { cx: sx(x), cy: sy(line(x)), r: 5, fill: "#1e66f5", opacity: 0 }, svg);
+    dots.push({ node: c, x, y: s.y[i], delay: k * 350 + i * 60 });
+  });
+  grid.appendChild(cell);
+});
+
+const ease = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+let raf = null;
+function draw(ms) {
+  for (const d of dots) {
+    const t = Math.min(1, Math.max(0, (ms - d.delay) / 900));
+    const e = ease(t);
+    d.node.setAttribute("opacity", Math.min(1, t * 3) * 0.85);
+    d.node.setAttribute("cy", sy(line(d.x) + e * (d.y - line(d.x))));
+  }
+}
+function run() {
+  cancelAnimationFrame(raf);
+  const t0 = performance.now(), total = 3 * 350 + 10 * 60 + 900;
+  const step = now => { const ms = now - t0; draw(ms); if (ms < total) raf = requestAnimationFrame(step); };
+  raf = requestAnimationFrame(step);
+}
+function reset() { cancelAnimationFrame(raf); draw(-1); }
+document.getElementById("run").onclick = run;
+document.getElementById("reset").onclick = reset;
+</script>
+</body>
+</html>
