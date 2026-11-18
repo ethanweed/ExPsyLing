@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Standard Error of the Slope</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; }
+  .cols > div:first-child { flex:0 0 32%; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:6px; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:14px; }
+  .ll { margin:6px 0 10px; font-size:17px; }
+  .ll b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:16px; color:var(--accent); }
+  .sub { font-family:"JetBrains Mono","Fira Code",monospace; font-size:12px; color:#6c6f85; margin-top:2px; }
+  .note { font-size:14px; color:#6c6f85; margin-top:10px; }
+  button { margin-top:14px; margin-right:8px; font:inherit; font-size:16px; padding:6px 14px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  /* fit the iframe's height too, so the plot isn't cut off when the slide gives it less room */
+  .toggle { display:flex; margin-bottom:8px; }
+  .toggle button { margin:0; border-radius:0; font-size:14px; padding:4px 10px; }
+  .toggle button:first-child { border-radius:6px 0 0 6px; }
+  .toggle button:last-child { border-radius:0 6px 6px 0; border-left:none; }
+  .toggle button.on { background:var(--accent); color:#fff; }
+  svg { width:100%; height:auto; max-height:calc((100vh - 110px) / 2); display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div>
+    <div class="toggle"><button id="pb1" class="on">Slope b₁</button><button id="pb0">Intercept b₀</button></div>
+    <div class="panel">
+      <div class="ll">This sample: <b id="lastv">–</b></div>
+      <div class="ll">Samples: <b id="nv">0</b></div>
+      <div class="ll">SD of the <span id="whatv">slopes</span>: <b id="sdv">–</b></div>
+      <div class="ll">Formula SE: <b id="sev"></b></div>
+      <div class="sub" id="subv"></div>
+      <div class="note">Pretend the fitted line is the truth: each new sample keeps the same 100 sleep values and draws new grumpiness scores around the line (σ̂ = 4.33).</div>
+    </div>
+    <button id="one">New sample</button><button id="many">+100 samples</button><button id="reset">Reset</button>
+  </div>
+  <div>
+    <div class="label">One sample</div>
+    <svg id="plot" viewBox="0 0 520 190"></svg>
+    <div class="label" style="margin-top:8px">All sample <span id="whatv2">slopes</span></div>
+    <svg id="hist" viewBox="0 0 520 210"></svg>
+  </div>
+</div>
+<script>
+// sleep (hours) and grumpiness (0-100) on 100 days, from parenthood.csv
+const XS = [7.59,7.91,5.14,7.71,6.68,5.99,8.19,7.19,7.4,6.58,6.49,6.27,5.95,6.65,6.41,6.33,6.3,8.47,7.21,7.53,8.0,7.35,6.86,7.86,4.86,5.87,8.4,6.93,7.21,6.99,8.17,7.85,6.27,8.66,4.98,6.19,6.41,4.84,7.03,7.66,7.51,7.92,8.12,7.47,7.99,5.44,8.16,7.62,5.87,9.0,8.31,6.71,7.43,5.9,8.52,6.03,7.29,7.32,6.88,6.22,6.94,7.01,7.2,6.3,8.72,7.82,8.14,7.27,6.7,7.55,7.38,7.73,5.32,7.86,6.35,7.11,5.45,7.8,7.13,8.35,6.93,7.07,8.66,5.09,4.91,7.03,7.02,7.67,8.15,5.88,5.72,6.66,6.85,5.57,5.16,5.31,7.77,5.38,7.02,6.45];
+const YS = [56,60,82,55,67,72,53,60,60,71,72,65,74,67,66,69,73,52,61,53,54,63,74,56,82,72,59,66,60,67,44,53,76,41,86,60,63,89,61,57,59,60,48,53,50,72,57,60,70,46,58,68,58,71,52,74,59,59,67,67,61,64,61,61,54,62,52,64,65,65,57,59,79,53,67,61,82,68,67,54,53,62,50,80,91,62,64,57,54,72,78,63,59,74,76,79,51,82,55,74];
+const N = XS.length;
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
+function ols(xs, ys) {
+  const mx = mean(xs), my = mean(ys);
+  let sxy = 0, sxx = 0;
+  xs.forEach((x, i) => { sxy += (x - mx) * (ys[i] - my); sxx += (x - mx) ** 2; });
+  const b1 = sxy / sxx, b0 = my - b1 * mx;
+  const ssr = xs.reduce((s, x, i) => s + (ys[i] - b0 - b1 * x) ** 2, 0);
+  return { b0, b1, sxx, sigma: Math.sqrt(ssr / (xs.length - 2)) };
+}
+// the "true" model is the fit to the real data
+const truth = ols(XS, YS);
+const mx = mean(XS);
+// what each toggle shows: formula SE (with its substitution), histogram axis, scatter x-range
+const PARAMS = {
+  b1: {
+    name: 'slopes', axis: 'slope b₁', H0: truth.b1 - 1.6, H1: truth.b1 + 1.6, BW: 0.1, tick: 0.5, X0: 4,
+    se: truth.sigma / Math.sqrt(truth.sxx),
+    sub: se => `σ̂ / √Σ(x − x̄)² = ${truth.sigma.toFixed(2)} / √${truth.sxx.toFixed(2)} = ${se.toFixed(3)}`,
+  },
+  b0: {
+    name: 'intercepts', axis: 'intercept b₀', H0: truth.b0 - 11, H1: truth.b0 + 11, BW: 0.7, tick: 5, X0: 0,
+    se: truth.sigma * Math.sqrt(1 / N + mx ** 2 / truth.sxx),
+    sub: se => `σ̂ √(1/N + x̄² / Σ(x − x̄)²) = ${truth.sigma.toFixed(2)} × √(1/${N} + ${mx.toFixed(2)}² / ${truth.sxx.toFixed(2)}) = ${se.toFixed(3)}`,
+  },
+};
+let param = 'b1', fits = [], sample = null;
+const simulate = () => XS.map(x => truth.b0 + truth.b1 * x + truth.sigma * randn());
+
+// scatter of the latest sample; in intercept mode the x-axis runs back to 0, where b0 lives
+const X1 = 10, L = 40, R = 510, T = 8, B = 170, HB = 170, HT = 10;
+const fmt = v => (Math.abs(v - Math.round(v)) < 1e-9 ? v.toFixed(0) : v.toFixed(1)).replace('-', '−');
+
+function draw() {
+  const P = PARAMS[param], X0 = P.X0, Y0 = 30, Y1 = X0 === 0 ? 140 : 100;
+  const sx = v => L + (v - X0) / (X1 - X0) * (R - L), sy = v => B - (v - Y0) / (Y1 - Y0) * (B - T);
+  const hx = v => L + (v - P.H0) / (P.H1 - P.H0) * (R - L);
+  sev.textContent = P.se.toFixed(3);
+  subv.textContent = P.sub(P.se);
+  whatv.textContent = whatv2.textContent = P.name;
+
+  let s = `<line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>
+    <line x1="${sx(X0)}" y1="${sy(truth.b0 + truth.b1 * X0)}" x2="${sx(X1)}" y2="${sy(truth.b0 + truth.b1 * X1)}" stroke="#9ca0b0" stroke-width="2" stroke-dasharray="6 4"/>`;
+  if (sample) {
+    const f = fits[fits.length - 1];
+    sample.forEach((y, i) => { s += `<circle cx="${sx(XS[i])}" cy="${sy(y)}" r="3" fill="#1e66f5" fill-opacity="0.75"/>`; });
+    s += `<line x1="${sx(X0)}" y1="${sy(f.b0 + f.b1 * X0)}" x2="${sx(X1)}" y2="${sy(f.b0 + f.b1 * X1)}" stroke="#4C827B" stroke-width="3"/>`;
+    if (param === 'b0') s += `<circle cx="${sx(0)}" cy="${sy(f.b0)}" r="5" fill="#CD5909"/>`;
+  }
+  for (let t = X0; t <= 10; t++) s += `<text x="${sx(t)}" y="${B + 16}" text-anchor="middle" font-size="12" fill="#9ca0b0">${t}</text>`;
+  s += `<text x="${R}" y="${T + 10}" text-anchor="end" font-size="12" fill="#9ca0b0">dashed: true line</text>`;
+  plot.innerHTML = s;
+
+  const vals = fits.map(f => f[param]), counts = {};
+  vals.forEach(v => { const k = Math.floor((v - P.H0) / P.BW); counts[k] = (counts[k] || 0) + 1; });
+  const maxC = Math.max(10, ...Object.values(counts));
+  let h = `<line x1="${L}" y1="${HB}" x2="${R}" y2="${HB}" stroke="#acb0be"/>`;
+  for (const k in counts) {
+    const x = P.H0 + k * P.BW, ht = counts[k] / maxC * (HB - HT - 14);
+    if (x < P.H0 || x + P.BW > P.H1) continue;  // off the fixed axis
+    h += `<rect x="${hx(x) + 1}" y="${HB - ht}" width="${hx(x + P.BW) - hx(x) - 2}" height="${ht}" fill="#4C827B" fill-opacity="0.6"/>`;
+  }
+  h += `<line x1="${hx(truth[param])}" y1="${HT}" x2="${hx(truth[param])}" y2="${HB}" stroke="#9ca0b0" stroke-dasharray="5 4"/>`;
+  if (vals.length > 1) {
+    // ±1 SD of the simulated estimates
+    const m = mean(vals), sd = Math.sqrt(vals.reduce((a, v) => a + (v - m) ** 2, 0) / (vals.length - 1));
+    h += `<line x1="${hx(m - sd)}" y1="${HT + 4}" x2="${hx(m + sd)}" y2="${HT + 4}" stroke="#CD5909" stroke-width="3"/>
+      <text x="${hx(m + sd) + 6}" y="${HT + 8}" font-size="12" fill="#CD5909">±1 SD</text>`;
+    sdv.textContent = sd.toFixed(3);
+  } else sdv.textContent = '–';
+  for (let t = Math.ceil(P.H0 / P.tick) * P.tick; t <= P.H1; t += P.tick) h += `<text x="${hx(t)}" y="${HB + 16}" text-anchor="middle" font-size="12" fill="#9ca0b0">${fmt(t)}</text>`;
+  h += `<text x="${R}" y="${HB + 32}" text-anchor="end" font-size="13" fill="#4C827B">${P.axis}</text>`;
+  hist.innerHTML = h;
+  nv.textContent = fits.length;
+  lastv.textContent = fits.length ? vals[vals.length - 1].toFixed(3) : '–';
+}
+
+function add(k) {
+  for (let i = 0; i < k; i++) { sample = simulate(); fits.push(ols(XS, sample)); }
+  draw();
+}
+function show(p) {
+  param = p;
+  pb1.classList.toggle('on', p === 'b1'); pb0.classList.toggle('on', p === 'b0');
+  draw();
+}
+document.getElementById('one').addEventListener('click', () => add(1));
+document.getElementById('many').addEventListener('click', () => add(100));
+document.getElementById('reset').addEventListener('click', () => { fits = []; sample = null; draw(); });
+pb1.addEventListener('click', () => show('b1'));
+pb0.addEventListener('click', () => show('b0'));
+draw();
+</script>
+</body>
+</html>

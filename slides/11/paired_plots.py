@@ -72,12 +72,14 @@ ax.set(xticks=[0, 1], xticklabels=["Congruent", "Incongruent"], xlim=(-0.6, 1.6)
 save(fig, "raincloud")
 
 fig, ax = ax1()
-lo, hi = long.rt.min() - 20, long.rt.max() + 20
+lo, hi = 390, 765
+ticks = range(400, 800, 100)
 ax.plot([lo, hi], [lo, hi], color=GREY, ls="--")
 below = df.Incongruent < df.Congruent
 sns.scatterplot(df, x="Congruent", y="Incongruent", hue=below,
                 palette={False: BLUE, True: "#d20f39"}, s=70, legend=False, ax=ax)
 ax.set(xlim=(lo, hi), ylim=(lo, hi), aspect="equal",
+       xticks=ticks, yticks=ticks,
        xlabel="Congruent RT (ms)", ylabel="Incongruent RT (ms)"); save(fig, "scatter")
 
 fig, ax = ax1()

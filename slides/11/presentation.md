@@ -33,15 +33,6 @@ header-includes: |
   </style>
 ---
 
-## Key concepts
-
-- Graphics *reveal* data
-- Graphics tell a *story*
-- Lie factor
-- Data-ink ratio
-- Data density
-- Revision
-
 # A short history
 
 ## John Snow's cholera map
@@ -79,6 +70,15 @@ header-includes: |
 ::::
 
 [@tufte2001]{.caption}
+
+## Tufte's Key concepts
+
+- Graphics *reveal* data
+- Graphics tell a *story*
+- Lie factor
+- Data-ink ratio
+- Data density
+- Revision
 
 # What graphics do
 
@@ -245,7 +245,7 @@ header-includes: |
 
 [@notopoulos2014]{.caption}
 
-## Two different y-axes
+## What is the story here?
 
 :::: {.columns .vcenter}
 ::: {.column width="40%"}
@@ -367,7 +367,7 @@ sns.barplot(long, x="condition", y="rt",
 ::: {.column width="50%"}
 ![](images/paired_bar.png)
 
-[Means ± SE. Where are the data?]{.caption}
+[Means ± SE. Low data density]{.caption}
 :::
 ::::
 
@@ -518,7 +518,9 @@ ax = sns.scatterplot(df, x="Congruent",
 lo, hi = 390, 765
 ax.plot([lo, hi], [lo, hi],
         color="#9ca0b0", ls="--")   # y = x
+ticks = range(400, 800, 100)
 ax.set(xlim=(lo, hi), ylim=(lo, hi),
+       xticks=ticks, yticks=ticks,
        aspect="equal")
 ```
 :::
@@ -674,4 +676,12 @@ ax.axhline(0, color="#9ca0b0", ls="--")
 ## References {.scrollable}
 
 ::: {#refs}
+:::
+
+## Images {.scrollable}
+
+::: {#imagecredits}
+
+- **John Snow's cholera map** — Original map by John Snow (1854). Public domain. [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg)
+
 :::

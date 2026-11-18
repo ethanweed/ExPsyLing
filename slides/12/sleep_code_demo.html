@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Python</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.min.js"></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --muted:#9ca0b0; }
+  html, body { height:100%; }
+  body { margin:0; padding:12px 16px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; display:flex; flex-direction:column; }
+  .bar { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  button { font:inherit; font-size:15px; padding:4px 12px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover:not(:disabled) { background:var(--accent); color:#fff; }
+  button:disabled { opacity:.45; cursor:default; }
+  #status { margin-left:auto; font-size:14px; color:var(--muted); }
+  #status.ready { color:var(--teal); } #status.busy { color:var(--accent); }
+  .hint { font-size:13px; color:var(--muted); }
+  .work { flex:1; min-height:0; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .pane { min-height:0; border:1px solid var(--border); border-radius:8px; overflow:hidden; display:flex; flex-direction:column; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; font-weight:600; color:var(--teal); padding:4px 10px; background:var(--mantle); border-bottom:1px solid var(--border); }
+  .CodeMirror { flex:1; height:auto; font-family:"JetBrains Mono","Fira Code",monospace; font-size:18px; line-height:1.4; }
+  #output { flex:1; overflow:auto; padding:8px 10px; font-family:"JetBrains Mono","Fira Code",monospace; font-size:15px; }
+  #output pre { margin:0 0 8px; white-space:pre-wrap; word-break:break-word; }
+  #output pre.err { color:#d20f39; }
+  #output img { max-width:100%; display:block; margin:4px 0 8px; }
+  #output table { border-collapse:collapse; font-size:13px; margin-bottom:8px; }
+  #output th, #output td { border:1px solid var(--border); padding:2px 6px; text-align:right; }
+  #output .run { border-top:1px dashed var(--border); margin:6px 0; }
+  @media (max-width:640px) { .work { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <button id="run" type="button" disabled>▶ Run</button>
+  <button id="clear" type="button">Clear output</button>
+  <span class="hint">Shift+Enter runs the code. Variables are kept between runs.</span>
+  <span id="status" class="busy">Loading Python…</span>
+</div>
+<div class="work">
+  <div class="pane"><div class="label">Code</div><textarea id="code">import pandas as pd
+import pingouin as pg
+
+df = pd.read_csv('parenthood.csv')
+print(df.head())
+
+# does sleep predict grumpiness?
+pg.linear_regression(df['dan_sleep'], df['dan_grump'])
+
+# does the baby's sleep predict danielle's sleep?
+
+</textarea></div>
+  <div class="pane"><div class="label">Output</div><div id="output"></div></div>
+</div>
+<script type="text/plain" id="data">dan_sleep,baby_sleep,dan_grump,day
+7.59,10.18,56,1
+7.91,11.66,60,2
+5.14,7.92,82,3
+7.71,9.61,55,4
+6.68,9.75,67,5
+5.99,5.04,72,6
+8.19,10.45,53,7
+7.19,8.27,60,8
+7.4,6.06,60,9
+6.58,7.09,71,10
+6.49,11.68,72,11
+6.27,6.13,65,12
+5.95,7.83,74,13
+6.65,5.6,67,14
+6.41,6.03,66,15
+6.33,8.19,69,16
+6.3,6.38,73,17
+8.47,11.11,52,18
+7.21,5.51,61,19
+7.53,6.69,53,20
+8,9.74,54,21
+7.35,9.02,63,22
+6.86,6.44,74,23
+7.86,9.43,56,24
+4.86,3.46,82,25
+5.87,6.32,72,26
+8.4,7.95,59,27
+6.93,7.69,66,28
+7.21,7.45,60,29
+6.99,7.56,67,30
+8.17,7.95,44,31
+7.85,11.61,53,32
+6.27,4.7,76,33
+8.66,8.52,41,34
+4.98,4.7,86,35
+6.19,8.32,60,36
+6.41,9.38,63,37
+4.84,4.18,89,38
+7.03,5.98,61,39
+7.66,9.29,57,40
+7.51,6.01,59,41
+7.92,10.54,60,42
+8.12,11.78,48,43
+7.47,11.6,53,44
+7.99,11.35,50,45
+5.44,5.63,72,46
+8.16,6.98,57,47
+7.62,6.03,60,48
+5.87,4.66,70,49
+9,9.81,46,50
+8.31,12.07,58,51
+6.71,7.57,68,52
+7.43,11.35,58,53
+5.9,5.47,71,54
+8.52,8.29,52,55
+6.03,6.8,74,56
+7.29,10.63,59,57
+7.32,8.59,59,58
+6.88,7.82,67,59
+6.22,7.18,67,60
+6.94,8.29,61,61
+7.01,11.08,64,62
+7.2,6.46,61,63
+6.3,3.25,61,64
+8.72,9.74,54,65
+7.82,8.75,62,66
+8.14,11.75,52,67
+7.27,9.31,64,68
+6.7,7.73,65,69
+7.55,8.68,65,70
+7.38,9.77,57,71
+7.73,9.71,59,72
+5.32,4.17,79,73
+7.86,10.18,53,74
+6.35,9.28,67,75
+7.11,7.23,61,76
+5.45,6.38,82,77
+7.8,9.2,68,78
+7.13,8.2,67,79
+8.35,10.16,54,80
+6.93,8.95,53,81
+7.07,6.8,62,82
+8.66,8.34,50,83
+5.09,6.25,80,84
+4.91,6.75,91,85
+7.03,9.09,62,86
+7.02,10.42,64,87
+7.67,8.89,57,88
+8.15,9.43,54,89
+5.88,6.79,72,90
+5.72,6.91,78,91
+6.66,6.05,63,92
+6.85,6.32,59,93
+5.57,8.62,74,94
+5.16,7.84,76,95
+5.31,5.89,79,96
+7.77,9.77,51,97
+5.38,6.97,82,98
+7.02,6.56,55,99
+6.45,7.93,74,100</script>
+<script>
+const $ = id => document.getElementById(id);
+const editor = CodeMirror.fromTextArea($('code'), {
+  mode: 'python', lineNumbers: true, lineWrapping: true, indentUnit: 4, matchBrackets: true,
+  extraKeys: { 'Shift-Enter': () => run(), Tab: cm => cm.replaceSelection('    ') },
+});
+
+function status(text, cls) { $('status').textContent = text; $('status').className = cls; }
+function append(html) { $('output').insertAdjacentHTML('beforeend', html); $('output').scrollTop = $('output').scrollHeight; }
+const escape = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
+
+// loading starts as soon as the deck opens, so Python is ready by the time the slide is shown
+// (indexURL must be explicit: once pandoc embeds this page, pyodide.js no longer has a URL to find its files from)
+const ready = (async () => {
+  const py = await loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/' });
+  await py.loadPackage(['numpy', 'pandas', 'scipy', 'matplotlib', 'micropip']);
+  // pingouin isn't bundled with Pyodide, so it comes from PyPI; newer versions need a newer pandas than Pyodide has
+  await py.runPythonAsync("import micropip\nawait micropip.install(['pingouin==0.5.5', 'seaborn'])");
+  py.FS.writeFile('parenthood.csv', $('data').textContent.trim() + '\n');
+  // plots are collected after each run instead of opening a window
+  await py.runPythonAsync(`
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+plt.show = lambda *args, **kwargs: None
+# Safari: scipy.special.betainc returns nan in WebAssembly, so pearsonr's p-value is nan.
+# Recompute it from the t-distribution (same p-value for Pearson's r), only when needed.
+import inspect as _inspect
+import numpy as _np
+import scipy.stats as _ss
+import pingouin.correlation as _pgc
+_pearsonr = _ss.pearsonr
+def _pearsonr_safe(x, y, *args, **kwargs):
+    res = _pearsonr(x, y, *args, **kwargs)
+    if not _np.isnan(res.pvalue):
+        return res
+    alt = kwargs.get('alternative', args[0] if args else 'two-sided')
+    r, df = float(res.statistic), len(x) - 2
+    t = r * _np.sqrt(df / max(1 - r**2, 1e-300))
+    p = {'two-sided': 2 * _ss.t.sf(abs(t), df), 'greater': _ss.t.sf(t, df), 'less': _ss.t.cdf(t, df)}[alt]
+    return _with_pvalue(res, p)
+def _with_pvalue(res, p):
+    # results are immutable: rebuild one from its constructor's arguments (stored as .name or ._name),
+    # so .statistic, .confidence_interval() etc. still work
+    cls = type(res)
+    names = [n for n in _inspect.signature(cls.__init__).parameters if n != 'self']
+    args = {n: getattr(res, n) if hasattr(res, n) else getattr(res, '_' + n) for n in names}
+    args['pvalue'] = p
+    return cls(**args)
+_ss.pearsonr = _pgc.pearsonr = _pearsonr_safe
+# small figure + big fonts, so labels stay readable once the plot is shrunk to fit the pane and the slide
+plt.rcParams.update({'figure.figsize': (5, 3.6), 'font.size': 14, 'axes.labelsize': 15, 'svg.fonttype': 'none', 'font.family': 'sans-serif', 'font.sans-serif': ['Helvetica', 'Arial', 'DejaVu Sans']})
+import io, base64
+import matplotlib.artist
+import seaborn as sns
+from pyodide.code import eval_code_async
+
+async def _run(src, ns):
+    value = await eval_code_async(src, ns, return_mode='last_expr')
+    shown = ''
+    # a plotting call returns its Axes; the figure below is enough, so don't print the object too
+    if isinstance(value, (matplotlib.artist.Artist, sns.axisgrid.Grid)):
+        value = None
+    if value is not None:
+        shown = value._repr_html_() if hasattr(value, '_repr_html_') else '<pre>' + repr(value).replace('&', '&amp;').replace('<', '&lt;') + '</pre>'
+    images = []
+    for num in plt.get_fignums():
+        buf = io.BytesIO()
+        # SVG with real <text>, so the browser draws the labels itself instead of relying on matplotlib's font rendering
+        plt.figure(num).savefig(buf, format='svg', bbox_inches='tight')
+        images.append(base64.b64encode(buf.getvalue()).decode())
+    plt.close('all')
+    return shown, images
+`);
+  return py;
+})();
+ready.then(() => { status('Python ready', 'ready'); $('run').disabled = false; })
+  .catch(e => { status('Python failed to load', 'busy'); append(`<pre class="err">${escape(String(e.message).trim().split('\n').pop())}</pre>`); });
+
+let ns = null, running = false;
+async function run() {
+  if (running) return;
+  running = true; $('run').disabled = true; status('Running…', 'busy');
+  const py = await ready;
+  ns = ns || py.globals.get('dict')();
+  append('<div class="run"></div>');
+  let text = '';
+  py.setStdout({ batched: s => { text += s + '\n'; } });
+  py.setStderr({ batched: s => { text += s + '\n'; } });
+  try {
+    const result = await py.globals.get('_run')(editor.getValue(), ns);
+    const [shown, images] = result.toJs();
+    result.destroy();
+    if (text) append(`<pre>${escape(text)}</pre>`);
+    if (shown) append(shown);
+    for (const b64 of images) {
+      append(`<img alt="Plot" src="data:image/svg+xml;base64,${b64}">`);
+      // keep the newest output in view once the plot has its height
+      $('output').lastElementChild.onload = () => { $('output').scrollTop = $('output').scrollHeight; };
+    }
+    status('Python ready', 'ready');
+  } catch (e) {
+    if (text) append(`<pre>${escape(text)}</pre>`);
+    // show only the user's part of the traceback
+    const msg = String(e.message).split('\n');
+    let start = -1;
+    msg.forEach((l, i) => { if (l.includes('File "<exec>"') && !l.includes('in _run')) start = i; });
+    append(`<pre class="err">${escape((start >= 0 ? msg.slice(start) : msg).join('\n').trim())}</pre>`);
+    status('Error', 'busy');
+    py.runPython("plt.close('all')");  // don't carry a half-made plot into the next run
+  }
+  running = false; $('run').disabled = false;
+  editor.focus();
+}
+$('run').addEventListener('click', run);
+$('clear').addEventListener('click', () => { $('output').innerHTML = ''; editor.focus(); });
+</script>
+</body>
+</html>

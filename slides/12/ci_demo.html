@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidence Intervals for the Slope</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; }
+  .cols > div:first-child { flex:0 0 32%; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:6px; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:14px; }
+  .ll { margin:6px 0 10px; font-size:17px; }
+  .ll b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:16px; color:var(--accent); }
+  .sub { font-family:"JetBrains Mono","Fira Code",monospace; font-size:12px; color:#6c6f85; margin-top:2px; }
+  .note { font-size:14px; color:#6c6f85; margin-top:10px; }
+  button { margin-top:14px; margin-right:8px; font:inherit; font-size:16px; padding:6px 14px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  /* fit the iframe's height too, so the plot isn't cut off when the slide gives it less room */
+  svg { width:100%; height:auto; max-height:calc(100vh - 70px); display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div>
+    <div class="label">Intervals</div>
+    <div class="panel">
+      <div class="ll">Last 95% CI:</div>
+      <div class="sub" id="lastv">–</div>
+      <div class="ll" style="margin-top:14px">Contain the true slope: <b id="covv">–</b></div>
+      <div class="note">Each experiment: new grumpiness scores around the true line (b₁ = −8.94), then b₁ ± t<sub>.975, 98</sub> × SE. Intervals that miss the true slope are orange.</div>
+    </div>
+    <button id="one">+1 experiment</button><button id="many">+20</button><button id="reset">Reset</button>
+  </div>
+  <div>
+    <div class="label">95% confidence intervals for b₁</div>
+    <svg id="plot" viewBox="0 0 520 400"></svg>
+  </div>
+</div>
+<script>
+// sleep (hours) and grumpiness (0-100) on 100 days, from parenthood.csv
+const XS = [7.59,7.91,5.14,7.71,6.68,5.99,8.19,7.19,7.4,6.58,6.49,6.27,5.95,6.65,6.41,6.33,6.3,8.47,7.21,7.53,8.0,7.35,6.86,7.86,4.86,5.87,8.4,6.93,7.21,6.99,8.17,7.85,6.27,8.66,4.98,6.19,6.41,4.84,7.03,7.66,7.51,7.92,8.12,7.47,7.99,5.44,8.16,7.62,5.87,9.0,8.31,6.71,7.43,5.9,8.52,6.03,7.29,7.32,6.88,6.22,6.94,7.01,7.2,6.3,8.72,7.82,8.14,7.27,6.7,7.55,7.38,7.73,5.32,7.86,6.35,7.11,5.45,7.8,7.13,8.35,6.93,7.07,8.66,5.09,4.91,7.03,7.02,7.67,8.15,5.88,5.72,6.66,6.85,5.57,5.16,5.31,7.77,5.38,7.02,6.45];
+const YS = [56,60,82,55,67,72,53,60,60,71,72,65,74,67,66,69,73,52,61,53,54,63,74,56,82,72,59,66,60,67,44,53,76,41,86,60,63,89,61,57,59,60,48,53,50,72,57,60,70,46,58,68,58,71,52,74,59,59,67,67,61,64,61,61,54,62,52,64,65,65,57,59,79,53,67,61,82,68,67,54,53,62,50,80,91,62,64,57,54,72,78,63,59,74,76,79,51,82,55,74];
+const N = XS.length, TCRIT = 1.984467;  // t(0.975, df = 98)
+const randn = () => Math.sqrt(-2 * Math.log(1 - Math.random())) * Math.cos(2 * Math.PI * Math.random());
+const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
+function ols(xs, ys) {
+  const mx = mean(xs), my = mean(ys);
+  let sxy = 0, sxx = 0;
+  xs.forEach((x, i) => { sxy += (x - mx) * (ys[i] - my); sxx += (x - mx) ** 2; });
+  const b1 = sxy / sxx, b0 = my - b1 * mx;
+  const sigma = Math.sqrt(xs.reduce((s, x, i) => s + (ys[i] - b0 - b1 * x) ** 2, 0) / (xs.length - 2));
+  return { b0, b1, se: sigma / Math.sqrt(sxx), sigma };
+}
+const truth = ols(XS, YS);
+
+let cis = [], hits = 0;
+const SHOW = 40, L = 20, R = 500, T = 10, B = 360;
+const C0 = truth.b1 - 1.8, C1 = truth.b1 + 1.8;
+const cx = v => L + (Math.min(C1, Math.max(C0, v)) - C0) / (C1 - C0) * (R - L);
+const f = v => v.toFixed(2).replace('-', '−');
+
+function draw() {
+  const shown = cis.slice(-SHOW), rowH = (B - T) / SHOW;
+  let s = `<line x1="${cx(truth.b1)}" y1="${T - 4}" x2="${cx(truth.b1)}" y2="${B}" stroke="#9ca0b0" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>`;
+  shown.forEach((c, i) => {
+    const y = T + (i + 0.5) * rowH, col = c.hit ? '#4C827B' : '#CD5909';
+    s += `<line x1="${cx(c.lo)}" y1="${y}" x2="${cx(c.hi)}" y2="${y}" stroke="${col}" stroke-width="${Math.min(5, rowH * 0.6)}" stroke-linecap="round"/>
+      <circle cx="${cx(c.b1)}" cy="${y}" r="${Math.min(4, rowH * 0.45)}" fill="#fff" stroke="${col}" stroke-width="1.5"/>`;
+  });
+  for (let t = -10.5; t <= -7.5; t += 0.5) s += `<text x="${cx(t)}" y="${B + 18}" text-anchor="middle" font-size="12" fill="#9ca0b0">${t.toFixed(1).replace('-', '−')}</text>`;
+  s += `<text x="${cx(truth.b1) + 6}" y="${B + 36}" font-size="13" fill="#9ca0b0">true slope</text>`;
+  plot.innerHTML = s;
+  covv.textContent = cis.length ? `${hits} / ${cis.length} (${Math.round(100 * hits / cis.length)}%)` : '–';
+  const c = cis[cis.length - 1];
+  lastv.textContent = c ? `${f(c.b1)} ± ${TCRIT.toFixed(2)} × ${c.se.toFixed(3)} = [${f(c.lo)}, ${f(c.hi)}]` : '–';
+}
+
+function add(k) {
+  for (let i = 0; i < k; i++) {
+    const fit = ols(XS, XS.map(x => truth.b0 + truth.b1 * x + truth.sigma * randn()));
+    const lo = fit.b1 - TCRIT * fit.se, hi = fit.b1 + TCRIT * fit.se, hit = lo <= truth.b1 && truth.b1 <= hi;
+    cis.push({ b1: fit.b1, se: fit.se, lo, hi, hit });
+    hits += hit;
+  }
+  draw();
+}
+document.getElementById('one').addEventListener('click', () => add(1));
+document.getElementById('many').addEventListener('click', () => add(20));
+document.getElementById('reset').addEventListener('click', () => { cis = []; hits = 0; draw(); });
+draw();
+</script>
+</body>
+</html>

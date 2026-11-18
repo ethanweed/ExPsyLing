@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variance Explained</title>
+<style>
+  :root { --text:#4c4f69; --mantle:#e6e9ef; --border:#acb0be; --accent:#CD5909; --teal:#4C827B; --blue:#1e66f5; }
+  body { margin:0; padding:20px; font-family:"Source Serif 4", Georgia, serif; color:var(--text); background:#fff; box-sizing:border-box; }
+  .cols { display:flex; gap:20px; }
+  .cols > div:first-child { flex:0 0 32%; }
+  .cols > div:last-child { flex:1; min-width:0; }
+  .label { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--teal); font-weight:600; margin-bottom:6px; }
+  .panel { background:var(--mantle); border:1px solid var(--border); border-radius:8px; padding:14px; }
+  .row { display:flex; align-items:center; gap:10px; margin:8px 0; font-size:15px; }
+  .row input { flex:1; min-width:0; accent-color:var(--accent); }
+  .ll { margin:8px 0; font-size:17px; }
+  .ll b { font-family:"JetBrains Mono","Fira Code",monospace; font-size:16px; color:var(--accent); }
+  .sub { font-family:"JetBrains Mono","Fira Code",monospace; font-size:12px; color:#6c6f85; }
+  .bars { margin-top:10px; font-size:13px; }
+  .bars div { height:14px; border-radius:3px; margin:2px 0 8px; }
+  button { margin-top:14px; margin-right:8px; font:inherit; font-size:16px; padding:6px 14px; border-radius:6px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  button:hover { background:var(--accent); color:#fff; }
+  /* fit the iframe's height too, so the plot isn't cut off when the slide gives it less room */
+  svg { width:100%; height:auto; max-height:calc(100vh - 70px); display:block; }
+</style>
+</head>
+<body>
+<div class="cols">
+  <div>
+    <div class="label">Line</div>
+    <div class="panel">
+      <div class="row"><span>mean ȳ</span><input id="mix" type="range" min="0" max="1" step="0.001" value="0"><span>fit</span></div>
+      <div class="ll">SS<sub>tot</sub> = <b id="sstv"></b></div>
+      <div class="ll">SS<sub>res</sub> = <b id="ssrv"></b></div>
+      <div class="bars">
+        SS<sub>tot</sub><div style="background:#9ca0b0;width:100%"></div>
+        SS<sub>res</sub><div id="ssrbar" style="background:#CD5909"></div>
+      </div>
+      <div class="ll">R² = <b id="r2v"></b></div>
+      <div class="sub" id="subv"></div>
+    </div>
+    <button id="fit">▶ Fit line</button><button id="flat">Mean only</button>
+  </div>
+  <div>
+    <div class="label">Residuals from the line</div>
+    <svg id="plot" viewBox="0 0 520 360"></svg>
+  </div>
+</div>
+<script>
+// sleep (hours) and grumpiness (0-100) on 100 days, from parenthood.csv
+const XS = [7.59,7.91,5.14,7.71,6.68,5.99,8.19,7.19,7.4,6.58,6.49,6.27,5.95,6.65,6.41,6.33,6.3,8.47,7.21,7.53,8.0,7.35,6.86,7.86,4.86,5.87,8.4,6.93,7.21,6.99,8.17,7.85,6.27,8.66,4.98,6.19,6.41,4.84,7.03,7.66,7.51,7.92,8.12,7.47,7.99,5.44,8.16,7.62,5.87,9.0,8.31,6.71,7.43,5.9,8.52,6.03,7.29,7.32,6.88,6.22,6.94,7.01,7.2,6.3,8.72,7.82,8.14,7.27,6.7,7.55,7.38,7.73,5.32,7.86,6.35,7.11,5.45,7.8,7.13,8.35,6.93,7.07,8.66,5.09,4.91,7.03,7.02,7.67,8.15,5.88,5.72,6.66,6.85,5.57,5.16,5.31,7.77,5.38,7.02,6.45];
+const YS = [56,60,82,55,67,72,53,60,60,71,72,65,74,67,66,69,73,52,61,53,54,63,74,56,82,72,59,66,60,67,44,53,76,41,86,60,63,89,61,57,59,60,48,53,50,72,57,60,70,46,58,68,58,71,52,74,59,59,67,67,61,64,61,61,54,62,52,64,65,65,57,59,79,53,67,61,82,68,67,54,53,62,50,80,91,62,64,57,54,72,78,63,59,74,76,79,51,82,55,74];
+const N = XS.length, X0 = 4, X1 = 10, Y0 = 30, Y1 = 100, L = 40, R = 510, B = 310, T = 15;
+const sx = v => L + (v - X0) / (X1 - X0) * (R - L);
+const sy = v => B - (v - Y0) / (Y1 - Y0) * (B - T);
+const mx = XS.reduce((s, v) => s + v, 0) / N, my = YS.reduce((s, v) => s + v, 0) / N;
+let sxy = 0, sxx = 0;
+XS.forEach((x, i) => { sxy += (x - mx) * (YS[i] - my); sxx += (x - mx) ** 2; });
+const fit = { b1: sxy / sxx, b0: my - (sxy / sxx) * mx };
+const SST = YS.reduce((s, y) => s + (y - my) ** 2, 0);
+let anim = null;
+
+function draw() {
+  // the line moves from the flat mean (b1 = 0, b0 = ȳ) to the least-squares line
+  const t = +mix.value, b1 = t * fit.b1, b0 = my + t * (fit.b0 - my);
+  const ssr = XS.reduce((s, x, i) => s + (YS[i] - b0 - b1 * x) ** 2, 0), r2 = 1 - ssr / SST;
+  sstv.textContent = SST.toFixed(1);
+  ssrv.textContent = ssr.toFixed(1);
+  ssrbar.style.width = (100 * ssr / SST) + '%';
+  r2v.textContent = r2.toFixed(3);
+  subv.textContent = `1 − ${ssr.toFixed(1)} / ${SST.toFixed(1)} = ${r2.toFixed(3)}`;
+
+  let res = '', pts = '';
+  XS.forEach((x, i) => {
+    const px = sx(x), py = sy(YS[i]);
+    res += `<line x1="${px}" y1="${py}" x2="${px}" y2="${sy(b0 + b1 * x)}" stroke="#CD5909" stroke-opacity="0.6" stroke-width="1.5"/>`;
+    pts += `<circle cx="${px}" cy="${py}" r="3.5" fill="#1e66f5" fill-opacity="0.8"/>`;
+  });
+  let ticks = '';
+  for (let v = 4; v <= 10; v++) ticks += `<text x="${sx(v)}" y="${B + 20}" text-anchor="middle" font-size="13" fill="#9ca0b0">${v}</text>`;
+  for (let v = 30; v <= 100; v += 10) ticks += `<text x="${L - 8}" y="${sy(v) + 4}" text-anchor="end" font-size="13" fill="#9ca0b0">${v}</text>`;
+  plot.innerHTML = `
+    <line x1="${L}" y1="${B}" x2="${R}" y2="${B}" stroke="#acb0be"/>
+    <line x1="${L}" y1="${T}" x2="${L}" y2="${B}" stroke="#acb0be"/>
+    <line x1="${L}" y1="${sy(my)}" x2="${R}" y2="${sy(my)}" stroke="#9ca0b0" stroke-dasharray="5 4"/>
+    <text x="${L + 6}" y="${sy(my) - 6}" font-size="13" fill="#9ca0b0">ȳ = ${my.toFixed(2)}</text>
+    ${res}
+    <line x1="${sx(X0)}" y1="${sy(b0 + b1 * X0)}" x2="${sx(X1)}" y2="${sy(b0 + b1 * X1)}" stroke="#4C827B" stroke-width="3"/>
+    ${pts}${ticks}
+    <text x="${R}" y="${B + 42}" text-anchor="end" font-size="14" fill="#4C827B">sleep (hours)</text>
+    <text x="${R}" y="${T + 12}" text-anchor="end" font-size="14" fill="#4C827B">grumpiness</text>`;
+}
+
+function animateTo(target) {
+  cancelAnimationFrame(anim);
+  const m0 = +mix.value, t0 = performance.now(), dur = 1500;
+  const step = now => {
+    const t = Math.min(1, (now - t0) / dur), e = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+    mix.value = m0 + (target - m0) * e;
+    draw();
+    if (t < 1) anim = requestAnimationFrame(step);
+  };
+  anim = requestAnimationFrame(step);
+}
+mix.addEventListener('input', () => { cancelAnimationFrame(anim); draw(); });
+document.getElementById('fit').addEventListener('click', () => animateTo(1));
+document.getElementById('flat').addEventListener('click', () => animateTo(0));
+draw();
+</script>
+</body>
+</html>
