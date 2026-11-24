@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Ethan Weed">
-  <meta name="dcterms.date" content="2026-11-16">
+  <meta name="dcterms.date" content="2026-11-24">
   <title>Data visualization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -756,7 +756,7 @@ background-color: var(--ctp-base);
 <section id="title-slide">
   <h1 class="title">Data visualization</h1>
   <p class="author">Ethan Weed</p>
-  <p class="date">November 16, 2026</p>
+  <p class="date">November 24, 2026</p>
 </section>
 
 <section>
@@ -1620,6 +1620,29 @@ Commons</a></li>
           RevealZoom
         ]
       });
+    </script>
+    <!-- reveal.js chalkboard plugin (rajgoel/reveal.js-plugins), loaded from CDN at runtime.
+         Injected by script (not <script src>) so pandoc's --embed-resources leaves the URLs alone:
+         the plugin finds its images/cursors relative to its own URL. Needs internet when presenting.
+         Keys: B = blackboard, C = draw on slide, Del = clear, X/Y = next/previous colour, right-drag = erase. -->
+    <script>
+    (function () {
+      var CB = 'https://cdn.jsdelivr.net/npm/reveal.js-plugins@4.6.0/chalkboard/';
+      function css(href) {
+        var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href;
+        document.head.appendChild(l);
+      }
+      css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+      css(CB + 'style.css');
+      function start() {
+        Reveal.configure({ chalkboard: { boardmarkerWidth: 4, chalkWidth: 5, storage: 'expsyling-chalkboard-' + location.pathname } });
+        var s = document.createElement('script');
+        s.src = CB + 'plugin.js';
+        s.onload = function () { Reveal.registerPlugin(RevealChalkboard); };
+        document.body.appendChild(s);
+      }
+      if (Reveal.isReady()) start(); else Reveal.on('ready', start);
+    })();
     </script>
     </body>
 </html>

@@ -15,7 +15,7 @@ TITLE=$(sed -n 's/^title: *"\(.*\)"/\1/p' "$MD_FILE" | head -n1)
 SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed -e 's/[^a-z0-9]/-/g' -e 's/-\+/-/g' -e 's/^-//' -e 's/-$//')
 OUT_FILE="${SLUG}.html"
 
-"$PANDOC" "$MD_FILE" -t revealjs --embed-resources --standalone --citeproc --slide-level=2 --mathml \
+"$PANDOC" "$MD_FILE" -t revealjs --embed-resources --standalone --citeproc --slide-level=2 --mathml --include-after-body=../shared/chalkboard.html \
   --metadata date="$(date +'%B %d, %Y')" \
   -o "$OUT_FILE"
 

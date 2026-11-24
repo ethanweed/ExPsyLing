@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Ethan Weed">
-  <meta name="dcterms.date" content="2026-10-19">
+  <meta name="dcterms.date" content="2026-11-24">
   <title>Descriptive Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -688,6 +688,46 @@ background: rgba(255, 255, 255, 0.05);
 border-left: 4px solid #42affa;
 box-shadow: none;
 width: 80%;
+}
+
+.stim-cards {
+display: flex;
+flex-direction: column;
+gap: 0.6em;
+align-items: stretch;
+text-align: left;
+margin: 0 auto;
+max-width: 85%;
+}
+.stim-card {
+background-color: var(--ctp-mantle);
+border: 1px solid var(--ctp-surface2);
+border-radius: 10px;
+padding: 0.7em 1.1em;
+box-shadow: 0 2px 10px rgba(76, 79, 105, 0.12);
+font-size: 0.78em;
+line-height: 1.5;
+color: var(--ctp-text);
+}
+.stim-card .cond-label {
+display: block;
+font-style: normal;
+font-size: 0.68em;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+color: var(--ctp-subtext0);
+margin-bottom: 0.3em;
+}
+.stim-card em {
+color: var(--ctp-sapphire);
+}
+.stim-card strong {
+color: var(--ctp-peach);
+}
+.stim-card.stim-target {
+border-left: 4px solid var(--ctp-mauve);
+background-color: var(--ctp-base);
 }</style>
 </head>
 <body>
@@ -697,7 +737,7 @@ width: 80%;
 <section id="title-slide">
   <h1 class="title">Descriptive Statistics</h1>
   <p class="author">Ethan Weed</p>
-  <p class="date">October 19, 2026</p>
+  <p class="date">November 24, 2026</p>
 </section>
 
 <section>
@@ -742,7 +782,7 @@ width: 80%;
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td>Experimental condition, gender, participant ID</td>
+<td>Eye color, movie title, gender</td>
 </tr>
 <tr class="even">
 <td>Ordinal</td>
@@ -766,7 +806,7 @@ width: 80%;
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
-<td>Distance, reaction time</td>
+<td>Box office ($), reaction time</td>
 </tr>
 </tbody>
 </table>
@@ -1141,6 +1181,29 @@ of <span>Measurement</span>. <em>Science</em>, <em>103</em>(2684),
           RevealZoom
         ]
       });
+    </script>
+    <!-- reveal.js chalkboard plugin (rajgoel/reveal.js-plugins), loaded from CDN at runtime.
+         Injected by script (not <script src>) so pandoc's --embed-resources leaves the URLs alone:
+         the plugin finds its images/cursors relative to its own URL. Needs internet when presenting.
+         Keys: B = blackboard, C = draw on slide, Del = clear, X/Y = next/previous colour, right-drag = erase. -->
+    <script>
+    (function () {
+      var CB = 'https://cdn.jsdelivr.net/npm/reveal.js-plugins@4.6.0/chalkboard/';
+      function css(href) {
+        var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href;
+        document.head.appendChild(l);
+      }
+      css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+      css(CB + 'style.css');
+      function start() {
+        Reveal.configure({ chalkboard: { boardmarkerWidth: 4, chalkWidth: 5, storage: 'expsyling-chalkboard-' + location.pathname } });
+        var s = document.createElement('script');
+        s.src = CB + 'plugin.js';
+        s.onload = function () { Reveal.registerPlugin(RevealChalkboard); };
+        document.body.appendChild(s);
+      }
+      if (Reveal.isReady()) start(); else Reveal.on('ready', start);
+    })();
     </script>
     </body>
 </html>

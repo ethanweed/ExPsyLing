@@ -1,0 +1,10 @@
+Key,Action
+C,Draw on the current slide (press again to exit)
+B,Open or close a blank blackboard
+Left-drag,Draw
+Right-drag,Erase
+X / Y,Next / previous colour
+Del,Clear the drawing on this slide
+-,Reset this slide's drawings
+Backspace,Reset all drawings in the deck
+D,Download the drawings as a JSON file
